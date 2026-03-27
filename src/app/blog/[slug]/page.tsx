@@ -68,9 +68,25 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     publisher: { '@type': 'Organization', name: 'True Commercial Service', url: 'https://choosetrue.com' },
   };
 
+  const faqSchema = post.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       <Link href="/blog" className="text-gray-500 text-sm hover:text-amber-400 transition-colors">&larr; All Articles</Link>
 
@@ -83,6 +99,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <h1 className="text-3xl font-bold text-white leading-tight mb-8">{post.title}</h1>
 
       <article dangerouslySetInnerHTML={{ __html: html }} />
+
+      {post.faqs && post.faqs.length > 0 && (
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <h2 className="text-xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {post.faqs.map((faq, i) => (
+              <div key={i}>
+                <h3 className="text-sm font-semibold text-amber-400 mb-2">{faq.question}</h3>
+                <p className="text-sm text-gray-300 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
         <h3 className="text-lg font-semibold text-white mb-2">Need help with your equipment?</h3>

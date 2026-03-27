@@ -1,3 +1,8 @@
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -6,6 +11,7 @@ export interface BlogPost {
   category: string;
   readTime: string;
   content: string;
+  faqs?: FAQ[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -58,6 +64,11 @@ Every hour your walk-in is above temperature puts your inventory at risk. A typi
 Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
 
 **True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Union County, NJ. Text us anytime.**`,
+    faqs: [
+      { question: 'Why is my walk-in cooler running but not cooling?', answer: 'The most common causes are worn door gaskets, dirty condenser coils, frozen evaporator coils, failed fan motors, or low refrigerant charge. Check gaskets and condenser cleanliness first — these account for over half of walk-in temperature problems.' },
+      { question: 'What temperature should a walk-in cooler be set at?', answer: 'Walk-in coolers should be set between 35°F and 38°F. If the temperature rises above 41°F, you are in the food safety danger zone and should call for emergency service immediately.' },
+      { question: 'How much does walk-in cooler repair cost?', answer: 'The average emergency walk-in cooler repair costs $350-800. However, a typical restaurant walk-in holds $3,000-8,000 in perishable product, so calling early is always cheaper than waiting.' },
+    ],
   },
   {
     slug: 'commercial-ice-machine-not-making-ice',
@@ -116,6 +127,11 @@ Modern ice machines have electronic controls that manage the freeze and harvest 
 A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
 
 **True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Union County, NJ.**`,
+    faqs: [
+      { question: 'Why did my commercial ice machine stop making ice?', answer: 'The most common causes are water supply issues (30% of calls), dirty condenser coils (25%), harvest cycle problems (20%), mineral scale buildup (15%), and control board failures (10%). Start by checking the water supply valve and condenser cleanliness.' },
+      { question: 'How often should a commercial ice machine be cleaned?', answer: 'Commercial ice machines should be descaled every 6 months minimum, and every 3 months in hard water areas. Regular cleaning prevents scale buildup that reduces production and eventually causes complete shutdown.' },
+      { question: 'How long should a commercial ice machine last?', answer: 'A well-maintained commercial ice machine should last 8-12 years. A neglected one typically fails in 3-5 years. Regular condenser cleaning and descaling are the biggest factors in equipment longevity.' },
+    ],
   },
   {
     slug: 'rational-combi-oven-error-codes-guide',
@@ -181,6 +197,11 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.
 
 **True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Union County, NJ.**`,
+    faqs: [
+      { question: 'What do Rational combi oven error codes mean?', answer: 'Rational combi ovens display error codes on the control panel to indicate specific malfunctions. Common codes include E1 (temperature sensor failure), E2 (boiler issues), E3 (humidity sensor problems), and E22 (water supply). Some are resettable by staff; others require a trained technician.' },
+      { question: 'Can I reset a Rational combi oven error code myself?', answer: 'Some minor errors can be cleared by power cycling the oven (turn off, wait 60 seconds, turn back on). However, persistent or recurring error codes indicate a real mechanical or electrical issue that needs professional diagnosis. Do not ignore repeated error codes.' },
+      { question: 'Does Rational require authorized service technicians?', answer: 'Yes. Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.' },
+    ],
   },
   {
     slug: 'how-often-should-commercial-kitchen-equipment-be-serviced',
@@ -296,6 +317,11 @@ Most equipment service companies offer PM agreements with:
 The best time to set up a PM program is before something breaks.
 
 **True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Union County, NJ. Contact us to schedule a free equipment assessment.**`,
+    faqs: [
+      { question: 'How often should commercial kitchen equipment be serviced?', answer: 'Most commercial kitchen equipment should be professionally serviced quarterly. High-use items like fryers and ice machines may need monthly attention. Refrigeration systems need quarterly condenser cleaning. HVAC and ventilation should be serviced twice per year.' },
+      { question: 'What is included in a commercial kitchen equipment PM visit?', answer: 'A typical preventive maintenance visit includes cleaning (condensers, burners, filters), calibration (thermostats, timers, gas pressures), inspection (gaskets, wiring, belts, bearings), lubrication of moving parts, and a written report of equipment condition and recommended repairs.' },
+      { question: 'Is preventive maintenance worth the cost for restaurant equipment?', answer: 'Yes. Studies show that preventive maintenance reduces emergency breakdowns by up to 80% and extends equipment life by 30-50%. A quarterly PM program typically costs less than a single emergency service call.' },
+    ],
   },
   {
     slug: 'commercial-kitchen-ventilation-problems-signs',
@@ -379,6 +405,11 @@ The goal: kitchen at -0.02 to -0.05 inches of water column relative to the dinin
 | Fire suppression inspection | Semi-annually |
 
 **True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Union County, NJ.**`,
+    faqs: [
+      { question: 'How do I know if my commercial kitchen ventilation needs service?', answer: 'Warning signs include visible grease buildup on hood surfaces, smoke or steam not being captured by the hood, excessive heat in the kitchen, grease dripping from filters or ductwork, and unusual odors or poor air quality. Any of these indicate your ventilation system needs immediate attention.' },
+      { question: 'How often should commercial kitchen hoods be cleaned?', answer: 'Kitchen exhaust filters should be cleaned weekly. The full hood and ductwork system should be professionally cleaned every 3-6 months depending on cooking volume. High-volume operations like charbroiling may need monthly deep cleaning.' },
+      { question: 'What is kitchen air balancing and why does it matter?', answer: 'Air balancing ensures the right ratio of exhaust air to makeup air in your kitchen. Poor balance causes negative pressure (doors hard to open, pilot lights blowing out) or smoke spillage from hoods. Proper balancing improves ventilation efficiency and kitchen comfort.' },
+    ],
   },
   {
     slug: 'commercial-kitchen-equipment-repair-cost-nj',
@@ -463,6 +494,11 @@ Expect a 25-40% markup on parts. This covers the service company's cost of stock
 - Multiple failures in the past 12 months
 
 **True Commercial Service provides transparent, upfront pricing for all commercial kitchen equipment repair in Union County, NJ. No hidden fees. NTE agreements on every job.**`,
+    faqs: [
+      { question: 'How much does commercial kitchen equipment repair cost in NJ?', answer: 'In New Jersey, typical repair costs range from $150-300 for minor fixes (thermostats, gaskets, igniters) to $500-1,500 for major repairs (compressor replacement, control board, motor). Emergency and after-hours calls typically add a $50-150 premium.' },
+      { question: 'Is it cheaper to repair or replace commercial kitchen equipment?', answer: 'As a general rule, if the repair cost exceeds 50% of the replacement cost and the equipment is past its expected lifespan, replacement is usually more cost-effective. For newer equipment, repair almost always makes more sense.' },
+      { question: 'Do commercial equipment repair companies charge a diagnostic fee?', answer: 'Most reputable companies charge a diagnostic or trip fee ($75-150) that covers the technician visit and diagnosis. Many companies apply this fee toward the repair if you proceed. Be wary of companies that offer free diagnostics — the cost is usually built into inflated repair prices.' },
+    ],
   },
   {
     slug: 'how-to-choose-commercial-kitchen-equipment-repair-company-nj',
@@ -526,6 +562,11 @@ A company that offers preventive maintenance agreements is invested in keeping y
 Set up a PM agreement or at least establish a relationship with a service company now. When your freezer goes down at 9pm, you want to text a number that already knows your name, your equipment, and your address — not start Googling "emergency repair near me."
 
 **True Commercial Service provides 24/7 commercial kitchen equipment repair across Union County, NJ. We believe in transparent pricing, first-visit resolution, and preventive maintenance that keeps your kitchen running.**`,
+    faqs: [
+      { question: 'What should I look for in a commercial kitchen equipment repair company?', answer: 'Look for factory-trained technicians with manufacturer certifications, guaranteed response times (under 4 hours for emergencies), transparent pricing with written estimates, a strong first-time fix rate (above 85%), and experience with your specific equipment brands.' },
+      { question: 'Should I use the equipment manufacturer for repairs or a third-party company?', answer: 'Third-party independent service companies are often faster, more flexible, and less expensive than manufacturer service departments. The key is ensuring the third-party techs have factory training and certifications on your specific equipment brands.' },
+      { question: 'How important are response times for commercial kitchen repair?', answer: 'Extremely important. Every hour of equipment downtime costs a restaurant $200-500 in lost revenue, wasted product, and labor inefficiency. A company guaranteeing sub-4-hour response can save you thousands compared to one that takes 24-48 hours.' },
+    ],
   },
   {
     slug: 'restaurant-equipment-downtime-cost',
@@ -589,6 +630,11 @@ Equipment over 10 years old fails more frequently. Plan replacements before they
 Know which menu items you can serve if the fryer goes down. Have a backup ice supplier's number. Know where the nearest walk-in you can rent is.
 
 **True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for NJ restaurants. Every minute of downtime costs you money — we show up fast.**`,
+    faqs: [
+      { question: 'How much does equipment downtime cost a restaurant?', answer: 'Equipment downtime costs a typical restaurant $200-500 per hour when you factor in lost revenue, food waste, labor inefficiency, and customer loss. A single refrigeration failure can result in $3,000-8,000 in spoiled inventory on top of the repair cost.' },
+      { question: 'What equipment failures cost restaurants the most money?', answer: 'Refrigeration failures are the most expensive because of inventory loss. A walk-in cooler failure can spoil thousands of dollars in product within hours. Cooking line failures during service are second — they directly impact revenue and can force a restaurant to close mid-shift.' },
+      { question: 'How can restaurants reduce equipment downtime?', answer: 'The most effective strategy is a preventive maintenance program that catches problems before they become emergencies. PM reduces breakdowns by up to 80%. Additionally, choose a service company with fast response times and high first-time fix rates.' },
+    ],
   },
   {
     slug: 'epa-608-certification-restaurant-owners',
@@ -644,6 +690,11 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 If your older equipment uses R-22 (Freon), it's been phased out of production. The remaining supply is expensive — $50-100+ per pound. If your system uses R-22 and develops a leak, it may be more cost-effective to retrofit or replace the system than to keep recharging.
 
 **Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Union County, NJ.**`,
+    faqs: [
+      { question: 'What is EPA 608 certification?', answer: 'EPA Section 608 certification is a federal requirement for anyone who services, maintains, or repairs equipment that uses refrigerants. It ensures technicians understand proper refrigerant handling, recovery, and environmental regulations. There are four types based on equipment size.' },
+      { question: 'Can a restaurant owner work on their own refrigeration equipment?', answer: 'If the work involves the refrigerant circuit (charging, recovering, or repairing refrigerant lines), you must hold EPA 608 certification. Routine maintenance like cleaning coils, replacing gaskets, or changing filters does not require certification.' },
+      { question: 'What happens if an uncertified person works on refrigerant equipment?', answer: 'Violations of EPA Section 608 can result in fines up to $44,539 per day per violation. Both the person performing the work and the business owner who authorized it can be held liable. Always verify your technician holds current EPA 608 certification.' },
+    ],
   },
   {
     slug: 'commercial-fryer-troubleshooting',
@@ -727,6 +778,11 @@ At the end of the night, the oil won't drain for filtering.
 | Professional inspection | Semi-annually |
 
 **True Commercial Service repairs all major commercial fryer brands across Union County, NJ. Gas and electric. Same-day emergency service available.**`,
+    faqs: [
+      { question: 'Why is my commercial fryer not heating up?', answer: 'The most common causes for a commercial fryer not heating are a failed thermostat, defective high-limit safety switch, faulty igniter or pilot assembly (gas fryers), or burned-out heating elements (electric fryers). Check the pilot light first on gas models — it is the simplest fix.' },
+      { question: 'How often should commercial fryer oil be changed?', answer: 'Commercial fryer oil should be filtered daily and completely changed every 1-2 weeks depending on volume and what you are frying. Breaded and battered items degrade oil faster. Dark, foamy, or foul-smelling oil should be changed immediately.' },
+      { question: 'Why is my commercial fryer producing dark or greasy food?', answer: 'Dark or greasy food usually indicates the oil temperature is incorrect, the oil is degraded and needs changing, or the thermostat is out of calibration. A thermostat that reads 350°F but is actually at 300°F produces greasy, undercooked food. Have the thermostat calibrated.' },
+    ],
   },
   {
     slug: 'pm-agreement-benefits-nj-restaurants',
@@ -803,6 +859,11 @@ The best time is now — before something breaks. The second best time is right 
 Don't wait for the busy season. Equipment fails when it's working hardest — summer for refrigeration, winter for heating. Get ahead of it.
 
 **True Commercial Service offers customized PM agreements for commercial kitchens across Union County, NJ. Contact us for a free equipment assessment and PM proposal.**`,
+    faqs: [
+      { question: 'What is a PM agreement for restaurant equipment?', answer: 'A Preventive Maintenance agreement is a scheduled service contract where a technician visits your kitchen on a regular cadence (monthly or quarterly) to clean, inspect, calibrate, and maintain your commercial equipment. This prevents breakdowns and extends equipment life.' },
+      { question: 'How much does a PM agreement cost for a restaurant?', answer: 'PM agreements typically cost $200-600 per quarter depending on the number of equipment pieces and visit frequency. This is significantly less than a single emergency repair call, and PM programs reduce emergency breakdowns by up to 80%.' },
+      { question: 'What equipment should be covered under a PM agreement?', answer: 'At minimum, cover refrigeration (walk-ins, reach-ins), cooking equipment (ovens, fryers), and ventilation (hoods, exhaust fans). Ice machines and espresso machines also benefit greatly from regular maintenance. Prioritize equipment that is critical to daily operations.' },
+    ],
   },
   {
     slug: 'captiveaire-hood-maintenance-repair-guide',
@@ -898,6 +959,11 @@ An air balance test uses a digital manometer and anemometer to measure:
 This takes 1-2 hours and should be done semi-annually or whenever cooking equipment is added or changed.
 
 **True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Union County, NJ. We understand ventilation from the inside out.**`,
+    faqs: [
+      { question: 'How often should CaptiveAire hood systems be serviced?', answer: 'CaptiveAire recommends quarterly professional maintenance for most commercial kitchen hood systems. Filters should be cleaned weekly. The full ductwork should be cleaned every 3-6 months. High-volume cooking operations (charbroiling, wok cooking) may need more frequent service.' },
+      { question: 'What does CaptiveAire hood maintenance include?', answer: 'Maintenance includes cleaning or replacing grease filters, inspecting and cleaning the exhaust fan, checking belt tension and motor bearings, testing the fire suppression system, verifying proper airflow and capture, and inspecting the makeup air unit for correct balance.' },
+      { question: 'Can any HVAC company work on CaptiveAire systems?', answer: 'While any licensed HVAC technician can perform basic cleaning, CaptiveAire recommends using technicians with specific training on their systems — especially for fire suppression, demand control ventilation, and makeup air balancing. Improper service can create fire hazards and code violations.' },
+    ],
   },
   {
     slug: 'espresso-machine-repair-nj',
@@ -968,6 +1034,11 @@ Super-automatic machines found in QSR chains. Different service approach than tr
 5. **Fast response** — a coffee shop without an espresso machine has no revenue
 
 **True Commercial Service is building espresso machine service capability for Northern New Jersey. We're pursuing La Marzocco and Nuova Simonelli factory certifications to provide the fast, qualified service that NJ coffee shops deserve.**`,
+    faqs: [
+      { question: 'How much does commercial espresso machine repair cost?', answer: 'Commercial espresso machine repairs typically range from $150-400 for common fixes like group head gaskets, solenoid valves, and steam wand tips, to $800-2,000+ for major work like boiler replacement, PID controller replacement, or full pump rebuilds.' },
+      { question: 'How often should a commercial espresso machine be serviced?', answer: 'Commercial espresso machines should receive professional maintenance every 3-6 months. This includes group head gasket replacement, shower screen cleaning, boiler descaling, water softener check, and pressure calibration. Daily backflushing by staff is also essential.' },
+      { question: 'Can any repair company work on La Marzocco or Nuova Simonelli machines?', answer: 'Most general kitchen equipment repair companies will not touch commercial espresso machines. Look for a company with technicians specifically trained on your machine brand. La Marzocco, Nuova Simonelli, and Slayer all have specific service training programs.' },
+    ],
   },
   {
     slug: 'walk-in-freezer-vs-cooler-service-differences',
@@ -1048,6 +1119,11 @@ When a **freezer** fails, product starts thawing within 1-2 hours. If it's a wee
 Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At NJ commercial electric rates, that's $100-300/month in wasted energy on a single unit.
 
 **True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Union County, NJ. We understand the critical differences and maintain each accordingly.**`,
+    faqs: [
+      { question: 'What is the difference between walk-in cooler and freezer maintenance?', answer: 'Walk-in freezers require defrost system maintenance (heaters, timers, drain lines) that coolers do not. Freezers also have thicker insulation, more powerful compressors, and different gasket requirements. Freezer repairs are generally 20-40% more expensive than comparable cooler repairs.' },
+      { question: 'What temperature should a walk-in freezer be set at?', answer: 'Walk-in freezers should maintain a temperature of 0°F or below. If the temperature rises above 10°F, food safety is compromised and you should call for emergency service. Some products require -10°F storage.' },
+      { question: 'How long does a walk-in freezer compressor last?', answer: 'A well-maintained walk-in freezer compressor typically lasts 10-15 years. Key maintenance that extends compressor life includes keeping condenser coils clean, maintaining proper refrigerant charge, and ensuring defrost cycles are functioning correctly.' },
+    ],
   },
   {
     slug: 'questions-before-signing-equipment-service-contract',
@@ -1116,6 +1192,11 @@ If they don't track it — or won't share it — that tells you something.
 Before signing anything, call their emergency line at 9pm on a weekday. Does a real person answer? How quickly do they respond to a text? This 5-minute test tells you more about the company than any contract clause.
 
 **True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Union County, NJ.**`,
+    faqs: [
+      { question: 'What should a restaurant equipment service contract include?', answer: 'A good service contract should clearly state: guaranteed response times, what equipment is covered, parts and labor warranty terms, PM visit frequency and scope, emergency surcharge details, cancellation terms, and the company\'s first-time fix rate and average resolution time.' },
+      { question: 'How long should I commit to an equipment service contract?', answer: 'Start with a 6-month or 1-year contract. Avoid long-term multi-year agreements until you have verified the company delivers on their promises. A confident company will earn your renewal — they should not need to lock you in.' },
+      { question: 'What is a good first-time fix rate for equipment repair?', answer: 'Industry average first-time fix rate is about 70%. A strong service company should be above 85%. This means the technician resolves the issue on the first visit without needing to return for parts or additional diagnosis.' },
+    ],
   },
 ];
 
