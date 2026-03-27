@@ -412,6 +412,25 @@ export const VERTICALS = [
   },
 ];
 
+// Directory & social profile URLs — update each as you register
+// These feed into schema.org sameAs and the footer
+export const PROFILES = {
+  // Add real URLs as you create each listing
+  google: '', // Google Business Profile URL
+  yelp: '', // Yelp business page URL
+  facebook: '', // Facebook business page URL
+  instagram: '', // Instagram profile URL
+  linkedin: '', // LinkedIn company page URL
+  bbb: '', // BBB listing URL
+  angi: '', // Angi/HomeAdvisor listing URL
+  thumbtack: '', // Thumbtack profile URL
+  nextdoor: '', // Nextdoor business page URL
+  apple: '', // Apple Maps listing URL
+};
+
+// Hub locations shown in footer (not every sub-city)
+export const HUB_LOCATIONS = ['oklahoma-city', 'elizabeth-nj', 'new-york-city', 'atlanta'];
+
 export const STATS = [
   { value: '4hr', label: 'Average Response Time' },
   { value: '94%', label: 'First-Time Fix Rate' },

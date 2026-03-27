@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { PROFILES } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +59,8 @@ const schemaMarkup = {
   },
   priceRange: '$$',
   image: 'https://choosetrue.com/logo.png',
-  sameAs: [],
+  telephone: '(908) 743-8688',
+  sameAs: Object.values(PROFILES).filter(Boolean),
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Commercial Kitchen Equipment Services',

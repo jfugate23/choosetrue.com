@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Wrench, ArrowUpRight } from 'lucide-react';
-import { COMPANY, LOCATIONS, SERVICES } from '@/lib/data';
+import { Phone, Mail, MapPin, Wrench, ArrowUpRight, ExternalLink } from 'lucide-react';
+import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS } from '@/lib/data';
 
 export default function Footer() {
   return (
@@ -61,25 +61,58 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-4">Locations</h4>
             <div className="space-y-2">
-              {LOCATIONS.map((l) => (
+              {LOCATIONS.filter((l) => HUB_LOCATIONS.includes(l.slug)).map((l) => (
                 <Link key={l.slug} href={`/locations/${l.slug}`} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
                   <MapPin className="w-3 h-3" />
                   {l.city}, {l.state}
                   {l.status === 'coming-soon' && <span className="text-[10px] text-amber-500/60 ml-1">Soon</span>}
                 </Link>
               ))}
+              <Link href="/locations" className="flex items-center gap-2 text-sm text-amber-500/70 hover:text-amber-400 transition-colors mt-1">
+                View all locations <ArrowUpRight className="w-3 h-3" />
+              </Link>
             </div>
           </div>
 
-          {/* Company */}
+          {/* Company + Find Us */}
           <div>
             <h4 className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-4">Company</h4>
             <div className="space-y-2">
               <Link href="/about" className="block text-sm text-slate-400 hover:text-white transition-colors">About</Link>
               <Link href="/careers" className="block text-sm text-slate-400 hover:text-white transition-colors">Careers</Link>
+              <Link href="/blog" className="block text-sm text-slate-400 hover:text-white transition-colors">Blog</Link>
               <Link href="/contact" className="block text-sm text-slate-400 hover:text-white transition-colors">Contact</Link>
               <Link href="/schedule-service" className="block text-sm text-slate-400 hover:text-white transition-colors">Schedule Service</Link>
             </div>
+
+            {Object.values(PROFILES).some(Boolean) && (
+              <>
+                <h4 className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-3 mt-6">Find Us On</h4>
+                <div className="flex flex-wrap gap-2">
+                  {PROFILES.google && (
+                    <a href={PROFILES.google} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">Google</a>
+                  )}
+                  {PROFILES.yelp && (
+                    <a href={PROFILES.yelp} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">Yelp</a>
+                  )}
+                  {PROFILES.facebook && (
+                    <a href={PROFILES.facebook} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">Facebook</a>
+                  )}
+                  {PROFILES.instagram && (
+                    <a href={PROFILES.instagram} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">Instagram</a>
+                  )}
+                  {PROFILES.bbb && (
+                    <a href={PROFILES.bbb} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">BBB</a>
+                  )}
+                  {PROFILES.angi && (
+                    <a href={PROFILES.angi} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">Angi</a>
+                  )}
+                  {PROFILES.linkedin && (
+                    <a href={PROFILES.linkedin} target="_blank" rel="noopener noreferrer" className="text-xs text-slate-400 hover:text-white bg-white/5 rounded-md px-2.5 py-1.5 transition-colors">LinkedIn</a>
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </div>
 
