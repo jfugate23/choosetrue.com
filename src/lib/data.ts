@@ -428,6 +428,12 @@ export const PROFILES = {
   apple: '', // Apple Maps listing URL
 };
 
+// Per-location directory URLs — each directory listing should link back to the specific location page
+// When registering on Yelp/Angi/Google for a specific city, set the website URL to:
+//   choosetrue.com/locations/{slug}
+// Example: Yelp NYC listing → website: choosetrue.com/locations/new-york-city
+// Example: Google Business (Elizabeth) → website: choosetrue.com/locations/elizabeth-nj
+
 // Hub locations shown in footer (not every sub-city)
 export const HUB_LOCATIONS = ['oklahoma-city', 'elizabeth-nj', 'new-york-city', 'atlanta'];
 
