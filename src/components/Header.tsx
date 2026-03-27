@@ -155,6 +155,9 @@ export default function Header() {
               <Link href="/careers" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">
                 Careers
               </Link>
+              <Link href="/blog" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">
+                Blog
+              </Link>
             </div>
 
             {/* Desktop CTA */}
@@ -190,6 +193,7 @@ export default function Header() {
             <MobileLink href="/who-we-serve" label="Who We Serve" onClick={() => setMobileOpen(false)} />
             <MobileLink href="/about" label="About" onClick={() => setMobileOpen(false)} />
             <MobileLink href="/careers" label="Careers" onClick={() => setMobileOpen(false)} />
+            <MobileLink href="/blog" label="Blog" onClick={() => setMobileOpen(false)} />
             <MobileLink href="/contact" label="Contact" onClick={() => setMobileOpen(false)} />
             
             <div className="pt-4 space-y-3">
