@@ -26,13 +26,19 @@ const schemaMarkup = {
   name: 'True Commercial Service LLC',
   description: 'Commercial foodservice equipment repair, maintenance, and ventilation services. Serving restaurants, supermarkets, and commercial kitchens across Union County, NJ.',
   url: 'https://choosetrue.com',
-  areaServed: [
-    { '@type': 'County', name: 'Union County', containedInPlace: { '@type': 'State', name: 'New Jersey' } },
-    { '@type': 'County', name: 'Essex County', containedInPlace: { '@type': 'State', name: 'New Jersey' } },
-    { '@type': 'County', name: 'Bergen County', containedInPlace: { '@type': 'State', name: 'New Jersey' } },
-    { '@type': 'County', name: 'Hudson County', containedInPlace: { '@type': 'State', name: 'New Jersey' } },
-    { '@type': 'County', name: 'Passaic County', containedInPlace: { '@type': 'State', name: 'New Jersey' } },
-  ],
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 40.6592, longitude: -74.2107 },
+    geoRadius: '48280',
+    description: '30 mile radius around Elizabeth, NJ 07206',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Elizabeth',
+    addressRegion: 'NJ',
+    postalCode: '07206',
+    addressCountry: 'US',
+  },
   serviceType: [
     'Commercial Refrigeration Repair',
     'Commercial Cooking Equipment Repair',
