@@ -163,6 +163,13 @@ export default function KitchenVentilationPage() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={400}>
+          <div className="mt-8 text-center">
+            <Link href="/tools/energy-calculator" className="inline-flex items-center gap-2 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 text-amber-400 font-semibold text-sm px-6 py-3 rounded-xl transition-all">
+              <Zap className="w-4 h-4" /> Calculate Your Kitchen&apos;s Energy Waste — Free Tool <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </Reveal>
       </Section>
 
       {/* Who This Is For */}
