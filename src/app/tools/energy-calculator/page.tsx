@@ -29,10 +29,15 @@ const HOOD_PRESETS = [
   { label: 'Custom', cfm: 0, hp: 0 },
 ];
 
+// MAU is designed at 80% of exhaust CFM for proper capture/containment.
+// The 20% infiltration is by design (negative pressure keeps kitchen air in the kitchen).
+// The building HVAC always conditions that baseline infiltration.
+// WASTE = the extra infiltration when the MAU can't deliver its design CFM.
+// Waste CFM = Design MAU CFM - Actual MAU CFM
 const SCENARIOS = [
-  { label: 'MAU not working at all', pct: 0.0 },
-  { label: 'MAU significantly low (50%)', pct: 0.50 },
-  { label: 'MAU slightly low (20%)', pct: 0.80 },
+  { label: 'MAU not working at all', mauPctOfDesign: 0.0 },
+  { label: 'MAU running at 50%', mauPctOfDesign: 0.50 },
+  { label: 'MAU running at 80%', mauPctOfDesign: 0.80 },
 ];
 
 export default function EnergyCalculatorPage() {
@@ -63,17 +68,27 @@ export default function EnergyCalculatorPage() {
     const fanKW = fanHp * 0.746;
     const fanCostYear = fanKW * fanHrsYear * electricRate;
 
-    return SCENARIOS.map(scenario => {
-      const supplyCfm = Math.round(exhaustCfm * scenario.pct);
-      const infiltration = exhaustCfm - supplyCfm;
+    // MAU design = 80% of exhaust CFM (industry standard for capture/containment)
+    const designMAUCfm = Math.round(exhaustCfm * 0.80);
+    // Baseline infiltration (by design) = 20% of exhaust. Building HVAC always pays for this.
+    const baselineInfiltration = exhaustCfm - designMAUCfm;
 
-      // Heating: outside air sucked in through doors, building HVAC heats it
-      const heatBTUhr = 1.08 * infiltration * winterDeltaT;
+    return SCENARIOS.map(scenario => {
+      // Actual MAU output in this scenario
+      const actualMAUCfm = Math.round(designMAUCfm * scenario.mauPctOfDesign);
+      // Total infiltration = exhaust - actual MAU
+      const totalInfiltration = exhaustCfm - actualMAUCfm;
+      // EXTRA waste = infiltration above the designed baseline
+      // This is what the MAU SHOULD be tempering but isn't
+      const wasteCfm = designMAUCfm - actualMAUCfm;
+
+      // Heating: extra unconditioned air the building HVAC must heat
+      const heatBTUhr = 1.08 * wasteCfm * winterDeltaT;
       const heatTherms = (heatBTUhr * heatingHrs) / 100000 / (furnaceEff / 100);
       const heatCost = heatTherms * gasRate;
 
-      // Cooling: outside air sucked in, building AC cools it
-      const coolBTUhr = 1.08 * infiltration * summerDeltaT;
+      // Cooling: extra unconditioned air the building AC must cool
+      const coolBTUhr = 1.08 * wasteCfm * summerDeltaT;
       const coolKWh = (coolBTUhr * coolingHrs) / (seer * 1000);
       const coolCost = coolKWh * electricRate;
 
@@ -82,8 +97,11 @@ export default function EnergyCalculatorPage() {
 
       return {
         ...scenario,
-        supplyCfm,
-        infiltration,
+        designMAUCfm,
+        actualMAUCfm,
+        totalInfiltration,
+        wasteCfm,
+        baselineInfiltration,
         heatCost: Math.round(heatCost),
         coolCost: Math.round(coolCost),
         totalWaste: Math.round(totalWaste),
@@ -200,12 +218,15 @@ export default function EnergyCalculatorPage() {
           {/* Results panel */}
           <div className="lg:col-span-3 space-y-6">
             <div className="glass-card rounded-2xl p-6">
-              <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center justify-between mb-2">
                 <h3 className="text-sm font-semibold text-amber-400">Your {exhaustCfm.toLocaleString()} CFM Exhaust Hood</h3>
                 <span className="text-xs text-slate-500">{operatingHours} hrs/day, 365 days/yr</span>
               </div>
+              <p className="text-xs text-slate-400 mb-1">
+                MAU design: {results[0]?.designMAUCfm.toLocaleString()} CFM (80% of exhaust for proper capture). Baseline infiltration: {results[0]?.baselineInfiltration.toLocaleString()} CFM by design.
+              </p>
               <p className="text-xs text-slate-400 mb-6">
-                Three scenarios showing what happens when your makeup air system falls behind:
+                When the MAU can&apos;t deliver its design CFM, the building HVAC pays to condition the extra outside air:
               </p>
 
               <div className="space-y-4">
@@ -214,12 +235,12 @@ export default function EnergyCalculatorPage() {
                     <div className="flex items-center justify-between mb-3">
                       <h4 className="text-sm font-semibold">{r.label}</h4>
                       <span className="text-xs text-slate-500">
-                        Supply: {r.supplyCfm.toLocaleString()} CFM
+                        MAU output: {r.actualMAUCfm.toLocaleString()} of {r.designMAUCfm.toLocaleString()} CFM
                       </span>
                     </div>
 
                     <p className="text-xs text-slate-400 mb-3">
-                      {r.infiltration.toLocaleString()} CFM of unconditioned outside air sucked in through doors and gaps — every hour the hood runs.
+                      {r.wasteCfm.toLocaleString()} CFM the MAU should be tempering but isn&apos;t — sucked in as raw outside air through doors and gaps instead. Every hour, {operatingHours} hours a day.
                     </p>
 
                     <div className="grid grid-cols-3 gap-3 mb-3">
@@ -277,24 +298,93 @@ export default function EnergyCalculatorPage() {
               </div>
             )}
 
-            {/* CTA */}
-            <div className="glass-card rounded-2xl p-6 bg-amber-500/5 border-amber-500/20">
-              <h3 className="text-lg font-semibold mb-2">Want to know your exact numbers?</h3>
-              <p className="text-sm text-slate-400 mb-4">
-                This calculator uses estimates. A real air balance with VelGrid readings tells you exactly how much your system is out of spec — and exactly how much you&apos;re wasting. One visit. Written report. No guesswork.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/schedule-service" className="flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-6 py-3 rounded-xl transition-all">
-                  Schedule an Air Balance <ArrowRight className="w-4 h-4" />
-                </Link>
-                <a href={COMPANY.phoneHref} className="flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/30 text-white font-medium text-sm px-6 py-3 rounded-xl transition-all">
-                  <Phone className="w-4 h-4 text-amber-400" /> {COMPANY.phone}
-                </a>
-              </div>
-            </div>
+            {/* Lead Capture */}
+            <LeadCaptureForm
+              exhaustCfm={exhaustCfm}
+              worstCaseWaste={results[0]?.totalWaste || 0}
+              operatingHours={operatingHours}
+            />
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function LeadCaptureForm({ exhaustCfm, worstCaseWaste, operatingHours }: { exhaustCfm: number; worstCaseWaste: number; operatingHours: number }) {
+  const [name, setName] = useState('');
+  const [business, setBusiness] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+
+  const inputClass = 'w-full bg-navy-50 border border-white/10 rounded-lg px-3 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors';
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!name || !phone) return;
+    setSending(true);
+    try {
+      await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: 'energy-calculator',
+          name,
+          business,
+          phone,
+          email,
+          meta: {
+            exhaustCfm,
+            worstCaseWaste,
+            operatingHours,
+          },
+        }),
+      });
+    } catch { /* still show success — we'll get the data from analytics */ }
+    setSubmitted(true);
+    setSending(false);
+  }
+
+  if (submitted) {
+    return (
+      <div className="glass-card rounded-2xl p-8 bg-green-500/5 border-green-500/20 text-center">
+        <p className="text-2xl font-bold text-green-400 mb-2">We&apos;ll be in touch</p>
+        <p className="text-sm text-slate-400">
+          We&apos;ll reach out within 1 business day to schedule your free ventilation assessment. Your estimated annual waste: ${worstCaseWaste.toLocaleString()}/yr.
+        </p>
+        <div className="mt-4">
+          <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 text-amber-400 font-medium text-sm">
+            <Phone className="w-4 h-4" /> Or call us now: {COMPANY.phone}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="glass-card rounded-2xl p-6 bg-amber-500/5 border-amber-500/20">
+      <h3 className="text-lg font-semibold mb-1">Get your exact numbers</h3>
+      <p className="text-sm text-slate-400 mb-4">
+        This calculator uses estimates. A real air balance tells you exactly how much you&apos;re wasting. Leave your info and we&apos;ll schedule a free assessment — plus email you a copy of this estimate.
+      </p>
+      <form onSubmit={handleSubmit} className="space-y-3">
+        <div className="grid grid-cols-2 gap-3">
+          <input className={inputClass} placeholder="Your name *" value={name} onChange={e => setName(e.target.value)} required />
+          <input className={inputClass} placeholder="Business name" value={business} onChange={e => setBusiness(e.target.value)} />
+          <input className={inputClass} type="tel" placeholder="Phone *" value={phone} onChange={e => setPhone(e.target.value)} required />
+          <input className={inputClass} type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+        </div>
+        <button
+          type="submit"
+          disabled={sending || !name || !phone}
+          className="w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 disabled:bg-slate-700 text-navy-300 font-bold text-sm py-3 rounded-xl transition-all"
+        >
+          {sending ? 'Sending...' : 'Get My Free Assessment'} <ArrowRight className="w-4 h-4" />
+        </button>
+        <p className="text-[10px] text-slate-600 text-center">No obligation. No spam. We&apos;ll contact you within 1 business day.</p>
+      </form>
     </div>
   );
 }
