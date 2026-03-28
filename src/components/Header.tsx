@@ -83,6 +83,7 @@ export default function Header() {
                             { href: '/services/cooking-equipment', icon: <Flame className="w-4 h-4" />, label: 'Cooking Equipment' },
                             { href: '/services/refrigeration', icon: <Thermometer className="w-4 h-4" />, label: 'Refrigeration' },
                             { href: '/services/hvac', icon: <Wind className="w-4 h-4" />, label: 'HVAC' },
+                            { href: '/services/kitchen-ventilation', icon: <Wind className="w-4 h-4" />, label: 'Kitchen Ventilation' },
                             { href: '/services/beverage-equipment', icon: <GlassWater className="w-4 h-4" />, label: 'Beverage Equipment' },
                             { href: '/services/espresso-machines', icon: <Coffee className="w-4 h-4" />, label: 'Espresso Machines' },
                             { href: '/services/preventive-maintenance', icon: <ShieldCheck className="w-4 h-4" />, label: 'PM Agreements' },
@@ -185,6 +186,7 @@ export default function Header() {
               <MobileLink href="/services/cooking-equipment" label="Cooking Equipment" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/refrigeration" label="Refrigeration" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/hvac" label="HVAC" onClick={() => setMobileOpen(false)} />
+              <MobileLink href="/services/kitchen-ventilation" label="Kitchen Ventilation" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/beverage-equipment" label="Beverage Equipment" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/espresso-machines" label="Espresso Machines" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/preventive-maintenance" label="PM Agreements" onClick={() => setMobileOpen(false)} />
