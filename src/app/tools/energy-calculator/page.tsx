@@ -30,9 +30,9 @@ const HOOD_PRESETS = [
 ];
 
 const SCENARIOS = [
-  { label: 'MAU slightly low (20%)', pct: 0.80 },
-  { label: 'MAU significantly low (50%)', pct: 0.50 },
   { label: 'MAU not working at all', pct: 0.0 },
+  { label: 'MAU significantly low (50%)', pct: 0.50 },
+  { label: 'MAU slightly low (20%)', pct: 0.80 },
 ];
 
 export default function EnergyCalculatorPage() {
@@ -210,7 +210,7 @@ export default function EnergyCalculatorPage() {
 
               <div className="space-y-4">
                 {results.map((r, i) => (
-                  <div key={i} className={`rounded-xl p-5 border ${i === 2 ? 'bg-red-500/5 border-red-500/20' : i === 1 ? 'bg-amber-500/5 border-amber-500/20' : 'bg-white/[0.02] border-white/10'}`}>
+                  <div key={i} className={`rounded-xl p-5 border ${i === 0 ? 'bg-red-500/5 border-red-500/20' : i === 1 ? 'bg-amber-500/5 border-amber-500/20' : 'bg-white/[0.02] border-white/10'}`}>
                     <div className="flex items-center justify-between mb-3">
                       <h4 className="text-sm font-semibold">{r.label}</h4>
                       <span className="text-xs text-slate-500">
