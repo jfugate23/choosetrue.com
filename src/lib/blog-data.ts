@@ -1198,6 +1198,649 @@ Before signing anything, call their emergency line at 9pm on a weekday. Does a r
       { question: 'What is a good first-time fix rate for equipment repair?', answer: 'Industry average first-time fix rate is about 70%. A strong service company should be above 85%. This means the technician resolves the issue on the first visit without needing to return for parts or additional diagnosis.' },
     ],
   },
+  // ─── VENTILATION / AIR BALANCING ARTICLES ─────────────────────
+  {
+    slug: 'kitchen-air-balancing-nj-what-it-is',
+    title: 'Kitchen Air Balancing in NJ — What It Is and Why Your Restaurant Needs It',
+    description: 'Most NJ restaurant owners have never heard of air balancing. Here\'s what it is, why it matters, and how much it costs.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '6 min',
+    content: `If you own a restaurant in New Jersey, there\'s a good chance your kitchen ventilation system has never been properly balanced. Most haven\'t. And it\'s costing you money every single day the hood is running.
+
+## What Is Kitchen Air Balancing?
+
+Air balancing is the process of measuring and adjusting the airflow in your kitchen exhaust and makeup air systems so they work together correctly. Your exhaust hood pulls air out. Your makeup air unit (MAU) pushes tempered air back in. When those two systems aren\'t matched, problems happen.
+
+The exhaust hood is designed to pull a specific volume of air — measured in CFM (cubic feet per minute). The makeup air unit is designed to replace about 80% of that volume with heated or cooled air. The remaining 20% comes from the dining room, creating a slight negative pressure that keeps kitchen smells, grease, and smoke from migrating to the front of house.
+
+When the system is balanced, everything works. When it\'s not, you get problems.
+
+## What Happens When Your Kitchen Isn\'t Balanced
+
+### Too Much Exhaust, Not Enough Makeup Air
+- Raw outside air gets sucked in through the front door, windows, and every gap in the building
+- In winter, that\'s 35°F air flooding in while your furnace runs nonstop
+- In summer, it\'s 95°F humid air your AC has to fight
+- Doors are hard to open (negative pressure)
+- Pilot lights blow out
+- Energy bills are higher than they should be
+
+### Too Much Makeup Air, Not Enough Exhaust
+- Kitchen air pushes into the dining room — heat, grease, smoke, smells
+- Hood capture suffers because supply air disrupts the exhaust plume
+- Health inspectors flag visible smoke spillage from hoods
+- Customers complain about kitchen odors
+
+## How Is It Done?
+
+A technician uses specialized instruments — typically a VelGrid that sits on top of the hood filters with a built-in standoff, or a rotating vane anemometer held 2 inches from the filter face. They measure the velocity of air moving through each filter, then calculate the total CFM using industry-standard conversion factors.
+
+On the supply side, they measure airflow through the makeup air unit\'s perforated supply plenum (PSP) or supply fan filters. Then they compare exhaust vs supply, check the ratio, run a smoke capture test, and adjust dampers and fan speeds until the system is balanced.
+
+You get a written report with all the readings, calculations, and a pass/fail assessment.
+
+## How Much Does Kitchen Air Balancing Cost in NJ?
+
+- **Single hood system (1 hood, 1 exhaust fan):** $1,200
+- **Two hood systems:** $2,000
+- **Three or more hoods (hotels, hospitals, large kitchens):** $2,500+
+
+The service typically pays for itself in energy savings within 3-6 months — often faster if your makeup air unit isn\'t working at all.
+
+## How Do I Know If My Kitchen Needs It?
+
+You probably need air balancing if:
+- Your kitchen hood was installed and never tested
+- Smoke escapes the hood during cooking
+- The front door is hard to open or slams shut
+- Pilot lights blow out randomly
+- The kitchen is uncomfortably hot (even with the hood running)
+- Your dining room smells like the kitchen
+- Energy bills seem higher than comparable restaurants
+- You\'ve never had a TAB report done
+
+## Who Does Kitchen Air Balancing in NJ?
+
+Very few companies specialize in this. Most HVAC contractors focus on rooftop units and split systems — they don\'t carry the instruments or have the training for kitchen-specific ventilation work. And hood cleaning companies clean but don\'t measure or adjust airflow.
+
+**True Commercial Service specializes in commercial kitchen ventilation for restaurants, hotels, and institutions across Union County, NJ and the NYC metro. We test, adjust, and balance your system in one visit — and give you a written report with real numbers.**`,
+    faqs: [
+      { question: 'What is kitchen air balancing?', answer: 'Air balancing is the process of measuring and adjusting your kitchen exhaust and makeup air systems so they work together at the correct ratio. The exhaust hood pulls air out, and the makeup air unit replaces about 80% of it with tempered air. Balancing ensures proper hood capture, comfortable temperatures, and minimal energy waste.' },
+      { question: 'How much does kitchen air balancing cost in NJ?', answer: 'A single hood system typically costs $1,200. Two hood systems cost $2,000. Larger kitchens with three or more hoods start at $2,500. The service usually pays for itself in energy savings within 3-6 months.' },
+      { question: 'How do I know if my restaurant kitchen needs air balancing?', answer: 'Signs include: smoke escaping the hood during cooking, front door hard to open, pilot lights blowing out, kitchen uncomfortably hot, dining room smells like the kitchen, or energy bills higher than expected. If your hood system has never been tested after installation, it almost certainly needs balancing.' },
+    ],
+  },
+  {
+    slug: 'restaurant-exhaust-fan-repair-nj',
+    title: 'Restaurant Exhaust Fan Repair in NJ — Same Day Emergency Service',
+    description: 'Your kitchen exhaust fan stopped working. Here\'s what to check, what it costs to repair, and when you need a replacement.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '5 min',
+    content: `When your exhaust fan stops, your kitchen stops. Health codes require a functioning exhaust system to operate — no exhaust means no cooking. Here\'s what NJ restaurant owners need to know about exhaust fan repair.
+
+## Common Exhaust Fan Problems
+
+### Belt Failure (Most Common)
+The fan belt is the #1 failure point on upblast exhaust fans. Belts wear, stretch, crack, and eventually snap. When the belt breaks, the fan motor runs but no air moves. You\'ll notice immediately — the kitchen fills with smoke and heat.
+
+**Fix:** Belt replacement. A 30-minute job for an experienced tech. Cost: $150-300 including parts and labor.
+
+### Motor Failure
+The fan motor burns out from heat, grease buildup, or age. You\'ll hear nothing when you turn the fan on, or you\'ll hear humming but no spinning. Grease-laden air accelerates motor failure — this is why regular cleaning matters.
+
+**Fix:** Motor replacement. Most motors are universal fit and can be sourced same-day. Cost: $400-800 depending on HP and motor type.
+
+### Bearing Failure
+The fan bearings wear out over time, especially without regular lubrication. You\'ll hear grinding, squealing, or rumbling from the roof. If you ignore it, the bearings seize and the motor burns out — turning a $200 bearing job into an $800 motor job.
+
+**Fix:** Bearing replacement or re-lubrication. Cost: $200-400.
+
+### Grease Buildup on Fan Wheel
+Grease accumulates on the fan wheel and housing, adding weight and reducing balance. The fan vibrates, moves less air, and works harder. Eventually the added weight and vibration destroy the bearings and motor.
+
+**Fix:** Fan wheel cleaning and rebalancing. Should be done during every hood cleaning. Cost: $150-300 as a standalone service.
+
+### Electrical Issues
+Contactors, relays, and wiring connections fail — especially in the harsh rooftop environment. The fan won\'t start, runs intermittently, or trips the breaker.
+
+**Fix:** Electrical diagnosis and component replacement. Cost: $200-500.
+
+## When to Repair vs Replace
+
+**Repair if:**
+- Fan is under 10 years old
+- Only one component has failed (belt, motor, bearing)
+- Frame and housing are structurally sound
+- Fan is still listed/approved for your hood system
+
+**Replace if:**
+- Fan is 15+ years old
+- Multiple components failing
+- Housing is corroded or structurally damaged
+- Fan is undersized for the hood (common in renovated kitchens)
+- Repair cost exceeds 60% of replacement cost
+
+A new upblast exhaust fan installed typically costs $1,500-4,000 depending on size and CFM rating.
+
+## What to Check Before You Call
+
+1. **Is the fan switch on?** Check the hood control panel. Someone may have turned it off.
+2. **Check the breaker.** A tripped breaker is free to fix.
+3. **Listen.** Motor humming but not spinning = belt or bearing. Nothing at all = electrical or motor.
+4. **Look at the roof.** If the fan is spinning but slow, it\'s probably a belt slipping or bearing dragging.
+
+## Emergency Exhaust Fan Service in NJ
+
+A dead exhaust fan is an emergency — you can\'t legally operate without it, and your kitchen fills with smoke and heat within minutes.
+
+**True Commercial Service provides same-day exhaust fan repair across Union County, NJ. We carry common belts, motors, and bearings on the truck. Most repairs are completed in under 2 hours.**`,
+    faqs: [
+      { question: 'How much does restaurant exhaust fan repair cost?', answer: 'Belt replacement costs $150-300. Motor replacement costs $400-800. Bearing replacement costs $200-400. A full fan replacement including installation costs $1,500-4,000 depending on size and CFM.' },
+      { question: 'Why is my kitchen exhaust fan not working?', answer: 'The most common causes are a broken belt, burned-out motor, failed bearings, or an electrical issue like a tripped breaker or bad contactor. Belt failure is the #1 cause — it is a quick, inexpensive fix.' },
+      { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A non-functioning exhaust fan means no cooking until it is repaired.' },
+    ],
+  },
+  {
+    slug: 'makeup-air-unit-not-working-restaurant',
+    title: 'Makeup Air Unit Not Working? What Every Restaurant Owner Should Know',
+    description: 'Your makeup air unit is broken and your kitchen is freezing, doors won\'t open, and energy bills are through the roof. Here\'s what\'s happening.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '6 min',
+    content: `Your makeup air unit (MAU) is one of the most important — and most neglected — pieces of equipment on your roof. When it stops working, the problems show up everywhere: the kitchen is freezing in winter, doors are impossible to open, pilot lights blow out, and your gas bill doubles. Most restaurant owners don\'t even know they have one.
+
+## What Does a Makeup Air Unit Do?
+
+Your kitchen exhaust hood pulls thousands of cubic feet of air out of the building every minute. That air has to come from somewhere. The MAU is designed to replace about 80% of the exhausted air with tempered (heated or cooled) outside air, delivered directly into the kitchen.
+
+Without the MAU, your building goes under severe negative pressure. The exhaust is still pulling air out, so the building sucks in raw outside air through every crack, door, window, and gap. In January in New Jersey, that\'s 35°F air pouring in. In August, it\'s 95°F humid air.
+
+Your building HVAC — the furnace in winter, the AC in summer — has to condition all of that infiltrating air. That\'s energy you\'re paying for that the MAU should be handling.
+
+## Signs Your MAU Isn\'t Working
+
+- **Kitchen is freezing in winter** even though the heat is running
+- **Front door is extremely hard to open** (severe negative pressure pulling it shut)
+- **Pilot lights on gas equipment blow out** randomly
+- **Whistling sounds** from doors, windows, or gaps
+- **Energy bills significantly higher** than similar restaurants
+- **Kitchen is uncomfortable** — staff complaining about temperature
+- **Hood capture is poor** — smoke escaping even though the exhaust fan is running
+
+## Common MAU Problems
+
+### Burner Not Igniting
+Gas-fired MAUs heat the incoming air with a burner section. If the burner fails, the unit blows cold outside air directly into the kitchen — or the safety controls shut the unit off entirely. Common causes: failed igniter, gas valve issue, flame sensor dirty, or gas supply interrupted.
+
+### Frozen Coils
+In cold weather, condensation freezes on the coils and blocks airflow. The MAU either stops moving air or moves it at drastically reduced volume. Usually caused by a failed defrost cycle or a refrigerant issue on units with cooling capability.
+
+### Belt or Motor Failure
+Same as exhaust fans — MAU supply fans use belts and motors that wear out. When the belt breaks, no air moves. When the motor fails, same result.
+
+### Filter Clogged
+MAU intake filters get clogged with dirt, pollen, and debris. A severely clogged filter starves the unit for air, reducing supply volume drastically. This is the easiest fix — change the filter. Most MAUs need filter changes every 1-3 months.
+
+### Controls Failure
+The MAU\'s control board, thermostat, or interlock with the exhaust system fails. The unit either won\'t turn on, won\'t modulate properly, or doesn\'t sync with the exhaust hood.
+
+## What It Costs You When the MAU Is Down
+
+For a typical 10-foot hood exhausting 2,750 CFM, the MAU is designed to supply about 2,200 CFM of tempered air. When the MAU is completely down:
+
+- **2,200 CFM of raw outside air** infiltrates through doors and gaps
+- **Heating waste (winter):** approximately $4,200/year in extra gas
+- **Cooling waste (summer):** approximately $1,060/year in extra electricity
+- **Total:** over $5,200/year in wasted energy — on top of the repair cost
+
+The MAU repair typically costs $300-800. The energy waste costs $5,000+/year. The math is clear.
+
+## What to Check Before You Call
+
+1. **Filters** — pull them out and check. If they\'re solid gray/brown, replace them.
+2. **Breaker** — check the electrical panel for a tripped breaker.
+3. **Gas supply** — is the gas valve open? Did someone shut it off?
+4. **Interlock** — many MAUs are interlocked with the exhaust fan. If the exhaust fan is off, the MAU won\'t run.
+5. **Thermostat** — check the setting. It may have been changed or malfunctioned.
+
+**True Commercial Service repairs and maintains all brands of makeup air units across Union County, NJ. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**`,
+    faqs: [
+      { question: 'What does a makeup air unit do in a restaurant?', answer: 'A makeup air unit (MAU) replaces the air your exhaust hood pulls out of the kitchen. It supplies about 80% of the exhausted volume as tempered (heated or cooled) air. Without it, raw outside air infiltrates through doors and gaps, and your building HVAC has to condition all of it.' },
+      { question: 'How much does it cost when a makeup air unit is broken?', answer: 'A broken MAU on a typical restaurant hood system wastes approximately $5,000 or more per year in excess heating and cooling costs. The building HVAC has to condition thousands of CFM of raw outside air that the MAU should be handling. Repair typically costs $300-800.' },
+      { question: 'How do I know if my restaurant makeup air unit is broken?', answer: 'Signs include: kitchen freezing in winter despite heat running, front door extremely hard to open, pilot lights blowing out, whistling from doors and gaps, energy bills much higher than expected, and poor hood capture even though the exhaust fan is running.' },
+    ],
+  },
+  {
+    slug: 'restaurant-kitchen-too-hot-air-balance',
+    title: 'Why Is My Restaurant Kitchen So Hot? The Air Balance Problem Nobody Talks About',
+    description: 'Your kitchen is 100°F+ and your staff is miserable. The problem probably isn\'t your AC — it\'s your ventilation balance.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '5 min',
+    content: `Every summer, restaurant owners call HVAC companies complaining their kitchen is too hot. The HVAC company checks the rooftop unit, maybe adds some refrigerant, and hands over a $500 bill. The kitchen is still hot.
+
+The problem usually isn\'t the AC. It\'s the air balance between your exhaust hood and makeup air system.
+
+## Why Kitchens Get So Hot
+
+Commercial kitchens generate massive amounts of heat — fryers at 375°F, ovens at 450°F, charbroilers over 600°F, steam tables, dishwashers. The exhaust hood is supposed to capture that heat and pull it out through the roof.
+
+But the hood can only capture heat that rises into it. If the airflow pattern is disrupted — by a broken makeup air unit, an unbalanced supply, or turbulence from a poorly positioned air curtain — the heat escapes into the kitchen instead of going up the hood.
+
+## The Three Most Common Causes
+
+### 1. Makeup Air Unit Blowing Directly at the Hood
+If the MAU supply air is aimed at the hood face or cooking surface, it disrupts the natural thermal plume rising from the cooking equipment. The hot air and smoke scatter instead of being captured. The heat stays in the kitchen.
+
+**Fix:** Adjust MAU discharge direction, reduce velocity, or reposition supply diffusers.
+
+### 2. Too Much Supply Air (Positive Pressure)
+When the MAU supplies more air than the exhaust removes, the kitchen goes positive. Hot kitchen air can\'t flow into the exhaust — it pushes outward into the dining room and recirculates in the kitchen. The hood captures less.
+
+**Fix:** Reduce MAU fan speed or open exhaust dampers to restore proper 80% supply-to-exhaust ratio.
+
+### 3. Exhaust Not Pulling Enough Air
+The exhaust fan may be running but not moving enough air — worn belts, dirty fan wheel, or dampers partially closed. The hood looks like it\'s working but it\'s only pulling 60-70% of design CFM.
+
+**Fix:** Exhaust fan service — belt replacement, fan cleaning, damper adjustment. Then rebalance the system.
+
+## How to Tell If It\'s an Air Balance Problem
+
+- The kitchen is hot but the dining room is comfortable (or smells like the kitchen)
+- The hood is running but you can see heat haze or light smoke escaping
+- The HVAC company says your AC is working fine
+- Adding more AC doesn\'t help
+- The problem is worse during peak cooking hours
+- Staff standing directly under the hood are the hottest
+
+## The Solution Is a One-Time Air Balance
+
+A qualified technician measures your exhaust CFM, supply CFM, face velocity at the hood, and runs a smoke capture test. Then adjusts dampers and fan speeds until the system is balanced. Takes 3-4 hours for a single hood system.
+
+Once balanced, the hood captures the heat, the kitchen temperature drops, and the AC can actually keep up because it\'s not fighting thousands of CFM of misrouted hot air.
+
+**True Commercial Service provides kitchen air balancing for restaurants across Union County, NJ. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**`,
+    faqs: [
+      { question: 'Why is my restaurant kitchen so hot even with AC running?', answer: 'The most common cause is an unbalanced kitchen ventilation system. If the exhaust hood is not capturing heat properly — due to too much or misdirected makeup air, or insufficient exhaust — heat escapes into the kitchen. The AC cannot compensate for a ventilation problem. Air balancing the hood system typically solves it.' },
+      { question: 'Can air balancing reduce kitchen temperature?', answer: 'Yes. Proper air balancing ensures the exhaust hood captures the thermal plume from cooking equipment. Once the heat is going up the hood instead of into the kitchen, temperatures drop significantly and the AC can maintain comfortable conditions.' },
+      { question: 'How much does it cost to fix a hot restaurant kitchen?', answer: 'If the cause is air balance (which it usually is), a single hood system balance costs $1,200. This is a one-time service that typically resolves the problem permanently. Compare that to repeated HVAC service calls that do not fix the root cause.' },
+    ],
+  },
+  {
+    slug: 'captiveaire-hood-service-nj',
+    title: 'CaptiveAire Hood Service in NJ — Balancing, Fans, and Makeup Air',
+    description: 'CaptiveAire is the most common kitchen hood in NJ. Here\'s what service they need and who actually does it.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '5 min',
+    content: `CaptiveAire is the dominant commercial kitchen hood manufacturer in the United States — an estimated 40-60% of new hood installations use their systems. If you own a restaurant, hotel, or institutional kitchen in New Jersey, there\'s a good chance you have a CaptiveAire hood on your roof.
+
+CaptiveAire builds great equipment. But they sell it through manufacturer\'s reps and authorized dealers — they don\'t maintain it. Once your hood is installed, service and maintenance falls to third-party companies. And most HVAC companies don\'t specialize in kitchen ventilation.
+
+## What CaptiveAire Hoods Need
+
+### Air Balancing (After Installation and Periodically)
+Every CaptiveAire hood system should be tested and balanced after installation and after any changes to the kitchen — new equipment, hood modifications, or MAU replacement. The hood is designed for a specific CFM at a specific face velocity. If the system isn\'t balanced to those specs, capture and containment suffer.
+
+CaptiveAire hoods use baffle or Captrate filters. Air volume is measured using a VelGrid (with built-in standoff that sits on the filter) or a rotating vane anemometer held 2 inches from the filter face. Each filter gets multiple velocity readings, then CFM is calculated using the filter\'s conversion factor.
+
+### Exhaust Fan Maintenance
+CaptiveAire exhaust fans — upblast models are the most common — need regular belt checks, bearing lubrication, and fan wheel cleaning. A dirty fan wheel is the most common reason a CaptiveAire hood underperforms. Grease buildup adds weight, reduces efficiency, and creates vibration that destroys bearings.
+
+### Makeup Air Unit Service
+CaptiveAire MAUs need filter changes every 1-3 months, burner inspection annually, belt and motor checks, and controls verification. The MAU should deliver approximately 80% of the hood\'s exhaust volume as tempered air. When it doesn\'t, the kitchen suffers.
+
+### Demand Control Ventilation (DCV)
+Many newer CaptiveAire systems include or can be upgraded with demand control ventilation — sensors that modulate fan speed based on cooking activity. Instead of running the exhaust at full blast all day, the system ramps up during peak cooking and slows down during idle periods. This saves 30-60% of fan energy and reduces HVAC load significantly.
+
+## What CaptiveAire Hood Service Costs
+
+| Service | Typical Cost |
+|---------|-------------|
+| Air balancing (1 hood system) | $1,200 |
+| Air balancing (2 hood systems) | $2,000 |
+| Exhaust fan belt replacement | $150-300 |
+| Exhaust fan motor replacement | $400-800 |
+| Fan wheel cleaning | $150-300 |
+| MAU filter change | $50-150 |
+| MAU burner service | $300-500 |
+| Full system balance + maintenance | $1,500-2,500 |
+
+## Who Services CaptiveAire Hoods in NJ?
+
+Most general HVAC contractors will tell you they can service kitchen hoods. But kitchen ventilation is specialized — the instruments, the measurement methods, the K-factors, and the understanding of how exhaust and supply interact are different from standard commercial HVAC work.
+
+**True Commercial Service specializes in CaptiveAire and all major kitchen hood brands. We carry VelGrid instruments, understand the filter conversion factors, and have hands-on experience commissioning CaptiveAire systems from new. Serving Union County, NJ and the NYC metro.**`,
+    faqs: [
+      { question: 'Does CaptiveAire do their own service and maintenance?', answer: 'No. CaptiveAire manufactures and sells equipment through reps and dealers, but they do not have a service workforce for ongoing maintenance and repair. Third-party service companies handle all maintenance, air balancing, fan repair, and MAU service on CaptiveAire systems.' },
+      { question: 'How often should a CaptiveAire hood system be serviced?', answer: 'Exhaust fan belts should be checked quarterly. MAU filters should be changed every 1-3 months. A full air balance should be done after installation, after any kitchen changes, and at least annually. Fan wheel cleaning should coincide with hood cleaning schedules.' },
+      { question: 'What instruments are used to test a CaptiveAire hood?', answer: 'A VelGrid with built-in standoff that sits on top of the baffle or Captrate filters, or a rotating vane anemometer held 2 inches from the filter face. Multiple velocity readings per filter are averaged and multiplied by the filter conversion factor to calculate CFM.' },
+    ],
+  },
+  {
+    slug: 'kitchen-negative-pressure-causes-costs-fix',
+    title: 'Commercial Kitchen Negative Pressure: Causes, Costs, and How to Fix It',
+    description: 'Doors hard to open? Pilot lights blowing out? Cold drafts in winter? Your kitchen has a negative pressure problem — and it\'s costing you thousands.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '5 min',
+    content: `Commercial kitchens are designed to operate at slight negative pressure — air flows from the dining room into the kitchen, keeping cooking smells and grease out of the front of house. But there\'s a difference between slight negative pressure (by design) and severe negative pressure (a problem).
+
+## What Causes Severe Negative Pressure?
+
+The exhaust hood pulls air out. The makeup air unit pushes tempered air in. The difference is the infiltration — outside air that enters through doors, gaps, and openings. This is normal.
+
+The problem happens when the infiltration becomes excessive:
+
+- **MAU not working** — all replacement air comes from infiltration
+- **MAU undersized** — was designed for an older, smaller hood
+- **MAU running at reduced capacity** — dirty filters, worn belt, failed burner
+- **Exhaust increased** — new hood added or existing fan speed increased without matching supply
+- **Building sealed too tight** — renovation closed off natural infiltration paths
+
+## The Real Cost of Excessive Negative Pressure
+
+A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in Elizabeth, NJ:
+
+| Season | Outside Air Temp | Building HVAC Cost |
+|--------|-----------------|-------------------|
+| Winter (7 months) | 35°F avg | $4,200/year in gas |
+| Summer (4 months) | 90°F avg | $1,060/year in electric |
+| **Annual waste** | | **$5,260/year** |
+
+That\'s just energy. Add the operational costs:
+- **Staff discomfort** — cooks in a freezing kitchen in winter, sweltering in summer
+- **Equipment stress** — pilot lights blowing out, gas equipment cycling erratically
+- **Customer impact** — cold drafts from the front door, uncomfortable dining room
+- **Door damage** — the constant suction warps door frames and wears out closers
+
+## How to Test for Negative Pressure
+
+**The door test:** If your front door is noticeably hard to open (pulls toward you when you try to push it open from outside), you have negative pressure. The harder it is, the worse the imbalance.
+
+**The smoke test:** Light a smoke pencil near the door threshold. If the smoke gets sucked in forcefully, the kitchen is under significant negative pressure.
+
+**The professional test:** A manometer reading of the kitchen vs. the dining room quantifies the pressure differential. NFPA 96 says negative pressure should not exceed 0.02 inches water gauge.
+
+## How to Fix It
+
+1. **Check the MAU first** — is it running? Is it delivering air? Change the filters.
+2. **Measure the actual CFM** — use a VelGrid or anemometer to verify exhaust and supply volumes.
+3. **Balance the system** — adjust dampers, fan speeds, and MAU settings to achieve 80-90% supply-to-exhaust ratio.
+4. **If the MAU is undersized** — it may need to be replaced with a properly sized unit.
+
+A one-time air balance costs $1,200 for a single hood system and typically resolves the problem permanently. The $1,200 service saves $5,000+/year in energy — payback in under 3 months.
+
+**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Union County, NJ. One visit, real measurements, permanent fix.**`,
+    faqs: [
+      { question: 'What causes negative pressure in a commercial kitchen?', answer: 'Negative pressure occurs when the exhaust hood pulls more air out of the kitchen than the makeup air unit supplies. The most common cause is a broken or undersized makeup air unit. The building sucks in raw outside air through doors, gaps, and cracks to make up the difference.' },
+      { question: 'How much does negative pressure cost a restaurant?', answer: 'For a typical restaurant hood system, a completely failed makeup air unit can waste over $5,000 per year in excess heating and cooling costs. The building HVAC has to condition all the raw outside air being sucked in through the building envelope.' },
+      { question: 'How do you fix negative pressure in a restaurant kitchen?', answer: 'First, verify the makeup air unit is running and delivering its design airflow. Then measure exhaust and supply CFM and balance the system to an 80-90% supply-to-exhaust ratio. This usually involves adjusting dampers and fan speeds. A single hood system balance costs $1,200.' },
+    ],
+  },
+  {
+    slug: 'kitchen-air-balancing-cost-nj-pricing',
+    title: 'How Much Does Kitchen Air Balancing Cost? NJ Pricing Guide',
+    description: 'Transparent pricing for kitchen air balancing in New Jersey. What you get, what it costs, and how fast it pays for itself.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '4 min',
+    content: `If you\'re shopping for kitchen air balancing in New Jersey, here\'s what you should expect to pay — and what you should get for that price.
+
+## Kitchen Air Balancing Pricing
+
+| System Size | Price | What\'s Included |
+|------------|-------|-----------------|
+| 1 hood / 1 exhaust fan | $1,200 | Full CFM measurement (exhaust + supply), damper adjustment, MAU verification, smoke capture test, written balance report, energy assessment |
+| 2 hoods / 2 exhaust fans | $2,000 | Everything above for both hoods, plus cross-system balancing and coordinated fan speed adjustment |
+| 3+ hoods (hotel/institutional) | $2,500+ | Full kitchen balance, multiple MAU coordination, demand control evaluation, detailed engineering report, energy savings projection |
+
+## What\'s NOT Included (But You Might Need)
+
+| Additional Service | Cost |
+|-------------------|------|
+| Exhaust fan belt replacement | $150-300 |
+| Exhaust fan motor replacement | $400-800 |
+| Fan wheel cleaning | $150-300 |
+| MAU filter replacement | $50-150 |
+| MAU burner repair | $300-500 |
+| MAU motor/belt replacement | $300-600 |
+
+If we find a broken component during the balance, we\'ll tell you before we fix it. No surprises.
+
+## How Fast Does It Pay for Itself?
+
+The energy savings from proper air balancing depend on how far out of spec your system is:
+
+| Scenario | Annual Energy Waste | Payback on $1,200 Service |
+|----------|-------------------|---------------------------|
+| MAU slightly underperforming (80% of design) | ~$525/year | 27 months |
+| MAU significantly low (50% of design) | ~$2,630/year | 5.5 months |
+| MAU not working at all | ~$5,260/year | 2.7 months |
+
+These numbers are based on a 10-foot, 2,750 CFM hood system in Elizabeth, NJ using PSE&G commercial rates. Your numbers may vary — we include an energy assessment with every air balance so you see your specific savings.
+
+## What You Should Get in a Balance Report
+
+A professional air balance report should include:
+- Exhaust CFM per hood (measured, not estimated)
+- Supply CFM per makeup air unit
+- Supply-to-exhaust ratio
+- Face velocity readings at the hood
+- Smoke capture test results (pass/fail)
+- Before and after readings (if adjustments were made)
+- Energy waste estimate
+- Recommendations for any needed repairs
+
+If a company gives you a number without showing you the data, they didn\'t actually balance anything.
+
+## Why Per-System Pricing (Not Hourly)
+
+We charge per hood system, not by the hour. You know the cost before we show up. A 1-hood restaurant pays $1,200 whether the balance takes 3 hours or 5. We don\'t benefit from taking longer.
+
+Hourly pricing incentivizes slow work. Per-system pricing incentivizes getting it right and moving on.
+
+**True Commercial Service provides transparent, per-system air balancing for commercial kitchens across Union County, NJ. No hidden fees. Written report with real numbers. Schedule at choosetrue.com.**`,
+    faqs: [
+      { question: 'How much does kitchen air balancing cost in New Jersey?', answer: 'A single hood system costs $1,200. Two hood systems cost $2,000. Three or more hoods start at $2,500. Pricing is per system, not hourly. The cost includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.' },
+      { question: 'Is kitchen air balancing worth the cost?', answer: 'Yes. A restaurant with a makeup air unit running at 50% of design is wasting approximately $2,630 per year in excess energy costs. The $1,200 air balance pays for itself in about 5.5 months. If the MAU is completely down, payback is under 3 months.' },
+      { question: 'What should a kitchen air balance report include?', answer: 'A professional report should include measured exhaust CFM per hood, supply CFM per makeup air unit, supply-to-exhaust ratio, face velocity readings, smoke capture test results, before/after readings if adjustments were made, energy waste estimate, and repair recommendations.' },
+    ],
+  },
+  {
+    slug: 'exhaust-fan-making-noise-causes',
+    title: 'Exhaust Fan Making Noise? 5 Causes and When to Call for Service',
+    description: 'Your kitchen exhaust fan is squealing, grinding, or vibrating. Here\'s what each noise means and how urgent it is.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '4 min',
+    content: `A noisy exhaust fan isn\'t just annoying — it\'s telling you something is about to fail. Here\'s how to decode the sounds coming from your roof.
+
+## 1. Squealing or Screeching
+
+**What it means:** Belt slipping or worn. The belt is loose, glazed, or cracking. It\'s still technically working but losing grip — your exhaust CFM is dropping.
+
+**Urgency:** Medium. The belt will snap within days to weeks. Schedule service this week.
+
+**Fix:** Belt replacement. $150-300.
+
+## 2. Grinding or Rumbling
+
+**What it means:** Bearings are failing. Metal-on-metal contact inside the bearing housing. If you can feel vibration through the roof or hood, it\'s advanced.
+
+**Urgency:** High. Failed bearings seize the shaft, which burns out the motor — turning a $200 bearing job into an $800 motor job. Call today.
+
+**Fix:** Bearing replacement. $200-400. If you wait, motor replacement: $400-800.
+
+## 3. Loud Vibration or Rattling
+
+**What it means:** Fan wheel is out of balance. Usually caused by grease buildup on one side of the wheel, a broken blade, or loose mounting hardware. The vibration damages bearings, loosens ductwork connections, and can crack the fan housing.
+
+**Urgency:** High. Unbalanced vibration causes cascading failures. Schedule within a few days.
+
+**Fix:** Fan wheel cleaning and rebalancing, or blade repair. $150-400. Check mounting bolts while you\'re up there.
+
+## 4. Clicking or Tapping
+
+**What it means:** Something is hitting the fan blade — a loose piece of grease, a foreign object, or a blade rubbing the housing. Could also be a failing contactor or relay clicking on and off.
+
+**Urgency:** Medium-low if intermittent, high if constant.
+
+**Fix:** Inspection and foreign object removal. If it\'s a contactor, electrical repair: $200-400.
+
+## 5. Humming but Not Spinning
+
+**What it means:** The motor is getting power but the shaft isn\'t turning. Either the belt is completely broken (most common), the motor capacitor has failed, or the motor windings are burned.
+
+**Urgency:** Critical. Your exhaust is not working. No air is being removed from the kitchen. This is an emergency.
+
+**Fix:** Belt replacement ($150-300), capacitor replacement ($150-250), or motor replacement ($400-800).
+
+## The Bottom Line
+
+Every noise is a warning. The repair cost goes up the longer you wait:
+
+| Timing | Typical Cost |
+|--------|-------------|
+| Fix at first noise | $150-300 |
+| Wait a few weeks | $400-600 |
+| Wait until it fails completely | $600-1,200+ |
+
+The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. A $200 belt replacement today saves an $800 motor replacement next month.
+
+**True Commercial Service provides same-day exhaust fan diagnosis and repair across Union County, NJ. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**`,
+    faqs: [
+      { question: 'Why is my kitchen exhaust fan making a squealing noise?', answer: 'A squealing or screeching exhaust fan almost always means the drive belt is slipping, worn, or glazed. The belt is still working but losing grip. It will snap within days to weeks. Belt replacement costs $150-300 and takes about 30 minutes.' },
+      { question: 'Is a noisy exhaust fan an emergency?', answer: 'It depends on the noise. A humming motor that is not spinning is an emergency — your exhaust is not working. Grinding or heavy vibration is urgent — call within 24 hours. Squealing is medium urgency — schedule within the week. All noises mean something is about to fail.' },
+      { question: 'How much does exhaust fan repair cost?', answer: 'Belt replacement costs $150-300. Bearing replacement costs $200-400. Motor replacement costs $400-800. Fan wheel cleaning and rebalancing costs $150-400. The cost goes up the longer you wait — a $200 belt job becomes an $800 motor job if the belt snaps and the motor overheats.' },
+    ],
+  },
+  {
+    slug: 'dining-room-smells-like-kitchen-ventilation',
+    title: 'Restaurant Dining Room Smells Like the Kitchen — It\'s a Ventilation Problem',
+    description: 'Customers complaining about kitchen smells in the dining room? The cause is almost always a kitchen air balance issue. Here\'s how to fix it.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '4 min',
+    content: `When customers can smell the kitchen from the dining room, it\'s not a cleaning problem — it\'s an airflow problem. Cooking odors, grease, and smoke should stay in the kitchen and go up the exhaust hood. If they\'re reaching the dining room, your ventilation system is pushing them there.
+
+## Why Kitchen Air Reaches the Dining Room
+
+There\'s one fundamental cause: **positive pressure in the kitchen**. When more air is being pushed into the kitchen than is being pulled out, the excess air — carrying cooking odors, grease particles, and heat — flows outward into the dining room.
+
+This happens when:
+
+### The Makeup Air Unit Is Oversupplying
+The MAU is delivering more CFM than the exhaust removes. The kitchen becomes positively pressured and pushes air out through every opening — the pass-through window, the swinging doors, the gaps around the hood.
+
+**Common cause:** MAU was never balanced after installation, or the exhaust fan has lost capacity (dirty fan wheel, slipping belt) while the MAU continues at full output.
+
+### The Exhaust Hood Isn\'t Capturing
+Even with correct CFM numbers, if the supply air is disrupting the hood\'s capture zone, cooking effluent escapes. A makeup air plenum blowing directly at the hood face scatters the thermal plume. The grease and smoke go sideways instead of up.
+
+### The Dining Room Has Negative Pressure
+If the dining room HVAC is pulling more air out (via return ducts, restroom exhaust) than it\'s supplying, the dining room goes negative and sucks kitchen air in. This isn\'t a kitchen problem — it\'s a building-wide air balance issue.
+
+## How to Diagnose It
+
+**Smoke pencil test at the kitchen-dining room boundary:** Hold a smoke pencil at the pass-through window, the swinging door, or any opening between the two spaces. If smoke flows from kitchen to dining room, the kitchen is positive. If it flows the other direction, the dining room is negative.
+
+**The door test:** Do the swinging kitchen doors swing toward the dining room on their own? Kitchen is positive. Do they swing toward the kitchen? Kitchen is properly negative.
+
+## How to Fix It
+
+1. **Measure exhaust and supply CFM** — verify the actual volumes, not just whether the equipment is running
+2. **Check the supply-to-exhaust ratio** — it should be 80-90%. Above 90% and you risk positive pressure.
+3. **Run a smoke capture test** — verify the hood is actually capturing with the MAU running
+4. **Adjust as needed** — reduce MAU output, increase exhaust, or redirect supply air away from the hood face
+5. **Check the dining room HVAC** — make sure it\'s not creating its own negative pressure
+
+## The Business Cost of Kitchen Smells
+
+This isn\'t just a comfort issue:
+- **Online reviews mention it.** "Great food but the whole restaurant smells like a fryer" kills your rating.
+- **Repeat customers notice.** They might not say anything — they just don\'t come back.
+- **Health inspectors notice.** Visible smoke or grease migration from the hood is a violation.
+
+One air balance visit — $1,200 for a single hood system — fixes the root cause permanently.
+
+**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Union County, NJ restaurants, hotels, and commercial kitchens.**`,
+    faqs: [
+      { question: 'Why does my dining room smell like the kitchen?', answer: 'The kitchen is under positive pressure — more air is being pushed in by the makeup air unit than is being pulled out by the exhaust. The excess air carries cooking odors, grease, and heat into the dining room. This is caused by an unbalanced ventilation system.' },
+      { question: 'How do you stop kitchen smells from reaching the dining room?', answer: 'Balance the kitchen ventilation so the supply-to-exhaust ratio is 80-90%. This maintains slight negative pressure in the kitchen, pulling dining room air in rather than pushing kitchen air out. A professional air balance costs $1,200 for a single hood system.' },
+      { question: 'Is kitchen smell in the dining room a health code violation?', answer: 'Visible smoke or grease migration from the kitchen hood can be cited as a violation. Even if not formally cited, health inspectors note ventilation issues. Proper air balancing ensures the hood captures cooking effluent and the kitchen maintains appropriate negative pressure.' },
+    ],
+  },
+  {
+    slug: 'kitchen-hood-not-capturing-smoke',
+    title: 'Kitchen Hood Not Capturing Smoke — What\'s Wrong and How to Fix It',
+    description: 'Smoke is escaping your kitchen hood even though the fan is running. The 4 most common causes and what each fix costs.',
+    date: '2026-03-28',
+    category: 'Ventilation',
+    readTime: '5 min',
+    content: `Your exhaust fan is running. The hood looks fine. But smoke is escaping — billowing out from under the hood, drifting across the cooking line, or migrating into the dining room. Here\'s what\'s actually wrong.
+
+## The 4 Most Common Causes
+
+### 1. Exhaust CFM Is Too Low
+The most common cause. The hood was designed for a specific CFM — say 2,750 for a 10-foot hood. But the actual exhaust has dropped due to:
+- **Dirty fan wheel** — grease buildup reduces efficiency by 20-40%
+- **Slipping belt** — fan turns slower than it should
+- **Worn bearings** — increased drag slows the fan
+- **Damper partially closed** — someone closed it and forgot
+- **Dirty filters** — restricted airflow (less common with baffles)
+
+**Test:** Measure actual exhaust CFM with a VelGrid or anemometer. Compare to the hood\'s design CFM (usually on the UL nameplate inside the hood). If measured is more than 10% below design, the exhaust system needs service.
+
+**Fix:** Fan service (belt, wheel cleaning, bearing) or damper adjustment. $150-800 depending on what\'s needed.
+
+### 2. Makeup Air Disrupting Capture
+The supply air from the makeup air unit is hitting the cooking surface or the hood face at too high a velocity. This scatters the thermal plume — the column of hot air and smoke rising from the cooking — and pushes it out from under the hood instead of into it.
+
+**Test:** Run a smoke pencil test with the MAU on vs. off. If capture improves dramatically when the MAU is off, the supply air direction or velocity is the problem.
+
+**Fix:** Redirect supply air diffusers, reduce MAU fan speed, or adjust dampers. May require a full air balance. $1,200.
+
+### 3. Insufficient Overhang
+The hood doesn\'t extend far enough past the cooking equipment. Smoke rises at an angle — not straight up — especially from equipment at the front of the cooking line. If the hood doesn\'t overhang the equipment by at least 6 inches on exposed sides, smoke escapes before reaching the capture zone.
+
+**Test:** Look at where the smoke escapes. If it\'s always from the front edge of the hood, overhang is likely insufficient.
+
+**Fix:** This is a design issue. Options include adding an air curtain, extending the hood with a front extension panel, or repositioning the cooking equipment further under the hood.
+
+### 4. Cross-Drafts
+Air movement from HVAC supply registers, open doors, pass-through windows, or even foot traffic creates cross-drafts that push cooking effluent out from under the hood. Walk-in doors near the cooking line are a common culprit.
+
+**Test:** Observe when capture fails. Is it when the back door opens? When the HVAC kicks on? When servers pass by? The pattern reveals the source.
+
+**Fix:** Redirect HVAC registers away from the hood area, install strip curtains on walk-in doors near the line, or add side panels to the hood.
+
+## The Smoke Pencil Test
+
+This is the definitive field test. Hold a smoke pencil at the front edge of the hood at cooking height. The smoke should be captured immediately and pulled into the hood. If it drifts, billows outward, or stalls — the hood is not capturing.
+
+Every air balance we do includes a smoke capture test as the final verification. Numbers on a report mean nothing if the smoke test fails.
+
+## What It Costs to Fix
+
+| Cause | Fix | Cost |
+|-------|-----|------|
+| Low exhaust CFM | Fan service + rebalance | $300-1,200 |
+| MAU disrupting capture | Air balance + damper adjustment | $1,200 |
+| Insufficient overhang | Air curtain or hood extension | $1,500-3,000 |
+| Cross-drafts | Register redirect + side panels | $500-1,500 |
+
+Most smoke capture problems are cause #1 or #2 — and both are fixed with a single air balance visit.
+
+**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Union County, NJ. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**`,
+    faqs: [
+      { question: 'Why is smoke escaping my kitchen hood?', answer: 'The four most common causes are: exhaust CFM too low (dirty fan wheel, slipping belt, closed damper), makeup air disrupting the hood capture zone, insufficient hood overhang, or cross-drafts from HVAC or doors. The first two causes account for the majority of cases and are fixed with air balancing.' },
+      { question: 'How do you test if a kitchen hood is capturing properly?', answer: 'A smoke pencil test is the definitive field test. Hold a smoke pencil at the front edge of the hood at cooking height. The smoke should be captured immediately. If it drifts outward or stalls, the hood is not capturing. This test is included with every air balance.' },
+      { question: 'How much does it cost to fix a kitchen hood that is not capturing smoke?', answer: 'Most capture problems are caused by low exhaust CFM or improper makeup air, both fixed with an air balance ($1,200 for a single hood). If the exhaust fan needs service (belt, motor, cleaning), add $150-800. Physical modifications like air curtains cost $1,500-3,000.' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
