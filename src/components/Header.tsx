@@ -49,7 +49,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <Image src="/images/logo.png" alt="True Commercial Service" width={160} height={48} className="h-10 w-auto" priority />
+              <Image src="/images/logo.png" alt="True Commercial Service" width={220} height={60} className="h-12 lg:h-14 w-auto" priority />
             </Link>
 
             {/* Desktop nav */}

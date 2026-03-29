@@ -11,12 +11,17 @@ export const metadata: Metadata = {
   },
   description: 'Commercial kitchen equipment repair serving Union County, NJ and surrounding areas. Refrigeration, cooking, ventilation, ice machines, espresso. 24/7 emergency service.',
   keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Union County NJ', 'Elizabeth NJ', 'Newark NJ', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service'],
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'True Commercial Service | Commercial Kitchen Equipment Repair',
     description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
+    images: [{ url: 'https://choosetrue.com/images/logo.png' }],
   },
 };
 
