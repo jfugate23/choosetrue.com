@@ -40,11 +40,11 @@ export default function PollutionControlPage() {
           <Reveal>
             <p className="text-red-400 text-sm font-semibold uppercase tracking-wider mb-4">NYC Local Law 38 Compliance</p>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight max-w-4xl">
-              Your ESP isn&apos;t maintained?
-              <span className="text-red-400"> That&apos;s a $10,000 fine.</span>
+              Keep your kitchen compliant.
+              <span className="text-amber-400"> We handle the paperwork.</span>
             </h1>
             <p className="mt-6 text-xl text-slate-400 max-w-2xl leading-relaxed">
-              NYC requires every restaurant with charbroiling, grilling, or frying to maintain a functioning pollution control unit. No maintenance logs? No working ESP? The DEP writes the ticket — $1,000 to $10,000+ per violation.
+              NYC Local Law 38 requires restaurants to maintain pollution control equipment and keep documented service logs. We clean your ESP, service your ecology unit, and provide the professional maintenance records that protect you during a DEP inspection.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-xl cta-glow transition-all">
@@ -142,7 +142,7 @@ export default function PollutionControlPage() {
 
       {/* Pricing */}
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Pricing" title="Transparent ESP service pricing" description="Compare the cost of maintenance vs the cost of a DEP fine." />
+        <SectionHeading eyebrow="Pricing" title="Transparent ESP service pricing" description="Simple per-visit or quarterly contract pricing. Every visit includes a documented service report for your compliance records." />
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Reveal>
             <div className="glass-card rounded-2xl p-8 text-center h-full">
@@ -176,16 +176,16 @@ export default function PollutionControlPage() {
             </div>
           </Reveal>
           <Reveal delay={160}>
-            <div className="glass-card rounded-2xl p-8 text-center h-full bg-red-500/5 border-red-500/20">
-              <h3 className="text-lg font-semibold mb-1 text-red-400">DEP Fine</h3>
-              <p className="text-xs text-slate-500 mb-4">What it costs to NOT maintain</p>
-              <p className="text-3xl font-bold text-red-400 mb-4">$1,000-10,000+</p>
+            <div className="glass-card rounded-2xl p-8 text-center h-full">
+              <h3 className="text-lg font-semibold mb-1">Why It Matters</h3>
+              <p className="text-xs text-slate-500 mb-4">What DEP looks for during inspections</p>
+              <p className="text-3xl font-bold text-slate-300 mb-4">Your Records</p>
               <ul className="space-y-2 text-xs text-slate-400 text-left">
-                <li className="flex items-center gap-2"><AlertTriangle className="w-3 h-3 text-red-400" />Per violation, per inspection</li>
-                <li className="flex items-center gap-2"><AlertTriangle className="w-3 h-3 text-red-400" />Repeat violations escalate</li>
-                <li className="flex items-center gap-2"><AlertTriangle className="w-3 h-3 text-red-400" />No maintenance log = violation</li>
-                <li className="flex items-center gap-2"><AlertTriangle className="w-3 h-3 text-red-400" />Neighbor complaints = inspection</li>
-                <li className="flex items-center gap-2"><AlertTriangle className="w-3 h-3 text-red-400" />Can require equipment shutdown</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Dated service logs on-site</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Working unit with green indicator</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Equipment registered with DEP</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />We provide all documentation</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Fines: $1K-$10K+ without records</li>
               </ul>
             </div>
           </Reveal>
@@ -292,7 +292,7 @@ export default function PollutionControlPage() {
       {/* CTA + Form */}
       <Section>
         <div className="max-w-2xl mx-auto">
-          <SectionHeading eyebrow="Get Started" title="Don't wait for the DEP to show up" description="Schedule your ESP service now. Stay compliant. Avoid the fines." />
+          <SectionHeading eyebrow="Get Started" title="Stay compliant, stay open" description="Schedule your ESP service and let us handle the maintenance documentation." />
           <div className="glass-card rounded-2xl p-6 lg:p-8">
             <ServiceForm />
           </div>
