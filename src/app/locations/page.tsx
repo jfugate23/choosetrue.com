@@ -6,7 +6,7 @@ import { PageHero, Section, Reveal } from '@/components/UI';
 
 export const metadata: Metadata = {
   title: 'Service Locations',
-  description: 'True Commercial Service locations: Oklahoma City OK, Northern NJ/NYC, and Atlanta GA. Commercial kitchen equipment repair near you.',
+  description: 'True Commercial Service locations: Northern NJ, NYC, Connecticut, and Atlanta GA. Commercial kitchen ventilation and equipment repair near you.',
 };
 
 export default function LocationsPage() {

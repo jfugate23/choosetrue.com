@@ -33,7 +33,7 @@ export default function Header() {
         <div className="hidden lg:block border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
             <div className="flex items-center gap-6 text-slate-400">
-              <span>Serving OKC Metro &bull; Northern NJ &bull; Atlanta</span>
+              <span>Serving Northern NJ &bull; NYC &bull; Connecticut &bull; Atlanta</span>
             </div>
             <div className="flex items-center gap-4">
               <a href={COMPANY.emergencyPhoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">
@@ -49,7 +49,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <Image src="/images/logo.png" alt="True Commercial Service" width={220} height={60} className="h-12 lg:h-14 w-auto" priority />
+              <Image src="/images/logo.png" alt="True Commercial Service" width={280} height={70} className="h-12 lg:h-16 w-auto" priority />
             </Link>
 
             {/* Desktop nav */}

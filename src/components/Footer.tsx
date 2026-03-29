@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-block mb-4">
-              <Image src="/images/logo.png" alt="True Commercial Service" width={140} height={42} className="h-9 w-auto" />
+              <Image src="/images/logo.png" alt="True Commercial Service" width={200} height={56} className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               Tech-forward commercial kitchen equipment repair. Built by operators, for operators.

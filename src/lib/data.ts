@@ -7,7 +7,7 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+14055558248',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair company serving Oklahoma City, Northern New Jersey, and Atlanta.',
+  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Northern New Jersey, New York City, Connecticut, and Atlanta.',
 };
 
 export const SERVICES = [
@@ -84,84 +84,12 @@ export const SERVICES = [
 ];
 
 export const LOCATIONS = [
-  // ─── OKC METRO ────────────────────────────────────────────────
-  {
-    slug: 'oklahoma-city',
-    city: 'Oklahoma City',
-    state: 'OK',
-    status: 'active' as const,
-    tagline: 'Serving the OKC Metro and Central Oklahoma',
-    phone: '(405) 555-8247',
-    phoneHref: 'tel:+14055558247',
-    serviceArea: ['Oklahoma City', 'Norman', 'Edmond', 'Moore', 'Midwest City', 'Del City', 'Yukon', 'Mustang', 'Bethany', 'Stillwater', 'Shawnee'],
-    description: 'True Commercial Service is Oklahoma City\'s premier commercial kitchen equipment repair provider. From Bricktown restaurants to campus dining at OU and OSU, we keep commercial kitchens running across Central Oklahoma.',
-    seoTitle: 'Oklahoma City Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Expert commercial kitchen equipment repair in Oklahoma City. Cooking, refrigeration, HVAC, and espresso machine service for restaurants, schools, and institutions across the OKC metro.',
-    seoKeyword: 'Oklahoma City commercial kitchen equipment repair',
-  },
-  {
-    slug: 'norman-ok',
-    city: 'Norman',
-    state: 'OK',
-    status: 'active' as const,
-    tagline: 'Serving Norman, OU Campus & South OKC Metro',
-    phone: '(405) 555-8247',
-    phoneHref: 'tel:+14055558247',
-    serviceArea: ['Norman', 'Moore', 'Noble', 'Purcell', 'Blanchard', 'Newcastle', 'Goldsby', 'Slaughterville', 'Lexington', 'South Oklahoma City'],
-    description: 'True Commercial Service provides fast, expert commercial kitchen equipment repair in Norman, OK. We serve Campus Corner restaurants, Lindsey Street food spots, university dining at OU, and every commercial kitchen in the Norman metro. Same-day response, factory-trained techs, and AI-powered diagnostics.',
-    seoTitle: 'Norman OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Norman OK. Fast response for restaurants, OU campus dining, and commercial kitchens. Refrigeration, cooking, HVAC, ice machines. 24/7 emergency service.',
-    seoKeyword: 'Norman OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'edmond-ok',
-    city: 'Edmond',
-    state: 'OK',
-    status: 'active' as const,
-    tagline: 'Serving Edmond, Deer Creek & North OKC Metro',
-    phone: '(405) 555-8247',
-    phoneHref: 'tel:+14055558247',
-    serviceArea: ['Edmond', 'Deer Creek', 'Arcadia', 'Guthrie', 'North Oklahoma City', 'The Village', 'Nichols Hills', 'Warr Acres', 'Bethany', 'Piedmont'],
-    description: 'True Commercial Service is Edmond\'s go-to commercial kitchen equipment repair company. From the UCO campus to the booming restaurant scene along Broadway and 2nd Street, we deliver fast, expert equipment repair with AI-powered diagnostics and same-day emergency response.',
-    seoTitle: 'Edmond OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Edmond OK. Expert service for restaurants, UCO campus dining, and commercial kitchens. Cooking, refrigeration, HVAC, espresso. 24/7 emergency.',
-    seoKeyword: 'Edmond OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'moore-ok',
-    city: 'Moore',
-    state: 'OK',
-    status: 'active' as const,
-    tagline: 'Serving Moore, South OKC & Mid-Del Area',
-    phone: '(405) 555-8247',
-    phoneHref: 'tel:+14055558247',
-    serviceArea: ['Moore', 'South Oklahoma City', 'Midwest City', 'Del City', 'Norman', 'Newcastle', 'Tinker AFB Area', 'Valley Brook', 'Oklahoma City'],
-    description: 'True Commercial Service delivers reliable commercial kitchen equipment repair in Moore, OK and the Mid-Del area. We serve restaurants along 19th Street, fast-food chains on I-35, and institutional kitchens across South OKC. Fast response, fair pricing, and techs who know your equipment.',
-    seoTitle: 'Moore OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Moore OK. Serving restaurants, chains, and commercial kitchens in Moore, Midwest City, Del City, and South OKC. 24/7 emergency service.',
-    seoKeyword: 'Moore OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'stillwater-ok',
-    city: 'Stillwater',
-    state: 'OK',
-    status: 'active' as const,
-    tagline: 'Serving Stillwater, OSU Campus & North Central OK',
-    phone: '(405) 555-8247',
-    phoneHref: 'tel:+14055558247',
-    serviceArea: ['Stillwater', 'Perkins', 'Cushing', 'Perry', 'Pawnee', 'Ripley', 'Glencoe', 'Yale', 'Drumright'],
-    description: 'True Commercial Service provides expert commercial kitchen equipment repair in Stillwater, OK. We keep the restaurants on The Strip, OSU campus dining halls, and commercial kitchens across Payne County running with fast response times and factory-trained technicians.',
-    seoTitle: 'Stillwater OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Stillwater OK. Serving restaurants, OSU campus dining, bars, and commercial kitchens. Cooking, refrigeration, HVAC, ice machines.',
-    seoKeyword: 'Stillwater OK commercial kitchen equipment repair',
-  },
-
   // ─── NORTHERN NJ / NYC METRO ──────────────────────────────────
   {
     slug: 'elizabeth-nj',
     city: 'Elizabeth',
     state: 'NJ',
-    status: 'coming-soon' as const,
+    status: 'active' as const,
     tagline: 'Serving Elizabeth, Union County & the NJ/NYC Metro',
     phone: '(908) 743-8688',
     phoneHref: 'tel:+19087438688',
@@ -328,6 +256,64 @@ export const LOCATIONS = [
     seoKeyword: 'Staten Island commercial kitchen equipment repair',
   },
 
+  // ─── CONNECTICUT ───────────────────────────────────────────────
+  {
+    slug: 'stamford-ct',
+    city: 'Stamford',
+    state: 'CT',
+    status: 'coming-soon' as const,
+    tagline: 'Serving Stamford, Greenwich & Fairfield County',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Stamford', 'Greenwich', 'Darien', 'New Canaan', 'Norwalk', 'Westport', 'Fairfield', 'Bridgeport', 'Cos Cob', 'Old Greenwich'],
+    description: 'True Commercial Service is bringing expert commercial kitchen ventilation and equipment repair to Stamford and Fairfield County. From the restaurants along Bedford Street to the hotel kitchens in Harbor Point, Stamford\'s growing food scene needs dedicated kitchen ventilation service.',
+    seoTitle: 'Stamford CT Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Stamford CT. Serving restaurants, hotels, and commercial kitchens across Fairfield County. Air balancing, ESP service, exhaust fans. 24/7 emergency.',
+    seoKeyword: 'Stamford CT commercial kitchen equipment repair',
+  },
+  {
+    slug: 'norwalk-ct',
+    city: 'Norwalk',
+    state: 'CT',
+    status: 'coming-soon' as const,
+    tagline: 'Serving Norwalk, Westport & Coastal Fairfield County',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Norwalk', 'Westport', 'Weston', 'Wilton', 'Ridgefield', 'Redding', 'Easton', 'SoNo District', 'Rowayton'],
+    description: 'True Commercial Service is expanding to Norwalk and coastal Fairfield County. The SoNo district\'s restaurant boom, Westport\'s dining scene, and the institutional kitchens throughout the area all need expert kitchen ventilation and equipment service.',
+    seoTitle: 'Norwalk CT Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Norwalk CT. Serving SoNo, Westport, and Fairfield County restaurants. Air balancing, ESP cleaning, exhaust fans.',
+    seoKeyword: 'Norwalk CT commercial kitchen equipment repair',
+  },
+  {
+    slug: 'bridgeport-ct',
+    city: 'Bridgeport',
+    state: 'CT',
+    status: 'coming-soon' as const,
+    tagline: 'Serving Bridgeport, Trumbull & Greater Bridgeport',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Bridgeport', 'Trumbull', 'Stratford', 'Shelton', 'Milford', 'Fairfield', 'Monroe', 'Easton', 'Black Rock'],
+    description: 'True Commercial Service is bringing kitchen ventilation expertise to Bridgeport and Greater Bridgeport. From downtown restaurants to the institutional kitchens at Bridgeport Hospital and Sacred Heart University, we deliver air balancing, ESP service, and equipment repair.',
+    seoTitle: 'Bridgeport CT Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Bridgeport CT. Serving restaurants, hospitals, and commercial kitchens. Air balancing, ESP service, exhaust fan repair.',
+    seoKeyword: 'Bridgeport CT commercial kitchen equipment repair',
+  },
+  {
+    slug: 'new-haven-ct',
+    city: 'New Haven',
+    state: 'CT',
+    status: 'coming-soon' as const,
+    tagline: 'Serving New Haven, Yale & the CT Shoreline',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['New Haven', 'West Haven', 'East Haven', 'Hamden', 'North Haven', 'Branford', 'Guilford', 'Madison', 'Orange', 'Woodbridge'],
+    description: 'True Commercial Service is expanding to New Haven — home to some of Connecticut\'s best restaurants, Yale University\'s dining operations, and the legendary pizza on Wooster Street. New Haven\'s diverse and growing food scene deserves expert kitchen ventilation service.',
+    seoTitle: 'New Haven CT Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair and ventilation service in New Haven CT. Serving restaurants, Yale dining, and commercial kitchens. Air balancing, ESP cleaning, exhaust fans.',
+    seoKeyword: 'New Haven CT commercial kitchen equipment repair',
+  },
+
   // ─── ATLANTA METRO ────────────────────────────────────────────
   {
     slug: 'atlanta',
@@ -445,7 +431,7 @@ export const PROFILES = {
 // Example: Google Business (Elizabeth) → website: choosetrue.com/locations/elizabeth-nj
 
 // Hub locations shown in footer (not every sub-city)
-export const HUB_LOCATIONS = ['oklahoma-city', 'elizabeth-nj', 'new-york-city', 'atlanta'];
+export const HUB_LOCATIONS = ['elizabeth-nj', 'new-york-city', 'stamford-ct', 'atlanta'];
 
 // Ventilation-specific city landing pages (50-mile radius from Elizabeth NJ)
 export const VENTILATION_CITIES = [
@@ -577,6 +563,34 @@ export const VENTILATION_CITIES = [
     restaurantScene: 'White Plains is the commercial hub of Westchester County — restaurants along Mamaroneck Avenue and Main Street, plus hotel kitchens, hospital cafeterias, and corporate dining facilities. Westchester\'s restaurant density rivals many NYC neighborhoods.',
     neighborhoods: ['Downtown', 'Mamaroneck Avenue', 'Battle Hill'],
     nearbyAreas: ['Yonkers', 'New Rochelle', 'Scarsdale', 'Tarrytown', 'Mount Vernon', 'Port Chester'],
+  },
+  // CT ventilation cities
+  {
+    slug: 'norwalk-ct',
+    city: 'Norwalk',
+    state: 'CT',
+    region: 'Fairfield County',
+    restaurantScene: 'Norwalk\'s SoNo (South Norwalk) district has become one of Connecticut\'s top dining destinations — restaurants, breweries, and oyster bars packed along Washington and Main Streets. Westport adds upscale dining. All need ventilation service.',
+    neighborhoods: ['SoNo', 'East Norwalk', 'Rowayton', 'Cranbury'],
+    nearbyAreas: ['Westport', 'Weston', 'Wilton', 'Darien', 'Stamford', 'Ridgefield'],
+  },
+  {
+    slug: 'bridgeport-ct',
+    city: 'Bridgeport',
+    state: 'CT',
+    region: 'Fairfield County',
+    restaurantScene: 'Bridgeport is Connecticut\'s largest city with a diverse food scene — from downtown restaurants to the institutional kitchens at Bridgeport Hospital, Sacred Heart University, and the Webster Bank Arena. The Black Rock neighborhood has an emerging restaurant row.',
+    neighborhoods: ['Downtown', 'Black Rock', 'North End', 'East Side'],
+    nearbyAreas: ['Trumbull', 'Stratford', 'Shelton', 'Milford', 'Fairfield', 'Monroe'],
+  },
+  {
+    slug: 'new-haven-ct',
+    city: 'New Haven',
+    state: 'CT',
+    region: 'New Haven County',
+    restaurantScene: 'New Haven is a food city — legendary pizza on Wooster Street (Frank Pepe\'s, Sally\'s, Modern), Yale University\'s massive dining operations, and a thriving restaurant scene from Chapel Street to the Westville neighborhood. Kitchen ventilation demand is strong and underserved.',
+    neighborhoods: ['Wooster Square', 'Downtown', 'Chapel District', 'East Rock', 'Westville'],
+    nearbyAreas: ['West Haven', 'East Haven', 'Hamden', 'North Haven', 'Branford', 'Guilford'],
   },
 ];
 
