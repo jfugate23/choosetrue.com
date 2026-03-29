@@ -46,10 +46,10 @@ export default function Header() {
 
         {/* Main nav */}
         <nav className="max-w-7xl mx-auto px-4 lg:px-6">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
-              <Image src="/images/logo.png" alt="True Commercial Service" width={280} height={70} className="h-12 lg:h-16 w-auto" priority />
+              <Image src="/images/logo.png" alt="True Commercial Service" width={320} height={80} className="h-14 lg:h-20 w-auto" priority />
             </Link>
 
             {/* Desktop nav */}

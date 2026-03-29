@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   description: 'Commercial kitchen equipment repair serving Union County, NJ and surrounding areas. Refrigeration, cooking, ventilation, ice machines, espresso. 24/7 emergency service.',
   keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Union County NJ', 'Elizabeth NJ', 'Newark NJ', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service'],
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
