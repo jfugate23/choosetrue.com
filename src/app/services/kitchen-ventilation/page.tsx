@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { COMPANY, LOCATIONS } from '@/lib/data';
 import { Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
 import { Wind, DollarSign, Flame, ShieldCheck, ThermometerSun, Gauge, AlertTriangle, CheckCircle2, ArrowRight, Phone, MapPin, Zap, Building2 } from 'lucide-react';
@@ -138,6 +139,43 @@ export default function KitchenVentilationPage() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </Section>
+
+      {/* Real Work Photos */}
+      <Section>
+        <SectionHeading eyebrow="Our Work" title="Real kitchens. Real equipment. Real results." />
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <Reveal>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src="/images/commercial-kitchen-hood-installation-nj.jpg" alt="Commercial kitchen hood installation in New Jersey — new hood system with protective film during startup" fill className="object-cover" />
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Hood system installation and startup</p>
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src="/images/vfd-drives-kitchen-ventilation-controls.jpg" alt="Lenze VFD drives for demand-controlled kitchen ventilation — variable speed exhaust fan controls" fill className="object-cover" />
+            </div>
+            <p className="text-xs text-slate-500 mt-2">VFD drives for demand-controlled ventilation</p>
+          </Reveal>
+          <Reveal delay={200}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src="/images/kitchen-hood-fire-suppression-baffle-filters.jpg" alt="Kitchen hood fire suppression nozzle and baffle filters above commercial fryer" fill className="object-cover" />
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Fire suppression and baffle filter inspection</p>
+          </Reveal>
+          <Reveal delay={300}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image src="/images/commercial-kitchen-hood-supply-plenum.jpg" alt="Commercial kitchen hood back supply plenum — makeup air delivery system" fill className="object-cover" />
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Back supply plenum — makeup air delivery</p>
+          </Reveal>
+          <Reveal delay={400}>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden col-span-2">
+              <Image src="/images/commercial-kitchen-full-view.jpg" alt="Full commercial kitchen with hood systems, prep tables, and cooking equipment — institutional kitchen build" fill className="object-cover" />
+            </div>
+            <p className="text-xs text-slate-500 mt-2">Full commercial kitchen — institutional build</p>
+          </Reveal>
         </div>
       </Section>
 
