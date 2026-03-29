@@ -613,18 +613,18 @@ export const TESTIMONIALS = [
     quote: 'True Commercial showed up same day, diagnosed the issue in 20 minutes, and had our combi oven running before dinner service. Nobody else even called us back.',
     author: 'Michael R.',
     role: 'Executive Chef',
-    location: 'Oklahoma City, OK',
+    location: 'Elizabeth, NJ',
   },
   {
     quote: 'We switched from a national provider to True and the difference is night and day. Actual humans who know our equipment and show up when they say they will.',
     author: 'Sarah K.',
     role: 'Director of Operations',
-    location: 'Norman, OK',
+    location: 'Newark, NJ',
   },
   {
     quote: 'The PM program has already paid for itself. We haven\'t had an emergency call in six months. That\'s unheard of for a kitchen our size.',
     author: 'David T.',
     role: 'Facilities Manager',
-    location: 'Edmond, OK',
+    location: 'Jersey City, NJ',
   },
 ];
