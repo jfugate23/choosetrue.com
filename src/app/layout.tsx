@@ -58,7 +58,7 @@ const schemaMarkup = {
     closes: '23:59',
   },
   priceRange: '$$',
-  image: 'https://choosetrue.com/logo.png',
+  image: 'https://choosetrue.com/images/logo.png',
   telephone: '(908) 743-8688',
   sameAs: Object.values(PROFILES).filter(Boolean),
   hasOfferCatalog: {

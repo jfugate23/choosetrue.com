@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, Phone, ChevronDown, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, MapPin, Wrench, Users, Cog } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
 
@@ -47,14 +48,8 @@ export default function Header() {
         <nav className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center group-hover:bg-amber-400 transition-colors">
-                <Wrench className="w-5 h-5 text-navy-300" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold tracking-tight leading-none">TRUE</span>
-                <span className="text-[10px] text-slate-400 tracking-[0.2em] uppercase leading-none mt-0.5">Commercial Service</span>
-              </div>
+            <Link href="/" className="flex items-center gap-2 group">
+              <Image src="/images/logo.png" alt="True Commercial Service" width={160} height={48} className="h-10 w-auto" priority />
             </Link>
 
             {/* Desktop nav */}

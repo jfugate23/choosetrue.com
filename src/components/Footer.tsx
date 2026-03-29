@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, Wrench, ArrowUpRight, ExternalLink } from 'lucide-react';
 import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS } from '@/lib/data';
 
@@ -23,14 +24,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 bg-amber-500 rounded-lg flex items-center justify-center">
-                <Wrench className="w-4 h-4 text-navy-300" />
-              </div>
-              <div>
-                <span className="text-base font-bold tracking-tight">TRUE</span>
-                <span className="block text-[9px] text-slate-500 tracking-[0.2em] uppercase">Commercial Service</span>
-              </div>
+            <Link href="/" className="inline-block mb-4">
+              <Image src="/images/logo.png" alt="True Commercial Service" width={140} height={42} className="h-9 w-auto" />
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               Tech-forward commercial kitchen equipment repair. Built by operators, for operators.
