@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SERVICES, LOCATIONS, VERTICALS } from '@/lib/data';
+import { SERVICES, LOCATIONS, VERTICALS, VENTILATION_CITIES } from '@/lib/data';
 import { getAllPosts } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,5 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages];
+  const ventilationCityPages = VENTILATION_CITIES.map((c) => ({
+    url: `${base}/services/kitchen-ventilation/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
+
+  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
 }
