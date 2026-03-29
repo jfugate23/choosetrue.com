@@ -63,7 +63,15 @@ Every hour your walk-in is above temperature puts your inventory at risk. A typi
 
 Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
 
-**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Union County, NJ. Text us anytime.**`,
+**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Union County, NJ. Text us anytime.**
+
+## Related Articles
+
+- [Walk-In Freezer vs Cooler: Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+
+Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my walk-in cooler running but not cooling?', answer: 'The most common causes are worn door gaskets, dirty condenser coils, frozen evaporator coils, failed fan motors, or low refrigerant charge. Check gaskets and condenser cleanliness first — these account for over half of walk-in temperature problems.' },
       { question: 'What temperature should a walk-in cooler be set at?', answer: 'Walk-in coolers should be set between 35°F and 38°F. If the temperature rises above 41°F, you are in the food safety danger zone and should call for emergency service immediately.' },
@@ -126,7 +134,15 @@ Modern ice machines have electronic controls that manage the freeze and harvest 
 
 A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
 
-**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Union County, NJ.**`,
+**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Union County, NJ.**
+
+## Related Articles
+
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [EPA 608 Certification: What Owners Should Know](/blog/epa-608-certification-restaurant-owners)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+
+Looking for service? Visit our [Beverage Equipment Repair](/services/beverage-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why did my commercial ice machine stop making ice?', answer: 'The most common causes are water supply issues (30% of calls), dirty condenser coils (25%), harvest cycle problems (20%), mineral scale buildup (15%), and control board failures (10%). Start by checking the water supply valve and condenser cleanliness.' },
       { question: 'How often should a commercial ice machine be cleaned?', answer: 'Commercial ice machines should be descaled every 6 months minimum, and every 3 months in hard water areas. Regular cleaning prevents scale buildup that reduces production and eventually causes complete shutdown.' },
@@ -196,7 +212,15 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 
 Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.
 
-**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Union County, NJ.**`,
+**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Union County, NJ.**
+
+## Related Articles
+
+- [Commercial Fryer Troubleshooting](/blog/commercial-fryer-troubleshooting)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+
+Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What do Rational combi oven error codes mean?', answer: 'Rational combi ovens display error codes on the control panel to indicate specific malfunctions. Common codes include E1 (temperature sensor failure), E2 (boiler issues), E3 (humidity sensor problems), and E22 (water supply). Some are resettable by staff; others require a trained technician.' },
       { question: 'Can I reset a Rational combi oven error code myself?', answer: 'Some minor errors can be cleared by power cycling the oven (turn off, wait 60 seconds, turn back on). However, persistent or recurring error codes indicate a real mechanical or electrical issue that needs professional diagnosis. Do not ignore repeated error codes.' },
@@ -316,7 +340,15 @@ Most equipment service companies offer PM agreements with:
 
 The best time to set up a PM program is before something breaks.
 
-**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Union County, NJ. Contact us to schedule a free equipment assessment.**`,
+**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Union County, NJ. Contact us to schedule a free equipment assessment.**
+
+## Related Articles
+
+- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
+- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
+- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
+
+Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How often should commercial kitchen equipment be serviced?', answer: 'Most commercial kitchen equipment should be professionally serviced quarterly. High-use items like fryers and ice machines may need monthly attention. Refrigeration systems need quarterly condenser cleaning. HVAC and ventilation should be serviced twice per year.' },
       { question: 'What is included in a commercial kitchen equipment PM visit?', answer: 'A typical preventive maintenance visit includes cleaning (condensers, burners, filters), calibration (thermostats, timers, gas pressures), inspection (gaskets, wiring, belts, bearings), lubrication of moving parts, and a written report of equipment condition and recommended repairs.' },
@@ -404,7 +436,15 @@ The goal: kitchen at -0.02 to -0.05 inches of water column relative to the dinin
 | Ductwork inspection | Annually |
 | Fire suppression inspection | Semi-annually |
 
-**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Union County, NJ.**`,
+**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Union County, NJ.**
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+- [CaptiveAire Hood Maintenance Guide](/blog/captiveaire-hood-maintenance-repair-guide)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How do I know if my commercial kitchen ventilation needs service?', answer: 'Warning signs include visible grease buildup on hood surfaces, smoke or steam not being captured by the hood, excessive heat in the kitchen, grease dripping from filters or ductwork, and unusual odors or poor air quality. Any of these indicate your ventilation system needs immediate attention.' },
       { question: 'How often should commercial kitchen hoods be cleaned?', answer: 'Kitchen exhaust filters should be cleaned weekly. The full hood and ductwork system should be professionally cleaned every 3-6 months depending on cooking volume. High-volume operations like charbroiling may need monthly deep cleaning.' },
@@ -493,7 +533,15 @@ Expect a 25-40% markup on parts. This covers the service company's cost of stock
 - Refrigerant type is being phased out (R-22)
 - Multiple failures in the past 12 months
 
-**True Commercial Service provides transparent, upfront pricing for all commercial kitchen equipment repair in Union County, NJ. No hidden fees. NTE agreements on every job.**`,
+**True Commercial Service provides transparent, upfront pricing for all commercial kitchen equipment repair in Union County, NJ. No hidden fees. NTE agreements on every job.**
+
+## Related Articles
+
+- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
+- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
+
+Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How much does commercial kitchen equipment repair cost in NJ?', answer: 'In New Jersey, typical repair costs range from $150-300 for minor fixes (thermostats, gaskets, igniters) to $500-1,500 for major repairs (compressor replacement, control board, motor). Emergency and after-hours calls typically add a $50-150 premium.' },
       { question: 'Is it cheaper to repair or replace commercial kitchen equipment?', answer: 'As a general rule, if the repair cost exceeds 50% of the replacement cost and the equipment is past its expected lifespan, replacement is usually more cost-effective. For newer equipment, repair almost always makes more sense.' },
@@ -561,7 +609,15 @@ A company that offers preventive maintenance agreements is invested in keeping y
 
 Set up a PM agreement or at least establish a relationship with a service company now. When your freezer goes down at 9pm, you want to text a number that already knows your name, your equipment, and your address — not start Googling "emergency repair near me."
 
-**True Commercial Service provides 24/7 commercial kitchen equipment repair across Union County, NJ. We believe in transparent pricing, first-visit resolution, and preventive maintenance that keeps your kitchen running.**`,
+**True Commercial Service provides 24/7 commercial kitchen equipment repair across Union County, NJ. We believe in transparent pricing, first-visit resolution, and preventive maintenance that keeps your kitchen running.**
+
+## Related Articles
+
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
+- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
+
+Looking for service? Visit our [About True Commercial Service](/about) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What should I look for in a commercial kitchen equipment repair company?', answer: 'Look for factory-trained technicians with manufacturer certifications, guaranteed response times (under 4 hours for emergencies), transparent pricing with written estimates, a strong first-time fix rate (above 85%), and experience with your specific equipment brands.' },
       { question: 'Should I use the equipment manufacturer for repairs or a third-party company?', answer: 'Third-party independent service companies are often faster, more flexible, and less expensive than manufacturer service departments. The key is ensuring the third-party techs have factory training and certifications on your specific equipment brands.' },
@@ -629,7 +685,15 @@ Equipment over 10 years old fails more frequently. Plan replacements before they
 ### 4. Backup Plans
 Know which menu items you can serve if the fryer goes down. Have a backup ice supplier's number. Know where the nearest walk-in you can rent is.
 
-**True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for NJ restaurants. Every minute of downtime costs you money — we show up fast.**`,
+**True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for NJ restaurants. Every minute of downtime costs you money — we show up fast.**
+
+## Related Articles
+
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+
+Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How much does equipment downtime cost a restaurant?', answer: 'Equipment downtime costs a typical restaurant $200-500 per hour when you factor in lost revenue, food waste, labor inefficiency, and customer loss. A single refrigeration failure can result in $3,000-8,000 in spoiled inventory on top of the repair cost.' },
       { question: 'What equipment failures cost restaurants the most money?', answer: 'Refrigeration failures are the most expensive because of inventory loss. A walk-in cooler failure can spoil thousands of dollars in product within hours. Cooking line failures during service are second — they directly impact revenue and can force a restaurant to close mid-shift.' },
@@ -689,7 +753,15 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 
 If your older equipment uses R-22 (Freon), it's been phased out of production. The remaining supply is expensive — $50-100+ per pound. If your system uses R-22 and develops a leak, it may be more cost-effective to retrofit or replace the system than to keep recharging.
 
-**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Union County, NJ.**`,
+**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Union County, NJ.**
+
+## Related Articles
+
+- [Walk-In Cooler Troubleshooting Guide](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [Ice Machine Not Making Ice](/blog/commercial-ice-machine-not-making-ice)
+- [Walk-In Freezer vs Cooler Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
+
+Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What is EPA 608 certification?', answer: 'EPA Section 608 certification is a federal requirement for anyone who services, maintains, or repairs equipment that uses refrigerants. It ensures technicians understand proper refrigerant handling, recovery, and environmental regulations. There are four types based on equipment size.' },
       { question: 'Can a restaurant owner work on their own refrigeration equipment?', answer: 'If the work involves the refrigerant circuit (charging, recovering, or repairing refrigerant lines), you must hold EPA 608 certification. Routine maintenance like cleaning coils, replacing gaskets, or changing filters does not require certification.' },
@@ -777,7 +849,15 @@ At the end of the night, the oil won't drain for filtering.
 | Check thermostat accuracy | Monthly |
 | Professional inspection | Semi-annually |
 
-**True Commercial Service repairs all major commercial fryer brands across Union County, NJ. Gas and electric. Same-day emergency service available.**`,
+**True Commercial Service repairs all major commercial fryer brands across Union County, NJ. Gas and electric. Same-day emergency service available.**
+
+## Related Articles
+
+- [Rational Combi Oven Error Codes](/blog/rational-combi-oven-error-codes-guide)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my commercial fryer not heating up?', answer: 'The most common causes for a commercial fryer not heating are a failed thermostat, defective high-limit safety switch, faulty igniter or pilot assembly (gas fryers), or burned-out heating elements (electric fryers). Check the pilot light first on gas models — it is the simplest fix.' },
       { question: 'How often should commercial fryer oil be changed?', answer: 'Commercial fryer oil should be filtered daily and completely changed every 1-2 weeks depending on volume and what you are frying. Breaded and battered items degrade oil faster. Dark, foamy, or foul-smelling oil should be changed immediately.' },
@@ -858,7 +938,15 @@ The best time is now — before something breaks. The second best time is right 
 
 Don't wait for the busy season. Equipment fails when it's working hardest — summer for refrigeration, winter for heating. Get ahead of it.
 
-**True Commercial Service offers customized PM agreements for commercial kitchens across Union County, NJ. Contact us for a free equipment assessment and PM proposal.**`,
+**True Commercial Service offers customized PM agreements for commercial kitchens across Union County, NJ. Contact us for a free equipment assessment and PM proposal.**
+
+## Related Articles
+
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
+- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
+
+Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What is a PM agreement for restaurant equipment?', answer: 'A Preventive Maintenance agreement is a scheduled service contract where a technician visits your kitchen on a regular cadence (monthly or quarterly) to clean, inspect, calibrate, and maintain your commercial equipment. This prevents breakdowns and extends equipment life.' },
       { question: 'How much does a PM agreement cost for a restaurant?', answer: 'PM agreements typically cost $200-600 per quarter depending on the number of equipment pieces and visit frequency. This is significantly less than a single emergency repair call, and PM programs reduce emergency breakdowns by up to 80%.' },
@@ -958,7 +1046,15 @@ An air balance test uses a digital manometer and anemometer to measure:
 
 This takes 1-2 hours and should be done semi-annually or whenever cooking equipment is added or changed.
 
-**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Union County, NJ. We understand ventilation from the inside out.**`,
+**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Union County, NJ. We understand ventilation from the inside out.**
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
+- [Kitchen Ventilation Problems: 5 Signs](/blog/commercial-kitchen-ventilation-problems-signs)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How often should CaptiveAire hood systems be serviced?', answer: 'CaptiveAire recommends quarterly professional maintenance for most commercial kitchen hood systems. Filters should be cleaned weekly. The full ductwork should be cleaned every 3-6 months. High-volume cooking operations (charbroiling, wok cooking) may need more frequent service.' },
       { question: 'What does CaptiveAire hood maintenance include?', answer: 'Maintenance includes cleaning or replacing grease filters, inspecting and cleaning the exhaust fan, checking belt tension and motor bearings, testing the fire suppression system, verifying proper airflow and capture, and inspecting the makeup air unit for correct balance.' },
@@ -1033,7 +1129,15 @@ Super-automatic machines found in QSR chains. Different service approach than tr
 4. **Understands water chemistry** — can test and advise on filtration
 5. **Fast response** — a coffee shop without an espresso machine has no revenue
 
-**True Commercial Service is building espresso machine service capability for Northern New Jersey. We're pursuing La Marzocco and Nuova Simonelli factory certifications to provide the fast, qualified service that NJ coffee shops deserve.**`,
+**True Commercial Service is building espresso machine service capability for Northern New Jersey. We're pursuing La Marzocco and Nuova Simonelli factory certifications to provide the fast, qualified service that NJ coffee shops deserve.**
+
+## Related Articles
+
+- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+Looking for service? Visit our [Espresso Machine Repair](/services/espresso-machines) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How much does commercial espresso machine repair cost?', answer: 'Commercial espresso machine repairs typically range from $150-400 for common fixes like group head gaskets, solenoid valves, and steam wand tips, to $800-2,000+ for major work like boiler replacement, PID controller replacement, or full pump rebuilds.' },
       { question: 'How often should a commercial espresso machine be serviced?', answer: 'Commercial espresso machines should receive professional maintenance every 3-6 months. This includes group head gasket replacement, shower screen cleaning, boiler descaling, water softener check, and pressure calibration. Daily backflushing by staff is also essential.' },
@@ -1118,7 +1222,15 @@ When a **freezer** fails, product starts thawing within 1-2 hours. If it's a wee
 
 Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At NJ commercial electric rates, that's $100-300/month in wasted energy on a single unit.
 
-**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Union County, NJ. We understand the critical differences and maintain each accordingly.**`,
+**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Union County, NJ. We understand the critical differences and maintain each accordingly.**
+
+## Related Articles
+
+- [Walk-In Cooler Troubleshooting](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [EPA 608 Certification](/blog/epa-608-certification-restaurant-owners)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What is the difference between walk-in cooler and freezer maintenance?', answer: 'Walk-in freezers require defrost system maintenance (heaters, timers, drain lines) that coolers do not. Freezers also have thicker insulation, more powerful compressors, and different gasket requirements. Freezer repairs are generally 20-40% more expensive than comparable cooler repairs.' },
       { question: 'What temperature should a walk-in freezer be set at?', answer: 'Walk-in freezers should maintain a temperature of 0°F or below. If the temperature rises above 10°F, food safety is compromised and you should call for emergency service. Some products require -10°F storage.' },
@@ -1191,7 +1303,15 @@ If they don't track it — or won't share it — that tells you something.
 
 Before signing anything, call their emergency line at 9pm on a weekday. Does a real person answer? How quickly do they respond to a text? This 5-minute test tells you more about the company than any contract clause.
 
-**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Union County, NJ.**`,
+**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Union County, NJ.**
+
+## Related Articles
+
+- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
+- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
+
+Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What should a restaurant equipment service contract include?', answer: 'A good service contract should clearly state: guaranteed response times, what equipment is covered, parts and labor warranty terms, PM visit frequency and scope, emergency surcharge details, cancellation terms, and the company\'s first-time fix rate and average resolution time.' },
       { question: 'How long should I commit to an equipment service contract?', answer: 'Start with a 6-month or 1-year contract. Avoid long-term multi-year agreements until you have verified the company delivers on their promises. A confident company will earn your renewal — they should not need to lock you in.' },
@@ -1264,7 +1384,15 @@ You probably need air balancing if:
 
 Very few companies specialize in this. Most HVAC contractors focus on rooftop units and split systems — they don\'t carry the instruments or have the training for kitchen-specific ventilation work. And hood cleaning companies clean but don\'t measure or adjust airflow.
 
-**True Commercial Service specializes in commercial kitchen ventilation for restaurants, hotels, and institutions across Union County, NJ and the NYC metro. We test, adjust, and balance your system in one visit — and give you a written report with real numbers.**`,
+**True Commercial Service specializes in commercial kitchen ventilation for restaurants, hotels, and institutions across Union County, NJ and the NYC metro. We test, adjust, and balance your system in one visit — and give you a written report with real numbers.**
+
+## Related Articles
+
+- [How Much Does Air Balancing Cost?](/blog/kitchen-air-balancing-cost-nj-pricing)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+- [Negative Pressure: Causes, Costs, Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What is kitchen air balancing?', answer: 'Air balancing is the process of measuring and adjusting your kitchen exhaust and makeup air systems so they work together at the correct ratio. The exhaust hood pulls air out, and the makeup air unit replaces about 80% of it with tempered air. Balancing ensures proper hood capture, comfortable temperatures, and minimal energy waste.' },
       { question: 'How much does kitchen air balancing cost in NJ?', answer: 'A single hood system typically costs $1,200. Two hood systems cost $2,000. Larger kitchens with three or more hoods start at $2,500. The service usually pays for itself in energy savings within 3-6 months.' },
@@ -1335,7 +1463,15 @@ A new upblast exhaust fan installed typically costs $1,500-4,000 depending on si
 
 A dead exhaust fan is an emergency — you can\'t legally operate without it, and your kitchen fills with smoke and heat within minutes.
 
-**True Commercial Service provides same-day exhaust fan repair across Union County, NJ. We carry common belts, motors, and bearings on the truck. Most repairs are completed in under 2 hours.**`,
+**True Commercial Service provides same-day exhaust fan repair across Union County, NJ. We carry common belts, motors, and bearings on the truck. Most repairs are completed in under 2 hours.**
+
+## Related Articles
+
+- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How much does restaurant exhaust fan repair cost?', answer: 'Belt replacement costs $150-300. Motor replacement costs $400-800. Bearing replacement costs $200-400. A full fan replacement including installation costs $1,500-4,000 depending on size and CFM.' },
       { question: 'Why is my kitchen exhaust fan not working?', answer: 'The most common causes are a broken belt, burned-out motor, failed bearings, or an electrical issue like a tripped breaker or bad contactor. Belt failure is the #1 cause — it is a quick, inexpensive fix.' },
@@ -1405,7 +1541,15 @@ The MAU repair typically costs $300-800. The energy waste costs $5,000+/year. Th
 4. **Interlock** — many MAUs are interlocked with the exhaust fan. If the exhaust fan is off, the MAU won\'t run.
 5. **Thermostat** — check the setting. It may have been changed or malfunctioned.
 
-**True Commercial Service repairs and maintains all brands of makeup air units across Union County, NJ. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**`,
+**True Commercial Service repairs and maintains all brands of makeup air units across Union County, NJ. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
+
+## Related Articles
+
+- [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
+- [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What does a makeup air unit do in a restaurant?', answer: 'A makeup air unit (MAU) replaces the air your exhaust hood pulls out of the kitchen. It supplies about 80% of the exhausted volume as tempered (heated or cooled) air. Without it, raw outside air infiltrates through doors and gaps, and your building HVAC has to condition all of it.' },
       { question: 'How much does it cost when a makeup air unit is broken?', answer: 'A broken MAU on a typical restaurant hood system wastes approximately $5,000 or more per year in excess heating and cooling costs. The building HVAC has to condition thousands of CFM of raw outside air that the MAU should be handling. Repair typically costs $300-800.' },
@@ -1461,7 +1605,15 @@ A qualified technician measures your exhaust CFM, supply CFM, face velocity at t
 
 Once balanced, the hood captures the heat, the kitchen temperature drops, and the AC can actually keep up because it\'s not fighting thousands of CFM of misrouted hot air.
 
-**True Commercial Service provides kitchen air balancing for restaurants across Union County, NJ. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**`,
+**True Commercial Service provides kitchen air balancing for restaurants across Union County, NJ. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my restaurant kitchen so hot even with AC running?', answer: 'The most common cause is an unbalanced kitchen ventilation system. If the exhaust hood is not capturing heat properly — due to too much or misdirected makeup air, or insufficient exhaust — heat escapes into the kitchen. The AC cannot compensate for a ventilation problem. Air balancing the hood system typically solves it.' },
       { question: 'Can air balancing reduce kitchen temperature?', answer: 'Yes. Proper air balancing ensures the exhaust hood captures the thermal plume from cooking equipment. Once the heat is going up the hood instead of into the kitchen, temperatures drop significantly and the AC can maintain comfortable conditions.' },
@@ -1512,7 +1664,15 @@ Many newer CaptiveAire systems include or can be upgraded with demand control ve
 
 Most general HVAC contractors will tell you they can service kitchen hoods. But kitchen ventilation is specialized — the instruments, the measurement methods, the K-factors, and the understanding of how exhaust and supply interact are different from standard commercial HVAC work.
 
-**True Commercial Service specializes in CaptiveAire and all major kitchen hood brands. We carry VelGrid instruments, understand the filter conversion factors, and have hands-on experience commissioning CaptiveAire systems from new. Serving Union County, NJ and the NYC metro.**`,
+**True Commercial Service specializes in CaptiveAire and all major kitchen hood brands. We carry VelGrid instruments, understand the filter conversion factors, and have hands-on experience commissioning CaptiveAire systems from new. Serving Union County, NJ and the NYC metro.**
+
+## Related Articles
+
+- [CaptiveAire Hood Maintenance Guide](/blog/captiveaire-hood-maintenance-repair-guide)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Does CaptiveAire do their own service and maintenance?', answer: 'No. CaptiveAire manufactures and sells equipment through reps and dealers, but they do not have a service workforce for ongoing maintenance and repair. Third-party service companies handle all maintenance, air balancing, fan repair, and MAU service on CaptiveAire systems.' },
       { question: 'How often should a CaptiveAire hood system be serviced?', answer: 'Exhaust fan belts should be checked quarterly. MAU filters should be changed every 1-3 months. A full air balance should be done after installation, after any kitchen changes, and at least annually. Fan wheel cleaning should coincide with hood cleaning schedules.' },
@@ -1573,7 +1733,15 @@ That\'s just energy. Add the operational costs:
 
 A one-time air balance costs $1,200 for a single hood system and typically resolves the problem permanently. The $1,200 service saves $5,000+/year in energy — payback in under 3 months.
 
-**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Union County, NJ. One visit, real measurements, permanent fix.**`,
+**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Union County, NJ. One visit, real measurements, permanent fix.**
+
+## Related Articles
+
+- [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What causes negative pressure in a commercial kitchen?', answer: 'Negative pressure occurs when the exhaust hood pulls more air out of the kitchen than the makeup air unit supplies. The most common cause is a broken or undersized makeup air unit. The building sucks in raw outside air through doors, gaps, and cracks to make up the difference.' },
       { question: 'How much does negative pressure cost a restaurant?', answer: 'For a typical restaurant hood system, a completely failed makeup air unit can waste over $5,000 per year in excess heating and cooling costs. The building HVAC has to condition all the raw outside air being sucked in through the building envelope.' },
@@ -1642,7 +1810,15 @@ We charge per hood system, not by the hour. You know the cost before we show up.
 
 Hourly pricing incentivizes slow work. Per-system pricing incentivizes getting it right and moving on.
 
-**True Commercial Service provides transparent, per-system air balancing for commercial kitchens across Union County, NJ. No hidden fees. Written report with real numbers. Schedule at choosetrue.com.**`,
+**True Commercial Service provides transparent, per-system air balancing for commercial kitchens across Union County, NJ. No hidden fees. Written report with real numbers. Schedule at choosetrue.com.**
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ — What It Is](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Restaurant Equipment Repair Cost in NJ](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'How much does kitchen air balancing cost in New Jersey?', answer: 'A single hood system costs $1,200. Two hood systems cost $2,000. Three or more hoods start at $2,500. Pricing is per system, not hourly. The cost includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.' },
       { question: 'Is kitchen air balancing worth the cost?', answer: 'Yes. A restaurant with a makeup air unit running at 50% of design is wasting approximately $2,630 per year in excess energy costs. The $1,200 air balance pays for itself in about 5.5 months. If the MAU is completely down, payback is under 3 months.' },
@@ -1710,7 +1886,15 @@ Every noise is a warning. The repair cost goes up the longer you wait:
 
 The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. A $200 belt replacement today saves an $800 motor replacement next month.
 
-**True Commercial Service provides same-day exhaust fan diagnosis and repair across Union County, NJ. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**`,
+**True Commercial Service provides same-day exhaust fan diagnosis and repair across Union County, NJ. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
+
+## Related Articles
+
+- [Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my kitchen exhaust fan making a squealing noise?', answer: 'A squealing or screeching exhaust fan almost always means the drive belt is slipping, worn, or glazed. The belt is still working but losing grip. It will snap within days to weeks. Belt replacement costs $150-300 and takes about 30 minutes.' },
       { question: 'Is a noisy exhaust fan an emergency?', answer: 'It depends on the noise. A humming motor that is not spinning is an emergency — your exhaust is not working. Grinding or heavy vibration is urgent — call within 24 hours. Squealing is medium urgency — schedule within the week. All noises mean something is about to fail.' },
@@ -1766,7 +1950,15 @@ This isn\'t just a comfort issue:
 
 One air balance visit — $1,200 for a single hood system — fixes the root cause permanently.
 
-**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Union County, NJ restaurants, hotels, and commercial kitchens.**`,
+**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Union County, NJ restaurants, hotels, and commercial kitchens.**
+
+## Related Articles
+
+- [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why does my dining room smell like the kitchen?', answer: 'The kitchen is under positive pressure — more air is being pushed in by the makeup air unit than is being pulled out by the exhaust. The excess air carries cooking odors, grease, and heat into the dining room. This is caused by an unbalanced ventilation system.' },
       { question: 'How do you stop kitchen smells from reaching the dining room?', answer: 'Balance the kitchen ventilation so the supply-to-exhaust ratio is 80-90%. This maintains slight negative pressure in the kitchen, pulling dining room air in rather than pushing kitchen air out. A professional air balance costs $1,200 for a single hood system.' },
@@ -1834,7 +2026,15 @@ Every air balance we do includes a smoke capture test as the final verification.
 
 Most smoke capture problems are cause #1 or #2 — and both are fixed with a single air balance visit.
 
-**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Union County, NJ. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**`,
+**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Union County, NJ. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
+- [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
+
+Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is smoke escaping my kitchen hood?', answer: 'The four most common causes are: exhaust CFM too low (dirty fan wheel, slipping belt, closed damper), makeup air disrupting the hood capture zone, insufficient hood overhang, or cross-drafts from HVAC or doors. The first two causes account for the majority of cases and are fixed with air balancing.' },
       { question: 'How do you test if a kitchen hood is capturing properly?', answer: 'A smoke pencil test is the definitive field test. Hold a smoke pencil at the front edge of the hood at cooking height. The smoke should be captured immediately. If it drifts outward or stalls, the hood is not capturing. This test is included with every air balance.' },

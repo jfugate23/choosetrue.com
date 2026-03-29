@@ -46,13 +46,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       }
       if (block.startsWith('- ')) {
         const items = block.split('\n').map(line => {
-          const text = line.replace(/^- /, '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
+          const text = line.replace(/^- /, '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-amber-400 hover:text-amber-300 underline">$1</a>');
           return `<li class="text-gray-300 text-sm leading-relaxed">${text}</li>`;
         }).join('');
         return `<ul class="list-disc pl-5 space-y-1 my-3">${items}</ul>`;
       }
       const formatted = block
         .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-amber-400 hover:text-amber-300 underline">$1</a>')
         .replace(/\n/g, '<br/>');
       return `<p class="text-gray-300 text-sm leading-relaxed my-3">${formatted}</p>`;
     })
