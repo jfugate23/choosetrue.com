@@ -2041,6 +2041,266 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'How much does it cost to fix a kitchen hood that is not capturing smoke?', answer: 'Most capture problems are caused by low exhaust CFM or improper makeup air, both fixed with an air balance ($1,200 for a single hood). If the exhaust fan needs service (belt, motor, cleaning), add $150-800. Physical modifications like air curtains cost $1,500-3,000.' },
     ],
   },
+  // ─── ESP / POLLUTION CONTROL ARTICLES ─────────────────────────
+  {
+    slug: 'nyc-local-law-38-esp-requirements-restaurants',
+    title: 'NYC Local Law 38: Does Your Restaurant Need an ESP? What You Need to Know',
+    description: 'NYC requires pollution control on commercial kitchen exhaust. Here\'s what Local Law 38 requires, who it applies to, and the fines for non-compliance.',
+    date: '2026-03-29',
+    category: 'Pollution Control',
+    readTime: '6 min',
+    content: `If you operate a restaurant in New York City that does any charbroiling, grilling, frying, or roasting, you are legally required to have a functioning pollution control unit on your kitchen exhaust. This isn't optional — it's NYC Local Law 38, and the DEP enforces it with fines up to $10,000 per violation.
+
+## What Is Local Law 38?
+
+NYC Local Law 38 of 2015 (amending Administrative Code Section 24-149) requires all commercial cooking operations that produce grease-laden vapors to install and operate emission control equipment on their kitchen exhaust systems. The law has been enforced since July 1, 2016.
+
+The NYC Department of Environmental Protection (DEP) oversees compliance. They inspect, issue violations, and levy fines.
+
+## Who Does It Apply To?
+
+**You need an ESP or equivalent pollution control if your restaurant:**
+- Does charbroiling or grilling of any kind
+- Operates deep fryers
+- Roasts meat in commercial ovens
+- Uses wood-fired or coal-fired ovens or grills
+- Produces grease-laden vapors from any cooking process
+- Has kitchen exhaust exceeding 2,000 CFM
+
+**You may be exempt if:**
+- You only do light cooking (sandwich assembly, coffee, baking without frying)
+- Your exhaust is under 2,000 CFM with no charbroiling
+- You operate a food truck or temporary installation (different rules apply)
+
+In practice, the vast majority of NYC restaurants that serve hot food need pollution control.
+
+## What Are the Requirements?
+
+### Standard Cooking Operations
+- Pollution control equipment must achieve at least **75% reduction in particulate matter**
+- An electrostatic precipitator (ESP) is the most common solution
+- Equipment must be registered with NYC DEP
+- Maintenance logs must be kept and available for inspection
+
+### High-Volume Charbroiling (>875 lbs of meat per week)
+- Equipment must achieve **95% particulate removal**
+- **Odor control** is also required (typically a catalytic oxidizer or activated carbon system in addition to the ESP)
+- More frequent inspections and stricter documentation
+
+## What Are the Fines?
+
+| Violation | Fine Range |
+|-----------|-----------|
+| No pollution control equipment installed | $1,000 - $10,000 |
+| Equipment installed but not functioning | $1,000 - $5,000 |
+| No maintenance logs available | $1,000 - $2,500 |
+| Repeat violation | Up to $10,000+ |
+| Failure to register equipment with DEP | $1,000 - $2,500 |
+
+**Important:** Each inspection can result in multiple violations. Not having logs AND having a non-functioning unit = two separate fines in one visit. And the DEP doesn't need to announce inspections — they can show up triggered by a neighbor complaint.
+
+## What Equipment Qualifies?
+
+The most common pollution control solutions for NYC restaurants:
+
+- **Electrostatic Precipitator (ESP)** — collector cells use electrostatic charge to capture grease particles. Most common and cost-effective for typical restaurants.
+- **Rooftop Ecology Unit** — integrated ESP with weatherproof housing, installed on the roof. Very common in NYC.
+- **Smoke Hog** — brand name ESP, so common it's used generically (like "Kleenex"). Now owned by Parker Hannifin / Filtration Group.
+- **UV Oxidation** — ultraviolet systems that break down grease in the exhaust stream. Often used with ESPs.
+- **Catalytic Oxidizer** — burns off grease and odor compounds. Required for high-volume charbroiling.
+- **Activated Carbon Filters** — absorb odor compounds. Used as secondary treatment after ESP.
+
+## What Maintenance Is Required?
+
+The law requires you to maintain the equipment — not just install it. A non-maintained ESP that isn't actually collecting grease is still a violation.
+
+**Recommended maintenance schedule:**
+- **Monthly:** Check indicator lights, inspect pre-filters
+- **Quarterly:** Full ESP cell removal and cleaning, ionizer wire inspection
+- **Semi-annually:** Power supply check, carbon filter replacement, performance verification
+- **Annually:** Comprehensive service with full documentation
+
+**You must maintain service logs.** When the DEP inspector asks to see your maintenance records, "we clean it sometimes" is not acceptable. Dated, detailed logs signed by the service provider are what they want to see.
+
+## What Does Compliance Cost?
+
+| Item | Cost |
+|------|------|
+| ESP installation | $8,000 - $25,000+ |
+| Quarterly maintenance contract | $1,600 - $3,200/year |
+| Single cleaning visit | $400 - $800 |
+| DEP fine (comparison) | $1,000 - $10,000+ per violation |
+
+The math is clear: quarterly maintenance at $400/visit ($1,600/year) vs a single fine that could be $10,000. Maintenance is cheaper. Every time.
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+
+Looking for ESP service? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
+    faqs: [
+      { question: 'Does my NYC restaurant need an ESP?', answer: 'If your restaurant does charbroiling, grilling, frying, or roasting that produces grease-laden vapors, NYC Local Law 38 requires pollution control equipment. Most NYC restaurants that cook with heat need an ESP or equivalent device.' },
+      { question: 'What is the fine for not having an ESP in NYC?', answer: 'NYC DEP fines range from $1,000 for a first violation to $10,000+ for repeat violations. Not having maintenance logs is a separate violation. Multiple violations can be issued in a single inspection.' },
+      { question: 'How often does an ESP need to be cleaned in NYC?', answer: 'Quarterly at minimum for most restaurants. High-volume charbroiling operations may need monthly cleaning. NYC DEP requires dated, detailed maintenance logs available for inspection at all times.' },
+    ],
+  },
+  {
+    slug: 'esp-cleaning-service-nyc-nj',
+    title: 'ESP Cleaning Service in NYC & NJ — What to Expect and What It Costs',
+    description: 'Your ESP needs quarterly cleaning to stay compliant. Here\'s what the service involves, what it costs, and how to choose a provider.',
+    date: '2026-03-29',
+    category: 'Pollution Control',
+    readTime: '5 min',
+    content: `Your electrostatic precipitator collects grease and smoke particles from your kitchen exhaust. When the collector cells are coated in grease, the unit stops working — and you're out of compliance. Here's what professional ESP cleaning involves.
+
+## What Happens During an ESP Cleaning
+
+### 1. Power Down and Lockout
+The technician disconnects power to the ESP unit. ESPs run on high voltage — this is not equipment you want to work on energized.
+
+### 2. Cell Removal
+The collector cells (heavy metal plate assemblies) are pulled out of the housing. Depending on the unit, there may be 2-8 cells. Each one is coated in accumulated grease.
+
+### 3. Soaking
+Cells are soaked in a professional-grade alkaline cleaning solution. This breaks down the grease that's baked onto the plates. Soak time varies from 30 minutes to several hours depending on buildup.
+
+### 4. Power Wash
+After soaking, cells are power washed to remove all remaining residue. The plates need to be completely clean for the electrostatic charge to work properly.
+
+### 5. Inspection
+While cells are out, the technician inspects:
+- **Ionizer wires** — thin tungsten wires that create the electrostatic charge. They break over time and need replacement.
+- **Power supply** — the high-voltage transformer that energizes the cells. Checks for proper output.
+- **Pre-filters** — mesh filters upstream of the ESP that catch large particles. Usually replaced during cleaning.
+- **Post-filters** — carbon or HEPA filters downstream. Replaced on schedule.
+- **Housing** — checks for grease buildup, drain blockages, and structural issues.
+
+### 6. Reinstall and Test
+Clean cells are reinstalled, power is restored, and the unit is tested. The indicator light should show green (operating normally). The tech verifies proper current draw on the power supply.
+
+### 7. Documentation
+The service is logged with date, technician name, work performed, and any issues found. This documentation is what the NYC DEP inspector wants to see.
+
+## How Long Does It Take?
+
+- **Single ESP unit:** 1.5 - 3 hours
+- **Multiple units or rooftop ecology:** 3 - 5 hours
+- **Heavily neglected unit (first cleaning in years):** 4 - 6 hours
+
+## What It Costs
+
+| Service | Cost Range |
+|---------|-----------|
+| Single ESP cell cleaning | $400 - $800 |
+| Rooftop ecology unit service | $600 - $1,200 |
+| Ionizer wire replacement | $150 - $400 per set |
+| Pre-filter replacement | $50 - $150 |
+| Carbon filter replacement | $200 - $600 |
+| Power supply repair | $500 - $3,000 |
+| Quarterly maintenance contract | $1,600 - $3,200/year |
+
+## How to Choose an ESP Service Provider
+
+**Look for:**
+- Experience with your specific ESP brand (Smoke Hog, CaptiveAire, Ecology, Halton)
+- Proper documentation for DEP compliance
+- Willingness to set you up on a quarterly schedule
+- Can bundle with hood cleaning, air balancing, and fan service
+
+**Avoid:**
+- Companies that "clean" without removing the cells (this doesn't work)
+- Providers who can't produce documentation for DEP
+- Anyone who doesn't know what ionizer wires are
+- The cheapest option — a $200 ESP cleaning means corners were cut
+
+## How Often Should It Be Done?
+
+| Restaurant Type | Recommended Frequency |
+|----------------|----------------------|
+| Heavy charbroiling (steakhouse, BBQ) | Monthly |
+| Moderate cooking (full-service restaurant) | Quarterly |
+| Light cooking (café, bakery with frying) | Every 6 months |
+| Any NYC restaurant under DEP oversight | Quarterly minimum |
+
+## Related Articles
+
+- [NYC Local Law 38: ESP Requirements](/blog/nyc-local-law-38-esp-requirements-restaurants)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+Looking for ESP cleaning? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
+    faqs: [
+      { question: 'How much does ESP cleaning cost?', answer: 'Single visit ESP cell cleaning costs $400-800. Quarterly maintenance contracts cost $1,600-3,200 per year. Rooftop ecology unit service costs $600-1,200 per visit. These costs are a fraction of a single NYC DEP fine.' },
+      { question: 'What does ESP cleaning involve?', answer: 'The technician powers down the unit, removes collector cells, soaks them in alkaline solution, power washes them, inspects ionizer wires and power supply, replaces pre-filters, reinstalls cells, tests the unit, and documents the service for DEP compliance.' },
+      { question: 'How long does ESP cleaning take?', answer: 'A single ESP unit takes 1.5-3 hours. Multiple units or rooftop ecology units take 3-5 hours. Heavily neglected units that have not been cleaned in years may take 4-6 hours.' },
+    ],
+  },
+  {
+    slug: 'smoke-hog-not-working-troubleshooting',
+    title: 'Smoke Hog Not Working? Troubleshooting Your Kitchen ESP',
+    description: 'Red light on your Smoke Hog? No indicator at all? Here\'s what each problem means and whether you need service.',
+    date: '2026-03-29',
+    category: 'Pollution Control',
+    readTime: '4 min',
+    content: `"Smoke Hog" has become the generic name for kitchen electrostatic precipitators, like "Kleenex" for tissues. Whether you have an actual Smoke Hog (now Parker Hannifin / Filtration Group), a CaptiveAire ESP, an Ecology unit, or another brand — here's how to troubleshoot when it stops working.
+
+## Check the Indicator Light First
+
+### Green Light = Operating Normally
+The ESP is powered and the electrostatic field is active. Grease is being collected. You're compliant.
+
+### Red Light = Problem Detected
+The unit has shut itself off due to a detected fault. Common causes:
+- **Dirty cells** — grease buildup is causing arcing (electrical shorts between plates). This is the #1 cause. The cells need cleaning.
+- **Failed ionizer wire** — a broken wire disrupts the electrostatic field. The safety circuit shuts the unit down.
+- **Power supply fault** — the high-voltage transformer has failed or is overheating.
+- **Interlock open** — the access door is open or a safety switch has tripped.
+
+### No Light at All = No Power
+- Check the breaker/disconnect switch
+- Check if the unit is interlocked with the exhaust fan (some units won't power on unless the fan is running)
+- The power supply may have failed completely
+
+## What You Can Do
+
+1. **Check the breaker** — flip it off and back on. Sometimes a reset clears a temporary fault.
+2. **Check the access door** — make sure it's fully closed and the interlock is engaged.
+3. **Look at the cells** — if you can safely open the unit, look at the collector plates. If they're coated in thick grease, that's your problem. They need professional cleaning.
+4. **Check the pre-filter** — a completely clogged pre-filter can restrict airflow enough to trigger faults.
+5. **Turn the exhaust fan on first** — some ESPs have an interlock that requires the exhaust fan to be running before the ESP powers up.
+
+## What Requires a Technician
+
+- **Cell cleaning** — the cells need to be removed, soaked, and power washed. You can't clean them in place.
+- **Ionizer wire replacement** — these are delicate tungsten wires inside a high-voltage system. Not a DIY job.
+- **Power supply repair** — high-voltage electrical work. Dangerous without training.
+- **Control board replacement** — if the logic board has failed, it needs professional diagnosis.
+
+## Don't Ignore It
+
+A non-functioning ESP means:
+- Your kitchen exhaust is dumping grease and smoke directly into the air
+- Neighbors smell it and call 311 (in NYC)
+- The DEP shows up and you have no working unit and no maintenance logs
+- $1,000 - $10,000 fine
+
+A red light on your Smoke Hog is not a suggestion. It's a $400 cleaning visit or a $10,000 fine. Your choice.
+
+## Related Articles
+
+- [NYC Local Law 38: ESP Requirements](/blog/nyc-local-law-38-esp-requirements-restaurants)
+- [ESP Cleaning Service: What to Expect](/blog/esp-cleaning-service-nyc-nj)
+- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
+
+Need ESP service? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
+    faqs: [
+      { question: 'Why is my Smoke Hog showing a red light?', answer: 'A red indicator light means the ESP has detected a fault and shut down. The most common cause is dirty collector cells causing electrical arcing. Other causes include a broken ionizer wire, power supply fault, or open safety interlock. The cells need professional cleaning.' },
+      { question: 'Can I clean my ESP cells myself?', answer: 'No. ESP cells need to be removed from the unit, soaked in professional alkaline cleaning solution, and power washed. They cannot be effectively cleaned in place. The high-voltage system also requires trained technicians for any internal work.' },
+      { question: 'What happens if I ignore a broken ESP?', answer: 'In NYC, a non-functioning ESP is a violation of Local Law 38. The DEP can fine you $1,000-$10,000+ per violation. Additionally, your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints and further inspections.' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

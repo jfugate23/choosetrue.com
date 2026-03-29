@@ -81,6 +81,7 @@ export default function Header() {
                             { href: '/services/kitchen-ventilation', icon: <Wind className="w-4 h-4" />, label: 'Kitchen Ventilation' },
                             { href: '/services/beverage-equipment', icon: <GlassWater className="w-4 h-4" />, label: 'Beverage Equipment' },
                             { href: '/services/espresso-machines', icon: <Coffee className="w-4 h-4" />, label: 'Espresso Machines' },
+                            { href: '/services/pollution-control', icon: <Wind className="w-4 h-4" />, label: 'Pollution Control (ESP)' },
                             { href: '/services/preventive-maintenance', icon: <ShieldCheck className="w-4 h-4" />, label: 'PM Agreements' },
                           ].map((item) => (
                             <Link key={item.href} href={item.href} className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-white/5 transition-colors">
@@ -184,6 +185,7 @@ export default function Header() {
               <MobileLink href="/services/kitchen-ventilation" label="Kitchen Ventilation" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/beverage-equipment" label="Beverage Equipment" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/espresso-machines" label="Espresso Machines" onClick={() => setMobileOpen(false)} />
+              <MobileLink href="/services/pollution-control" label="Pollution Control (ESP)" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/services/preventive-maintenance" label="PM Agreements" onClick={() => setMobileOpen(false)} />
             </MobileNavSection>
             <MobileLink href="/locations" label="Locations" onClick={() => setMobileOpen(false)} />

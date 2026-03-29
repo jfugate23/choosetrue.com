@@ -62,6 +62,16 @@ export const SERVICES = [
     brands: ['La Marzocco', 'Nuova Simonelli', 'La Cimbali', 'Rancilio', 'Slayer', 'Synesso', 'Mazzer', 'Mahlkönig'],
   },
   {
+    slug: 'pollution-control',
+    title: 'Kitchen Exhaust Pollution Control (ESP/PCU)',
+    shortTitle: 'Pollution Control',
+    icon: 'Wind',
+    description: 'ESP cell cleaning, ecology unit service, and smoke control system maintenance. NYC Local Law 38 compliance. Avoid $10K+ fines.',
+    longDescription: 'NYC Local Law 38 requires every commercial kitchen with charbroiling, grilling, or frying to have a functioning pollution control unit on the exhaust. Electrostatic precipitators (ESPs), ecology units, and Smoke Hog systems all need quarterly cleaning to stay compliant. We clean the collector cells, replace ionizer wires, service power supplies, and document everything for your DEP inspection.',
+    equipment: ['Electrostatic Precipitators (ESP)', 'Ecology Rooftop Units', 'Smoke Hog Systems', 'Carbon/Charcoal Odor Filters', 'UV Oxidation Systems', 'Catalytic Oxidizers', 'Pre-Filters and Post-Filters', 'ESP Power Supplies and Controls'],
+    brands: ['Smoke Hog', 'CaptiveAire', 'Halton', 'Ecology', 'Accurex', 'Greenheck', 'Streivor', 'PPC Air'],
+  },
+  {
     slug: 'preventive-maintenance',
     title: 'Preventive Maintenance Agreements',
     shortTitle: 'PM Plans',
