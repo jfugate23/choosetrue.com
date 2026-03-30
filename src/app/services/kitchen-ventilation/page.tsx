@@ -146,36 +146,24 @@ export default function KitchenVentilationPage() {
       <Section>
         <SectionHeading eyebrow="Our Work" title="Real kitchens. Real equipment. Real results." />
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-          <Reveal>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/images/commercial-kitchen-hood-installation-nj.jpg" alt="Commercial kitchen hood installation in New Jersey — new hood system with protective film during startup" fill className="object-cover" />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">Hood system installation and startup</p>
-          </Reveal>
-          <Reveal delay={100}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/images/vfd-drives-kitchen-ventilation-controls.jpg" alt="Lenze VFD drives for demand-controlled kitchen ventilation — variable speed exhaust fan controls" fill className="object-cover" />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">VFD drives for demand-controlled ventilation</p>
-          </Reveal>
-          <Reveal delay={200}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/images/kitchen-hood-fire-suppression-baffle-filters.jpg" alt="Kitchen hood fire suppression nozzle and baffle filters above commercial fryer" fill className="object-cover" />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">Fire suppression and baffle filter inspection</p>
-          </Reveal>
-          <Reveal delay={300}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image src="/images/commercial-kitchen-hood-supply-plenum.jpg" alt="Commercial kitchen hood back supply plenum — makeup air delivery system" fill className="object-cover" />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">Back supply plenum — makeup air delivery</p>
-          </Reveal>
-          <Reveal delay={400}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden col-span-2">
-              <Image src="/images/commercial-kitchen-full-view.jpg" alt="Full commercial kitchen with hood systems, prep tables, and cooking equipment — institutional kitchen build" fill className="object-cover" />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">Full commercial kitchen — institutional build</p>
-          </Reveal>
+          {[
+            { src: '/images/captiveaire-hood-active-kitchen.jpg', alt: 'CaptiveAire hood over active commercial kitchen with staff working', caption: 'Active kitchen — CaptiveAire hood in operation' },
+            { src: '/images/captiveaire-island-canopy-hood.jpg', alt: 'Large CaptiveAire island canopy hood installation', caption: 'Island canopy hood installation' },
+            { src: '/images/rooftop-exhaust-fans-commercial.jpg', alt: 'Multiple CaptiveAire rooftop exhaust fans in a row', caption: 'Rooftop exhaust fans — multi-fan system' },
+            { src: '/images/rooftop-makeup-air-unit-install.jpg', alt: 'Rooftop makeup air unit installation on commercial building', caption: 'Makeup air unit — rooftop install' },
+            { src: '/images/rooftop-upblast-exhaust-fan.jpg', alt: 'CaptiveAire rooftop upblast exhaust fan, stainless steel', caption: 'Upblast exhaust fan — new install' },
+            { src: '/images/vfd-drives-kitchen-ventilation-controls.jpg', alt: 'Lenze VFD drives for demand-controlled kitchen ventilation', caption: 'VFD drives — demand-controlled ventilation' },
+            { src: '/images/full-kitchen-ventilation-install.jpg', alt: 'Full commercial kitchen ventilation installation with hood and cooking line', caption: 'Complete kitchen ventilation system' },
+            { src: '/images/brick-bbq-pit-captiveaire-hood.jpg', alt: 'Custom brick BBQ pit with CaptiveAire exhaust hood', caption: 'Custom BBQ pit — specialty ventilation' },
+            { src: '/images/commercial-kitchen-full-view.jpg', alt: 'Full commercial kitchen with hood systems and cooking equipment', caption: 'Institutional kitchen — full build' },
+          ].map((img, i) => (
+            <Reveal key={i} delay={i * 60}>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image src={img.src} alt={img.alt} fill className="object-cover" />
+              </div>
+              <p className="text-xs text-slate-500 mt-2">{img.caption}</p>
+            </Reveal>
+          ))}
         </div>
       </Section>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Phone, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, ChevronRight, Star, Zap, Clock, CheckCircle2, Wrench, Cpu, Smartphone, BarChart3, QrCode } from 'lucide-react';
 import { COMPANY, SERVICES, STATS, MANUFACTURERS, TESTIMONIALS, VERTICALS } from '@/lib/data';
 import { Section, SectionHeading, Reveal, CTAButton, OutlineButton, ServiceForm } from '@/components/UI';
@@ -336,6 +337,29 @@ export default function HomePage() {
             <Reveal key={brand} delay={i * 40}>
               <div className="glass-card rounded-lg py-4 px-3 text-center hover:border-amber-500/20 transition-colors">
                 <span className="text-xs text-slate-400 font-medium">{brand}</span>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      {/* ====== PHOTO SHOWCASE ====== */}
+      <Section>
+        <SectionHeading eyebrow="Our Work" title="Real kitchens. Real equipment." />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          {[
+            { src: '/images/brick-bbq-pit-captiveaire-hood.jpg', alt: 'Custom brick BBQ pit with CaptiveAire exhaust hood — specialty ventilation install' },
+            { src: '/images/upscale-commercial-kitchen-line.jpg', alt: 'Upscale commercial kitchen with textured stainless steel and cooking line' },
+            { src: '/images/captiveaire-hood-active-kitchen.jpg', alt: 'CaptiveAire hood over active commercial kitchen cooking line with staff' },
+            { src: '/images/rooftop-exhaust-fans-commercial.jpg', alt: 'Multiple CaptiveAire rooftop exhaust fans — commercial kitchen ventilation' },
+            { src: '/images/cook-working-commercial-kitchen.jpg', alt: 'Cook working in commercial kitchen under CaptiveAire ventilation hood' },
+            { src: '/images/lennox-rooftop-unit-commercial.jpg', alt: 'Lennox commercial rooftop HVAC unit on commercial building' },
+            { src: '/images/full-kitchen-ventilation-install.jpg', alt: 'Full commercial kitchen ventilation installation with cooking equipment' },
+            { src: '/images/rooftop-makeup-air-unit-install.jpg', alt: 'Rooftop makeup air unit installation on commercial building' },
+          ].map((img, i) => (
+            <Reveal key={i} delay={i * 60}>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </Reveal>
           ))}
