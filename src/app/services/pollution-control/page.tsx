@@ -7,7 +7,7 @@ import { Wind, AlertTriangle, CheckCircle2, ArrowRight, Phone, DollarSign, Shiel
 
 export const metadata: Metadata = {
   title: 'Kitchen Exhaust Pollution Control | ESP & Ecology Unit Service | NYC Local Law 38',
-  description: 'ESP cell cleaning, ecology unit service, and Smoke Hog maintenance for NYC and NJ restaurants. NYC Local Law 38 compliance. Avoid $10,000+ fines. Quarterly service starting at $400.',
+  description: 'ESP cell cleaning, ecology unit service, and Smoke Hog maintenance for NYC and NJ restaurants. NYC Local Law 38 compliance. Avoid $10,000+ fines.',
   openGraph: {
     title: 'Kitchen Exhaust Pollution Control Service | True Commercial Service',
     description: 'ESP cleaning, ecology unit maintenance, NYC DEP compliance. Avoid $10K+ fines.',
@@ -105,25 +105,25 @@ export default function PollutionControlPage() {
               icon: <Zap className="w-5 h-5" />,
               title: 'ESP Cell Cleaning',
               description: 'We remove the collector cells, soak them in professional-grade alkaline solution, power wash, dry, and reinstall. This is the core of ESP maintenance — dirty cells don\'t collect grease, and the unit fails inspection.',
-              price: 'Starting at $400/visit',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Wind className="w-5 h-5" />,
               title: 'Ecology Unit Service',
               description: 'Full service on rooftop ecology units — cell cleaning, pre-filter and post-filter replacement, housing inspection, drain cleaning. These units take a beating from weather and need regular attention.',
-              price: 'Starting at $600/visit',
+              price: 'Contact us for a quote',
             },
             {
               icon: <ShieldCheck className="w-5 h-5" />,
               title: 'Power Supply & Controls Repair',
               description: 'High-voltage power supply diagnosis and repair, control board replacement, ionizer wire replacement, safety interlock testing. When the indicator light is red, we get it back to green.',
-              price: 'Diagnosis from $250',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Clock className="w-5 h-5" />,
               title: 'Quarterly Maintenance Contracts',
               description: 'Stay compliant year-round. We clean cells, replace filters, inspect components, and maintain your DEP-required service logs. You never think about it — we just show up.',
-              price: 'Starting at $1,600/year',
+              price: 'Contact us for a quote',
             },
           ].map((item, i) => (
             <Reveal key={i} delay={i * 80}>
@@ -140,56 +140,43 @@ export default function PollutionControlPage() {
         </div>
       </Section>
 
-      {/* Pricing */}
+      {/* Pricing CTA */}
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Pricing" title="Transparent ESP service pricing" description="Simple per-visit or quarterly contract pricing. Every visit includes a documented service report for your compliance records." />
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <SectionHeading eyebrow="Pricing" title="Single visit or quarterly contract" description="Every visit includes a documented service report for your compliance records. Contact us for a custom quote." />
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           <Reveal>
-            <div className="glass-card rounded-2xl p-8 text-center h-full">
-              <h3 className="text-lg font-semibold mb-1">Single Visit</h3>
-              <p className="text-xs text-slate-500 mb-4">ESP cell cleaning + inspection</p>
-              <p className="text-3xl font-bold text-amber-400 mb-4">$400-800</p>
-              <ul className="space-y-2 text-xs text-slate-400 text-left">
+            <div className="glass-card rounded-2xl p-8 h-full">
+              <h3 className="text-lg font-semibold mb-4">What&apos;s Included</h3>
+              <ul className="space-y-3 text-xs text-slate-400">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Cell removal and cleaning</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Pre-filter replacement</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Visual inspection</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Service log entry</li>
-              </ul>
-            </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="glass-card rounded-2xl p-8 text-center h-full border-amber-500/30 ring-1 ring-amber-500/20 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <span className="bg-amber-500 text-navy-300 text-xs font-bold px-4 py-1 rounded-full">Best Value</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-1">Quarterly Contract</h3>
-              <p className="text-xs text-slate-500 mb-4">4 visits/year, full compliance</p>
-              <p className="text-3xl font-bold text-amber-400 mb-4">$1,600-3,200<span className="text-lg">/yr</span></p>
-              <ul className="space-y-2 text-xs text-slate-400 text-left">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Everything in single visit</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Ionizer wire inspection</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Carbon filter replacement</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Power supply check</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Ionizer wire &amp; power supply inspection</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Carbon filter replacement (quarterly)</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />DEP-ready maintenance logs</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Priority scheduling</li>
               </ul>
             </div>
           </Reveal>
-          <Reveal delay={160}>
-            <div className="glass-card rounded-2xl p-8 text-center h-full">
-              <h3 className="text-lg font-semibold mb-1">Why It Matters</h3>
+          <Reveal delay={80}>
+            <div className="glass-card rounded-2xl p-8 h-full">
+              <h3 className="text-lg font-semibold mb-4">Why It Matters</h3>
               <p className="text-xs text-slate-500 mb-4">What DEP looks for during inspections</p>
-              <p className="text-3xl font-bold text-slate-300 mb-4">Your Records</p>
-              <ul className="space-y-2 text-xs text-slate-400 text-left">
+              <ul className="space-y-3 text-xs text-slate-400">
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Dated service logs on-site</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Working unit with green indicator</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Equipment registered with DEP</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />We provide all documentation</li>
                 <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-amber-400" />Fines: $1K-$10K+ without records</li>
               </ul>
             </div>
           </Reveal>
         </div>
+        <Reveal delay={160}>
+          <div className="text-center mt-8">
+            <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-8 py-4 rounded-xl cta-glow transition-all">
+              Get a Quote <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </Reveal>
       </Section>
 
       {/* Brands */}
@@ -223,19 +210,11 @@ export default function PollutionControlPage() {
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">Bundle & Save</p>
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">ESP service + air balancing in one visit</h2>
             <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">
-              We&apos;re already on your roof cleaning the ESP. While we&apos;re there, we balance your exhaust and makeup air, check the fan, and run a smoke capture test. One visit, full ventilation compliance.
+              We&apos;re already on your roof cleaning the ESP. While we&apos;re there, we balance your exhaust and makeup air, check the fan, and run a smoke capture test. One visit, full ventilation compliance — and you save compared to scheduling separately.
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 max-w-lg mx-auto">
-              <div className="glass-card rounded-xl p-6 text-center">
-                <p className="text-xs text-slate-500 mb-1">ESP Service Only</p>
-                <p className="text-xl font-bold">$400-800</p>
-              </div>
-              <div className="glass-card rounded-xl p-6 text-center border-amber-500/30">
-                <p className="text-xs text-amber-400 mb-1">ESP + Air Balance Bundle</p>
-                <p className="text-xl font-bold text-amber-400">$1,400-1,800</p>
-                <p className="text-[10px] text-slate-500">Save $200+ vs separate visits</p>
-              </div>
-            </div>
+            <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-8 py-4 rounded-xl cta-glow transition-all">
+              Get a Bundle Quote <ArrowRight className="w-4 h-4" />
+            </Link>
           </Reveal>
         </div>
       </Section>
@@ -250,7 +229,7 @@ export default function PollutionControlPage() {
             { q: 'What happens if my ESP isn\'t maintained?', a: 'NYC DEP can fine you $1,000 to $10,000+ per violation. Not having maintenance logs is itself a violation, even if the unit appears functional. Neighbor complaints about smoke or odors trigger DEP inspections. Repeat violations escalate in cost and can result in equipment shutdown orders.' },
             { q: 'Do I need an ESP in New Jersey?', a: 'NJ does not have a statewide equivalent to NYC Local Law 38. However, many landlords in urban NJ (Jersey City, Newark, Hoboken) require ESPs in commercial kitchen leases. NJ DEP can also take action under nuisance odor provisions if your restaurant generates complaints.' },
             { q: 'What brands of ESP do you service?', a: 'We service all major brands including Smoke Hog (Parker Hannifin), CaptiveAire, Halton, Ecology/PPC Air, Accurex, Greenheck, and Streivor. If it\'s on your roof and has collector cells, we service it.' },
-            { q: 'Can you bundle ESP cleaning with air balancing?', a: 'Yes — and you should. We\'re already on your roof. An ESP service + air balance bundle saves you $200+ compared to scheduling separately, and ensures your entire exhaust system is compliant and efficient in one visit.' },
+            { q: 'Can you bundle ESP cleaning with air balancing?', a: 'Yes — and you should. We\'re already on your roof. An ESP service + air balance bundle saves you money compared to scheduling separately, and ensures your entire exhaust system is compliant and efficient in one visit. Contact us for bundle pricing.' },
           ].map((faq, i) => (
             <Reveal key={i} delay={i * 60}>
               <div className="glass-card rounded-xl p-6">
@@ -270,7 +249,7 @@ export default function PollutionControlPage() {
           { '@type': 'Question', name: 'Is an ESP required for my NYC restaurant?', acceptedAnswer: { '@type': 'Answer', text: 'If your restaurant does any charbroiling, grilling, deep frying, or roasting that produces grease-laden vapors, NYC Local Law 38 requires emission control equipment.' } },
           { '@type': 'Question', name: 'How often does an ESP need to be cleaned?', acceptedAnswer: { '@type': 'Answer', text: 'Quarterly at minimum. High-volume operations may need monthly cleaning. NYC DEP requires service logs documenting every cleaning and inspection.' } },
           { '@type': 'Question', name: 'What is the fine for not maintaining an ESP in NYC?', acceptedAnswer: { '@type': 'Answer', text: 'NYC DEP fines range from $1,000 to $10,000+ per violation. Not having maintenance logs is itself a violation. Repeat violations escalate.' } },
-          { '@type': 'Question', name: 'How much does ESP cleaning cost?', acceptedAnswer: { '@type': 'Answer', text: 'Single visit ESP cell cleaning starts at $400. Quarterly maintenance contracts start at $1,600 per year. Compare that to DEP fines of $1,000-$10,000+ per violation.' } },
+          { '@type': 'Question', name: 'How much does ESP cleaning cost?', acceptedAnswer: { '@type': 'Answer', text: 'Contact us for a quote on single visit or quarterly contract ESP service. Pricing depends on your unit size and service needs. Compare the cost of regular maintenance to DEP fines of $1,000-$10,000+ per violation.' } },
         ],
       }) }} />
 
@@ -278,7 +257,7 @@ export default function PollutionControlPage() {
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="Service Area" title="ESP and pollution control service across NJ & NYC" />
         <div className="flex flex-wrap justify-center gap-3">
-          {['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island', 'Jersey City', 'Newark', 'Hoboken', 'Elizabeth', 'Paterson', 'New Brunswick', 'Stamford CT'].map((area, i) => (
+          {['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island', 'Jersey City', 'Newark', 'Hoboken', 'Elizabeth', 'Paterson', 'New Brunswick', 'Woodbridge'].map((area, i) => (
             <Reveal key={area} delay={i * 30}>
               <div className="flex items-center gap-2 glass-card rounded-lg px-4 py-2.5">
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />

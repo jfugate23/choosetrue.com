@@ -7,7 +7,7 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+19087438688',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Northern New Jersey, New York City, Connecticut, and Atlanta.',
+  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Northern New Jersey and New York City.',
 };
 
 export const SERVICES = [
@@ -256,121 +256,6 @@ export const LOCATIONS = [
     seoKeyword: 'Staten Island commercial kitchen equipment repair',
   },
 
-  // ─── CONNECTICUT ───────────────────────────────────────────────
-  {
-    slug: 'stamford-ct',
-    city: 'Stamford',
-    state: 'CT',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Stamford, Greenwich & Fairfield County',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Stamford', 'Greenwich', 'Darien', 'New Canaan', 'Norwalk', 'Westport', 'Fairfield', 'Bridgeport', 'Cos Cob', 'Old Greenwich'],
-    description: 'True Commercial Service is bringing expert commercial kitchen ventilation and equipment repair to Stamford and Fairfield County. From the restaurants along Bedford Street to the hotel kitchens in Harbor Point, Stamford\'s growing food scene needs dedicated kitchen ventilation service.',
-    seoTitle: 'Stamford CT Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Stamford CT. Serving restaurants, hotels, and commercial kitchens across Fairfield County. Air balancing, ESP service, exhaust fans. 24/7 emergency.',
-    seoKeyword: 'Stamford CT commercial kitchen equipment repair',
-  },
-  {
-    slug: 'norwalk-ct',
-    city: 'Norwalk',
-    state: 'CT',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Norwalk, Westport & Coastal Fairfield County',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Norwalk', 'Westport', 'Weston', 'Wilton', 'Ridgefield', 'Redding', 'Easton', 'SoNo District', 'Rowayton'],
-    description: 'True Commercial Service is expanding to Norwalk and coastal Fairfield County. The SoNo district\'s restaurant boom, Westport\'s dining scene, and the institutional kitchens throughout the area all need expert kitchen ventilation and equipment service.',
-    seoTitle: 'Norwalk CT Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Norwalk CT. Serving SoNo, Westport, and Fairfield County restaurants. Air balancing, ESP cleaning, exhaust fans.',
-    seoKeyword: 'Norwalk CT commercial kitchen equipment repair',
-  },
-  {
-    slug: 'bridgeport-ct',
-    city: 'Bridgeport',
-    state: 'CT',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Bridgeport, Trumbull & Greater Bridgeport',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Bridgeport', 'Trumbull', 'Stratford', 'Shelton', 'Milford', 'Fairfield', 'Monroe', 'Easton', 'Black Rock'],
-    description: 'True Commercial Service is bringing kitchen ventilation expertise to Bridgeport and Greater Bridgeport. From downtown restaurants to the institutional kitchens at Bridgeport Hospital and Sacred Heart University, we deliver air balancing, ESP service, and equipment repair.',
-    seoTitle: 'Bridgeport CT Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair and ventilation service in Bridgeport CT. Serving restaurants, hospitals, and commercial kitchens. Air balancing, ESP service, exhaust fan repair.',
-    seoKeyword: 'Bridgeport CT commercial kitchen equipment repair',
-  },
-  {
-    slug: 'new-haven-ct',
-    city: 'New Haven',
-    state: 'CT',
-    status: 'coming-soon' as const,
-    tagline: 'Serving New Haven, Yale & the CT Shoreline',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['New Haven', 'West Haven', 'East Haven', 'Hamden', 'North Haven', 'Branford', 'Guilford', 'Madison', 'Orange', 'Woodbridge'],
-    description: 'True Commercial Service is expanding to New Haven — home to some of Connecticut\'s best restaurants, Yale University\'s dining operations, and the legendary pizza on Wooster Street. New Haven\'s diverse and growing food scene deserves expert kitchen ventilation service.',
-    seoTitle: 'New Haven CT Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair and ventilation service in New Haven CT. Serving restaurants, Yale dining, and commercial kitchens. Air balancing, ESP cleaning, exhaust fans.',
-    seoKeyword: 'New Haven CT commercial kitchen equipment repair',
-  },
-
-  // ─── ATLANTA METRO ────────────────────────────────────────────
-  {
-    slug: 'atlanta',
-    city: 'Atlanta',
-    state: 'GA',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Metro Atlanta and North Georgia',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Atlanta', 'Midtown', 'Buckhead', 'Decatur', 'East Atlanta', 'West Midtown', 'Old Fourth Ward', 'Virginia-Highland', 'Ponce City', 'Grant Park'],
-    description: 'True Commercial Service is expanding to Atlanta — bringing our tech-forward approach to commercial kitchen equipment repair across Metro Atlanta. From the Buford Highway food corridor to the Westside Provisions District, Atlanta\'s restaurant scene deserves better equipment service.',
-    seoTitle: 'Atlanta Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair coming to Metro Atlanta. Expert cooking, refrigeration, HVAC service for restaurants, grocery stores, and institutions.',
-    seoKeyword: 'Atlanta commercial kitchen equipment repair',
-  },
-  {
-    slug: 'marietta-ga',
-    city: 'Marietta',
-    state: 'GA',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Marietta, Cobb County & Northwest Metro Atlanta',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Marietta', 'Kennesaw', 'Smyrna', 'Acworth', 'Powder Springs', 'Austell', 'Vinings', 'Mableton', 'Cumberland', 'Sandy Plains'],
-    description: 'True Commercial Service is bringing expert commercial kitchen equipment repair to Marietta and Cobb County. From the Marietta Square restaurants to the chain operations along I-75 and Barrett Parkway, we\'re building the service infrastructure Cobb County\'s growing food industry needs.',
-    seoTitle: 'Marietta GA Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Marietta and Cobb County GA. Serving restaurants, commercial kitchens, and institutions. Refrigeration, cooking, HVAC. 24/7 emergency.',
-    seoKeyword: 'Marietta GA commercial kitchen equipment repair',
-  },
-  {
-    slug: 'decatur-ga',
-    city: 'Decatur',
-    state: 'GA',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Decatur, DeKalb County & East Metro Atlanta',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Decatur', 'Stone Mountain', 'Tucker', 'Dunwoody', 'Sandy Springs', 'Chamblee', 'Doraville', 'Brookhaven', 'Clarkston', 'Lithonia'],
-    description: 'True Commercial Service is expanding to Decatur and DeKalb County. Decatur\'s award-winning restaurant scene and the Buford Highway international food corridor represent some of the most exciting — and most demanding — commercial kitchens in Georgia. We\'re building a service operation that matches that energy.',
-    seoTitle: 'Decatur GA Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Decatur and DeKalb County GA. Serving restaurants, Buford Highway food corridor, and commercial kitchens. 24/7 emergency service.',
-    seoKeyword: 'Decatur GA commercial kitchen equipment repair',
-  },
-  {
-    slug: 'roswell-ga',
-    city: 'Roswell',
-    state: 'GA',
-    status: 'coming-soon' as const,
-    tagline: 'Serving Roswell, Alpharetta & North Fulton County',
-    phone: '(908) 743-8688',
-    phoneHref: 'tel:+19087438688',
-    serviceArea: ['Roswell', 'Alpharetta', 'Johns Creek', 'Milton', 'Cumming', 'Suwanee', 'Duluth', 'Norcross', 'Peachtree Corners', 'Lawrenceville'],
-    description: 'True Commercial Service is launching in Roswell and North Fulton County — the suburbs driving Metro Atlanta\'s restaurant boom. From Canton Street restaurants in Roswell to the Avalon district in Alpharetta, we deliver expert commercial kitchen equipment repair with AI-powered diagnostics and same-day emergency response.',
-    seoTitle: 'Roswell GA Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Roswell, Alpharetta, and North Fulton County GA. Serving restaurants and commercial kitchens. 24/7 emergency service.',
-    seoKeyword: 'Roswell GA commercial kitchen equipment repair',
-  },
 ];
 
 export const VERTICALS = [
@@ -431,7 +316,7 @@ export const PROFILES = {
 // Example: Google Business (Elizabeth) → website: choosetrue.com/locations/elizabeth-nj
 
 // Hub locations shown in footer (not every sub-city)
-export const HUB_LOCATIONS = ['elizabeth-nj', 'new-york-city', 'stamford-ct', 'atlanta'];
+export const HUB_LOCATIONS = ['elizabeth-nj', 'new-york-city', 'newark-nj', 'jersey-city-nj'];
 
 // Ventilation-specific city landing pages (50-mile radius from Elizabeth NJ)
 export const VENTILATION_CITIES = [
@@ -544,53 +429,6 @@ export const VENTILATION_CITIES = [
     restaurantScene: 'Staten Island\'s restaurant scene runs along Hylan Boulevard and Forest Avenue — Italian restaurants, pizzerias, diners, and a growing international food presence. Closest NYC borough to our Elizabeth NJ home base, just across the Goethals Bridge.',
     neighborhoods: ['St. George', 'New Dorp', 'Tottenville', 'Great Kills', 'West Brighton', 'Port Richmond'],
     nearbyAreas: ['Elizabeth NJ', 'Brooklyn', 'Bayonne NJ'],
-  },
-  // CT (edge of 50-mile radius)
-  {
-    slug: 'stamford-ct',
-    city: 'Stamford',
-    state: 'CT',
-    region: 'Fairfield County',
-    restaurantScene: 'Stamford\'s downtown has transformed into a dining hub — restaurants, bars, and hotels along Bedford Street, Atlantic Street, and Harbor Point. Corporate campuses in Stamford and Greenwich add institutional kitchens. Few kitchen ventilation specialists serve this market.',
-    neighborhoods: ['Downtown', 'Harbor Point', 'Springdale', 'Glenbrook'],
-    nearbyAreas: ['Greenwich', 'Norwalk', 'Darien', 'New Canaan', 'White Plains NY'],
-  },
-  {
-    slug: 'white-plains-ny',
-    city: 'White Plains',
-    state: 'NY',
-    region: 'Westchester County',
-    restaurantScene: 'White Plains is the commercial hub of Westchester County — restaurants along Mamaroneck Avenue and Main Street, plus hotel kitchens, hospital cafeterias, and corporate dining facilities. Westchester\'s restaurant density rivals many NYC neighborhoods.',
-    neighborhoods: ['Downtown', 'Mamaroneck Avenue', 'Battle Hill'],
-    nearbyAreas: ['Yonkers', 'New Rochelle', 'Scarsdale', 'Tarrytown', 'Mount Vernon', 'Port Chester'],
-  },
-  // CT ventilation cities
-  {
-    slug: 'norwalk-ct',
-    city: 'Norwalk',
-    state: 'CT',
-    region: 'Fairfield County',
-    restaurantScene: 'Norwalk\'s SoNo (South Norwalk) district has become one of Connecticut\'s top dining destinations — restaurants, breweries, and oyster bars packed along Washington and Main Streets. Westport adds upscale dining. All need ventilation service.',
-    neighborhoods: ['SoNo', 'East Norwalk', 'Rowayton', 'Cranbury'],
-    nearbyAreas: ['Westport', 'Weston', 'Wilton', 'Darien', 'Stamford', 'Ridgefield'],
-  },
-  {
-    slug: 'bridgeport-ct',
-    city: 'Bridgeport',
-    state: 'CT',
-    region: 'Fairfield County',
-    restaurantScene: 'Bridgeport is Connecticut\'s largest city with a diverse food scene — from downtown restaurants to the institutional kitchens at Bridgeport Hospital, Sacred Heart University, and the Webster Bank Arena. The Black Rock neighborhood has an emerging restaurant row.',
-    neighborhoods: ['Downtown', 'Black Rock', 'North End', 'East Side'],
-    nearbyAreas: ['Trumbull', 'Stratford', 'Shelton', 'Milford', 'Fairfield', 'Monroe'],
-  },
-  {
-    slug: 'new-haven-ct',
-    city: 'New Haven',
-    state: 'CT',
-    region: 'New Haven County',
-    restaurantScene: 'New Haven is a food city — legendary pizza on Wooster Street (Frank Pepe\'s, Sally\'s, Modern), Yale University\'s massive dining operations, and a thriving restaurant scene from Chapel Street to the Westville neighborhood. Kitchen ventilation demand is strong and underserved.',
-    neighborhoods: ['Wooster Square', 'Downtown', 'Chapel District', 'East Rock', 'Westville'],
-    nearbyAreas: ['West Haven', 'East Haven', 'Hamden', 'North Haven', 'Branford', 'Guilford'],
   },
 ];
 

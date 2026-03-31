@@ -24,7 +24,7 @@ const schemaMarkup = {
     url: 'https://choosetrue.com',
   },
   description: 'Commercial kitchen air balancing, exhaust fan repair, and makeup air unit service. We test, adjust, and balance your kitchen ventilation system to eliminate smoke spillage, reduce energy waste, and keep you code compliant.',
-  areaServed: ['New Jersey', 'New York City', 'Connecticut', 'Atlanta'],
+  areaServed: ['New Jersey', 'New York City'],
   serviceType: 'Kitchen Ventilation Air Balancing',
 };
 
@@ -107,19 +107,19 @@ export default function KitchenVentilationPage() {
               icon: <Wind className="w-5 h-5" />,
               title: 'Kitchen Air Balancing',
               description: 'We measure exhaust CFM, makeup air volume, face velocity at the hood, and static pressure throughout the system. Then we adjust dampers, fan speeds, and makeup air settings until the system is properly balanced. You get a written report with before/after numbers.',
-              price: 'Starting at $1,200 per system',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Flame className="w-5 h-5" />,
               title: 'Exhaust Fan Service & Repair',
               description: 'Belt replacement, motor swaps, bearing lubrication, complete fan replacements. We service upblast, utility, and inline exhaust fans from every major manufacturer. If your fan is screaming, vibrating, or barely moving air — we fix it.',
-              price: 'Repair from $350 / Replacement from $1,500',
+              price: 'Contact us for a quote',
             },
             {
               icon: <ThermometerSun className="w-5 h-5" />,
               title: 'Makeup Air Unit Service',
               description: 'Your MAU is supposed to replace the air your exhaust pulls out — at the right temperature. If it\'s undersized, misconfigured, or broken, your kitchen is either freezing in winter or an oven in summer. We diagnose and repair all MAU brands.',
-              price: 'Service calls from $450',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Zap className="w-5 h-5" />,
@@ -242,56 +242,39 @@ export default function KitchenVentilationPage() {
         </div>
       </Section>
 
-      {/* Pricing */}
+      {/* Pricing CTA */}
       <Section className="bg-white/[0.02]">
         <SectionHeading
           eyebrow="Pricing"
-          title="Simple, transparent pricing"
-          description="No hidden fees. No hourly guessing. Per-system pricing so you know the cost before we show up."
+          title="Per-system pricing — no hourly surprises"
+          description="Tell us how many hoods you have and we'll give you an exact quote before we show up. Every service includes a written balance report and energy assessment."
         />
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {[
-            {
-              name: '1 Hood System',
-              description: '1 hood + 1 exhaust fan + makeup air check',
-              price: '$1,200',
-              features: ['Full CFM measurement', 'Damper adjustment', 'MAU verification', 'Written balance report', 'Energy assessment'],
-            },
-            {
-              name: '2 Hood Systems',
-              description: '2 hoods + 2 exhaust fans + makeup air',
-              price: '$2,000',
-              popular: true,
-              features: ['Everything in 1-hood', 'Cross-system balancing', 'Coordinated fan speeds', 'Written balance report', 'Energy assessment'],
-            },
-            {
-              name: '3+ Hood Systems',
-              description: 'Hotels, hospitals, large kitchens',
-              price: '$2,500+',
-              features: ['Full kitchen balance', 'Multiple MAU coordination', 'Demand control evaluation', 'Detailed engineering report', 'Energy savings projection'],
-            },
-          ].map((tier, i) => (
-            <Reveal key={i} delay={i * 100}>
-              <div className={`glass-card rounded-2xl p-8 h-full relative ${tier.popular ? 'border-amber-500/30 ring-1 ring-amber-500/20' : ''}`}>
-                {tier.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-amber-500 text-navy-300 text-xs font-bold px-4 py-1 rounded-full">Most Common</span>
-                  </div>
-                )}
-                <h3 className="text-lg font-semibold mb-1">{tier.name}</h3>
-                <p className="text-xs text-slate-500 mb-4">{tier.description}</p>
-                <p className="text-3xl font-bold text-amber-400 mb-6">{tier.price}</p>
-                <ul className="space-y-3">
-                  {tier.features.map((feature, j) => (
-                    <li key={j} className="flex items-center gap-3 text-sm text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+        <div className="max-w-xl mx-auto text-center">
+          <Reveal>
+            <div className="glass-card rounded-2xl p-8">
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  Full CFM measurement &amp; damper adjustment
+                </div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  Smoke capture test &amp; MAU verification
+                </div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  Written balance report with before/after readings
+                </div>
+                <div className="flex items-center gap-3 text-sm text-slate-300">
+                  <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                  Energy savings assessment included
+                </div>
               </div>
-            </Reveal>
-          ))}
+              <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-8 py-4 rounded-xl cta-glow transition-all">
+                Get a Quote <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </Section>
 
@@ -326,7 +309,7 @@ export default function KitchenVentilationPage() {
           {[
             { q: 'How do I know if my kitchen ventilation needs balancing?', a: 'If you see smoke escaping the hood during cooking, feel cold drafts in winter, have doors that are hard to open, notice pilot lights blowing out, or your dining room smells like the kitchen — your system is out of balance. Any one of these signs means you\'re also wasting energy.' },
             { q: 'How long does an air balance take?', a: 'A single-hood restaurant kitchen takes 3-4 hours. A two-hood system takes 5-6 hours. Larger kitchens (hotels, hospitals) may take a full day. We do all the work during business hours — no overnight visits needed.' },
-            { q: 'Will this actually lower my energy bills?', a: 'Yes. The U.S. Department of Energy has documented 25-50% HVAC energy reductions from proper kitchen air balancing. For a typical restaurant, that\'s $200-500/month in savings. The service pays for itself in 2-3 months.' },
+            { q: 'Will this actually lower my energy bills?', a: 'Yes. The U.S. Department of Energy has documented 25-50% HVAC energy reductions from proper kitchen air balancing. For a typical restaurant, that can mean significant monthly savings. The service typically pays for itself within a few months.' },
             { q: 'Do I need this for a health inspection?', a: 'Proper hood capture is required by NFPA 96 and enforced by local health departments and fire marshals. If your hood isn\'t capturing smoke, you can be cited. An air balance report documents compliance.' },
             { q: 'What brands of hoods and fans do you work on?', a: 'All of them. CaptiveAire, Greenheck, Accurex, Halton, Larkin, and every other commercial kitchen ventilation manufacturer. We also service all makeup air unit brands.' },
             { q: 'Can you also fix my exhaust fan while you\'re there?', a: 'Absolutely. If we find a failing motor, worn belt, or damaged fan during the balance, we can repair or replace it on the same visit. Most common parts are on the truck.' },
@@ -345,7 +328,7 @@ export default function KitchenVentilationPage() {
       <Section>
         <SectionHeading eyebrow="Service Area" title="Where we offer kitchen ventilation service" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {LOCATIONS.filter(l => ['elizabeth-nj', 'new-york-city', 'stamford-ct', 'atlanta'].includes(l.slug)).map((loc, i) => (
+          {LOCATIONS.filter(l => ['elizabeth-nj', 'newark-nj', 'jersey-city-nj', 'new-york-city'].includes(l.slug)).map((loc, i) => (
             <Reveal key={loc.slug} delay={i * 80}>
               <Link href={`/locations/${loc.slug}`} className="group glass-card rounded-xl p-6 hover:border-amber-500/20 transition-all block">
                 <div className="flex items-center gap-3 mb-2">
@@ -384,8 +367,8 @@ export default function KitchenVentilationPage() {
         mainEntity: [
           { '@type': 'Question', name: 'How do I know if my kitchen ventilation needs balancing?', acceptedAnswer: { '@type': 'Answer', text: 'If you see smoke escaping the hood during cooking, feel cold drafts in winter, have doors that are hard to open, notice pilot lights blowing out, or your dining room smells like the kitchen — your system is out of balance.' } },
           { '@type': 'Question', name: 'How long does a kitchen air balance take?', acceptedAnswer: { '@type': 'Answer', text: 'A single-hood restaurant kitchen takes 3-4 hours. A two-hood system takes 5-6 hours. Larger kitchens may take a full day. All work is done during business hours.' } },
-          { '@type': 'Question', name: 'Will kitchen air balancing lower my energy bills?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The U.S. Department of Energy has documented 25-50% HVAC energy reductions from proper kitchen air balancing. For a typical restaurant, that is $200-500/month in savings.' } },
-          { '@type': 'Question', name: 'How much does commercial kitchen air balancing cost?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing starts at $1,200 for a single-hood system. Two-hood systems are $2,000. Larger kitchens with 3+ hoods start at $2,500. Pricing is per system, not hourly.' } },
+          { '@type': 'Question', name: 'Will kitchen air balancing lower my energy bills?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The U.S. Department of Energy has documented 25-50% HVAC energy reductions from proper kitchen air balancing. The service typically pays for itself within a few months.' } },
+          { '@type': 'Question', name: 'How much does commercial kitchen air balancing cost?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing is per hood system, not hourly. Contact us for a quote — we provide exact pricing before we show up.' } },
           { '@type': 'Question', name: 'Is kitchen air balancing required by code?', acceptedAnswer: { '@type': 'Answer', text: 'Proper hood capture is required by NFPA 96 and enforced by local health departments and fire marshals. An air balance report documents compliance.' } },
           { '@type': 'Question', name: 'What brands of kitchen hoods do you service?', acceptedAnswer: { '@type': 'Answer', text: 'All commercial kitchen ventilation brands including CaptiveAire, Greenheck, Accurex, Halton, and Larkin. We also service all makeup air unit brands.' } },
         ],

@@ -1362,11 +1362,7 @@ You get a written report with all the readings, calculations, and a pass/fail as
 
 ## How Much Does Kitchen Air Balancing Cost in NJ?
 
-- **Single hood system (1 hood, 1 exhaust fan):** $1,200
-- **Two hood systems:** $2,000
-- **Three or more hoods (hotels, hospitals, large kitchens):** $2,500+
-
-The service typically pays for itself in energy savings within 3-6 months — often faster if your makeup air unit isn\'t working at all.
+Pricing is per hood system, not hourly — so you know the cost before we show up. [Contact us for a quote](/schedule-service). The service typically pays for itself in energy savings within a few months — often faster if your makeup air unit isn\'t working at all.
 
 ## How Do I Know If My Kitchen Needs It?
 
@@ -1395,7 +1391,7 @@ Very few companies specialize in this. Most HVAC contractors focus on rooftop un
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What is kitchen air balancing?', answer: 'Air balancing is the process of measuring and adjusting your kitchen exhaust and makeup air systems so they work together at the correct ratio. The exhaust hood pulls air out, and the makeup air unit replaces about 80% of it with tempered air. Balancing ensures proper hood capture, comfortable temperatures, and minimal energy waste.' },
-      { question: 'How much does kitchen air balancing cost in NJ?', answer: 'A single hood system typically costs $1,200. Two hood systems cost $2,000. Larger kitchens with three or more hoods start at $2,500. The service usually pays for itself in energy savings within 3-6 months.' },
+      { question: 'How much does kitchen air balancing cost in NJ?', answer: 'Pricing is per hood system, not hourly. Contact us for an exact quote. The service usually pays for itself in energy savings within a few months.' },
       { question: 'How do I know if my restaurant kitchen needs air balancing?', answer: 'Signs include: smoke escaping the hood during cooking, front door hard to open, pilot lights blowing out, kitchen uncomfortably hot, dining room smells like the kitchen, or energy bills higher than expected. If your hood system has never been tested after installation, it almost certainly needs balancing.' },
     ],
   },
@@ -1413,27 +1409,27 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 ### Belt Failure (Most Common)
 The fan belt is the #1 failure point on upblast exhaust fans. Belts wear, stretch, crack, and eventually snap. When the belt breaks, the fan motor runs but no air moves. You\'ll notice immediately — the kitchen fills with smoke and heat.
 
-**Fix:** Belt replacement. A 30-minute job for an experienced tech. Cost: $150-300 including parts and labor.
+**Fix:** Belt replacement. A 30-minute job for an experienced tech. [Contact us for pricing](/schedule-service).
 
 ### Motor Failure
 The fan motor burns out from heat, grease buildup, or age. You\'ll hear nothing when you turn the fan on, or you\'ll hear humming but no spinning. Grease-laden air accelerates motor failure — this is why regular cleaning matters.
 
-**Fix:** Motor replacement. Most motors are universal fit and can be sourced same-day. Cost: $400-800 depending on HP and motor type.
+**Fix:** Motor replacement. Most motors are universal fit and can be sourced same-day. [Contact us for pricing](/schedule-service).
 
 ### Bearing Failure
-The fan bearings wear out over time, especially without regular lubrication. You\'ll hear grinding, squealing, or rumbling from the roof. If you ignore it, the bearings seize and the motor burns out — turning a $200 bearing job into an $800 motor job.
+The fan bearings wear out over time, especially without regular lubrication. You\'ll hear grinding, squealing, or rumbling from the roof. If you ignore it, the bearings seize and the motor burns out — turning a simple bearing job into a full motor replacement.
 
-**Fix:** Bearing replacement or re-lubrication. Cost: $200-400.
+**Fix:** Bearing replacement or re-lubrication. [Contact us for pricing](/schedule-service).
 
 ### Grease Buildup on Fan Wheel
 Grease accumulates on the fan wheel and housing, adding weight and reducing balance. The fan vibrates, moves less air, and works harder. Eventually the added weight and vibration destroy the bearings and motor.
 
-**Fix:** Fan wheel cleaning and rebalancing. Should be done during every hood cleaning. Cost: $150-300 as a standalone service.
+**Fix:** Fan wheel cleaning and rebalancing. Should be done during every hood cleaning. [Contact us for pricing](/schedule-service).
 
 ### Electrical Issues
 Contactors, relays, and wiring connections fail — especially in the harsh rooftop environment. The fan won\'t start, runs intermittently, or trips the breaker.
 
-**Fix:** Electrical diagnosis and component replacement. Cost: $200-500.
+**Fix:** Electrical diagnosis and component replacement. [Contact us for pricing](/schedule-service).
 
 ## When to Repair vs Replace
 
@@ -1450,7 +1446,7 @@ Contactors, relays, and wiring connections fail — especially in the harsh roof
 - Fan is undersized for the hood (common in renovated kitchens)
 - Repair cost exceeds 60% of replacement cost
 
-A new upblast exhaust fan installed typically costs $1,500-4,000 depending on size and CFM rating.
+Contact us for fan replacement pricing — cost depends on size and CFM rating.
 
 ## What to Check Before You Call
 
@@ -1473,7 +1469,7 @@ A dead exhaust fan is an emergency — you can\'t legally operate without it, an
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'How much does restaurant exhaust fan repair cost?', answer: 'Belt replacement costs $150-300. Motor replacement costs $400-800. Bearing replacement costs $200-400. A full fan replacement including installation costs $1,500-4,000 depending on size and CFM.' },
+      { question: 'How much does restaurant exhaust fan repair cost?', answer: 'Repair costs vary depending on the issue — belt replacement is the least expensive, followed by bearing service, then motor replacement. Full fan replacement costs more. Contact us for an exact quote.' },
       { question: 'Why is my kitchen exhaust fan not working?', answer: 'The most common causes are a broken belt, burned-out motor, failed bearings, or an electrical issue like a tripped breaker or bad contactor. Belt failure is the #1 cause — it is a quick, inexpensive fix.' },
       { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A non-functioning exhaust fan means no cooking until it is repaired.' },
     ],
@@ -1531,7 +1527,7 @@ For a typical 10-foot hood exhausting 2,750 CFM, the MAU is designed to supply a
 - **Cooling waste (summer):** approximately $1,060/year in extra electricity
 - **Total:** over $5,200/year in wasted energy — on top of the repair cost
 
-The MAU repair typically costs $300-800. The energy waste costs $5,000+/year. The math is clear.
+The MAU repair is a fraction of the annual energy waste. The math is clear — [contact us for a quote](/schedule-service).
 
 ## What to Check Before You Call
 
@@ -1552,7 +1548,7 @@ The MAU repair typically costs $300-800. The energy waste costs $5,000+/year. Th
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'What does a makeup air unit do in a restaurant?', answer: 'A makeup air unit (MAU) replaces the air your exhaust hood pulls out of the kitchen. It supplies about 80% of the exhausted volume as tempered (heated or cooled) air. Without it, raw outside air infiltrates through doors and gaps, and your building HVAC has to condition all of it.' },
-      { question: 'How much does it cost when a makeup air unit is broken?', answer: 'A broken MAU on a typical restaurant hood system wastes approximately $5,000 or more per year in excess heating and cooling costs. The building HVAC has to condition thousands of CFM of raw outside air that the MAU should be handling. Repair typically costs $300-800.' },
+      { question: 'How much does it cost when a makeup air unit is broken?', answer: 'A broken MAU on a typical restaurant hood system wastes approximately $5,000 or more per year in excess heating and cooling costs. The building HVAC has to condition thousands of CFM of raw outside air that the MAU should be handling. Contact us for a repair quote.' },
       { question: 'How do I know if my restaurant makeup air unit is broken?', answer: 'Signs include: kitchen freezing in winter despite heat running, front door extremely hard to open, pilot lights blowing out, whistling from doors and gaps, energy bills much higher than expected, and poor hood capture even though the exhaust fan is running.' },
     ],
   },
@@ -1617,7 +1613,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
     faqs: [
       { question: 'Why is my restaurant kitchen so hot even with AC running?', answer: 'The most common cause is an unbalanced kitchen ventilation system. If the exhaust hood is not capturing heat properly — due to too much or misdirected makeup air, or insufficient exhaust — heat escapes into the kitchen. The AC cannot compensate for a ventilation problem. Air balancing the hood system typically solves it.' },
       { question: 'Can air balancing reduce kitchen temperature?', answer: 'Yes. Proper air balancing ensures the exhaust hood captures the thermal plume from cooking equipment. Once the heat is going up the hood instead of into the kitchen, temperatures drop significantly and the AC can maintain comfortable conditions.' },
-      { question: 'How much does it cost to fix a hot restaurant kitchen?', answer: 'If the cause is air balance (which it usually is), a single hood system balance costs $1,200. This is a one-time service that typically resolves the problem permanently. Compare that to repeated HVAC service calls that do not fix the root cause.' },
+      { question: 'How much does it cost to fix a hot restaurant kitchen?', answer: 'If the cause is air balance (which it usually is), a one-time air balance service typically resolves the problem permanently. Contact us for a quote. Compare that to repeated HVAC service calls that do not fix the root cause.' },
     ],
   },
   {
@@ -1649,16 +1645,7 @@ Many newer CaptiveAire systems include or can be upgraded with demand control ve
 
 ## What CaptiveAire Hood Service Costs
 
-| Service | Typical Cost |
-|---------|-------------|
-| Air balancing (1 hood system) | $1,200 |
-| Air balancing (2 hood systems) | $2,000 |
-| Exhaust fan belt replacement | $150-300 |
-| Exhaust fan motor replacement | $400-800 |
-| Fan wheel cleaning | $150-300 |
-| MAU filter change | $50-150 |
-| MAU burner service | $300-500 |
-| Full system balance + maintenance | $1,500-2,500 |
+Service costs vary depending on your system size and what\'s needed. [Contact us for a quote](/schedule-service) — we price per hood system, not hourly, so you know the cost before we show up.
 
 ## Who Services CaptiveAire Hoods in NJ?
 
@@ -1731,7 +1718,7 @@ That\'s just energy. Add the operational costs:
 3. **Balance the system** — adjust dampers, fan speeds, and MAU settings to achieve 80-90% supply-to-exhaust ratio.
 4. **If the MAU is undersized** — it may need to be replaced with a properly sized unit.
 
-A one-time air balance costs $1,200 for a single hood system and typically resolves the problem permanently. The $1,200 service saves $5,000+/year in energy — payback in under 3 months.
+A one-time air balance service typically resolves the problem permanently — and it pays for itself in energy savings within a few months. [Contact us for a quote](/schedule-service).
 
 **True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Union County, NJ. One visit, real measurements, permanent fix.**
 
@@ -1745,7 +1732,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
     faqs: [
       { question: 'What causes negative pressure in a commercial kitchen?', answer: 'Negative pressure occurs when the exhaust hood pulls more air out of the kitchen than the makeup air unit supplies. The most common cause is a broken or undersized makeup air unit. The building sucks in raw outside air through doors, gaps, and cracks to make up the difference.' },
       { question: 'How much does negative pressure cost a restaurant?', answer: 'For a typical restaurant hood system, a completely failed makeup air unit can waste over $5,000 per year in excess heating and cooling costs. The building HVAC has to condition all the raw outside air being sucked in through the building envelope.' },
-      { question: 'How do you fix negative pressure in a restaurant kitchen?', answer: 'First, verify the makeup air unit is running and delivering its design airflow. Then measure exhaust and supply CFM and balance the system to an 80-90% supply-to-exhaust ratio. This usually involves adjusting dampers and fan speeds. A single hood system balance costs $1,200.' },
+      { question: 'How do you fix negative pressure in a restaurant kitchen?', answer: 'First, verify the makeup air unit is running and delivering its design airflow. Then measure exhaust and supply CFM and balance the system to an 80-90% supply-to-exhaust ratio. This usually involves adjusting dampers and fan speeds. Contact us for a quote on air balance service.' },
     ],
   },
   {
@@ -1759,36 +1746,26 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 ## Kitchen Air Balancing Pricing
 
-| System Size | Price | What\'s Included |
-|------------|-------|-----------------|
-| 1 hood / 1 exhaust fan | $1,200 | Full CFM measurement (exhaust + supply), damper adjustment, MAU verification, smoke capture test, written balance report, energy assessment |
-| 2 hoods / 2 exhaust fans | $2,000 | Everything above for both hoods, plus cross-system balancing and coordinated fan speed adjustment |
-| 3+ hoods (hotel/institutional) | $2,500+ | Full kitchen balance, multiple MAU coordination, demand control evaluation, detailed engineering report, energy savings projection |
+We price per hood system, not hourly — so you know the cost before we show up. [Contact us for a quote](/schedule-service).
 
-## What\'s NOT Included (But You Might Need)
+Every service includes:
+- Full CFM measurement (exhaust + supply)
+- Damper adjustment and MAU verification
+- Smoke capture test
+- Written balance report with before/after readings
+- Energy savings assessment
 
-| Additional Service | Cost |
-|-------------------|------|
-| Exhaust fan belt replacement | $150-300 |
-| Exhaust fan motor replacement | $400-800 |
-| Fan wheel cleaning | $150-300 |
-| MAU filter replacement | $50-150 |
-| MAU burner repair | $300-500 |
-| MAU motor/belt replacement | $300-600 |
+Larger kitchens (multiple hoods, hotels, institutions) get cross-system balancing, coordinated fan speed adjustment, and detailed engineering reports.
 
-If we find a broken component during the balance, we\'ll tell you before we fix it. No surprises.
+## What Else Might You Need?
+
+If we find a broken component during the balance — a worn fan belt, failing motor, or clogged MAU filter — we\'ll tell you before we fix it. No surprises. Additional repairs are quoted separately on-site.
 
 ## How Fast Does It Pay for Itself?
 
-The energy savings from proper air balancing depend on how far out of spec your system is:
+The energy savings from proper air balancing depend on how far out of spec your system is. A restaurant with a completely failed makeup air unit can waste over $5,000/year in excess HVAC costs. Even a slightly underperforming MAU wastes hundreds per year.
 
-| Scenario | Annual Energy Waste | Payback on $1,200 Service |
-|----------|-------------------|---------------------------|
-| MAU slightly underperforming (80% of design) | ~$525/year | 27 months |
-| MAU significantly low (50% of design) | ~$2,630/year | 5.5 months |
-| MAU not working at all | ~$5,260/year | 2.7 months |
-
-These numbers are based on a 10-foot, 2,750 CFM hood system in Elizabeth, NJ using PSE&G commercial rates. Your numbers may vary — we include an energy assessment with every air balance so you see your specific savings.
+These numbers are based on a 10-foot, 2,750 CFM hood system in NJ using commercial utility rates. Your numbers may vary — we include an energy assessment with every air balance so you see your specific savings. Try our [free energy calculator](/tools/energy-calculator) to estimate your waste.
 
 ## What You Should Get in a Balance Report
 
@@ -1806,7 +1783,7 @@ If a company gives you a number without showing you the data, they didn\'t actua
 
 ## Why Per-System Pricing (Not Hourly)
 
-We charge per hood system, not by the hour. You know the cost before we show up. A 1-hood restaurant pays $1,200 whether the balance takes 3 hours or 5. We don\'t benefit from taking longer.
+We charge per hood system, not by the hour. You know the cost before we show up. We don\'t benefit from taking longer.
 
 Hourly pricing incentivizes slow work. Per-system pricing incentivizes getting it right and moving on.
 
@@ -1820,8 +1797,8 @@ Hourly pricing incentivizes slow work. Per-system pricing incentivizes getting i
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'How much does kitchen air balancing cost in New Jersey?', answer: 'A single hood system costs $1,200. Two hood systems cost $2,000. Three or more hoods start at $2,500. Pricing is per system, not hourly. The cost includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.' },
-      { question: 'Is kitchen air balancing worth the cost?', answer: 'Yes. A restaurant with a makeup air unit running at 50% of design is wasting approximately $2,630 per year in excess energy costs. The $1,200 air balance pays for itself in about 5.5 months. If the MAU is completely down, payback is under 3 months.' },
+      { question: 'How much does kitchen air balancing cost in New Jersey?', answer: 'Pricing is per hood system, not hourly. Contact us for an exact quote. Every service includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.' },
+      { question: 'Is kitchen air balancing worth the cost?', answer: 'Yes. A restaurant with a poorly performing makeup air unit can waste thousands per year in excess energy costs. Air balancing typically pays for itself within a few months. If the MAU is completely down, payback is even faster.' },
       { question: 'What should a kitchen air balance report include?', answer: 'A professional report should include measured exhaust CFM per hood, supply CFM per makeup air unit, supply-to-exhaust ratio, face velocity readings, smoke capture test results, before/after readings if adjustments were made, energy waste estimate, and repair recommendations.' },
     ],
   },
@@ -1840,15 +1817,15 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 **Urgency:** Medium. The belt will snap within days to weeks. Schedule service this week.
 
-**Fix:** Belt replacement. $150-300.
+**Fix:** Belt replacement. [Contact us for pricing](/schedule-service).
 
 ## 2. Grinding or Rumbling
 
 **What it means:** Bearings are failing. Metal-on-metal contact inside the bearing housing. If you can feel vibration through the roof or hood, it\'s advanced.
 
-**Urgency:** High. Failed bearings seize the shaft, which burns out the motor — turning a $200 bearing job into an $800 motor job. Call today.
+**Urgency:** High. Failed bearings seize the shaft, which burns out the motor — turning a simple bearing job into a full motor replacement. Call today.
 
-**Fix:** Bearing replacement. $200-400. If you wait, motor replacement: $400-800.
+**Fix:** Bearing replacement. If you wait, motor replacement is significantly more expensive. [Contact us for pricing](/schedule-service).
 
 ## 3. Loud Vibration or Rattling
 
@@ -1856,7 +1833,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 **Urgency:** High. Unbalanced vibration causes cascading failures. Schedule within a few days.
 
-**Fix:** Fan wheel cleaning and rebalancing, or blade repair. $150-400. Check mounting bolts while you\'re up there.
+**Fix:** Fan wheel cleaning and rebalancing, or blade repair. Check mounting bolts while you\'re up there. [Contact us for pricing](/schedule-service).
 
 ## 4. Clicking or Tapping
 
@@ -1864,7 +1841,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 **Urgency:** Medium-low if intermittent, high if constant.
 
-**Fix:** Inspection and foreign object removal. If it\'s a contactor, electrical repair: $200-400.
+**Fix:** Inspection and foreign object removal. If it\'s a contactor, electrical repair is needed. [Contact us for pricing](/schedule-service).
 
 ## 5. Humming but Not Spinning
 
@@ -1872,19 +1849,11 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 **Urgency:** Critical. Your exhaust is not working. No air is being removed from the kitchen. This is an emergency.
 
-**Fix:** Belt replacement ($150-300), capacitor replacement ($150-250), or motor replacement ($400-800).
+**Fix:** Belt replacement, capacitor replacement, or motor replacement depending on the cause. [Contact us for emergency service](/schedule-service).
 
 ## The Bottom Line
 
-Every noise is a warning. The repair cost goes up the longer you wait:
-
-| Timing | Typical Cost |
-|--------|-------------|
-| Fix at first noise | $150-300 |
-| Wait a few weeks | $400-600 |
-| Wait until it fails completely | $600-1,200+ |
-
-The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. A $200 belt replacement today saves an $800 motor replacement next month.
+Every noise is a warning. The repair cost goes up the longer you wait — a simple belt replacement today prevents a full motor replacement next month. The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. [Contact us for a quote](/schedule-service).
 
 **True Commercial Service provides same-day exhaust fan diagnosis and repair across Union County, NJ. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
 
@@ -1896,9 +1865,9 @@ The fan on your roof is running in the harshest conditions — heat, grease, rai
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'Why is my kitchen exhaust fan making a squealing noise?', answer: 'A squealing or screeching exhaust fan almost always means the drive belt is slipping, worn, or glazed. The belt is still working but losing grip. It will snap within days to weeks. Belt replacement costs $150-300 and takes about 30 minutes.' },
+      { question: 'Why is my kitchen exhaust fan making a squealing noise?', answer: 'A squealing or screeching exhaust fan almost always means the drive belt is slipping, worn, or glazed. The belt is still working but losing grip. It will snap within days to weeks. Belt replacement is a quick fix — contact us for pricing.' },
       { question: 'Is a noisy exhaust fan an emergency?', answer: 'It depends on the noise. A humming motor that is not spinning is an emergency — your exhaust is not working. Grinding or heavy vibration is urgent — call within 24 hours. Squealing is medium urgency — schedule within the week. All noises mean something is about to fail.' },
-      { question: 'How much does exhaust fan repair cost?', answer: 'Belt replacement costs $150-300. Bearing replacement costs $200-400. Motor replacement costs $400-800. Fan wheel cleaning and rebalancing costs $150-400. The cost goes up the longer you wait — a $200 belt job becomes an $800 motor job if the belt snaps and the motor overheats.' },
+      { question: 'How much does exhaust fan repair cost?', answer: 'Costs vary depending on the issue — belt replacement is the least expensive fix, while motor replacement costs significantly more. The cost goes up the longer you wait. Contact us for a quote.' },
     ],
   },
   {
@@ -1948,7 +1917,7 @@ This isn\'t just a comfort issue:
 - **Repeat customers notice.** They might not say anything — they just don\'t come back.
 - **Health inspectors notice.** Visible smoke or grease migration from the hood is a violation.
 
-One air balance visit — $1,200 for a single hood system — fixes the root cause permanently.
+One air balance visit fixes the root cause permanently. [Contact us for a quote](/schedule-service).
 
 **True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Union County, NJ restaurants, hotels, and commercial kitchens.**
 
@@ -1961,7 +1930,7 @@ One air balance visit — $1,200 for a single hood system — fixes the root cau
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why does my dining room smell like the kitchen?', answer: 'The kitchen is under positive pressure — more air is being pushed in by the makeup air unit than is being pulled out by the exhaust. The excess air carries cooking odors, grease, and heat into the dining room. This is caused by an unbalanced ventilation system.' },
-      { question: 'How do you stop kitchen smells from reaching the dining room?', answer: 'Balance the kitchen ventilation so the supply-to-exhaust ratio is 80-90%. This maintains slight negative pressure in the kitchen, pulling dining room air in rather than pushing kitchen air out. A professional air balance costs $1,200 for a single hood system.' },
+      { question: 'How do you stop kitchen smells from reaching the dining room?', answer: 'Balance the kitchen ventilation so the supply-to-exhaust ratio is 80-90%. This maintains slight negative pressure in the kitchen, pulling dining room air in rather than pushing kitchen air out. Contact us for a quote on air balance service.' },
       { question: 'Is kitchen smell in the dining room a health code violation?', answer: 'Visible smoke or grease migration from the kitchen hood can be cited as a violation. Even if not formally cited, health inspectors note ventilation issues. Proper air balancing ensures the hood captures cooking effluent and the kitchen maintains appropriate negative pressure.' },
     ],
   },
@@ -1986,14 +1955,14 @@ The most common cause. The hood was designed for a specific CFM — say 2,750 fo
 
 **Test:** Measure actual exhaust CFM with a VelGrid or anemometer. Compare to the hood\'s design CFM (usually on the UL nameplate inside the hood). If measured is more than 10% below design, the exhaust system needs service.
 
-**Fix:** Fan service (belt, wheel cleaning, bearing) or damper adjustment. $150-800 depending on what\'s needed.
+**Fix:** Fan service (belt, wheel cleaning, bearing) or damper adjustment. Contact us for pricing.
 
 ### 2. Makeup Air Disrupting Capture
 The supply air from the makeup air unit is hitting the cooking surface or the hood face at too high a velocity. This scatters the thermal plume — the column of hot air and smoke rising from the cooking — and pushes it out from under the hood instead of into it.
 
 **Test:** Run a smoke pencil test with the MAU on vs. off. If capture improves dramatically when the MAU is off, the supply air direction or velocity is the problem.
 
-**Fix:** Redirect supply air diffusers, reduce MAU fan speed, or adjust dampers. May require a full air balance. $1,200.
+**Fix:** Redirect supply air diffusers, reduce MAU fan speed, or adjust dampers. May require a full air balance. [Contact us for a quote](/schedule-service).
 
 ### 3. Insufficient Overhang
 The hood doesn\'t extend far enough past the cooking equipment. Smoke rises at an angle — not straight up — especially from equipment at the front of the cooking line. If the hood doesn\'t overhang the equipment by at least 6 inches on exposed sides, smoke escapes before reaching the capture zone.
@@ -2017,12 +1986,7 @@ Every air balance we do includes a smoke capture test as the final verification.
 
 ## What It Costs to Fix
 
-| Cause | Fix | Cost |
-|-------|-----|------|
-| Low exhaust CFM | Fan service + rebalance | $300-1,200 |
-| MAU disrupting capture | Air balance + damper adjustment | $1,200 |
-| Insufficient overhang | Air curtain or hood extension | $1,500-3,000 |
-| Cross-drafts | Register redirect + side panels | $500-1,500 |
+Most smoke capture problems are solved with fan service and/or an air balance visit. [Contact us for a quote](/schedule-service) — we price per hood system, not hourly. Physical modifications like air curtains or hood extensions are quoted separately.
 
 Most smoke capture problems are cause #1 or #2 — and both are fixed with a single air balance visit.
 
@@ -2038,7 +2002,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
     faqs: [
       { question: 'Why is smoke escaping my kitchen hood?', answer: 'The four most common causes are: exhaust CFM too low (dirty fan wheel, slipping belt, closed damper), makeup air disrupting the hood capture zone, insufficient hood overhang, or cross-drafts from HVAC or doors. The first two causes account for the majority of cases and are fixed with air balancing.' },
       { question: 'How do you test if a kitchen hood is capturing properly?', answer: 'A smoke pencil test is the definitive field test. Hold a smoke pencil at the front edge of the hood at cooking height. The smoke should be captured immediately. If it drifts outward or stalls, the hood is not capturing. This test is included with every air balance.' },
-      { question: 'How much does it cost to fix a kitchen hood that is not capturing smoke?', answer: 'Most capture problems are caused by low exhaust CFM or improper makeup air, both fixed with an air balance ($1,200 for a single hood). If the exhaust fan needs service (belt, motor, cleaning), add $150-800. Physical modifications like air curtains cost $1,500-3,000.' },
+      { question: 'How much does it cost to fix a kitchen hood that is not capturing smoke?', answer: 'Most capture problems are caused by low exhaust CFM or improper makeup air, both fixed with an air balance visit. Contact us for a quote. Physical modifications like air curtains or hood extensions are quoted separately.' },
     ],
   },
   // ─── ESP / POLLUTION CONTROL ARTICLES ─────────────────────────
@@ -2124,14 +2088,9 @@ The law requires you to maintain the equipment — not just install it. A non-ma
 
 ## What Does Compliance Cost?
 
-| Item | Cost |
-|------|------|
-| ESP installation | $8,000 - $25,000+ |
-| Quarterly maintenance contract | $1,600 - $3,200/year |
-| Single cleaning visit | $400 - $800 |
-| DEP fine (comparison) | $1,000 - $10,000+ per violation |
+ESP installation typically costs $8,000 - $25,000+ depending on the system. Regular maintenance is a fraction of that — and a fraction of a single DEP fine ($1,000 - $10,000+ per violation).
 
-The math is clear: quarterly maintenance at $400/visit ($1,600/year) vs a single fine that could be $10,000. Maintenance is cheaper. Every time.
+The math is clear: routine quarterly maintenance vs a single fine that could be $10,000. Maintenance is cheaper. Every time. [Contact us for a maintenance quote](/schedule-service).
 
 ## Related Articles
 
@@ -2191,15 +2150,7 @@ The service is logged with date, technician name, work performed, and any issues
 
 ## What It Costs
 
-| Service | Cost Range |
-|---------|-----------|
-| Single ESP cell cleaning | $400 - $800 |
-| Rooftop ecology unit service | $600 - $1,200 |
-| Ionizer wire replacement | $150 - $400 per set |
-| Pre-filter replacement | $50 - $150 |
-| Carbon filter replacement | $200 - $600 |
-| Power supply repair | $500 - $3,000 |
-| Quarterly maintenance contract | $1,600 - $3,200/year |
+Pricing varies depending on your unit type, number of cells, and service frequency. [Contact us for a quote](/schedule-service) — we offer both single-visit and quarterly contract options.
 
 ## How to Choose an ESP Service Provider
 
@@ -2213,7 +2164,7 @@ The service is logged with date, technician name, work performed, and any issues
 - Companies that "clean" without removing the cells (this doesn't work)
 - Providers who can't produce documentation for DEP
 - Anyone who doesn't know what ionizer wires are
-- The cheapest option — a $200 ESP cleaning means corners were cut
+- The cheapest option — if the price seems too good to be true, corners were cut
 
 ## How Often Should It Be Done?
 
@@ -2232,7 +2183,7 @@ The service is logged with date, technician name, work performed, and any issues
 
 Looking for ESP cleaning? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'How much does ESP cleaning cost?', answer: 'Single visit ESP cell cleaning costs $400-800. Quarterly maintenance contracts cost $1,600-3,200 per year. Rooftop ecology unit service costs $600-1,200 per visit. These costs are a fraction of a single NYC DEP fine.' },
+      { question: 'How much does ESP cleaning cost?', answer: 'Pricing depends on your unit type, number of cells, and service frequency. Contact us for a quote. Regular ESP maintenance costs a fraction of a single NYC DEP fine.' },
       { question: 'What does ESP cleaning involve?', answer: 'The technician powers down the unit, removes collector cells, soaks them in alkaline solution, power washes them, inspects ionizer wires and power supply, replaces pre-filters, reinstalls cells, tests the unit, and documents the service for DEP compliance.' },
       { question: 'How long does ESP cleaning take?', answer: 'A single ESP unit takes 1.5-3 hours. Multiple units or rooftop ecology units take 3-5 hours. Heavily neglected units that have not been cleaned in years may take 4-6 hours.' },
     ],
@@ -2286,7 +2237,7 @@ A non-functioning ESP means:
 - The DEP shows up and you have no working unit and no maintenance logs
 - $1,000 - $10,000 fine
 
-A red light on your Smoke Hog is not a suggestion. It's a $400 cleaning visit or a $10,000 fine. Your choice.
+A red light on your Smoke Hog is not a suggestion. It's a routine cleaning visit or a $10,000 fine. Your choice. [Schedule service today](/schedule-service).
 
 ## Related Articles
 

@@ -264,7 +264,7 @@ export default function EnergyCalculatorPage() {
                     </div>
 
                     <div className="flex items-center justify-between text-xs">
-                      <span className="text-slate-500">Payback on a $1,200 air balance:</span>
+                      <span className="text-slate-500">Payback on an air balance service visit:</span>
                       <span className={`font-semibold ${r.paybackMonths <= 6 ? 'text-green-400' : r.paybackMonths <= 12 ? 'text-amber-400' : 'text-slate-300'}`}>
                         {r.paybackMonths < 1 ? '< 1 month' : `${r.paybackMonths} months`}
                       </span>

@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { VENTILATION_CITIES, COMPANY } from '@/lib/data';
 import { PageHero, Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
-import { CheckCircle2, MapPin, ArrowRight, Phone, Wind, Flame, ThermometerSun, Zap, DollarSign } from 'lucide-react';
+import { CheckCircle2, MapPin, ArrowRight, Phone, Wind, Flame, ThermometerSun, Zap } from 'lucide-react';
 
 type Props = { params: { city: string } };
 
@@ -16,7 +16,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!city) return {};
   return {
     title: `Kitchen Air Balancing & Exhaust Fan Repair in ${city.city}, ${city.state} | True Commercial Service`,
-    description: `Commercial kitchen air balancing, exhaust fan repair, and makeup air unit service in ${city.city}, ${city.state}. Serving ${city.region}. VelGrid testing, energy savings analysis, written balance reports. Starting at $1,200.`,
+    description: `Commercial kitchen air balancing, exhaust fan repair, and makeup air unit service in ${city.city}, ${city.state}. Serving ${city.region}. VelGrid testing, energy savings analysis, written balance reports.`,
   };
 }
 
@@ -50,7 +50,7 @@ export default function VentilationCityPage({ params }: Props) {
       {
         '@type': 'Question',
         name: `How much does kitchen air balancing cost in ${city.city}?`,
-        acceptedAnswer: { '@type': 'Answer', text: `Kitchen air balancing in ${city.city} starts at $1,200 for a single hood system. Two hood systems cost $2,000. Three or more hoods start at $2,500. Price includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.` },
+        acceptedAnswer: { '@type': 'Answer', text: `Kitchen air balancing in ${city.city} is priced per hood system, not hourly. Contact us for an exact quote. Every service includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.` },
       },
       {
         '@type': 'Question',
@@ -106,24 +106,24 @@ export default function VentilationCityPage({ params }: Props) {
               icon: <Wind className="w-5 h-5" />,
               title: 'Kitchen Air Balancing',
               description: `We measure your exhaust CFM, supply CFM, face velocity, and run a smoke capture test. Then we adjust dampers and fan speeds until the system is properly balanced. You get a written report with all readings and an energy savings analysis.`,
-              price: 'Starting at $1,200',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Flame className="w-5 h-5" />,
               title: 'Exhaust Fan Repair & Replacement',
               description: 'Belt replacement, motor swaps, bearing service, fan wheel cleaning. We service all upblast, utility, and inline exhaust fans. Same-day emergency service available. Most repairs in under 2 hours.',
-              price: 'Repair from $150 / Replacement from $1,500',
+              price: 'Contact us for a quote',
             },
             {
               icon: <ThermometerSun className="w-5 h-5" />,
               title: 'Makeup Air Unit Service',
               description: `Your MAU tempers the replacement air your kitchen needs. When it fails, raw outside air floods in through every door and gap. We diagnose burner issues, belt/motor failures, frozen coils, and controls problems on all MAU brands.`,
-              price: 'Service calls from $450',
+              price: 'Contact us for a quote',
             },
             {
               icon: <Zap className="w-5 h-5" />,
               title: 'Energy Savings Assessment',
-              description: `We calculate exactly how much your unbalanced system costs in excess heating and cooling. Most ${city.city} restaurants with ventilation problems waste $2,000-5,000/year. Our assessment is included with every air balance.`,
+              description: `We calculate exactly how much your unbalanced system costs in excess heating and cooling. Most restaurants with ventilation problems waste thousands per year. Our assessment is included with every air balance.`,
               price: 'Included with air balance',
             },
           ].map((service, i) => (
@@ -141,28 +141,18 @@ export default function VentilationCityPage({ params }: Props) {
         </div>
       </Section>
 
-      {/* Pricing */}
+      {/* Pricing CTA */}
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Pricing" title="Transparent per-system pricing" description={`Same pricing for every kitchen in ${city.city}. No hourly surprises.`} />
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {[
-            { name: '1 Hood System', price: '$1,200', desc: '1 hood + 1 fan + MAU check' },
-            { name: '2 Hood Systems', price: '$2,000', desc: '2 hoods + cross-system balance', popular: true },
-            { name: '3+ Hoods', price: '$2,500+', desc: 'Hotels, hospitals, large kitchens' },
-          ].map((tier, i) => (
-            <Reveal key={i} delay={i * 80}>
-              <div className={`glass-card rounded-2xl p-8 text-center h-full relative ${tier.popular ? 'border-amber-500/30 ring-1 ring-amber-500/20' : ''}`}>
-                {tier.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-amber-500 text-navy-300 text-xs font-bold px-4 py-1 rounded-full">Most Common</span>
-                  </div>
-                )}
-                <h3 className="text-lg font-semibold mb-1">{tier.name}</h3>
-                <p className="text-xs text-slate-500 mb-4">{tier.desc}</p>
-                <p className="text-3xl font-bold text-amber-400">{tier.price}</p>
-              </div>
-            </Reveal>
-          ))}
+        <SectionHeading eyebrow="Pricing" title="Per-system pricing — no hourly surprises" description={`Tell us how many hoods you have and we'll give you an exact quote. Same pricing for every kitchen in ${city.city}.`} />
+        <div className="max-w-xl mx-auto text-center">
+          <Reveal>
+            <div className="glass-card rounded-2xl p-8">
+              <p className="text-sm text-slate-400 mb-6">We price per hood system, not by the hour. Every service includes full CFM measurement, damper adjustment, smoke capture test, written balance report, and energy assessment.</p>
+              <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-8 py-4 rounded-xl cta-glow transition-all">
+                Get a Quote for {city.city} <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </Section>
 
@@ -231,11 +221,11 @@ export default function VentilationCityPage({ params }: Props) {
           {[
             {
               q: `How much does kitchen air balancing cost in ${city.city}?`,
-              a: `A single hood system costs $1,200. Two hood systems cost $2,000. Three or more hoods start at $2,500. Price includes full CFM measurement, damper adjustment, smoke test, written report, and energy assessment. Same pricing for every kitchen in ${city.region}.`,
+              a: `We price per hood system, not hourly. Contact us for an exact quote. Every service includes full CFM measurement, damper adjustment, smoke test, written report, and energy assessment. Same pricing for every kitchen in ${city.region}.`,
             },
             {
               q: `Do you repair exhaust fans in ${city.city}?`,
-              a: `Yes. We provide same-day exhaust fan repair across ${city.city} and ${city.region}. Belt replacement ($150-300), motor replacement ($400-800), bearing service ($200-400), and complete fan replacement ($1,500-4,000). Most repairs in under 2 hours with parts on the truck.`,
+              a: `Yes. We provide same-day exhaust fan repair across ${city.city} and ${city.region}. Belt replacement, motor replacement, bearing service, and complete fan replacement. Most repairs in under 2 hours with parts on the truck. Contact us for pricing.`,
             },
             {
               q: `What kitchen hood brands do you service in ${city.city}?`,
@@ -243,7 +233,7 @@ export default function VentilationCityPage({ params }: Props) {
             },
             {
               q: `My ${city.city} restaurant kitchen is too hot — can you help?`,
-              a: 'Yes. An uncomfortably hot kitchen is almost always a ventilation balance problem, not an AC problem. When the exhaust hood doesn\'t capture the thermal plume from cooking, heat stays in the kitchen. One air balance visit ($1,200) typically resolves this permanently.',
+              a: 'Yes. An uncomfortably hot kitchen is almost always a ventilation balance problem, not an AC problem. When the exhaust hood doesn\'t capture the thermal plume from cooking, heat stays in the kitchen. One air balance visit typically resolves this permanently. Contact us for a quote.',
             },
           ].map((faq, i) => (
             <Reveal key={i} delay={i * 60}>

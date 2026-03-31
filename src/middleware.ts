@@ -4,9 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 const STATE_TO_SLUG: Record<string, string> = {
   NJ: 'elizabeth-nj',
   NY: 'new-york-city',
-  CT: 'stamford-ct',
-  GA: 'atlanta',
-  PA: 'elizabeth-nj',  // eastern PA near NJ market
+  PA: 'elizabeth-nj',
 };
 
 // More specific city-level overrides
@@ -33,26 +31,9 @@ const CITY_OVERRIDES: Record<string, string> = {
   'queens': 'queens-ny',
   'bronx': 'bronx-ny',
   'staten island': 'staten-island-ny',
-  // Connecticut
-  'stamford': 'stamford-ct',
-  'norwalk': 'norwalk-ct',
-  'bridgeport': 'bridgeport-ct',
-  'new haven': 'new-haven-ct',
-  'greenwich': 'stamford-ct',
-  'darien': 'stamford-ct',
-  'westport': 'norwalk-ct',
-  // Westchester
+  // Westchester (near NYC market)
   'white plains': 'new-york-city',
   'yonkers': 'new-york-city',
-  // Atlanta metro
-  'atlanta': 'atlanta',
-  'marietta': 'marietta-ga',
-  'decatur': 'decatur-ga',
-  'roswell': 'roswell-ga',
-  'alpharetta': 'roswell-ga',
-  'sandy springs': 'decatur-ga',
-  'smyrna': 'marietta-ga',
-  'kennesaw': 'marietta-ga',
 };
 
 export function middleware(request: NextRequest) {
