@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import { PROFILES } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -92,6 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen bg-navy-300 text-white antialiased">
         <Header />
+        <Breadcrumbs />
         <main>{children}</main>
         <Footer />
       </body>
