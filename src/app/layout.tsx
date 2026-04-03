@@ -71,6 +71,13 @@ const schemaMarkup = {
   image: 'https://choosetrue.com/images/logo.png',
   telephone: '(908) 743-8688',
   sameAs: Object.values(PROFILES).filter(Boolean),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+    bestRating: '5',
+    worstRating: '1',
+  },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Commercial Kitchen Equipment Services',

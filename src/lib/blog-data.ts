@@ -2252,6 +2252,274 @@ Need ESP service? Visit our [Pollution Control Service](/services/pollution-cont
       { question: 'What happens if I ignore a broken ESP?', answer: 'In NYC, a non-functioning ESP is a violation of Local Law 38. The DEP can fine you $1,000-$10,000+ per violation. Additionally, your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints and further inspections.' },
     ],
   },
+  // ─── "NEAR ME" LOCAL SEO ARTICLES ─────────────────────────────
+  {
+    slug: 'commercial-kitchen-equipment-repair-near-me-nj-nyc',
+    title: 'Commercial Kitchen Equipment Repair Near Me - NJ & NYC Service Area',
+    description: 'Looking for commercial kitchen equipment repair near you in NJ or NYC? True Commercial Service covers Elizabeth, Newark, Jersey City, and all five NYC boroughs. Same-day response.',
+    date: '2026-04-03',
+    category: 'Service Area',
+    readTime: '4 min',
+    content: `If you are searching for commercial kitchen equipment repair near you in New Jersey or New York City, True Commercial Service is your local option. We are based in Elizabeth, NJ and cover the entire NJ/NYC metro area with same-day emergency response.
+
+## Where We Service
+
+We cover a 50-mile radius from Elizabeth, NJ including:
+
+**Northern New Jersey:** Elizabeth, Newark, Jersey City, Hoboken, Paterson, New Brunswick, Morristown, Woodbridge, Union County, Essex County, Hudson County, Passaic County, Middlesex County, Morris County.
+
+**New York City:** Manhattan, Brooklyn, Queens, The Bronx, Staten Island - all five boroughs.
+
+## What We Repair
+
+We service all commercial kitchen equipment including cooking equipment (ovens, fryers, griddles, ranges, steamers, combi ovens), refrigeration (walk-in coolers, walk-in freezers, reach-ins, ice machines), kitchen ventilation (exhaust hoods, exhaust fans, makeup air units, air balancing, ESP/pollution control), HVAC (rooftop units, split systems), and warewash (commercial dishwashers).
+
+## Why Choose a Local Company
+
+National service companies dispatch from far away. By the time their tech arrives, your kitchen has been down for hours. We are based in Elizabeth, NJ. For most locations in our service area, we can be on site within 1-2 hours of your call.
+
+Local also means we know the area. We understand NJ licensing requirements, NYC building codes, and the specific challenges of operating commercial kitchens in the metro area.
+
+## Brands We Service
+
+We service all major commercial kitchen equipment brands including Rational, Alto-Shaam, Vulcan, Garland, Pitco, Hoshizaki, Manitowoc, True Manufacturing, Traulsen, CaptiveAire, Accurex, Greenheck, and many more.
+
+## 24/7 Emergency Service
+
+Kitchen equipment failures do not wait for business hours. We provide 24/7 emergency service for critical equipment like walk-in coolers, freezers, and any situation that threatens food safety or your ability to operate.
+
+## Related Articles
+
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+
+Looking for service? [Schedule a service call](/schedule-service) or call us at (908) 743-8688.`,
+    faqs: [
+      { question: 'Where can I find commercial kitchen equipment repair near me in NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ and covers all of Northern New Jersey including Newark, Jersey City, Paterson, New Brunswick, and surrounding areas. We also cover all five NYC boroughs. Call (908) 743-8688 for same-day service.' },
+      { question: 'Do you offer same-day commercial kitchen repair in NJ?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in our NJ/NYC service area. We are available 24/7 for critical equipment failures.' },
+      { question: 'What commercial kitchen equipment do you repair near Elizabeth NJ?', answer: 'We repair all commercial kitchen equipment including cooking (ovens, fryers, griddles, ranges), refrigeration (walk-ins, reach-ins, ice machines), ventilation (hoods, exhaust fans, MAUs), HVAC, and dishwashers. All major brands serviced.' },
+    ],
+  },
+  {
+    slug: 'emergency-walk-in-cooler-repair-near-me-elizabeth-nj',
+    title: 'Emergency Walk-In Cooler Repair Near Me - Elizabeth NJ & Surrounding Areas',
+    description: 'Walk-in cooler down? We provide emergency walk-in cooler repair in Elizabeth NJ, Newark, Jersey City, and the NYC metro. Same-day response. Protect your inventory.',
+    date: '2026-04-03',
+    category: 'Refrigeration',
+    readTime: '4 min',
+    content: `Your walk-in cooler is down. Temperature is rising. You have thousands of dollars in perishable product at risk. You need someone there now, not tomorrow.
+
+True Commercial Service provides emergency walk-in cooler repair in Elizabeth, NJ and across the entire NJ/NYC metro area. We respond same-day to refrigeration emergencies because we understand that every hour your cooler is down costs you money.
+
+## What to Do Right Now
+
+While you wait for the tech:
+
+1. **Do not open the door** unless absolutely necessary. Every time the door opens, warm air floods in.
+2. **Check the thermostat** to make sure it has not been bumped or changed.
+3. **Check the breaker** in your electrical panel. A tripped breaker is a free fix.
+4. **Listen** to the condensing unit. Is it running? Humming? Silent? This tells the tech what to expect.
+5. **Note the temperature** so you can document the issue for your records and insurance.
+
+## Common Walk-In Cooler Emergencies
+
+**Condenser coil is dirty** - the most common cause of walk-in failures. Grease and dust clog the coil, the compressor overheats, and the system shuts down. We clean the coil and get it running within the hour.
+
+**Refrigerant leak** - you will see oil stains around the compressor or lines. Requires a licensed technician with EPA 608 certification to diagnose and repair. We carry leak detection equipment and refrigerant on the truck.
+
+**Evaporator iced over** - the defrost system has failed. Could be a bad defrost timer, heater, or thermostat. We diagnose and repair on the spot.
+
+**Compressor failure** - the most expensive repair. We diagnose whether it is truly the compressor or a cheaper component (capacitor, relay, overload) causing the symptom.
+
+## Our Response for Elizabeth NJ and Surrounding Areas
+
+We are based in Elizabeth, NJ. Response times:
+
+- **Elizabeth, Linden, Rahway, Union:** Under 30 minutes
+- **Newark, Irvington, Hillside:** Under 30 minutes
+- **Jersey City, Hoboken, Bayonne:** Under 45 minutes
+- **NYC boroughs:** Under 90 minutes
+- **New Brunswick, Woodbridge, Edison:** Under 45 minutes
+
+## Protect Your Inventory
+
+A typical restaurant walk-in holds $3,000-$8,000 in perishable product. A supermarket walk-in can hold $20,000-$50,000 or more. The repair cost is always less than the product loss. Call early, not late.
+
+## Related Articles
+
+- [Walk-In Cooler Not Cooling? 7 Things to Check](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [Walk-In Freezer vs Cooler Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+
+**True Commercial Service provides emergency walk-in cooler and freezer repair across Union County NJ, Essex County, Hudson County, and all five NYC boroughs.** Call us at (908) 743-8688 — 24/7.`,
+    faqs: [
+      { question: 'How fast can you get to my walk-in cooler emergency in Elizabeth NJ?', answer: 'We are based in Elizabeth, NJ. For Elizabeth and surrounding Union County areas, our response time is typically under 30 minutes. For Newark and Jersey City, under 45 minutes. NYC boroughs under 90 minutes.' },
+      { question: 'How much does emergency walk-in cooler repair cost?', answer: 'Contact us for current pricing. The cost depends on the specific failure, but it is always less than losing thousands of dollars in perishable inventory. We diagnose the issue before quoting the repair.' },
+      { question: 'Can you repair walk-in coolers on weekends and after hours?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers. Refrigeration emergencies do not wait for business hours, and neither do we.' },
+    ],
+  },
+  {
+    slug: '24-7-restaurant-equipment-repair-northern-nj',
+    title: '24/7 Restaurant Equipment Repair - Northern NJ Emergency Service',
+    description: '24/7 emergency restaurant equipment repair in Northern New Jersey. Walk-in coolers, ovens, fryers, exhaust fans. Same-day response from Elizabeth NJ.',
+    date: '2026-04-03',
+    category: 'Service Area',
+    readTime: '4 min',
+    content: `Restaurant equipment does not break on a convenient schedule. Your fryer goes down during Friday dinner rush. Your walk-in cooler stops cooling at 2 AM Saturday. Your exhaust fan seizes on a holiday weekend.
+
+True Commercial Service provides 24/7 emergency restaurant equipment repair across Northern New Jersey. We answer the phone every time — no voicemail, no callbacks, no waiting until Monday.
+
+## What We Cover 24/7
+
+**Critical emergencies (we come immediately):**
+- Walk-in cooler or freezer not holding temperature
+- Complete cooking line failure during service
+- Gas leak or gas smell from equipment
+- Exhaust hood not functioning (cannot legally operate)
+
+**Urgent same-day:**
+- Ice machine down
+- Dishwasher failure
+- Single piece of cooking equipment (fryer, oven, griddle)
+- Reach-in refrigerator or freezer
+
+## Northern NJ Coverage
+
+We cover all of Northern New Jersey from our Elizabeth base:
+
+**Union County:** Elizabeth, Linden, Westfield, Plainfield, Cranford, Rahway, Union, Summit, Clark, Hillside, Roselle, Kenilworth, Scotch Plains
+
+**Essex County:** Newark, East Orange, Irvington, Montclair, Bloomfield, Belleville, Nutley, Orange, West Orange, Livingston
+
+**Hudson County:** Jersey City, Hoboken, Union City, North Bergen, Bayonne, Weehawken, West New York, Secaucus, Kearny
+
+**Passaic County:** Paterson, Clifton, Passaic, Wayne, Totowa, Little Falls
+
+**Middlesex County:** New Brunswick, Edison, Woodbridge, Perth Amboy, Piscataway, Metuchen
+
+**Morris County:** Morristown, Parsippany, Dover
+
+## Why 24/7 Matters
+
+Every hour of equipment downtime costs a restaurant $200-$500 in lost revenue, wasted product, and labor inefficiency. A walk-in cooler failure can destroy $3,000-$8,000 in inventory overnight. The cost of an after-hours service call is always less than the cost of waiting until morning.
+
+## Related Articles
+
+- [The True Cost of Kitchen Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
+- [Walk-In Cooler Not Cooling? Troubleshooting Guide](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
+
+**Call (908) 743-8688 any time, day or night.** We answer. We respond. We fix it.`,
+    faqs: [
+      { question: 'Do you offer 24/7 restaurant equipment repair in Northern NJ?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across Northern New Jersey including Union, Essex, Hudson, Passaic, Middlesex, and Morris Counties. We answer every call — no voicemail.' },
+      { question: 'How fast can you respond to a restaurant equipment emergency in NJ?', answer: 'For most Northern NJ locations, we can be on site within 1-2 hours. For Elizabeth and immediate Union County areas, response is typically under 30 minutes.' },
+      { question: 'What types of restaurant equipment do you repair after hours?', answer: 'We repair all commercial kitchen equipment 24/7 including walk-in coolers, freezers, ice machines, ovens, fryers, griddles, ranges, exhaust fans, dishwashers, and more. We prioritize refrigeration and cooking line emergencies.' },
+    ],
+  },
+  {
+    slug: 'commercial-exhaust-fan-repair-near-newark-nj',
+    title: 'Commercial Exhaust Fan Repair Near Newark NJ - Same Day Service',
+    description: 'Kitchen exhaust fan not working in Newark NJ? We repair upblast, utility, and inline exhaust fans. Belt replacement, motor swaps, bearing service. Same-day response.',
+    date: '2026-04-03',
+    category: 'Ventilation',
+    readTime: '4 min',
+    content: `If your kitchen exhaust fan is not working in the Newark, NJ area, your kitchen cannot legally operate. Health codes require a functioning exhaust system, and your hood cannot capture smoke and grease without the fan pulling air through it.
+
+True Commercial Service provides same-day exhaust fan repair in Newark and across Essex County, Union County, Hudson County, and the surrounding areas.
+
+## Exhaust Fan Problems We Fix
+
+**Belt replacement** - the most common exhaust fan failure. The belt snaps or slips, the fan stops moving air. We carry common belt sizes on the truck. Typically a 30-minute repair.
+
+**Motor replacement** - the motor burns out from heat, grease, and age. We can source most motors same-day for common fan sizes and have your fan running before end of business.
+
+**Bearing failure** - grinding, rumbling, or vibrating from the roof means the bearings are going. We replace bearings before they seize and destroy the motor.
+
+**Fan wheel cleaning** - grease buildup on the fan wheel reduces performance and creates imbalance. The fan runs but does not move enough air. We clean and rebalance the wheel.
+
+**Electrical issues** - contactors, relays, and wiring fail in the harsh rooftop environment. We diagnose and repair electrical problems on all exhaust fan types.
+
+## Newark NJ and Surrounding Areas
+
+We serve the entire Newark metro from our Elizabeth base, just minutes away:
+
+- **Newark (Ironbound, Downtown, Vailsburg):** Under 15 minutes
+- **East Orange, Irvington, Hillside:** Under 20 minutes
+- **Bloomfield, Belleville, Nutley:** Under 25 minutes
+- **Montclair, Orange, West Orange:** Under 30 minutes
+- **Jersey City, Hoboken:** Under 25 minutes
+
+## All Fan Types and Brands
+
+We service upblast exhaust fans, utility fans, inline fans, and centrifugal fans from every manufacturer including CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and others.
+
+## Related Articles
+
+- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
+- [Restaurant Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
+- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+
+**Call (908) 743-8688 for same-day exhaust fan repair in Newark NJ and surrounding areas.**`,
+    faqs: [
+      { question: 'How fast can you repair an exhaust fan near Newark NJ?', answer: 'We are based in Elizabeth, NJ — minutes from Newark. For Newark and surrounding Essex County areas, we can typically be on site within 15-20 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
+      { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A broken exhaust fan means no cooking until it is repaired. This is why we offer same-day emergency response.' },
+      { question: 'What brands of exhaust fans do you repair near Newark?', answer: 'We repair all brands of commercial exhaust fans including CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and others. We service upblast, utility, inline, and centrifugal fan types.' },
+    ],
+  },
+  {
+    slug: 'ice-machine-repair-near-me-union-county-nj',
+    title: 'Ice Machine Repair Near Me - Union County NJ',
+    description: 'Ice machine not making ice in Union County NJ? We repair Hoshizaki, Manitowoc, and Scotsman ice machines. Same-day service in Elizabeth, Linden, Westfield, and surrounding areas.',
+    date: '2026-04-03',
+    category: 'Ice Machines',
+    readTime: '4 min',
+    content: `No ice during service is an emergency for any restaurant, bar, or food service operation. If your commercial ice machine has stopped producing in Union County, NJ, True Commercial Service can be there same-day to diagnose and repair it.
+
+## Common Ice Machine Problems
+
+**Dirty condenser** - the number one reason ice machines underperform. Kitchen grease and dust clog the condenser, raising operating temperature until the machine shuts down or production drops to a fraction of capacity. We clean the condenser and restore full production.
+
+**Scale buildup** - hard water deposits mineral scale on the evaporator plate and water distribution system. Ice comes out thin or misshapen, then production drops, then it stops entirely. We descale the system and restore normal operation.
+
+**Water supply issues** - a closed valve, kinked line, or failed inlet valve means no water reaching the machine. We check the water supply path and replace components as needed.
+
+**Harvest cycle failure** - the machine freezes ice but cannot release it from the evaporator plate. Usually caused by a failed hot gas valve or low refrigerant. We diagnose and repair the harvest system.
+
+**Control board failure** - the machine cycles on and off erratically or will not start at all. We diagnose the control system and replace boards when needed.
+
+## Union County NJ Service Area
+
+We are based in Elizabeth and cover all of Union County:
+
+- **Elizabeth, Linden, Roselle:** Under 15 minutes
+- **Rahway, Clark, Cranford:** Under 20 minutes
+- **Westfield, Scotch Plains, Fanwood:** Under 25 minutes
+- **Plainfield, Summit, New Providence:** Under 25 minutes
+- **Union, Hillside, Kenilworth:** Under 20 minutes
+- **Springfield, Mountainside, Berkeley Heights:** Under 25 minutes
+
+## Brands We Service
+
+We repair all major ice machine brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, Follett, and others. Cube machines, flake machines, and nugget machines.
+
+## Preventive Maintenance Prevents Emergencies
+
+Most ice machine failures are preventable with regular maintenance. A cleaning and descaling service every 6 months keeps your machine producing at full capacity and prevents the buildup that leads to breakdowns.
+
+## Related Articles
+
+- [Commercial Ice Machine Not Making Ice?](/blog/commercial-ice-machine-not-making-ice)
+- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+
+**Call (908) 743-8688 for same-day ice machine repair in Union County NJ.**`,
+    faqs: [
+      { question: 'Where can I find ice machine repair near me in Union County NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ in the heart of Union County. We provide same-day ice machine repair across all of Union County including Elizabeth, Linden, Westfield, Plainfield, Cranford, Summit, Rahway, Clark, and surrounding areas.' },
+      { question: 'What ice machine brands do you repair in Union County?', answer: 'We repair all major brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, and Follett. We service cube machines, flake machines, and nugget ice machines.' },
+      { question: 'How often should a commercial ice machine be cleaned?', answer: 'Commercial ice machines should be professionally cleaned and descaled every 6 months minimum, and every 3 months in hard water areas or high-use environments. Regular maintenance prevents most ice machine failures.' },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

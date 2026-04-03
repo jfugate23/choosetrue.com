@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/kitchen-ventilation`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/services/pollution-control`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/tools/energy-calculator`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${base}/resources`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ];
 
   const servicePages = SERVICES.map((s) => ({
