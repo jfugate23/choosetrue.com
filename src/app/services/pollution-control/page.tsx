@@ -50,8 +50,8 @@ export default function PollutionControlPage() {
               <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-xl cta-glow transition-all">
                 Schedule ESP Service <ArrowRight className="w-5 h-5" />
               </Link>
-              <a href="tel:+19087438688" className="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/30 text-white font-medium text-base px-8 py-4 rounded-xl transition-all">
-                <Phone className="w-4 h-4 text-amber-400" /> (908) 743-8688
+              <a href="tel:+14052924510" className="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/30 text-white font-medium text-base px-8 py-4 rounded-xl transition-all">
+                <Phone className="w-4 h-4 text-amber-400" /> (405) 292-4510
               </a>
             </div>
           </Reveal>

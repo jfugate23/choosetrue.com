@@ -2294,9 +2294,9 @@ Kitchen equipment failures do not wait for business hours. We provide 24/7 emerg
 - [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
 - [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
 
-Looking for service? [Schedule a service call](/schedule-service) or call us at (908) 743-8688.`,
+Looking for service? [Schedule a service call](/schedule-service) or call us at (405) 292-4510.`,
     faqs: [
-      { question: 'Where can I find commercial kitchen equipment repair near me in NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ and covers all of Northern New Jersey including Newark, Jersey City, Paterson, New Brunswick, and surrounding areas. We also cover all five NYC boroughs. Call (908) 743-8688 for same-day service.' },
+      { question: 'Where can I find commercial kitchen equipment repair near me in NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ and covers all of Northern New Jersey including Newark, Jersey City, Paterson, New Brunswick, and surrounding areas. We also cover all five NYC boroughs. Call (405) 292-4510 for same-day service.' },
       { question: 'Do you offer same-day commercial kitchen repair in NJ?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in our NJ/NYC service area. We are available 24/7 for critical equipment failures.' },
       { question: 'What commercial kitchen equipment do you repair near Elizabeth NJ?', answer: 'We repair all commercial kitchen equipment including cooking (ovens, fryers, griddles, ranges), refrigeration (walk-ins, reach-ins, ice machines), ventilation (hoods, exhaust fans, MAUs), HVAC, and dishwashers. All major brands serviced.' },
     ],
@@ -2352,7 +2352,7 @@ A typical restaurant walk-in holds $3,000-$8,000 in perishable product. A superm
 - [Walk-In Freezer vs Cooler Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
-**True Commercial Service provides emergency walk-in cooler and freezer repair across Union County NJ, Essex County, Hudson County, and all five NYC boroughs.** Call us at (908) 743-8688 — 24/7.`,
+**True Commercial Service provides emergency walk-in cooler and freezer repair across Union County NJ, Essex County, Hudson County, and all five NYC boroughs.** Call us at (405) 292-4510 — 24/7.`,
     faqs: [
       { question: 'How fast can you get to my walk-in cooler emergency in Elizabeth NJ?', answer: 'We are based in Elizabeth, NJ. For Elizabeth and surrounding Union County areas, our response time is typically under 30 minutes. For Newark and Jersey City, under 45 minutes. NYC boroughs under 90 minutes.' },
       { question: 'How much does emergency walk-in cooler repair cost?', answer: 'Contact us for current pricing. The cost depends on the specific failure, but it is always less than losing thousands of dollars in perishable inventory. We diagnose the issue before quoting the repair.' },
@@ -2410,7 +2410,7 @@ Every hour of equipment downtime costs a restaurant $200-$500 in lost revenue, w
 - [Walk-In Cooler Not Cooling? Troubleshooting Guide](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 - [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
 
-**Call (908) 743-8688 any time, day or night.** We answer. We respond. We fix it.`,
+**Call (405) 292-4510 any time, day or night.** We answer. We respond. We fix it.`,
     faqs: [
       { question: 'Do you offer 24/7 restaurant equipment repair in Northern NJ?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across Northern New Jersey including Union, Essex, Hudson, Passaic, Middlesex, and Morris Counties. We answer every call — no voicemail.' },
       { question: 'How fast can you respond to a restaurant equipment emergency in NJ?', answer: 'For most Northern NJ locations, we can be on site within 1-2 hours. For Elizabeth and immediate Union County areas, response is typically under 30 minutes.' },
@@ -2460,7 +2460,7 @@ We service upblast exhaust fans, utility fans, inline fans, and centrifugal fans
 - [Restaurant Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
 - [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
 
-**Call (908) 743-8688 for same-day exhaust fan repair in Newark NJ and surrounding areas.**`,
+**Call (405) 292-4510 for same-day exhaust fan repair in Newark NJ and surrounding areas.**`,
     faqs: [
       { question: 'How fast can you repair an exhaust fan near Newark NJ?', answer: 'We are based in Elizabeth, NJ — minutes from Newark. For Newark and surrounding Essex County areas, we can typically be on site within 15-20 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
       { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A broken exhaust fan means no cooking until it is repaired. This is why we offer same-day emergency response.' },
@@ -2513,7 +2513,7 @@ Most ice machine failures are preventable with regular maintenance. A cleaning a
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
 
-**Call (908) 743-8688 for same-day ice machine repair in Union County NJ.**`,
+**Call (405) 292-4510 for same-day ice machine repair in Union County NJ.**`,
     faqs: [
       { question: 'Where can I find ice machine repair near me in Union County NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ in the heart of Union County. We provide same-day ice machine repair across all of Union County including Elizabeth, Linden, Westfield, Plainfield, Cranford, Summit, Rahway, Clark, and surrounding areas.' },
       { question: 'What ice machine brands do you repair in Union County?', answer: 'We repair all major brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, and Follett. We service cube machines, flake machines, and nugget ice machines.' },

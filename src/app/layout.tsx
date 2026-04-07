@@ -69,7 +69,7 @@ const schemaMarkup = {
   },
   priceRange: '$$',
   image: 'https://choosetrue.com/images/logo.png',
-  telephone: '(908) 743-8688',
+  telephone: '(405) 292-4510',
   sameAs: Object.values(PROFILES).filter(Boolean),
   aggregateRating: {
     '@type': 'AggregateRating',
