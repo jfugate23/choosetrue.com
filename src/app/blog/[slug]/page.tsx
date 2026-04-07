@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
         <h3 className="text-lg font-semibold text-white mb-2">Need help with your equipment?</h3>
-        <p className="text-gray-400 text-sm mb-4">True Commercial Service provides 24/7 emergency repair and preventive maintenance across Union County, NJ.</p>
+        <p className="text-gray-400 text-sm mb-4">True Commercial Service provides 24/7 emergency repair and preventive maintenance across the Oklahoma City metro.</p>
         <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
           Schedule Service
         </Link>

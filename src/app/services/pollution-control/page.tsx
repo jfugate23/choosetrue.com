@@ -24,7 +24,7 @@ const schemaMarkup = {
     url: 'https://choosetrue.com',
   },
   description: 'Electrostatic precipitator (ESP) cleaning, ecology unit maintenance, Smoke Hog service, and NYC Local Law 38 compliance for commercial kitchens.',
-  areaServed: ['New Jersey', 'New York City'],
+  areaServed: ['Oklahoma City', 'Norman', 'Edmond', 'Central Oklahoma'],
   serviceType: 'Kitchen Exhaust Pollution Control',
 };
 
@@ -91,7 +91,7 @@ export default function PollutionControlPage() {
         </div>
         <Reveal delay={200}>
           <p className="text-center mt-8 text-sm text-slate-500 max-w-2xl mx-auto">
-            NJ doesn&apos;t have an equivalent law yet — but landlords in Jersey City, Newark, and Hoboken increasingly require ESPs in commercial leases, and NJ DEP can enforce under nuisance odor rules.
+            Oklahoma does not have an equivalent law yet, but landlords in mixed-use buildings and property management companies increasingly require ESPs in commercial leases to control odors and grease discharge.
           </p>
         </Reveal>
       </Section>
@@ -227,7 +227,7 @@ export default function PollutionControlPage() {
             { q: 'Is an ESP required for my NYC restaurant?', a: 'If your restaurant does any charbroiling, grilling, deep frying, or roasting that produces grease-laden vapors, NYC Local Law 38 requires emission control equipment. Most restaurants that cook with heat need an ESP, ecology unit, or equivalent pollution control device.' },
             { q: 'How often does an ESP need to be cleaned?', a: 'Quarterly at minimum for most restaurants. High-volume operations (steakhouses, charbroil-heavy menus) may need monthly cleaning. NYC DEP requires you to maintain service logs documenting every cleaning and inspection.' },
             { q: 'What happens if my ESP isn\'t maintained?', a: 'NYC DEP can fine you $1,000 to $10,000+ per violation. Not having maintenance logs is itself a violation, even if the unit appears functional. Neighbor complaints about smoke or odors trigger DEP inspections. Repeat violations escalate in cost and can result in equipment shutdown orders.' },
-            { q: 'Do I need an ESP in New Jersey?', a: 'NJ does not have a statewide equivalent to NYC Local Law 38. However, many landlords in urban NJ (Jersey City, Newark, Hoboken) require ESPs in commercial kitchen leases. NJ DEP can also take action under nuisance odor provisions if your restaurant generates complaints.' },
+            { q: 'Do I need an ESP in Oklahoma?', a: 'Oklahoma does not have a state law equivalent to NYC Local Law 38. However, many landlords and property management companies require ESPs in commercial kitchen leases to control grease and odor discharge, especially in mixed-use buildings and shopping centers.' },
             { q: 'What brands of ESP do you service?', a: 'We service all major brands including Smoke Hog (Parker Hannifin), CaptiveAire, Halton, Ecology/PPC Air, Accurex, Greenheck, and Streivor. If it\'s on your roof and has collector cells, we service it.' },
             { q: 'Can you bundle ESP cleaning with air balancing?', a: 'Yes — and you should. We\'re already on your roof. An ESP service + air balance bundle saves you money compared to scheduling separately, and ensures your entire exhaust system is compliant and efficient in one visit. Contact us for bundle pricing.' },
           ].map((faq, i) => (

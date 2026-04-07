@@ -7,7 +7,7 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+14052924510',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving the Oklahoma City metro area, with expansion into Northern New Jersey and New York City.',
+  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Oklahoma City, Norman, Edmond, and Central Oklahoma.',
 };
 
 export const SERVICES = [

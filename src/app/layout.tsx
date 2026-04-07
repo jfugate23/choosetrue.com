@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     default: 'True Commercial Service | Commercial Kitchen Equipment Repair',
     template: '%s | True Commercial Service',
   },
-  description: 'Commercial kitchen equipment repair serving Union County, NJ and surrounding areas. Refrigeration, cooking, ventilation, ice machines, espresso. 24/7 emergency service.',
-  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Union County NJ', 'Elizabeth NJ', 'Newark NJ', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service'],
+  description: 'Commercial kitchen equipment repair serving Oklahoma City, Norman, Edmond, and Central Oklahoma. Refrigeration, cooking, ventilation, ice machines, espresso. 24/7 emergency service.',
+  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Oklahoma City OK', 'Norman OK', 'Edmond OK', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing'],
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -35,19 +35,19 @@ const schemaMarkup = {
   '@type': 'LocalBusiness',
   '@id': 'https://choosetrue.com',
   name: 'True Commercial Service LLC',
-  description: 'Commercial foodservice equipment repair, maintenance, and ventilation services. Serving restaurants, supermarkets, and commercial kitchens across Union County, NJ.',
+  description: 'Commercial foodservice equipment repair, maintenance, and ventilation services. Serving restaurants, supermarkets, and commercial kitchens across the Oklahoma City metro.',
   url: 'https://choosetrue.com',
   areaServed: {
     '@type': 'GeoCircle',
-    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 40.6592, longitude: -74.2107 },
-    geoRadius: '48280',
-    description: '30 mile radius around Elizabeth, NJ 07206',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 35.4676, longitude: -97.5164 },
+    geoRadius: '80467',
+    description: '50 mile radius around Oklahoma City, OK 73102',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Elizabeth',
-    addressRegion: 'NJ',
-    postalCode: '07206',
+    addressLocality: 'Oklahoma City',
+    addressRegion: 'OK',
+    postalCode: '73102',
     addressCountry: 'US',
   },
   serviceType: [

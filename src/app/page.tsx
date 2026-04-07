@@ -326,6 +326,24 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* ====== TRUSTED BY ====== */}
+      <Section>
+        <SectionHeading eyebrow="Trusted By" title="Companies that count on us." />
+        <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 items-center opacity-70">
+          {[
+            'Albertsons / United Supermarkets',
+            'Starbucks',
+            'University of New Mexico',
+            'Facebook / Meta',
+            'University of Oklahoma',
+          ].map((name, i) => (
+            <Reveal key={name} delay={i * 80}>
+              <span className="text-lg lg:text-xl font-bold text-slate-400 tracking-tight">{name}</span>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
       {/* ====== MANUFACTURER LOGOS ====== */}
       <Section>
         <SectionHeading
