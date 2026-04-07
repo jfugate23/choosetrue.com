@@ -63,13 +63,13 @@ Every hour your walk-in is above temperature puts your inventory at risk. A typi
 
 Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
 
-**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Union County, NJ. Text us anytime.**
+**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Oklahoma City, OK. Text us anytime.**
 
 ## Related Articles
 
 - [Walk-In Freezer vs Cooler: Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -134,13 +134,13 @@ Modern ice machines have electronic controls that manage the freeze and harvest 
 
 A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
 
-**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Union County, NJ.**
+**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Oklahoma City, OK.**
 
 ## Related Articles
 
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [EPA 608 Certification: What Owners Should Know](/blog/epa-608-certification-restaurant-owners)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Beverage Equipment Repair](/services/beverage-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -212,13 +212,13 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 
 Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.
 
-**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Union County, NJ.**
+**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Oklahoma City, OK.**
 
 ## Related Articles
 
 - [Commercial Fryer Troubleshooting](/blog/commercial-fryer-troubleshooting)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
-- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [How to Choose a Repair Company in the OKC metro](/blog/questions-before-signing-equipment-service-contract)
 
 Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -340,11 +340,11 @@ Most equipment service companies offer PM agreements with:
 
 The best time to set up a PM program is before something breaks.
 
-**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Union County, NJ. Contact us to schedule a free equipment assessment.**
+**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Oklahoma City, OK. Contact us to schedule a free equipment assessment.**
 
 ## Related Articles
 
-- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
+- [What Is a PM Agreement?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
 - [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
 
@@ -436,11 +436,11 @@ The goal: kitchen at -0.02 to -0.05 inches of water column relative to the dinin
 | Ductwork inspection | Annually |
 | Fire suppression inspection | Semi-annually |
 
-**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Union County, NJ.**
+**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Oklahoma City, OK.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
 - [CaptiveAire Hood Maintenance Guide](/blog/captiveaire-hood-maintenance-repair-guide)
 
@@ -451,182 +451,11 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'What is kitchen air balancing and why does it matter?', answer: 'Air balancing ensures the right ratio of exhaust air to makeup air in your kitchen. Poor balance causes negative pressure (doors hard to open, pilot lights blowing out) or smoke spillage from hoods. Proper balancing improves ventilation efficiency and kitchen comfort.' },
     ],
   },
-  {
-    slug: 'commercial-kitchen-equipment-repair-cost-nj',
-    title: 'What Does Commercial Kitchen Equipment Repair Cost in NJ? 2026 Pricing Guide',
-    description: 'Honest breakdown of what commercial kitchen equipment repair costs in New Jersey. Service call fees, hourly rates, common repairs by equipment type.',
-    date: '2026-03-15',
-    category: 'Pricing',
-    readTime: '5 min',
-    content: `Understanding repair costs helps you budget properly and avoid getting overcharged. Here's what commercial kitchen equipment repair actually costs in New Jersey in 2026.
 
-## Service Call Structure
 
-Most commercial equipment repair companies in NJ charge:
-
-| Fee Type | Typical Range |
-|----------|--------------|
-| Service call / trip charge | $95 - $165 |
-| Standard hourly labor | $125 - $185/hr |
-| Emergency / after-hours rate | $185 - $275/hr |
-| Minimum service charge | $150 - $250 |
-
-The minimum service charge means even a 15-minute fix costs at least $150-250. This covers the tech's drive time, vehicle, tools, and insurance.
-
-## Average Repair Costs by Equipment
-
-### Refrigeration (Walk-ins, Reach-ins)
-- Thermostat replacement: $200 - $400
-- Fan motor replacement: $300 - $600
-- Compressor replacement: $1,500 - $4,000
-- Door gasket replacement: $100 - $250
-- Defrost system repair: $250 - $500
-
-### Ice Machines
-- Cleaning and descaling: $200 - $350
-- Water valve replacement: $200 - $400
-- Compressor repair: $800 - $2,500
-- Control board replacement: $400 - $700
-- Harvest valve repair: $300 - $600
-
-### Cooking Equipment
-- Igniter replacement: $150 - $300
-- Thermostat replacement: $200 - $450
-- Gas valve replacement: $300 - $600
-- Burner repair: $200 - $500
-- Combi oven repairs: $400 - $2,500
-
-### Dishwashers
-- Pump replacement: $400 - $800
-- Heating element: $300 - $600
-- Wash/rinse arm replacement: $150 - $300
-- Chemical dispenser repair: $100 - $250
-
-### Ventilation
-- Fan belt replacement: $150 - $250
-- Fan motor replacement: $400 - $900
-- Air balancing service: $400 - $1,200
-- Makeup air unit repair: $500 - $2,000
-
-## Parts Markup
-
-Expect a 25-40% markup on parts. This covers the service company's cost of stocking inventory, shipping, warranty handling, and the time to source the correct part. A $100 wholesale part might be billed at $130-140.
-
-## How to Avoid Overpaying
-
-1. **Ask for the diagnosis before authorizing repair** — a good tech will explain what's wrong and give you a cost estimate before turning a wrench
-2. **Get an NTE (not-to-exceed) agreement** — caps the total cost and requires approval before going over
-3. **PM contracts reduce emergency costs** — quarterly maintenance catches problems when they're $200 fixes, not $2,000 emergencies
-4. **Don't shop on price alone** — the cheapest tech who misdiagnoses the problem costs you more than the experienced tech who fixes it right the first time
-
-## When Repair vs Replace Makes Sense
-
-**Repair if:**
-- Equipment is under 7 years old
-- Repair cost is less than 50% of replacement cost
-- Parts are still available from the manufacturer
-- No history of recurring failures
-
-**Replace if:**
-- Equipment is 10+ years old
-- Repair cost exceeds 50% of replacement cost
-- Refrigerant type is being phased out (R-22)
-- Multiple failures in the past 12 months
-
-**True Commercial Service provides transparent, upfront pricing for all commercial kitchen equipment repair in Union County, NJ. No hidden fees. NTE agreements on every job.**
-
-## Related Articles
-
-- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
-- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
-- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
-
-Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'How much does commercial kitchen equipment repair cost in NJ?', answer: 'In New Jersey, typical repair costs range from $150-300 for minor fixes (thermostats, gaskets, igniters) to $500-1,500 for major repairs (compressor replacement, control board, motor). Emergency and after-hours calls typically add a $50-150 premium.' },
-      { question: 'Is it cheaper to repair or replace commercial kitchen equipment?', answer: 'As a general rule, if the repair cost exceeds 50% of the replacement cost and the equipment is past its expected lifespan, replacement is usually more cost-effective. For newer equipment, repair almost always makes more sense.' },
-      { question: 'Do commercial equipment repair companies charge a diagnostic fee?', answer: 'Most reputable companies charge a diagnostic or trip fee ($75-150) that covers the technician visit and diagnosis. Many companies apply this fee toward the repair if you proceed. Be wary of companies that offer free diagnostics — the cost is usually built into inflated repair prices.' },
-    ],
-  },
-  {
-    slug: 'how-to-choose-commercial-kitchen-equipment-repair-company-nj',
-    title: 'How to Choose a Commercial Kitchen Equipment Repair Company in NJ',
-    description: 'Not all repair companies are equal. Here\'s what to look for when choosing a commercial kitchen equipment service provider in New Jersey.',
-    date: '2026-03-13',
-    category: 'Guides',
-    readTime: '4 min',
-    content: `When your walk-in goes down on a Friday night, you don't have time to research repair companies. Make the decision now — before you need it.
-
-## What to Look For
-
-### 1. Response Time
-Ask: "What's your average response time for emergencies?" The answer should be under 2 hours for your area. If they can't give you a number, they don't track it — which means it's slow.
-
-### 2. CFESA Certification
-The Commercial Food Equipment Service Association (CFESA) certifies technicians who pass rigorous testing in electrical, gas, steam, and refrigeration. A CFESA-certified company has invested in training and meets industry standards.
-
-### 3. Manufacturer Authorizations
-Who are they authorized to work on? Factory-authorized technicians have access to OEM parts, technical support lines, and current service bulletins. Working with an unauthorized tech can void your equipment warranty.
-
-### 4. 24/7 Availability
-Equipment doesn't break on a schedule. Your service company needs to answer at 10pm on a Saturday, not just Monday through Friday 8-5.
-
-### 5. Transparent Pricing
-Before they start work, you should know:
-- Service call fee
-- Hourly rate
-- Not-to-exceed limit
-- Parts markup policy
-
-If they won't give you these numbers upfront, find someone who will.
-
-### 6. First-Time Fix Rate
-Ask: "What percentage of your calls are resolved on the first visit?" Industry average is around 70%. Good companies hit 85%+. This matters because a return visit costs you another service call, more downtime, and more frustration.
-
-### 7. Insurance and Licensing
-At minimum, they should carry:
-- General liability ($1M+)
-- Workers' compensation
-- Commercial auto insurance
-- EPA 608 certification for all techs handling refrigerant
-
-### 8. References from Similar Businesses
-A company that services hospitals and hotels may not understand the urgency of a restaurant kitchen. Ask for references from businesses similar to yours.
-
-## Red Flags
-
-- **No written estimates** — everything should be documented
-- **Can't explain the diagnosis** — if the tech can't tell you what's wrong in plain language, they may not know
-- **Pushes replacement over repair** — some companies make more money selling equipment than fixing it
-- **No warranty on work** — reputable companies guarantee their repairs for 30-90 days minimum
-- **Doesn't carry parts on the truck** — if every call requires a return visit for parts, their first-time fix rate is terrible
-
-## The PM Agreement Test
-
-A company that offers preventive maintenance agreements is invested in keeping your equipment running — not just profiting from breakdowns. PM agreements create recurring revenue for them and lower costs for you. It's a sign of a partnership-oriented company.
-
-## Make the Call Before You Need It
-
-Set up a PM agreement or at least establish a relationship with a service company now. When your freezer goes down at 9pm, you want to text a number that already knows your name, your equipment, and your address — not start Googling "emergency repair near me."
-
-**True Commercial Service provides 24/7 commercial kitchen equipment repair across Union County, NJ. We believe in transparent pricing, first-visit resolution, and preventive maintenance that keeps your kitchen running.**
-
-## Related Articles
-
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
-- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
-- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
-
-Looking for service? Visit our [About True Commercial Service](/about) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'What should I look for in a commercial kitchen equipment repair company?', answer: 'Look for factory-trained technicians with manufacturer certifications, guaranteed response times (under 4 hours for emergencies), transparent pricing with written estimates, a strong first-time fix rate (above 85%), and experience with your specific equipment brands.' },
-      { question: 'Should I use the equipment manufacturer for repairs or a third-party company?', answer: 'Third-party independent service companies are often faster, more flexible, and less expensive than manufacturer service departments. The key is ensuring the third-party techs have factory training and certifications on your specific equipment brands.' },
-      { question: 'How important are response times for commercial kitchen repair?', answer: 'Extremely important. Every hour of equipment downtime costs a restaurant $200-500 in lost revenue, wasted product, and labor inefficiency. A company guaranteeing sub-4-hour response can save you thousands compared to one that takes 24-48 hours.' },
-    ],
-  },
   {
     slug: 'restaurant-equipment-downtime-cost',
-    title: 'The True Cost of Kitchen Equipment Downtime for NJ Restaurants',
+    title: 'The True Cost of Kitchen Equipment Downtime for Restaurants',
     description: 'Equipment downtime costs more than the repair. Lost revenue, spoiled inventory, health code risk, and staff overtime add up fast.',
     date: '2026-03-11',
     category: 'Business',
@@ -636,7 +465,7 @@ Looking for service? Visit our [About True Commercial Service](/about) page or [
 ## The Visible Costs
 
 ### The Repair Bill
-Average emergency service call in NJ: $450-800. This is what shows up on the invoice — and it's the smallest part of the total cost.
+Average emergency service call in the OKC metro: $450-800. This is what shows up on the invoice — and it's the smallest part of the total cost.
 
 ### Spoiled Inventory
 A walk-in cooler that's above 41°F for more than 4 hours puts all contents at risk. Average product value in a restaurant walk-in: $3,000-8,000. Health code requires you to discard anything that's been in the temperature danger zone (41°F-135°F) for more than 4 hours.
@@ -685,13 +514,13 @@ Equipment over 10 years old fails more frequently. Plan replacements before they
 ### 4. Backup Plans
 Know which menu items you can serve if the fryer goes down. Have a backup ice supplier's number. Know where the nearest walk-in you can rent is.
 
-**True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for NJ restaurants. Every minute of downtime costs you money — we show up fast.**
+**True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for your restaurant. Every minute of downtime costs you money — we show up fast.**
 
 ## Related Articles
 
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [What Is a PM Agreement?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -753,7 +582,7 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 
 If your older equipment uses R-22 (Freon), it's been phased out of production. The remaining supply is expensive — $50-100+ per pound. If your system uses R-22 and develops a leak, it may be more cost-effective to retrofit or replace the system than to keep recharging.
 
-**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Union County, NJ.**
+**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Oklahoma City, OK.**
 
 ## Related Articles
 
@@ -849,12 +678,12 @@ At the end of the night, the oil won't drain for filtering.
 | Check thermostat accuracy | Monthly |
 | Professional inspection | Semi-annually |
 
-**True Commercial Service repairs all major commercial fryer brands across Union County, NJ. Gas and electric. Same-day emergency service available.**
+**True Commercial Service repairs all major commercial fryer brands across Oklahoma City, OK. Gas and electric. Same-day emergency service available.**
 
 ## Related Articles
 
 - [Rational Combi Oven Error Codes](/blog/rational-combi-oven-error-codes-guide)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
 Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
@@ -864,95 +693,7 @@ Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equi
       { question: 'Why is my commercial fryer producing dark or greasy food?', answer: 'Dark or greasy food usually indicates the oil temperature is incorrect, the oil is degraded and needs changing, or the thermostat is out of calibration. A thermostat that reads 350°F but is actually at 300°F produces greasy, undercooked food. Have the thermostat calibrated.' },
     ],
   },
-  {
-    slug: 'pm-agreement-benefits-nj-restaurants',
-    title: 'What Is a PM Agreement and Why Does Every NJ Restaurant Need One?',
-    description: 'Preventive maintenance agreements save money, prevent emergencies, and keep your kitchen running. Here\'s how they work and what to expect.',
-    date: '2026-03-05',
-    category: 'Maintenance',
-    readTime: '4 min',
-    content: `A PM (preventive maintenance) agreement is a contract between your restaurant and an equipment service company for regular, scheduled maintenance visits. Think of it as an oil change schedule for your kitchen.
 
-## How PM Agreements Work
-
-### What's Included
-Typically, a PM agreement covers:
-- Scheduled visits (quarterly is most common)
-- Comprehensive inspection of all covered equipment
-- Cleaning (condensers, coils, filters, drains)
-- Temperature calibration and verification
-- Safety checks (gas connections, electrical)
-- Written documentation of findings
-- Priority scheduling for emergency calls
-- Discounted labor and parts rates
-
-### What It Costs
-PM agreement pricing varies by equipment count and kitchen size:
-
-| Kitchen Size | Quarterly Cost | Annual Cost |
-|---|---|---|
-| Small (5-10 pieces) | $200 - $350/visit | $800 - $1,400 |
-| Medium (10-20 pieces) | $350 - $600/visit | $1,400 - $2,400 |
-| Large (20+ pieces) | $600 - $1,000/visit | $2,400 - $4,000 |
-
-### What You Get in Return
-- **Fewer emergencies** — PM catches problems at the $200 stage, not the $2,000 stage
-- **Extended equipment life** — properly maintained equipment lasts 30-50% longer
-- **Lower energy costs** — clean condensers and calibrated thermostats run more efficiently
-- **Health code compliance** — documented maintenance satisfies inspector questions
-- **Priority response** — PM customers go to the front of the line for emergencies
-- **Predictable budgeting** — fixed quarterly cost instead of surprise repair bills
-
-## The Numbers That Matter
-
-A restaurant with 15 pieces of commercial equipment will average 3-4 emergency service calls per year without PM. With PM, that drops to 0-1.
-
-| Scenario | Annual Cost |
-|---|---|
-| No PM + 4 emergencies | $3,200 - $6,400 in repair bills |
-| PM agreement + 1 emergency | $1,800 - $3,200 total |
-| **Net savings with PM** | **$1,400 - $3,200/year** |
-
-And that's before you factor in prevented inventory loss, prevented downtime, and extended equipment life.
-
-## What a PM Visit Looks Like
-
-A technician arrives at a scheduled time (usually during off-peak hours). They spend 1-3 hours working through every piece of covered equipment with a checklist:
-
-1. Visual inspection for wear, damage, leaks
-2. Temperature readings on all refrigeration
-3. Condenser coil cleaning
-4. Drain clearing
-5. Gasket inspection
-6. Filter check/replacement
-7. Gas connection check (cooking equipment)
-8. Electrical connection tightening
-9. Calibration verification
-10. Written report with photos
-
-You get a report documenting everything checked, anything found, and any recommendations for repair before the next visit.
-
-## When to Start
-
-The best time is now — before something breaks. The second best time is right after something breaks and you're feeling the pain of an emergency repair bill.
-
-Don't wait for the busy season. Equipment fails when it's working hardest — summer for refrigeration, winter for heating. Get ahead of it.
-
-**True Commercial Service offers customized PM agreements for commercial kitchens across Union County, NJ. Contact us for a free equipment assessment and PM proposal.**
-
-## Related Articles
-
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
-- [Questions Before Signing a Service Contract](/blog/questions-before-signing-equipment-service-contract)
-
-Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'What is a PM agreement for restaurant equipment?', answer: 'A Preventive Maintenance agreement is a scheduled service contract where a technician visits your kitchen on a regular cadence (monthly or quarterly) to clean, inspect, calibrate, and maintain your commercial equipment. This prevents breakdowns and extends equipment life.' },
-      { question: 'How much does a PM agreement cost for a restaurant?', answer: 'PM agreements typically cost $200-600 per quarter depending on the number of equipment pieces and visit frequency. This is significantly less than a single emergency repair call, and PM programs reduce emergency breakdowns by up to 80%.' },
-      { question: 'What equipment should be covered under a PM agreement?', answer: 'At minimum, cover refrigeration (walk-ins, reach-ins), cooking equipment (ovens, fryers), and ventilation (hoods, exhaust fans). Ice machines and espresso machines also benefit greatly from regular maintenance. Prioritize equipment that is critical to daily operations.' },
-    ],
-  },
   {
     slug: 'captiveaire-hood-maintenance-repair-guide',
     title: 'CaptiveAire Hood Systems: Complete Maintenance and Repair Guide',
@@ -1046,12 +787,12 @@ An air balance test uses a digital manometer and anemometer to measure:
 
 This takes 1-2 hours and should be done semi-annually or whenever cooking equipment is added or changed.
 
-**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Union County, NJ. We understand ventilation from the inside out.**
+**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Oklahoma City, OK. We understand ventilation from the inside out.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [CaptiveAire Hood Service in the OKC metro](/blog/captiveaire-hood-maintenance-repair-guide)
 - [Kitchen Ventilation Problems: 5 Signs](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -1061,89 +802,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'Can any HVAC company work on CaptiveAire systems?', answer: 'While any licensed HVAC technician can perform basic cleaning, CaptiveAire recommends using technicians with specific training on their systems — especially for fire suppression, demand control ventilation, and makeup air balancing. Improper service can create fire hazards and code violations.' },
     ],
   },
-  {
-    slug: 'espresso-machine-repair-nj',
-    title: 'Espresso Machine Repair in NJ: La Marzocco, Nuova Simonelli, and More',
-    description: 'Finding qualified espresso machine repair in New Jersey is harder than it should be. Here\'s what to know about service for commercial espresso equipment.',
-    date: '2026-03-01',
-    category: 'Espresso',
-    readTime: '4 min',
-    content: `Commercial espresso machines are precision instruments that cost $8,000-$25,000. When one goes down, your coffee shop's revenue goes to zero. Here's what NJ coffee shop owners need to know about espresso machine service.
 
-## The Service Gap in New Jersey
-
-Northern New Jersey has hundreds of specialty coffee shops with high-end espresso machines — but very few qualified service technicians. The nearest La Marzocco authorized service center is in upstate New York. Most shops wait 3-5 days for service when their machine fails.
-
-## Common Espresso Machine Problems
-
-### Group Head Leaking
-Water dripping from the group head during or between shots. Usually caused by worn group gaskets — a $15 part that requires specific knowledge to replace properly. If ignored, water damage to internal components follows.
-
-### Steam Wand Not Producing Steam
-The steam boiler may have a failed heating element, a clogged steam tip, or a scale-blocked valve. In hard water areas (much of NJ), scale is the #1 steam system issue.
-
-### Inconsistent Shot Temperature
-Temperature stability is everything in specialty coffee. If shots are running hot and cold, the PID controller, temperature probe, or heating element may be failing. Some machines have dual-boiler systems where one boiler can fail while the other works fine.
-
-### Machine Won't Turn On
-Check the obvious first — is it plugged in? Is the circuit breaker tripped? Espresso machines draw significant power (20-30 amps). Beyond that, it's usually a failed power switch, blown fuse, or control board issue.
-
-### Low Pump Pressure
-Shots pulling too slowly, channeling, or producing thin crema. The rotary pump may be wearing out, the pump motor capacitor may be failing, or the pressure adjustment needs recalibration.
-
-## Maintenance That Prevents Failures
-
-| Task | Frequency |
-|------|-----------|
-| Backflush with detergent | Daily |
-| Clean steam wand | After every use |
-| Clean drip tray and drain box | Daily |
-| Descale (water softener check) | Monthly |
-| Group gasket replacement | Every 6-12 months |
-| Shower screen cleaning | Weekly |
-| Full professional service | Annually |
-
-### Water Quality Matters Most
-
-The single most important thing you can do for your espresso machine is install and maintain a water filtration/softening system. Scale from hard water destroys heating elements, clogs valves, and reduces boiler capacity. A $500 water softener protects a $20,000 machine.
-
-## Brands We Service
-
-**La Marzocco** — Linea PB, Linea Classic, KB90, GB5, Strada
-The gold standard of specialty espresso. Italian-made, dual-boiler, saturated group heads. These machines are built to last decades with proper maintenance.
-
-**Nuova Simonelli / Victoria Arduino** — Aurelia Wave, Appia, Eagle One
-Strong performer in the mid-to-high-end specialty segment. The Victoria Arduino Eagle One is the current World Barista Championship machine.
-
-**Rancilio** — Classe 7, Classe 9, Classe 11
-Workhorse Italian machines common in established cafes and Italian restaurants throughout NJ.
-
-**Schaerer** — Coffee Art Plus (Dunkin' standard)
-Super-automatic machines found in QSR chains. Different service approach than traditional espresso machines.
-
-## What to Look for in an Espresso Tech
-
-1. **Brand-specific training** — La Marzocco and Nuova Simonelli each have their own certification programs. A general appliance tech shouldn't touch a $20,000 espresso machine.
-2. **SCA (Specialty Coffee Association) membership** — indicates involvement in the specialty coffee industry
-3. **Carries espresso-specific parts** — group gaskets, shower screens, o-rings, common valve components
-4. **Understands water chemistry** — can test and advise on filtration
-5. **Fast response** — a coffee shop without an espresso machine has no revenue
-
-**True Commercial Service is building espresso machine service capability for Northern New Jersey. We're pursuing La Marzocco and Nuova Simonelli factory certifications to provide the fast, qualified service that NJ coffee shops deserve.**
-
-## Related Articles
-
-- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-
-Looking for service? Visit our [Espresso Machine Repair](/services/espresso-machines) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'How much does commercial espresso machine repair cost?', answer: 'Commercial espresso machine repairs typically range from $150-400 for common fixes like group head gaskets, solenoid valves, and steam wand tips, to $800-2,000+ for major work like boiler replacement, PID controller replacement, or full pump rebuilds.' },
-      { question: 'How often should a commercial espresso machine be serviced?', answer: 'Commercial espresso machines should receive professional maintenance every 3-6 months. This includes group head gasket replacement, shower screen cleaning, boiler descaling, water softener check, and pressure calibration. Daily backflushing by staff is also essential.' },
-      { question: 'Can any repair company work on La Marzocco or Nuova Simonelli machines?', answer: 'Most general kitchen equipment repair companies will not touch commercial espresso machines. Look for a company with technicians specifically trained on your machine brand. La Marzocco, Nuova Simonelli, and Slayer all have specific service training programs.' },
-    ],
-  },
   {
     slug: 'walk-in-freezer-vs-cooler-service-differences',
     title: 'Walk-In Freezer vs Walk-In Cooler: Service Differences Every Owner Should Know',
@@ -1220,9 +879,9 @@ When a **freezer** fails, product starts thawing within 1-2 hours. If it's a wee
 
 ## Energy Savings Opportunity
 
-Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At NJ commercial electric rates, that's $100-300/month in wasted energy on a single unit.
+Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At commercial electric rates, that's $100-300/month in wasted energy on a single unit.
 
-**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Union County, NJ. We understand the critical differences and maintain each accordingly.**
+**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Oklahoma City, OK. We understand the critical differences and maintain each accordingly.**
 
 ## Related Articles
 
@@ -1303,12 +962,12 @@ If they don't track it — or won't share it — that tells you something.
 
 Before signing anything, call their emergency line at 9pm on a weekday. Does a real person answer? How quickly do they respond to a text? This 5-minute test tells you more about the company than any contract clause.
 
-**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Union County, NJ.**
+**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Oklahoma City, OK.**
 
 ## Related Articles
 
-- [What Is a PM Agreement?](/blog/pm-agreement-benefits-nj-restaurants)
-- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
+- [What Is a PM Agreement?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
+- [How to Choose a Repair Company in the OKC metro](/blog/questions-before-signing-equipment-service-contract)
 - [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
 
 Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
@@ -1318,162 +977,8 @@ Looking for service? Visit our [Schedule Service](/schedule-service) page or [sc
       { question: 'What is a good first-time fix rate for equipment repair?', answer: 'Industry average first-time fix rate is about 70%. A strong service company should be above 85%. This means the technician resolves the issue on the first visit without needing to return for parts or additional diagnosis.' },
     ],
   },
-  // ─── VENTILATION / AIR BALANCING ARTICLES ─────────────────────
-  {
-    slug: 'kitchen-air-balancing-nj-what-it-is',
-    title: 'Kitchen Air Balancing in NJ — What It Is and Why Your Restaurant Needs It',
-    description: 'Most NJ restaurant owners have never heard of air balancing. Here\'s what it is, why it matters, and how much it costs.',
-    date: '2026-03-28',
-    category: 'Ventilation',
-    readTime: '6 min',
-    content: `If you own a restaurant in New Jersey, there\'s a good chance your kitchen ventilation system has never been properly balanced. Most haven\'t. And it\'s costing you money every single day the hood is running.
 
-## What Is Kitchen Air Balancing?
 
-Air balancing is the process of measuring and adjusting the airflow in your kitchen exhaust and makeup air systems so they work together correctly. Your exhaust hood pulls air out. Your makeup air unit (MAU) pushes tempered air back in. When those two systems aren\'t matched, problems happen.
-
-The exhaust hood is designed to pull a specific volume of air — measured in CFM (cubic feet per minute). The makeup air unit is designed to replace about 80% of that volume with heated or cooled air. The remaining 20% comes from the dining room, creating a slight negative pressure that keeps kitchen smells, grease, and smoke from migrating to the front of house.
-
-When the system is balanced, everything works. When it\'s not, you get problems.
-
-## What Happens When Your Kitchen Isn\'t Balanced
-
-### Too Much Exhaust, Not Enough Makeup Air
-- Raw outside air gets sucked in through the front door, windows, and every gap in the building
-- In winter, that\'s 35°F air flooding in while your furnace runs nonstop
-- In summer, it\'s 95°F humid air your AC has to fight
-- Doors are hard to open (negative pressure)
-- Pilot lights blow out
-- Energy bills are higher than they should be
-
-### Too Much Makeup Air, Not Enough Exhaust
-- Kitchen air pushes into the dining room — heat, grease, smoke, smells
-- Hood capture suffers because supply air disrupts the exhaust plume
-- Health inspectors flag visible smoke spillage from hoods
-- Customers complain about kitchen odors
-
-## How Is It Done?
-
-A technician uses specialized instruments — typically a VelGrid that sits on top of the hood filters with a built-in standoff, or a rotating vane anemometer held 2 inches from the filter face. They measure the velocity of air moving through each filter, then calculate the total CFM using industry-standard conversion factors.
-
-On the supply side, they measure airflow through the makeup air unit\'s perforated supply plenum (PSP) or supply fan filters. Then they compare exhaust vs supply, check the ratio, run a smoke capture test, and adjust dampers and fan speeds until the system is balanced.
-
-You get a written report with all the readings, calculations, and a pass/fail assessment.
-
-## How Much Does Kitchen Air Balancing Cost in NJ?
-
-Pricing is per hood system, not hourly — so you know the cost before we show up. [Contact us for a quote](/schedule-service). The service typically pays for itself in energy savings within a few months — often faster if your makeup air unit isn\'t working at all.
-
-## How Do I Know If My Kitchen Needs It?
-
-You probably need air balancing if:
-- Your kitchen hood was installed and never tested
-- Smoke escapes the hood during cooking
-- The front door is hard to open or slams shut
-- Pilot lights blow out randomly
-- The kitchen is uncomfortably hot (even with the hood running)
-- Your dining room smells like the kitchen
-- Energy bills seem higher than comparable restaurants
-- You\'ve never had a TAB report done
-
-## Who Does Kitchen Air Balancing in NJ?
-
-Very few companies specialize in this. Most HVAC contractors focus on rooftop units and split systems — they don\'t carry the instruments or have the training for kitchen-specific ventilation work. And hood cleaning companies clean but don\'t measure or adjust airflow.
-
-**True Commercial Service specializes in commercial kitchen ventilation for restaurants, hotels, and institutions across Union County, NJ and the NYC metro. We test, adjust, and balance your system in one visit — and give you a written report with real numbers.**
-
-## Related Articles
-
-- [How Much Does Air Balancing Cost?](/blog/kitchen-air-balancing-cost-nj-pricing)
-- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
-- [Negative Pressure: Causes, Costs, Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
-
-Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'What is kitchen air balancing?', answer: 'Air balancing is the process of measuring and adjusting your kitchen exhaust and makeup air systems so they work together at the correct ratio. The exhaust hood pulls air out, and the makeup air unit replaces about 80% of it with tempered air. Balancing ensures proper hood capture, comfortable temperatures, and minimal energy waste.' },
-      { question: 'How much does kitchen air balancing cost in NJ?', answer: 'Pricing is per hood system, not hourly. Contact us for an exact quote. The service usually pays for itself in energy savings within a few months.' },
-      { question: 'How do I know if my restaurant kitchen needs air balancing?', answer: 'Signs include: smoke escaping the hood during cooking, front door hard to open, pilot lights blowing out, kitchen uncomfortably hot, dining room smells like the kitchen, or energy bills higher than expected. If your hood system has never been tested after installation, it almost certainly needs balancing.' },
-    ],
-  },
-  {
-    slug: 'restaurant-exhaust-fan-repair-nj',
-    title: 'Restaurant Exhaust Fan Repair in NJ — Same Day Emergency Service',
-    description: 'Your kitchen exhaust fan stopped working. Here\'s what to check, what it costs to repair, and when you need a replacement.',
-    date: '2026-03-28',
-    category: 'Ventilation',
-    readTime: '5 min',
-    content: `When your exhaust fan stops, your kitchen stops. Health codes require a functioning exhaust system to operate — no exhaust means no cooking. Here\'s what NJ restaurant owners need to know about exhaust fan repair.
-
-## Common Exhaust Fan Problems
-
-### Belt Failure (Most Common)
-The fan belt is the #1 failure point on upblast exhaust fans. Belts wear, stretch, crack, and eventually snap. When the belt breaks, the fan motor runs but no air moves. You\'ll notice immediately — the kitchen fills with smoke and heat.
-
-**Fix:** Belt replacement. A 30-minute job for an experienced tech. [Contact us for pricing](/schedule-service).
-
-### Motor Failure
-The fan motor burns out from heat, grease buildup, or age. You\'ll hear nothing when you turn the fan on, or you\'ll hear humming but no spinning. Grease-laden air accelerates motor failure — this is why regular cleaning matters.
-
-**Fix:** Motor replacement. Most motors are universal fit and can be sourced same-day. [Contact us for pricing](/schedule-service).
-
-### Bearing Failure
-The fan bearings wear out over time, especially without regular lubrication. You\'ll hear grinding, squealing, or rumbling from the roof. If you ignore it, the bearings seize and the motor burns out — turning a simple bearing job into a full motor replacement.
-
-**Fix:** Bearing replacement or re-lubrication. [Contact us for pricing](/schedule-service).
-
-### Grease Buildup on Fan Wheel
-Grease accumulates on the fan wheel and housing, adding weight and reducing balance. The fan vibrates, moves less air, and works harder. Eventually the added weight and vibration destroy the bearings and motor.
-
-**Fix:** Fan wheel cleaning and rebalancing. Should be done during every hood cleaning. [Contact us for pricing](/schedule-service).
-
-### Electrical Issues
-Contactors, relays, and wiring connections fail — especially in the harsh rooftop environment. The fan won\'t start, runs intermittently, or trips the breaker.
-
-**Fix:** Electrical diagnosis and component replacement. [Contact us for pricing](/schedule-service).
-
-## When to Repair vs Replace
-
-**Repair if:**
-- Fan is under 10 years old
-- Only one component has failed (belt, motor, bearing)
-- Frame and housing are structurally sound
-- Fan is still listed/approved for your hood system
-
-**Replace if:**
-- Fan is 15+ years old
-- Multiple components failing
-- Housing is corroded or structurally damaged
-- Fan is undersized for the hood (common in renovated kitchens)
-- Repair cost exceeds 60% of replacement cost
-
-Contact us for fan replacement pricing — cost depends on size and CFM rating.
-
-## What to Check Before You Call
-
-1. **Is the fan switch on?** Check the hood control panel. Someone may have turned it off.
-2. **Check the breaker.** A tripped breaker is free to fix.
-3. **Listen.** Motor humming but not spinning = belt or bearing. Nothing at all = electrical or motor.
-4. **Look at the roof.** If the fan is spinning but slow, it\'s probably a belt slipping or bearing dragging.
-
-## Emergency Exhaust Fan Service in NJ
-
-A dead exhaust fan is an emergency — you can\'t legally operate without it, and your kitchen fills with smoke and heat within minutes.
-
-**True Commercial Service provides same-day exhaust fan repair across Union County, NJ. We carry common belts, motors, and bearings on the truck. Most repairs are completed in under 2 hours.**
-
-## Related Articles
-
-- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
-
-Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'How much does restaurant exhaust fan repair cost?', answer: 'Repair costs vary depending on the issue — belt replacement is the least expensive, followed by bearing service, then motor replacement. Full fan replacement costs more. Contact us for an exact quote.' },
-      { question: 'Why is my kitchen exhaust fan not working?', answer: 'The most common causes are a broken belt, burned-out motor, failed bearings, or an electrical issue like a tripped breaker or bad contactor. Belt failure is the #1 cause — it is a quick, inexpensive fix.' },
-      { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A non-functioning exhaust fan means no cooking until it is repaired.' },
-    ],
-  },
   {
     slug: 'makeup-air-unit-not-working-restaurant',
     title: 'Makeup Air Unit Not Working? What Every Restaurant Owner Should Know',
@@ -1487,7 +992,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 Your kitchen exhaust hood pulls thousands of cubic feet of air out of the building every minute. That air has to come from somewhere. The MAU is designed to replace about 80% of the exhausted air with tempered (heated or cooled) outside air, delivered directly into the kitchen.
 
-Without the MAU, your building goes under severe negative pressure. The exhaust is still pulling air out, so the building sucks in raw outside air through every crack, door, window, and gap. In January in New Jersey, that\'s 35°F air pouring in. In August, it\'s 95°F humid air.
+Without the MAU, your building goes under severe negative pressure. The exhaust is still pulling air out, so the building sucks in raw outside air through every crack, door, window, and gap. In January in the Oklahoma City area, that\'s 35°F air pouring in. In August, it\'s 95°F humid air.
 
 Your building HVAC — the furnace in winter, the AC in summer — has to condition all of that infiltrating air. That\'s energy you\'re paying for that the MAU should be handling.
 
@@ -1537,13 +1042,13 @@ The MAU repair is a fraction of the annual energy waste. The math is clear — [
 4. **Interlock** — many MAUs are interlocked with the exhaust fan. If the exhaust fan is off, the MAU won\'t run.
 5. **Thermostat** — check the setting. It may have been changed or malfunctioned.
 
-**True Commercial Service repairs and maintains all brands of makeup air units across Union County, NJ. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
+**True Commercial Service repairs and maintains all brands of makeup air units across Oklahoma City, OK. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
 
 ## Related Articles
 
 - [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
 - [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -1601,11 +1106,11 @@ A qualified technician measures your exhaust CFM, supply CFM, face velocity at t
 
 Once balanced, the hood captures the heat, the kitchen temperature drops, and the AC can actually keep up because it\'s not fighting thousands of CFM of misrouted hot air.
 
-**True Commercial Service provides kitchen air balancing for restaurants across Union County, NJ. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**
+**True Commercial Service provides kitchen air balancing for restaurants across Oklahoma City, OK. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
 
@@ -1616,56 +1121,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'How much does it cost to fix a hot restaurant kitchen?', answer: 'If the cause is air balance (which it usually is), a one-time air balance service typically resolves the problem permanently. Contact us for a quote. Compare that to repeated HVAC service calls that do not fix the root cause.' },
     ],
   },
-  {
-    slug: 'captiveaire-hood-service-nj',
-    title: 'CaptiveAire Hood Service in NJ — Balancing, Fans, and Makeup Air',
-    description: 'CaptiveAire is the most common kitchen hood in NJ. Here\'s what service they need and who actually does it.',
-    date: '2026-03-28',
-    category: 'Ventilation',
-    readTime: '5 min',
-    content: `CaptiveAire is the dominant commercial kitchen hood manufacturer in the United States — an estimated 40-60% of new hood installations use their systems. If you own a restaurant, hotel, or institutional kitchen in New Jersey, there\'s a good chance you have a CaptiveAire hood on your roof.
 
-CaptiveAire builds great equipment. But they sell it through manufacturer\'s reps and authorized dealers — they don\'t maintain it. Once your hood is installed, service and maintenance falls to third-party companies. And most HVAC companies don\'t specialize in kitchen ventilation.
-
-## What CaptiveAire Hoods Need
-
-### Air Balancing (After Installation and Periodically)
-Every CaptiveAire hood system should be tested and balanced after installation and after any changes to the kitchen — new equipment, hood modifications, or MAU replacement. The hood is designed for a specific CFM at a specific face velocity. If the system isn\'t balanced to those specs, capture and containment suffer.
-
-CaptiveAire hoods use baffle or Captrate filters. Air volume is measured using a VelGrid (with built-in standoff that sits on the filter) or a rotating vane anemometer held 2 inches from the filter face. Each filter gets multiple velocity readings, then CFM is calculated using the filter\'s conversion factor.
-
-### Exhaust Fan Maintenance
-CaptiveAire exhaust fans — upblast models are the most common — need regular belt checks, bearing lubrication, and fan wheel cleaning. A dirty fan wheel is the most common reason a CaptiveAire hood underperforms. Grease buildup adds weight, reduces efficiency, and creates vibration that destroys bearings.
-
-### Makeup Air Unit Service
-CaptiveAire MAUs need filter changes every 1-3 months, burner inspection annually, belt and motor checks, and controls verification. The MAU should deliver approximately 80% of the hood\'s exhaust volume as tempered air. When it doesn\'t, the kitchen suffers.
-
-### Demand Control Ventilation (DCV)
-Many newer CaptiveAire systems include or can be upgraded with demand control ventilation — sensors that modulate fan speed based on cooking activity. Instead of running the exhaust at full blast all day, the system ramps up during peak cooking and slows down during idle periods. This saves 30-60% of fan energy and reduces HVAC load significantly.
-
-## What CaptiveAire Hood Service Costs
-
-Service costs vary depending on your system size and what\'s needed. [Contact us for a quote](/schedule-service) — we price per hood system, not hourly, so you know the cost before we show up.
-
-## Who Services CaptiveAire Hoods in NJ?
-
-Most general HVAC contractors will tell you they can service kitchen hoods. But kitchen ventilation is specialized — the instruments, the measurement methods, the K-factors, and the understanding of how exhaust and supply interact are different from standard commercial HVAC work.
-
-**True Commercial Service specializes in CaptiveAire and all major kitchen hood brands. We carry VelGrid instruments, understand the filter conversion factors, and have hands-on experience commissioning CaptiveAire systems from new. Serving Union County, NJ and the NYC metro.**
-
-## Related Articles
-
-- [CaptiveAire Hood Maintenance Guide](/blog/captiveaire-hood-maintenance-repair-guide)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
-
-Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'Does CaptiveAire do their own service and maintenance?', answer: 'No. CaptiveAire manufactures and sells equipment through reps and dealers, but they do not have a service workforce for ongoing maintenance and repair. Third-party service companies handle all maintenance, air balancing, fan repair, and MAU service on CaptiveAire systems.' },
-      { question: 'How often should a CaptiveAire hood system be serviced?', answer: 'Exhaust fan belts should be checked quarterly. MAU filters should be changed every 1-3 months. A full air balance should be done after installation, after any kitchen changes, and at least annually. Fan wheel cleaning should coincide with hood cleaning schedules.' },
-      { question: 'What instruments are used to test a CaptiveAire hood?', answer: 'A VelGrid with built-in standoff that sits on top of the baffle or Captrate filters, or a rotating vane anemometer held 2 inches from the filter face. Multiple velocity readings per filter are averaged and multiplied by the filter conversion factor to calculate CFM.' },
-    ],
-  },
   {
     slug: 'kitchen-negative-pressure-causes-costs-fix',
     title: 'Commercial Kitchen Negative Pressure: Causes, Costs, and How to Fix It',
@@ -1689,7 +1145,7 @@ The problem happens when the infiltration becomes excessive:
 
 ## The Real Cost of Excessive Negative Pressure
 
-A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in Elizabeth, NJ:
+A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in Oklahoma City, OK:
 
 | Season | Outside Air Temp | Building HVAC Cost |
 |--------|-----------------|-------------------|
@@ -1720,12 +1176,12 @@ That\'s just energy. Add the operational costs:
 
 A one-time air balance service typically resolves the problem permanently — and it pays for itself in energy savings within a few months. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Union County, NJ. One visit, real measurements, permanent fix.**
+**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Oklahoma City, OK. One visit, real measurements, permanent fix.**
 
 ## Related Articles
 
 - [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -1735,73 +1191,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'How do you fix negative pressure in a restaurant kitchen?', answer: 'First, verify the makeup air unit is running and delivering its design airflow. Then measure exhaust and supply CFM and balance the system to an 80-90% supply-to-exhaust ratio. This usually involves adjusting dampers and fan speeds. Contact us for a quote on air balance service.' },
     ],
   },
-  {
-    slug: 'kitchen-air-balancing-cost-nj-pricing',
-    title: 'How Much Does Kitchen Air Balancing Cost? NJ Pricing Guide',
-    description: 'Transparent pricing for kitchen air balancing in New Jersey. What you get, what it costs, and how fast it pays for itself.',
-    date: '2026-03-28',
-    category: 'Ventilation',
-    readTime: '4 min',
-    content: `If you\'re shopping for kitchen air balancing in New Jersey, here\'s what you should expect to pay — and what you should get for that price.
 
-## Kitchen Air Balancing Pricing
-
-We price per hood system, not hourly — so you know the cost before we show up. [Contact us for a quote](/schedule-service).
-
-Every service includes:
-- Full CFM measurement (exhaust + supply)
-- Damper adjustment and MAU verification
-- Smoke capture test
-- Written balance report with before/after readings
-- Energy savings assessment
-
-Larger kitchens (multiple hoods, hotels, institutions) get cross-system balancing, coordinated fan speed adjustment, and detailed engineering reports.
-
-## What Else Might You Need?
-
-If we find a broken component during the balance — a worn fan belt, failing motor, or clogged MAU filter — we\'ll tell you before we fix it. No surprises. Additional repairs are quoted separately on-site.
-
-## How Fast Does It Pay for Itself?
-
-The energy savings from proper air balancing depend on how far out of spec your system is. A restaurant with a completely failed makeup air unit can waste over $5,000/year in excess HVAC costs. Even a slightly underperforming MAU wastes hundreds per year.
-
-These numbers are based on a 10-foot, 2,750 CFM hood system in NJ using commercial utility rates. Your numbers may vary — we include an energy assessment with every air balance so you see your specific savings. Try our [free energy calculator](/tools/energy-calculator) to estimate your waste.
-
-## What You Should Get in a Balance Report
-
-A professional air balance report should include:
-- Exhaust CFM per hood (measured, not estimated)
-- Supply CFM per makeup air unit
-- Supply-to-exhaust ratio
-- Face velocity readings at the hood
-- Smoke capture test results (pass/fail)
-- Before and after readings (if adjustments were made)
-- Energy waste estimate
-- Recommendations for any needed repairs
-
-If a company gives you a number without showing you the data, they didn\'t actually balance anything.
-
-## Why Per-System Pricing (Not Hourly)
-
-We charge per hood system, not by the hour. You know the cost before we show up. We don\'t benefit from taking longer.
-
-Hourly pricing incentivizes slow work. Per-system pricing incentivizes getting it right and moving on.
-
-**True Commercial Service provides transparent, per-system air balancing for commercial kitchens across Union County, NJ. No hidden fees. Written report with real numbers. Schedule at choosetrue.com.**
-
-## Related Articles
-
-- [Kitchen Air Balancing in NJ — What It Is](/blog/kitchen-air-balancing-nj-what-it-is)
-- [Restaurant Equipment Repair Cost in NJ](/blog/commercial-kitchen-equipment-repair-cost-nj)
-- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
-
-Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'How much does kitchen air balancing cost in New Jersey?', answer: 'Pricing is per hood system, not hourly. Contact us for an exact quote. Every service includes full CFM measurement, damper adjustment, smoke capture test, written report, and energy assessment.' },
-      { question: 'Is kitchen air balancing worth the cost?', answer: 'Yes. A restaurant with a poorly performing makeup air unit can waste thousands per year in excess energy costs. Air balancing typically pays for itself within a few months. If the MAU is completely down, payback is even faster.' },
-      { question: 'What should a kitchen air balance report include?', answer: 'A professional report should include measured exhaust CFM per hood, supply CFM per makeup air unit, supply-to-exhaust ratio, face velocity readings, smoke capture test results, before/after readings if adjustments were made, energy waste estimate, and repair recommendations.' },
-    ],
-  },
   {
     slug: 'exhaust-fan-making-noise-causes',
     title: 'Exhaust Fan Making Noise? 5 Causes and When to Call for Service',
@@ -1855,12 +1245,12 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 Every noise is a warning. The repair cost goes up the longer you wait — a simple belt replacement today prevents a full motor replacement next month. The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service provides same-day exhaust fan diagnosis and repair across Union County, NJ. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
+**True Commercial Service provides same-day exhaust fan diagnosis and repair across Oklahoma City, OK. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
 
 ## Related Articles
 
-- [Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Exhaust Fan Repair in the OKC metro](/blog/exhaust-fan-making-noise-causes)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -1919,13 +1309,13 @@ This isn\'t just a comfort issue:
 
 One air balance visit fixes the root cause permanently. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Union County, NJ restaurants, hotels, and commercial kitchens.**
+**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Oklahoma City, OK restaurants, hotels, and commercial kitchens.**
 
 ## Related Articles
 
 - [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -1990,11 +1380,11 @@ Most smoke capture problems are solved with fan service and/or an air balance vi
 
 Most smoke capture problems are cause #1 or #2 — and both are fixed with a single air balance visit.
 
-**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Union County, NJ. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
+**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Oklahoma City, OK. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
 - [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
 
@@ -2005,189 +1395,8 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
       { question: 'How much does it cost to fix a kitchen hood that is not capturing smoke?', answer: 'Most capture problems are caused by low exhaust CFM or improper makeup air, both fixed with an air balance visit. Contact us for a quote. Physical modifications like air curtains or hood extensions are quoted separately.' },
     ],
   },
-  // ─── ESP / POLLUTION CONTROL ARTICLES ─────────────────────────
-  {
-    slug: 'nyc-local-law-38-esp-requirements-restaurants',
-    title: 'NYC Local Law 38: Does Your Restaurant Need an ESP? What You Need to Know',
-    description: 'NYC requires pollution control on commercial kitchen exhaust. Here\'s what Local Law 38 requires, who it applies to, and the fines for non-compliance.',
-    date: '2026-03-29',
-    category: 'Pollution Control',
-    readTime: '6 min',
-    content: `If you operate a restaurant in New York City that does any charbroiling, grilling, frying, or roasting, you are legally required to have a functioning pollution control unit on your kitchen exhaust. This isn't optional — it's NYC Local Law 38, and the DEP enforces it with fines up to $10,000 per violation.
 
-## What Is Local Law 38?
 
-NYC Local Law 38 of 2015 (amending Administrative Code Section 24-149) requires all commercial cooking operations that produce grease-laden vapors to install and operate emission control equipment on their kitchen exhaust systems. The law has been enforced since July 1, 2016.
-
-The NYC Department of Environmental Protection (DEP) oversees compliance. They inspect, issue violations, and levy fines.
-
-## Who Does It Apply To?
-
-**You need an ESP or equivalent pollution control if your restaurant:**
-- Does charbroiling or grilling of any kind
-- Operates deep fryers
-- Roasts meat in commercial ovens
-- Uses wood-fired or coal-fired ovens or grills
-- Produces grease-laden vapors from any cooking process
-- Has kitchen exhaust exceeding 2,000 CFM
-
-**You may be exempt if:**
-- You only do light cooking (sandwich assembly, coffee, baking without frying)
-- Your exhaust is under 2,000 CFM with no charbroiling
-- You operate a food truck or temporary installation (different rules apply)
-
-In practice, the vast majority of NYC restaurants that serve hot food need pollution control.
-
-## What Are the Requirements?
-
-### Standard Cooking Operations
-- Pollution control equipment must achieve at least **75% reduction in particulate matter**
-- An electrostatic precipitator (ESP) is the most common solution
-- Equipment must be registered with NYC DEP
-- Maintenance logs must be kept and available for inspection
-
-### High-Volume Charbroiling (>875 lbs of meat per week)
-- Equipment must achieve **95% particulate removal**
-- **Odor control** is also required (typically a catalytic oxidizer or activated carbon system in addition to the ESP)
-- More frequent inspections and stricter documentation
-
-## What Are the Fines?
-
-| Violation | Fine Range |
-|-----------|-----------|
-| No pollution control equipment installed | $1,000 - $10,000 |
-| Equipment installed but not functioning | $1,000 - $5,000 |
-| No maintenance logs available | $1,000 - $2,500 |
-| Repeat violation | Up to $10,000+ |
-| Failure to register equipment with DEP | $1,000 - $2,500 |
-
-**Important:** Each inspection can result in multiple violations. Not having logs AND having a non-functioning unit = two separate fines in one visit. And the DEP doesn't need to announce inspections — they can show up triggered by a neighbor complaint.
-
-## What Equipment Qualifies?
-
-The most common pollution control solutions for NYC restaurants:
-
-- **Electrostatic Precipitator (ESP)** — collector cells use electrostatic charge to capture grease particles. Most common and cost-effective for typical restaurants.
-- **Rooftop Ecology Unit** — integrated ESP with weatherproof housing, installed on the roof. Very common in NYC.
-- **Smoke Hog** — brand name ESP, so common it's used generically (like "Kleenex"). Now owned by Parker Hannifin / Filtration Group.
-- **UV Oxidation** — ultraviolet systems that break down grease in the exhaust stream. Often used with ESPs.
-- **Catalytic Oxidizer** — burns off grease and odor compounds. Required for high-volume charbroiling.
-- **Activated Carbon Filters** — absorb odor compounds. Used as secondary treatment after ESP.
-
-## What Maintenance Is Required?
-
-The law requires you to maintain the equipment — not just install it. A non-maintained ESP that isn't actually collecting grease is still a violation.
-
-**Recommended maintenance schedule:**
-- **Monthly:** Check indicator lights, inspect pre-filters
-- **Quarterly:** Full ESP cell removal and cleaning, ionizer wire inspection
-- **Semi-annually:** Power supply check, carbon filter replacement, performance verification
-- **Annually:** Comprehensive service with full documentation
-
-**You must maintain service logs.** When the DEP inspector asks to see your maintenance records, "we clean it sometimes" is not acceptable. Dated, detailed logs signed by the service provider are what they want to see.
-
-## What Does Compliance Cost?
-
-ESP installation typically costs $8,000 - $25,000+ depending on the system. Regular maintenance is a fraction of that — and a fraction of a single DEP fine ($1,000 - $10,000+ per violation).
-
-The math is clear: routine quarterly maintenance vs a single fine that could be $10,000. Maintenance is cheaper. Every time. [Contact us for a maintenance quote](/schedule-service).
-
-## Related Articles
-
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [CaptiveAire Hood Service in NJ](/blog/captiveaire-hood-service-nj)
-- [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
-
-Looking for ESP service? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'Does my NYC restaurant need an ESP?', answer: 'If your restaurant does charbroiling, grilling, frying, or roasting that produces grease-laden vapors, NYC Local Law 38 requires pollution control equipment. Most NYC restaurants that cook with heat need an ESP or equivalent device.' },
-      { question: 'What is the fine for not having an ESP in NYC?', answer: 'NYC DEP fines range from $1,000 for a first violation to $10,000+ for repeat violations. Not having maintenance logs is a separate violation. Multiple violations can be issued in a single inspection.' },
-      { question: 'How often does an ESP need to be cleaned in NYC?', answer: 'Quarterly at minimum for most restaurants. High-volume charbroiling operations may need monthly cleaning. NYC DEP requires dated, detailed maintenance logs available for inspection at all times.' },
-    ],
-  },
-  {
-    slug: 'esp-cleaning-service-nyc-nj',
-    title: 'ESP Cleaning Service in NYC & NJ — What to Expect and What It Costs',
-    description: 'Your ESP needs quarterly cleaning to stay compliant. Here\'s what the service involves, what it costs, and how to choose a provider.',
-    date: '2026-03-29',
-    category: 'Pollution Control',
-    readTime: '5 min',
-    content: `Your electrostatic precipitator collects grease and smoke particles from your kitchen exhaust. When the collector cells are coated in grease, the unit stops working — and you're out of compliance. Here's what professional ESP cleaning involves.
-
-## What Happens During an ESP Cleaning
-
-### 1. Power Down and Lockout
-The technician disconnects power to the ESP unit. ESPs run on high voltage — this is not equipment you want to work on energized.
-
-### 2. Cell Removal
-The collector cells (heavy metal plate assemblies) are pulled out of the housing. Depending on the unit, there may be 2-8 cells. Each one is coated in accumulated grease.
-
-### 3. Soaking
-Cells are soaked in a professional-grade alkaline cleaning solution. This breaks down the grease that's baked onto the plates. Soak time varies from 30 minutes to several hours depending on buildup.
-
-### 4. Power Wash
-After soaking, cells are power washed to remove all remaining residue. The plates need to be completely clean for the electrostatic charge to work properly.
-
-### 5. Inspection
-While cells are out, the technician inspects:
-- **Ionizer wires** — thin tungsten wires that create the electrostatic charge. They break over time and need replacement.
-- **Power supply** — the high-voltage transformer that energizes the cells. Checks for proper output.
-- **Pre-filters** — mesh filters upstream of the ESP that catch large particles. Usually replaced during cleaning.
-- **Post-filters** — carbon or HEPA filters downstream. Replaced on schedule.
-- **Housing** — checks for grease buildup, drain blockages, and structural issues.
-
-### 6. Reinstall and Test
-Clean cells are reinstalled, power is restored, and the unit is tested. The indicator light should show green (operating normally). The tech verifies proper current draw on the power supply.
-
-### 7. Documentation
-The service is logged with date, technician name, work performed, and any issues found. This documentation is what the NYC DEP inspector wants to see.
-
-## How Long Does It Take?
-
-- **Single ESP unit:** 1.5 - 3 hours
-- **Multiple units or rooftop ecology:** 3 - 5 hours
-- **Heavily neglected unit (first cleaning in years):** 4 - 6 hours
-
-## What It Costs
-
-Pricing varies depending on your unit type, number of cells, and service frequency. [Contact us for a quote](/schedule-service) — we offer both single-visit and quarterly contract options.
-
-## How to Choose an ESP Service Provider
-
-**Look for:**
-- Experience with your specific ESP brand (Smoke Hog, CaptiveAire, Ecology, Halton)
-- Proper documentation for DEP compliance
-- Willingness to set you up on a quarterly schedule
-- Can bundle with hood cleaning, air balancing, and fan service
-
-**Avoid:**
-- Companies that "clean" without removing the cells (this doesn't work)
-- Providers who can't produce documentation for DEP
-- Anyone who doesn't know what ionizer wires are
-- The cheapest option — if the price seems too good to be true, corners were cut
-
-## How Often Should It Be Done?
-
-| Restaurant Type | Recommended Frequency |
-|----------------|----------------------|
-| Heavy charbroiling (steakhouse, BBQ) | Monthly |
-| Moderate cooking (full-service restaurant) | Quarterly |
-| Light cooking (café, bakery with frying) | Every 6 months |
-| Any NYC restaurant under DEP oversight | Quarterly minimum |
-
-## Related Articles
-
-- [NYC Local Law 38: ESP Requirements](/blog/nyc-local-law-38-esp-requirements-restaurants)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-
-Looking for ESP cleaning? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'How much does ESP cleaning cost?', answer: 'Pricing depends on your unit type, number of cells, and service frequency. Contact us for a quote. Regular ESP maintenance costs a fraction of a single NYC DEP fine.' },
-      { question: 'What does ESP cleaning involve?', answer: 'The technician powers down the unit, removes collector cells, soaks them in alkaline solution, power washes them, inspects ionizer wires and power supply, replaces pre-filters, reinstalls cells, tests the unit, and documents the service for DEP compliance.' },
-      { question: 'How long does ESP cleaning take?', answer: 'A single ESP unit takes 1.5-3 hours. Multiple units or rooftop ecology units take 3-5 hours. Heavily neglected units that have not been cleaned in years may take 4-6 hours.' },
-    ],
-  },
   {
     slug: 'smoke-hog-not-working-troubleshooting',
     title: 'Smoke Hog Not Working? Troubleshooting Your Kitchen ESP',
@@ -2233,7 +1442,7 @@ The unit has shut itself off due to a detected fault. Common causes:
 
 A non-functioning ESP means:
 - Your kitchen exhaust is dumping grease and smoke directly into the air
-- Neighbors smell it and call 311 (in NYC)
+- Neighbors smell it and file complaints
 - The DEP shows up and you have no working unit and no maintenance logs
 - $1,000 - $10,000 fine
 
@@ -2241,48 +1450,54 @@ A red light on your Smoke Hog is not a suggestion. It's a routine cleaning visit
 
 ## Related Articles
 
-- [NYC Local Law 38: ESP Requirements](/blog/nyc-local-law-38-esp-requirements-restaurants)
-- [ESP Cleaning Service: What to Expect](/blog/esp-cleaning-service-nyc-nj)
+- [ESP Cleaning Service: What to Expect](/blog/smoke-hog-not-working-troubleshooting)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
 
 Need ESP service? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my Smoke Hog showing a red light?', answer: 'A red indicator light means the ESP has detected a fault and shut down. The most common cause is dirty collector cells causing electrical arcing. Other causes include a broken ionizer wire, power supply fault, or open safety interlock. The cells need professional cleaning.' },
       { question: 'Can I clean my ESP cells myself?', answer: 'No. ESP cells need to be removed from the unit, soaked in professional alkaline cleaning solution, and power washed. They cannot be effectively cleaned in place. The high-voltage system also requires trained technicians for any internal work.' },
-      { question: 'What happens if I ignore a broken ESP?', answer: 'In NYC, a non-functioning ESP is a violation of Local Law 38. The DEP can fine you $1,000-$10,000+ per violation. Additionally, your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints and further inspections.' },
+      { question: 'What happens if I ignore a broken ESP?', answer: 'A non-functioning ESP means your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints, health code violations, and potential fines. In cities with pollution control requirements, fines can reach $10,000+ per violation.' },
     ],
   },
-  // ─── "NEAR ME" LOCAL SEO ARTICLES ─────────────────────────────
+
+
+
+
+
+  // ─── OKC METRO LOCAL SEO ARTICLES ─────────────────────────────
   {
-    slug: 'commercial-kitchen-equipment-repair-near-me-nj-nyc',
-    title: 'Commercial Kitchen Equipment Repair Near Me - NJ & NYC Service Area',
-    description: 'Looking for commercial kitchen equipment repair near you in NJ or NYC? True Commercial Service covers Elizabeth, Newark, Jersey City, and all five NYC boroughs. Same-day response.',
-    date: '2026-04-03',
+    slug: 'commercial-kitchen-equipment-repair-near-me-okc',
+    title: 'Commercial Kitchen Equipment Repair Near Me - Oklahoma City Metro',
+    description: 'Looking for commercial kitchen equipment repair near you in OKC? True Commercial Service covers Oklahoma City, Norman, Edmond, Moore, and Central Oklahoma. Same-day response.',
+    date: '2026-04-06',
     category: 'Service Area',
     readTime: '4 min',
-    content: `If you are searching for commercial kitchen equipment repair near you in New Jersey or New York City, True Commercial Service is your local option. We are based in Elizabeth, NJ and cover the entire NJ/NYC metro area with same-day emergency response.
+    content: `If you are searching for commercial kitchen equipment repair near you in the Oklahoma City metro, True Commercial Service is your local option. We cover the entire OKC metro area with same-day emergency response.
 
 ## Where We Service
 
-We cover a 50-mile radius from Elizabeth, NJ including:
+We cover the OKC metro and Central Oklahoma including:
 
-**Northern New Jersey:** Elizabeth, Newark, Jersey City, Hoboken, Paterson, New Brunswick, Morristown, Woodbridge, Union County, Essex County, Hudson County, Passaic County, Middlesex County, Morris County.
+**Oklahoma City Metro:** Oklahoma City, Norman, Edmond, Moore, Midwest City, Del City, Yukon, Mustang, Bethany, The Village, Nichols Hills, Warr Acres, Newcastle.
 
-**New York City:** Manhattan, Brooklyn, Queens, The Bronx, Staten Island - all five boroughs.
+**North Central Oklahoma:** Stillwater, Guthrie, Shawnee, Perkins.
+
+**South Metro:** Norman, Noble, Purcell, Blanchard.
 
 ## What We Repair
 
-We service all commercial kitchen equipment including cooking equipment (ovens, fryers, griddles, ranges, steamers, combi ovens), refrigeration (walk-in coolers, walk-in freezers, reach-ins, ice machines), kitchen ventilation (exhaust hoods, exhaust fans, makeup air units, air balancing, ESP/pollution control), HVAC (rooftop units, split systems), and warewash (commercial dishwashers).
+We service all commercial kitchen equipment including cooking equipment (ovens, fryers, griddles, ranges, steamers, combi ovens), refrigeration (walk-in coolers, walk-in freezers, reach-ins, ice machines), kitchen ventilation (exhaust hoods, exhaust fans, makeup air units, air balancing), HVAC (rooftop units, split systems), and warewash (commercial dishwashers).
 
-## Why Choose a Local Company
+## Why Choose a Local OKC Company
 
-National service companies dispatch from far away. By the time their tech arrives, your kitchen has been down for hours. We are based in Elizabeth, NJ. For most locations in our service area, we can be on site within 1-2 hours of your call.
+National service companies dispatch from far away. By the time their tech arrives, your kitchen has been down for hours. We are based in the OKC metro. For most locations in our service area, we can be on site within 1-2 hours of your call.
 
-Local also means we know the area. We understand NJ licensing requirements, NYC building codes, and the specific challenges of operating commercial kitchens in the metro area.
+We understand Oklahoma weather challenges — from 110-degree summers that stress refrigeration systems to ice storms that knock out power and damage rooftop equipment. We are here year-round.
 
 ## Brands We Service
 
-We service all major commercial kitchen equipment brands including Rational, Alto-Shaam, Vulcan, Garland, Pitco, Hoshizaki, Manitowoc, True Manufacturing, Traulsen, CaptiveAire, Accurex, Greenheck, and many more.
+We service all major commercial kitchen equipment brands including Rational, Alto-Shaam, Vulcan, Garland, Pitco, Hoshizaki, Manitowoc, True Manufacturing, Traulsen, CaptiveAire, Accurex, Greenheck, Turbo Air, and many more.
 
 ## 24/7 Emergency Service
 
@@ -2290,27 +1505,27 @@ Kitchen equipment failures do not wait for business hours. We provide 24/7 emerg
 
 ## Related Articles
 
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
-- [How to Choose a Repair Company in NJ](/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [How to Choose a Repair Company](/blog/questions-before-signing-equipment-service-contract)
+- [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? [Schedule a service call](/schedule-service) or call us at (405) 292-4510.`,
     faqs: [
-      { question: 'Where can I find commercial kitchen equipment repair near me in NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ and covers all of Northern New Jersey including Newark, Jersey City, Paterson, New Brunswick, and surrounding areas. We also cover all five NYC boroughs. Call (405) 292-4510 for same-day service.' },
-      { question: 'Do you offer same-day commercial kitchen repair in NJ?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in our NJ/NYC service area. We are available 24/7 for critical equipment failures.' },
-      { question: 'What commercial kitchen equipment do you repair near Elizabeth NJ?', answer: 'We repair all commercial kitchen equipment including cooking (ovens, fryers, griddles, ranges), refrigeration (walk-ins, reach-ins, ice machines), ventilation (hoods, exhaust fans, MAUs), HVAC, and dishwashers. All major brands serviced.' },
+      { question: 'Where can I find commercial kitchen equipment repair near me in OKC?', answer: 'True Commercial Service covers the entire Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, Yukon, and surrounding areas. Call (405) 292-4510 for same-day service.' },
+      { question: 'Do you offer same-day commercial kitchen repair in Oklahoma City?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in the OKC metro area. We are available 24/7 for critical equipment failures.' },
+      { question: 'What commercial kitchen equipment do you repair in the OKC area?', answer: 'We repair all commercial kitchen equipment including cooking equipment, refrigeration, ventilation, HVAC, ice machines, and dishwashers. All major brands serviced.' },
     ],
   },
   {
-    slug: 'emergency-walk-in-cooler-repair-near-me-elizabeth-nj',
-    title: 'Emergency Walk-In Cooler Repair Near Me - Elizabeth NJ & Surrounding Areas',
-    description: 'Walk-in cooler down? We provide emergency walk-in cooler repair in Elizabeth NJ, Newark, Jersey City, and the NYC metro. Same-day response. Protect your inventory.',
-    date: '2026-04-03',
+    slug: 'emergency-walk-in-cooler-repair-oklahoma-city',
+    title: 'Emergency Walk-In Cooler Repair - Oklahoma City OK & Surrounding Areas',
+    description: 'Walk-in cooler down in OKC? We provide emergency walk-in cooler repair in Oklahoma City, Norman, Edmond, and the OKC metro. Same-day response. Protect your inventory.',
+    date: '2026-04-06',
     category: 'Refrigeration',
     readTime: '4 min',
     content: `Your walk-in cooler is down. Temperature is rising. You have thousands of dollars in perishable product at risk. You need someone there now, not tomorrow.
 
-True Commercial Service provides emergency walk-in cooler repair in Elizabeth, NJ and across the entire NJ/NYC metro area. We respond same-day to refrigeration emergencies because we understand that every hour your cooler is down costs you money.
+True Commercial Service provides emergency walk-in cooler repair in Oklahoma City and across the entire OKC metro area. We respond same-day to refrigeration emergencies because every hour your cooler is down costs you money.
 
 ## What to Do Right Now
 
@@ -2319,32 +1534,31 @@ While you wait for the tech:
 1. **Do not open the door** unless absolutely necessary. Every time the door opens, warm air floods in.
 2. **Check the thermostat** to make sure it has not been bumped or changed.
 3. **Check the breaker** in your electrical panel. A tripped breaker is a free fix.
-4. **Listen** to the condensing unit. Is it running? Humming? Silent? This tells the tech what to expect.
-5. **Note the temperature** so you can document the issue for your records and insurance.
+4. **Listen** to the condensing unit. Is it running? Humming? Silent?
+5. **Note the temperature** for your records.
 
 ## Common Walk-In Cooler Emergencies
 
-**Condenser coil is dirty** - the most common cause of walk-in failures. Grease and dust clog the coil, the compressor overheats, and the system shuts down. We clean the coil and get it running within the hour.
+**Condenser coil is dirty** — Oklahoma heat and dust clog condenser coils fast. This is the #1 cause of walk-in failures in the OKC area. We clean the coil and get it running within the hour.
 
-**Refrigerant leak** - you will see oil stains around the compressor or lines. Requires a licensed technician with EPA 608 certification to diagnose and repair. We carry leak detection equipment and refrigerant on the truck.
+**Refrigerant leak** — oil stains around the compressor or lines. Requires EPA 608 certified technician. We carry leak detection equipment and refrigerant on the truck.
 
-**Evaporator iced over** - the defrost system has failed. Could be a bad defrost timer, heater, or thermostat. We diagnose and repair on the spot.
+**Evaporator iced over** — defrost system failure. Could be a bad defrost timer, heater, or thermostat.
 
-**Compressor failure** - the most expensive repair. We diagnose whether it is truly the compressor or a cheaper component (capacitor, relay, overload) causing the symptom.
+**Compressor failure** — we diagnose whether it is truly the compressor or a cheaper component causing the symptom.
 
-## Our Response for Elizabeth NJ and Surrounding Areas
+## Our Response Times in OKC Metro
 
-We are based in Elizabeth, NJ. Response times:
+- **Oklahoma City:** Under 45 minutes
+- **Moore, Midwest City, Del City:** Under 45 minutes
+- **Norman:** Under 1 hour
+- **Edmond:** Under 1 hour
+- **Yukon, Mustang:** Under 1 hour
+- **Stillwater:** Under 1.5 hours
 
-- **Elizabeth, Linden, Rahway, Union:** Under 30 minutes
-- **Newark, Irvington, Hillside:** Under 30 minutes
-- **Jersey City, Hoboken, Bayonne:** Under 45 minutes
-- **NYC boroughs:** Under 90 minutes
-- **New Brunswick, Woodbridge, Edison:** Under 45 minutes
+## Oklahoma Heat Makes It Worse
 
-## Protect Your Inventory
-
-A typical restaurant walk-in holds $3,000-$8,000 in perishable product. A supermarket walk-in can hold $20,000-$50,000 or more. The repair cost is always less than the product loss. Call early, not late.
+Oklahoma summers hit 100-110 degrees. Your condenser is on the roof baking in that heat, working twice as hard as it would in a cooler climate. If the coils are dirty, the compressor overheats and shuts down. Regular condenser cleaning is critical in Oklahoma — every 3 months in summer, not just annually.
 
 ## Related Articles
 
@@ -2352,23 +1566,23 @@ A typical restaurant walk-in holds $3,000-$8,000 in perishable product. A superm
 - [Walk-In Freezer vs Cooler Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
-**True Commercial Service provides emergency walk-in cooler and freezer repair across Union County NJ, Essex County, Hudson County, and all five NYC boroughs.** Call us at (405) 292-4510 — 24/7.`,
+**True Commercial Service provides emergency walk-in cooler and freezer repair across the OKC metro.** Call (405) 292-4510 — 24/7.`,
     faqs: [
-      { question: 'How fast can you get to my walk-in cooler emergency in Elizabeth NJ?', answer: 'We are based in Elizabeth, NJ. For Elizabeth and surrounding Union County areas, our response time is typically under 30 minutes. For Newark and Jersey City, under 45 minutes. NYC boroughs under 90 minutes.' },
-      { question: 'How much does emergency walk-in cooler repair cost?', answer: 'Contact us for current pricing. The cost depends on the specific failure, but it is always less than losing thousands of dollars in perishable inventory. We diagnose the issue before quoting the repair.' },
-      { question: 'Can you repair walk-in coolers on weekends and after hours?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers. Refrigeration emergencies do not wait for business hours, and neither do we.' },
+      { question: 'How fast can you get to my walk-in cooler emergency in Oklahoma City?', answer: 'For Oklahoma City and surrounding metro areas, our response time is typically under 45 minutes. Norman and Edmond under 1 hour. We respond 24/7 to refrigeration emergencies.' },
+      { question: 'Why do walk-in coolers fail more often in Oklahoma?', answer: 'Oklahoma summers reach 100-110 degrees, which forces condenser units to work much harder. Dust and heat clog condenser coils faster than in cooler climates. Quarterly condenser cleaning is critical in Oklahoma, especially during summer months.' },
+      { question: 'Can you repair walk-in coolers on weekends and after hours in OKC?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers across the OKC metro. Call (405) 292-4510 any time.' },
     ],
   },
   {
-    slug: '24-7-restaurant-equipment-repair-northern-nj',
-    title: '24/7 Restaurant Equipment Repair - Northern NJ Emergency Service',
-    description: '24/7 emergency restaurant equipment repair in Northern New Jersey. Walk-in coolers, ovens, fryers, exhaust fans. Same-day response from Elizabeth NJ.',
-    date: '2026-04-03',
+    slug: '24-7-restaurant-equipment-repair-okc-metro',
+    title: '24/7 Restaurant Equipment Repair - OKC Metro Emergency Service',
+    description: '24/7 emergency restaurant equipment repair in Oklahoma City metro. Walk-in coolers, ovens, fryers, exhaust fans. Same-day response across OKC, Norman, Edmond.',
+    date: '2026-04-06',
     category: 'Service Area',
     readTime: '4 min',
-    content: `Restaurant equipment does not break on a convenient schedule. Your fryer goes down during Friday dinner rush. Your walk-in cooler stops cooling at 2 AM Saturday. Your exhaust fan seizes on a holiday weekend.
+    content: `Restaurant equipment does not break on a convenient schedule. Your fryer goes down during Friday dinner rush. Your walk-in cooler stops cooling at 2 AM. Your exhaust fan seizes on a holiday weekend.
 
-True Commercial Service provides 24/7 emergency restaurant equipment repair across Northern New Jersey. We answer the phone every time — no voicemail, no callbacks, no waiting until Monday.
+True Commercial Service provides 24/7 emergency restaurant equipment repair across the Oklahoma City metro. We answer the phone every time.
 
 ## What We Cover 24/7
 
@@ -2376,148 +1590,165 @@ True Commercial Service provides 24/7 emergency restaurant equipment repair acro
 - Walk-in cooler or freezer not holding temperature
 - Complete cooking line failure during service
 - Gas leak or gas smell from equipment
-- Exhaust hood not functioning (cannot legally operate)
+- Exhaust hood not functioning
 
 **Urgent same-day:**
 - Ice machine down
 - Dishwasher failure
-- Single piece of cooking equipment (fryer, oven, griddle)
+- Single piece of cooking equipment
 - Reach-in refrigerator or freezer
 
-## Northern NJ Coverage
+## OKC Metro Coverage
 
-We cover all of Northern New Jersey from our Elizabeth base:
+**Oklahoma City:** Bricktown, Midtown, Automobile Alley, Plaza District, Paseo, Deep Deuce, NW Expressway corridor, Memorial Road, South OKC
 
-**Union County:** Elizabeth, Linden, Westfield, Plainfield, Cranford, Rahway, Union, Summit, Clark, Hillside, Roselle, Kenilworth, Scotch Plains
+**Norman:** Campus Corner, Main Street, OU campus dining, Lindsey Street
 
-**Essex County:** Newark, East Orange, Irvington, Montclair, Bloomfield, Belleville, Nutley, Orange, West Orange, Livingston
+**Edmond:** Broadway, 2nd Street, UCO campus, Deer Creek
 
-**Hudson County:** Jersey City, Hoboken, Union City, North Bergen, Bayonne, Weehawken, West New York, Secaucus, Kearny
+**Moore / Midwest City / Del City:** I-35 corridor, Tinker AFB area
 
-**Passaic County:** Paterson, Clifton, Passaic, Wayne, Totowa, Little Falls
+**Yukon / Mustang / Bethany:** West metro
 
-**Middlesex County:** New Brunswick, Edison, Woodbridge, Perth Amboy, Piscataway, Metuchen
+**Stillwater:** The Strip, OSU campus dining
 
-**Morris County:** Morristown, Parsippany, Dover
+## Oklahoma-Specific Challenges
 
-## Why 24/7 Matters
+Oklahoma restaurants deal with unique challenges:
+- **Extreme heat** — 100+ degree summers stress every piece of refrigeration and HVAC equipment
+- **Ice storms** — winter storms knock out power, damage rooftop equipment, burst pipes
+- **Tornado season** — severe weather can damage outdoor equipment and disrupt operations
+- **Hard water** — Oklahoma water is hard, which accelerates scale buildup in ice machines, steamers, and dishwashers
 
-Every hour of equipment downtime costs a restaurant $200-$500 in lost revenue, wasted product, and labor inefficiency. A walk-in cooler failure can destroy $3,000-$8,000 in inventory overnight. The cost of an after-hours service call is always less than the cost of waiting until morning.
+We understand these challenges because we are based here and deal with them every day.
 
 ## Related Articles
 
 - [The True Cost of Kitchen Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
-- [Walk-In Cooler Not Cooling? Troubleshooting Guide](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 - [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
 
 **Call (405) 292-4510 any time, day or night.** We answer. We respond. We fix it.`,
     faqs: [
-      { question: 'Do you offer 24/7 restaurant equipment repair in Northern NJ?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across Northern New Jersey including Union, Essex, Hudson, Passaic, Middlesex, and Morris Counties. We answer every call — no voicemail.' },
-      { question: 'How fast can you respond to a restaurant equipment emergency in NJ?', answer: 'For most Northern NJ locations, we can be on site within 1-2 hours. For Elizabeth and immediate Union County areas, response is typically under 30 minutes.' },
-      { question: 'What types of restaurant equipment do you repair after hours?', answer: 'We repair all commercial kitchen equipment 24/7 including walk-in coolers, freezers, ice machines, ovens, fryers, griddles, ranges, exhaust fans, dishwashers, and more. We prioritize refrigeration and cooking line emergencies.' },
+      { question: 'Do you offer 24/7 restaurant equipment repair in the OKC metro?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across the Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, and surrounding areas.' },
+      { question: 'How fast can you respond to a restaurant equipment emergency in Oklahoma City?', answer: 'For most OKC metro locations, we can be on site within 45 minutes to 1 hour. We prioritize refrigeration and cooking line emergencies.' },
+      { question: 'Do you service restaurant equipment near Tinker AFB?', answer: 'Yes. We cover Midwest City, Del City, and the Tinker AFB area. We also service military dining facilities with proper certifications.' },
     ],
   },
   {
-    slug: 'commercial-exhaust-fan-repair-near-newark-nj',
-    title: 'Commercial Exhaust Fan Repair Near Newark NJ - Same Day Service',
-    description: 'Kitchen exhaust fan not working in Newark NJ? We repair upblast, utility, and inline exhaust fans. Belt replacement, motor swaps, bearing service. Same-day response.',
-    date: '2026-04-03',
+    slug: 'commercial-exhaust-fan-repair-oklahoma-city',
+    title: 'Commercial Exhaust Fan Repair in Oklahoma City - Same Day Service',
+    description: 'Kitchen exhaust fan not working in OKC? We repair upblast, utility, and inline exhaust fans across Oklahoma City, Norman, Edmond. Belt replacement, motor swaps. Same-day.',
+    date: '2026-04-06',
     category: 'Ventilation',
     readTime: '4 min',
-    content: `If your kitchen exhaust fan is not working in the Newark, NJ area, your kitchen cannot legally operate. Health codes require a functioning exhaust system, and your hood cannot capture smoke and grease without the fan pulling air through it.
+    content: `If your kitchen exhaust fan is not working in the Oklahoma City area, your kitchen cannot legally operate. Health codes require a functioning exhaust system, and your hood cannot capture smoke and grease without the fan pulling air through it.
 
-True Commercial Service provides same-day exhaust fan repair in Newark and across Essex County, Union County, Hudson County, and the surrounding areas.
+True Commercial Service provides same-day exhaust fan repair across the OKC metro.
 
 ## Exhaust Fan Problems We Fix
 
-**Belt replacement** - the most common exhaust fan failure. The belt snaps or slips, the fan stops moving air. We carry common belt sizes on the truck. Typically a 30-minute repair.
+**Belt replacement** — the most common exhaust fan failure. Oklahoma heat accelerates belt wear. We carry common belt sizes on the truck. Typically a 30-minute repair.
 
-**Motor replacement** - the motor burns out from heat, grease, and age. We can source most motors same-day for common fan sizes and have your fan running before end of business.
+**Motor replacement** — the motor burns out from heat exposure. Oklahoma rooftops can reach 140+ degrees in summer, which is brutal on fan motors. We source most motors same-day.
 
-**Bearing failure** - grinding, rumbling, or vibrating from the roof means the bearings are going. We replace bearings before they seize and destroy the motor.
+**Bearing failure** — grinding or vibrating from the roof means bearings are going. We replace before they seize and destroy the motor.
 
-**Fan wheel cleaning** - grease buildup on the fan wheel reduces performance and creates imbalance. The fan runs but does not move enough air. We clean and rebalance the wheel.
+**Fan wheel cleaning** — Oklahoma dust and kitchen grease combine to coat fan wheels fast. Reduces performance and creates imbalance.
 
-**Electrical issues** - contactors, relays, and wiring fail in the harsh rooftop environment. We diagnose and repair electrical problems on all exhaust fan types.
+**Electrical issues** — contactors and wiring fail in Oklahoma's extreme temperature swings. We diagnose and repair all electrical problems.
 
-## Newark NJ and Surrounding Areas
+## Oklahoma Heat vs Your Exhaust Fan
 
-We serve the entire Newark metro from our Elizabeth base, just minutes away:
+Oklahoma summers are uniquely harsh on rooftop equipment. Your exhaust fan sits on a black roof in 100+ degree ambient temps. The motor compartment can reach 150+ degrees. This is why:
+- Belts dry out and crack faster (replace every 6 months, not annually)
+- Motor bearings fail sooner (lubricate quarterly)
+- Electrical connections expand and contract with temperature swings
 
-- **Newark (Ironbound, Downtown, Vailsburg):** Under 15 minutes
-- **East Orange, Irvington, Hillside:** Under 20 minutes
-- **Bloomfield, Belleville, Nutley:** Under 25 minutes
-- **Montclair, Orange, West Orange:** Under 30 minutes
-- **Jersey City, Hoboken:** Under 25 minutes
+Preventive maintenance is more important in Oklahoma than in cooler climates.
+
+## OKC Metro Coverage
+
+- **Oklahoma City:** Under 45 minutes
+- **Norman:** Under 1 hour
+- **Edmond:** Under 1 hour
+- **Moore, Midwest City:** Under 45 minutes
+- **Yukon, Mustang:** Under 1 hour
+- **Stillwater:** Under 1.5 hours
 
 ## All Fan Types and Brands
 
-We service upblast exhaust fans, utility fans, inline fans, and centrifugal fans from every manufacturer including CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and others.
+We service upblast, utility, inline, and centrifugal fans from CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and all other manufacturers.
 
 ## Related Articles
 
 - [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
-- [Restaurant Exhaust Fan Repair in NJ](/blog/restaurant-exhaust-fan-repair-nj)
-- [Kitchen Air Balancing in NJ](/blog/kitchen-air-balancing-nj-what-it-is)
+- [Restaurant Exhaust Fan Repair](/blog/exhaust-fan-making-noise-causes)
+- [Kitchen Air Balancing](/blog/commercial-kitchen-ventilation-problems-signs)
 
-**Call (405) 292-4510 for same-day exhaust fan repair in Newark NJ and surrounding areas.**`,
+**Call (405) 292-4510 for same-day exhaust fan repair in the OKC metro.**`,
     faqs: [
-      { question: 'How fast can you repair an exhaust fan near Newark NJ?', answer: 'We are based in Elizabeth, NJ — minutes from Newark. For Newark and surrounding Essex County areas, we can typically be on site within 15-20 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
-      { question: 'Can I operate my restaurant if the exhaust fan is broken?', answer: 'No. Health codes require a functioning exhaust system to operate a commercial kitchen. A broken exhaust fan means no cooking until it is repaired. This is why we offer same-day emergency response.' },
-      { question: 'What brands of exhaust fans do you repair near Newark?', answer: 'We repair all brands of commercial exhaust fans including CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and others. We service upblast, utility, inline, and centrifugal fan types.' },
+      { question: 'How fast can you repair an exhaust fan in Oklahoma City?', answer: 'For OKC and surrounding metro, we can typically be on site within 45 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
+      { question: 'Why do exhaust fans fail more often in Oklahoma?', answer: 'Oklahoma rooftop temperatures can exceed 140 degrees in summer. This extreme heat accelerates belt wear, bearing failure, and motor burnout. Preventive maintenance every 6 months is critical in Oklahoma.' },
+      { question: 'What brands of exhaust fans do you repair in OKC?', answer: 'We repair all brands including CaptiveAire, Greenheck, Accurex, Loren Cook, and Twin City Fan. We service upblast, utility, inline, and centrifugal fan types.' },
     ],
   },
   {
-    slug: 'ice-machine-repair-near-me-union-county-nj',
-    title: 'Ice Machine Repair Near Me - Union County NJ',
-    description: 'Ice machine not making ice in Union County NJ? We repair Hoshizaki, Manitowoc, and Scotsman ice machines. Same-day service in Elizabeth, Linden, Westfield, and surrounding areas.',
-    date: '2026-04-03',
+    slug: 'ice-machine-repair-near-me-oklahoma-city',
+    title: 'Ice Machine Repair Near Me - Oklahoma City OK',
+    description: 'Ice machine not making ice in Oklahoma City? We repair Hoshizaki, Manitowoc, Scotsman, and Turbo Air ice machines. Same-day service across the OKC metro.',
+    date: '2026-04-06',
     category: 'Ice Machines',
     readTime: '4 min',
-    content: `No ice during service is an emergency for any restaurant, bar, or food service operation. If your commercial ice machine has stopped producing in Union County, NJ, True Commercial Service can be there same-day to diagnose and repair it.
+    content: `No ice during service is an emergency for any restaurant, bar, or food service operation in Oklahoma — especially in the summer when demand is highest. If your commercial ice machine has stopped producing in the OKC metro, True Commercial Service can be there same-day.
 
-## Common Ice Machine Problems
+## Common Ice Machine Problems in Oklahoma
 
-**Dirty condenser** - the number one reason ice machines underperform. Kitchen grease and dust clog the condenser, raising operating temperature until the machine shuts down or production drops to a fraction of capacity. We clean the condenser and restore full production.
+**Scale buildup (the #1 issue in OKC)** — Oklahoma has notoriously hard water. Mineral scale deposits on the evaporator plate faster here than almost anywhere else in the country. Ice comes out thin or misshapen, production drops, then it stops entirely. We descale the system and restore normal operation. In Oklahoma, descaling should happen every 3 months, not 6.
 
-**Scale buildup** - hard water deposits mineral scale on the evaporator plate and water distribution system. Ice comes out thin or misshapen, then production drops, then it stops entirely. We descale the system and restore normal operation.
+**Dirty condenser** — Oklahoma dust and summer heat are a deadly combination for ice machine condensers. A clogged condenser raises operating temperature until the machine shuts down. We clean the condenser and restore full production.
 
-**Water supply issues** - a closed valve, kinked line, or failed inlet valve means no water reaching the machine. We check the water supply path and replace components as needed.
+**Water supply issues** — closed valve, kinked line, or failed inlet valve means no water reaching the machine.
 
-**Harvest cycle failure** - the machine freezes ice but cannot release it from the evaporator plate. Usually caused by a failed hot gas valve or low refrigerant. We diagnose and repair the harvest system.
+**Harvest cycle failure** — the machine freezes ice but cannot release it. Usually a failed hot gas valve or low refrigerant.
 
-**Control board failure** - the machine cycles on and off erratically or will not start at all. We diagnose the control system and replace boards when needed.
+**Control board failure** — machine cycles erratically or will not start.
 
-## Union County NJ Service Area
+## OKC Metro Service Area
 
-We are based in Elizabeth and cover all of Union County:
+- **Oklahoma City:** Under 45 minutes
+- **Norman:** Under 1 hour
+- **Edmond:** Under 1 hour
+- **Moore, Midwest City, Del City:** Under 45 minutes
+- **Yukon, Mustang:** Under 1 hour
+- **Stillwater:** Under 1.5 hours
 
-- **Elizabeth, Linden, Roselle:** Under 15 minutes
-- **Rahway, Clark, Cranford:** Under 20 minutes
-- **Westfield, Scotch Plains, Fanwood:** Under 25 minutes
-- **Plainfield, Summit, New Providence:** Under 25 minutes
-- **Union, Hillside, Kenilworth:** Under 20 minutes
-- **Springfield, Mountainside, Berkeley Heights:** Under 25 minutes
+## Oklahoma Hard Water and Your Ice Machine
+
+Oklahoma City water hardness averages 10-15 grains per gallon — classified as "very hard." This is significantly harder than the national average. What this means for your ice machine:
+
+- Scale builds up 2-3x faster than in soft water areas
+- Descaling is needed every 3 months, not the standard 6 months
+- Water filters need changing more frequently
+- Water treatment systems (softeners) pay for themselves in prevented repairs
+
+If you do not have a water softener on your ice machine in Oklahoma, you are shortening its life by years.
 
 ## Brands We Service
 
-We repair all major ice machine brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, Follett, and others. Cube machines, flake machines, and nugget machines.
-
-## Preventive Maintenance Prevents Emergencies
-
-Most ice machine failures are preventable with regular maintenance. A cleaning and descaling service every 6 months keeps your machine producing at full capacity and prevents the buildup that leads to breakdowns.
+We repair all major ice machine brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, Turbo Air, and Follett. Cube machines, flake machines, and nugget machines.
 
 ## Related Articles
 
 - [Commercial Ice Machine Not Making Ice?](/blog/commercial-ice-machine-not-making-ice)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost in NJ?](/blog/commercial-kitchen-equipment-repair-cost-nj)
+- [What Does Equipment Repair Cost?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
-**Call (405) 292-4510 for same-day ice machine repair in Union County NJ.**`,
+**Call (405) 292-4510 for same-day ice machine repair in the OKC metro.**`,
     faqs: [
-      { question: 'Where can I find ice machine repair near me in Union County NJ?', answer: 'True Commercial Service is based in Elizabeth, NJ in the heart of Union County. We provide same-day ice machine repair across all of Union County including Elizabeth, Linden, Westfield, Plainfield, Cranford, Summit, Rahway, Clark, and surrounding areas.' },
-      { question: 'What ice machine brands do you repair in Union County?', answer: 'We repair all major brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, and Follett. We service cube machines, flake machines, and nugget ice machines.' },
-      { question: 'How often should a commercial ice machine be cleaned?', answer: 'Commercial ice machines should be professionally cleaned and descaled every 6 months minimum, and every 3 months in hard water areas or high-use environments. Regular maintenance prevents most ice machine failures.' },
+      { question: 'Where can I find ice machine repair near me in Oklahoma City?', answer: 'True Commercial Service provides same-day ice machine repair across the OKC metro including Oklahoma City, Norman, Edmond, Moore, Midwest City, and surrounding areas. Call (405) 292-4510.' },
+      { question: 'Why do ice machines fail more often in Oklahoma?', answer: 'Oklahoma has very hard water (10-15 grains per gallon) which causes mineral scale to build up 2-3x faster than average. This clogs the evaporator and water system. Descaling every 3 months is critical in Oklahoma. The summer heat also stresses condensers.' },
+      { question: 'How often should I clean my ice machine in Oklahoma?', answer: 'In Oklahoma, every 3 months due to hard water. The national recommendation is every 6 months, but Oklahoma water hardness requires more frequent cleaning to prevent scale buildup and production loss.' },
     ],
   },
 ];
