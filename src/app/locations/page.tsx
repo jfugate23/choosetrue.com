@@ -20,7 +20,7 @@ export default function LocationsPage() {
 
       <Section>
         <div className="grid md:grid-cols-3 gap-6">
-          {LOCATIONS.map((loc, i) => (
+          {LOCATIONS.filter(loc => loc.status === 'active').map((loc, i) => (
             <Reveal key={loc.slug} delay={i * 100}>
               <Link
                 href={`/locations/${loc.slug}`}
