@@ -257,7 +257,7 @@ export default function PollutionControlPage() {
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="Service Area" title="ESP and pollution control service across NJ & NYC" />
         <div className="flex flex-wrap justify-center gap-3">
-          {['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island', 'Jersey City', 'Newark', 'Hoboken', 'Elizabeth', 'Paterson', 'New Brunswick', 'Woodbridge'].map((area, i) => (
+          {['Oklahoma City', 'Norman', 'Edmond', 'Moore', 'Midwest City', 'Del City', 'Yukon', 'Mustang', 'Stillwater', 'Shawnee'].map((area, i) => (
             <Reveal key={area} delay={i * 30}>
               <div className="flex items-center gap-2 glass-card rounded-lg px-4 py-2.5">
                 <MapPin className="w-3.5 h-3.5 text-amber-400" />

@@ -33,7 +33,7 @@ export default function Header() {
         <div className="hidden lg:block border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
             <div className="flex items-center gap-6 text-slate-400">
-              <span>Serving Northern NJ &bull; NYC &bull; All Five Boroughs</span>
+              <span>Serving OKC Metro &bull; Norman &bull; Edmond &bull; Central Oklahoma</span>
             </div>
             <div className="flex items-center gap-4">
               <a href={COMPANY.emergencyPhoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">

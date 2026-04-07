@@ -1,39 +1,34 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// Map Vercel geo regions/cities to location slugs
 const STATE_TO_SLUG: Record<string, string> = {
+  OK: 'oklahoma-city',
   NJ: 'elizabeth-nj',
   NY: 'new-york-city',
   PA: 'elizabeth-nj',
 };
 
-// More specific city-level overrides
 const CITY_OVERRIDES: Record<string, string> = {
-  // NJ cities
+  // OKC metro (primary market)
+  'oklahoma city': 'oklahoma-city',
+  'norman': 'norman-ok',
+  'edmond': 'edmond-ok',
+  'moore': 'moore-ok',
+  'midwest city': 'moore-ok',
+  'del city': 'moore-ok',
+  'stillwater': 'stillwater-ok',
+  'yukon': 'oklahoma-city',
+  'mustang': 'oklahoma-city',
+  // NJ cities (background)
   'newark': 'newark-nj',
   'jersey city': 'jersey-city-nj',
-  'hoboken': 'jersey-city-nj',
-  'paterson': 'paterson-nj',
-  'passaic': 'paterson-nj',
-  'clifton': 'paterson-nj',
-  'new brunswick': 'new-brunswick-nj',
-  'edison': 'new-brunswick-nj',
   'elizabeth': 'elizabeth-nj',
-  'union': 'union-county-nj',
-  'westfield': 'union-county-nj',
-  'plainfield': 'union-county-nj',
-  'morristown': 'elizabeth-nj',
-  'woodbridge': 'elizabeth-nj',
-  // NYC boroughs
+  // NYC boroughs (background)
   'new york': 'new-york-city',
   'manhattan': 'manhattan-ny',
   'brooklyn': 'brooklyn-ny',
   'queens': 'queens-ny',
   'bronx': 'bronx-ny',
   'staten island': 'staten-island-ny',
-  // Westchester (near NYC market)
-  'white plains': 'new-york-city',
-  'yonkers': 'new-york-city',
 };
 
 export function middleware(request: NextRequest) {

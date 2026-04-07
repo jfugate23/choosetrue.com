@@ -43,7 +43,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
                 <div className="w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse" />
-                <span className="text-amber-300 text-xs font-medium tracking-wide">NOW SERVING NORTHERN NJ &bull; NYC &bull; ALL FIVE BOROUGHS</span>
+                <span className="text-amber-300 text-xs font-medium tracking-wide">NOW SERVING OKC METRO &bull; NORMAN &bull; EDMOND &bull; CENTRAL OK</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight animate-fade-up">

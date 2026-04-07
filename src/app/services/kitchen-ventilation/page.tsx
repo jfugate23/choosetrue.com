@@ -24,7 +24,7 @@ const schemaMarkup = {
     url: 'https://choosetrue.com',
   },
   description: 'Commercial kitchen air balancing, exhaust fan repair, and makeup air unit service. We test, adjust, and balance your kitchen ventilation system to eliminate smoke spillage, reduce energy waste, and keep you code compliant.',
-  areaServed: ['New Jersey', 'New York City'],
+  areaServed: ['Oklahoma City', 'Norman', 'Edmond', 'Central Oklahoma'],
   serviceType: 'Kitchen Ventilation Air Balancing',
 };
 
@@ -328,7 +328,7 @@ export default function KitchenVentilationPage() {
       <Section>
         <SectionHeading eyebrow="Service Area" title="Where we offer kitchen ventilation service" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {LOCATIONS.filter(l => ['elizabeth-nj', 'newark-nj', 'jersey-city-nj', 'new-york-city'].includes(l.slug)).map((loc, i) => (
+          {LOCATIONS.filter(l => ['oklahoma-city', 'norman-ok', 'edmond-ok', 'moore-ok'].includes(l.slug)).map((loc, i) => (
             <Reveal key={loc.slug} delay={i * 80}>
               <Link href={`/locations/${loc.slug}`} className="group glass-card rounded-xl p-6 hover:border-amber-500/20 transition-all block">
                 <div className="flex items-center gap-3 mb-2">

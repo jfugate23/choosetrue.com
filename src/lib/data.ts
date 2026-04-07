@@ -7,7 +7,7 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+19087438688',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Northern New Jersey and New York City.',
+  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving the Oklahoma City metro area, with expansion into Northern New Jersey and New York City.',
 };
 
 export const SERVICES = [
@@ -84,12 +84,84 @@ export const SERVICES = [
 ];
 
 export const LOCATIONS = [
-  // ─── NORTHERN NJ / NYC METRO ──────────────────────────────────
+  // ─── OKC METRO (ACTIVE) ─────────────────────────────────────
+  {
+    slug: 'oklahoma-city',
+    city: 'Oklahoma City',
+    state: 'OK',
+    status: 'active' as const,
+    tagline: 'Serving the OKC Metro and Central Oklahoma',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Oklahoma City', 'Norman', 'Edmond', 'Moore', 'Midwest City', 'Del City', 'Yukon', 'Mustang', 'Bethany', 'Stillwater', 'Shawnee'],
+    description: 'True Commercial Service is Oklahoma City\'s premier commercial kitchen equipment repair and ventilation provider. From Bricktown restaurants to campus dining at OU and OSU, we keep commercial kitchens running across Central Oklahoma.',
+    seoTitle: 'Oklahoma City Commercial Kitchen Equipment Repair & Ventilation | True Commercial Service',
+    seoDescription: 'Expert commercial kitchen equipment repair and ventilation in Oklahoma City. Cooking, refrigeration, HVAC, air balancing, exhaust fans, and espresso machine service. 24/7 emergency.',
+    seoKeyword: 'Oklahoma City commercial kitchen equipment repair',
+  },
+  {
+    slug: 'norman-ok',
+    city: 'Norman',
+    state: 'OK',
+    status: 'active' as const,
+    tagline: 'Serving Norman, OU Campus & South OKC Metro',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Norman', 'Moore', 'Noble', 'Purcell', 'Blanchard', 'Newcastle', 'Goldsby', 'South Oklahoma City'],
+    description: 'True Commercial Service provides fast, expert commercial kitchen equipment repair in Norman, OK. We serve Campus Corner restaurants, university dining at OU, and every commercial kitchen in the Norman metro.',
+    seoTitle: 'Norman OK Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair in Norman OK. Fast response for restaurants, OU campus dining, and commercial kitchens. Refrigeration, cooking, HVAC, ventilation. 24/7 emergency.',
+    seoKeyword: 'Norman OK commercial kitchen equipment repair',
+  },
+  {
+    slug: 'edmond-ok',
+    city: 'Edmond',
+    state: 'OK',
+    status: 'active' as const,
+    tagline: 'Serving Edmond, Deer Creek & North OKC Metro',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Edmond', 'Deer Creek', 'Arcadia', 'Guthrie', 'North Oklahoma City', 'The Village', 'Nichols Hills', 'Warr Acres', 'Bethany', 'Piedmont'],
+    description: 'True Commercial Service is Edmond\'s go-to commercial kitchen equipment repair company. From the UCO campus to the booming restaurant scene along Broadway and 2nd Street, we deliver fast, expert equipment repair.',
+    seoTitle: 'Edmond OK Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair in Edmond OK. Expert service for restaurants, UCO campus dining, and commercial kitchens. Cooking, refrigeration, HVAC, ventilation. 24/7 emergency.',
+    seoKeyword: 'Edmond OK commercial kitchen equipment repair',
+  },
+  {
+    slug: 'moore-ok',
+    city: 'Moore',
+    state: 'OK',
+    status: 'active' as const,
+    tagline: 'Serving Moore, South OKC & Mid-Del Area',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Moore', 'South Oklahoma City', 'Midwest City', 'Del City', 'Norman', 'Newcastle', 'Tinker AFB Area'],
+    description: 'True Commercial Service delivers reliable commercial kitchen equipment repair in Moore, OK and the Mid-Del area. Fast response, fair pricing, and techs who know your equipment.',
+    seoTitle: 'Moore OK Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair in Moore OK. Serving restaurants, chains, and commercial kitchens in Moore, Midwest City, Del City, and South OKC. 24/7 emergency service.',
+    seoKeyword: 'Moore OK commercial kitchen equipment repair',
+  },
+  {
+    slug: 'stillwater-ok',
+    city: 'Stillwater',
+    state: 'OK',
+    status: 'active' as const,
+    tagline: 'Serving Stillwater, OSU Campus & North Central OK',
+    phone: '(908) 743-8688',
+    phoneHref: 'tel:+19087438688',
+    serviceArea: ['Stillwater', 'Perkins', 'Cushing', 'Perry', 'Pawnee'],
+    description: 'True Commercial Service provides expert commercial kitchen equipment repair in Stillwater, OK. We keep the restaurants on The Strip, OSU campus dining halls, and commercial kitchens across Payne County running.',
+    seoTitle: 'Stillwater OK Commercial Kitchen Equipment Repair | True Commercial Service',
+    seoDescription: 'Commercial kitchen equipment repair in Stillwater OK. Serving restaurants, OSU campus dining, and commercial kitchens. Cooking, refrigeration, HVAC, ventilation.',
+    seoKeyword: 'Stillwater OK commercial kitchen equipment repair',
+  },
+
+  // ─── NORTHERN NJ / NYC METRO (BACKGROUND) ─────────────────────
   {
     slug: 'elizabeth-nj',
     city: 'Elizabeth',
     state: 'NJ',
-    status: 'active' as const,
+    status: 'coming-soon' as const,
     tagline: 'Serving Elizabeth, Union County & the NJ/NYC Metro',
     phone: '(908) 743-8688',
     phoneHref: 'tel:+19087438688',
@@ -316,7 +388,7 @@ export const PROFILES = {
 // Example: Google Business (Elizabeth) → website: choosetrue.com/locations/elizabeth-nj
 
 // Hub locations shown in footer (not every sub-city)
-export const HUB_LOCATIONS = ['elizabeth-nj', 'new-york-city', 'newark-nj', 'jersey-city-nj'];
+export const HUB_LOCATIONS = ['oklahoma-city', 'norman-ok', 'edmond-ok', 'elizabeth-nj'];
 
 // Ventilation-specific city landing pages (50-mile radius from Elizabeth NJ)
 export const VENTILATION_CITIES = [
@@ -451,18 +523,18 @@ export const TESTIMONIALS = [
     quote: 'True Commercial showed up same day, diagnosed the issue in 20 minutes, and had our combi oven running before dinner service. Nobody else even called us back.',
     author: 'Michael R.',
     role: 'Executive Chef',
-    location: 'Elizabeth, NJ',
+    location: 'Oklahoma City, OK',
   },
   {
     quote: 'We switched from a national provider to True and the difference is night and day. Actual humans who know our equipment and show up when they say they will.',
     author: 'Sarah K.',
     role: 'Director of Operations',
-    location: 'Newark, NJ',
+    location: 'Norman, OK',
   },
   {
     quote: 'The PM program has already paid for itself. We haven\'t had an emergency call in six months. That\'s unheard of for a kitchen our size.',
     author: 'David T.',
     role: 'Facilities Manager',
-    location: 'Jersey City, NJ',
+    location: 'Edmond, OK',
   },
 ];
