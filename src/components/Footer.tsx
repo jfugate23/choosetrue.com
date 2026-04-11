@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Wrench, ArrowUpRight, ExternalLink } from 'lucide-react';
-import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS } from '@/lib/data';
+import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS, MARKET_OK, MARKET_NJ } from '@/lib/data';
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
+          {/* Brand + Two Offices */}
           <div>
             <Link href="/" className="inline-block mb-4">
               <Image src="/images/logo.png" alt="True Commercial Service" width={200} height={56} className="h-12 w-auto" />
@@ -30,14 +30,34 @@ export default function Footer() {
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
               Tech-forward commercial kitchen equipment repair. Built by operators, for operators.
             </p>
-            <div className="space-y-2">
-              <a href={COMPANY.phoneHref} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-amber-500/60" /> {COMPANY.phone}
-              </a>
-              <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-                <Mail className="w-4 h-4 text-amber-500/60" /> {COMPANY.email}
+
+            {/* OKC Office */}
+            <div className="mb-4 pb-4 border-b border-white/5">
+              <Link href="/ok" className="block text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2 hover:text-amber-300">
+                OKC Metro Office
+              </Link>
+              <p className="text-xs text-slate-500 mb-1">{MARKET_OK.address.street}</p>
+              <p className="text-xs text-slate-500 mb-2">{MARKET_OK.address.city}, {MARKET_OK.address.region} {MARKET_OK.address.postalCode}</p>
+              <a href={MARKET_OK.phoneHref} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
+                <Phone className="w-3.5 h-3.5 text-amber-500/60" /> {MARKET_OK.phone}
               </a>
             </div>
+
+            {/* NJ/NYC Office */}
+            <div className="mb-4">
+              <Link href="/nj" className="block text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2 hover:text-amber-300">
+                NJ &amp; NYC Metro Office
+              </Link>
+              <p className="text-xs text-slate-500 mb-1">{MARKET_NJ.address.street}</p>
+              <p className="text-xs text-slate-500 mb-2">{MARKET_NJ.address.city}, {MARKET_NJ.address.region} {MARKET_NJ.address.postalCode}</p>
+              <a href={MARKET_NJ.phoneHref} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
+                <Phone className="w-3.5 h-3.5 text-amber-500/60" /> {MARKET_NJ.phone}
+              </a>
+            </div>
+
+            <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
+              <Mail className="w-4 h-4 text-amber-500/60" /> {COMPANY.email}
+            </a>
           </div>
 
           {/* Services */}

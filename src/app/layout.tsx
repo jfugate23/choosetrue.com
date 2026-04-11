@@ -3,15 +3,15 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { PROFILES } from '@/lib/data';
+import { PROFILES, MARKET_OK, MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
-    default: 'True Commercial Service | Commercial Kitchen Equipment Repair',
+    default: 'True Commercial Service | Commercial Kitchen Equipment Repair — OKC & NYC Metro',
     template: '%s | True Commercial Service',
   },
-  description: 'Commercial kitchen equipment repair serving Oklahoma City, Norman, Edmond, and Central Oklahoma. Refrigeration, cooking, ventilation, ice machines, espresso. 24/7 emergency service.',
-  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Oklahoma City OK', 'Norman OK', 'Edmond OK', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing'],
+  description: 'Commercial kitchen equipment repair, ventilation, and pollution control service. Serving Oklahoma City metro and the NJ/NYC metro with 24/7 emergency response.',
+  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Oklahoma City OK', 'Elizabeth NJ', 'New York City', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing', 'NYC Local Law 38 pollution control'],
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'True Commercial Service | Commercial Kitchen Equipment Repair',
-    description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service.',
+    description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service in OKC and NJ/NYC.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -30,63 +30,52 @@ export const metadata: Metadata = {
   },
 };
 
-const schemaMarkup = {
+// Parent brand Organization — each market's LocalBusiness references this
+// via parentOrganization in its own layout. This lets Google understand
+// both locations are part of the same brand entity.
+const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://choosetrue.com',
+  '@type': 'Organization',
+  '@id': 'https://choosetrue.com#organization',
   name: 'True Commercial Service LLC',
-  description: 'Commercial foodservice equipment repair, maintenance, and ventilation services. Serving restaurants, supermarkets, and commercial kitchens across the Oklahoma City metro.',
+  legalName: 'True Commercial Service LLC',
+  description: 'Commercial kitchen equipment repair, ventilation, and pollution control company serving the Oklahoma City and NJ/NYC metropolitan areas.',
   url: 'https://choosetrue.com',
-  areaServed: {
-    '@type': 'GeoCircle',
-    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 35.4676, longitude: -97.5164 },
-    geoRadius: '80467',
-    description: '50 mile radius around Oklahoma City, OK 73102',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Oklahoma City',
-    addressRegion: 'OK',
-    postalCode: '73102',
-    addressCountry: 'US',
-  },
-  serviceType: [
-    'Commercial Refrigeration Repair',
-    'Commercial Cooking Equipment Repair',
-    'Ice Machine Repair',
-    'Commercial Kitchen Ventilation Service',
-    'Walk-In Cooler Repair',
-    'Commercial Dishwasher Repair',
-    'Espresso Machine Repair',
-    'Combi Oven Repair',
-    'Preventive Maintenance Agreements',
-  ],
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
-  priceRange: '$$',
+  logo: 'https://choosetrue.com/images/logo.png',
   image: 'https://choosetrue.com/images/logo.png',
-  telephone: '(405) 292-4510',
   sameAs: Object.values(PROFILES).filter(Boolean),
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '47',
-    bestRating: '5',
-    worstRating: '1',
-  },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Commercial Kitchen Equipment Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Emergency Equipment Repair', description: '24/7 emergency response for commercial kitchen equipment failures' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Preventive Maintenance', description: 'Scheduled maintenance to prevent equipment failures and extend equipment life' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kitchen Ventilation & Air Balancing', description: 'CaptiveAire hood systems, makeup air units, exhaust fan service, and air balancing' } },
-    ],
-  },
+  location: [
+    {
+      '@type': 'LocalBusiness',
+      '@id': MARKET_OK.schemaId,
+      name: `${MARKET_OK.name} — Oklahoma City Metro`,
+      telephone: MARKET_OK.phone,
+      url: MARKET_OK.homeUrl,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: MARKET_OK.address.street,
+        addressLocality: MARKET_OK.address.city,
+        addressRegion: MARKET_OK.address.region,
+        postalCode: MARKET_OK.address.postalCode,
+        addressCountry: MARKET_OK.address.country,
+      },
+    },
+    {
+      '@type': 'LocalBusiness',
+      '@id': MARKET_NJ.schemaId,
+      name: `${MARKET_NJ.name} — NJ & NYC Metro`,
+      telephone: MARKET_NJ.phone,
+      url: MARKET_NJ.homeUrl,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: MARKET_NJ.address.street,
+        addressLocality: MARKET_NJ.address.city,
+        addressRegion: MARKET_NJ.address.region,
+        postalCode: MARKET_NJ.address.postalCode,
+        addressCountry: MARKET_NJ.address.country,
+      },
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -95,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="min-h-screen bg-navy-300 text-white antialiased">

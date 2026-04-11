@@ -4,7 +4,22 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, Phone, ChevronDown, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, MapPin, Wrench, Users, Cog } from 'lucide-react';
-import { COMPANY } from '@/lib/data';
+import { usePathname } from 'next/navigation';
+import { MARKET_OK, MARKET_NJ, type MarketSlug } from '@/lib/data';
+
+// Resolve which market's phone/label the Header should show. Priority:
+// 1. URL path (/ok/... or /nj/...) — hard signal
+// 2. market-chosen cookie — set by middleware or manual switcher
+// 3. Default to OKC (legacy default)
+function resolveActiveMarket(pathname: string): MarketSlug {
+  if (pathname.startsWith('/ok')) return 'ok';
+  if (pathname.startsWith('/nj')) return 'nj';
+  if (typeof document !== 'undefined') {
+    const match = document.cookie.match(/(?:^|;\s*)market-chosen=(ok|nj)/);
+    if (match) return match[1] as MarketSlug;
+  }
+  return 'ok';
+}
 
 const serviceIcons: Record<string, React.ReactNode> = {
   'Flame': <Flame className="w-5 h-5" />,
@@ -19,6 +34,14 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
+  const pathname = usePathname();
+  // Default SSR value = 'ok'; on mount we re-resolve from cookie/path.
+  const [activeMarket, setActiveMarket] = useState<MarketSlug>('ok');
+  const market = activeMarket === 'nj' ? MARKET_NJ : MARKET_OK;
+  const otherMarket = activeMarket === 'nj' ? MARKET_OK : MARKET_NJ;
+  const otherMarketSlug: MarketSlug = activeMarket === 'nj' ? 'ok' : 'nj';
+  const marketLabel = activeMarket === 'nj' ? 'NJ & NYC Metro' : 'OKC Metro';
+  const otherMarketLabel = activeMarket === 'nj' ? 'OKC Metro' : 'NJ & NYC Metro';
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -26,19 +49,38 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setActiveMarket(resolveActiveMarket(pathname || '/'));
+  }, [pathname]);
+
+  const switchMarket = (slug: MarketSlug) => {
+    // Set 30-day cookie so middleware + header both remember the choice.
+    document.cookie = `market-chosen=${slug};path=/;max-age=${60 * 60 * 24 * 30}`;
+    setActiveMarket(slug);
+  };
+
   return (
     <>
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-navy-300/95 backdrop-blur-lg shadow-lg shadow-black/20' : 'bg-transparent'}`}>
         {/* Top bar - desktop only */}
         <div className="hidden lg:block border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
-            <div className="flex items-center gap-6 text-slate-400">
-              <span>Serving OKC Metro &bull; Norman &bull; Edmond &bull; Central Oklahoma</span>
+            <div className="flex items-center gap-3 text-slate-400">
+              <MapPin className="w-3.5 h-3.5 text-amber-400/70" />
+              <span>Viewing: <span className="text-slate-200 font-medium">{marketLabel}</span></span>
+              <span className="text-slate-600">·</span>
+              <Link
+                href={`/${otherMarketSlug}`}
+                onClick={() => switchMarket(otherMarketSlug)}
+                className="text-amber-400/80 hover:text-amber-300 transition-colors"
+              >
+                Switch to {otherMarketLabel}
+              </Link>
             </div>
             <div className="flex items-center gap-4">
-              <a href={COMPANY.emergencyPhoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">
+              <a href={market.emergencyPhoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">
                 <Phone className="w-3.5 h-3.5" />
-                24/7 Emergency: {COMPANY.emergencyPhone}
+                24/7 Emergency: {market.emergencyPhone}
               </a>
             </div>
           </div>
@@ -159,9 +201,9 @@ export default function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href={COMPANY.phoneHref} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
+              <a href={market.phoneHref} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-amber-400" />
-                {COMPANY.phone}
+                {market.phone}
               </a>
               <Link href="/schedule-service" className="bg-amber-500 hover:bg-amber-400 text-navy-300 font-semibold text-sm px-5 py-2.5 rounded-lg cta-glow transition-all">
                 Schedule Service
@@ -196,8 +238,18 @@ export default function Header() {
             <MobileLink href="/contact" label="Contact" onClick={() => setMobileOpen(false)} />
             
             <div className="pt-4 space-y-3">
-              <a href={COMPANY.phoneHref} className="flex items-center justify-center gap-2 w-full py-3 border border-amber-500/30 rounded-lg text-amber-400 font-medium">
-                <Phone className="w-4 h-4" /> {COMPANY.phone}
+              <div className="flex items-center justify-between text-xs text-slate-400 px-2">
+                <span>Viewing: <span className="text-slate-200 font-medium">{marketLabel}</span></span>
+                <Link
+                  href={`/${otherMarketSlug}`}
+                  onClick={() => { switchMarket(otherMarketSlug); setMobileOpen(false); }}
+                  className="text-amber-400/80 hover:text-amber-300"
+                >
+                  Switch to {otherMarketLabel}
+                </Link>
+              </div>
+              <a href={market.phoneHref} className="flex items-center justify-center gap-2 w-full py-3 border border-amber-500/30 rounded-lg text-amber-400 font-medium">
+                <Phone className="w-4 h-4" /> {market.phone}
               </a>
               <Link href="/schedule-service" onClick={() => setMobileOpen(false)} className="block text-center w-full bg-amber-500 text-navy-300 font-bold py-3 rounded-lg cta-glow">
                 Schedule Service
@@ -210,7 +262,7 @@ export default function Header() {
       {/* Mobile sticky bottom CTA bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden mobile-cta-bar pb-safe">
         <div className="flex gap-2 px-3 py-3 bg-navy-300/95 backdrop-blur-lg border-t border-white/10">
-          <a href={COMPANY.phoneHref} className="flex-1 flex items-center justify-center gap-2 bg-white/10 rounded-lg py-3 text-white font-medium text-sm">
+          <a href={market.phoneHref} className="flex-1 flex items-center justify-center gap-2 bg-white/10 rounded-lg py-3 text-white font-medium text-sm">
             <Phone className="w-4 h-4 text-amber-400" /> Call Now
           </a>
           <Link href="/schedule-service" className="flex-1 flex items-center justify-center gap-2 bg-amber-500 rounded-lg py-3 text-navy-300 font-bold text-sm cta-glow">
