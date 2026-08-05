@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import CallTracking from '@/components/CallTracking';
 import { PROFILES, MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -77,6 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Breadcrumbs />
         <main>{children}</main>
         <Footer />
+        <Analytics />
+        <CallTracking />
       </body>
     </html>
   );

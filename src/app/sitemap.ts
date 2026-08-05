@@ -55,5 +55,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
+  // Per-city landing pages for the other high-intent services.
+  const serviceCityPages = ['refrigeration', 'cooking-equipment', 'hvac'].flatMap((slug) =>
+    VENTILATION_CITIES.map((c) => ({
+      url: `${base}/services/${slug}/${c.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }))
+  );
+
+  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages, ...serviceCityPages];
 }
