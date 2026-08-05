@@ -46,7 +46,7 @@ export interface MarketTestimonial {
 
 interface MarketHomePageProps {
   market: MarketHomePageMarket;
-  testimonials: MarketTestimonial[];
+  testimonials?: MarketTestimonial[];
   heroHeadline?: React.ReactNode;
   heroSubhead?: string;
 }
@@ -405,7 +405,7 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
       </Section>
 
       {/* ====== TESTIMONIALS (only if provided) ====== */}
-      {testimonials.length > 0 && (
+      {testimonials && testimonials.length > 0 && (
         <Section className="relative">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/3 to-transparent pointer-events-none" />
           <div className="relative">

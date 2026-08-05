@@ -32,7 +32,7 @@ export default function VentilationCityPage({ params }: Props) {
       '@type': 'LocalBusiness',
       name: 'True Commercial Service LLC',
       url: 'https://choosetrue.com',
-      telephone: '(405) 292-4510',
+      telephone: '(646) 942-9394',
     },
     areaServed: {
       '@type': 'City',
@@ -89,8 +89,8 @@ export default function VentilationCityPage({ params }: Props) {
               <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-8 py-4 rounded-xl cta-glow transition-all">
                 Schedule Service in {city.city} <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="tel:+14052924510" className="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/30 text-white font-medium text-sm px-8 py-4 rounded-xl transition-all">
-                <Phone className="w-4 h-4 text-amber-400" /> (405) 292-4510
+              <a href="tel:+16469429394" className="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/30 text-white font-medium text-sm px-8 py-4 rounded-xl transition-all">
+                <Phone className="w-4 h-4 text-amber-400" /> (646) 942-9394
               </a>
             </div>
           </Reveal>
