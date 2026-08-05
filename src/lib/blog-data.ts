@@ -1509,9 +1509,9 @@ Kitchen equipment failures do not wait for business hours. We provide 24/7 emerg
 - [How to Choose a Repair Company](/blog/questions-before-signing-equipment-service-contract)
 - [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
-Looking for service? [Schedule a service call](/schedule-service) or call us at (405) 292-4510.`,
+Looking for service? [Schedule a service call](/schedule-service) or call us at (646) 942-9394.`,
     faqs: [
-      { question: 'Where can I find commercial kitchen equipment repair near me in OKC?', answer: 'True Commercial Service covers the entire Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, Yukon, and surrounding areas. Call (405) 292-4510 for same-day service.' },
+      { question: 'Where can I find commercial kitchen equipment repair near me in OKC?', answer: 'True Commercial Service covers the entire Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, Yukon, and surrounding areas. Call (646) 942-9394 for same-day service.' },
       { question: 'Do you offer same-day commercial kitchen repair in Oklahoma City?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in the OKC metro area. We are available 24/7 for critical equipment failures.' },
       { question: 'What commercial kitchen equipment do you repair in the OKC area?', answer: 'We repair all commercial kitchen equipment including cooking equipment, refrigeration, ventilation, HVAC, ice machines, and dishwashers. All major brands serviced.' },
     ],
@@ -1566,11 +1566,11 @@ Oklahoma summers hit 100-110 degrees. Your condenser is on the roof baking in th
 - [Walk-In Freezer vs Cooler Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
-**True Commercial Service provides emergency walk-in cooler and freezer repair across the OKC metro.** Call (405) 292-4510 — 24/7.`,
+**True Commercial Service provides emergency walk-in cooler and freezer repair across the OKC metro.** Call (646) 942-9394 — 24/7.`,
     faqs: [
       { question: 'How fast can you get to my walk-in cooler emergency in Oklahoma City?', answer: 'For Oklahoma City and surrounding metro areas, our response time is typically under 45 minutes. Norman and Edmond under 1 hour. We respond 24/7 to refrigeration emergencies.' },
       { question: 'Why do walk-in coolers fail more often in Oklahoma?', answer: 'Oklahoma summers reach 100-110 degrees, which forces condenser units to work much harder. Dust and heat clog condenser coils faster than in cooler climates. Quarterly condenser cleaning is critical in Oklahoma, especially during summer months.' },
-      { question: 'Can you repair walk-in coolers on weekends and after hours in OKC?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers across the OKC metro. Call (405) 292-4510 any time.' },
+      { question: 'Can you repair walk-in coolers on weekends and after hours in OKC?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers across the OKC metro. Call (646) 942-9394 any time.' },
     ],
   },
   {
@@ -1628,7 +1628,7 @@ We understand these challenges because we are based here and deal with them ever
 - [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 - [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
 
-**Call (405) 292-4510 any time, day or night.** We answer. We respond. We fix it.`,
+**Call (646) 942-9394 any time, day or night.** We answer. We respond. We fix it.`,
     faqs: [
       { question: 'Do you offer 24/7 restaurant equipment repair in the OKC metro?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across the Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, and surrounding areas.' },
       { question: 'How fast can you respond to a restaurant equipment emergency in Oklahoma City?', answer: 'For most OKC metro locations, we can be on site within 45 minutes to 1 hour. We prioritize refrigeration and cooking line emergencies.' },
@@ -1686,7 +1686,7 @@ We service upblast, utility, inline, and centrifugal fans from CaptiveAire, Gree
 - [Restaurant Exhaust Fan Repair](/blog/exhaust-fan-making-noise-causes)
 - [Kitchen Air Balancing](/blog/commercial-kitchen-ventilation-problems-signs)
 
-**Call (405) 292-4510 for same-day exhaust fan repair in the OKC metro.**`,
+**Call (646) 942-9394 for same-day exhaust fan repair in the OKC metro.**`,
     faqs: [
       { question: 'How fast can you repair an exhaust fan in Oklahoma City?', answer: 'For OKC and surrounding metro, we can typically be on site within 45 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
       { question: 'Why do exhaust fans fail more often in Oklahoma?', answer: 'Oklahoma rooftop temperatures can exceed 140 degrees in summer. This extreme heat accelerates belt wear, bearing failure, and motor burnout. Preventive maintenance every 6 months is critical in Oklahoma.' },
@@ -1744,9 +1744,9 @@ We repair all major ice machine brands including Hoshizaki, Manitowoc, Scotsman,
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [What Does Equipment Repair Cost?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
-**Call (405) 292-4510 for same-day ice machine repair in the OKC metro.**`,
+**Call (646) 942-9394 for same-day ice machine repair in the OKC metro.**`,
     faqs: [
-      { question: 'Where can I find ice machine repair near me in Oklahoma City?', answer: 'True Commercial Service provides same-day ice machine repair across the OKC metro including Oklahoma City, Norman, Edmond, Moore, Midwest City, and surrounding areas. Call (405) 292-4510.' },
+      { question: 'Where can I find ice machine repair near me in Oklahoma City?', answer: 'True Commercial Service provides same-day ice machine repair across the OKC metro including Oklahoma City, Norman, Edmond, Moore, Midwest City, and surrounding areas. Call (646) 942-9394.' },
       { question: 'Why do ice machines fail more often in Oklahoma?', answer: 'Oklahoma has very hard water (10-15 grains per gallon) which causes mineral scale to build up 2-3x faster than average. This clogs the evaporator and water system. Descaling every 3 months is critical in Oklahoma. The summer heat also stresses condensers.' },
       { question: 'How often should I clean my ice machine in Oklahoma?', answer: 'In Oklahoma, every 3 months due to hard water. The national recommendation is every 6 months, but Oklahoma water hardness requires more frequent cleaning to prevent scale buildup and production loss.' },
     ],
