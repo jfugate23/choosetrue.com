@@ -4,15 +4,15 @@ import { MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'NJ & NYC Commercial Kitchen Equipment Repair & Local Law 38 Service | True Commercial Service',
+    absolute: 'NJ & NYC Commercial Kitchen Equipment & HVAC Repair | True Commercial Service',
   },
-  description: 'Commercial kitchen equipment repair, ventilation, and NYC Local Law 38 pollution control service across Northern NJ and all five boroughs of NYC. 24/7 emergency response.',
+  description: 'Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and all five boroughs of NYC. Fast diagnostics, transparent tracking, and 24/7 emergency response.',
   alternates: {
     canonical: 'https://choosetrue.com/',
   },
   openGraph: {
-    title: 'NJ & NYC Commercial Kitchen Equipment Repair | True Commercial Service',
-    description: 'Commercial kitchen equipment repair, ventilation, and Local Law 38 compliance across Northern NJ and NYC. 24/7 emergency.',
+    title: 'NJ & NYC Commercial Kitchen Equipment & HVAC Repair | True Commercial Service',
+    description: 'Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and NYC. 24/7 emergency response.',
     url: 'https://choosetrue.com/',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -25,12 +25,12 @@ export default function HomePage() {
       market={MARKET_NJ}
       heroHeadline={
         <>
-          Your NYC kitchen
+          Cooking, cooling &amp; HVAC
           <br />
-          <span className="text-gradient">runs on compliance.</span>
+          <span className="text-gradient">fixed fast.</span>
         </>
       }
-      heroSubhead="Commercial kitchen equipment repair, ventilation balancing, and Local Law 38 pollution control service across Northern NJ and all five boroughs of NYC."
+      heroSubhead="Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and all five boroughs of NYC — real diagnostics, transparent tracking, and 24/7 emergency response."
     />
   );
 }
