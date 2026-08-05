@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Wrench, ArrowUpRight, ExternalLink } from 'lucide-react';
-import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS, MARKET_OK, MARKET_NJ } from '@/lib/data';
+import { COMPANY, LOCATIONS, SERVICES, PROFILES, HUB_LOCATIONS, MARKET_NJ } from '@/lib/data';
 
 export default function Footer() {
   return (
@@ -31,21 +31,9 @@ export default function Footer() {
               Tech-forward commercial kitchen equipment repair. Built by operators, for operators.
             </p>
 
-            {/* OKC Office */}
-            <div className="mb-4 pb-4 border-b border-white/5">
-              <Link href="/ok" className="block text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2 hover:text-amber-300">
-                OKC Metro Office
-              </Link>
-              <p className="text-xs text-slate-500 mb-1">{MARKET_OK.address.street}</p>
-              <p className="text-xs text-slate-500 mb-2">{MARKET_OK.address.city}, {MARKET_OK.address.region} {MARKET_OK.address.postalCode}</p>
-              <a href={MARKET_OK.phoneHref} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
-                <Phone className="w-3.5 h-3.5 text-amber-500/60" /> {MARKET_OK.phone}
-              </a>
-            </div>
-
             {/* NJ/NYC Office */}
             <div className="mb-4">
-              <Link href="/nj" className="block text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2 hover:text-amber-300">
+              <Link href="/contact" className="block text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2 hover:text-amber-300">
                 NJ &amp; NYC Metro Office
               </Link>
               <p className="text-xs text-slate-500 mb-1">{MARKET_NJ.address.street}</p>

@@ -63,13 +63,13 @@ Every hour your walk-in is above temperature puts your inventory at risk. A typi
 
 Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
 
-**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Oklahoma City, OK. Text us anytime.**
+**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Northern NJ and the NYC metro. Text us anytime.**
 
 ## Related Articles
 
 - [Walk-In Freezer vs Cooler: Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -134,13 +134,13 @@ Modern ice machines have electronic controls that manage the freeze and harvest 
 
 A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
 
-**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Oklahoma City, OK.**
+**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Northern NJ and the NYC metro.**
 
 ## Related Articles
 
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [EPA 608 Certification: What Owners Should Know](/blog/epa-608-certification-restaurant-owners)
-- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Beverage Equipment Repair](/services/beverage-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -212,13 +212,13 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 
 Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.
 
-**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Oklahoma City, OK.**
+**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Northern NJ and the NYC metro.**
 
 ## Related Articles
 
 - [Commercial Fryer Troubleshooting](/blog/commercial-fryer-troubleshooting)
-- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-- [How to Choose a Repair Company in the OKC metro](/blog/questions-before-signing-equipment-service-contract)
+- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [How to Choose a Repair Company in the NYC metro](/blog/questions-before-signing-equipment-service-contract)
 
 Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -340,7 +340,7 @@ Most equipment service companies offer PM agreements with:
 
 The best time to set up a PM program is before something breaks.
 
-**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Oklahoma City, OK. Contact us to schedule a free equipment assessment.**
+**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Northern NJ and the NYC metro. Contact us to schedule a free equipment assessment.**
 
 ## Related Articles
 
@@ -436,11 +436,11 @@ The goal: kitchen at -0.02 to -0.05 inches of water column relative to the dinin
 | Ductwork inspection | Annually |
 | Fire suppression inspection | Semi-annually |
 
-**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Oklahoma City, OK.**
+**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Northern NJ and the NYC metro.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
 - [CaptiveAire Hood Maintenance Guide](/blog/captiveaire-hood-maintenance-repair-guide)
 
@@ -465,7 +465,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 ## The Visible Costs
 
 ### The Repair Bill
-Average emergency service call in the OKC metro: $450-800. This is what shows up on the invoice — and it's the smallest part of the total cost.
+Average emergency service call in the NYC metro: $450-800. This is what shows up on the invoice — and it's the smallest part of the total cost.
 
 ### Spoiled Inventory
 A walk-in cooler that's above 41°F for more than 4 hours puts all contents at risk. Average product value in a restaurant walk-in: $3,000-8,000. Health code requires you to discard anything that's been in the temperature danger zone (41°F-135°F) for more than 4 hours.
@@ -520,7 +520,7 @@ Know which menu items you can serve if the fryer goes down. Have a backup ice su
 
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 - [What Is a PM Agreement?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 
 Looking for service? Visit our [Preventive Maintenance Agreements](/services/preventive-maintenance) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -582,7 +582,7 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 
 If your older equipment uses R-22 (Freon), it's been phased out of production. The remaining supply is expensive — $50-100+ per pound. If your system uses R-22 and develops a leak, it may be more cost-effective to retrofit or replace the system than to keep recharging.
 
-**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Oklahoma City, OK.**
+**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Northern NJ and the NYC metro.**
 
 ## Related Articles
 
@@ -678,12 +678,12 @@ At the end of the night, the oil won't drain for filtering.
 | Check thermostat accuracy | Monthly |
 | Professional inspection | Semi-annually |
 
-**True Commercial Service repairs all major commercial fryer brands across Oklahoma City, OK. Gas and electric. Same-day emergency service available.**
+**True Commercial Service repairs all major commercial fryer brands across Northern NJ and the NYC metro. Gas and electric. Same-day emergency service available.**
 
 ## Related Articles
 
 - [Rational Combi Oven Error Codes](/blog/rational-combi-oven-error-codes-guide)
-- [What Does Equipment Repair Cost in the OKC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
+- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
 Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equipment) page or [schedule service](/schedule-service) today.`,
@@ -787,12 +787,12 @@ An air balance test uses a digital manometer and anemometer to measure:
 
 This takes 1-2 hours and should be done semi-annually or whenever cooking equipment is added or changed.
 
-**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Oklahoma City, OK. We understand ventilation from the inside out.**
+**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Northern NJ and the NYC metro. We understand ventilation from the inside out.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
-- [CaptiveAire Hood Service in the OKC metro](/blog/captiveaire-hood-maintenance-repair-guide)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [CaptiveAire Hood Service in the NYC metro](/blog/captiveaire-hood-maintenance-repair-guide)
 - [Kitchen Ventilation Problems: 5 Signs](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -881,7 +881,7 @@ When a **freezer** fails, product starts thawing within 1-2 hours. If it's a wee
 
 Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At commercial electric rates, that's $100-300/month in wasted energy on a single unit.
 
-**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Oklahoma City, OK. We understand the critical differences and maintain each accordingly.**
+**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Northern NJ and the NYC metro. We understand the critical differences and maintain each accordingly.**
 
 ## Related Articles
 
@@ -962,12 +962,12 @@ If they don't track it — or won't share it — that tells you something.
 
 Before signing anything, call their emergency line at 9pm on a weekday. Does a real person answer? How quickly do they respond to a text? This 5-minute test tells you more about the company than any contract clause.
 
-**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving Oklahoma City, OK.**
+**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving the NYC metro.**
 
 ## Related Articles
 
 - [What Is a PM Agreement?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [How to Choose a Repair Company in the OKC metro](/blog/questions-before-signing-equipment-service-contract)
+- [How to Choose a Repair Company in the NYC metro](/blog/questions-before-signing-equipment-service-contract)
 - [The True Cost of Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
 
 Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
@@ -992,7 +992,7 @@ Looking for service? Visit our [Schedule Service](/schedule-service) page or [sc
 
 Your kitchen exhaust hood pulls thousands of cubic feet of air out of the building every minute. That air has to come from somewhere. The MAU is designed to replace about 80% of the exhausted air with tempered (heated or cooled) outside air, delivered directly into the kitchen.
 
-Without the MAU, your building goes under severe negative pressure. The exhaust is still pulling air out, so the building sucks in raw outside air through every crack, door, window, and gap. In January in the Oklahoma City area, that\'s 35°F air pouring in. In August, it\'s 95°F humid air.
+Without the MAU, your building goes under severe negative pressure. The exhaust is still pulling air out, so the building sucks in raw outside air through every crack, door, window, and gap. In January in the NYC metro area, that\'s 35°F air pouring in. In August, it\'s 95°F humid air.
 
 Your building HVAC — the furnace in winter, the AC in summer — has to condition all of that infiltrating air. That\'s energy you\'re paying for that the MAU should be handling.
 
@@ -1042,13 +1042,13 @@ The MAU repair is a fraction of the annual energy waste. The math is clear — [
 4. **Interlock** — many MAUs are interlocked with the exhaust fan. If the exhaust fan is off, the MAU won\'t run.
 5. **Thermostat** — check the setting. It may have been changed or malfunctioned.
 
-**True Commercial Service repairs and maintains all brands of makeup air units across Oklahoma City, OK. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
+**True Commercial Service repairs and maintains all brands of makeup air units across Northern NJ and the NYC metro. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
 
 ## Related Articles
 
 - [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
 - [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -1106,11 +1106,11 @@ A qualified technician measures your exhaust CFM, supply CFM, face velocity at t
 
 Once balanced, the hood captures the heat, the kitchen temperature drops, and the AC can actually keep up because it\'s not fighting thousands of CFM of misrouted hot air.
 
-**True Commercial Service provides kitchen air balancing for restaurants across Oklahoma City, OK. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**
+**True Commercial Service provides kitchen air balancing for restaurants across Northern NJ and the NYC metro. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof — not the AC unit. One visit, one balance, problem solved.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
 
@@ -1145,7 +1145,7 @@ The problem happens when the infiltration becomes excessive:
 
 ## The Real Cost of Excessive Negative Pressure
 
-A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in Oklahoma City, OK:
+A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in the NYC metro:
 
 | Season | Outside Air Temp | Building HVAC Cost |
 |--------|-----------------|-------------------|
@@ -1176,12 +1176,12 @@ That\'s just energy. Add the operational costs:
 
 A one-time air balance service typically resolves the problem permanently — and it pays for itself in energy savings within a few months. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Oklahoma City, OK. One visit, real measurements, permanent fix.**
+**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Northern NJ and the NYC metro. One visit, real measurements, permanent fix.**
 
 ## Related Articles
 
 - [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -1245,12 +1245,12 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 Every noise is a warning. The repair cost goes up the longer you wait — a simple belt replacement today prevents a full motor replacement next month. The fan on your roof is running in the harshest conditions — heat, grease, rain, snow, UV exposure. It needs attention. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service provides same-day exhaust fan diagnosis and repair across Oklahoma City, OK. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
+**True Commercial Service provides same-day exhaust fan diagnosis and repair across Northern NJ and the NYC metro. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
 
 ## Related Articles
 
-- [Exhaust Fan Repair in the OKC metro](/blog/exhaust-fan-making-noise-causes)
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Exhaust Fan Repair in the NYC metro](/blog/exhaust-fan-making-noise-causes)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
@@ -1309,13 +1309,13 @@ This isn\'t just a comfort issue:
 
 One air balance visit fixes the root cause permanently. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving Oklahoma City, OK restaurants, hotels, and commercial kitchens.**
+**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving the NYC metro restaurants, hotels, and commercial kitchens.**
 
 ## Related Articles
 
 - [Kitchen Negative Pressure: Causes and Fix](/blog/kitchen-negative-pressure-causes-costs-fix)
 - [Kitchen Hood Not Capturing Smoke](/blog/kitchen-hood-not-capturing-smoke)
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
@@ -1380,11 +1380,11 @@ Most smoke capture problems are solved with fan service and/or an air balance vi
 
 Most smoke capture problems are cause #1 or #2 — and both are fixed with a single air balance visit.
 
-**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Oklahoma City, OK. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
+**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Northern NJ and the NYC metro. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
 
 ## Related Articles
 
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
+- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
 - [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
 - [Restaurant Kitchen Too Hot?](/blog/restaurant-kitchen-too-hot-air-balance)
 
@@ -1458,297 +1458,6 @@ Need ESP service? Visit our [Pollution Control Service](/services/pollution-cont
       { question: 'Why is my Smoke Hog showing a red light?', answer: 'A red indicator light means the ESP has detected a fault and shut down. The most common cause is dirty collector cells causing electrical arcing. Other causes include a broken ionizer wire, power supply fault, or open safety interlock. The cells need professional cleaning.' },
       { question: 'Can I clean my ESP cells myself?', answer: 'No. ESP cells need to be removed from the unit, soaked in professional alkaline cleaning solution, and power washed. They cannot be effectively cleaned in place. The high-voltage system also requires trained technicians for any internal work.' },
       { question: 'What happens if I ignore a broken ESP?', answer: 'A non-functioning ESP means your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints, health code violations, and potential fines. In cities with pollution control requirements, fines can reach $10,000+ per violation.' },
-    ],
-  },
-
-
-
-
-
-  // ─── OKC METRO LOCAL SEO ARTICLES ─────────────────────────────
-  {
-    slug: 'commercial-kitchen-equipment-repair-near-me-okc',
-    title: 'Commercial Kitchen Equipment Repair Near Me - Oklahoma City Metro',
-    description: 'Looking for commercial kitchen equipment repair near you in OKC? True Commercial Service covers Oklahoma City, Norman, Edmond, Moore, and Central Oklahoma. Same-day response.',
-    date: '2026-04-06',
-    category: 'Service Area',
-    readTime: '4 min',
-    content: `If you are searching for commercial kitchen equipment repair near you in the Oklahoma City metro, True Commercial Service is your local option. We cover the entire OKC metro area with same-day emergency response.
-
-## Where We Service
-
-We cover the OKC metro and Central Oklahoma including:
-
-**Oklahoma City Metro:** Oklahoma City, Norman, Edmond, Moore, Midwest City, Del City, Yukon, Mustang, Bethany, The Village, Nichols Hills, Warr Acres, Newcastle.
-
-**North Central Oklahoma:** Stillwater, Guthrie, Shawnee, Perkins.
-
-**South Metro:** Norman, Noble, Purcell, Blanchard.
-
-## What We Repair
-
-We service all commercial kitchen equipment including cooking equipment (ovens, fryers, griddles, ranges, steamers, combi ovens), refrigeration (walk-in coolers, walk-in freezers, reach-ins, ice machines), kitchen ventilation (exhaust hoods, exhaust fans, makeup air units, air balancing), HVAC (rooftop units, split systems), and warewash (commercial dishwashers).
-
-## Why Choose a Local OKC Company
-
-National service companies dispatch from far away. By the time their tech arrives, your kitchen has been down for hours. We are based in the OKC metro. For most locations in our service area, we can be on site within 1-2 hours of your call.
-
-We understand Oklahoma weather challenges — from 110-degree summers that stress refrigeration systems to ice storms that knock out power and damage rooftop equipment. We are here year-round.
-
-## Brands We Service
-
-We service all major commercial kitchen equipment brands including Rational, Alto-Shaam, Vulcan, Garland, Pitco, Hoshizaki, Manitowoc, True Manufacturing, Traulsen, CaptiveAire, Accurex, Greenheck, Turbo Air, and many more.
-
-## 24/7 Emergency Service
-
-Kitchen equipment failures do not wait for business hours. We provide 24/7 emergency service for critical equipment like walk-in coolers, freezers, and any situation that threatens food safety or your ability to operate.
-
-## Related Articles
-
-- [Kitchen Air Balancing in the OKC metro](/blog/commercial-kitchen-ventilation-problems-signs)
-- [How to Choose a Repair Company](/blog/questions-before-signing-equipment-service-contract)
-- [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-
-Looking for service? [Schedule a service call](/schedule-service) or call us at (646) 942-9394.`,
-    faqs: [
-      { question: 'Where can I find commercial kitchen equipment repair near me in OKC?', answer: 'True Commercial Service covers the entire Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, Yukon, and surrounding areas. Call (646) 942-9394 for same-day service.' },
-      { question: 'Do you offer same-day commercial kitchen repair in Oklahoma City?', answer: 'Yes. We respond to emergency calls same-day and can typically be on site within 1-2 hours for locations in the OKC metro area. We are available 24/7 for critical equipment failures.' },
-      { question: 'What commercial kitchen equipment do you repair in the OKC area?', answer: 'We repair all commercial kitchen equipment including cooking equipment, refrigeration, ventilation, HVAC, ice machines, and dishwashers. All major brands serviced.' },
-    ],
-  },
-  {
-    slug: 'emergency-walk-in-cooler-repair-oklahoma-city',
-    title: 'Emergency Walk-In Cooler Repair - Oklahoma City OK & Surrounding Areas',
-    description: 'Walk-in cooler down in OKC? We provide emergency walk-in cooler repair in Oklahoma City, Norman, Edmond, and the OKC metro. Same-day response. Protect your inventory.',
-    date: '2026-04-06',
-    category: 'Refrigeration',
-    readTime: '4 min',
-    content: `Your walk-in cooler is down. Temperature is rising. You have thousands of dollars in perishable product at risk. You need someone there now, not tomorrow.
-
-True Commercial Service provides emergency walk-in cooler repair in Oklahoma City and across the entire OKC metro area. We respond same-day to refrigeration emergencies because every hour your cooler is down costs you money.
-
-## What to Do Right Now
-
-While you wait for the tech:
-
-1. **Do not open the door** unless absolutely necessary. Every time the door opens, warm air floods in.
-2. **Check the thermostat** to make sure it has not been bumped or changed.
-3. **Check the breaker** in your electrical panel. A tripped breaker is a free fix.
-4. **Listen** to the condensing unit. Is it running? Humming? Silent?
-5. **Note the temperature** for your records.
-
-## Common Walk-In Cooler Emergencies
-
-**Condenser coil is dirty** — Oklahoma heat and dust clog condenser coils fast. This is the #1 cause of walk-in failures in the OKC area. We clean the coil and get it running within the hour.
-
-**Refrigerant leak** — oil stains around the compressor or lines. Requires EPA 608 certified technician. We carry leak detection equipment and refrigerant on the truck.
-
-**Evaporator iced over** — defrost system failure. Could be a bad defrost timer, heater, or thermostat.
-
-**Compressor failure** — we diagnose whether it is truly the compressor or a cheaper component causing the symptom.
-
-## Our Response Times in OKC Metro
-
-- **Oklahoma City:** Under 45 minutes
-- **Moore, Midwest City, Del City:** Under 45 minutes
-- **Norman:** Under 1 hour
-- **Edmond:** Under 1 hour
-- **Yukon, Mustang:** Under 1 hour
-- **Stillwater:** Under 1.5 hours
-
-## Oklahoma Heat Makes It Worse
-
-Oklahoma summers hit 100-110 degrees. Your condenser is on the roof baking in that heat, working twice as hard as it would in a cooler climate. If the coils are dirty, the compressor overheats and shuts down. Regular condenser cleaning is critical in Oklahoma — every 3 months in summer, not just annually.
-
-## Related Articles
-
-- [Walk-In Cooler Not Cooling? 7 Things to Check](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-- [Walk-In Freezer vs Cooler Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-
-**True Commercial Service provides emergency walk-in cooler and freezer repair across the OKC metro.** Call (646) 942-9394 — 24/7.`,
-    faqs: [
-      { question: 'How fast can you get to my walk-in cooler emergency in Oklahoma City?', answer: 'For Oklahoma City and surrounding metro areas, our response time is typically under 45 minutes. Norman and Edmond under 1 hour. We respond 24/7 to refrigeration emergencies.' },
-      { question: 'Why do walk-in coolers fail more often in Oklahoma?', answer: 'Oklahoma summers reach 100-110 degrees, which forces condenser units to work much harder. Dust and heat clog condenser coils faster than in cooler climates. Quarterly condenser cleaning is critical in Oklahoma, especially during summer months.' },
-      { question: 'Can you repair walk-in coolers on weekends and after hours in OKC?', answer: 'Yes. We provide 24/7 emergency service for walk-in coolers and freezers across the OKC metro. Call (646) 942-9394 any time.' },
-    ],
-  },
-  {
-    slug: '24-7-restaurant-equipment-repair-okc-metro',
-    title: '24/7 Restaurant Equipment Repair - OKC Metro Emergency Service',
-    description: '24/7 emergency restaurant equipment repair in Oklahoma City metro. Walk-in coolers, ovens, fryers, exhaust fans. Same-day response across OKC, Norman, Edmond.',
-    date: '2026-04-06',
-    category: 'Service Area',
-    readTime: '4 min',
-    content: `Restaurant equipment does not break on a convenient schedule. Your fryer goes down during Friday dinner rush. Your walk-in cooler stops cooling at 2 AM. Your exhaust fan seizes on a holiday weekend.
-
-True Commercial Service provides 24/7 emergency restaurant equipment repair across the Oklahoma City metro. We answer the phone every time.
-
-## What We Cover 24/7
-
-**Critical emergencies (we come immediately):**
-- Walk-in cooler or freezer not holding temperature
-- Complete cooking line failure during service
-- Gas leak or gas smell from equipment
-- Exhaust hood not functioning
-
-**Urgent same-day:**
-- Ice machine down
-- Dishwasher failure
-- Single piece of cooking equipment
-- Reach-in refrigerator or freezer
-
-## OKC Metro Coverage
-
-**Oklahoma City:** Bricktown, Midtown, Automobile Alley, Plaza District, Paseo, Deep Deuce, NW Expressway corridor, Memorial Road, South OKC
-
-**Norman:** Campus Corner, Main Street, OU campus dining, Lindsey Street
-
-**Edmond:** Broadway, 2nd Street, UCO campus, Deer Creek
-
-**Moore / Midwest City / Del City:** I-35 corridor, Tinker AFB area
-
-**Yukon / Mustang / Bethany:** West metro
-
-**Stillwater:** The Strip, OSU campus dining
-
-## Oklahoma-Specific Challenges
-
-Oklahoma restaurants deal with unique challenges:
-- **Extreme heat** — 100+ degree summers stress every piece of refrigeration and HVAC equipment
-- **Ice storms** — winter storms knock out power, damage rooftop equipment, burst pipes
-- **Tornado season** — severe weather can damage outdoor equipment and disrupt operations
-- **Hard water** — Oklahoma water is hard, which accelerates scale buildup in ice machines, steamers, and dishwashers
-
-We understand these challenges because we are based here and deal with them every day.
-
-## Related Articles
-
-- [The True Cost of Kitchen Equipment Downtime](/blog/restaurant-equipment-downtime-cost)
-- [Walk-In Cooler Not Cooling?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
-
-**Call (646) 942-9394 any time, day or night.** We answer. We respond. We fix it.`,
-    faqs: [
-      { question: 'Do you offer 24/7 restaurant equipment repair in the OKC metro?', answer: 'Yes. True Commercial Service provides 24/7 emergency restaurant equipment repair across the Oklahoma City metro including OKC, Norman, Edmond, Moore, Midwest City, and surrounding areas.' },
-      { question: 'How fast can you respond to a restaurant equipment emergency in Oklahoma City?', answer: 'For most OKC metro locations, we can be on site within 45 minutes to 1 hour. We prioritize refrigeration and cooking line emergencies.' },
-      { question: 'Do you service restaurant equipment near Tinker AFB?', answer: 'Yes. We cover Midwest City, Del City, and the Tinker AFB area. We also service military dining facilities with proper certifications.' },
-    ],
-  },
-  {
-    slug: 'commercial-exhaust-fan-repair-oklahoma-city',
-    title: 'Commercial Exhaust Fan Repair in Oklahoma City - Same Day Service',
-    description: 'Kitchen exhaust fan not working in OKC? We repair upblast, utility, and inline exhaust fans across Oklahoma City, Norman, Edmond. Belt replacement, motor swaps. Same-day.',
-    date: '2026-04-06',
-    category: 'Ventilation',
-    readTime: '4 min',
-    content: `If your kitchen exhaust fan is not working in the Oklahoma City area, your kitchen cannot legally operate. Health codes require a functioning exhaust system, and your hood cannot capture smoke and grease without the fan pulling air through it.
-
-True Commercial Service provides same-day exhaust fan repair across the OKC metro.
-
-## Exhaust Fan Problems We Fix
-
-**Belt replacement** — the most common exhaust fan failure. Oklahoma heat accelerates belt wear. We carry common belt sizes on the truck. Typically a 30-minute repair.
-
-**Motor replacement** — the motor burns out from heat exposure. Oklahoma rooftops can reach 140+ degrees in summer, which is brutal on fan motors. We source most motors same-day.
-
-**Bearing failure** — grinding or vibrating from the roof means bearings are going. We replace before they seize and destroy the motor.
-
-**Fan wheel cleaning** — Oklahoma dust and kitchen grease combine to coat fan wheels fast. Reduces performance and creates imbalance.
-
-**Electrical issues** — contactors and wiring fail in Oklahoma's extreme temperature swings. We diagnose and repair all electrical problems.
-
-## Oklahoma Heat vs Your Exhaust Fan
-
-Oklahoma summers are uniquely harsh on rooftop equipment. Your exhaust fan sits on a black roof in 100+ degree ambient temps. The motor compartment can reach 150+ degrees. This is why:
-- Belts dry out and crack faster (replace every 6 months, not annually)
-- Motor bearings fail sooner (lubricate quarterly)
-- Electrical connections expand and contract with temperature swings
-
-Preventive maintenance is more important in Oklahoma than in cooler climates.
-
-## OKC Metro Coverage
-
-- **Oklahoma City:** Under 45 minutes
-- **Norman:** Under 1 hour
-- **Edmond:** Under 1 hour
-- **Moore, Midwest City:** Under 45 minutes
-- **Yukon, Mustang:** Under 1 hour
-- **Stillwater:** Under 1.5 hours
-
-## All Fan Types and Brands
-
-We service upblast, utility, inline, and centrifugal fans from CaptiveAire, Greenheck, Accurex, Loren Cook, Twin City Fan, and all other manufacturers.
-
-## Related Articles
-
-- [Exhaust Fan Making Noise? 5 Causes](/blog/exhaust-fan-making-noise-causes)
-- [Restaurant Exhaust Fan Repair](/blog/exhaust-fan-making-noise-causes)
-- [Kitchen Air Balancing](/blog/commercial-kitchen-ventilation-problems-signs)
-
-**Call (646) 942-9394 for same-day exhaust fan repair in the OKC metro.**`,
-    faqs: [
-      { question: 'How fast can you repair an exhaust fan in Oklahoma City?', answer: 'For OKC and surrounding metro, we can typically be on site within 45 minutes. Most exhaust fan repairs are completed in under 2 hours.' },
-      { question: 'Why do exhaust fans fail more often in Oklahoma?', answer: 'Oklahoma rooftop temperatures can exceed 140 degrees in summer. This extreme heat accelerates belt wear, bearing failure, and motor burnout. Preventive maintenance every 6 months is critical in Oklahoma.' },
-      { question: 'What brands of exhaust fans do you repair in OKC?', answer: 'We repair all brands including CaptiveAire, Greenheck, Accurex, Loren Cook, and Twin City Fan. We service upblast, utility, inline, and centrifugal fan types.' },
-    ],
-  },
-  {
-    slug: 'ice-machine-repair-near-me-oklahoma-city',
-    title: 'Ice Machine Repair Near Me - Oklahoma City OK',
-    description: 'Ice machine not making ice in Oklahoma City? We repair Hoshizaki, Manitowoc, Scotsman, and Turbo Air ice machines. Same-day service across the OKC metro.',
-    date: '2026-04-06',
-    category: 'Ice Machines',
-    readTime: '4 min',
-    content: `No ice during service is an emergency for any restaurant, bar, or food service operation in Oklahoma — especially in the summer when demand is highest. If your commercial ice machine has stopped producing in the OKC metro, True Commercial Service can be there same-day.
-
-## Common Ice Machine Problems in Oklahoma
-
-**Scale buildup (the #1 issue in OKC)** — Oklahoma has notoriously hard water. Mineral scale deposits on the evaporator plate faster here than almost anywhere else in the country. Ice comes out thin or misshapen, production drops, then it stops entirely. We descale the system and restore normal operation. In Oklahoma, descaling should happen every 3 months, not 6.
-
-**Dirty condenser** — Oklahoma dust and summer heat are a deadly combination for ice machine condensers. A clogged condenser raises operating temperature until the machine shuts down. We clean the condenser and restore full production.
-
-**Water supply issues** — closed valve, kinked line, or failed inlet valve means no water reaching the machine.
-
-**Harvest cycle failure** — the machine freezes ice but cannot release it. Usually a failed hot gas valve or low refrigerant.
-
-**Control board failure** — machine cycles erratically or will not start.
-
-## OKC Metro Service Area
-
-- **Oklahoma City:** Under 45 minutes
-- **Norman:** Under 1 hour
-- **Edmond:** Under 1 hour
-- **Moore, Midwest City, Del City:** Under 45 minutes
-- **Yukon, Mustang:** Under 1 hour
-- **Stillwater:** Under 1.5 hours
-
-## Oklahoma Hard Water and Your Ice Machine
-
-Oklahoma City water hardness averages 10-15 grains per gallon — classified as "very hard." This is significantly harder than the national average. What this means for your ice machine:
-
-- Scale builds up 2-3x faster than in soft water areas
-- Descaling is needed every 3 months, not the standard 6 months
-- Water filters need changing more frequently
-- Water treatment systems (softeners) pay for themselves in prevented repairs
-
-If you do not have a water softener on your ice machine in Oklahoma, you are shortening its life by years.
-
-## Brands We Service
-
-We repair all major ice machine brands including Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic, Turbo Air, and Follett. Cube machines, flake machines, and nugget machines.
-
-## Related Articles
-
-- [Commercial Ice Machine Not Making Ice?](/blog/commercial-ice-machine-not-making-ice)
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-
-**Call (646) 942-9394 for same-day ice machine repair in the OKC metro.**`,
-    faqs: [
-      { question: 'Where can I find ice machine repair near me in Oklahoma City?', answer: 'True Commercial Service provides same-day ice machine repair across the OKC metro including Oklahoma City, Norman, Edmond, Moore, Midwest City, and surrounding areas. Call (646) 942-9394.' },
-      { question: 'Why do ice machines fail more often in Oklahoma?', answer: 'Oklahoma has very hard water (10-15 grains per gallon) which causes mineral scale to build up 2-3x faster than average. This clogs the evaporator and water system. Descaling every 3 months is critical in Oklahoma. The summer heat also stresses condensers.' },
-      { question: 'How often should I clean my ice machine in Oklahoma?', answer: 'In Oklahoma, every 3 months due to hard water. The national recommendation is every 6 months, but Oklahoma water hardness requires more frequent cleaning to prevent scale buildup and production loss.' },
     ],
   },
 ];

@@ -7,9 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   const staticPages = [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1.0 },
-    // Market homepages — equal weight, independently indexable.
-    { url: `${base}/ok`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1.0 },
-    { url: `${base}/nj`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1.0 },
     { url: `${base}/services`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/locations`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/who-we-serve`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
@@ -58,5 +55,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
+  // Per-city landing pages for the other high-intent services.
+  const serviceCityPages = ['refrigeration', 'cooking-equipment', 'hvac'].flatMap((slug) =>
+    VENTILATION_CITIES.map((c) => ({
+      url: `${base}/services/${slug}/${c.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }))
+  );
+
+  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages, ...serviceCityPages];
 }

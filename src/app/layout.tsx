@@ -1,17 +1,19 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { PROFILES, MARKET_OK, MARKET_NJ } from '@/lib/data';
+import CallTracking from '@/components/CallTracking';
+import { PROFILES, MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
-    default: 'True Commercial Service | Commercial Kitchen Equipment Repair — OKC & NYC Metro',
+    default: 'True Commercial Service | Commercial Kitchen Equipment Repair — NJ & NYC Metro',
     template: '%s | True Commercial Service',
   },
-  description: 'Commercial kitchen equipment repair, ventilation, and pollution control service. Serving Oklahoma City metro and the NJ/NYC metro with 24/7 emergency response.',
-  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Oklahoma City OK', 'Elizabeth NJ', 'New York City', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing', 'NYC Local Law 38 pollution control'],
+  description: 'Commercial kitchen equipment repair, ventilation, and pollution control service. Serving Northern NJ and the NYC metro with 24/7 emergency response.',
+  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Elizabeth NJ', 'New York City', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing', 'NYC Local Law 38 pollution control'],
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'True Commercial Service | Commercial Kitchen Equipment Repair',
-    description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service in OKC and NJ/NYC.',
+    description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service across Northern NJ and NYC.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -30,36 +32,21 @@ export const metadata: Metadata = {
   },
 };
 
-// Parent brand Organization — each market's LocalBusiness references this
-// via parentOrganization in its own layout. This lets Google understand
-// both locations are part of the same brand entity.
+// Parent brand Organization — the NJ/NYC LocalBusiness references this
+// via parentOrganization in its own layout, letting Google understand the
+// location is part of the same brand entity.
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   '@id': 'https://choosetrue.com#organization',
   name: 'True Commercial Service LLC',
   legalName: 'True Commercial Service LLC',
-  description: 'Commercial kitchen equipment repair, ventilation, and pollution control company serving the Oklahoma City and NJ/NYC metropolitan areas.',
+  description: 'Commercial kitchen equipment repair, ventilation, and pollution control company serving Northern NJ and the NYC metropolitan area.',
   url: 'https://choosetrue.com',
   logo: 'https://choosetrue.com/images/logo.png',
   image: 'https://choosetrue.com/images/logo.png',
   sameAs: Object.values(PROFILES).filter(Boolean),
   location: [
-    {
-      '@type': 'LocalBusiness',
-      '@id': MARKET_OK.schemaId,
-      name: `${MARKET_OK.name} — Oklahoma City Metro`,
-      telephone: MARKET_OK.phone,
-      url: MARKET_OK.homeUrl,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: MARKET_OK.address.street,
-        addressLocality: MARKET_OK.address.city,
-        addressRegion: MARKET_OK.address.region,
-        postalCode: MARKET_OK.address.postalCode,
-        addressCountry: MARKET_OK.address.country,
-      },
-    },
     {
       '@type': 'LocalBusiness',
       '@id': MARKET_NJ.schemaId,
@@ -92,6 +79,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Breadcrumbs />
         <main>{children}</main>
         <Footer />
+        <Analytics />
+        <CallTracking />
       </body>
     </html>
   );
