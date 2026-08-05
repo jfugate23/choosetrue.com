@@ -355,7 +355,7 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
             'Starbucks',
             'University of New Mexico',
             'Facebook / Meta',
-            'University of Oklahoma',
+            'Rutgers University',
           ].map((name, i) => (
             <Reveal key={name} delay={i * 80}>
               <span className="text-lg lg:text-xl font-bold text-slate-400 tracking-tight">{name}</span>

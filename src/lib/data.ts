@@ -1,7 +1,6 @@
-// ─── BRAND-LEVEL (shared across both markets) ──────────────────
-// COMPANY is kept as the default (OKC) for legacy pages that haven't
-// been migrated to market-aware rendering yet. New market-aware pages
-// should import MARKET_OK / MARKET_NJ directly.
+// ─── BRAND-LEVEL (shared defaults) ─────────────────────────────
+// COMPANY holds the default contact details for pages that aren't
+// market-aware. New market-aware pages should import MARKET_NJ directly.
 export const COMPANY = {
   name: 'True Commercial Service',
   legal: 'True Commercial Service LLC',
@@ -11,38 +10,13 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+16469429394',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Oklahoma City, Norman, Edmond, and Central Oklahoma.',
+  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair, ventilation, and NYC Local Law 38 pollution control company serving Northern NJ and all five boroughs of New York City.',
 };
 
 // ─── MARKET-SPECIFIC ───────────────────────────────────────────
-// Each market is a fully independent business entity for SEO purposes:
-// its own LocalBusiness schema (via schemaId), its own phone, address,
-// and hero copy. Used by /ok and /nj market homepages and eventually
-// by all market-aware pages.
-
-export const MARKET_OK = {
-  slug: 'ok',
-  name: 'True Commercial Service',
-  legal: 'True Commercial Service LLC',
-  phone: '(646) 942-9394',
-  phoneHref: 'tel:+16469429394',
-  emergencyPhone: '(646) 942-9394',
-  emergencyPhoneHref: 'tel:+16469429394',
-  email: 'service@choosetrue.com',
-  tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  heroLabel: 'NOW SERVING OKC METRO • NORMAN • EDMOND • CENTRAL OK',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair and ventilation company serving Oklahoma City, Norman, Edmond, and Central Oklahoma.',
-  address: {
-    street: '728 Research Park Blvd #120',
-    city: 'Norman',
-    region: 'OK',
-    postalCode: '73069',
-    country: 'US',
-  },
-  serviceAreaCities: ['Oklahoma City', 'Norman', 'Edmond', 'Moore', 'Midwest City', 'Del City', 'Yukon', 'Mustang', 'Stillwater'],
-  schemaId: 'https://choosetrue.com/ok#localbusiness',
-  homeUrl: 'https://choosetrue.com/ok',
-} as const;
+// The NJ/NYC market is the business entity for SEO purposes: its own
+// LocalBusiness schema (via schemaId), phone, address, and hero copy.
+// Used by the homepage and all market-aware pages.
 
 export const MARKET_NJ = {
   slug: 'nj',
@@ -64,12 +38,11 @@ export const MARKET_NJ = {
     country: 'US',
   },
   serviceAreaCities: ['Elizabeth', 'Newark', 'Jersey City', 'Paterson', 'New Brunswick', 'Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island'],
-  schemaId: 'https://choosetrue.com/nj#localbusiness',
-  homeUrl: 'https://choosetrue.com/nj',
+  schemaId: 'https://choosetrue.com/#localbusiness',
+  homeUrl: 'https://choosetrue.com/',
 } as const;
 
 export const MARKETS = {
-  ok: MARKET_OK,
   nj: MARKET_NJ,
 } as const;
 
@@ -149,79 +122,7 @@ export const SERVICES = [
 ];
 
 export const LOCATIONS = [
-  // ─── OKC METRO (ACTIVE) ─────────────────────────────────────
-  {
-    slug: 'oklahoma-city',
-    city: 'Oklahoma City',
-    state: 'OK',
-    status: 'active' as 'active' | 'coming-soon',
-    tagline: 'Serving the OKC Metro and Central Oklahoma',
-    phone: '(646) 942-9394',
-    phoneHref: 'tel:+16469429394',
-    serviceArea: ['Oklahoma City', 'Norman', 'Edmond', 'Moore', 'Midwest City', 'Del City', 'Yukon', 'Mustang', 'Bethany', 'Stillwater', 'Shawnee'],
-    description: 'True Commercial Service is Oklahoma City\'s premier commercial kitchen equipment repair and ventilation provider. From Bricktown restaurants to campus dining at OU and OSU, we keep commercial kitchens running across Central Oklahoma.',
-    seoTitle: 'Oklahoma City Commercial Kitchen Equipment Repair & Ventilation | True Commercial Service',
-    seoDescription: 'Expert commercial kitchen equipment repair and ventilation in Oklahoma City. Cooking, refrigeration, HVAC, air balancing, exhaust fans, and espresso machine service. 24/7 emergency.',
-    seoKeyword: 'Oklahoma City commercial kitchen equipment repair',
-  },
-  {
-    slug: 'norman-ok',
-    city: 'Norman',
-    state: 'OK',
-    status: 'active' as 'active' | 'coming-soon',
-    tagline: 'Serving Norman, OU Campus & South OKC Metro',
-    phone: '(646) 942-9394',
-    phoneHref: 'tel:+16469429394',
-    serviceArea: ['Norman', 'Moore', 'Noble', 'Purcell', 'Blanchard', 'Newcastle', 'Goldsby', 'South Oklahoma City'],
-    description: 'True Commercial Service provides fast, expert commercial kitchen equipment repair in Norman, OK. We serve Campus Corner restaurants, university dining at OU, and every commercial kitchen in the Norman metro.',
-    seoTitle: 'Norman OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Norman OK. Fast response for restaurants, OU campus dining, and commercial kitchens. Refrigeration, cooking, HVAC, ventilation. 24/7 emergency.',
-    seoKeyword: 'Norman OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'edmond-ok',
-    city: 'Edmond',
-    state: 'OK',
-    status: 'active' as 'active' | 'coming-soon',
-    tagline: 'Serving Edmond, Deer Creek & North OKC Metro',
-    phone: '(646) 942-9394',
-    phoneHref: 'tel:+16469429394',
-    serviceArea: ['Edmond', 'Deer Creek', 'Arcadia', 'Guthrie', 'North Oklahoma City', 'The Village', 'Nichols Hills', 'Warr Acres', 'Bethany', 'Piedmont'],
-    description: 'True Commercial Service is Edmond\'s go-to commercial kitchen equipment repair company. From the UCO campus to the booming restaurant scene along Broadway and 2nd Street, we deliver fast, expert equipment repair.',
-    seoTitle: 'Edmond OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Edmond OK. Expert service for restaurants, UCO campus dining, and commercial kitchens. Cooking, refrigeration, HVAC, ventilation. 24/7 emergency.',
-    seoKeyword: 'Edmond OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'moore-ok',
-    city: 'Moore',
-    state: 'OK',
-    status: 'active' as 'active' | 'coming-soon',
-    tagline: 'Serving Moore, South OKC & Mid-Del Area',
-    phone: '(646) 942-9394',
-    phoneHref: 'tel:+16469429394',
-    serviceArea: ['Moore', 'South Oklahoma City', 'Midwest City', 'Del City', 'Norman', 'Newcastle', 'Tinker AFB Area'],
-    description: 'True Commercial Service delivers reliable commercial kitchen equipment repair in Moore, OK and the Mid-Del area. Fast response, fair pricing, and techs who know your equipment.',
-    seoTitle: 'Moore OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Moore OK. Serving restaurants, chains, and commercial kitchens in Moore, Midwest City, Del City, and South OKC. 24/7 emergency service.',
-    seoKeyword: 'Moore OK commercial kitchen equipment repair',
-  },
-  {
-    slug: 'stillwater-ok',
-    city: 'Stillwater',
-    state: 'OK',
-    status: 'active' as 'active' | 'coming-soon',
-    tagline: 'Serving Stillwater, OSU Campus & North Central OK',
-    phone: '(646) 942-9394',
-    phoneHref: 'tel:+16469429394',
-    serviceArea: ['Stillwater', 'Perkins', 'Cushing', 'Perry', 'Pawnee'],
-    description: 'True Commercial Service provides expert commercial kitchen equipment repair in Stillwater, OK. We keep the restaurants on The Strip, OSU campus dining halls, and commercial kitchens across Payne County running.',
-    seoTitle: 'Stillwater OK Commercial Kitchen Equipment Repair | True Commercial Service',
-    seoDescription: 'Commercial kitchen equipment repair in Stillwater OK. Serving restaurants, OSU campus dining, and commercial kitchens. Cooking, refrigeration, HVAC, ventilation.',
-    seoKeyword: 'Stillwater OK commercial kitchen equipment repair',
-  },
-
-  // ─── NORTHERN NJ / NYC METRO (BACKGROUND) ─────────────────────
+  // ─── NORTHERN NJ / NYC METRO ─────────────────────────────────
   {
     slug: 'elizabeth-nj',
     city: 'Elizabeth',
@@ -453,7 +354,7 @@ export const PROFILES = {
 // Example: Google Business (Elizabeth) → website: choosetrue.com/locations/elizabeth-nj
 
 // Hub locations shown in footer (not every sub-city)
-export const HUB_LOCATIONS = ['oklahoma-city', 'norman-ok', 'edmond-ok', 'elizabeth-nj'];
+export const HUB_LOCATIONS = ['elizabeth-nj', 'newark-nj', 'jersey-city-nj', 'new-york-city'];
 
 // Ventilation-specific city landing pages (50-mile radius from Elizabeth NJ)
 export const VENTILATION_CITIES = [
