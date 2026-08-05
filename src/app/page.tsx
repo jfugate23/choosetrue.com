@@ -4,15 +4,15 @@ import { MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'NJ & NYC Commercial Kitchen Equipment & HVAC Repair | True Commercial Service',
+    absolute: 'Fast Commercial Kitchen & HVAC Repair — NJ & NYC | True Commercial Service',
   },
-  description: 'Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and all five boroughs of NYC. Fast diagnostics, transparent tracking, and 24/7 emergency response.',
+  description: 'Fast commercial kitchen equipment and HVAC repair across Northern NJ and all five boroughs of NYC. 24/7 emergency response, factory-trained techs, and preventive maintenance plans.',
   alternates: {
     canonical: 'https://choosetrue.com/',
   },
   openGraph: {
-    title: 'NJ & NYC Commercial Kitchen Equipment & HVAC Repair | True Commercial Service',
-    description: 'Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and NYC. 24/7 emergency response.',
+    title: 'Fast Commercial Kitchen & HVAC Repair — NJ & NYC | True Commercial Service',
+    description: 'Fast commercial kitchen equipment and HVAC repair across Northern NJ and NYC. 24/7 emergency response and preventive maintenance.',
     url: 'https://choosetrue.com/',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -25,12 +25,12 @@ export default function HomePage() {
       market={MARKET_NJ}
       heroHeadline={
         <>
-          Cooking, cooling &amp; HVAC
+          When your kitchen goes down,
           <br />
-          <span className="text-gradient">fixed fast.</span>
+          <span className="text-gradient">we answer.</span>
         </>
       }
-      heroSubhead="Commercial cooking equipment, refrigeration, and HVAC repair across Northern NJ and all five boroughs of NYC — real diagnostics, transparent tracking, and 24/7 emergency response."
+      heroSubhead="Fast commercial kitchen equipment and HVAC repair across Northern NJ and all five boroughs of NYC. 24/7 emergency response, factory-trained techs, and preventive maintenance plans that keep you running."
     />
   );
 }

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Phone, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, Star, Zap, Clock, CheckCircle2, Cpu, Smartphone, BarChart3, QrCode } from 'lucide-react';
+import { ArrowRight, Phone, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, Star, Clock, CheckCircle2 } from 'lucide-react';
 import { SERVICES, STATS, MANUFACTURERS, VERTICALS } from '@/lib/data';
 import { Section, SectionHeading, Reveal, CTAButton, ServiceForm } from '@/components/UI';
 
@@ -64,7 +64,7 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
           <div className="absolute top-0 right-[20%] w-px h-full bg-gradient-to-b from-transparent via-amber-500/10 to-transparent rotate-12 origin-top" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 py-32 lg:py-0">
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-36 lg:pt-44 pb-20 lg:pb-24">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
@@ -83,7 +83,7 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
               </h1>
 
               <p className="mt-6 text-lg lg:text-xl text-slate-400 leading-relaxed max-w-lg animate-fade-up" style={{ animationDelay: '0.1s' }}>
-                {heroSubhead ?? 'Commercial kitchen equipment repair backed by real diagnostics, transparent tracking, and techs who actually know your equipment.'}
+                {heroSubhead ?? 'Commercial kitchen equipment repair backed by fast response, transparent pricing, and techs who actually know your equipment.'}
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
@@ -111,66 +111,42 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
             </div>
 
             <div className="hidden lg:block">
-              <div className="relative">
-                <div className="glass-card rounded-2xl p-8 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl" />
-                  <div className="relative">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center">
-                        <Zap className="w-5 h-5 text-amber-400" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium">Live Service Tracker</p>
-                        <p className="text-xs text-slate-500">Powered by Tradecraft AI</p>
-                      </div>
+              <div className="glass-card rounded-2xl p-8 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl" />
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-amber-400" />
                     </div>
-                    <div className="space-y-4">
-                      <div className="bg-white/5 rounded-lg p-4">
-                        <div className="flex justify-between items-start mb-2">
-                          <div>
-                            <p className="text-sm font-medium">Combi Oven — Error E04</p>
-                            <p className="text-xs text-slate-500">Rational SCC 62 • Serial #RR-40821</p>
-                          </div>
-                          <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded-full font-medium">En Route</span>
-                        </div>
-                        <div className="flex gap-4 mt-3">
-                          <div>
-                            <p className="text-[10px] text-slate-500 uppercase">ETA</p>
-                            <p className="text-sm font-medium text-amber-400">23 min</p>
-                          </div>
-                          <div>
-                            <p className="text-[10px] text-slate-500 uppercase">Tech</p>
-                            <p className="text-sm font-medium">Marcus D.</p>
-                          </div>
-                          <div>
-                            <p className="text-[10px] text-slate-500 uppercase">Priority</p>
-                            <p className="text-sm font-medium text-red-400">High</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="bg-white/5 rounded-lg p-4 opacity-60">
-                        <div className="flex justify-between items-start">
-                          <div>
-                            <p className="text-sm font-medium">Walk-In Cooler — Temp Alarm</p>
-                            <p className="text-xs text-slate-500">True T-49 • Serial #TM-91204</p>
-                          </div>
-                          <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded-full font-medium">Queued</span>
-                        </div>
-                      </div>
+                    <div>
+                      <p className="text-sm text-slate-500">Equipment down?</p>
+                      <p className="text-lg font-semibold">Talk to a tech now</p>
                     </div>
                   </div>
-                </div>
-                <div className="absolute -top-4 -right-4 glass-card rounded-lg p-3 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-                  <div className="flex items-center gap-2">
-                    <QrCode className="w-4 h-4 text-amber-400" />
-                    <span className="text-xs font-medium">QR Equipment Tags</span>
+
+                  <a href={market.emergencyPhoneHref} className="block text-4xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
+                    {market.emergencyPhone}
+                  </a>
+                  <p className="text-sm text-slate-500 mt-1 mb-6">24/7 emergency dispatch across NJ &amp; NYC</p>
+
+                  <div className="space-y-2.5 mb-6">
+                    {[
+                      'Cooking equipment repair',
+                      'Commercial refrigeration',
+                      'HVAC & rooftop units',
+                      'Kitchen ventilation & exhaust',
+                      'Preventive maintenance plans',
+                    ].map((item) => (
+                      <div key={item} className="flex items-center gap-3">
+                        <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                        <span className="text-sm text-slate-300">{item}</span>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                <div className="absolute -bottom-3 -left-3 glass-card rounded-lg p-3 animate-fade-in" style={{ animationDelay: '0.7s' }}>
-                  <div className="flex items-center gap-2">
-                    <Cpu className="w-4 h-4 text-amber-400" />
-                    <span className="text-xs font-medium">AI Diagnostics</span>
-                  </div>
+
+                  <Link href="/schedule-service" className="block w-full text-center bg-amber-500 hover:bg-amber-400 text-navy-300 font-semibold px-5 py-3 rounded-lg cta-glow transition-all">
+                    Schedule Service
+                  </Link>
                 </div>
               </div>
             </div>
@@ -209,98 +185,51 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
         </div>
       </Section>
 
-      {/* ====== THE TRUE DIFFERENCE / TRADECRAFT AI ====== */}
-      <Section id="tradecraft" className="relative overflow-hidden">
+      {/* ====== WHY TRUE ====== */}
+      <Section id="why-true" className="relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-amber-500/5 rounded-full blur-[150px]" />
         </div>
         <div className="relative">
           <SectionHeading
             eyebrow="The True Difference"
-            title="Not just another service company."
-            description="We built our own technology platform to fix the broken parts of commercial kitchen service — not just the equipment."
+            title="Why operators call us first."
+            description="No call centers, no runaround — just fast, factory-trained repair and maintenance for the equipment your kitchen runs on."
           />
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              {[
-                {
-                  icon: <Cpu className="w-5 h-5" />,
-                  title: 'AI-Powered Diagnostics',
-                  desc: 'Our techs arrive with probable causes already identified. Less guesswork, faster repairs, fewer repeat visits.',
-                },
-                {
-                  icon: <QrCode className="w-5 h-5" />,
-                  title: 'QR Equipment Tags',
-                  desc: 'Every piece of equipment gets tagged. Scan it to see full service history, manuals, and one-tap service requests.',
-                },
-                {
-                  icon: <Smartphone className="w-5 h-5" />,
-                  title: 'Real-Time Job Tracking',
-                  desc: 'Know exactly when your tech is arriving, what they found, and what\'s next. No more black-box service calls.',
-                },
-                {
-                  icon: <BarChart3 className="w-5 h-5" />,
-                  title: 'Owner Dashboard',
-                  desc: 'Multi-location operators get a bird\'s eye view of all equipment, service history, costs, and upcoming PMs.',
-                },
-              ].map((item, i) => (
-                <Reveal key={i} delay={i * 100}>
-                  <div className="flex gap-4 group">
-                    <div className="flex-shrink-0 w-11 h-11 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20 transition-colors">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">{item.title}</h3>
-                      <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
-                    </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            {[
+              {
+                icon: <Clock className="w-6 h-6" />,
+                title: '24/7 Emergency Response',
+                desc: 'Kitchen down at 2am? We answer. Real emergency dispatch across NJ & NYC — not an answering service.',
+              },
+              {
+                icon: <ShieldCheck className="w-6 h-6" />,
+                title: 'Factory-Trained Techs',
+                desc: 'Manufacturer-certified on the brands you run. We fix it right the first time, backed by a 90-day guarantee.',
+              },
+              {
+                icon: <Wind className="w-6 h-6" />,
+                title: 'Cooking, Cooling & HVAC',
+                desc: 'One call covers cooking equipment, refrigeration, HVAC, and kitchen ventilation. No juggling vendors.',
+              },
+              {
+                icon: <CheckCircle2 className="w-6 h-6" />,
+                title: 'Preventive Maintenance',
+                desc: 'Scheduled PM plans that catch problems before they cost you a service call — or a night of lost revenue.',
+              },
+            ].map((item, i) => (
+              <Reveal key={i} delay={i * 80}>
+                <div className="glass-card rounded-xl p-6 h-full">
+                  <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 text-amber-400">
+                    {item.icon}
                   </div>
-                </Reveal>
-              ))}
-            </div>
-
-            <Reveal delay={200}>
-              <div className="glass-card rounded-2xl p-1 lg:p-2">
-                <div className="bg-navy-300 rounded-xl p-6 lg:p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <div>
-                      <p className="text-sm text-slate-500">Tradecraft AI Dashboard</p>
-                      <p className="text-lg font-semibold">Your Kitchen at a Glance</p>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs bg-emerald-500/15 text-emerald-400 px-3 py-1 rounded-full">
-                      <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
-                      All Systems Normal
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-3 mb-6">
-                    {[
-                      { label: 'Equipment', value: '24', sub: 'Tagged' },
-                      { label: 'Open Jobs', value: '1', sub: 'In Progress' },
-                      { label: 'Next PM', value: 'Apr 3', sub: '12 days' },
-                    ].map((stat) => (
-                      <div key={stat.label} className="bg-white/5 rounded-lg p-3 text-center">
-                        <p className="text-xl font-bold text-amber-400">{stat.value}</p>
-                        <p className="text-[10px] text-slate-500 uppercase mt-0.5">{stat.label}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="space-y-2">
-                    {[
-                      { equip: 'Rational SCC 62', status: 'Service Complete', color: 'emerald' },
-                      { equip: 'True T-49 Walk-In', status: 'PM Due Apr 3', color: 'amber' },
-                      { equip: 'Hoshizaki KM-660', status: 'OK', color: 'emerald' },
-                    ].map((item) => (
-                      <div key={item.equip} className="flex items-center justify-between bg-white/5 rounded-lg px-4 py-2.5">
-                        <span className="text-sm">{item.equip}</span>
-                        <span className={`text-xs font-medium ${item.color === 'emerald' ? 'text-emerald-400' : 'text-amber-400'}`}>{item.status}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
                 </div>
-              </div>
-            </Reveal>
+              </Reveal>
+            ))}
           </div>
         </div>
       </Section>

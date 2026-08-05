@@ -125,7 +125,7 @@ export default function Header() {
                             { href: '/services#emergency', label: 'Emergency Repair' },
                             { href: '/services/preventive-maintenance', label: 'Planned Maintenance' },
                             { href: '/services#installation', label: 'Installation' },
-                            { href: '/about#tradecraft', label: 'Tradecraft AI Platform' },
+                            { href: '/schedule-service', label: 'Schedule Service' },
                           ].map((item) => (
                             <Link key={item.href} href={item.href} className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-white hover:bg-white/5 transition-colors">
                               {item.label}
@@ -134,8 +134,8 @@ export default function Header() {
                         </div>
 
                         <div className="mt-4 p-3 rounded-lg bg-amber-500/10 border border-amber-500/20">
-                          <p className="text-xs text-amber-200 font-medium">Powered by Tradecraft AI</p>
-                          <p className="text-xs text-slate-400 mt-1">Smart diagnostics. Real-time tracking. Faster fixes.</p>
+                          <p className="text-xs text-amber-200 font-medium">24/7 Emergency Service</p>
+                          <p className="text-xs text-slate-400 mt-1">Equipment down? We answer day or night.</p>
                         </div>
                       </div>
                     </div>
