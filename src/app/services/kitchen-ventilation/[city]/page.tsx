@@ -49,7 +49,7 @@ export default function VentilationCityPage({ params }: Props) {
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">{city.city}, {city.state} • {city.region}</p>
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight max-w-5xl">Kitchen hood airflow and exhaust fan repair in {city.city}.</h1>
-          <p className="mt-6 text-lg text-slate-300 max-w-3xl leading-relaxed">Owner-led diagnostics for smoke capture, roof exhaust fans, makeup air units, VFDs, demand-control ventilation, and hood-control problems in commercial kitchens.</p>
+          <p className="mt-6 text-lg text-slate-300 max-w-3xl leading-relaxed">Specialized diagnostics for smoke capture, roof exhaust fans, makeup air units, VFDs, demand-control ventilation, and hood-control problems in commercial kitchens.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow">Request Service <ArrowRight className="w-5 h-5" /></Link>
             <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-amber-500/40 px-8 py-4 rounded-xl"><Phone className="w-4 h-4 text-amber-400" />{COMPANY.phone}</a>
