@@ -170,6 +170,7 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
             urgency: data.get('urgency'),
             manufacturer: data.get('manufacturer'),
             details: data.get('details'),
+            commercial: data.get('commercial') === 'on',
           },
         }),
       });
@@ -204,12 +205,12 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
         <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
       <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
-        <label className="text-xs font-medium text-slate-300">Your name *<input name="name" type="text" required autoComplete="name" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Phone number *<input name="phone" type="tel" required autoComplete="tel" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Business or property *<input name="business" type="text" required autoComplete="organization" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Service ZIP code *<input name="zip" type="text" required inputMode="numeric" autoComplete="postal-code" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Email address<input name="email" type="email" autoComplete="email" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" placeholder="CaptiveAire, Gaylord, Accurex…" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Your name *<input name="name" type="text" required minLength={2} maxLength={100} autoComplete="name" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Phone number *<input name="phone" type="tel" required maxLength={25} pattern="(?:\\+?1[ .-]?)?\\(?[2-9][0-9]{2}\\)?[ .-]?[2-9][0-9]{2}[ .-]?[0-9]{4}" title="Enter a valid 10-digit US phone number." autoComplete="tel" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Business or property *<input name="business" type="text" required minLength={2} maxLength={150} autoComplete="organization" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Service ZIP code *<input name="zip" type="text" required inputMode="numeric" minLength={5} maxLength={10} pattern="[0-9]{5}(?:-[0-9]{4})?" title="Enter a valid 5-digit ZIP code." autoComplete="postal-code" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Email address<input name="email" type="email" maxLength={150} autoComplete="email" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" maxLength={100} placeholder="CaptiveAire, Gaylord, Accurex…" className={`${fieldClass} mt-1.5`} /></label>
       </div>
       <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
         <label className="text-xs font-medium text-slate-300">Primary issue *
@@ -234,7 +235,7 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
         </label>
       </div>
       <label className="block text-xs font-medium text-slate-300">What is the system doing? *
-        <textarea name="details" required placeholder="Symptoms, fault code, equipment model, rooftop access, and when the problem started" rows={compact ? 3 : 5} className={`${fieldClass} mt-1.5 resize-none`} />
+        <textarea name="details" required minLength={10} maxLength={2000} placeholder="Symptoms, fault code, equipment model, rooftop access, and when the problem started" rows={compact ? 3 : 5} className={`${fieldClass} mt-1.5 resize-none`} />
       </label>
       <label className="flex items-start gap-3 text-xs text-slate-400">
         <input name="commercial" type="checkbox" required className="mt-0.5 accent-amber-500" />
