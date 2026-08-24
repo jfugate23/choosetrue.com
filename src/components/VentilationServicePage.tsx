@@ -121,7 +121,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
               <p className="flex gap-3"><Gauge className="w-5 h-5 text-amber-400 flex-shrink-0" />Airflow and equipment are evaluated together.</p>
               <p className="flex gap-3"><ClipboardCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Findings and readings are documented clearly.</p>
-              <p className="flex gap-3"><ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />TCS is led by a former CaptiveAire Regional Service Manager with startup and controls experience.</p>
+              <p className="flex gap-3"><ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Commercial kitchen fans, makeup air, airflow, and controls are evaluated as one connected system.</p>
             </div>
           </div>
           <div>

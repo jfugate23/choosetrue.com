@@ -206,23 +206,23 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
       </Section>
 
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Experience" title="Commercial-kitchen ventilation is the core trade." />
+        <SectionHeading eyebrow="Service Approach" title="Commercial-kitchen ventilation is the core focus." />
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
               icon: <Wind className="w-6 h-6" />,
-              title: 'CaptiveAire leadership experience',
-              text: 'TCS is led by a former CaptiveAire Regional Service Manager with hands-on field and air-balance experience.',
+              title: 'Whole-system diagnosis',
+              text: 'Hood capture, exhaust airflow, makeup air, building pressure, and equipment condition are evaluated as one connected system.',
             },
             {
               icon: <Settings2 className="w-6 h-6" />,
-              title: 'Startup and controls experience',
-              text: 'Field experience includes Gaylord AirVantage and Accurex startup/service work, along with VFD and demand-control ventilation troubleshooting.',
+              title: 'Controls and sequence testing',
+              text: 'VFDs, demand-control ventilation, sensors, starters, interlocks, and fan commands are traced through the complete operating sequence.',
             },
             {
               icon: <Building2 className="w-6 h-6" />,
-              title: 'Real operating kitchens',
-              text: 'Experience across restaurants, hotels, institutional kitchens, and complex ventilation systems where downtime affects service immediately.',
+              title: 'Commercial field service',
+              text: 'Service is structured for restaurants, hotels, institutional kitchens, and other commercial facilities where downtime affects operations immediately.',
             },
           ].map((item, i) => (
             <Reveal key={item.title} delay={i * 80}>

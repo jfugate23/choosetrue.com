@@ -58,13 +58,14 @@ export default function ManufacturerServicePage() {
       <Section>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
-            <SectionHeading eyebrow="Field Background" title="Ventilation depth with broader equipment experience." center={false} />
+            <SectionHeading eyebrow="Field Service Scope" title="Ventilation depth with broader equipment support." center={false} />
             <div className="space-y-4">
               {[
-                'Former CaptiveAire Regional Service Manager with service-sales, startup, field-troubleshooting, and air-balance experience.',
-                'Gaylord AirVantage startup and troubleshooting experience, including field work supporting the new Terminal 1 project at JFK.',
-                'Accurex startup/service experience plus VFD, DCV, fan, makeup air, and ventilation-control troubleshooting.',
-                'Prior commercial kitchen service operation experience supporting high-volume multi-site customers and manufacturer workflows.',
+                'Selected project work includes Gaylord AirVantage startup and controls support for the new Terminal 1 at JFK.',
+                'Equipment startup, operational checkout, sequence verification, and punch-list support.',
+                'VFD, DCV, fan, makeup air, airflow, and ventilation-control troubleshooting.',
+                'Coordination with manufacturers, dealers, installers, electricians, site contacts, and facility teams.',
+                'Clear documentation of readings, settings, fault conditions, repairs, and remaining deficiencies.',
               ].map((item) => <p key={item} className="flex items-start gap-3 text-sm text-slate-300 leading-relaxed"><CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />{item}</p>)}
             </div>
           </div>
