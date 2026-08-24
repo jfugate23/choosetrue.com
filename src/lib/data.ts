@@ -10,7 +10,7 @@ export const COMPANY = {
   emergencyPhoneHref: 'tel:+16469429394',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Ventilation. Diagnosed Right.',
-  description: 'True Commercial Service provides owner-led commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
+  description: 'True Commercial Service provides specialized commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
 };
 
 // ─── MARKET-SPECIFIC ───────────────────────────────────────────
@@ -29,7 +29,7 @@ export const MARKET_NJ = {
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Ventilation. Diagnosed Right.',
   heroLabel: 'COMMERCIAL KITCHEN VENTILATION • NYC + NORTH JERSEY',
-  description: 'True Commercial Service provides owner-led commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
+  description: 'True Commercial Service provides specialized commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
   address: {
     street: '638 Marshall St',
     city: 'Elizabeth',
