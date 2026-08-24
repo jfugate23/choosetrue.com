@@ -37,7 +37,7 @@ export default function LocationPage({ params }: Props) {
       <PageHero
         eyebrow={`${location.city}, ${location.state}`}
         title={`Commercial Kitchen Ventilation Service in ${location.city}`}
-        description={`Owner-led hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation-controls troubleshooting for commercial kitchens across ${location.city} and nearby areas.`}
+        description={`Specialized hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation-controls troubleshooting for commercial kitchens across ${location.city} and nearby areas.`}
       />
 
       <Section className="bg-white/[0.02]">
