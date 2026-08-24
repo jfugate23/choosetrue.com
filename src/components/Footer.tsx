@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <Link href="/" className="relative block h-14 w-[190px] overflow-hidden mb-4" aria-label="True Commercial Service home"><Image src="/images/logo.png" alt="True Commercial Service" fill sizes="190px" className="object-cover object-center mix-blend-lighten" /></Link>
-            <p className="text-sm text-slate-400 leading-relaxed mb-5">Owner-led commercial kitchen ventilation diagnostics and repair across NYC and North Jersey.</p>
+            <p className="text-sm text-slate-400 leading-relaxed mb-5">Commercial kitchen hood and ventilation diagnostics and repair across NYC and North Jersey.</p>
             <p className="flex items-center gap-2 text-sm text-slate-400 mb-2"><MapPin className="w-4 h-4 text-amber-500/60" /> Based in {MARKET_NJ.address.city}, {MARKET_NJ.address.region}</p>
             <a href={MARKET_NJ.phoneHref} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors mb-2"><Phone className="w-4 h-4 text-amber-500/60" />{MARKET_NJ.phone}</a>
             <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"><Mail className="w-4 h-4 text-amber-500/60" />{COMPANY.email}</a>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">&copy; {new Date().getFullYear()} {COMPANY.legal}. All rights reserved.</p>
-          <p className="text-xs text-slate-600">Commercial kitchens only • Owner-operated</p>
+          <p className="text-xs text-slate-600">Commercial kitchens only • NYC and North Jersey</p>
         </div>
       </div>
     </footer>
