@@ -108,7 +108,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               </div>
 
               <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
-                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Owner-led diagnostics</span>
+                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Hood and ventilation expertise</span>
                 <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Measured airflow readings</span>
                 <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Commercial kitchens only</span>
               </div>
@@ -181,7 +181,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
           </Reveal>
           <div>
             <SectionHeading
-              eyebrow="Owner-Led Service"
+              eyebrow="Ventilation Expertise"
               title="Measure first. Repair the cause."
               description="Kitchen ventilation problems cross mechanical, electrical, controls, and airflow. TCS looks at the complete sequence instead of swapping parts until something changes."
               center={false}
