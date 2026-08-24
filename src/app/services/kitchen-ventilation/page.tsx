@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Ventilation',
-  title: 'One technician for the hood, fan, makeup air, and controls.',
-  description: 'TCS specializes in finding how the pieces of a commercial kitchen ventilation system interact, because the symptom at the hood often starts on the roof or inside the control panel.',
+  title: 'Commercial kitchen hood and ventilation experts.',
+  description: 'Hood airflow, exhaust fans, makeup air units, VFDs, demand-control ventilation, and pollution-control systems diagnosed and repaired across NYC and North Jersey.',
   serviceType: 'Commercial Kitchen Ventilation Diagnostics and Repair',
   image: '/images/full-kitchen-ventilation-install.jpg',
   imageAlt: 'Complete commercial kitchen hood and ventilation system',
