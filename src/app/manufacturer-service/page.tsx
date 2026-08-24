@@ -6,7 +6,7 @@ import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 
 export const metadata: Metadata = {
   title: 'Manufacturer-Assigned Kitchen Equipment Service: NYC & NJ',
-  description: 'Owner-led manufacturer-assigned startup, warranty, punch-list, and field service for commercial kitchen ventilation and equipment across NYC and North Jersey.',
+  description: 'Manufacturer-assigned startup, warranty, punch-list, and field service for commercial kitchen ventilation and equipment across NYC and North Jersey.',
   alternates: { canonical: '/manufacturer-service' },
 };
 
@@ -30,7 +30,7 @@ export default function ManufacturerServicePage() {
           <div className="max-w-4xl">
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">For Manufacturers, Dealers &amp; Reps</p>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">Technical field service in NYC and North Jersey, without the hand-holding.</h1>
-            <p className="mt-6 text-lg lg:text-xl text-slate-300 max-w-3xl leading-relaxed">TCS accepts manufacturer-assigned startup, warranty, punch-list, and troubleshooting calls. Work is owner-led, documented clearly, and handled by a technician who understands field coordination.</p>
+            <p className="mt-6 text-lg lg:text-xl text-slate-300 max-w-3xl leading-relaxed">TCS accepts manufacturer-assigned startup, warranty, punch-list, and troubleshooting calls. Assignments are documented clearly and handled with an understanding of field coordination.</p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link href="#manufacturer-request" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow transition-all">Send an Assignment <ArrowRight className="w-5 h-5" /></Link>
               <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-amber-500/40 px-8 py-4 rounded-xl font-medium transition-all"><Phone className="w-4 h-4 text-amber-400" />{COMPANY.phone}</a>
