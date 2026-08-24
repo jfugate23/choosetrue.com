@@ -63,7 +63,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
                 <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow transition-all">Request Service <ArrowRight className="w-5 h-5" /></Link>
                 <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-amber-500/40 text-white font-medium px-8 py-4 rounded-xl transition-all"><Phone className="w-4 h-4 text-amber-400" />{COMPANY.phone}</a>
               </div>
-              <p className="mt-5 text-xs text-slate-500">Commercial kitchens in NYC and North Jersey • Owner-led service</p>
+              <p className="mt-5 text-xs text-slate-500">Commercial kitchen ventilation service across NYC and North Jersey</p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
               <Image src={content.image} alt={content.imageAlt} fill priority className="object-cover" />
