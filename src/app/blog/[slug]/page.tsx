@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
         <h3 className="text-lg font-semibold text-white mb-2">Have a kitchen ventilation problem?</h3>
-        <p className="text-gray-400 text-sm mb-4">TCS provides owner-led hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.</p>
+        <p className="text-gray-400 text-sm mb-4">TCS provides specialized hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.</p>
         <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
           Request Ventilation Service
         </Link>
