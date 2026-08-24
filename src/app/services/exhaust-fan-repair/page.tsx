@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Exhaust Fan Repair — NYC & North Jersey',
-  description: 'Commercial kitchen exhaust fan diagnostics and repair across NYC and North Jersey. Motors, belts, bearings, VFD faults, starters, wiring, fan wheels, and airflow verification.',
+  title: 'Commercial Kitchen Exhaust Fan Repair: NYC & North Jersey',
+  description: 'Restaurant and commercial kitchen exhaust fan repair across NYC and North Jersey. Motors, belts, bearings, VFD faults, starters, wiring, fan wheels, and airflow verification.',
   alternates: { canonical: '/services/exhaust-fan-repair' },
 };
 
 const content: VentilationServiceContent = {
-  eyebrow: 'Commercial Kitchen Exhaust Fan Repair',
+  eyebrow: 'Restaurant & Commercial Kitchen Exhaust Fan Repair',
   title: 'Exhaust fan down, noisy, or barely pulling air?',
-  description: 'TCS diagnoses the electrical, mechanical, controls, and airflow cause—then repairs the part of the system actually creating the problem.',
+  description: 'TCS diagnoses the electrical, mechanical, controls, and airflow cause, then repairs the part of the system actually creating the problem.',
   serviceType: 'Commercial Kitchen Exhaust Fan Repair',
   image: '/images/rooftop-upblast-exhaust-fan.jpg',
   imageAlt: 'Commercial kitchen upblast exhaust fan on a rooftop',

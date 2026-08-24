@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, Fan, Gauge, MapPin, Menu, Phone, Settings2, Wind, Wrench, X } from 'lucide-react';
@@ -17,42 +17,35 @@ const primaryServices = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-navy-300/95 backdrop-blur-lg shadow-lg shadow-black/20' : 'bg-transparent'}`}>
-        <div className="hidden lg:block border-b border-white/5">
+      <header className="sticky top-0 z-50 bg-navy-300/95 backdrop-blur-lg border-b border-white/5 shadow-lg shadow-black/10">
+        <div className="hidden xl:block border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
             <div className="flex items-center gap-2 text-slate-400">
               <MapPin className="w-3.5 h-3.5 text-amber-400/70" />
-              <span>Commercial kitchen ventilation • NYC &amp; North Jersey</span>
+              <span>Commercial kitchen ventilation in all five NYC boroughs and North/Central New Jersey</span>
             </div>
             <a href={MARKET_NJ.phoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">
-              <Phone className="w-3.5 h-3.5" /> Talk directly with TCS: {MARKET_NJ.phone}
+              <Phone className="w-3.5 h-3.5" /> Call TCS: {MARKET_NJ.phone}
             </a>
           </div>
         </div>
 
-        <nav className="max-w-7xl mx-auto px-4 lg:px-6" aria-label="Primary navigation">
-          <div className="flex items-center justify-between h-24 lg:h-28">
-            <Link href="/" className="flex items-center gap-2">
-              <Image src="/images/logo.png" alt="True Commercial Service" width={400} height={100} className="h-16 lg:h-24 w-auto" priority />
+        <nav className="max-w-7xl mx-auto px-4 xl:px-6" aria-label="Primary navigation">
+          <div className="flex items-center justify-between h-20">
+            <Link href="/" className="relative block h-14 w-[190px] sm:h-16 sm:w-[220px] overflow-hidden flex-shrink-0" aria-label="True Commercial Service home">
+              <Image src="/images/logo.png" alt="True Commercial Service" fill sizes="220px" className="object-cover object-center mix-blend-lighten" priority />
             </Link>
 
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden xl:flex items-center gap-0.5">
               <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <button aria-expanded={servicesOpen} className="flex items-center gap-1 px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">
-                  Ventilation Services <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                <button aria-expanded={servicesOpen} className="flex items-center gap-1 px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">
+                  Services <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[620px] pt-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
+                <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[580px] pt-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
                   <div className="bg-navy-50 rounded-xl border border-white/10 shadow-2xl shadow-black/40 p-6">
                     <p className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-3 flex items-center gap-2"><Wrench className="w-3.5 h-3.5" /> Focused Services</p>
                     <div className="grid grid-cols-2 gap-1">
@@ -69,26 +62,23 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <Link href="/locations" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">Service Area</Link>
-              <Link href="/manufacturer-service" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">Manufacturers</Link>
-              <Link href="/about" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">About</Link>
-              <Link href="/blog" className="px-4 py-2 text-sm text-slate-300 hover:text-white transition-colors">Resources</Link>
+              <Link href="/locations" className="px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">Service Area</Link>
+              <Link href="/manufacturer-service" className="px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">Manufacturers</Link>
+              <Link href="/about" className="px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">About</Link>
+              <Link href="/blog" className="px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">Resources</Link>
             </div>
 
-            <div className="hidden lg:flex items-center gap-4">
-              <a href={MARKET_NJ.phoneHref} className="flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-amber-400" /> {MARKET_NJ.phone}
-              </a>
+            <div className="hidden xl:flex items-center">
               <Link href="/schedule-service" className="bg-amber-500 hover:bg-amber-400 text-navy-300 font-semibold text-sm px-5 py-2.5 rounded-lg cta-glow transition-all">Request Service</Link>
             </div>
 
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded={mobileOpen}>
+            <button onClick={() => setMobileOpen(!mobileOpen)} className="xl:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded={mobileOpen}>
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </nav>
 
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`xl:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="bg-navy-300/98 backdrop-blur-lg border-t border-white/5 px-4 py-6 space-y-1 overflow-y-auto max-h-[70vh]">
             <MobileNavSection title="Ventilation Services">
               {primaryServices.map((item) => <MobileLink key={item.href} href={item.href} label={item.label} onClick={() => setMobileOpen(false)} />)}
@@ -106,9 +96,9 @@ export default function Header() {
         </div>
       </header>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden mobile-cta-bar pb-safe">
+      <div className="fixed bottom-0 left-0 right-0 z-50 xl:hidden mobile-cta-bar pb-safe">
         <div className="flex gap-2 px-3 py-3 bg-navy-300/95 backdrop-blur-lg border-t border-white/10">
-          <a href={MARKET_NJ.phoneHref} className="flex-1 flex items-center justify-center gap-2 bg-white/10 rounded-lg py-3 text-white font-medium text-sm"><Phone className="w-4 h-4 text-amber-400" /> Call Joe</a>
+          <a href={MARKET_NJ.phoneHref} className="flex-1 flex items-center justify-center gap-2 bg-white/10 rounded-lg py-3 text-white font-medium text-sm"><Phone className="w-4 h-4 text-amber-400" /> Call TCS</a>
           <Link href="/schedule-service" className="flex-1 flex items-center justify-center bg-amber-500 rounded-lg py-3 text-navy-300 font-bold text-sm cta-glow">Request Service</Link>
         </div>
       </div>

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Kitchen Hood Airflow & Exhaust Fan Repair | NYC & North Jersey',
   },
-  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey. Owner-led by Joe Fugate.',
+  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey. Owner-operated service.',
   alternates: {
     canonical: 'https://choosetrue.com/',
   },

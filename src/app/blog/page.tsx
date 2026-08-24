@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog-data';
 
 export const metadata: Metadata = {
-  title: 'Blog — Commercial Kitchen Equipment Tips & Guides',
+  title: 'Blog: Commercial Kitchen Equipment Tips & Guides',
   description: 'Expert advice on commercial kitchen equipment repair, maintenance, and troubleshooting. Walk-in coolers, ice machines, combi ovens, ventilation, and more.',
 };
 

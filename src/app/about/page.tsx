@@ -3,23 +3,23 @@ import { Building2, ClipboardCheck, Gauge, Settings2 } from 'lucide-react';
 import { CTAButton, PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'About Joe Fugate & TCS',
-  description: 'True Commercial Service is an owner-operated commercial kitchen ventilation service company led by former CaptiveAire Regional Service Manager Joe Fugate.',
+  title: 'About True Commercial Service',
+  description: 'True Commercial Service is an owner-operated commercial kitchen ventilation company led by a former CaptiveAire Regional Service Manager.',
   alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="About TCS" title="Ventilation service led by the person doing the work." description="True Commercial Service is owner-operated by Joe Fugate and focused on commercial kitchen airflow, exhaust fans, makeup air, controls, startup, and manufacturer-assigned field service." showCTA={false} />
+      <PageHero eyebrow="About TCS" title="Ventilation service led by the person doing the work." description="True Commercial Service is owner-operated and focused on commercial kitchen airflow, exhaust fans, makeup air, controls, startup, and manufacturer-assigned field service." showCTA={false} />
 
       <Section>
         <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
           <Reveal>
             <div className="space-y-5 text-slate-300 leading-relaxed">
-              <p>Joe built his commercial ventilation foundation at CaptiveAire, where he served as a Regional Service Manager and worked across service sales, startups, field troubleshooting, and air balancing.</p>
-              <p>He later founded and grew Southwest Air Balance from a one-person operation into a 12-person commercial service company. The business supported high-volume multi-site customers and handled roughly 1,800 annual service calls for its largest grocery account.</p>
-              <p>TCS brings that experience to NYC and North Jersey with a deliberately narrower focus. While the site retains information about broader commercial kitchen equipment capabilities, direct marketing centers on the work Joe knows best: hood capture, exhaust fans, makeup air, VFDs, demand-control ventilation, pollution-control systems, and startup.</p>
+              <p>The owner built a commercial ventilation foundation at CaptiveAire, serving as a Regional Service Manager across service sales, startups, field troubleshooting, and air balancing.</p>
+              <p>That experience later supported the growth of a one-person air-balance operation into a 12-person commercial service company. The business handled high-volume multi-site customers and roughly 1,800 annual service calls for its largest grocery account.</p>
+              <p>TCS brings that experience to NYC and New Jersey with a deliberately narrower focus. Direct marketing centers on hood capture, exhaust fans, makeup air, VFDs, demand-control ventilation, pollution-control systems, and startup.</p>
               <p>Customers speak with the technician reviewing and performing the job. Manufacturers and dealers get a field partner who understands documentation, sequence-of-operation problems, punch lists, and the realities of working in active commercial kitchens.</p>
             </div>
           </Reveal>

@@ -50,7 +50,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
+      <section className="relative pt-10 pb-16 lg:pt-14 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 grid-bg" />
         <div className="absolute top-0 right-0 w-[600px] h-[500px] bg-amber-500/5 rounded-full blur-[120px]" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
@@ -121,7 +121,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
               <p className="flex gap-3"><Gauge className="w-5 h-5 text-amber-400 flex-shrink-0" />Airflow and equipment are evaluated together.</p>
               <p className="flex gap-3"><ClipboardCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Findings and readings are documented clearly.</p>
-              <p className="flex gap-3"><ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Joe Fugate is a former CaptiveAire Regional Service Manager with startup and controls experience.</p>
+              <p className="flex gap-3"><ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />TCS is led by a former CaptiveAire Regional Service Manager with startup and controls experience.</p>
             </div>
           </div>
           <div>
@@ -145,7 +145,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
       <Section>
         <div className="grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-16 max-w-6xl mx-auto">
           <div>
-            <SectionHeading eyebrow="Request Service" title="Describe the symptom—not the solution." description="Send the brand, model, ZIP code, fault code, and rooftop-access information if available. Joe will review it directly." center={false} />
+            <SectionHeading eyebrow="Request Service" title="Describe the symptom, not the solution." description="Send the brand, model, ZIP code, fault code, and rooftop-access information if available. TCS will review it directly." center={false} />
             <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 text-xl font-bold text-amber-400 hover:text-amber-300"><Phone className="w-5 h-5" />{COMPANY.phone}</a>
           </div>
           <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm /></div>

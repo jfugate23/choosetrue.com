@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Makeup Air Unit Repair — NYC & North Jersey',
-  description: 'Commercial kitchen makeup air unit diagnostics and repair across NYC and North Jersey. Fans, motors, belts, heat, freeze protection, airflow, interlocks, VFDs, and controls.',
+  title: 'Commercial Makeup Air Unit Repair: NYC & North Jersey',
+  description: 'Restaurant and commercial kitchen makeup air unit repair across NYC and North Jersey. Fans, motors, belts, heat, freeze protection, airflow, interlocks, VFDs, and controls.',
   alternates: { canonical: '/services/makeup-air-unit-repair' },
 };
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Makeup Air Service',
-  title: 'Makeup air not running—or not keeping up?',
+  title: 'Makeup air not running, or not keeping up?',
   description: 'A failed or misbehaving MAU can leave the kitchen hot, cold, drafty, and deeply negative. TCS diagnoses the unit and its relationship to the exhaust system.',
   serviceType: 'Commercial Kitchen Makeup Air Unit Repair',
   image: '/images/rooftop-makeup-air-unit-install.jpg',

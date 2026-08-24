@@ -11,7 +11,7 @@ import { PROFILES, MARKET_NJ } from '@/lib/data';
 export const metadata: Metadata = {
   metadataBase: new URL('https://choosetrue.com'),
   title: {
-    default: 'True Commercial Service | Kitchen Ventilation — NYC & North Jersey',
+    default: 'True Commercial Service | Kitchen Ventilation: NYC & North Jersey',
     template: '%s | True Commercial Service',
   },
   description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey.',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Parent brand Organization — the NJ/NYC LocalBusiness references this
+// Parent brand Organization: the NJ/NYC LocalBusiness references this
 // via parentOrganization in its own layout, letting Google understand the
 // location is part of the same brand entity.
 const organizationSchema = {
@@ -52,7 +52,7 @@ const organizationSchema = {
     {
       '@type': 'LocalBusiness',
       '@id': MARKET_NJ.schemaId,
-      name: `${MARKET_NJ.name} — NJ & NYC Metro`,
+      name: `${MARKET_NJ.name}: NJ & NYC Metro`,
       telephone: MARKET_NJ.phone,
       url: MARKET_NJ.homeUrl,
       address: {

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Kitchen Hood Airflow & Air Balancing — NYC & North Jersey',
-  description: 'Commercial kitchen hood airflow diagnostics and operational air balancing across NYC and North Jersey. Exhaust and supply readings, capture testing, pressure diagnosis, and written findings.',
+  title: 'Kitchen Hood Airflow & Air Balancing: NYC & North Jersey',
+  description: 'Restaurant kitchen hood airflow diagnostics and operational air balancing across NYC and North Jersey. Exhaust and supply readings, capture testing, pressure diagnosis, and written findings.',
   alternates: { canonical: '/services/kitchen-air-balancing' },
 };
 

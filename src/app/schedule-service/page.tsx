@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ScheduleServicePage() {
   return (
     <>
-      <div className="relative pt-32 lg:pt-40 pb-12">
+      <div className="relative pt-10 lg:pt-14 pb-12">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-amber-500/5 rounded-full blur-3xl" />
           <div className="absolute inset-0 grid-bg" />
@@ -21,7 +21,7 @@ export default function ScheduleServicePage() {
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4 animate-fade-in">Schedule Service</p>
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-fade-up">Tell us what the ventilation system is doing.</h1>
           <p className="mt-4 text-lg text-slate-400 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Send the symptoms, equipment brand, ZIP code, and any fault code. Joe reviews each request directly.
+            Send the symptoms, equipment brand, ZIP code, and any fault code. TCS reviews each request directly.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Kitchen Ventilation VFD, DCV & Controls Repair — NYC & NJ',
+  title: 'Kitchen Ventilation VFD, DCV & Controls Repair: NYC & NJ',
   description: 'Commercial kitchen ventilation controls service across NYC and North Jersey. VFD faults, demand-control ventilation, sensors, starters, relays, interlocks, and sequence troubleshooting.',
   alternates: { canonical: '/services/ventilation-controls' },
 };

@@ -5,7 +5,7 @@ import { COMPANY } from '@/lib/data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Manufacturer-Assigned Kitchen Equipment Service — NYC & NJ',
+  title: 'Manufacturer-Assigned Kitchen Equipment Service: NYC & NJ',
   description: 'Owner-led manufacturer-assigned startup, warranty, punch-list, and field service for commercial kitchen ventilation and equipment across NYC and North Jersey.',
   alternates: { canonical: '/manufacturer-service' },
 };
@@ -23,13 +23,13 @@ export default function ManufacturerServicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
+      <section className="relative pt-10 pb-16 lg:pt-14 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 grid-bg" />
         <div className="absolute top-0 right-0 w-[600px] h-[500px] bg-amber-500/5 rounded-full blur-[120px]" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
           <div className="max-w-4xl">
             <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">For Manufacturers, Dealers &amp; Reps</p>
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">Technical field service in NYC and North Jersey—without the hand-holding.</h1>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">Technical field service in NYC and North Jersey, without the hand-holding.</h1>
             <p className="mt-6 text-lg lg:text-xl text-slate-300 max-w-3xl leading-relaxed">TCS accepts manufacturer-assigned startup, warranty, punch-list, and troubleshooting calls. Work is owner-led, documented clearly, and handled by a technician who understands field coordination.</p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link href="#manufacturer-request" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow transition-all">Send an Assignment <ArrowRight className="w-5 h-5" /></Link>

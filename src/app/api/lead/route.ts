@@ -3,12 +3,12 @@ import { NextRequest, NextResponse } from 'next/server';
 // Lead capture endpoint.
 // Sends an instant email alert via Resend (https://resend.com).
 // Required env (set in Vercel → Project → Settings → Environment Variables):
-//   RESEND_API_KEY   — Resend API key
-//   LEAD_ALERT_EMAIL — where lead alerts are delivered (defaults to service@choosetrue.com)
-//   LEAD_FROM_EMAIL  — verified sender (defaults to leads@choosetrue.com; the
+//   RESEND_API_KEY  : Resend API key
+//   LEAD_ALERT_EMAIL: where lead alerts are delivered (defaults to service@choosetrue.com)
+//   LEAD_FROM_EMAIL : verified sender (defaults to leads@choosetrue.com; the
 //                      choosetrue.com domain must be verified in Resend)
 // If the API key is missing, the lead is still logged to Vercel logs and the
-// form still succeeds — we never drop a lead on the floor because of config.
+// form still succeeds: we never drop a lead on the floor because of config.
 
 export async function POST(request: NextRequest) {
   try {
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    // Always log — visible in Vercel logs as a backstop.
+    // Always log: visible in Vercel logs as a backstop.
     console.log('NEW LEAD:', JSON.stringify(lead));
 
     const apiKey = process.env.RESEND_API_KEY;
@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
           <tr><td><strong>Business</strong></td><td>${escapeHtml(lead.business)}</td></tr>
           <tr><td><strong>Email</strong></td><td>${escapeHtml(lead.email)}</td></tr>
           <tr><td><strong>Source page</strong></td><td>${escapeHtml(lead.source)}</td></tr>
-          <tr><td><strong>Details</strong></td><td><pre style="margin:0">${escapeHtml(lead.meta ? JSON.stringify(lead.meta, null, 2) : '—')}</pre></td></tr>
+          <tr><td><strong>Details</strong></td><td><pre style="margin:0">${escapeHtml(lead.meta ? JSON.stringify(lead.meta, null, 2) : ', ')}</pre></td></tr>
           <tr><td><strong>Received</strong></td><td>${lead.timestamp}</td></tr>
         </table>`;
 
@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
         );
       }
     } else {
-      console.warn('RESEND_API_KEY not set — lead logged but no email alert sent.');
+      console.warn('RESEND_API_KEY not set: lead logged but no email alert sent.');
       return NextResponse.json(
         { error: 'Online requests are temporarily unavailable. Please call (646) 942-9394.' },
         { status: 503 }

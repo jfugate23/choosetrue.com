@@ -22,7 +22,7 @@ export default function WhoWeServePage() {
       <PageHero
         eyebrow="Who We Serve"
         title="Built for operators who can't afford downtime."
-        description="From single-unit restaurants to multi-site institutional operations — we understand the urgency, the margins, and the stakes."
+        description="From single-unit restaurants to multi-site institutional operations: we understand the urgency, the margins, and the stakes."
       />
 
       <Section>

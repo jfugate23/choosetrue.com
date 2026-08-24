@@ -79,7 +79,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-500/3 rounded-full blur-[100px]" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-36 lg:pt-44 pb-20 lg:pb-24">
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-12 lg:pt-16 pb-20 lg:pb-24">
           <div className="grid lg:grid-cols-[1.15fr_.85fr] gap-12 lg:gap-20 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6">
@@ -88,8 +88,8 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight max-w-4xl">
-                Kitchen hood airflow problems—
-                <span className="text-gradient">diagnosed and fixed.</span>
+                Kitchen hood airflow problems.
+                <span className="block text-gradient">Diagnosed and fixed.</span>
               </h1>
 
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
@@ -103,7 +103,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
                 </Link>
                 <a href={market.phoneHref} className="inline-flex items-center justify-center gap-2 text-slate-200 hover:text-white transition-colors font-medium px-2 py-3">
                   <Phone className="w-5 h-5 text-amber-400" />
-                  Call Joe: {market.phone}
+                  Call TCS: {market.phone}
                 </a>
               </div>
 
@@ -190,7 +190,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               {[
                 { icon: <Gauge className="w-5 h-5" />, title: 'Airflow readings', text: 'Exhaust, supply, pressure, and capture conditions are checked against the actual complaint.' },
                 { icon: <Wrench className="w-5 h-5" />, title: 'Mechanical and electrical diagnosis', text: 'Fans, motors, belts, bearings, starters, disconnects, VFDs, sensors, and interlocks are checked as one system.' },
-                { icon: <ClipboardCheck className="w-5 h-5" />, title: 'Clear findings', text: 'You get the measured condition, work performed, and practical next steps—not a vague “it should be better.”' },
+                { icon: <ClipboardCheck className="w-5 h-5" />, title: 'Clear findings', text: 'You get the measured condition, work performed, and practical next steps, not a vague “it should be better.”' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
                   <div className="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center text-amber-400 flex-shrink-0">{item.icon}</div>
@@ -212,7 +212,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             {
               icon: <Wind className="w-6 h-6" />,
               title: 'CaptiveAire leadership experience',
-              text: 'TCS is led by Joe Fugate, a former CaptiveAire Regional Service Manager with hands-on field and air-balance experience.',
+              text: 'TCS is led by a former CaptiveAire Regional Service Manager with hands-on field and air-balance experience.',
             },
             {
               icon: <Settings2 className="w-6 h-6" />,
@@ -288,7 +288,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
           <div>
             <SectionHeading
               eyebrow="Request Service"
-              title="Tell Joe what the kitchen is doing."
+              title="Tell us what the kitchen is doing."
               description="Include the equipment brand, symptoms, ZIP code, fault code, and rooftop-access details if you have them. For a down exhaust fan or active smoke-capture problem, call directly."
               center={false}
             />

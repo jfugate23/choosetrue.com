@@ -73,7 +73,7 @@ export default function LocationPage({ params }: Props) {
       <Section>
         <div className="grid lg:grid-cols-[.8fr_1.2fr] gap-12 max-w-6xl mx-auto">
           <div>
-            <SectionHeading eyebrow="Request Local Service" title={`Tell Joe what is happening in ${location.city}.`} description="Include the manufacturer, model, fault code, ZIP code, and rooftop-access details when available." center={false} />
+            <SectionHeading eyebrow="Request Local Service" title={`Tell us what is happening in ${location.city}.`} description="Include the manufacturer, model, fault code, ZIP code, and rooftop-access details when available." center={false} />
             <a href={COMPANY.phoneHref} className="text-xl font-bold text-amber-400 hover:text-amber-300">{COMPANY.phone}</a>
           </div>
           <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm /></div>

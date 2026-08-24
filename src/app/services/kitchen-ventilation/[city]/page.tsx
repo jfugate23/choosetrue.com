@@ -44,7 +44,7 @@ export default function VentilationCityPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
+      <section className="relative pt-10 pb-16 lg:pt-14 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 grid-bg" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">{city.city}, {city.state} • {city.region}</p>

@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Ventilation Service — NYC & North Jersey',
-  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air service, VFD and DCV controls, and pollution-control troubleshooting across NYC and North Jersey.',
+  title: 'Commercial Kitchen Ventilation Service: NYC & North Jersey',
+  description: 'Restaurant and commercial kitchen ventilation repair across NYC and North Jersey, including hood airflow, exhaust fans, makeup air, VFD and DCV controls, and pollution-control troubleshooting.',
   alternates: { canonical: '/services/kitchen-ventilation' },
 };
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Ventilation',
   title: 'One technician for the hood, fan, makeup air, and controls.',
-  description: 'TCS specializes in finding how the pieces of a commercial kitchen ventilation system interact—because the symptom at the hood often starts on the roof or inside the control panel.',
+  description: 'TCS specializes in finding how the pieces of a commercial kitchen ventilation system interact, because the symptom at the hood often starts on the roof or inside the control panel.',
   serviceType: 'Commercial Kitchen Ventilation Diagnostics and Repair',
   image: '/images/full-kitchen-ventilation-install.jpg',
   imageAlt: 'Complete commercial kitchen hood and ventilation system',

@@ -115,7 +115,7 @@ export function PageHero({ eyebrow, title, description, showCTA = true }: {
   showCTA?: boolean;
 }) {
   return (
-    <div className="relative pt-32 lg:pt-40 pb-20 lg:pb-28">
+    <div className="relative pt-10 lg:pt-14 pb-16 lg:pb-20">
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-amber-500/5 rounded-full blur-3xl" />
@@ -190,7 +190,7 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
 
       form.reset();
       setStatus('success');
-      setMessage('Thanks. Your request was sent to TCS. Joe will follow up directly.');
+      setMessage('Thanks. Your request was sent to TCS. We will follow up directly.');
     } catch (error) {
       setStatus('error');
       setMessage(error instanceof Error ? error.message : 'The form could not be sent. Please call (646) 942-9394.');
