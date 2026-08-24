@@ -23,11 +23,41 @@ export async function POST(request: NextRequest) {
 
     const name = safeText(body.name, 100);
     const business = safeText(body.business, 150);
-    const phone = safeText(body.phone, 50);
+    const phoneInput = safeText(body.phone, 50);
+    const phone = normalizeUsPhone(phoneInput);
     const email = safeText(body.email, 150);
+    const leadMeta = meta && typeof meta === 'object' && !Array.isArray(meta)
+      ? meta as Record<string, unknown>
+      : null;
+    const zip = safeText(leadMeta?.zip, 20);
+    const serviceType = safeText(leadMeta?.serviceType, 50);
+    const urgency = safeText(leadMeta?.urgency, 50);
+    const manufacturer = safeText(leadMeta?.manufacturer, 100);
+    const details = safeText(leadMeta?.details, 2000);
 
-    if (!name || !business || !phone) {
+    if (name.length < 2 || business.length < 2 || !phoneInput) {
       return NextResponse.json({ error: 'Name, business, and phone are required.' }, { status: 400 });
+    }
+    if (!phone) {
+      return NextResponse.json({ error: 'Enter a valid 10-digit US phone number.' }, { status: 400 });
+    }
+    if (email && !isValidEmail(email)) {
+      return NextResponse.json({ error: 'Enter a valid email address or leave the email field blank.' }, { status: 400 });
+    }
+    if (!/^\d{5}(?:-\d{4})?$/.test(zip)) {
+      return NextResponse.json({ error: 'Enter a valid 5-digit service ZIP code.' }, { status: 400 });
+    }
+    if (!Object.prototype.hasOwnProperty.call(SERVICE_LABELS, serviceType)) {
+      return NextResponse.json({ error: 'Select a valid primary issue.' }, { status: 400 });
+    }
+    if (!Object.prototype.hasOwnProperty.call(URGENCY_LABELS, urgency)) {
+      return NextResponse.json({ error: 'Select a valid urgency.' }, { status: 400 });
+    }
+    if (details.length < 10) {
+      return NextResponse.json({ error: 'Please provide at least 10 characters describing the problem.' }, { status: 400 });
+    }
+    if (leadMeta?.commercial !== true) {
+      return NextResponse.json({ error: 'Confirm that this request is for a commercial kitchen.' }, { status: 400 });
     }
 
     const lead = {
@@ -36,7 +66,14 @@ export async function POST(request: NextRequest) {
       business: business || '',
       phone,
       email: email || '',
-      meta: meta && typeof meta === 'object' ? meta : null,
+      meta: {
+        zip,
+        serviceType,
+        urgency,
+        manufacturer,
+        details,
+        commercial: true,
+      },
       timestamp: new Date().toISOString(),
     };
 
@@ -48,12 +85,6 @@ export async function POST(request: NextRequest) {
       const to = process.env.LEAD_ALERT_EMAIL || 'service@choosetrue.com';
       const from = process.env.LEAD_FROM_EMAIL || 'True Commercial Service <service@choosetrue.com>';
 
-      const leadMeta = lead.meta as Record<string, unknown> | null;
-      const zip = safeText(leadMeta?.zip, 20);
-      const serviceType = safeText(leadMeta?.serviceType, 50);
-      const urgency = safeText(leadMeta?.urgency, 50);
-      const manufacturer = safeText(leadMeta?.manufacturer, 100);
-      const details = safeText(leadMeta?.details, 2000);
       const serviceLabel = SERVICE_LABELS[serviceType] || serviceType || 'Not provided';
       const urgencyLabel = URGENCY_LABELS[urgency] || urgency || 'Not provided';
       const receivedAt = new Intl.DateTimeFormat('en-US', {
@@ -139,6 +170,27 @@ export async function POST(request: NextRequest) {
 
 function safeText(value: unknown, maxLength: number): string {
   return typeof value === 'string' ? value.trim().slice(0, maxLength) : '';
+}
+
+function normalizeUsPhone(value: string): string | null {
+  const extensionMatch = value.match(/\s*(?:ext\.?|x)\s*(\d{1,6})\s*$/i);
+  const extension = extensionMatch?.[1] || '';
+  const mainNumber = extensionMatch && extensionMatch.index !== undefined
+    ? value.slice(0, extensionMatch.index)
+    : value;
+
+  if (!/^[+\d\s().-]+$/.test(mainNumber)) return null;
+
+  let digits = mainNumber.replace(/\D/g, '');
+  if (digits.length === 11 && digits.startsWith('1')) digits = digits.slice(1);
+  if (!/^[2-9]\d{2}[2-9]\d{6}$/.test(digits)) return null;
+
+  const formatted = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  return extension ? `${formatted} x${extension}` : formatted;
+}
+
+function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
 }
 
 function escapeHtml(value: string): string {
