@@ -10,7 +10,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Fix equipment. Build technology. Grow with us."
-        description="True Commercial Service is hiring experienced technicians and hungry operators. We're building something different — and we need people who want to be part of it."
+        description="True Commercial Service is hiring experienced technicians and hungry operators. We're building something different: and we need people who want to be part of it."
         showCTA={false}
       />
 
@@ -22,8 +22,8 @@ export default function CareersPage() {
         <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
             { icon: <Wrench className="w-6 h-6" />, title: 'Real Training', desc: 'Factory certifications, AI-assisted diagnostics, and a knowledge base that actually helps you in the field.' },
-            { icon: <Cpu className="w-6 h-6" />, title: 'Tech-Forward', desc: 'You\'ll use modern tools — not paper tickets and spreadsheets. Tradecraft AI makes your job easier, not harder.' },
-            { icon: <TrendingUp className="w-6 h-6" />, title: 'Growth Path', desc: 'We\'re expanding to multiple markets. Early team members grow with the company — that\'s by design, not accident.' },
+            { icon: <Cpu className="w-6 h-6" />, title: 'Tech-Forward', desc: 'You\'ll use modern tools: not paper tickets and spreadsheets. Tradecraft AI makes your job easier, not harder.' },
+            { icon: <TrendingUp className="w-6 h-6" />, title: 'Growth Path', desc: 'We\'re expanding to multiple markets. Early team members grow with the company: that\'s by design, not accident.' },
           ].map((item, i) => (
             <Reveal key={i} delay={i * 100}>
               <div className="glass-card rounded-xl p-6 text-center">

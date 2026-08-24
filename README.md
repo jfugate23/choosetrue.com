@@ -1,6 +1,6 @@
 # choosetrue.com — True Commercial Service LLC
 
-Marketing website for True Commercial Service, a tech-forward commercial kitchen equipment repair company.
+Marketing website for True Commercial Service, an owner-operated commercial kitchen ventilation service company serving NYC and North Jersey.
 
 ## Tech Stack
 
@@ -10,29 +10,22 @@ Marketing website for True Commercial Service, a tech-forward commercial kitchen
 - **TypeScript**: Full type safety
 - **Deployment**: Vercel
 
-## Pages (26 total)
+## Primary conversion routes
 
 | Route | Purpose |
 |-------|---------|
-| `/` | Homepage — hero, services grid, Tradecraft AI differentiator, verticals, stats, testimonials, contact |
-| `/services` | Services index with all 6 service categories |
-| `/services/[slug]` | Individual service pages (6) — cooking, refrigeration, HVAC, beverage, espresso, PM |
-| `/locations` | Locations index with all 3 markets |
-| `/locations/[slug]` | Individual location SEO pages (3) — OKC, NJ, Atlanta |
-| `/who-we-serve` | Verticals index |
-| `/who-we-serve/[slug]` | Individual vertical pages (4) — restaurants, grocery, schools, hotels |
-| `/about` | Company story + Tradecraft AI platform |
-| `/careers` | Job interest form with role/location selectors |
-| `/contact` | Phone numbers, email, service request form |
-| `/schedule-service` | Primary conversion page — service request form |
+| `/` | Ventilation-first homepage and qualified service intake |
+| `/services/kitchen-air-balancing` | Hood airflow diagnostics and operational balancing |
+| `/services/exhaust-fan-repair` | Commercial kitchen exhaust fan repair |
+| `/services/makeup-air-unit-repair` | Makeup air unit diagnostics and repair |
+| `/services/ventilation-controls` | VFD, DCV, sensor, and interlock troubleshooting |
+| `/services/pollution-control` | ESP and pollution-control operating issues |
+| `/manufacturer-service` | Manufacturer-assigned startup, warranty, and field service |
+| `/schedule-service` | Qualified commercial ventilation service request form |
 
-## SEO
+## Lead delivery and Google Ads
 
-- Each location page targets `[city] commercial kitchen equipment repair`
-- Each service page targets `[service type] [city]`
-- Auto-generated `sitemap.xml` and `robots.txt`
-- OpenGraph metadata on all pages
-- Semantic HTML throughout
+Copy `.env.example` values into Vercel Project Settings → Environment Variables before deploying. `RESEND_API_KEY` is required for the form to report success; without it, visitors are instructed to call so a lead is not silently lost. Google Ads variables are optional until conversion actions are created.
 
 ## Deployment to Vercel
 
@@ -70,4 +63,5 @@ npm run build  # Production build
 - Mobile-first with sticky bottom CTA bar (call + schedule)
 - Phone number and Schedule Service always within one tap
 - Scroll-reveal animations on all content sections
-- Tradecraft AI platform showcased as key differentiator (hero + about)
+- Ventilation-first information architecture with explicit scope qualification
+- Owner-led experience and manufacturer-assignment pathway

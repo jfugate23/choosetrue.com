@@ -3,33 +3,44 @@ import { NextRequest, NextResponse } from 'next/server';
 // Lead capture endpoint.
 // Sends an instant email alert via Resend (https://resend.com).
 // Required env (set in Vercel → Project → Settings → Environment Variables):
-//   RESEND_API_KEY   — Resend API key
-//   LEAD_ALERT_EMAIL — where lead alerts are delivered (defaults to service@choosetrue.com)
-//   LEAD_FROM_EMAIL  — verified sender (defaults to leads@choosetrue.com; the
+//   RESEND_API_KEY  : Resend API key
+//   LEAD_ALERT_EMAIL: where lead alerts are delivered (defaults to service@choosetrue.com)
+//   LEAD_FROM_EMAIL : verified sender (defaults to leads@choosetrue.com; the
 //                      choosetrue.com domain must be verified in Resend)
 // If the API key is missing, the lead is still logged to Vercel logs and the
-// form still succeeds — we never drop a lead on the floor because of config.
+// form still succeeds: we never drop a lead on the floor because of config.
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { source, name, business, phone, email, meta } = body;
+    const { source, meta } = body;
 
-    if (!name || !phone) {
-      return NextResponse.json({ error: 'Name and phone required' }, { status: 400 });
+    // Honeypot: bots commonly fill this hidden field. Return success so they
+    // do not retry, but do not log or send the submission.
+    if (body.website) {
+      return NextResponse.json({ success: true });
+    }
+
+    const name = safeText(body.name, 100);
+    const business = safeText(body.business, 150);
+    const phone = safeText(body.phone, 50);
+    const email = safeText(body.email, 150);
+
+    if (!name || !business || !phone) {
+      return NextResponse.json({ error: 'Name, business, and phone are required.' }, { status: 400 });
     }
 
     const lead = {
-      source: source || 'website',
+      source: safeText(source, 200) || 'website',
       name,
       business: business || '',
       phone,
       email: email || '',
-      meta: meta || null,
+      meta: meta && typeof meta === 'object' ? meta : null,
       timestamp: new Date().toISOString(),
     };
 
-    // Always log — visible in Vercel logs as a backstop.
+    // Always log: visible in Vercel logs as a backstop.
     console.log('NEW LEAD:', JSON.stringify(lead));
 
     const apiKey = process.env.RESEND_API_KEY;
@@ -45,7 +56,7 @@ export async function POST(request: NextRequest) {
           <tr><td><strong>Business</strong></td><td>${escapeHtml(lead.business)}</td></tr>
           <tr><td><strong>Email</strong></td><td>${escapeHtml(lead.email)}</td></tr>
           <tr><td><strong>Source page</strong></td><td>${escapeHtml(lead.source)}</td></tr>
-          <tr><td><strong>Details</strong></td><td><pre style="margin:0">${escapeHtml(lead.meta ? JSON.stringify(lead.meta, null, 2) : '—')}</pre></td></tr>
+          <tr><td><strong>Details</strong></td><td><pre style="margin:0">${escapeHtml(lead.meta ? JSON.stringify(lead.meta, null, 2) : ', ')}</pre></td></tr>
           <tr><td><strong>Received</strong></td><td>${lead.timestamp}</td></tr>
         </table>`;
 
@@ -65,11 +76,18 @@ export async function POST(request: NextRequest) {
       });
 
       if (!res.ok) {
-        // Don't fail the form over a mail hiccup — the lead is in the logs.
         console.error('LEAD EMAIL FAILED:', res.status, await res.text());
+        return NextResponse.json(
+          { error: 'The request could not be delivered. Please call (646) 942-9394.' },
+          { status: 503 }
+        );
       }
     } else {
-      console.warn('RESEND_API_KEY not set — lead logged but no email alert sent.');
+      console.warn('RESEND_API_KEY not set: lead logged but no email alert sent.');
+      return NextResponse.json(
+        { error: 'Online requests are temporarily unavailable. Please call (646) 942-9394.' },
+        { status: 503 }
+      );
     }
 
     return NextResponse.json({ success: true });
@@ -77,6 +95,10 @@ export async function POST(request: NextRequest) {
     const message = err instanceof Error ? err.message : 'Internal server error';
     return NextResponse.json({ error: message }, { status: 500 });
   }
+}
+
+function safeText(value: unknown, maxLength: number): string {
+  return typeof value === 'string' ? value.trim().slice(0, maxLength) : '';
 }
 
 function escapeHtml(value: string): string {

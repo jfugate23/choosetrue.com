@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -116,10 +117,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       )}
 
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
-        <h3 className="text-lg font-semibold text-white mb-2">Need help with your equipment?</h3>
-        <p className="text-gray-400 text-sm mb-4">True Commercial Service provides 24/7 emergency repair and preventive maintenance across Northern NJ and the NYC metro.</p>
+        <h3 className="text-lg font-semibold text-white mb-2">Have a kitchen ventilation problem?</h3>
+        <p className="text-gray-400 text-sm mb-4">TCS provides owner-led hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.</p>
         <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
-          Schedule Service
+          Request Ventilation Service
         </Link>
       </div>
     </div>

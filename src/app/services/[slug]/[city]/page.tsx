@@ -27,28 +27,28 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
     metaDescription: (city) =>
       `Commercial refrigeration repair in ${city.city}, ${city.state}. Walk-in coolers, freezers, reach-ins, prep tables, and ice machines. 24/7 emergency response across ${city.region}.`,
     intro:
-      'When refrigeration fails, your inventory is on the clock. We prioritize refrigeration calls because every hour down costs you product — and we stock the common parts to fix most failures in one visit.',
+      'When refrigeration fails, your inventory is on the clock. We prioritize refrigeration calls because every hour down costs you product: and we stock the common parts to fix most failures in one visit.',
     serviceTypes: ['Walk-In Cooler Repair', 'Walk-In Freezer Repair', 'Reach-In Refrigerator Repair', 'Ice Machine Repair', 'Prep Table Repair'],
     cards: [
       {
         icon: <Snowflake className="w-5 h-5" />,
         title: 'Walk-In Cooler & Freezer Repair',
-        description: 'Compressor failures, refrigerant leaks, iced-up evaporators, door gasket and heater problems. We diagnose with gauges and meters — not guesswork — and protect your inventory first.',
+        description: 'Compressor failures, refrigerant leaks, iced-up evaporators, door gasket and heater problems. We diagnose with gauges and meters: not guesswork: and protect your inventory first.',
       },
       {
         icon: <Thermometer className="w-5 h-5" />,
         title: 'Reach-Ins, Prep Tables & Display Cases',
-        description: 'True, Traulsen, Turbo Air, Beverage-Air and every other major brand. Temperature complaints, condensation, failed fan motors, and controls — fixed right the first time.',
+        description: 'True, Traulsen, Turbo Air, Beverage-Air and every other major brand. Temperature complaints, condensation, failed fan motors, and controls: fixed right the first time.',
       },
       {
         icon: <Zap className="w-5 h-5" />,
         title: 'Ice Machine Service',
-        description: 'Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic. Low production, poor ice quality, scale buildup, and water system faults — plus the descaling and sanitizing that keeps machines healthy.',
+        description: 'Hoshizaki, Manitowoc, Scotsman, Ice-O-Matic. Low production, poor ice quality, scale buildup, and water system faults: plus the descaling and sanitizing that keeps machines healthy.',
       },
       {
         icon: <Clock className="w-5 h-5" />,
         title: '24/7 Emergency Response',
-        description: 'A walk-in failing overnight is an emergency, not a next-week appointment. Call any hour — we dispatch fast and help you triage product while a tech is en route.',
+        description: 'A walk-in failing overnight is an emergency, not a next-week appointment. Call any hour: we dispatch fast and help you triage product while a tech is en route.',
       },
     ],
     signs: [
@@ -65,11 +65,11 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
     faqs: (city) => [
       {
         q: `Who repairs walk-in coolers in ${city.city}?`,
-        a: `True Commercial Service repairs walk-in coolers and freezers across ${city.city} and ${city.region} — compressors, evaporators, refrigerant leaks, gaskets, and controls, with 24/7 emergency dispatch at (646) 942-9394.`,
+        a: `True Commercial Service repairs walk-in coolers and freezers across ${city.city} and ${city.region}: compressors, evaporators, refrigerant leaks, gaskets, and controls, with 24/7 emergency dispatch at (646) 942-9394.`,
       },
       {
         q: `Do you offer emergency refrigeration repair in ${city.city}?`,
-        a: `Yes. Refrigeration emergencies get priority dispatch around the clock. Call (646) 942-9394 any hour — we'll help you protect inventory while a technician heads your way.`,
+        a: `Yes. Refrigeration emergencies get priority dispatch around the clock. Call (646) 942-9394 any hour: we'll help you protect inventory while a technician heads your way.`,
       },
       {
         q: 'What refrigeration brands do you service?',
@@ -88,7 +88,7 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
       {
         icon: <Flame className="w-5 h-5" />,
         title: 'Ovens & Combi Ovens',
-        description: 'Rational, Alto-Shaam, Blodgett, Vulcan and more. Error codes, ignition failures, temperature drift, steam system faults, and door/gasket problems — diagnosed with factory procedures.',
+        description: 'Rational, Alto-Shaam, Blodgett, Vulcan and more. Error codes, ignition failures, temperature drift, steam system faults, and door/gasket problems: diagnosed with factory procedures.',
       },
       {
         icon: <Zap className="w-5 h-5" />,
@@ -120,7 +120,7 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
     faqs: (city) => [
       {
         q: `Who repairs commercial ovens and fryers in ${city.city}?`,
-        a: `True Commercial Service repairs commercial cooking equipment across ${city.city} and ${city.region} — ovens, combi ovens, fryers, ranges, griddles, charbroilers, and steamers. Call (646) 942-9394 for same-day service.`,
+        a: `True Commercial Service repairs commercial cooking equipment across ${city.city} and ${city.region}: ovens, combi ovens, fryers, ranges, griddles, charbroilers, and steamers. Call (646) 942-9394 for same-day service.`,
       },
       {
         q: 'Do you service Rational combi ovens?',
@@ -128,7 +128,7 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
       },
       {
         q: `How fast can you get to my ${city.city} kitchen?`,
-        a: `We target 4-hour emergency response across ${city.region}, 24/7. Equipment-down calls during service hours get priority dispatch — call (646) 942-9394.`,
+        a: `We target 4-hour emergency response across ${city.region}, 24/7. Equipment-down calls during service hours get priority dispatch: call (646) 942-9394.`,
       },
     ],
   },
@@ -137,13 +137,13 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
     metaDescription: (city) =>
       `Commercial HVAC repair in ${city.city}, ${city.state}. Rooftop units, split systems, makeup air units, and kitchen ventilation. Repairs and preventive maintenance plans across ${city.region}.`,
     intro:
-      'Restaurant HVAC works harder than HVAC anywhere else — massive kitchen heat, grease-laden air, and zero tolerance for a hot dining room. We repair and maintain the whole system, roof to dining room.',
+      'Restaurant HVAC works harder than HVAC anywhere else: massive kitchen heat, grease-laden air, and zero tolerance for a hot dining room. We repair and maintain the whole system, roof to dining room.',
     serviceTypes: ['Rooftop Unit Repair', 'Commercial HVAC Repair', 'Makeup Air Unit Repair', 'HVAC Preventive Maintenance'],
     cards: [
       {
         icon: <Wind className="w-5 h-5" />,
         title: 'Rooftop Units (RTUs)',
-        description: 'Carrier, Trane, Lennox, Daikin, Bard. Compressor and fan failures, refrigerant leaks, economizer faults, and controls — repaired by EPA 608 certified techs.',
+        description: 'Carrier, Trane, Lennox, Daikin, Bard. Compressor and fan failures, refrigerant leaks, economizer faults, and controls: repaired by EPA 608 certified techs.',
       },
       {
         icon: <Thermometer className="w-5 h-5" />,
@@ -158,7 +158,7 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
       {
         icon: <ShieldCheck className="w-5 h-5" />,
         title: 'HVAC Preventive Maintenance Plans',
-        description: 'Seasonal tune-ups, coil cleaning, belt and filter changes, and refrigerant checks on a schedule — so July does not take your dining room down.',
+        description: 'Seasonal tune-ups, coil cleaning, belt and filter changes, and refrigerant checks on a schedule: so July does not take your dining room down.',
       },
     ],
     signs: [
@@ -170,7 +170,7 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
       'Ice on refrigerant lines',
       'Makeup air unit not running',
       'Doors slamming or hard to open',
-      'No PM plan — filters and coils never serviced',
+      'No PM plan: filters and coils never serviced',
     ],
     faqs: (city) => [
       {
@@ -179,20 +179,20 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
       },
       {
         q: 'Do you offer HVAC preventive maintenance contracts?',
-        a: 'Yes. We build seasonal PM plans around your equipment — coil cleaning, belts, filters, refrigerant checks, and heat exchanger inspection — priced per unit with documentation after every visit.',
+        a: 'Yes. We build seasonal PM plans around your equipment: coil cleaning, belts, filters, refrigerant checks, and heat exchanger inspection: priced per unit with documentation after every visit.',
       },
       {
         q: `Why is my ${city.city} restaurant kitchen so hot?`,
-        a: 'Usually it is not the AC — it is the air balance. A failed makeup air unit or unbalanced exhaust pulls conditioned air out of the building. We diagnose the whole system: HVAC, exhaust, and makeup air together.',
+        a: 'Usually it is not the AC: it is the air balance. A failed makeup air unit or unbalanced exhaust pulls conditioned air out of the building. We diagnose the whole system: HVAC, exhaust, and makeup air together.',
       },
     ],
   },
 };
 
 export function generateStaticParams() {
-  return Object.keys(SERVICE_CITY_CONTENT).flatMap((slug) =>
-    SERVICE_CITIES.map((c) => ({ slug, city: c.slug }))
-  );
+  // These legacy broad-service city pages remain available for old links, but
+  // they are noindexed and no longer pre-generated or included in the sitemap.
+  return [];
 }
 
 export function generateMetadata({ params }: Props): Metadata {
@@ -205,6 +205,7 @@ export function generateMetadata({ params }: Props): Metadata {
     alternates: {
       canonical: `https://choosetrue.com/services/${params.slug}/${city.slug}`,
     },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -327,7 +328,7 @@ export default function ServiceCityPage({ params }: Props) {
 
       {/* FAQs */}
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="FAQ" title={`${content.label} questions — answered`} />
+        <SectionHeading eyebrow="FAQ" title={`${content.label} questions: answered`} />
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, i) => (
             <Reveal key={faq.q} delay={i * 80}>

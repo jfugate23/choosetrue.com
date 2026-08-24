@@ -1,75 +1,58 @@
-import { Metadata } from 'next';
-import { COMPANY } from '@/lib/data';
-import { PageHero, Section, SectionHeading, Reveal, CTAButton } from '@/components/UI';
-import { Cpu, Users, Target, Zap } from 'lucide-react';
+import type { Metadata } from 'next';
+import { Building2, ClipboardCheck, Gauge, Settings2 } from 'lucide-react';
+import { CTAButton, PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'True Commercial Service: tech-forward commercial kitchen equipment repair built by operators, for operators.',
+  title: 'About True Commercial Service',
+  description: 'True Commercial Service is an owner-operated commercial kitchen ventilation company serving New York City and New Jersey.',
+  alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero
-        eyebrow="About Us"
-        title="We built the service company we couldn't find."
-        description="True Commercial Service exists because the commercial kitchen repair industry is broken. Slow response times, undertrained techs, zero transparency, and pricing that feels made up. We're fixing all of it."
-        showCTA={false}
-      />
+      <PageHero eyebrow="About TCS" title="Ventilation service led by the person doing the work." description="True Commercial Service is owner-operated and focused on commercial kitchen airflow, exhaust fans, makeup air, controls, startup, and manufacturer-assigned field service." showCTA={false} />
 
       <Section>
-        <div className="max-w-3xl mx-auto space-y-8">
+        <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
           <Reveal>
-            <div className="space-y-4 text-slate-300 leading-relaxed">
-              <p>
-                We didn't start True Commercial because we love HVAC. We started it because we've been on the other side of the phone — waiting for a tech who never shows, getting a bill that doesn't match the quote, and watching revenue walk out the door while equipment sits broken.
-              </p>
-              <p>
-                True Commercial Service is an operator-built, tech-forward commercial kitchen equipment repair company. We combine factory-trained technicians with our own AI-powered platform (Tradecraft AI) to deliver faster diagnostics, higher first-time fix rates, and full transparency on every service call.
-              </p>
-              <p>
-                We're not a PE roll-up. We're not a franchise. We're a small team that knows how to fix equipment and build software — and we think that combination is exactly what this industry needs.
-              </p>
+            <div className="space-y-5 text-slate-300 leading-relaxed">
+              <p>True Commercial Service is built around a focused scope: commercial kitchen hood capture, exhaust fans, makeup air, VFDs, demand-control ventilation, pollution-control systems, and startup support.</p>
+              <p>The service process starts with the operating complaint, then follows the complete mechanical, electrical, controls, and airflow sequence until the actual cause is identified.</p>
+              <p>TCS keeps communication direct and documents the measured condition, work performed, remaining deficiencies, and practical next steps.</p>
+              <p>Manufacturers and dealers get a field-service partner prepared to work from approved procedures, coordinate with site contacts, complete punch lists, and provide clear closeout information.</p>
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className="glass-card rounded-2xl p-8">
+              <h2 className="text-xl font-semibold mb-5">Current TCS scope</h2>
+              <ul className="space-y-3 text-sm text-slate-300">
+                {['Commercial kitchen ventilation diagnostics', 'Exhaust fan and makeup air repair', 'VFD, DCV, sensor, and control troubleshooting', 'Operational airflow readings and capture testing', 'Manufacturer-assigned startup, warranty, and field service'].map((item) => <li key={item} className="flex items-start gap-3"><span className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />{item}</li>)}
+              </ul>
+              <p className="text-xs text-slate-500 mt-6 pt-5 border-t border-white/10">No hood/duct cleaning, fire-suppression service, or residential range hoods.</p>
             </div>
           </Reveal>
         </div>
       </Section>
 
-      <Section id="tradecraft">
-        <SectionHeading
-          eyebrow="Our Platform"
-          title="Tradecraft AI"
-          description="The technology backbone that makes True different."
-        />
-        <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <Section className="bg-white/[0.02]">
+        <SectionHeading eyebrow="Service Method" title="A practical path from symptom to cause." />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { icon: <Cpu className="w-6 h-6" />, title: 'AI Diagnostics', desc: 'Error codes, symptoms, and equipment history analyzed before the tech arrives. Less guesswork, faster fixes.' },
-            { icon: <Zap className="w-6 h-6" />, title: 'Real-Time Tracking', desc: 'Know where your tech is, what they found, and what happens next. No more calling to check on status.' },
-            { icon: <Target className="w-6 h-6" />, title: 'Equipment Intelligence', desc: 'QR-tagged equipment with full service history. Every piece of equipment in your kitchen, documented and tracked.' },
-            { icon: <Users className="w-6 h-6" />, title: 'Owner Dashboard', desc: 'Multi-location visibility into equipment health, service costs, and upcoming maintenance across all your sites.' },
-          ].map((item, i) => (
-            <Reveal key={i} delay={i * 80}>
-              <div className="glass-card rounded-xl p-6">
-                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 text-amber-400">
-                  {item.icon}
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
-              </div>
-            </Reveal>
-          ))}
+            { icon: <Gauge className="w-6 h-6" />, title: 'Airflow', text: 'Hood capture, exhaust and supply readings, pressure relationships, and operational balancing.' },
+            { icon: <Settings2 className="w-6 h-6" />, title: 'Controls', text: 'VFDs, DCV, sensors, interlocks, starters, relays, and complete operating sequences.' },
+            { icon: <ClipboardCheck className="w-6 h-6" />, title: 'Startup', text: 'Sequence verification, punch lists, equipment checkout, coordination, and documentation.' },
+            { icon: <Building2 className="w-6 h-6" />, title: 'Field Service', text: 'Commercial-kitchen service structured around access, uptime, clear findings, and practical closeout.' },
+          ].map((item, index) => <Reveal key={item.title} delay={index * 70}><div className="glass-card rounded-xl p-6 h-full"><div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 mb-4">{item.icon}</div><h2 className="font-semibold mb-2">{item.title}</h2><p className="text-sm text-slate-400 leading-relaxed">{item.text}</p></div></Reveal>)}
         </div>
       </Section>
 
       <Section>
-        <div className="text-center">
-          <Reveal>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to see the difference?</h2>
-            <p className="text-lg text-slate-400 mb-8">One call. That's all it takes.</p>
-            <CTAButton large />
-          </Reveal>
-        </div>
+        <Reveal className="text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Have a ventilation problem?</h2>
+          <p className="text-lg text-slate-400 mb-8">Describe the symptom and let TCS find the cause.</p>
+          <CTAButton large>Request Service</CTAButton>
+        </Reveal>
       </Section>
     </>
   );

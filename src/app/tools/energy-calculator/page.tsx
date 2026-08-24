@@ -123,7 +123,7 @@ export default function EnergyCalculatorPage() {
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mt-6 mb-3">Free Tool</p>
           <h1 className="text-3xl lg:text-4xl font-bold leading-tight">Kitchen Ventilation Energy Waste Calculator</h1>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl">
-            Find out how much money your kitchen is losing through unbalanced ventilation. Enter your hood size and utility rates — we&apos;ll show you the annual waste.
+            Find out how much money your kitchen is losing through unbalanced ventilation. Enter your hood size and utility rates: we&apos;ll show you the annual waste.
           </p>
         </div>
 
@@ -207,7 +207,7 @@ export default function EnergyCalculatorPage() {
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-sm font-semibold text-amber-400 mb-3">How This Works</h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Your exhaust hood pulls air out of the kitchen. The makeup air unit (MAU) is supposed to replace it with tempered air. When the MAU can&apos;t keep up, the building goes under negative pressure and sucks unconditioned outside air in through every door, crack, and gap. Your building HVAC has to heat or cool all of that air — every hour the hood is running.
+                Your exhaust hood pulls air out of the kitchen. The makeup air unit (MAU) is supposed to replace it with tempered air. When the MAU can&apos;t keep up, the building goes under negative pressure and sucks unconditioned outside air in through every door, crack, and gap. Your building HVAC has to heat or cool all of that air: every hour the hood is running.
               </p>
               <p className="text-xs text-slate-400 leading-relaxed mt-2">
                 Formula: BTU/hr = 1.08 × Infiltration CFM × Temperature Difference
@@ -240,7 +240,7 @@ export default function EnergyCalculatorPage() {
                     </div>
 
                     <p className="text-xs text-slate-400 mb-3">
-                      {r.wasteCfm.toLocaleString()} CFM the MAU should be tempering but isn&apos;t — sucked in as raw outside air through doors and gaps instead. Every hour, {operatingHours} hours a day.
+                      {r.wasteCfm.toLocaleString()} CFM the MAU should be tempering but isn&apos;t: sucked in as raw outside air through doors and gaps instead. Every hour, {operatingHours} hours a day.
                     </p>
 
                     <div className="grid grid-cols-3 gap-3 mb-3">
@@ -279,7 +279,7 @@ export default function EnergyCalculatorPage() {
               <div className="glass-card rounded-2xl p-6">
                 <h3 className="text-sm font-semibold text-amber-400 mb-3">Additional Savings: Demand Control Ventilation</h3>
                 <p className="text-xs text-slate-400 mb-4">
-                  Your exhaust fan runs at full speed all day — even when the kitchen isn&apos;t cooking. A demand-controlled ventilation (DCV) upgrade uses sensors to slow the fan during idle periods, saving 30-60% of fan energy.
+                  Your exhaust fan runs at full speed all day: even when the kitchen isn&apos;t cooking. A demand-controlled ventilation (DCV) upgrade uses sensors to slow the fan during idle periods, saving 30-60% of fan energy.
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-white/[0.03] rounded-lg p-4 text-center">
@@ -342,7 +342,7 @@ function LeadCaptureForm({ exhaustCfm, worstCaseWaste, operatingHours }: { exhau
           },
         }),
       });
-    } catch { /* still show success — we'll get the data from analytics */ }
+    } catch { /* still show success: we'll get the data from analytics */ }
     setSubmitted(true);
     setSending(false);
   }
@@ -367,7 +367,7 @@ function LeadCaptureForm({ exhaustCfm, worstCaseWaste, operatingHours }: { exhau
     <div className="glass-card rounded-2xl p-6 bg-amber-500/5 border-amber-500/20">
       <h3 className="text-lg font-semibold mb-1">Get your exact numbers</h3>
       <p className="text-sm text-slate-400 mb-4">
-        This calculator uses estimates. A real air balance tells you exactly how much you&apos;re wasting. Leave your info and we&apos;ll schedule a free assessment — plus email you a copy of this estimate.
+        This calculator uses estimates. A real air balance tells you exactly how much you&apos;re wasting. Leave your info and we&apos;ll schedule a free assessment: plus email you a copy of this estimate.
       </p>
       <form onSubmit={handleSubmit} className="space-y-3">
         <div className="grid grid-cols-2 gap-3">

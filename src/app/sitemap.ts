@@ -1,42 +1,40 @@
 import { MetadataRoute } from 'next';
-import { SERVICES, LOCATIONS, VERTICALS, VENTILATION_CITIES } from '@/lib/data';
+import { LOCATIONS, VERTICALS, VENTILATION_CITIES } from '@/lib/data';
 import { getAllPosts } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://choosetrue.com';
+  const updated = new Date('2026-08-24');
   
   const staticPages = [
-    { url: base, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1.0 },
-    { url: `${base}/services`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${base}/locations`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${base}/who-we-serve`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${base}/careers`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: `${base}/contact`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${base}/schedule-service`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${base}/services/kitchen-ventilation`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.95 },
-    { url: `${base}/services/pollution-control`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.95 },
-    { url: `${base}/tools/energy-calculator`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${base}/resources`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: base, lastModified: updated, changeFrequency: 'weekly' as const, priority: 1.0 },
+    { url: `${base}/services`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${base}/services/kitchen-ventilation`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/kitchen-air-balancing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/exhaust-fan-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/makeup-air-unit-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/ventilation-controls`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${base}/services/pollution-control`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/manufacturer-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/locations`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${base}/who-we-serve`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${base}/about`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${base}/contact`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${base}/schedule-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/tools/energy-calculator`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.65 },
+    { url: `${base}/resources`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.5 },
   ];
-
-  const servicePages = SERVICES.map((s) => ({
-    url: `${base}/services/${s.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
 
   const locationPages = LOCATIONS.map((l) => ({
     url: `${base}/locations/${l.slug}`,
-    lastModified: new Date(),
+    lastModified: updated,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
 
   const verticalPages = VERTICALS.map((v) => ({
     url: `${base}/who-we-serve/${v.slug}`,
-    lastModified: new Date(),
+    lastModified: updated,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -50,20 +48,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ventilationCityPages = VENTILATION_CITIES.map((c) => ({
     url: `${base}/services/kitchen-ventilation/${c.slug}`,
-    lastModified: new Date(),
+    lastModified: updated,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
 
-  // Per-city landing pages for the other high-intent services.
-  const serviceCityPages = ['refrigeration', 'cooking-equipment', 'hvac'].flatMap((slug) =>
-    VENTILATION_CITIES.map((c) => ({
-      url: `${base}/services/${slug}/${c.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    }))
-  );
-
-  return [...staticPages, ...servicePages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages, ...serviceCityPages];
+  return [...staticPages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
 }

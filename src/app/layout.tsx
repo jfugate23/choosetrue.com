@@ -5,15 +5,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CallTracking from '@/components/CallTracking';
+import GoogleAdsTag from '@/components/GoogleAdsTag';
 import { PROFILES, MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://choosetrue.com'),
   title: {
-    default: 'True Commercial Service | Commercial Kitchen Equipment Repair — NJ & NYC Metro',
+    default: 'True Commercial Service | Kitchen Ventilation: NYC & North Jersey',
     template: '%s | True Commercial Service',
   },
-  description: 'Commercial kitchen equipment repair, ventilation, and pollution control service. Serving Northern NJ and the NYC metro with 24/7 emergency response.',
-  keywords: ['commercial kitchen equipment repair', 'restaurant equipment repair', 'commercial refrigeration repair', 'Elizabeth NJ', 'New York City', 'ice machine repair', 'walk-in cooler repair', 'hood ventilation service', 'kitchen air balancing', 'NYC Local Law 38 pollution control'],
+  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey.',
+  keywords: ['commercial kitchen exhaust fan repair', 'makeup air unit repair', 'kitchen hood airflow', 'kitchen air balancing', 'commercial kitchen ventilation', 'NYC', 'North Jersey'],
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -23,8 +25,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'True Commercial Service | Commercial Kitchen Equipment Repair',
-    description: 'Commercial kitchen equipment repair. Done Right. 24/7 Emergency Service across Northern NJ and NYC.',
+    title: 'True Commercial Service | Commercial Kitchen Ventilation',
+    description: 'Hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation controls across NYC and North Jersey.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Parent brand Organization — the NJ/NYC LocalBusiness references this
+// Parent brand Organization: the NJ/NYC LocalBusiness references this
 // via parentOrganization in its own layout, letting Google understand the
 // location is part of the same brand entity.
 const organizationSchema = {
@@ -41,7 +43,7 @@ const organizationSchema = {
   '@id': 'https://choosetrue.com#organization',
   name: 'True Commercial Service LLC',
   legalName: 'True Commercial Service LLC',
-  description: 'Commercial kitchen equipment repair, ventilation, and pollution control company serving Northern NJ and the NYC metropolitan area.',
+  description: 'Commercial kitchen ventilation diagnostics and repair company serving Northern New Jersey and New York City.',
   url: 'https://choosetrue.com',
   logo: 'https://choosetrue.com/images/logo.png',
   image: 'https://choosetrue.com/images/logo.png',
@@ -50,17 +52,17 @@ const organizationSchema = {
     {
       '@type': 'LocalBusiness',
       '@id': MARKET_NJ.schemaId,
-      name: `${MARKET_NJ.name} — NJ & NYC Metro`,
+      name: `${MARKET_NJ.name}: NJ & NYC Metro`,
       telephone: MARKET_NJ.phone,
       url: MARKET_NJ.homeUrl,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: MARKET_NJ.address.street,
         addressLocality: MARKET_NJ.address.city,
         addressRegion: MARKET_NJ.address.region,
         postalCode: MARKET_NJ.address.postalCode,
         addressCountry: MARKET_NJ.address.country,
       },
+      areaServed: ['New York City', 'Northern New Jersey'],
     },
   ],
 };
@@ -81,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Analytics />
         <CallTracking />
+        <GoogleAdsTag />
       </body>
     </html>
   );

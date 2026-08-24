@@ -5,7 +5,8 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact True Commercial Service. 24/7 emergency commercial kitchen equipment repair. Call, email, or submit a service request online.',
+  description: 'Contact True Commercial Service for commercial kitchen ventilation diagnostics and repair across NYC and North Jersey.',
+  alternates: { canonical: '/contact' },
 };
 
 export default function ContactPage() {
@@ -13,8 +14,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="We pick up the phone. Every time."
-        description="Equipment emergencies don't wait — and neither do we. Call us 24/7 or submit a request online."
+        title="Talk directly with the technician."
+        description="Call TCS or send the equipment brand, symptoms, ZIP code, and fault code through the service form."
         showCTA={false}
       />
 
@@ -29,11 +30,11 @@ export default function ContactPage() {
                     <Phone className="w-5 h-5 text-red-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 uppercase tracking-wide">24/7 Emergency Line</p>
+                    <p className="text-xs text-slate-500 uppercase tracking-wide">System Down? Call Directly</p>
                     <a href={COMPANY.emergencyPhoneHref} className="text-xl font-bold hover:text-amber-400 transition-colors">{COMPANY.emergencyPhone}</a>
                   </div>
                 </div>
-                <p className="text-xs text-slate-500 ml-[60px]">For after-hours emergencies. We answer around the clock.</p>
+                <p className="text-xs text-slate-500 ml-[60px]">Leave the site address, system condition, and callback number if needed.</p>
               </div>
             </Reveal>
 
@@ -93,7 +94,7 @@ export default function ContactPage() {
           <Reveal>
             <div className="glass-card rounded-2xl p-6 lg:p-8">
               <h3 className="text-lg font-semibold mb-2">Send us a message</h3>
-              <p className="text-sm text-slate-400 mb-6">We respond within the hour during business hours.</p>
+              <p className="text-sm text-slate-400 mb-6">Every request is reviewed for scope, service area, and urgency.</p>
               <ServiceForm />
             </div>
           </Reveal>
