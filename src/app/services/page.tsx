@@ -43,7 +43,7 @@ export default function ServicesPage() {
           </div>
           <div className="glass-card rounded-2xl p-8">
             <h2 className="text-xl font-semibold mb-4">What about other kitchen equipment?</h2>
-            <p className="text-sm text-slate-400 leading-relaxed mb-5">Cooking, refrigeration, beverage, espresso, and general HVAC information remains on this website for manufacturer, dealer, established-customer, and referral work. TCS is not actively marketing for every one-off equipment call while the company is owner-operated.</p>
+            <p className="text-sm text-slate-400 leading-relaxed mb-5">Cooking, refrigeration, beverage, espresso, and general HVAC information remains on this website for manufacturer, dealer, established-customer, and referral work. TCS is not actively marketing for general one-off equipment calls.</p>
             <ul className="space-y-3 text-sm text-slate-300 mb-6">
               {['Manufacturer-assigned warranty or startup', 'Dealer or representative field support', 'Established-customer and qualified referral work'].map((item) => <li key={item} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />{item}</li>)}
             </ul>
