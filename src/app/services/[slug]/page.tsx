@@ -8,7 +8,12 @@ import { CheckCircle2, MapPin } from 'lucide-react';
 type Props = { params: { slug: string } };
 
 export function generateStaticParams() {
-  return SERVICES.map((s) => ({ slug: s.slug }));
+  // Pollution control has a dedicated, indexable landing page. Excluding it
+  // here prevents the legacy catch-all page from generating the same URL with
+  // its intentional noindex metadata.
+  return SERVICES
+    .filter((s) => s.slug !== 'pollution-control')
+    .map((s) => ({ slug: s.slug }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
