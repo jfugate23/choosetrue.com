@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 // Required env (set in Vercel → Project → Settings → Environment Variables):
 //   RESEND_API_KEY  : Resend API key
 //   LEAD_ALERT_EMAIL: where lead alerts are delivered (defaults to service@choosetrue.com)
-//   LEAD_FROM_EMAIL : verified sender (defaults to leads@choosetrue.com; the
+//   LEAD_FROM_EMAIL : verified sender (defaults to service@choosetrue.com; the
 //                      choosetrue.com domain must be verified in Resend)
 // If the API key is missing, the lead is still logged to Vercel logs and the
 // form still succeeds: we never drop a lead on the floor because of config.
@@ -46,19 +46,59 @@ export async function POST(request: NextRequest) {
     const apiKey = process.env.RESEND_API_KEY;
     if (apiKey) {
       const to = process.env.LEAD_ALERT_EMAIL || 'service@choosetrue.com';
-      const from = process.env.LEAD_FROM_EMAIL || 'True Commercial Service <leads@choosetrue.com>';
+      const from = process.env.LEAD_FROM_EMAIL || 'True Commercial Service <service@choosetrue.com>';
+
+      const leadMeta = lead.meta as Record<string, unknown> | null;
+      const zip = safeText(leadMeta?.zip, 20);
+      const serviceType = safeText(leadMeta?.serviceType, 50);
+      const urgency = safeText(leadMeta?.urgency, 50);
+      const manufacturer = safeText(leadMeta?.manufacturer, 100);
+      const details = safeText(leadMeta?.details, 2000);
+      const serviceLabel = SERVICE_LABELS[serviceType] || serviceType || 'Not provided';
+      const urgencyLabel = URGENCY_LABELS[urgency] || urgency || 'Not provided';
+      const receivedAt = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York',
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      }).format(new Date(lead.timestamp));
 
       const html = `
-        <h2>New lead from choosetrue.com</h2>
-        <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">
-          <tr><td><strong>Name</strong></td><td>${escapeHtml(lead.name)}</td></tr>
-          <tr><td><strong>Phone</strong></td><td><a href="tel:${escapeHtml(lead.phone)}">${escapeHtml(lead.phone)}</a></td></tr>
-          <tr><td><strong>Business</strong></td><td>${escapeHtml(lead.business)}</td></tr>
-          <tr><td><strong>Email</strong></td><td>${escapeHtml(lead.email)}</td></tr>
-          <tr><td><strong>Source page</strong></td><td>${escapeHtml(lead.source)}</td></tr>
-          <tr><td><strong>Details</strong></td><td><pre style="margin:0">${escapeHtml(lead.meta ? JSON.stringify(lead.meta, null, 2) : ', ')}</pre></td></tr>
-          <tr><td><strong>Received</strong></td><td>${lead.timestamp}</td></tr>
-        </table>`;
+        <div style="margin:0;background:#f1f5f9;padding:24px 12px;font-family:Arial,sans-serif;color:#0f172a">
+          <div style="max-width:640px;margin:0 auto;background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden">
+            <div style="background:#0f172a;padding:22px 24px;border-bottom:4px solid #f59e0b">
+              <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fbbf24">True Commercial Service</div>
+              <h1 style="margin:8px 0 0;font-size:24px;line-height:1.25;color:#ffffff">New website service request</h1>
+            </div>
+
+            <div style="padding:22px 24px">
+              <div style="margin-bottom:20px">
+                <a href="tel:${escapeHtml(lead.phone)}" style="display:inline-block;background:#f59e0b;color:#0f172a;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px">Call ${escapeHtml(lead.phone)}</a>
+                ${lead.email ? `<a href="mailto:${escapeHtml(lead.email)}" style="display:inline-block;margin-left:8px;background:#e2e8f0;color:#0f172a;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:8px">Email customer</a>` : ''}
+              </div>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:15px;line-height:1.45">
+                ${detailRow('Name', lead.name)}
+                ${detailRow('Business', lead.business)}
+                ${detailRow('Phone', lead.phone, `tel:${lead.phone}`)}
+                ${detailRow('Email', lead.email || 'Not provided', lead.email ? `mailto:${lead.email}` : '')}
+                ${detailRow('Service ZIP', zip || 'Not provided')}
+                ${detailRow('Primary issue', serviceLabel)}
+                ${detailRow('Urgency', urgencyLabel)}
+                ${detailRow('Manufacturer', manufacturer || 'Not provided')}
+              </table>
+
+              <div style="margin-top:20px">
+                <div style="margin-bottom:7px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#64748b">What the system is doing</div>
+                <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px;white-space:pre-wrap;font-size:15px;line-height:1.5">${escapeHtml(details || 'No details provided')}</div>
+              </div>
+
+              <div style="margin-top:20px;padding-top:16px;border-top:1px solid #e2e8f0;font-size:12px;line-height:1.5;color:#64748b">
+                Submitted from ${escapeHtml(lead.source)}<br>
+                Received ${escapeHtml(receivedAt)} ET
+              </div>
+            </div>
+          </div>
+        </div>`;
 
       const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -108,3 +148,31 @@ function escapeHtml(value: string): string {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
+
+function detailRow(label: string, value: string, href = ''): string {
+  const safeValue = escapeHtml(value);
+  const displayValue = href
+    ? `<a href="${escapeHtml(href)}" style="color:#2563eb;text-decoration:underline">${safeValue}</a>`
+    : safeValue;
+
+  return `<tr>
+    <td style="width:35%;padding:9px 12px 9px 0;border-bottom:1px solid #e2e8f0;vertical-align:top;font-weight:700;color:#475569">${escapeHtml(label)}</td>
+    <td style="padding:9px 0;border-bottom:1px solid #e2e8f0;vertical-align:top;color:#0f172a">${displayValue}</td>
+  </tr>`;
+}
+
+const SERVICE_LABELS: Record<string, string> = {
+  'hood-airflow': 'Hood airflow / smoke capture',
+  'exhaust-fan': 'Exhaust fan repair',
+  'makeup-air': 'Makeup air unit issue',
+  controls: 'VFD / DCV / controls',
+  'pollution-control': 'ESP / pollution-control issue',
+  manufacturer: 'Manufacturer warranty / startup',
+  other: 'Other commercial equipment referral',
+};
+
+const URGENCY_LABELS: Record<string, string> = {
+  down: 'System is down now',
+  operating: 'Operating with a problem',
+  planning: 'Planning / quote',
+};
