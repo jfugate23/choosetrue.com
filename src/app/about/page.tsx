@@ -4,14 +4,14 @@ import { CTAButton, PageHero, Reveal, Section, SectionHeading } from '@/componen
 
 export const metadata: Metadata = {
   title: 'About True Commercial Service',
-  description: 'True Commercial Service is an owner-operated commercial kitchen ventilation company serving New York City and New Jersey.',
+  description: 'True Commercial Service specializes in commercial kitchen hood and ventilation service across New York City and New Jersey.',
   alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="About TCS" title="Ventilation service led by the person doing the work." description="True Commercial Service is owner-operated and focused on commercial kitchen airflow, exhaust fans, makeup air, controls, startup, and manufacturer-assigned field service." showCTA={false} />
+      <PageHero eyebrow="About TCS" title="Commercial kitchen hood and ventilation specialists." description="True Commercial Service focuses on commercial kitchen airflow, exhaust fans, makeup air, controls, startup, and manufacturer-assigned field service." showCTA={false} />
 
       <Section>
         <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-12 lg:gap-20">
