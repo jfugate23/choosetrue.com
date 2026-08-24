@@ -18,12 +18,6 @@ export default function CallTracking() {
         number: anchor.getAttribute('href') || '',
         page: window.location.pathname,
       });
-      const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
-      const callLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_LABEL;
-      const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
-      if (gtag && adsId && callLabel) {
-        gtag('event', 'conversion', { send_to: `${adsId}/${callLabel}` });
-      }
     };
     document.addEventListener('click', onClick, { capture: true });
     return () => document.removeEventListener('click', onClick, { capture: true });
