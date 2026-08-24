@@ -9,8 +9,8 @@ export const COMPANY = {
   emergencyPhone: '(646) 942-9394',
   emergencyPhoneHref: 'tel:+16469429394',
   email: 'service@choosetrue.com',
-  tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair, ventilation, and NYC Local Law 38 pollution control company serving Northern NJ and all five boroughs of New York City.',
+  tagline: 'Commercial Kitchen Ventilation. Diagnosed Right.',
+  description: 'True Commercial Service provides owner-led commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
 };
 
 // ─── MARKET-SPECIFIC ───────────────────────────────────────────
@@ -27,9 +27,9 @@ export const MARKET_NJ = {
   emergencyPhone: '(646) 942-9394',
   emergencyPhoneHref: 'tel:+16469429394',
   email: 'service@choosetrue.com',
-  tagline: 'Commercial Kitchen Equipment Repair. Done Right.',
-  heroLabel: 'NOW SERVING NJ METRO • NYC • UNION COUNTY • ESSEX • HUDSON',
-  description: 'True Commercial Service is a tech-forward commercial kitchen equipment repair, ventilation, and NYC Local Law 38 pollution control company serving Northern NJ and all five boroughs of New York City.',
+  tagline: 'Commercial Kitchen Ventilation. Diagnosed Right.',
+  heroLabel: 'COMMERCIAL KITCHEN VENTILATION • NYC + NORTH JERSEY',
+  description: 'True Commercial Service provides owner-led commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
   address: {
     street: '638 Marshall St',
     city: 'Elizabeth',
@@ -471,15 +471,13 @@ export const VENTILATION_CITIES = [
 ];
 
 export const STATS = [
-  { value: '24/7', label: 'Emergency Dispatch' },
-  { value: '4hr', label: 'Emergency Response Target' },
-  { value: '16+', label: 'Factory-Authorized Brands' },
-  { value: '90-Day', label: 'Parts & Labor Guarantee' },
+  { value: 'Owner', label: 'Led Diagnostics' },
+  { value: 'NYC', label: '& North Jersey' },
+  { value: 'Measured', label: 'Airflow Readings' },
+  { value: 'Commercial', label: 'Kitchens Only' },
 ];
 
 export const MANUFACTURERS = [
-  'Rational', 'Hoshizaki', 'True Manufacturing', 'Alto-Shaam',
-  'Vulcan', 'Traulsen', 'Manitowoc', 'Blodgett',
-  'La Marzocco', 'Carrier', 'Turbo Air', 'Scotsman',
-  'Garland', 'Pitco', 'Delfield', 'Bunn',
+  'CaptiveAire', 'Gaylord', 'Accurex', 'Greenheck',
+  'Halton', 'Loren Cook', 'Yaskawa', 'ABB',
 ];

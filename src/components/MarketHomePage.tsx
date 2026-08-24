@@ -2,25 +2,20 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Phone, Flame, Thermometer, Wind, GlassWater, Coffee, ShieldCheck, UtensilsCrossed, ShoppingCart, GraduationCap, Building2, Star, Clock, CheckCircle2 } from 'lucide-react';
-import { SERVICES, STATS, MANUFACTURERS, VERTICALS } from '@/lib/data';
-import { Section, SectionHeading, Reveal, CTAButton, ServiceForm } from '@/components/UI';
-
-const iconMap: Record<string, React.ReactNode> = {
-  Flame: <Flame className="w-6 h-6" />,
-  Thermometer: <Thermometer className="w-6 h-6" />,
-  Wind: <Wind className="w-6 h-6" />,
-  GlassWater: <GlassWater className="w-6 h-6" />,
-  Coffee: <Coffee className="w-6 h-6" />,
-  ShieldCheck: <ShieldCheck className="w-6 h-6" />,
-};
-
-const verticalIconMap: Record<string, React.ReactNode> = {
-  UtensilsCrossed: <UtensilsCrossed className="w-6 h-6" />,
-  ShoppingCart: <ShoppingCart className="w-6 h-6" />,
-  GraduationCap: <GraduationCap className="w-6 h-6" />,
-  Building2: <Building2 className="w-6 h-6" />,
-};
+import {
+  ArrowRight,
+  Building2,
+  CheckCircle2,
+  ClipboardCheck,
+  Fan,
+  Gauge,
+  Phone,
+  Settings2,
+  ShieldCheck,
+  Wind,
+  Wrench,
+} from 'lucide-react';
+import { Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
 
 export interface MarketHomePageMarket {
   name: string;
@@ -37,116 +32,107 @@ export interface MarketHomePageMarket {
   };
 }
 
-export interface MarketTestimonial {
-  quote: string;
-  author: string;
-  role: string;
-  location: string;
-}
+const focusedServices = [
+  {
+    href: '/services/kitchen-air-balancing',
+    icon: <Gauge className="w-6 h-6" />,
+    title: 'Hood Airflow & Air Balancing',
+    description: 'Measured exhaust and supply readings, capture testing, damper and fan-speed adjustments, and written findings.',
+  },
+  {
+    href: '/services/exhaust-fan-repair',
+    icon: <Fan className="w-6 h-6" />,
+    title: 'Exhaust Fan Repair',
+    description: 'Troubleshooting for fans that will not run, move too little air, vibrate, squeal, trip, or fault at the VFD.',
+  },
+  {
+    href: '/services/makeup-air-unit-repair',
+    icon: <Wind className="w-6 h-6" />,
+    title: 'Makeup Air Unit Repair',
+    description: 'Fan, motor, belt, heat, airflow, freeze-up, interlock, and control issues that put the kitchen under pressure.',
+  },
+  {
+    href: '/services/ventilation-controls',
+    icon: <Settings2 className="w-6 h-6" />,
+    title: 'VFD, DCV & Controls',
+    description: 'Demand-control ventilation, sensors, starters, relays, contactors, interlocks, and sequence-of-operation faults.',
+  },
+];
 
-interface MarketHomePageProps {
-  market: MarketHomePageMarket;
-  testimonials?: MarketTestimonial[];
-  heroHeadline?: React.ReactNode;
-  heroSubhead?: string;
-}
+const symptoms = [
+  'Smoke or heat escaping the hood',
+  'Exhaust fan not running or moving weak air',
+  'Fan noise, vibration, belt dust, or repeated trips',
+  'Kitchen too hot, too cold, or unusually drafty',
+  'Doors hard to open or slamming shut',
+  'Makeup air, VFD, or hood controls showing a fault',
+];
 
-export default function MarketHomePage({ market, testimonials, heroHeadline, heroSubhead }: MarketHomePageProps) {
+export default function MarketHomePage({ market }: { market: MarketHomePageMarket }) {
   return (
     <>
-      {/* ====== HERO ====== */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-navy-300 via-navy-300 to-navy-300" />
+          <div className="absolute inset-0 bg-navy-300" />
           <div className="absolute inset-0 grid-bg" />
           <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-500/3 rounded-full blur-[100px]" />
-          <div className="absolute top-0 right-[20%] w-px h-full bg-gradient-to-b from-transparent via-amber-500/10 to-transparent rotate-12 origin-top" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 pt-36 lg:pt-44 pb-20 lg:pb-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-[1.15fr_.85fr] gap-12 lg:gap-20 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in">
-                <div className="w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse" />
-                <span className="text-amber-300 text-xs font-medium tracking-wide">{market.heroLabel}</span>
+              <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6">
+                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full" />
+                <span className="text-amber-300 text-xs font-medium tracking-wide">COMMERCIAL KITCHEN VENTILATION • NYC + NORTH JERSEY</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight animate-fade-up">
-                {heroHeadline ?? (
-                  <>
-                    Your kitchen
-                    <br />
-                    <span className="text-gradient">runs on trust.</span>
-                  </>
-                )}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight max-w-4xl">
+                Kitchen hood airflow problems—
+                <span className="text-gradient">diagnosed and fixed.</span>
               </h1>
 
-              <p className="mt-6 text-lg lg:text-xl text-slate-400 leading-relaxed max-w-lg animate-fade-up" style={{ animationDelay: '0.1s' }}>
-                {heroSubhead ?? 'Commercial kitchen equipment repair backed by fast response, transparent pricing, and techs who actually know your equipment.'}
+              <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+                Smoke escaping? Exhaust fan down? Makeup air not keeping up? TCS measures the system, finds the actual cause, and repairs the fan, motor, belt, VFD, controls, or MAU problem behind it.
               </p>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-                <CTAButton large>Schedule Service</CTAButton>
-                <a href={market.emergencyPhoneHref} className="inline-flex items-center gap-2 text-slate-300 hover:text-white transition-colors font-medium">
+              <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
+                <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-lg cta-glow transition-all group">
+                  Request Ventilation Service
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <a href={market.phoneHref} className="inline-flex items-center justify-center gap-2 text-slate-200 hover:text-white transition-colors font-medium px-2 py-3">
                   <Phone className="w-5 h-5 text-amber-400" />
-                  <span>24/7 Emergency: {market.emergencyPhone}</span>
+                  Call Joe: {market.phone}
                 </a>
               </div>
 
-              <div className="mt-12 flex items-center gap-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-amber-500" />
-                  <span className="text-sm text-slate-400">4hr Avg Response</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-amber-500" />
-                  <span className="text-sm text-slate-400">94% First-Fix Rate</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-amber-500" />
-                  <span className="text-sm text-slate-400">90-Day Guarantee</span>
-                </div>
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
+                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Owner-led diagnostics</span>
+                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Measured airflow readings</span>
+                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Commercial kitchens only</span>
               </div>
             </div>
 
             <div className="hidden lg:block">
               <div className="glass-card rounded-2xl p-8 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl" />
+                <div className="absolute top-0 right-0 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl" />
                 <div className="relative">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-amber-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-slate-500">Equipment down?</p>
-                      <p className="text-lg font-semibold">Talk to a tech now</p>
-                    </div>
-                  </div>
-
-                  <a href={market.emergencyPhoneHref} className="block text-4xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
-                    {market.emergencyPhone}
-                  </a>
-                  <p className="text-sm text-slate-500 mt-1 mb-6">24/7 emergency dispatch across NJ &amp; NYC</p>
-
-                  <div className="space-y-2.5 mb-6">
-                    {[
-                      'Cooking equipment repair',
-                      'Commercial refrigeration',
-                      'HVAC & rooftop units',
-                      'Kitchen ventilation & exhaust',
-                      'Preventive maintenance plans',
-                    ].map((item) => (
-                      <div key={item} className="flex items-center gap-3">
-                        <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0" />
+                  <p className="text-xs font-semibold uppercase tracking-wider text-amber-400">Is this what you are seeing?</p>
+                  <h2 className="text-2xl font-bold mt-2 mb-6">Start with the symptom.</h2>
+                  <div className="space-y-3">
+                    {symptoms.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
                         <span className="text-sm text-slate-300">{item}</span>
                       </div>
                     ))}
                   </div>
-
-                  <Link href="/schedule-service" className="block w-full text-center bg-amber-500 hover:bg-amber-400 text-navy-300 font-semibold px-5 py-3 rounded-lg cta-glow transition-all">
-                    Schedule Service
-                  </Link>
+                  <div className="mt-7 pt-6 border-t border-white/10">
+                    <p className="text-sm text-slate-400 leading-relaxed">
+                      Send the equipment brand, symptoms, ZIP code, and any fault code. You will hear directly from the technician doing the work.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,29 +140,25 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
         </div>
       </section>
 
-      {/* ====== SERVICE GRID ====== */}
       <Section className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-300 via-navy-50/30 to-navy-300 pointer-events-none" />
         <div className="relative">
           <SectionHeading
-            eyebrow="What We Fix"
-            title="Every piece of equipment in your kitchen."
-            description="From fryers to espresso machines, walk-in coolers to rooftop HVAC — one call handles it all."
+            eyebrow="Ventilation Service"
+            title="The calls TCS is built to handle."
+            description="Focused troubleshooting and repair for the air-moving equipment and controls that keep a commercial kitchen capturing properly."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-            {SERVICES.map((service, i) => (
-              <Reveal key={service.slug} delay={i * 80}>
-                <Link
-                  href={`/services/${service.slug}`}
-                  className="group block glass-card rounded-xl p-6 hover:border-amber-500/20 transition-all duration-300 h-full"
-                >
-                  <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-500/20 transition-colors">
-                    <span className="text-amber-400">{iconMap[service.icon]}</span>
+          <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
+            {focusedServices.map((service, i) => (
+              <Reveal key={service.href} delay={i * 70}>
+                <Link href={service.href} className="group block glass-card rounded-xl p-6 lg:p-8 hover:border-amber-500/25 transition-all h-full">
+                  <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-5 text-amber-400 group-hover:bg-amber-500/20 transition-colors">
+                    {service.icon}
                   </div>
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-amber-400 transition-colors">{service.shortTitle}</h3>
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-amber-400 transition-colors">{service.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{service.description}</p>
-                  <div className="mt-4 flex items-center gap-1 text-xs text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                    Learn more <ArrowRight className="w-3 h-3" />
+                  <div className="mt-5 flex items-center gap-1 text-sm text-amber-400 font-medium">
+                    Service details <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </Reveal>
@@ -185,223 +167,143 @@ export default function MarketHomePage({ market, testimonials, heroHeadline, her
         </div>
       </Section>
 
-      {/* ====== WHY TRUE ====== */}
-      <Section id="why-true" className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-amber-500/5 rounded-full blur-[150px]" />
-        </div>
-        <div className="relative">
-          <SectionHeading
-            eyebrow="The True Difference"
-            title="Why operators call us first."
-            description="No call centers, no runaround — just fast, factory-trained repair and maintenance for the equipment your kitchen runs on."
-          />
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            {[
-              {
-                icon: <Clock className="w-6 h-6" />,
-                title: '24/7 Emergency Response',
-                desc: 'Kitchen down at 2am? We answer. Real emergency dispatch across NJ & NYC — not an answering service.',
-              },
-              {
-                icon: <ShieldCheck className="w-6 h-6" />,
-                title: 'Factory-Trained Techs',
-                desc: 'Manufacturer-certified on the brands you run. We fix it right the first time, backed by a 90-day guarantee.',
-              },
-              {
-                icon: <Wind className="w-6 h-6" />,
-                title: 'Cooking, Cooling & HVAC',
-                desc: 'One call covers cooking equipment, refrigeration, HVAC, and kitchen ventilation. No juggling vendors.',
-              },
-              {
-                icon: <CheckCircle2 className="w-6 h-6" />,
-                title: 'Preventive Maintenance',
-                desc: 'Scheduled PM plans that catch problems before they cost you a service call — or a night of lost revenue.',
-              },
-            ].map((item, i) => (
-              <Reveal key={i} delay={i * 80}>
-                <div className="glass-card rounded-xl p-6 h-full">
-                  <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 text-amber-400">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* ====== WHO WE SERVE ====== */}
       <Section>
-        <SectionHeading
-          eyebrow="Who We Serve"
-          title="Built for operators who can't afford downtime."
-        />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-          {VERTICALS.map((v, i) => (
-            <Reveal key={v.slug} delay={i * 80}>
-              <Link
-                href={`/who-we-serve/${v.slug}`}
-                className="group block glass-card rounded-xl p-6 text-center hover:border-amber-500/20 transition-all duration-300 h-full"
-              >
-                <div className="w-14 h-14 bg-amber-500/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500/20 transition-colors">
-                  <span className="text-amber-400">{verticalIconMap[v.icon]}</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{v.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{v.description}</p>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      {/* ====== STATS BAR ====== */}
-      <div className="relative">
-        <div className="absolute inset-0 bg-amber-500/5" />
-        <div className="relative max-w-7xl mx-auto px-4 lg:px-6 py-16">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {STATS.map((stat, i) => (
-              <Reveal key={i} delay={i * 100}>
-                <div className="text-center">
-                  <p className="text-3xl lg:text-4xl font-bold text-amber-400">{stat.value}</p>
-                  <p className="text-sm text-slate-400 mt-1">{stat.label}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ====== TRUSTED BY ====== */}
-      <Section>
-        <SectionHeading eyebrow="Trusted By" title="Companies that count on us." />
-        <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 items-center opacity-70">
-          {[
-            'Albertsons / United Supermarkets',
-            'Starbucks',
-            'University of New Mexico',
-            'Facebook / Meta',
-            'Rutgers University',
-          ].map((name, i) => (
-            <Reveal key={name} delay={i * 80}>
-              <span className="text-lg lg:text-xl font-bold text-slate-400 tracking-tight">{name}</span>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      {/* ====== MANUFACTURER LOGOS ====== */}
-      <Section>
-        <SectionHeading
-          eyebrow="Manufacturer Partners"
-          title="Factory-authorized on the brands that matter."
-        />
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-          {MANUFACTURERS.map((brand, i) => (
-            <Reveal key={brand} delay={i * 40}>
-              <div className="glass-card rounded-lg py-4 px-3 text-center hover:border-amber-500/20 transition-colors">
-                <span className="text-xs text-slate-400 font-medium">{brand}</span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      {/* ====== PHOTO SHOWCASE ====== */}
-      <Section>
-        <SectionHeading eyebrow="Our Work" title="Real kitchens. Real equipment." />
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          {[
-            { src: '/images/brick-bbq-pit-captiveaire-hood.jpg', alt: 'Custom brick BBQ pit with CaptiveAire exhaust hood — specialty ventilation install' },
-            { src: '/images/upscale-commercial-kitchen-line.jpg', alt: 'Upscale commercial kitchen with textured stainless steel and cooking line' },
-            { src: '/images/captiveaire-hood-active-kitchen.jpg', alt: 'CaptiveAire hood over active commercial kitchen cooking line with staff' },
-            { src: '/images/rooftop-exhaust-fans-commercial.jpg', alt: 'Multiple CaptiveAire rooftop exhaust fans — commercial kitchen ventilation' },
-            { src: '/images/cook-working-commercial-kitchen.jpg', alt: 'Cook working in commercial kitchen under CaptiveAire ventilation hood' },
-            { src: '/images/lennox-rooftop-unit-commercial.jpg', alt: 'Lennox commercial rooftop HVAC unit on commercial building' },
-            { src: '/images/full-kitchen-ventilation-install.jpg', alt: 'Full commercial kitchen ventilation installation with cooking equipment' },
-            { src: '/images/rooftop-makeup-air-unit-install.jpg', alt: 'Rooftop makeup air unit installation on commercial building' },
-          ].map((img, i) => (
-            <Reveal key={i} delay={i * 60}>
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      {/* ====== TESTIMONIALS (only if provided) ====== */}
-      {testimonials && testimonials.length > 0 && (
-        <Section className="relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/3 to-transparent pointer-events-none" />
-          <div className="relative">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <Reveal>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/rooftop-exhaust-fans-commercial.jpg"
+                alt="Commercial kitchen rooftop exhaust fans"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+          <div>
             <SectionHeading
-              eyebrow="What Operators Say"
-              title="We earn trust one service call at a time."
+              eyebrow="Owner-Led Service"
+              title="Measure first. Repair the cause."
+              description="Kitchen ventilation problems cross mechanical, electrical, controls, and airflow. TCS looks at the complete sequence instead of swapping parts until something changes."
+              center={false}
             />
-            <div className="grid md:grid-cols-3 gap-6">
-              {testimonials.map((t, i) => (
-                <Reveal key={i} delay={i * 100}>
-                  <div className="glass-card rounded-xl p-6 h-full flex flex-col">
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, j) => (
-                        <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-sm text-slate-300 leading-relaxed flex-1">&ldquo;{t.quote}&rdquo;</p>
-                    <div className="mt-4 pt-4 border-t border-white/5">
-                      <p className="text-sm font-medium">{t.author}</p>
-                      <p className="text-xs text-slate-500">{t.role} &bull; {t.location}</p>
-                    </div>
+            <div className="space-y-5">
+              {[
+                { icon: <Gauge className="w-5 h-5" />, title: 'Airflow readings', text: 'Exhaust, supply, pressure, and capture conditions are checked against the actual complaint.' },
+                { icon: <Wrench className="w-5 h-5" />, title: 'Mechanical and electrical diagnosis', text: 'Fans, motors, belts, bearings, starters, disconnects, VFDs, sensors, and interlocks are checked as one system.' },
+                { icon: <ClipboardCheck className="w-5 h-5" />, title: 'Clear findings', text: 'You get the measured condition, work performed, and practical next steps—not a vague “it should be better.”' },
+              ].map((item) => (
+                <div key={item.title} className="flex gap-4">
+                  <div className="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center text-amber-400 flex-shrink-0">{item.icon}</div>
+                  <div>
+                    <h3 className="font-semibold">{item.title}</h3>
+                    <p className="text-sm text-slate-400 mt-1 leading-relaxed">{item.text}</p>
                   </div>
-                </Reveal>
+                </div>
               ))}
             </div>
           </div>
-        </Section>
-      )}
+        </div>
+      </Section>
 
-      {/* ====== CONTACT / CTA ====== */}
+      <Section className="bg-white/[0.02]">
+        <SectionHeading eyebrow="Experience" title="Commercial-kitchen ventilation is the core trade." />
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              icon: <Wind className="w-6 h-6" />,
+              title: 'CaptiveAire leadership experience',
+              text: 'TCS is led by Joe Fugate, a former CaptiveAire Regional Service Manager with hands-on field and air-balance experience.',
+            },
+            {
+              icon: <Settings2 className="w-6 h-6" />,
+              title: 'Startup and controls experience',
+              text: 'Field experience includes Gaylord AirVantage and Accurex startup/service work, along with VFD and demand-control ventilation troubleshooting.',
+            },
+            {
+              icon: <Building2 className="w-6 h-6" />,
+              title: 'Real operating kitchens',
+              text: 'Experience across restaurants, hotels, institutional kitchens, and complex ventilation systems where downtime affects service immediately.',
+            },
+          ].map((item, i) => (
+            <Reveal key={item.title} delay={i * 80}>
+              <div className="glass-card rounded-xl p-7 h-full">
+                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 mb-5">{item.icon}</div>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">{item.text}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
       <Section>
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <SectionHeading eyebrow="Scope" title="A focused service company, by design." />
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <Reveal>
+            <div className="glass-card rounded-2xl p-8 h-full border-emerald-500/15">
+              <h3 className="text-lg font-semibold text-emerald-300 mb-4">Good fit for TCS</h3>
+              <ul className="space-y-3 text-sm text-slate-300">
+                {['Hood capture and kitchen pressure problems', 'Exhaust fan and makeup air unit repairs', 'VFD, DCV, starter, sensor, and interlock faults', 'Ventilation startup, commissioning support, and operational airflow readings', 'Manufacturer-assigned warranty, startup, and service calls'].map((item) => (
+                  <li key={item} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />{item}</li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <div className="glass-card rounded-2xl p-8 h-full">
+              <h3 className="text-lg font-semibold text-slate-200 mb-4">Outside the current focus</h3>
+              <ul className="space-y-3 text-sm text-slate-400">
+                {['Hood or grease-duct cleaning', 'Fire-suppression inspection or service', 'Residential range hoods', 'General cooking, refrigeration, beverage, or comfort-HVAC calls unless manufacturer-assigned or referred'].map((item) => (
+                  <li key={item} className="flex items-start gap-3"><span className="w-1.5 h-1.5 bg-slate-500 rounded-full mt-2 flex-shrink-0" />{item}</li>
+                ))}
+              </ul>
+              <Link href="/manufacturer-service" className="inline-flex items-center gap-2 text-sm text-amber-400 font-medium mt-6 hover:text-amber-300">
+                Manufacturer service information <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHeading eyebrow="Field Work" title="Commercial ventilation systems in the field." />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          {[
+            { src: '/images/captiveaire-hood-active-kitchen.jpg', alt: 'CaptiveAire hood operating over a commercial cooking line' },
+            { src: '/images/rooftop-exhaust-fans-commercial.jpg', alt: 'Commercial rooftop exhaust fan system' },
+            { src: '/images/rooftop-makeup-air-unit-install.jpg', alt: 'Commercial rooftop makeup air unit' },
+            { src: '/images/vfd-drives-kitchen-ventilation-controls.jpg', alt: 'Variable frequency drives for kitchen ventilation controls' },
+          ].map((item, i) => (
+            <Reveal key={item.src} delay={i * 60}>
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <Image src={item.src} alt={item.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <Section className="bg-white/[0.02]">
+        <div className="grid lg:grid-cols-[.85fr_1.15fr] gap-12 lg:gap-20">
           <div>
             <SectionHeading
-              eyebrow="Get Started"
-              title="Equipment down? Let's fix it."
-              description="Submit a service request and we'll get back to you within the hour during business hours. Emergency? Call us directly — we pick up 24/7."
+              eyebrow="Request Service"
+              title="Tell Joe what the kitchen is doing."
+              description="Include the equipment brand, symptoms, ZIP code, fault code, and rooftop-access details if you have them. For a down exhaust fan or active smoke-capture problem, call directly."
               center={false}
             />
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-amber-400" />
-                <div>
-                  <p className="text-sm text-slate-500">Main Line</p>
-                  <a href={market.phoneHref} className="text-lg font-semibold hover:text-amber-400 transition-colors">{market.phone}</a>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-red-400" />
-                <div>
-                  <p className="text-sm text-slate-500">24/7 Emergency</p>
-                  <a href={market.emergencyPhoneHref} className="text-lg font-semibold hover:text-amber-400 transition-colors">{market.emergencyPhone}</a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 pt-2">
-                <Building2 className="w-5 h-5 text-amber-400 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm text-slate-500">Local Office</p>
-                  <p className="text-base font-medium">{market.address.street}</p>
-                  <p className="text-base font-medium">{market.address.city}, {market.address.region} {market.address.postalCode}</p>
-                </div>
-              </div>
+            <a href={market.phoneHref} className="inline-flex items-center gap-3 text-xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
+              <Phone className="w-5 h-5" /> {market.phone}
+            </a>
+            <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens across NYC and North Jersey</p>
+            <div className="mt-6 flex items-start gap-3 text-sm text-slate-400">
+              <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />
+              Commercial kitchens only. No hood/duct cleaning, fire suppression, or residential range-hood work.
             </div>
           </div>
           <Reveal>
             <div className="glass-card rounded-2xl p-6 lg:p-8">
-              <h3 className="text-lg font-semibold mb-6">Request Service</h3>
+              <h2 className="text-xl font-semibold mb-6">Ventilation service request</h2>
               <ServiceForm />
             </div>
           </Reveal>

@@ -13,19 +13,30 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { source, name, business, phone, email, meta } = body;
+    const { source, meta } = body;
 
-    if (!name || !phone) {
-      return NextResponse.json({ error: 'Name and phone required' }, { status: 400 });
+    // Honeypot: bots commonly fill this hidden field. Return success so they
+    // do not retry, but do not log or send the submission.
+    if (body.website) {
+      return NextResponse.json({ success: true });
+    }
+
+    const name = safeText(body.name, 100);
+    const business = safeText(body.business, 150);
+    const phone = safeText(body.phone, 50);
+    const email = safeText(body.email, 150);
+
+    if (!name || !business || !phone) {
+      return NextResponse.json({ error: 'Name, business, and phone are required.' }, { status: 400 });
     }
 
     const lead = {
-      source: source || 'website',
+      source: safeText(source, 200) || 'website',
       name,
       business: business || '',
       phone,
       email: email || '',
-      meta: meta || null,
+      meta: meta && typeof meta === 'object' ? meta : null,
       timestamp: new Date().toISOString(),
     };
 
@@ -65,11 +76,18 @@ export async function POST(request: NextRequest) {
       });
 
       if (!res.ok) {
-        // Don't fail the form over a mail hiccup — the lead is in the logs.
         console.error('LEAD EMAIL FAILED:', res.status, await res.text());
+        return NextResponse.json(
+          { error: 'The request could not be delivered. Please call (646) 942-9394.' },
+          { status: 503 }
+        );
       }
     } else {
       console.warn('RESEND_API_KEY not set — lead logged but no email alert sent.');
+      return NextResponse.json(
+        { error: 'Online requests are temporarily unavailable. Please call (646) 942-9394.' },
+        { status: 503 }
+      );
     }
 
     return NextResponse.json({ success: true });
@@ -77,6 +95,10 @@ export async function POST(request: NextRequest) {
     const message = err instanceof Error ? err.message : 'Internal server error';
     return NextResponse.json({ error: message }, { status: 500 });
   }
+}
+
+function safeText(value: unknown, maxLength: number): string {
+  return typeof value === 'string' ? value.trim().slice(0, maxLength) : '';
 }
 
 function escapeHtml(value: string): string {

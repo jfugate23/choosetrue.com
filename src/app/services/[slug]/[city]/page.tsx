@@ -190,9 +190,9 @@ const SERVICE_CITY_CONTENT: Record<string, ServiceCityContent> = {
 };
 
 export function generateStaticParams() {
-  return Object.keys(SERVICE_CITY_CONTENT).flatMap((slug) =>
-    SERVICE_CITIES.map((c) => ({ slug, city: c.slug }))
-  );
+  // These legacy broad-service city pages remain available for old links, but
+  // they are noindexed and no longer pre-generated or included in the sitemap.
+  return [];
 }
 
 export function generateMetadata({ params }: Props): Metadata {
@@ -205,6 +205,7 @@ export function generateMetadata({ params }: Props): Metadata {
     alternates: {
       canonical: `https://choosetrue.com/services/${params.slug}/${city.slug}`,
     },
+    robots: { index: false, follow: true },
   };
 }
 

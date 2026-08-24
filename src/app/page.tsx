@@ -4,15 +4,15 @@ import { MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Fast Commercial Kitchen & HVAC Repair — NJ & NYC | True Commercial Service',
+    absolute: 'Kitchen Hood Airflow & Exhaust Fan Repair | NYC & North Jersey',
   },
-  description: 'Fast commercial kitchen equipment and HVAC repair across Northern NJ and all five boroughs of NYC. 24/7 emergency response, factory-trained techs, and preventive maintenance plans.',
+  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey. Owner-led by Joe Fugate.',
   alternates: {
     canonical: 'https://choosetrue.com/',
   },
   openGraph: {
-    title: 'Fast Commercial Kitchen & HVAC Repair — NJ & NYC | True Commercial Service',
-    description: 'Fast commercial kitchen equipment and HVAC repair across Northern NJ and NYC. 24/7 emergency response and preventive maintenance.',
+    title: 'Kitchen Hood Airflow & Exhaust Fan Repair | True Commercial Service',
+    description: 'Commercial kitchen ventilation diagnostics and repair across NYC and North Jersey.',
     url: 'https://choosetrue.com/',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -20,17 +20,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return (
-    <MarketHomePage
-      market={MARKET_NJ}
-      heroHeadline={
-        <>
-          When your kitchen goes down,
-          <br />
-          <span className="text-gradient">we answer.</span>
-        </>
-      }
-      heroSubhead="Fast commercial kitchen equipment and HVAC repair across Northern NJ and all five boroughs of NYC. 24/7 emergency response, factory-trained techs, and preventive maintenance plans that keep you running."
-    />
-  );
+  return <MarketHomePage market={MARKET_NJ} />;
 }

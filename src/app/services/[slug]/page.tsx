@@ -14,10 +14,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const service = SERVICES.find((s) => s.slug === params.slug);
   if (!service) return {};
-  const cities = LOCATIONS.filter((l) => l.status === 'active').map((l) => l.city).join(', ');
   return {
-    title: `${service.title} | ${cities}`,
-    description: `${service.longDescription} Serving ${cities}. 24/7 emergency service, 90-day guarantee.`,
+    title: service.title,
+    description: `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
+    alternates: { canonical: `/services/${service.slug}` },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -30,7 +31,7 @@ export default function ServicePage({ params }: Props) {
       <PageHero
         eyebrow={service.shortTitle}
         title={service.title}
-        description={service.longDescription}
+        description={`TCS keeps this capability available primarily for manufacturer-assigned, dealer-referred, and established-customer work. Active direct marketing is focused on commercial kitchen ventilation.`}
       />
 
       {service.equipment.length > 0 && (
@@ -38,7 +39,7 @@ export default function ServicePage({ params }: Props) {
           <SectionHeading
             eyebrow="Equipment"
             title={`${service.shortTitle} equipment we repair`}
-            description="Factory-trained technicians with manufacturer certifications across every major brand."
+            description="Equipment experience varies by manufacturer and assignment. Send the model and scope so TCS can confirm fit before dispatch."
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {service.equipment.map((item, i) => (
@@ -55,7 +56,7 @@ export default function ServicePage({ params }: Props) {
 
       {service.brands.length > 0 && (
         <Section>
-          <SectionHeading eyebrow="Brands" title="Manufacturers we service" />
+        <SectionHeading eyebrow="Equipment Experience" title="Manufacturers represented in this equipment category" />
           <div className="flex flex-wrap justify-center gap-4">
             {service.brands.map((brand, i) => (
               <Reveal key={brand} delay={i * 40}>
@@ -91,7 +92,7 @@ export default function ServicePage({ params }: Props) {
 
       <Section>
         <div className="max-w-2xl mx-auto">
-          <SectionHeading eyebrow="Get Started" title={`Schedule ${service.shortTitle.toLowerCase()} service`} description="Submit a request and we'll get back to you within the hour." />
+          <SectionHeading eyebrow="Assigned & Referral Work" title={`Ask about ${service.shortTitle.toLowerCase()} service`} description="Include the manufacturer, model, symptoms, and whether the call is manufacturer-assigned or referred." />
           <div className="glass-card rounded-2xl p-6 lg:p-8">
             <ServiceForm />
           </div>

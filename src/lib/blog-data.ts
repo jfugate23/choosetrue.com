@@ -63,7 +63,7 @@ Every hour your walk-in is above temperature puts your inventory at risk. A typi
 
 Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
 
-**True Commercial Service provides 24/7 emergency repair and preventive maintenance for commercial walk-in coolers and freezers across Northern NJ and the NYC metro. Text us anytime.**
+**TCS currently accepts general refrigeration calls primarily through manufacturer assignments, established customers, and qualified referrals. Direct marketing is focused on commercial kitchen ventilation.**
 
 ## Related Articles
 
@@ -134,7 +134,7 @@ Modern ice machines have electronic controls that manage the freeze and harvest 
 
 A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
 
-**True Commercial Service repairs all major ice machine brands including Hoshizaki, Manitowoc, and Scotsman. 24/7 emergency service across Northern NJ and the NYC metro.**
+**TCS currently accepts beverage-equipment work primarily through manufacturer assignments, established customers, and qualified referrals. Direct marketing is focused on commercial kitchen ventilation.**
 
 ## Related Articles
 
@@ -514,7 +514,7 @@ Equipment over 10 years old fails more frequently. Plan replacements before they
 ### 4. Backup Plans
 Know which menu items you can serve if the fryer goes down. Have a backup ice supplier's number. Know where the nearest walk-in you can rent is.
 
-**True Commercial Service offers 24/7 emergency response and preventive maintenance designed to minimize downtime for your restaurant. Every minute of downtime costs you money — we show up fast.**
+**TCS focuses direct service marketing on commercial kitchen ventilation. General equipment and preventive-maintenance work is accepted primarily through manufacturer assignments, established customers, and qualified referrals.**
 
 ## Related Articles
 

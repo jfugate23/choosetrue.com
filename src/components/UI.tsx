@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useRef, ReactNode } from 'react';
+import { useEffect, useRef, useState, FormEvent, ReactNode } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Phone } from 'lucide-react';
+import { track } from '@vercel/analytics';
 import { COMPANY } from '@/lib/data';
 
 // Scroll reveal wrapper
@@ -139,26 +140,114 @@ export function PageHero({ eyebrow, title, description, showCTA = true }: {
 }
 
 // Service request form
-export function ServiceForm({ compact = false }: { compact?: boolean }) {
+export function ServiceForm({ compact = false, defaultService = '' }: { compact?: boolean; defaultService?: string }) {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [message, setMessage] = useState('');
+  const fieldClass = 'w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors';
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    setStatus('submitting');
+    setMessage('');
+
+    try {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: window.location.pathname,
+          name: data.get('name'),
+          business: data.get('business'),
+          phone: data.get('phone'),
+          email: data.get('email'),
+          website: data.get('website'),
+          meta: {
+            zip: data.get('zip'),
+            serviceType: data.get('serviceType'),
+            urgency: data.get('urgency'),
+            manufacturer: data.get('manufacturer'),
+            details: data.get('details'),
+          },
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Request could not be sent.');
+
+      track('Lead Submitted', {
+        page: window.location.pathname,
+        service: String(data.get('serviceType') || 'not-selected'),
+      });
+      const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+      const leadLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL;
+      const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
+      if (gtag && adsId && leadLabel) {
+        gtag('event', 'conversion', { send_to: `${adsId}/${leadLabel}` });
+      }
+
+      form.reset();
+      setStatus('success');
+      setMessage('Thanks. Your request was sent to TCS. Joe will follow up directly.');
+    } catch (error) {
+      setStatus('error');
+      setMessage(error instanceof Error ? error.message : 'The form could not be sent. Please call (646) 942-9394.');
+    }
+  }
+
   return (
-    <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-      <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
-        <input type="text" placeholder="Your Name *" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors" />
-        <input type="tel" placeholder="Phone Number *" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors" />
-        <input type="text" placeholder="Business Name *" required className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors" />
-        <input type="email" placeholder="Email Address" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors" />
+    <form className="space-y-4" onSubmit={handleSubmit}>
+      <div className="absolute -left-[10000px]" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
-      <select className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-slate-400 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors">
-        <option value="">Type of Service Needed</option>
-        <option value="emergency">Emergency Repair</option>
-        <option value="scheduled">Scheduled Repair</option>
-        <option value="pm">Preventive Maintenance</option>
-        <option value="installation">Installation</option>
-        <option value="other">Other</option>
-      </select>
-      <textarea placeholder="Describe the issue (equipment type, symptoms, urgency)" rows={compact ? 3 : 4} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors resize-none" />
-      <button type="submit" className="w-full bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold py-3.5 rounded-lg cta-glow transition-all text-sm">
-        Request Service
+      <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
+        <label className="text-xs font-medium text-slate-300">Your name *<input name="name" type="text" required autoComplete="name" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Phone number *<input name="phone" type="tel" required autoComplete="tel" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Business or property *<input name="business" type="text" required autoComplete="organization" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Service ZIP code *<input name="zip" type="text" required inputMode="numeric" autoComplete="postal-code" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Email address<input name="email" type="email" autoComplete="email" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" placeholder="CaptiveAire, Gaylord, Accurex…" className={`${fieldClass} mt-1.5`} /></label>
+      </div>
+      <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
+        <label className="text-xs font-medium text-slate-300">Primary issue *
+          <select name="serviceType" required defaultValue={defaultService} className={`${fieldClass} mt-1.5 text-slate-300`}>
+            <option value="" disabled>Select the closest match</option>
+            <option value="hood-airflow">Hood airflow / smoke capture</option>
+            <option value="exhaust-fan">Exhaust fan repair</option>
+            <option value="makeup-air">Makeup air unit issue</option>
+            <option value="controls">VFD / DCV / controls</option>
+            <option value="pollution-control">ESP / pollution-control issue</option>
+            <option value="manufacturer">Manufacturer warranty / startup</option>
+            <option value="other">Other commercial equipment referral</option>
+          </select>
+        </label>
+        <label className="text-xs font-medium text-slate-300">Urgency *
+          <select name="urgency" required defaultValue="" className={`${fieldClass} mt-1.5 text-slate-300`}>
+            <option value="" disabled>Select urgency</option>
+            <option value="down">System is down now</option>
+            <option value="operating">Operating with a problem</option>
+            <option value="planning">Planning / quote</option>
+          </select>
+        </label>
+      </div>
+      <label className="block text-xs font-medium text-slate-300">What is the system doing? *
+        <textarea name="details" required placeholder="Symptoms, fault code, equipment model, rooftop access, and when the problem started" rows={compact ? 3 : 5} className={`${fieldClass} mt-1.5 resize-none`} />
+      </label>
+      <label className="flex items-start gap-3 text-xs text-slate-400">
+        <input name="commercial" type="checkbox" required className="mt-0.5 accent-amber-500" />
+        This request is for a commercial kitchen, not a residential range hood. TCS does not provide hood/duct cleaning or fire-suppression service.
+      </label>
+      {message && (
+        <p role="status" aria-live="polite" className={`text-sm rounded-lg px-4 py-3 ${status === 'success' ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20' : 'bg-red-500/10 text-red-300 border border-red-500/20'}`}>
+          {message}
+          {status === 'error' && <> <a href="tel:+16469429394" className="underline font-semibold">Call TCS now.</a></>}
+        </p>
+      )}
+      <button type="submit" disabled={status === 'submitting'} className="w-full bg-amber-500 hover:bg-amber-400 disabled:opacity-60 disabled:cursor-wait text-navy-300 font-bold py-3.5 rounded-lg cta-glow transition-all text-sm">
+        {status === 'submitting' ? 'Sending…' : 'Request Ventilation Service'}
       </button>
     </form>
   );

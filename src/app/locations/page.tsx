@@ -6,7 +6,8 @@ import { PageHero, Section, Reveal } from '@/components/UI';
 
 export const metadata: Metadata = {
   title: 'Service Locations',
-  description: 'True Commercial Service locations across Northern NJ and the NYC metro: Elizabeth, Newark, Jersey City, and all five boroughs. Commercial kitchen ventilation and equipment repair near you.',
+  description: 'Commercial kitchen ventilation service across NYC and North Jersey: hood airflow diagnostics, exhaust fan repair, makeup air units, and controls.',
+  alternates: { canonical: '/locations' },
 };
 
 export default function LocationsPage() {
@@ -14,8 +15,8 @@ export default function LocationsPage() {
     <>
       <PageHero
         eyebrow="Locations"
-        title="Commercial kitchen service where you need it."
-        description="We're expanding across the country — starting with markets where operators need a better option."
+        title="Commercial kitchen ventilation across NYC and North Jersey."
+        description="TCS serves commercial kitchens from an Elizabeth, NJ base. Coverage depends on job scope, schedule, access, and travel conditions."
       />
 
       <Section>
