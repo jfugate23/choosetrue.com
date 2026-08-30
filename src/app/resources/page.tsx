@@ -4,8 +4,9 @@ import { Section, SectionHeading, Reveal } from '@/components/UI';
 import { ExternalLink, BookOpen, ShieldCheck, Wrench, Wind, Flame, Thermometer } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Industry Resources | Commercial Kitchen Equipment & Ventilation',
-  description: 'Industry resources for commercial kitchen equipment repair, ventilation, HVAC, and food service. Manufacturer links, code references, certifications, and tools.',
+  title: 'Kitchen Ventilation Resources',
+  description: 'Commercial kitchen ventilation resources, including manufacturer links, NYC references, service guides, and operating tools.',
+  alternates: { canonical: '/resources' },
 };
 
 const resources = [
@@ -18,7 +19,7 @@ const resources = [
       { name: 'ASHRAE: American Society of Heating, Refrigerating, AC Engineers', url: 'https://www.ashrae.org/', desc: 'Industry standards for HVAC design, ventilation, and indoor air quality' },
       { name: 'International Mechanical Code (IMC)', url: 'https://codes.iccsafe.org/codes/international-mechanical-code', desc: 'Model code for mechanical systems adopted by NJ and most states' },
       { name: 'International Fuel Gas Code (IFGC)', url: 'https://codes.iccsafe.org/codes/international-fuel-gas-code', desc: 'Gas piping, appliance venting, and combustion air requirements' },
-      { name: 'NYC Local Law 38: Kitchen Exhaust Emissions', url: 'https://www.nyc.gov/site/dep/about/local-law-38.page', desc: 'NYC law requiring pollution control on commercial kitchen exhaust' },
+      { name: 'NYC DEP: Commercial Cooking Emissions', url: 'https://www.nyc.gov/site/dep/environment/building-construction-emissions.page', desc: 'Official NYC DEP information on commercial cooking emissions and char-broiler emissions-control requirements' },
       { name: 'NJ Uniform Construction Code', url: 'https://www.nj.gov/dca/divisions/codes/', desc: 'New Jersey building and mechanical code requirements' },
     ],
   },
@@ -68,7 +69,7 @@ const resources = [
     category: 'Parts & Supply',
     icon: <Wrench className="w-5 h-5" />,
     links: [
-      { name: 'PartsTown', url: 'https://www.partstown.com/', desc: 'OEM parts for commercial kitchen equipment. Same-day shipping.' },
+      { name: 'PartsTown', url: 'https://www.partstown.com/', desc: 'OEM parts and equipment documentation for commercial kitchens.' },
       { name: 'WebstaurantStore', url: 'https://www.webstaurantstore.com/', desc: 'Restaurant supplies, equipment, and replacement parts.' },
       { name: 'Johnstone Supply', url: 'https://www.johnstonesupply.com/', desc: 'HVAC/R parts and supplies.' },
       { name: 'RE Michel', url: 'https://www.remichel.com/', desc: 'HVAC/R wholesale distributor.' },

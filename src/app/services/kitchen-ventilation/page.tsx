@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Ventilation Service: NYC & North Jersey',
-  description: 'Restaurant and commercial kitchen ventilation repair across NYC and North Jersey, including hood airflow, exhaust fans, makeup air, VFD and DCV controls, and pollution-control troubleshooting.',
+  title: 'Kitchen Ventilation Service — NYC & NJ',
+  description: 'Commercial kitchen hood airflow, exhaust fan, makeup air, controls, and pollution-control diagnostics across NYC and North Jersey.',
   alternates: { canonical: '/services/kitchen-ventilation' },
 };
 

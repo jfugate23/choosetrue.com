@@ -184,7 +184,15 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
       });
       const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
       const leadLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL;
+      const analyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
       const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
+      if (gtag && analyticsId) {
+        gtag('event', 'generate_lead', {
+          send_to: analyticsId,
+          service: String(data.get('serviceType') || 'not-selected'),
+          page_path: window.location.pathname,
+        });
+      }
       if (gtag && adsId && leadLabel) {
         gtag('event', 'conversion', { send_to: `${adsId}/${leadLabel}` });
       }

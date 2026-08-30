@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Exhaust Fan Repair: NYC & North Jersey',
-  description: 'Restaurant and commercial kitchen exhaust fan repair across NYC and North Jersey. Motors, belts, bearings, VFD faults, starters, wiring, fan wheels, and airflow verification.',
+  title: 'Kitchen Exhaust Fan Repair — NYC & NJ',
+  description: 'Commercial kitchen exhaust fan repair across NYC and North Jersey: motors, belts, bearings, VFD faults, starters, wiring, and airflow checks.',
   alternates: { canonical: '/services/exhaust-fan-repair' },
 };
 

@@ -5,7 +5,7 @@ import { COMPANY } from '@/lib/data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Manufacturer-Assigned Kitchen Equipment Service: NYC & NJ',
+  title: 'Manufacturer Kitchen Service — NYC & NJ',
   description: 'Manufacturer-assigned startup, warranty, punch-list, and field service for commercial kitchen ventilation and equipment across NYC and North Jersey.',
   alternates: { canonical: '/manufacturer-service' },
 };

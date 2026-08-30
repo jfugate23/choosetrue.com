@@ -4,8 +4,8 @@ import { ArrowRight, CheckCircle2, Fan, Gauge, Settings2, Wind } from 'lucide-re
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Ventilation Services: NYC & North Jersey',
-  description: 'Kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, VFD and DCV controls, pollution-control troubleshooting, and manufacturer-assigned equipment work.',
+  title: 'Kitchen Ventilation Services — NYC & NJ',
+  description: 'Kitchen hood airflow diagnostics, exhaust fan repair, makeup air service, controls, and pollution-control troubleshooting across NYC and North Jersey.',
   alternates: { canonical: '/services' },
 };
 

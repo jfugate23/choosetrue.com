@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Kitchen Exhaust Pollution-Control System Service: NYC & NJ',
-  description: 'Commercial kitchen ESP and pollution-control system diagnostics across NYC and North Jersey. Power supplies, controls, interlocks, fans, pressure, and airflow troubleshooting.',
+  title: 'Pollution-Control Service — NYC & NJ',
+  description: 'Commercial kitchen ESP and pollution-control diagnostics across NYC and North Jersey: power, controls, interlocks, fans, pressure, and airflow.',
   alternates: { canonical: '/services/pollution-control' },
 };
 

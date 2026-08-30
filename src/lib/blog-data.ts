@@ -152,7 +152,7 @@ Looking for service? Visit our [Beverage Equipment Repair](/services/beverage-eq
   {
     slug: 'rational-combi-oven-error-codes-guide',
     title: 'Rational Combi Oven Error Codes: What They Mean and What to Do',
-    description: 'Complete guide to Rational iCombi Pro and SCC error codes. What each code means, whether you can fix it yourself, and when to call a certified tech.',
+    description: 'A practical guide to Rational iCombi Pro and SCC error codes, safe operator checks, and when to contact qualified or manufacturer-approved service.',
     date: '2026-03-22',
     category: 'Combi Ovens',
     readTime: '6 min',
@@ -200,7 +200,7 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 4. **Write down the exact code**: including any sub-codes shown
 5. **Note when it happens**: during preheat? Mid-cook? Only in steam mode?
 
-## When You Need a Certified Tech
+## When You Need Qualified or Manufacturer-Approved Service
 
 - Any code that returns after power cycling
 - E22 (fan motor): safety risk if operated without proper fan function
@@ -210,9 +210,9 @@ Rational uses "E" codes on the iCombi Pro and SCC series. The code appears on th
 
 ## Rational Service Partner Network
 
-Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.
+Training, warranty, and service-authorization requirements can vary by model, territory, and current manufacturer policy. Check the equipment documentation and confirm the required service status before approving warranty work.
 
-**True Commercial Service is pursuing Rational Authorized Service Partner certification. We service all Rational iCombi Pro, iCombi Classic, and SCC models across Northern NJ and the NYC metro.**
+**True Commercial Service reviews Rational and other cooking-equipment requests individually. Warranty or authorized-service work must be assigned or approved by the manufacturer before dispatch.**
 
 ## Related Articles
 
@@ -224,7 +224,7 @@ Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equi
     faqs: [
       { question: 'What do Rational combi oven error codes mean?', answer: 'Rational combi ovens display error codes on the control panel to indicate specific malfunctions. Common codes include E1 (temperature sensor failure), E2 (boiler issues), E3 (humidity sensor problems), and E22 (water supply). Some are resettable by staff; others require a trained technician.' },
       { question: 'Can I reset a Rational combi oven error code myself?', answer: 'Some minor errors can be cleared by power cycling the oven (turn off, wait 60 seconds, turn back on). However, persistent or recurring error codes indicate a real mechanical or electrical issue that needs professional diagnosis. Do not ignore repeated error codes.' },
-      { question: 'Does Rational require authorized service technicians?', answer: 'Yes. Rational requires that service technicians complete factory training before working on their equipment. Using an unauthorized tech can void your warranty and may result in improper repairs.' },
+      { question: 'Does Rational require authorized service technicians?', answer: 'Requirements can vary by model, territory, warranty status, and current manufacturer policy. Confirm the requirement with Rational or the assigning service channel before approving warranty work.' },
     ],
   },
   {
@@ -263,7 +263,7 @@ Looking for service? Visit our [Cooking Equipment Repair](/services/cooking-equi
 - Bin thermostat calibration
 - Water inlet valve condition
 
-**Why it matters:** Health codes require ice machines to be cleaned and sanitized regularly. Scale buildup reduces ice production by up to 30% before causing a complete failure.
+**Why it matters:** Cleaning and sanitizing requirements depend on the equipment instructions and applicable food-safety rules. Scale buildup can reduce production and contribute to equipment problems.
 
 ### Cooking Equipment (Ovens, Ranges, Fryers, Grills)
 **Frequency:** Semi-annually
@@ -340,7 +340,7 @@ Most equipment service companies offer PM agreements with:
 
 The best time to set up a PM program is before something breaks.
 
-**True Commercial Service offers customized preventive maintenance agreements for commercial kitchens across Northern NJ and the NYC metro. Contact us to schedule a free equipment assessment.**
+**True Commercial Service reviews preventive-maintenance requests based on the equipment inventory, location, access, operating conditions, and supportable service scope.**
 
 ## Related Articles
 
@@ -352,7 +352,7 @@ Looking for service? Visit our [Preventive Maintenance Agreements](/services/pre
     faqs: [
       { question: 'How often should commercial kitchen equipment be serviced?', answer: 'Most commercial kitchen equipment should be professionally serviced quarterly. High-use items like fryers and ice machines may need monthly attention. Refrigeration systems need quarterly condenser cleaning. HVAC and ventilation should be serviced twice per year.' },
       { question: 'What is included in a commercial kitchen equipment PM visit?', answer: 'A typical preventive maintenance visit includes cleaning (condensers, burners, filters), calibration (thermostats, timers, gas pressures), inspection (gaskets, wiring, belts, bearings), lubrication of moving parts, and a written report of equipment condition and recommended repairs.' },
-      { question: 'Is preventive maintenance worth the cost for restaurant equipment?', answer: 'Yes. Studies show that preventive maintenance reduces emergency breakdowns by up to 80% and extends equipment life by 30-50%. A quarterly PM program typically costs less than a single emergency service call.' },
+      { question: 'Is preventive maintenance worth the cost for restaurant equipment?', answer: 'It can be when the visit scope matches the equipment, operating load, and known failure modes. Compare the planned tasks, findings, and downtime risk with the program cost instead of relying on a universal savings percentage.' },
     ],
   },
   {
@@ -436,7 +436,7 @@ The goal: kitchen at -0.02 to -0.05 inches of water column relative to the dinin
 | Ductwork inspection | Annually |
 | Fire suppression inspection | Semi-annually |
 
-**True Commercial Service specializes in commercial kitchen ventilation systems including CaptiveAire hoods, makeup air units, and exhaust fan service. We perform air balancing, fan repair, and ongoing maintenance across Northern NJ and the NYC metro.**
+**True Commercial Service specializes in commercial kitchen ventilation, including hood airflow, makeup air, exhaust fans, VFDs, and controls across NYC and North Jersey. Manufacturer names identify equipment experience and do not imply current warranty authorization.**
 
 ## Related Articles
 
@@ -526,13 +526,13 @@ Looking for service? Visit our [Preventive Maintenance Agreements](/services/pre
     faqs: [
       { question: 'How much does equipment downtime cost a restaurant?', answer: 'Equipment downtime costs a typical restaurant $200-500 per hour when you factor in lost revenue, food waste, labor inefficiency, and customer loss. A single refrigeration failure can result in $3,000-8,000 in spoiled inventory on top of the repair cost.' },
       { question: 'What equipment failures cost restaurants the most money?', answer: 'Refrigeration failures are the most expensive because of inventory loss. A walk-in cooler failure can spoil thousands of dollars in product within hours. Cooking line failures during service are second: they directly impact revenue and can force a restaurant to close mid-shift.' },
-      { question: 'How can restaurants reduce equipment downtime?', answer: 'The most effective strategy is a preventive maintenance program that catches problems before they become emergencies. PM reduces breakdowns by up to 80%. Additionally, choose a service company with fast response times and high first-time fix rates.' },
+      { question: 'How can restaurants reduce equipment downtime?', answer: 'Use equipment-specific preventive maintenance, keep service records, train operators on safe daily checks, and address recurring symptoms early. When selecting a provider, ask how calls are prioritized, documented, and followed through.' },
     ],
   },
   {
     slug: 'epa-608-certification-restaurant-owners',
     title: 'EPA 608 Certification: What Restaurant Owners Need to Know About Refrigerant Work',
-    description: 'Why your equipment tech needs EPA 608 certification, what it covers, and why you should never let an uncertified person touch your refrigeration.',
+    description: 'What EPA Section 608 certification covers and what restaurant operators should verify before authorizing commercial refrigeration work.',
     date: '2026-03-09',
     category: 'Compliance',
     readTime: '4 min',
@@ -540,15 +540,15 @@ Looking for service? Visit our [Preventive Maintenance Agreements](/services/pre
 
 ## What Is EPA 608?
 
-The EPA (Environmental Protection Agency) requires that anyone who purchases, handles, or disposes of refrigerants must be certified under Section 608 of the Clean Air Act. This applies to all commercial refrigeration and HVAC equipment.
+Federal Section 608 rules require appropriate technician certification for work that could release regulated refrigerants from stationary refrigeration and air-conditioning equipment. The certification type and other licensing requirements depend on the equipment and work.
 
 ## Why It Matters to You
 
 ### Legal Liability
-If an uncertified person vents refrigerant from your equipment: even accidentally: the **property owner** can be held liable. Fines range from $10,000 to $44,539 per day, per violation.
+Improper refrigerant handling can create safety, environmental, equipment, and enforcement risk for the people and businesses involved. Verify the required technician certification and any applicable state or local licensing before authorizing the work.
 
 ### Insurance
-If equipment is damaged by an uncertified tech working on the refrigerant system, your insurance may deny the claim.
+Unqualified refrigerant work can create safety, environmental, warranty, and compliance problems. Verify the technician's EPA 608 certification and any state or local licensing required for the job.
 
 ### Environmental
 Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Proper handling isn't just legal compliance: it's environmental responsibility.
@@ -566,7 +566,7 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 
 ## What to Ask Your Service Company
 
-1. "Are all your techs EPA 608 certified?" (The answer should be yes without hesitation)
+1. "Which technician holds the EPA 608 certification required for this equipment and scope?"
 2. "What type of certification?" (Type II or Universal for restaurant work)
 3. "Do you recover refrigerant or vent it?" (Venting is illegal: recovery is required)
 4. "Do you have refrigerant tracking documentation?" (Required for systems with 50+ lbs)
@@ -582,7 +582,7 @@ Commercial refrigerants (R-134a, R-404A, R-410A) are potent greenhouse gases. Pr
 
 If your older equipment uses R-22 (Freon), it's been phased out of production. The remaining supply is expensive: $50-100+ per pound. If your system uses R-22 and develops a leak, it may be more cost-effective to retrofit or replace the system than to keep recharging.
 
-**Every technician at True Commercial Service holds EPA 608 Universal certification. We practice proper refrigerant recovery on every job across Northern NJ and the NYC metro.**
+**TCS accepts refrigerant work only when the technician certification, licensing, location, and job scope support it. Ask TCS to confirm fit before dispatch.**
 
 ## Related Articles
 
@@ -594,7 +594,7 @@ Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) p
     faqs: [
       { question: 'What is EPA 608 certification?', answer: 'EPA Section 608 certification is a federal requirement for anyone who services, maintains, or repairs equipment that uses refrigerants. It ensures technicians understand proper refrigerant handling, recovery, and environmental regulations. There are four types based on equipment size.' },
       { question: 'Can a restaurant owner work on their own refrigeration equipment?', answer: 'If the work involves the refrigerant circuit (charging, recovering, or repairing refrigerant lines), you must hold EPA 608 certification. Routine maintenance like cleaning coils, replacing gaskets, or changing filters does not require certification.' },
-      { question: 'What happens if an uncertified person works on refrigerant equipment?', answer: 'Violations of EPA Section 608 can result in fines up to $44,539 per day per violation. Both the person performing the work and the business owner who authorized it can be held liable. Always verify your technician holds current EPA 608 certification.' },
+      { question: 'What happens if an uncertified person works on refrigerant equipment?', answer: 'Improper refrigerant work can violate federal requirements and may result in enforcement or civil penalties. Verify the technician holds the EPA 608 certification required for the work and confirm any applicable state or local licensing.' },
     ],
   },
   {
@@ -678,7 +678,7 @@ At the end of the night, the oil won't drain for filtering.
 | Check thermostat accuracy | Monthly |
 | Professional inspection | Semi-annually |
 
-**True Commercial Service repairs all major commercial fryer brands across Northern NJ and the NYC metro. Gas and electric. Same-day emergency service available.**
+**TCS considers selected fryer and cooking-equipment work when it is manufacturer-assigned, dealer-referred, or requested by an established customer. Equipment and scope are confirmed before dispatch.**
 
 ## Related Articles
 
@@ -787,7 +787,7 @@ An air balance test uses a digital manometer and anemometer to measure:
 
 This takes 1-2 hours and should be done semi-annually or whenever cooking equipment is added or changed.
 
-**True Commercial Service provides expert CaptiveAire ventilation service including hood maintenance, fan repair, makeup air units, and professional air balancing across Northern NJ and the NYC metro. We understand ventilation from the inside out.**
+**True Commercial Service diagnoses commercial kitchen hood, exhaust fan, makeup-air, airflow, VFD, and controls problems across NYC and North Jersey. Manufacturer names identify equipment experience and do not imply current warranty authorization.**
 
 ## Related Articles
 
@@ -871,7 +871,7 @@ Coolers get opened much more frequently than freezers during service: sometimes 
 
 ## Emergency Response Differences
 
-When a **cooler** fails, you have 4-6 hours before product enters the danger zone (41°F). You have time to call for same-day service.
+When a **cooler** fails, follow the facility's food-safety plan, record product temperatures, limit door openings, and contact the appropriate service and food-safety resources. Do not rely on a universal time estimate for every product or operating condition.
 
 When a **freezer** fails, product starts thawing within 1-2 hours. If it's a weekend or holiday, you may need to emergency-transfer product to another freezer while waiting for repair.
 
@@ -881,7 +881,7 @@ When a **freezer** fails, product starts thawing within 1-2 hours. If it's a wee
 
 Walk-in freezers consume 2-3x more energy than coolers. A maintenance-neglected freezer with dirty coils can use 30-50% more energy than a clean one. At commercial electric rates, that's $100-300/month in wasted energy on a single unit.
 
-**True Commercial Service provides emergency and preventive maintenance for both walk-in coolers and freezers across Northern NJ and the NYC metro. We understand the critical differences and maintain each accordingly.**
+**TCS considers selected walk-in cooler and freezer work after confirming the location, refrigerant scope, licensing requirements, and service relationship. Direct public marketing remains focused on commercial kitchen ventilation.**
 
 ## Related Articles
 
@@ -905,13 +905,13 @@ Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) p
     readTime: '3 min',
     content: `A service agreement can save you thousands: or lock you into a bad deal. Here are the seven questions that separate a good contract from a regrettable one.
 
-## 1. What's the Response Time Guarantee?
+## 1. How Are Calls Prioritized?
 
 Get it in writing. "We'll be there as fast as we can" is not a commitment. Look for specific SLAs:
 - Emergency calls: under 2-4 hours
-- Standard calls: same day or next business day
+- Standard calls: ask how they are scheduled and communicated
 
-If they won't guarantee a response time, their schedule is unpredictable: and you'll be waiting when it matters most.
+Ask what information changes priority, what the provider can realistically commit to, and how schedule changes are communicated. Put any material service-level commitment in writing.
 
 ## 2. What's Covered and What's Not?
 
@@ -924,7 +924,7 @@ Read the fine print. Common exclusions:
 
 The best contracts clearly list what's covered. The worst ones have a short covered list and a long exclusion list.
 
-## 3. What Happens If You Don't Fix It on the First Visit?
+## 3. What Happens If the Job Requires a Return Visit?
 
 If the tech diagnoses the problem but needs to order a part, what's the cost for the return visit? Some companies charge a full service call for every visit. Others include the return trip in the original call.
 
@@ -962,7 +962,7 @@ If they don't track it: or won't share it: that tells you something.
 
 Before signing anything, call their emergency line at 9pm on a weekday. Does a real person answer? How quickly do they respond to a text? This 5-minute test tells you more about the company than any contract clause.
 
-**True Commercial Service believes in transparent agreements, guaranteed response times, and earning your business every visit. We track our metrics because we believe accountability drives excellence. Serving the NYC metro.**
+**TCS documents the agreed service scope, rates, access requirements, and communication pathway before recurring work begins. Any response commitment must be stated in the applicable customer agreement.**
 
 ## Related Articles
 
@@ -972,9 +972,9 @@ Before signing anything, call their emergency line at 9pm on a weekday. Does a r
 
 Looking for service? Visit our [Schedule Service](/schedule-service) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'What should a restaurant equipment service contract include?', answer: 'A good service contract should clearly state: guaranteed response times, what equipment is covered, parts and labor warranty terms, PM visit frequency and scope, emergency surcharge details, cancellation terms, and the company\'s first-time fix rate and average resolution time.' },
+      { question: 'What should a restaurant equipment service contract include?', answer: 'A good service contract should clearly state call-priority rules, covered equipment, parts and labor warranty terms, PM frequency and scope, after-hours charges, exclusions, documentation, and cancellation terms.' },
       { question: 'How long should I commit to an equipment service contract?', answer: 'Start with a 6-month or 1-year contract. Avoid long-term multi-year agreements until you have verified the company delivers on their promises. A confident company will earn your renewal: they should not need to lock you in.' },
-      { question: 'What is a good first-time fix rate for equipment repair?', answer: 'Industry average first-time fix rate is about 70%. A strong service company should be above 85%. This means the technician resolves the issue on the first visit without needing to return for parts or additional diagnosis.' },
+      { question: 'What is a good first-time fix rate for equipment repair?', answer: 'There is no single useful benchmark across every equipment type and service model. Ask how the provider defines the metric, whether parts-only return visits count, and how it documents diagnosis, follow-up, and final resolution.' },
     ],
   },
 
@@ -1042,7 +1042,7 @@ The MAU repair is a fraction of the annual energy waste. The math is clear: [con
 4. **Interlock**: many MAUs are interlocked with the exhaust fan. If the exhaust fan is off, the MAU won\'t run.
 5. **Thermostat**: check the setting. It may have been changed or malfunctioned.
 
-**True Commercial Service repairs and maintains all brands of makeup air units across Northern NJ and the NYC metro. If your MAU is down, your kitchen is losing money every hour. Call us for same-day service.**
+**True Commercial Service diagnoses commercial kitchen makeup-air, exhaust, airflow, and controls problems across NYC and North Jersey. Send the equipment brand, symptoms, ZIP code, and any fault code so TCS can confirm scope and availability.**
 
 ## Related Articles
 
@@ -1106,7 +1106,7 @@ A qualified technician measures your exhaust CFM, supply CFM, face velocity at t
 
 Once balanced, the hood captures the heat, the kitchen temperature drops, and the AC can actually keep up because it\'s not fighting thousands of CFM of misrouted hot air.
 
-**True Commercial Service provides kitchen air balancing for restaurants across Northern NJ and the NYC metro. If your kitchen is too hot and your HVAC company can\'t fix it, the problem is probably on the roof: not the AC unit. One visit, one balance, problem solved.**
+**True Commercial Service provides measured kitchen airflow diagnosis across NYC and North Jersey. The goal is to identify the actual exhaust, makeup-air, controls, or pressure condition and document practical next steps.**
 
 ## Related Articles
 
@@ -1176,7 +1176,7 @@ That\'s just energy. Add the operational costs:
 
 A one-time air balance service typically resolves the problem permanently: and it pays for itself in energy savings within a few months. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service diagnoses and fixes kitchen negative pressure problems for restaurants and commercial kitchens across Northern NJ and the NYC metro. One visit, real measurements, permanent fix.**
+**True Commercial Service diagnoses kitchen negative-pressure complaints across NYC and North Jersey using airflow and operating-condition measurements. Repairs and adjustments depend on the cause found and the approved scope.**
 
 ## Related Articles
 
@@ -1245,7 +1245,7 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 Every noise is a warning. The repair cost goes up the longer you wait: a simple belt replacement today prevents a full motor replacement next month. The fan on your roof is running in the harshest conditions: heat, grease, rain, snow, UV exposure. It needs attention. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service provides same-day exhaust fan diagnosis and repair across Northern NJ and the NYC metro. If your fan is making noise, we can usually fix it in one visit with parts on the truck.**
+**True Commercial Service diagnoses commercial kitchen exhaust-fan, VFD, controls, and airflow problems across NYC and North Jersey. Send the fan information, symptoms, ZIP code, and rooftop-access details so TCS can confirm fit and availability.**
 
 ## Related Articles
 
@@ -1309,7 +1309,7 @@ This isn\'t just a comfort issue:
 
 One air balance visit fixes the root cause permanently. [Contact us for a quote](/schedule-service).
 
-**True Commercial Service fixes kitchen-to-dining room odor problems by balancing the ventilation system at the source. Serving the NYC metro restaurants, hotels, and commercial kitchens.**
+**True Commercial Service diagnoses kitchen-to-dining-room odor and pressure complaints by evaluating hood capture, exhaust, makeup air, controls, and airflow across NYC and North Jersey.**
 
 ## Related Articles
 
@@ -1380,7 +1380,7 @@ Most smoke capture problems are solved with fan service and/or an air balance vi
 
 Most smoke capture problems are cause #1 or #2: and both are fixed with a single air balance visit.
 
-**True Commercial Service diagnoses and fixes hood capture problems for commercial kitchens across Northern NJ and the NYC metro. We bring the instruments, take the readings, run the smoke test, and fix it. One visit.**
+**True Commercial Service diagnoses hood-capture problems across NYC and North Jersey with airflow readings, operating checks, and capture testing. The findings determine whether the next step is adjustment, repair, cleaning by the appropriate contractor, or a design correction.**
 
 ## Related Articles
 
@@ -1408,8 +1408,8 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
 ## Check the Indicator Light First
 
-### Green Light = Operating Normally
-The ESP is powered and the electrostatic field is active. Grease is being collected. You're compliant.
+### Green Light = The Control Reports Normal Operation
+A green indicator typically means the unit is powered and the control is not reporting a fault. Indicator behavior varies by manufacturer, and a light alone does not prove airflow, collection performance, or code compliance.
 
 ### Red Light = Problem Detected
 The unit has shut itself off due to a detected fault. Common causes:
@@ -1423,13 +1423,12 @@ The unit has shut itself off due to a detected fault. Common causes:
 - Check if the unit is interlocked with the exhaust fan (some units won't power on unless the fan is running)
 - The power supply may have failed completely
 
-## What You Can Do
+## What You Can Check Safely
 
-1. **Check the breaker**: flip it off and back on. Sometimes a reset clears a temporary fault.
-2. **Check the access door**: make sure it's fully closed and the interlock is engaged.
-3. **Look at the cells**: if you can safely open the unit, look at the collector plates. If they're coated in thick grease, that's your problem. They need professional cleaning.
-4. **Check the pre-filter**: a completely clogged pre-filter can restrict airflow enough to trigger faults.
-5. **Turn the exhaust fan on first**: some ESPs have an interlock that requires the exhaust fan to be running before the ESP powers up.
+1. **Record the indicator and fault information**: take a clear photo before resetting anything.
+2. **Confirm the exhaust fan is running**: some systems require fan proof before the pollution-control unit can enable.
+3. **Check whether a normal cleaning or maintenance visit was recently completed**: contamination and reassembly issues are common fault causes.
+4. **Call for service before opening internal high-voltage sections**: follow the manufacturer instructions and site lockout procedure.
 
 ## What Requires a Technician
 
@@ -1443,10 +1442,10 @@ The unit has shut itself off due to a detected fault. Common causes:
 A non-functioning ESP means:
 - Your kitchen exhaust is dumping grease and smoke directly into the air
 - Neighbors smell it and file complaints
-- The DEP shows up and you have no working unit and no maintenance logs
-- $1,000 - $10,000 fine
+- The system may not be meeting its intended emissions-control function
+- The site may need service records and operating evidence for an inspection or complaint response
 
-A red light on your Smoke Hog is not a suggestion. It's a routine cleaning visit or a $10,000 fine. Your choice. [Schedule service today](/schedule-service).
+A red light or recurring trip deserves diagnosis. Record the condition and [request service](/schedule-service) rather than assuming the problem is only dirty cells.
 
 ## Related Articles
 
@@ -1456,11 +1455,26 @@ A red light on your Smoke Hog is not a suggestion. It's a routine cleaning visit
 Need ESP service? Visit our [Pollution Control Service](/services/pollution-control) page or [schedule service](/schedule-service) today.`,
     faqs: [
       { question: 'Why is my Smoke Hog showing a red light?', answer: 'A red indicator light means the ESP has detected a fault and shut down. The most common cause is dirty collector cells causing electrical arcing. Other causes include a broken ionizer wire, power supply fault, or open safety interlock. The cells need professional cleaning.' },
-      { question: 'Can I clean my ESP cells myself?', answer: 'No. ESP cells need to be removed from the unit, soaked in professional alkaline cleaning solution, and power washed. They cannot be effectively cleaned in place. The high-voltage system also requires trained technicians for any internal work.' },
-      { question: 'What happens if I ignore a broken ESP?', answer: 'A non-functioning ESP means your kitchen exhaust is dumping grease and smoke into the air, which triggers neighbor complaints, health code violations, and potential fines. In cities with pollution control requirements, fines can reach $10,000+ per violation.' },
+      { question: 'Can I clean my ESP cells myself?', answer: 'Follow the equipment manufacturer\'s instructions and the site\'s lockout procedure. ESP systems contain high-voltage components, and internal diagnosis or cell removal should be handled only by personnel trained for that equipment and task.' },
+      { question: 'What happens if I ignore a broken ESP?', answer: 'A non-functioning ESP may allow more smoke, grease aerosol, or odor to leave the exhaust system and can lead to complaints or enforcement attention. Record the fault and arrange diagnosis rather than relying on the indicator light alone.' },
     ],
   },
 ];
+
+// Only these field-relevant articles support the site's current public focus.
+// Legacy equipment articles remain available for old links, but are excluded
+// from the blog index and sitemap and receive noindex metadata.
+const INDEXABLE_POST_SLUGS = new Set([
+  'commercial-kitchen-ventilation-problems-signs',
+  'captiveaire-hood-maintenance-repair-guide',
+  'makeup-air-unit-not-working-restaurant',
+  'restaurant-kitchen-too-hot-air-balance',
+  'kitchen-negative-pressure-causes-costs-fix',
+  'exhaust-fan-making-noise-causes',
+  'dining-room-smells-like-kitchen-ventilation',
+  'kitchen-hood-not-capturing-smoke',
+  'smoke-hog-not-working-troubleshooting',
+]);
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find(p => p.slug === slug);
@@ -1468,4 +1482,12 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 
 export function getAllPosts(): BlogPost[] {
   return [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export function isIndexablePost(slug: string): boolean {
+  return INDEXABLE_POST_SLUGS.has(slug);
+}
+
+export function getIndexablePosts(): BlogPost[] {
+  return getAllPosts().filter((post) => isIndexablePost(post.slug));
 }

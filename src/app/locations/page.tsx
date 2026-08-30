@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Building2, MapPin } from 'lucide-react';
-import { LOCATIONS } from '@/lib/data';
+import { LOCATIONS, VENTILATION_CITIES } from '@/lib/data';
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Commercial Kitchen Ventilation Service Areas | NYC & New Jersey',
+  title: 'Kitchen Ventilation Areas — NYC & NJ',
   description: 'Commercial kitchen ventilation service in all five NYC boroughs and across Union, Essex, Hudson, Passaic, and Middlesex counties in New Jersey.',
   alternates: { canonical: '/locations' },
 };
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const activeLocations = LOCATIONS.filter((location) => location.status === 'active');
 const nycLocations = activeLocations.filter((location) => location.state === 'NY' && location.slug !== 'new-york-city');
 const njLocations = activeLocations.filter((location) => location.state === 'NJ');
+const ventilationCitySlugs = new Set(VENTILATION_CITIES.map((city) => city.slug));
 
 export default function LocationsPage() {
   return (
@@ -81,7 +82,7 @@ function LocationGrid({ locations }: { locations: typeof LOCATIONS }) {
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {locations.map((location, index) => (
         <Reveal key={location.slug} delay={index * 60}>
-          <Link href={`/locations/${location.slug}`} className="group block glass-card rounded-xl p-6 h-full hover:border-amber-500/25 transition-colors">
+          <Link href={ventilationCitySlugs.has(location.slug) ? `/services/kitchen-ventilation/${location.slug}` : `/locations/${location.slug}`} className="group block glass-card rounded-xl p-6 h-full hover:border-amber-500/25 transition-colors">
             <div className="flex items-start justify-between gap-4 mb-4">
               <div>
                 <h3 className="text-xl font-semibold group-hover:text-amber-400 transition-colors">{location.city}</h3>

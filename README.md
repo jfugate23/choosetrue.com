@@ -23,9 +23,28 @@ Marketing website for True Commercial Service, an owner-operated commercial kitc
 | `/manufacturer-service` | Manufacturer-assigned startup, warranty, and field service |
 | `/schedule-service` | Qualified commercial ventilation service request form |
 
-## Lead delivery and Google Ads
+## Lead delivery and measurement
 
-Copy `.env.example` values into Vercel Project Settings → Environment Variables before deploying. `RESEND_API_KEY` is required for the form to report success; without it, visitors are instructed to call so a lead is not silently lost. Google Ads variables are optional until conversion actions are created.
+Copy `.env.example` values into Vercel Project Settings → Environment Variables before deploying. `RESEND_API_KEY` is required for the form to report success; without it, visitors are instructed to call so a lead is not silently lost. Google Ads, GA4, and Google Search Console verification variables are optional until the corresponding properties and conversion actions are created.
+
+The site records successful form submissions and phone-link clicks in Vercel Analytics. When GA4 is configured, it also sends `generate_lead` and `click_to_call` events. Google Ads lead and website-call conversion configuration remains separate so Ads can use its own conversion labels.
+
+## Recurring SEO check
+
+Run the sitemap audit against production:
+
+```bash
+npm run seo:audit
+```
+
+Or run it against a local production server:
+
+```bash
+npm run start
+npm run seo:audit -- --base=http://localhost:3000
+```
+
+The check reports broken sitemap URLs, missing titles/descriptions/canonicals, noindex pages included in the sitemap, canonical mismatches, and invalid H1 counts. Title and description length findings are reported as warnings.
 
 ## Deployment to Vercel
 

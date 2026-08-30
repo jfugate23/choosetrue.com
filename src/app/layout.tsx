@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [{ url: 'https://choosetrue.com/images/logo.png' }],
   },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 // Parent brand Organization: the NJ/NYC LocalBusiness references this

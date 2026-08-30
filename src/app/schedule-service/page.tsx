@@ -4,7 +4,7 @@ import { Section, Reveal, ServiceForm } from '@/components/UI';
 import { Phone, Clock, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Request Commercial Kitchen Ventilation Service',
+  title: 'Request Kitchen Ventilation Service',
   description: 'Request commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, or ventilation controls support in NYC and North Jersey.',
   alternates: { canonical: '/schedule-service' },
 };

@@ -18,6 +18,15 @@ export default function CallTracking() {
         number: anchor.getAttribute('href') || '',
         page: window.location.pathname,
       });
+      const analyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+      const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
+      if (gtag && analyticsId) {
+        gtag('event', 'click_to_call', {
+          send_to: analyticsId,
+          link_url: anchor.getAttribute('href') || '',
+          page_path: window.location.pathname,
+        });
+      }
     };
     document.addEventListener('click', onClick, { capture: true });
     return () => document.removeEventListener('click', onClick, { capture: true });

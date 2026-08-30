@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Commercial Makeup Air Unit Repair: NYC & North Jersey',
-  description: 'Restaurant and commercial kitchen makeup air unit repair across NYC and North Jersey. Fans, motors, belts, heat, freeze protection, airflow, interlocks, VFDs, and controls.',
+  title: 'Makeup Air Unit Repair — NYC & NJ',
+  description: 'Commercial kitchen makeup air unit repair across NYC and North Jersey: fans, motors, belts, heat, airflow, interlocks, VFDs, and controls.',
   alternates: { canonical: '/services/makeup-air-unit-repair' },
 };
 

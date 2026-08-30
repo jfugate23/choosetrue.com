@@ -1,7 +1,25 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getPostBySlug, getAllPosts } from '@/lib/blog-data';
+import { getPostBySlug, getAllPosts, isIndexablePost } from '@/lib/blog-data';
+
+const seoTitles: Record<string, string> = {
+  'commercial-kitchen-ventilation-problems-signs': 'Kitchen Ventilation Warning Signs',
+  'captiveaire-hood-maintenance-repair-guide': 'CaptiveAire Hood Maintenance Guide',
+  'makeup-air-unit-not-working-restaurant': 'Makeup Air Unit Not Working?',
+  'restaurant-kitchen-too-hot-air-balance': 'Why Restaurant Kitchens Stay Hot',
+  'kitchen-negative-pressure-causes-costs-fix': 'Commercial Kitchen Negative Pressure',
+  'exhaust-fan-making-noise-causes': 'Noisy Kitchen Exhaust Fan',
+  'dining-room-smells-like-kitchen-ventilation': 'Kitchen Odors in the Dining Room',
+  'kitchen-hood-not-capturing-smoke': 'Kitchen Hood Not Capturing Smoke',
+  'smoke-hog-not-working-troubleshooting': 'Smoke Hog Fault Troubleshooting',
+};
+
+function seoDescription(description: string) {
+  if (description.length <= 160) return description;
+  const shortened = description.slice(0, 157).replace(/\s+\S*$/, '');
+  return `${shortened}…`;
+}
 
 export async function generateStaticParams() {
   return getAllPosts().map(post => ({ slug: post.slug }));
@@ -12,16 +30,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
   if (!post) return { title: 'Not Found' };
 
+  const description = seoDescription(post.description);
+
   return {
-    title: post.title,
-    description: post.description,
+    title: seoTitles[post.slug] || post.title,
+    description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
-      description: post.description,
+      description,
       type: 'article',
       publishedTime: post.date,
     },
+    robots: isIndexablePost(post.slug)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   };
 }
 
@@ -29,6 +52,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) notFound();
+
+  const relatedService = getRelatedService(post.slug);
 
   // Simple markdown-to-html (handles ##, ###, **, -, |, \n)
   const html = post.content
@@ -119,10 +144,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
         <h3 className="text-lg font-semibold text-white mb-2">Have a kitchen ventilation problem?</h3>
         <p className="text-gray-400 text-sm mb-4">TCS provides specialized hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.</p>
-        <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
-          Request Ventilation Service
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link href={relatedService.href} className="inline-block px-5 py-2.5 border border-amber-500/30 hover:border-amber-400 text-amber-300 font-semibold rounded-lg text-sm transition-colors">
+            {relatedService.label}
+          </Link>
+          <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
+            Request Ventilation Service
+          </Link>
+        </div>
       </div>
     </div>
   );
+}
+
+function getRelatedService(slug: string): { href: string; label: string } {
+  if (slug.includes('makeup-air') || slug.includes('too-hot') || slug.includes('negative-pressure')) {
+    return { href: '/services/makeup-air-unit-repair', label: 'Makeup Air Service' };
+  }
+  if (slug.includes('exhaust-fan')) {
+    return { href: '/services/exhaust-fan-repair', label: 'Exhaust Fan Repair' };
+  }
+  if (slug.includes('smoke-hog')) {
+    return { href: '/services/pollution-control', label: 'Pollution-Control Service' };
+  }
+  return { href: '/services/kitchen-air-balancing', label: 'Hood Airflow & Balancing' };
 }

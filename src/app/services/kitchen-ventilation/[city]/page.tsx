@@ -22,7 +22,7 @@ export function generateMetadata({ params }: Props): Metadata {
   const city = VENTILATION_CITIES.find((item) => item.slug === params.city);
   if (!city) return {};
   return {
-    title: `Kitchen Ventilation & Exhaust Fan Repair in ${city.city}, ${city.state}`,
+    title: `${city.city} Kitchen Ventilation`,
     description: `Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air service, and controls troubleshooting in ${city.city}, ${city.state} and ${city.region}.`,
     alternates: { canonical: `/services/kitchen-ventilation/${city.slug}` },
   };
