@@ -25,6 +25,24 @@ const nextConfig = {
       { source: '/blog/commercial-exhaust-fan-repair-oklahoma-city', destination: '/services/exhaust-fan-repair', permanent: true },
       { source: '/blog/ice-machine-repair-near-me-oklahoma-city', destination: '/blog', permanent: true },
 
+      // ─── Retired NJ/NYC articles → closest current resource ───
+      // Search Console still sees these historical URLs. Redirect only where
+      // the current site has a genuinely relevant replacement.
+      { source: '/blog/esp-cleaning-service-nyc-nj', destination: '/services/pollution-control', permanent: true },
+      { source: '/blog/kitchen-air-balancing-nj-what-it-is', destination: '/services/kitchen-air-balancing', permanent: true },
+      { source: '/blog/commercial-kitchen-equipment-repair-near-me-nj-nyc', destination: '/services', permanent: true },
+      { source: '/blog/nyc-local-law-38-esp-requirements-restaurants', destination: '/services/pollution-control', permanent: true },
+      { source: '/blog/commercial-kitchen-equipment-repair-cost-nj', destination: '/services', permanent: true },
+      { source: '/blog/restaurant-exhaust-fan-repair-nj', destination: '/services/exhaust-fan-repair', permanent: true },
+      { source: '/blog/emergency-walk-in-cooler-repair-near-me-elizabeth-nj', destination: '/services/refrigeration', permanent: true },
+      { source: '/blog/pm-agreement-benefits-nj-restaurants', destination: '/services/preventive-maintenance', permanent: true },
+      { source: '/blog/kitchen-air-balancing-cost-nj-pricing', destination: '/services/kitchen-air-balancing', permanent: true },
+      { source: '/blog/espresso-machine-repair-nj', destination: '/services/espresso-machines', permanent: true },
+      { source: '/blog/ice-machine-repair-near-me-union-county-nj', destination: '/services/refrigeration', permanent: true },
+      { source: '/blog/captiveaire-hood-service-nj', destination: '/blog/captiveaire-hood-maintenance-repair-guide', permanent: true },
+      { source: '/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj', destination: '/services', permanent: true },
+      { source: '/blog/commercial-exhaust-fan-repair-near-newark-nj', destination: '/services/kitchen-ventilation/newark-nj', permanent: true },
+
       // ─── Consolidate duplicate location/service landing pages ─
       // The richer ventilation-city route owns the local search intent.
       { source: '/locations/elizabeth-nj', destination: '/services/kitchen-ventilation/elizabeth-nj', permanent: true },
