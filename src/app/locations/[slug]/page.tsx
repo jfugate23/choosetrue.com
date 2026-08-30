@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, Fan, Gauge, MapPin, Phone, Settings2, Wind } from 'lucide-react';
-import { COMPANY, LOCATIONS } from '@/lib/data';
+import { COMPANY, LOCATIONS, VENTILATION_CITIES } from '@/lib/data';
 import { PageHero, Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 
 type Props = { params: { slug: string } };
@@ -15,14 +15,17 @@ const localServices = [
 ];
 
 export function generateStaticParams() {
-  return LOCATIONS.map((location) => ({ slug: location.slug }));
+  const ventilationCitySlugs = new Set(VENTILATION_CITIES.map((city) => city.slug));
+  return LOCATIONS
+    .filter((location) => !ventilationCitySlugs.has(location.slug))
+    .map((location) => ({ slug: location.slug }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
   const location = LOCATIONS.find((item) => item.slug === params.slug);
   if (!location) return {};
   return {
-    title: `Commercial Kitchen Ventilation in ${location.city}, ${location.state}`,
+    title: `${location.city} Kitchen Ventilation`,
     description: `Kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls in ${location.city}, ${location.state}. Commercial kitchens only.`,
     alternates: { canonical: `/locations/${location.slug}` },
   };

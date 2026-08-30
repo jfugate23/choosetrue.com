@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kitchen Ventilation Energy Waste Calculator | True Commercial Service',
-  description: 'Free tool: calculate how much money your restaurant is losing through unbalanced kitchen ventilation. Enter your hood size and utility rates to see annual waste.',
+  title: 'Kitchen Ventilation Energy Calculator',
+  description: 'Estimate the annual energy cost associated with kitchen exhaust and makeup air. Enter hood size, operating hours, and utility rates.',
+  alternates: { canonical: '/tools/energy-calculator' },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -5,8 +5,9 @@ import { VERTICALS } from '@/lib/data';
 import { PageHero, Section, Reveal } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Who We Serve',
-  description: 'True Commercial Service works with restaurants, grocery stores, schools, hospitals, hotels, and institutional foodservice operations.',
+  title: 'Kitchen Ventilation for Facilities',
+  description: 'Kitchen ventilation diagnostics for restaurants, grocery foodservice, institutions, hotels, and hospitality facilities across NYC and North Jersey.',
+  alternates: { canonical: '/who-we-serve' },
 };
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -21,8 +22,8 @@ export default function WhoWeServePage() {
     <>
       <PageHero
         eyebrow="Who We Serve"
-        title="Built for operators who can't afford downtime."
-        description="From single-unit restaurants to multi-site institutional operations: we understand the urgency, the margins, and the stakes."
+        title="Ventilation service for working commercial kitchens."
+        description="TCS supports restaurants, grocery foodservice, schools, institutions, hotels, and hospitality teams with measured airflow, fan, makeup-air, and controls diagnosis."
       />
 
       <Section>

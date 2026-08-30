@@ -1,19 +1,20 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllPosts } from '@/lib/blog-data';
+import { getIndexablePosts } from '@/lib/blog-data';
 
 export const metadata: Metadata = {
-  title: 'Blog: Commercial Kitchen Equipment Tips & Guides',
-  description: 'Expert advice on commercial kitchen equipment repair, maintenance, and troubleshooting. Walk-in coolers, ice machines, combi ovens, ventilation, and more.',
+  title: 'Commercial Kitchen Ventilation Guides',
+  description: 'Field-informed guides to kitchen hood capture, exhaust fans, makeup air, negative pressure, ventilation controls, and pollution-control problems.',
+  alternates: { canonical: '/blog' },
 };
 
 export default function BlogPage() {
-  const posts = getAllPosts();
+  const posts = getIndexablePosts();
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-white mb-2">Blog</h1>
-      <p className="text-gray-400 mb-12">Expert guides on commercial kitchen equipment repair and maintenance.</p>
+      <p className="text-gray-400 mb-12">Practical guides to commercial kitchen airflow, exhaust, makeup air, controls, and capture problems.</p>
 
       <div className="space-y-8">
         {posts.map(post => (

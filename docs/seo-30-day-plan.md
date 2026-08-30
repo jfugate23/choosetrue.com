@@ -1,184 +1,82 @@
-# True Commercial Service — 30-Day SEO & Content Plan
-## Starting: March 27, 2026
+# True Commercial Service — 30-Day SEO Operating Plan
 
----
+**Starting:** August 30, 2026
+**Primary market:** New York City
+**Secondary market:** Selected North and Central New Jersey coverage
+**Primary goal:** Qualified commercial kitchen ventilation calls and service requests
 
-## WEEK 1 (Mar 27 – Apr 2): Foundation
+## Guardrails
 
-### Day 1 (Mar 27) — DONE
-- [x] Schema markup added (LocalBusiness, 30-mile radius, 24/7)
-- [x] 5 blog articles published
-- [x] Sitemap includes all pages + blog posts
+- Lead with hood airflow, exhaust fans, makeup air, VFD/DCV controls, pressure, and capture problems.
+- Keep residential HVAC, hood/duct cleaning, fire suppression, and broad generic HVAC outside the direct-marketing scope.
+- Do not publish unverified 24/7, same-day, response-time, certification, manufacturer-authorization, or first-visit-fix claims.
+- Keep general cooking, refrigeration, beverage, and espresso information noindexed and positioned for manufacturer, dealer, established-customer, or qualified referral work.
+- Do not create duplicated city-name pages. Each indexable URL needs a distinct search intent and useful local content.
 
-### Day 2 (Mar 28)
-- [ ] **Google Search Console** — verify choosetrue.com, submit sitemap
-- [ ] **Google Business Profile** — create as Service Area Business
-  - Business name: True Commercial Service LLC
-  - Category: Commercial Refrigeration Repair (primary)
-  - Additional categories: Restaurant Equipment Repair, HVAC Contractor, Kitchen Equipment Repair
-  - Service area: 30 miles around Elizabeth, NJ
-  - Hours: 24/7
-  - Description: "Commercial foodservice equipment repair serving Union County, NJ. Refrigeration, cooking equipment, ice machines, ventilation, espresso machines. AI-powered diagnostics. 24/7 emergency service."
-  - Website: choosetrue.com
-  - SMS: (908) 743-8688
+## Week 1 — Measurement and indexing
 
-### Day 3 (Mar 29)
-- [ ] **Bing Webmaster Tools** — verify and submit sitemap (Bing handles ~7% of searches — free traffic)
-- [ ] **Apple Business Connect** — register business for Apple Maps
-- [ ] Write blog: **"Emergency Restaurant Equipment Repair in Elizabeth NJ — What to Expect"** (local keyword)
+- [ ] Add the Google Search Console verification value to the production environment.
+- [ ] Submit `https://choosetrue.com/sitemap.xml` in Search Console.
+- [ ] Add the GA4 measurement ID to the production environment.
+- [ ] Confirm `generate_lead` and `click_to_call` events reach GA4.
+- [ ] Confirm Google Ads lead and website-call conversion labels are active.
+- [ ] Run `npm run seo:audit` after deployment and resolve all errors.
+- [ ] Inspect the homepage, four priority service pages, and NYC borough pages in Search Console.
+- [ ] Record the baseline: indexed URLs, impressions, clicks, calls, forms, and Ads search terms.
 
-### Day 4 (Mar 30)
-- [ ] **Yelp Business Page** — create listing, match NAP (name/address/phone) exactly
-- [ ] **BBB** — file for listing under Commercial Kitchen Equipment Repair
-- [ ] Publish blog from Day 3
+## Week 2 — Local landing-page quality
 
-### Day 5-7 (Mar 31 – Apr 2)
-- [ ] Write blog: **"What Does Commercial Kitchen Equipment Repair Cost? NJ Pricing Guide"** (high-intent commercial keyword)
-- [ ] **Angi/HomeAdvisor** — create commercial services listing
-- [ ] **Thumbtack** — create listing for restaurant equipment repair
-- [ ] Share first 2 blogs on personal LinkedIn
+- [ ] Review Manhattan and Brooklyn first because NYC is the primary market.
+- [ ] Add field-specific proof, access considerations, equipment examples, and internal links where supported.
+- [ ] Review Queens, Bronx, and Staten Island pages for unique local usefulness.
+- [ ] Review New Jersey pages and keep only markets that make operational and economic sense.
+- [ ] Check for keyword cannibalization between service, location, and article URLs.
+- [ ] Confirm every indexable page has one clear primary search intent and CTA.
 
----
+## Week 3 — Authority content
 
-## WEEK 2 (Apr 3 – Apr 9): Local SEO + Citations
+- [ ] Update one existing ventilation article using actual Search Console query data.
+- [ ] Publish one field-based case study using real symptoms, measurements, work performed, and outcome.
+- [ ] Add real job photos with descriptive alt text when customer and site rules allow publication.
+- [ ] Add contextual links from articles to the most relevant service page and from service pages back to supporting guides.
+- [ ] Request legitimate manufacturer, dealer, facility, or project references where the relationship can be named publicly.
 
-### Day 8 (Apr 3)
-- [ ] Write blog: **"Hoshizaki vs Manitowoc Ice Machines — Service & Reliability Comparison"** (brand comparison keyword)
-- [ ] **Facebook Business Page** — create, post link to blog
-- [ ] **Instagram** — create @truecommercialservice, post logo + "coming soon"
+## Week 4 — Local and paid-search alignment
 
-### Day 9 (Apr 4)
-- [ ] Publish Hoshizaki vs Manitowoc blog
-- [ ] **Nextdoor Business** — create listing (hyperlocal)
-- [ ] **Yellow Pages / Superpages** — submit listing
+- [ ] Confirm Google Business Profile verification status and correct any outstanding verification request.
+- [ ] Align GBP categories, service areas, phone, hours, and website landing page with the current site.
+- [ ] Review Ads search terms and add negatives for residential, cleaning, DIY, jobs, parts-only, and unrelated equipment traffic.
+- [ ] Compare paid-search terms with Search Console queries and lead quality.
+- [ ] Turn proven paid-search terms into organic page improvements only when the intent is distinct.
+- [ ] Record completed work and next-month priorities.
 
-### Day 10 (Apr 5)
-- [ ] Write blog: **"How to Choose a Commercial Kitchen Equipment Repair Company in NJ"** (buyer's guide keyword)
-- [ ] **CFESA Directory** — apply for listing (once membership is active)
-- [ ] **Alignable** — create business profile (B2B networking)
+## Recurring cadence after day 30
 
-### Day 11-12 (Apr 6-7)
-- [ ] Publish buyer's guide blog
-- [ ] **Google Business Profile** — add first 5 photos (logo, van, tools, work in progress)
-- [ ] Write blog: **"The True Cost of Kitchen Equipment Downtime for NJ Restaurants"** (pain point keyword)
+### Weekly
 
-### Day 13-14 (Apr 8-9)
-- [ ] Publish downtime cost blog
-- [ ] **Respond to any Google/Yelp questions** that appear on listings
-- [ ] Create **Google Posts** on GBP — share latest blog article
-- [ ] Review all citations — ensure NAP is identical everywhere:
-  - Name: True Commercial Service LLC
-  - Address: Elizabeth, NJ (service area)
-  - Phone: (908) 743-8688
+- Review Search Console queries, indexing, Google Ads search terms, calls, forms, and lead quality.
+- Add negative keywords and correct tracking problems quickly.
+- Improve one existing page before creating a new page without evidence.
 
----
+### Monthly
 
-## WEEK 3 (Apr 10 – Apr 16): Content Depth + Backlinks
+- Publish or materially improve one field-based case study or technical guide.
+- Refresh one priority service or location page using real query and lead data.
+- Add current field photos and pursue two or three legitimate industry/local references.
+- Run `npm run seo:audit` and record changes in indexed URLs and conversions.
 
-### Day 15 (Apr 10)
-- [ ] Write blog: **"EPA 608 Certification: What Restaurant Owners Should Know About Refrigerant Work"** (trust/authority keyword)
-- [ ] **Email local restaurant associations** — introduce True Commercial Service, offer free ventilation assessment article as guest post
+### Quarterly
 
-### Day 16 (Apr 11)
-- [ ] Publish EPA 608 blog
-- [ ] Write blog: **"Commercial Fryer Troubleshooting: 6 Common Problems and Fixes"** (equipment-specific keyword)
+- Run a full technical crawl and Core Web Vitals review.
+- Recheck competitors, map results, advertisers, and content gaps.
+- Consolidate pages that compete for the same intent.
+- Reassess geography based on service capacity, travel economics, and booked work.
 
-### Day 17 (Apr 12)
-- [ ] Publish fryer troubleshooting blog
-- [ ] **Google Business Profile** — post weekly update (blog link + service highlight)
-- [ ] **Check Search Console** — see what queries are starting to show, adjust content strategy
+## Primary measures
 
-### Day 18-19 (Apr 13-14)
-- [ ] Write blog: **"What Is a PM Agreement? Why Every Restaurant in NJ Needs One"** (PM sales keyword)
-- [ ] Create **location-specific landing pages** if not already done:
-  - /locations/elizabeth-nj
-  - /locations/newark-nj
-  - /locations/union-county
-  - /locations/jersey-city
-
-### Day 20-21 (Apr 15-16)
-- [ ] Publish PM agreement blog
-- [ ] Write blog: **"CaptiveAire Hood Systems: Maintenance, Repair, and Air Balancing Guide"** (brand + service keyword — your specialty)
-- [ ] **Submit to local NJ business directories:**
-  - NJ.com business directory
-  - New Jersey Business Directory
-  - Elizabeth Chamber of Commerce
-
----
-
-## WEEK 4 (Apr 17 – Apr 26): Authority Building
-
-### Day 22 (Apr 17)
-- [ ] Publish CaptiveAire blog
-- [ ] Write blog: **"Walk-In Freezer vs Walk-In Cooler: Service Differences Every Owner Should Know"**
-- [ ] **Google Business Profile** — weekly post + add new service photos
-
-### Day 23-24 (Apr 18-19)
-- [ ] Publish walk-in comparison blog
-- [ ] Write blog: **"7 Questions to Ask Before Signing a Restaurant Equipment Service Contract"** (buyer intent keyword)
-- [ ] **Check Search Console rankings** — which articles are getting impressions? Double down on those topics.
-
-### Day 25-26 (Apr 20-21)
-- [ ] Publish service contract blog
-- [ ] **Internal linking audit** — make sure every blog links to at least 2 other blogs and 1 service page
-- [ ] **Update existing blogs** — add internal links to newer articles
-
-### Day 27-28 (Apr 22-23)
-- [ ] Write blog: **"Espresso Machine Repair in NJ: La Marzocco, Nuova Simonelli, and More"** (niche + local keyword)
-- [ ] **Google Business Profile** — verify insights: how many views, calls, direction requests?
-- [ ] **Create FAQ schema** on 3 most-visited blog posts (adds FAQ rich results in Google)
-
-### Day 29-30 (Apr 24-26)
-- [ ] Publish espresso repair blog
-- [ ] **30-Day SEO Audit:**
-  - Total blog posts: 15
-  - Google Search Console: check indexed pages, impressions, clicks
-  - Google Business Profile: views, actions
-  - Citations: verify all 10+ directories have matching NAP
-  - Backlinks: any inbound links from directories or associations?
-- [ ] Plan Month 2 content calendar based on Search Console data (write about what people are actually searching for)
-
----
-
-## CONTENT TARGETS BY DAY 30
-
-| Metric | Target |
-|--------|--------|
-| Blog posts published | 15 |
-| Pages indexed in Google | 30+ |
-| Google Business Profile set up | Complete |
-| Business citations/directories | 10+ |
-| Social profiles created | 3 (Facebook, Instagram, LinkedIn) |
-| Sitemap submitted | Google + Bing |
-| Schema markup | LocalBusiness + Article on every post |
-| Internal links per post | 2-3 |
-
----
-
-## BLOG TOPIC PIPELINE (Months 2-3)
-
-Keep these ready for when Month 1 is done:
-
-- "Commercial Dishwasher Not Draining: Causes and Fixes"
-- "How to Read a Commercial Refrigeration Nameplate"
-- "True Manufacturing T-49: Common Issues and Service Guide"
-- "What to Do When Your Restaurant Fails a Health Inspection Equipment Check"
-- "Commercial Gas vs Electric Equipment: Maintenance Differences"
-- "Ice Machine Leaking Water: 5 Causes and Solutions"
-- "How Smart Kitchen Equipment Is Changing Commercial Repair"
-- "Choosing Between Repair and Replacement for Commercial Equipment"
-- "Grease Trap vs Grease Interceptor: What NJ Restaurants Need to Know"
-- "HVAC vs Kitchen Ventilation: Why They're Not the Same Service"
-
----
-
-## SEO RULES
-
-1. **Every blog title includes a specific keyword** that someone would Google
-2. **Every blog mentions "Union County NJ" or "Elizabeth NJ"** at least once naturally
-3. **Every blog ends with a CTA** to schedule service
-4. **Every blog has Article schema** markup
-5. **Publish at least 2 posts per week** for the first 3 months — then 1/week ongoing
-6. **Google Business Profile** gets a post every week (link to latest blog)
-7. **Never duplicate content** — each article targets a unique keyword
-8. **Images** — add relevant images to blogs when possible (equipment photos from real jobs once running)
+- Qualified calls and service forms
+- Booked jobs and gross profit by acquisition source when available
+- Cost per qualified lead and cost per booked job
+- Search impressions and clicks for priority commercial queries
+- Indexed priority pages and technical health
+- Irrelevant-call and irrelevant-search-term rate

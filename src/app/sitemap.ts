@@ -1,10 +1,10 @@
 import { MetadataRoute } from 'next';
 import { LOCATIONS, VERTICALS, VENTILATION_CITIES } from '@/lib/data';
-import { getAllPosts } from '@/lib/blog-data';
+import { getIndexablePosts } from '@/lib/blog-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://choosetrue.com';
-  const updated = new Date('2026-08-24');
+  const updated = new Date('2026-08-30');
   
   const staticPages = [
     { url: base, lastModified: updated, changeFrequency: 'weekly' as const, priority: 1.0 },
@@ -23,9 +23,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/schedule-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/tools/energy-calculator`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.65 },
     { url: `${base}/resources`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${base}/blog`, lastModified: updated, changeFrequency: 'weekly' as const, priority: 0.7 },
   ];
 
-  const locationPages = LOCATIONS.map((l) => ({
+  const ventilationCitySlugs = new Set(VENTILATION_CITIES.map((city) => city.slug));
+  const locationPages = LOCATIONS.filter((location) => !ventilationCitySlugs.has(location.slug)).map((l) => ({
     url: `${base}/locations/${l.slug}`,
     lastModified: updated,
     changeFrequency: 'monthly' as const,
@@ -39,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogPages = getAllPosts().map((p) => ({
+  const blogPages = getIndexablePosts().map((p) => ({
     url: `${base}/blog/${p.slug}`,
     lastModified: new Date(p.date),
     changeFrequency: 'monthly' as const,

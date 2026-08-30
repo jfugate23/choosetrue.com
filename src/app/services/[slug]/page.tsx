@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { SERVICES, LOCATIONS } from '@/lib/data';
-import { PageHero, Section, SectionHeading, Reveal, CTAButton, ServiceForm } from '@/components/UI';
+import { PageHero, Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
 import { CheckCircle2, MapPin } from 'lucide-react';
 
 type Props = { params: { slug: string } };
@@ -61,7 +61,7 @@ export default function ServicePage({ params }: Props) {
 
       {service.brands.length > 0 && (
         <Section>
-        <SectionHeading eyebrow="Equipment Experience" title="Manufacturers represented in this equipment category" />
+        <SectionHeading eyebrow="Equipment Examples" title="Common manufacturers in this equipment category" description="Brand names identify equipment types only and do not imply current warranty authorization. Assignment fit is confirmed before dispatch." />
           <div className="flex flex-wrap justify-center gap-4">
             {service.brands.map((brand, i) => (
               <Reveal key={brand} delay={i * 40}>
