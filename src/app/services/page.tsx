@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, Fan, Gauge, Settings2, Wind } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ClipboardCheck, Fan, FileCheck2, Gauge, Settings2, Wind } from 'lucide-react';
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
@@ -14,6 +14,8 @@ const services = [
   { href: '/services/exhaust-fan-repair', title: 'Exhaust Fan Repair', description: 'Motors, belts, sheaves, bearings, fan wheels, starters, disconnects, VFDs, controls, and airflow verification.', icon: <Fan className="w-7 h-7" /> },
   { href: '/services/makeup-air-unit-repair', title: 'Makeup Air Unit Repair', description: 'Fans, motors, belts, heat, filters, dampers, freeze protection, airflow, VFDs, and interlocks.', icon: <Wind className="w-7 h-7" /> },
   { href: '/services/ventilation-controls', title: 'VFD, DCV & Ventilation Controls', description: 'Drive faults, sensors, control boards, relays, starters, interlocks, and sequence-of-operation troubleshooting.', icon: <Settings2 className="w-7 h-7" /> },
+  { href: '/services/kitchen-ventilation-startup-commissioning', title: 'Startup & Commissioning', description: 'Equipment checkout, fan and control sequencing, airflow verification, punch-list findings, and project closeout.', icon: <ClipboardCheck className="w-7 h-7" /> },
+  { href: '/services/kitchen-hood-performance-testing', title: 'Hood Performance Testing', description: 'Exhaust and supply readings, capture observations, pressure diagnosis, field adjustments, and written findings.', icon: <FileCheck2 className="w-7 h-7" /> },
 ];
 
 export default function ServicesPage() {

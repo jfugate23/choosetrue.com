@@ -229,6 +229,8 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
             <option value="makeup-air">Makeup air unit issue</option>
             <option value="controls">VFD / DCV / controls</option>
             <option value="pollution-control">ESP / pollution-control issue</option>
+            <option value="startup">Startup / commissioning</option>
+            <option value="performance-testing">Airflow / performance testing</option>
             <option value="manufacturer">Manufacturer warranty / startup</option>
             <option value="other">Other commercial equipment referral</option>
           </select>

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { LOCATIONS, VERTICALS, VENTILATION_CITIES } from '@/lib/data';
 import { getIndexablePosts } from '@/lib/blog-data';
+import { MANUFACTURERS } from '@/lib/manufacturer-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://choosetrue.com';
@@ -15,7 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/makeup-air-unit-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/services/ventilation-controls`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/pollution-control`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/services/kitchen-ventilation-startup-commissioning`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${base}/services/kitchen-hood-performance-testing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/manufacturer-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/resources/commercial-kitchen-ventilation-startup-checklist`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${base}/locations`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${base}/who-we-serve`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${base}/about`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.7 },
@@ -27,6 +31,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const ventilationCitySlugs = new Set(VENTILATION_CITIES.map((city) => city.slug));
+
+  const manufacturerPages = MANUFACTURERS.map((manufacturer) => ({
+    url: `${base}/manufacturer-service/${manufacturer.slug}`,
+    lastModified: updated,
+    changeFrequency: 'monthly' as const,
+    priority: manufacturer.slug === 'gaylord' ? 0.95 : 0.85,
+  }));
   const locationPages = LOCATIONS.filter((location) => !ventilationCitySlugs.has(location.slug)).map((l) => ({
     url: `${base}/locations/${l.slug}`,
     lastModified: updated,
@@ -55,5 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
+  return [...staticPages, ...manufacturerPages, ...locationPages, ...verticalPages, ...blogPages, ...ventilationCityPages];
 }

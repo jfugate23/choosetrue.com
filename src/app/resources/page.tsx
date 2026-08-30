@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Section, SectionHeading, Reveal } from '@/components/UI';
-import { ExternalLink, BookOpen, ShieldCheck, Wrench, Wind, Flame, Thermometer } from 'lucide-react';
+import { ArrowRight, ExternalLink, BookOpen, ClipboardCheck, ShieldCheck, Wrench, Wind, Flame, Thermometer } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Kitchen Ventilation Resources',
@@ -28,9 +28,10 @@ const resources = [
     icon: <Wind className="w-5 h-5" />,
     links: [
       { name: 'CaptiveAire Systems', url: 'https://www.captiveaire.com/', desc: 'Largest US kitchen hood manufacturer. Hoods, fans, MAUs, controls, DCV.' },
-      { name: 'Accurex (Halton)', url: 'https://www.accurex.com/', desc: 'Commercial kitchen ventilation systems, hoods, and exhaust.' },
+      { name: 'Accurex', url: 'https://www.accurex.com/', desc: 'Commercial kitchen ventilation systems, hoods, fans, makeup air, and controls.' },
+      { name: 'Halton', url: 'https://www.halton.com/', desc: 'Commercial kitchen hoods, demand ventilation, and pollution-control systems.' },
       { name: 'Greenheck', url: 'https://www.greenheck.com/', desc: 'Exhaust fans, makeup air units, hoods, dampers, and louvers.' },
-      { name: 'Gaylord Industries', url: 'https://www.gfrg.com/', desc: 'Kitchen ventilation hoods and pollution control.' },
+      { name: 'Gaylord Industries', url: 'https://www.gaylordventilation.com/', desc: 'Kitchen ventilation hoods, AirVantage controls, and pollution-control equipment.' },
     ],
   },
   {
@@ -89,6 +90,16 @@ export default function ResourcesPage() {
           </Reveal>
         </div>
       </section>
+
+      <Section className="bg-white/[0.02]">
+        <Reveal>
+          <Link href="/resources/commercial-kitchen-ventilation-startup-checklist" className="group grid md:grid-cols-[auto_1fr_auto] items-center gap-5 max-w-4xl mx-auto rounded-2xl border border-amber-500/20 bg-amber-500/[0.06] p-6 lg:p-8 hover:border-amber-500/35 transition-colors">
+            <span className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center"><ClipboardCheck className="w-6 h-6" /></span>
+            <span><span className="block text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">Featured field resource</span><span className="block text-xl font-semibold">Commercial kitchen ventilation startup checklist</span><span className="block mt-1 text-sm text-slate-400">Mechanical, electrical, controls, performance, and closeout readiness in one concise checklist.</span></span>
+            <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
+          </Link>
+        </Reveal>
+      </Section>
 
       {resources.map((section, si) => (
         <Section key={si} className={si % 2 === 0 ? '' : 'bg-white/[0.02]'}>

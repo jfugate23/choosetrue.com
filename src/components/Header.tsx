@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ChevronDown, Fan, Gauge, MapPin, Menu, Phone, Settings2, Wind, Wrench, X } from 'lucide-react';
+import { ChevronDown, ClipboardCheck, Fan, FileCheck2, Gauge, MapPin, Menu, Phone, Settings2, Wind, Wrench, X } from 'lucide-react';
 import { MARKET_NJ } from '@/lib/data';
 
 const primaryServices = [
@@ -13,6 +13,8 @@ const primaryServices = [
   { href: '/services/makeup-air-unit-repair', label: 'Makeup Air Unit Repair', icon: <Wind className="w-4 h-4" /> },
   { href: '/services/ventilation-controls', label: 'VFD, DCV & Controls', icon: <Settings2 className="w-4 h-4" /> },
   { href: '/services/pollution-control', label: 'Pollution-Control Systems', icon: <Wind className="w-4 h-4" /> },
+  { href: '/services/kitchen-ventilation-startup-commissioning', label: 'Startup & Commissioning', icon: <ClipboardCheck className="w-4 h-4" /> },
+  { href: '/services/kitchen-hood-performance-testing', label: 'Performance Testing', icon: <FileCheck2 className="w-4 h-4" /> },
 ];
 
 export default function Header() {
@@ -45,7 +47,7 @@ export default function Header() {
                 <button aria-expanded={servicesOpen} className="flex items-center gap-1 px-3 py-2 text-sm text-slate-300 hover:text-white transition-colors">
                   Services <ChevronDown className={`w-3.5 h-3.5 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
                 </button>
-                <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[580px] pt-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
+                <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[640px] pt-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
                   <div className="bg-navy-50 rounded-xl border border-white/10 shadow-2xl shadow-black/40 p-6">
                     <p className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-3 flex items-center gap-2"><Wrench className="w-3.5 h-3.5" /> Focused Services</p>
                     <div className="grid grid-cols-2 gap-1">
