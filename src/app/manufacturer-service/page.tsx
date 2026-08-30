@@ -54,8 +54,12 @@ export default function ManufacturerServiceHub() {
         </div>
       </section>
 
-      <Section id="manufacturers" className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Manufacturers" title="Go directly to the equipment on site." description="Each page is organized around common faults, connected equipment, and the information needed to dispatch the right service." />
+      <Section id="manufacturers" className="bg-white/[0.02] !py-14 lg:!py-20">
+        <Reveal className="max-w-3xl mx-auto text-center mb-8 lg:mb-10">
+          <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-3">Brands We Service</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-balance leading-tight">Kitchen ventilation brands TCS services.</h2>
+          <p className="mt-3 text-base lg:text-lg text-slate-400 leading-relaxed">Explore our experience with Gaylord, CaptiveAire, Accurex, Halton, and Greenheck hoods, fans, makeup-air systems, controls, and pollution-control equipment.</p>
+        </Reveal>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {MANUFACTURERS.map((manufacturer, index) => (
             <Reveal key={manufacturer.slug} delay={index * 55}>
