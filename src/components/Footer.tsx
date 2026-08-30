@@ -10,6 +10,8 @@ const ventilationLinks = [
   { href: '/services/makeup-air-unit-repair', label: 'Makeup Air Unit Repair' },
   { href: '/services/ventilation-controls', label: 'VFD, DCV & Controls' },
   { href: '/services/pollution-control', label: 'Pollution-Control Systems' },
+  { href: '/services/kitchen-ventilation-startup-commissioning', label: 'Startup & Commissioning' },
+  { href: '/services/kitchen-hood-performance-testing', label: 'Performance Testing' },
 ];
 
 export default function Footer() {
