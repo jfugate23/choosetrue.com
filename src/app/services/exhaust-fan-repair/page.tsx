@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const content: VentilationServiceContent = {
   eyebrow: 'Restaurant & Commercial Kitchen Exhaust Fan Repair',
-  title: 'Exhaust fan down, noisy, or barely pulling air?',
-  description: 'TCS diagnoses the electrical, mechanical, controls, and airflow cause, then repairs the part of the system actually creating the problem.',
+  title: 'Commercial kitchen exhaust fan repair in NYC and New Jersey.',
+  description: 'Fan down, noisy, or barely pulling air? TCS diagnoses the electrical, mechanical, controls, and airflow cause, then repairs the part of the system actually creating the problem.',
   serviceType: 'Commercial Kitchen Exhaust Fan Repair',
   image: '/images/rooftop-upblast-exhaust-fan.jpg',
   imageAlt: 'Commercial kitchen upblast exhaust fan on a rooftop',
@@ -30,6 +30,7 @@ const content: VentilationServiceContent = {
   faqs: [
     { question: 'Do you repair rooftop upblast exhaust fans?', answer: 'Yes. TCS services commercial kitchen upblast, utility-set, and inline exhaust fans, including motors, belts, bearings, starters, VFDs, controls, and complete fan replacement when needed.' },
     { question: 'Can you tell whether the problem is the fan or the controls?', answer: 'Yes. The diagnostic process follows the entire start sequence from the hood controls and interlocks through the starter or VFD to the motor and fan assembly.' },
+    { question: 'How much does commercial kitchen exhaust fan repair cost?', answer: 'The price depends on the failure, rooftop access, fan size, parts, controls, and testing required. A belt or starter issue is a different scope from a motor, bearing, VFD, or complete fan replacement. TCS diagnoses the cause first and provides the repair scope before additional work is approved.' },
     { question: 'Do you clean kitchen exhaust fans or grease ducts?', answer: 'No. TCS provides diagnostic and repair service, not hood or grease-duct cleaning. A cleaning company may need to clean the system before repair if grease prevents safe access.' },
     { question: 'What areas do you serve?', answer: 'TCS serves commercial kitchens across New York City and North Jersey from its Elizabeth, New Jersey base.' },
   ],

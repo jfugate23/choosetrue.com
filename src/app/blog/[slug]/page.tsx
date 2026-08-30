@@ -8,7 +8,7 @@ const seoTitles: Record<string, string> = {
   'captiveaire-hood-maintenance-repair-guide': 'CaptiveAire Hood Maintenance Guide',
   'makeup-air-unit-not-working-restaurant': 'Makeup Air Unit Not Working?',
   'restaurant-kitchen-too-hot-air-balance': 'Why Restaurant Kitchens Stay Hot',
-  'kitchen-negative-pressure-causes-costs-fix': 'Commercial Kitchen Negative Pressure',
+  'kitchen-negative-pressure-causes-costs-fix': 'Ventilation Repair Cost — NYC & NJ',
   'exhaust-fan-making-noise-causes': 'Noisy Kitchen Exhaust Fan',
   'dining-room-smells-like-kitchen-ventilation': 'Kitchen Odors in the Dining Room',
   'kitchen-hood-not-capturing-smoke': 'Kitchen Hood Not Capturing Smoke',

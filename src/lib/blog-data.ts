@@ -1124,71 +1124,75 @@ Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-v
 
   {
     slug: 'kitchen-negative-pressure-causes-costs-fix',
-    title: 'Commercial Kitchen Negative Pressure: Causes, Costs, and How to Fix It',
-    description: 'Doors hard to open? Pilot lights blowing out? Cold drafts in winter? Your kitchen has a negative pressure problem: and it\'s costing you thousands.',
+    title: 'Commercial Kitchen Ventilation Repair Cost: What Changes the Price',
+    description: 'Commercial kitchen ventilation repair cost depends on the exhaust fan, makeup air, controls, access, parts, and airflow testing required.',
     date: '2026-03-28',
     category: 'Ventilation',
-    readTime: '5 min',
-    content: `Commercial kitchens are designed to operate at slight negative pressure: air flows from the dining room into the kitchen, keeping cooking smells and grease out of the front of house. But there\'s a difference between slight negative pressure (by design) and severe negative pressure (a problem).
+    readTime: '6 min',
+    content: `There is no useful flat price for commercial kitchen ventilation repair before the system is diagnosed. A slipping exhaust-fan belt, failed motor, VFD fault, makeup-air control problem, and airflow-balance issue can create similar symptoms but require very different work.
 
-## What Causes Severe Negative Pressure?
+The practical answer is to identify what failed, confirm safe access, and separate the diagnostic scope from the approved repair. That keeps a quote tied to the actual problem instead of a generic number that changes after the technician arrives.
 
-The exhaust hood pulls air out. The makeup air unit pushes tempered air in. The difference is the infiltration: outside air that enters through doors, gaps, and openings. This is normal.
+## What Changes Commercial Kitchen Ventilation Repair Cost?
 
-The problem happens when the infiltration becomes excessive:
+- **The failed component:** belts, bearings, motors, starters, VFDs, sensors, dampers, and control boards have different labor and parts requirements.
+- **Fan and unit size:** a small direct-drive fan is a different repair from a large belt-driven rooftop fan or tempered makeup air unit.
+- **Roof and equipment access:** ladders, roof hatches, locked mechanical areas, grease conditions, weather, and lift requirements affect the job plan.
+- **Parts availability:** manufacturer-specific motors, drives, boards, and assemblies may need to be identified and ordered before repair.
+- **Electrical and control troubleshooting:** the fan may be mechanically sound while a starter, interlock, hood control, sensor, or VFD prevents operation.
+- **Airflow testing:** a running fan does not prove that the hood captures smoke or that the makeup air and exhaust are working together correctly.
+- **Site and schedule requirements:** operating hours, tenant coordination, permits, and regulated trade work can change the approved scope.
 
-- **MAU not working**: all replacement air comes from infiltration
-- **MAU undersized**: was designed for an older, smaller hood
-- **MAU running at reduced capacity**: dirty filters, worn belt, failed burner
-- **Exhaust increased**: new hood added or existing fan speed increased without matching supply
-- **Building sealed too tight**: renovation closed off natural infiltration paths
+## Common Commercial Kitchen Ventilation Repair Scopes
 
-## The Real Cost of Excessive Negative Pressure
+**Exhaust fan repair:** TCS checks power, controls, rotation, motor condition, belts, sheaves, bearings, fan wheels, starters, disconnects, and VFD operation. The repair may be a component replacement, an adjustment, or a complete fan replacement when the assembly is no longer serviceable.
 
-A kitchen with a 2,750 CFM exhaust hood and a dead MAU is pulling 2,200 CFM of raw outside air through every crack in the building. Here\'s what that costs in the NYC metro:
+**Makeup air unit repair:** Fan operation, belts, filters, dampers, heat enable, freeze protection, safeties, VFDs, and hood interlocks are evaluated. The exhaust and supply sides must be considered together because either side can create the complaint.
 
-| Season | Outside Air Temp | Building HVAC Cost |
-|--------|-----------------|-------------------|
-| Winter (7 months) | 35°F avg | $4,200/year in gas |
-| Summer (4 months) | 90°F avg | $1,060/year in electric |
-| **Annual waste** | | **$5,260/year** |
+**VFD and controls troubleshooting:** Drive faults, parameters, sensors, relays, proof signals, and start/stop sequences are traced before a motor or control board is condemned.
 
-That\'s just energy. Add the operational costs:
-- **Staff discomfort**: cooks in a freezing kitchen in winter, sweltering in summer
-- **Equipment stress**: pilot lights blowing out, gas equipment cycling erratically
-- **Customer impact**: cold drafts from the front door, uncomfortable dining room
-- **Door damage**: the constant suction warps door frames and wears out closers
+**Hood capture and airflow diagnosis:** Smoke escaping, doors that are hard to open, dining-room odors, and an unusually hot kitchen may require airflow and pressure measurements in addition to equipment repair.
 
-## How to Test for Negative Pressure
+**Pollution-control troubleshooting:** ESP and related controls can have cleaning, high-voltage, interlock, power-supply, or airflow issues. The safe service scope depends on the equipment and the condition found.
 
-**The door test:** If your front door is noticeably hard to open (pulls toward you when you try to push it open from outside), you have negative pressure. The harder it is, the worse the imbalance.
+## When Negative Pressure Is the Symptom
 
-**The smoke test:** Light a smoke pencil near the door threshold. If the smoke gets sucked in forcefully, the kitchen is under significant negative pressure.
+A commercial kitchen can become excessively negative when the exhaust removes more air than the makeup-air system and building can replace. Common causes include a makeup-air fan that is not running, a slipping belt, closed damper, dirty filter, incorrect fan speed, failed control, or a system change that altered the exhaust-to-supply relationship.
 
-**The professional test:** A manometer reading of the kitchen vs. the dining room quantifies the pressure differential. NFPA 96 says negative pressure should not exceed 0.02 inches water gauge.
+Doors that are hard to open, cold drafts, uncontrolled infiltration, and comfort complaints are useful clues, but they do not identify the failed part. The system should be measured under representative operating conditions before adjustments are made.
 
-## How to Fix It
+## What to Send for a More Accurate Service Scope
 
-1. **Check the MAU first**: is it running? Is it delivering air? Change the filters.
-2. **Measure the actual CFM**: use a VelGrid or anemometer to verify exhaust and supply volumes.
-3. **Balance the system**: adjust dampers, fan speeds, and MAU settings to achieve 80-90% supply-to-exhaust ratio.
-4. **If the MAU is undersized**: it may need to be replaced with a properly sized unit.
+- Business address and service ZIP code
+- Equipment manufacturer, model, and serial number
+- Photos of the fan, makeup air unit, VFD, control panel, and data plates
+- Fault codes and a clear description of when the problem occurs
+- Roof-access details and any building access restrictions
+- Recent changes to cooking equipment, hood controls, HVAC, or the space
 
-A one-time air balance service typically resolves the problem permanently: and it pays for itself in energy savings within a few months. [Contact us for a quote](/schedule-service).
+This information helps TCS confirm whether the request fits its service area and arrive prepared for the likely equipment and access conditions.
 
-**True Commercial Service diagnoses kitchen negative-pressure complaints across NYC and North Jersey using airflow and operating-condition measurements. Repairs and adjustments depend on the cause found and the approved scope.**
+## Repair or Replacement?
+
+Repair usually makes sense when the fan or unit structure is sound and the failed component is identifiable and available. Replacement may be the better scope when the assembly is severely corroded, damaged, obsolete, unsafe to service, repeatedly failing, or cannot meet the required operating condition.
+
+TCS documents the cause found, the proposed repair, and the checks needed after the work. Additional work proceeds only after the scope is reviewed and approved.
+
+**True Commercial Service provides commercial kitchen ventilation diagnostics and repair across NYC and North Jersey. TCS does not provide hood or grease-duct cleaning, fire-suppression service, or residential range-hood work.**
 
 ## Related Articles
 
+- [Commercial Exhaust Fan Repair](/services/exhaust-fan-repair)
+- [Makeup Air Unit Repair](/services/makeup-air-unit-repair)
 - [Makeup Air Unit Not Working?](/blog/makeup-air-unit-not-working-restaurant)
-- [Kitchen Air Balancing in the NYC metro](/blog/commercial-kitchen-ventilation-problems-signs)
-- [Dining Room Smells Like Kitchen](/blog/dining-room-smells-like-kitchen-ventilation)
+- [Kitchen Hood Airflow and Balancing](/services/kitchen-air-balancing)
 
 Looking for service? Visit our [Kitchen Ventilation Service](/services/kitchen-ventilation) page or [schedule service](/schedule-service) today.`,
     faqs: [
-      { question: 'What causes negative pressure in a commercial kitchen?', answer: 'Negative pressure occurs when the exhaust hood pulls more air out of the kitchen than the makeup air unit supplies. The most common cause is a broken or undersized makeup air unit. The building sucks in raw outside air through doors, gaps, and cracks to make up the difference.' },
-      { question: 'How much does negative pressure cost a restaurant?', answer: 'For a typical restaurant hood system, a completely failed makeup air unit can waste over $5,000 per year in excess heating and cooling costs. The building HVAC has to condition all the raw outside air being sucked in through the building envelope.' },
-      { question: 'How do you fix negative pressure in a restaurant kitchen?', answer: 'First, verify the makeup air unit is running and delivering its design airflow. Then measure exhaust and supply CFM and balance the system to an 80-90% supply-to-exhaust ratio. This usually involves adjusting dampers and fan speeds. Contact us for a quote on air balance service.' },
+      { question: 'How much does commercial kitchen ventilation repair cost?', answer: 'The price depends on the failed component, fan or unit size, roof access, parts, controls, and testing required. A belt, motor, VFD, makeup-air, or airflow problem is a different scope. TCS diagnoses the cause and provides the repair scope before additional work is approved.' },
+      { question: 'Why can\'t commercial exhaust fan repair be quoted from the symptom alone?', answer: 'Weak draw, noise, or a fan that will not start can be caused by electrical, mechanical, controls, or airflow faults. The same symptom can lead to a small adjustment, a component repair, or a complete fan replacement, so the cause must be confirmed first.' },
+      { question: 'What causes negative pressure in a commercial kitchen?', answer: 'Excessive negative pressure occurs when exhaust airflow is greater than the replacement air reaching the building. A failed makeup-air fan, slipping belt, closed damper, dirty filter, wrong fan speed, controls fault, or recent system change can all contribute.' },
+      { question: 'What information helps TCS prepare a ventilation service quote?', answer: 'Send the service ZIP code, equipment manufacturer and model, data-plate photos, fault codes, a description of the symptom, rooftop-access details, and any recent ventilation or kitchen changes.' },
     ],
   },
 
