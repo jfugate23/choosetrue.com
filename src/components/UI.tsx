@@ -140,7 +140,7 @@ export function PageHero({ eyebrow, title, description, showCTA = true }: {
 }
 
 // Service request form
-export function ServiceForm({ compact = false, defaultService = '' }: { compact?: boolean; defaultService?: string }) {
+export function ServiceForm({ compact = false, defaultService = '', equipment = 'ventilation', defaultManufacturer = '' }: { compact?: boolean; defaultService?: string; equipment?: 'ventilation' | 'oven'; defaultManufacturer?: string }) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
   const fieldClass = 'w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors';
@@ -218,12 +218,15 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
         <label className="text-xs font-medium text-slate-300">Business or property *<input name="business" type="text" required minLength={2} maxLength={150} autoComplete="organization" className={`${fieldClass} mt-1.5`} /></label>
         <label className="text-xs font-medium text-slate-300">Service ZIP code *<input name="zip" type="text" required inputMode="numeric" minLength={5} maxLength={10} pattern="[0-9]{5}(?:-[0-9]{4})?" title="Enter a valid 5-digit ZIP code." autoComplete="postal-code" className={`${fieldClass} mt-1.5`} /></label>
         <label className="text-xs font-medium text-slate-300">Email address<input name="email" type="email" maxLength={150} autoComplete="email" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" maxLength={100} placeholder="CaptiveAire, Gaylord, Accurex…" className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" maxLength={100} defaultValue={defaultManufacturer} placeholder={equipment === 'oven' ? 'Cuppone, Lainox' : 'CaptiveAire, Gaylord, Accurex…'} className={`${fieldClass} mt-1.5`} /></label>
       </div>
       <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
         <label className="text-xs font-medium text-slate-300">Primary issue *
           <select name="serviceType" required defaultValue={defaultService} className={`${fieldClass} mt-1.5 text-slate-300`}>
             <option value="" disabled>Select the closest match</option>
+            {equipment === 'oven' && <option value="cooking-repair">Commercial oven repair</option>}
+            {equipment === 'oven' && <option value="startup">Oven startup / operational checks</option>}
+            {equipment === 'ventilation' && <>
             <option value="hood-airflow">Hood airflow / smoke capture</option>
             <option value="exhaust-fan">Exhaust fan repair</option>
             <option value="makeup-air">Makeup air unit issue</option>
@@ -231,6 +234,7 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
             <option value="pollution-control">ESP / pollution-control issue</option>
             <option value="startup">Startup / commissioning</option>
             <option value="performance-testing">Airflow / performance testing</option>
+            </>}
             <option value="manufacturer">Manufacturer warranty / startup</option>
             <option value="other">Other commercial equipment referral</option>
           </select>
@@ -244,12 +248,12 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
           </select>
         </label>
       </div>
-      <label className="block text-xs font-medium text-slate-300">What is the system doing? *
-        <textarea name="details" required minLength={10} maxLength={2000} placeholder="Symptoms, fault code, equipment model, rooftop access, and when the problem started" rows={compact ? 3 : 5} className={`${fieldClass} mt-1.5 resize-none`} />
+      <label className="block text-xs font-medium text-slate-300">{equipment === 'oven' ? 'What is the oven doing? *' : 'What is the system doing? *'}
+        <textarea name="details" required minLength={10} maxLength={2000} placeholder={equipment === 'oven' ? 'Model, serial number, fault code, symptoms, and when the problem started' : 'Symptoms, fault code, equipment model, rooftop access, and when the problem started'} rows={compact ? 3 : 5} className={`${fieldClass} mt-1.5 resize-none`} />
       </label>
       <label className="flex items-start gap-3 text-xs text-slate-400">
         <input name="commercial" type="checkbox" required className="mt-0.5 accent-amber-500" />
-        This request is for a commercial kitchen, not a residential range hood. TCS does not provide hood/duct cleaning or fire-suppression service.
+        {equipment === 'oven' ? 'This request is for commercial cooking equipment, not a residential appliance.' : 'This request is for a commercial kitchen, not a residential range hood. TCS does not provide hood/duct cleaning or fire-suppression service.'}
       </label>
       {message && (
         <p role="status" aria-live="polite" className={`text-sm rounded-lg px-4 py-3 ${status === 'success' ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20' : 'bg-red-500/10 text-red-300 border border-red-500/20'}`}>
@@ -258,7 +262,7 @@ export function ServiceForm({ compact = false, defaultService = '' }: { compact?
         </p>
       )}
       <button type="submit" disabled={status === 'submitting'} className="w-full bg-amber-500 hover:bg-amber-400 disabled:opacity-60 disabled:cursor-wait text-navy-300 font-bold py-3.5 rounded-lg cta-glow transition-all text-sm">
-        {status === 'submitting' ? 'Sending…' : 'Request Ventilation Service'}
+        {status === 'submitting' ? 'Sending…' : equipment === 'oven' ? 'Request Oven Service' : 'Request Ventilation Service'}
       </button>
     </form>
   );

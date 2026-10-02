@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/kitchen-ventilation-startup-commissioning`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/kitchen-hood-performance-testing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/manufacturer-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/manufacturer-service/cuppone`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly' as const, priority: 0.85 },
+    { url: `${base}/manufacturer-service/lainox`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/resources/commercial-kitchen-ventilation-startup-checklist`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${base}/locations`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${base}/who-we-serve`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.6 },

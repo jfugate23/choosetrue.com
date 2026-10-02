@@ -214,6 +214,7 @@ function detailRow(label: string, value: string, href = ''): string {
 }
 
 const SERVICE_LABELS: Record<string, string> = {
+  'cooking-repair': 'Commercial oven repair',
   'hood-airflow': 'Hood airflow / smoke capture',
   'exhaust-fan': 'Exhaust fan repair',
   'makeup-air': 'Makeup air unit issue',

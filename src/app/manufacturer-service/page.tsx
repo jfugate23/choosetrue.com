@@ -103,6 +103,15 @@ export default function ManufacturerServiceHub() {
         </div>
       </Section>
 
+      <Section className="!py-10 lg:!py-12">
+        <h2 className="text-2xl lg:text-3xl font-bold mb-3">Commercial oven service</h2>
+        <p className="text-slate-400 mb-6">Brand-specific requests for pizza and combi ovens.</p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <Link href="/manufacturer-service/cuppone" className="glass-card rounded-xl p-6 hover:border-amber-500/30"><h3 className="font-semibold text-xl">Cuppone pizza ovens</h3><p className="text-sm text-slate-400 mt-2">Power, heating, rotating-deck and controls troubleshooting.</p><span className="text-amber-400 text-sm inline-flex gap-2 items-center mt-4">Request Cuppone service <ArrowRight className="w-4 h-4" /></span></Link>
+          <Link href="/manufacturer-service/lainox" className="glass-card rounded-xl p-6 hover:border-amber-500/30"><h3 className="font-semibold text-xl">Lainox combi ovens</h3><p className="text-sm text-slate-400 mt-2">Cooking faults, controls, steam and cleaning-cycle problems.</p><span className="text-amber-400 text-sm inline-flex gap-2 items-center mt-4">Request Lainox service <ArrowRight className="w-4 h-4" /></span></Link>
+        </div>
+      </Section>
+
       <Section id="manufacturer-request" className="bg-white/[0.02]">
         <div className="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-14 max-w-6xl mx-auto">
           <div>
