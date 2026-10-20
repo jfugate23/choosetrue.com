@@ -1,3 +1,6 @@
+import type { ServiceEvidenceContent } from '@/components/ServiceEvidence';
+import { GAYLORD_EVIDENCE } from '@/lib/service-evidence';
+
 export interface ManufacturerServiceData {
   slug: string;
   name: string;
@@ -9,6 +12,7 @@ export interface ManufacturerServiceData {
   image: string;
   imageAlt: string;
   badge?: string;
+  evidence?: ServiceEvidenceContent;
   systems: { title: string; description: string }[];
   issues: string[];
   equipment: string[];
@@ -27,6 +31,7 @@ export const MANUFACTURERS: ManufacturerServiceData[] = [
     image: '/images/full-kitchen-ventilation-install.jpg',
     imageAlt: 'Commercial kitchen ventilation hoods and controls',
     badge: 'Factory authorized',
+    evidence: GAYLORD_EVIDENCE,
     systems: [
       { title: 'Hoods & AirVantage', description: 'Capture complaints, wash operation, sensors, airflow commands, and demand-control sequence.' },
       { title: 'Exhaust & makeup air', description: 'Fans, motors, belts, VFDs, starters, interlocks, rotation, and delivered airflow.' },
@@ -36,9 +41,11 @@ export const MANUFACTURERS: ManufacturerServiceData[] = [
     issues: ['Hood not capturing smoke', 'AirVantage fault or wrong fan speed', 'Exhaust fan will not start', 'Makeup air not operating', 'VFD or interlock fault', 'PCU or ESP system trip'],
     equipment: ['AirVantage DCV', 'EL / ELX ventilators', 'Ultima UV systems', 'Wash controls', 'PCU / ESP systems', 'Exhaust and supply fans'],
     faqs: [
+      { question: 'Who can I call for Gaylord hood repair in NYC?', answer: 'Call True Commercial Service (TCS) at (646) 942-9394 for factory-authorized Gaylord kitchen ventilation field service across all five NYC boroughs and Northern and Central New Jersey. Share the model, serial number, fault code, symptoms, and service ZIP code so TCS can confirm the scope and scheduling.' },
       { question: 'Is TCS factory authorized for Gaylord service?', answer: 'Yes. True Commercial Service provides factory-authorized Gaylord field service. Assignment and warranty details are confirmed for the specific equipment and job.' },
       { question: 'Can TCS troubleshoot the complete Gaylord system?', answer: 'Yes. TCS evaluates the hood, AirVantage controls, exhaust fan, makeup air, VFDs, interlocks, airflow, and pollution-control equipment as one operating system.' },
       { question: 'Do you service Gaylord systems outside Manhattan?', answer: 'Yes. TCS serves commercial kitchens across all five NYC boroughs and Northern and Central New Jersey.' },
+      { question: 'Can you investigate an AirVantage fault or a startup that cannot be completed?', answer: 'Yes. TCS checks the installed equipment, power, wiring, VFD setup, fan commands, interlocks, and operating sequence against the job requirements. An error code alone does not establish the failed component. Incomplete installation or power may need correction before startup and operational verification can be completed.' },
     ],
   },
   {

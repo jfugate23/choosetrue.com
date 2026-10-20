@@ -7,8 +7,8 @@ import { NextRequest, NextResponse } from 'next/server';
 //   LEAD_ALERT_EMAIL: where lead alerts are delivered (defaults to service@choosetrue.com)
 //   LEAD_FROM_EMAIL : verified sender (defaults to service@choosetrue.com; the
 //                      choosetrue.com domain must be verified in Resend)
-// If the API key is missing, the lead is still logged to Vercel logs and the
-// form still succeeds: we never drop a lead on the floor because of config.
+// If delivery is unavailable, return an error with the phone number so the
+// visitor is not told that an undelivered request was sent successfully.
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,6 +34,7 @@ export async function POST(request: NextRequest) {
     const urgency = safeText(leadMeta?.urgency, 50);
     const manufacturer = safeText(leadMeta?.manufacturer, 100);
     const details = safeText(leadMeta?.details, 2000);
+    const discoverySource = leadMeta?.discoverySource === 'chatgpt' ? 'chatgpt' : 'unattributed';
 
     if (name.length < 2 || business.length < 2 || !phoneInput) {
       return NextResponse.json({ error: 'Name, business, and phone are required.' }, { status: 400 });
@@ -73,6 +74,7 @@ export async function POST(request: NextRequest) {
         manufacturer,
         details,
         commercial: true,
+        discoverySource,
       },
       timestamp: new Date().toISOString(),
     };
@@ -116,6 +118,7 @@ export async function POST(request: NextRequest) {
                 ${detailRow('Primary issue', serviceLabel)}
                 ${detailRow('Urgency', urgencyLabel)}
                 ${detailRow('Manufacturer', manufacturer || 'Not provided')}
+                ${discoverySource === 'chatgpt' ? detailRow('Referral signal', 'ChatGPT — detected from referral or campaign link') : ''}
               </table>
 
               <div style="margin-top:20px">
@@ -220,6 +223,8 @@ const SERVICE_LABELS: Record<string, string> = {
   'makeup-air': 'Makeup air unit issue',
   controls: 'VFD / DCV / controls',
   'pollution-control': 'ESP / pollution-control issue',
+  startup: 'Startup / commissioning',
+  'performance-testing': 'Airflow / performance testing',
   manufacturer: 'Manufacturer warranty / startup',
   other: 'Other commercial equipment referral',
 };

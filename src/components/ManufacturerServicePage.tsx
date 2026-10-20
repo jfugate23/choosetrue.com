@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, Gauge, Phone, Settings2, ShieldCheck, Wind, W
 import { COMPANY } from '@/lib/data';
 import type { ManufacturerServiceData } from '@/lib/manufacturer-data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
+import ServiceEvidence from '@/components/ServiceEvidence';
 
 const systemIcons = [Wind, Settings2, Gauge, Wrench];
 
@@ -63,6 +64,8 @@ export default function ManufacturerServicePage({ manufacturer }: { manufacturer
           </div>
         </div>
       </section>
+
+      {manufacturer.evidence && <ServiceEvidence evidence={manufacturer.evidence} />}
 
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="System Scope" title={`One service path for the complete ${manufacturer.name} system.`} description="TCS traces the complaint across airflow, equipment, electrical components, and controls before recommending the repair." />
@@ -124,7 +127,7 @@ export default function ManufacturerServicePage({ manufacturer }: { manufacturer
             <SectionHeading eyebrow="Request Service" title={`Send TCS the ${manufacturer.name} system details.`} description="Include the equipment model, fault or symptom, service ZIP code, and rooftop-access information." center={false} />
             <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 text-xl font-bold text-amber-400 hover:text-amber-300"><Phone className="w-5 h-5" />{COMPANY.phone}</a>
           </div>
-          <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm defaultService="manufacturer" /></div>
+          <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm defaultService="manufacturer" defaultManufacturer={manufacturer.name} /></div>
         </div>
       </Section>
     </>

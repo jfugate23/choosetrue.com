@@ -6,13 +6,14 @@ import { MANUFACTURERS } from '@/lib/manufacturer-data';
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://choosetrue.com';
   const updated = new Date('2026-08-30');
+  const serviceEvidenceUpdated = new Date('2026-10-20');
   
   const staticPages = [
     { url: base, lastModified: updated, changeFrequency: 'weekly' as const, priority: 1.0 },
     { url: `${base}/services`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/kitchen-ventilation`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
-    { url: `${base}/services/kitchen-air-balancing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
-    { url: `${base}/services/exhaust-fan-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/kitchen-air-balancing`, lastModified: serviceEvidenceUpdated, changeFrequency: 'monthly' as const, priority: 0.95 },
+    { url: `${base}/services/exhaust-fan-repair`, lastModified: serviceEvidenceUpdated, changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/services/makeup-air-unit-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/services/ventilation-controls`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/pollution-control`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
@@ -36,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const manufacturerPages = MANUFACTURERS.map((manufacturer) => ({
     url: `${base}/manufacturer-service/${manufacturer.slug}`,
-    lastModified: updated,
+    lastModified: manufacturer.slug === 'gaylord' ? serviceEvidenceUpdated : updated,
     changeFrequency: 'monthly' as const,
     priority: manufacturer.slug === 'gaylord' ? 0.95 : 0.85,
   }));
