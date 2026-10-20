@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, Phone } from 'lucide-react';
 import { track } from '@vercel/analytics';
 import { COMPANY } from '@/lib/data';
+import { getDiscoverySource } from '@/lib/discovery-source';
 
 // Scroll reveal wrapper
 export function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -154,6 +155,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
     setMessage('');
 
     try {
+      const discoverySource = getDiscoverySource();
       const response = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -171,6 +173,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
             manufacturer: data.get('manufacturer'),
             details: data.get('details'),
             commercial: data.get('commercial') === 'on',
+            discoverySource,
           },
         }),
       });
@@ -181,6 +184,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
       track('Lead Submitted', {
         page: window.location.pathname,
         service: String(data.get('serviceType') || 'not-selected'),
+        discovery_source: discoverySource,
       });
       const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
       const leadLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL;
@@ -191,6 +195,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
           send_to: analyticsId,
           service: String(data.get('serviceType') || 'not-selected'),
           page_path: window.location.pathname,
+          discovery_source: discoverySource,
         });
       }
       if (gtag && adsId && leadLabel) {

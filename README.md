@@ -29,6 +29,8 @@ Copy `.env.example` values into Vercel Project Settings → Environment Variable
 
 The site records successful form submissions and phone-link clicks in Vercel Analytics. When GA4 is configured, it also sends `generate_lead` and `click_to_call` events. Google Ads lead and website-call conversion configuration remains separate so Ads can use its own conversion labels.
 
+ChatGPT referrals identified by a `chatgpt.com` / `chat.openai.com` referrer or a `utm_source=chatgpt.com` / `chatgpt` link are retained for the current browser tab. Call-click and successful-lead events include `discovery_source`, and delivered lead emails include the ChatGPT referral signal when detected. Only the source label is retained; full referring URLs and query strings are not stored. Manually dialed calls and visits without a referrer or campaign tag cannot be attributed this way. A phone-link click is not a completed call or booked job.
+
 ## Recurring SEO check
 
 Run the sitemap audit against production:

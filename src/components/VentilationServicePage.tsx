@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle2, ClipboardCheck, Gauge, Phone, ShieldCheck, Wrench } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
+import ServiceEvidence, { type ServiceEvidenceContent } from '@/components/ServiceEvidence';
 
 export interface VentilationServiceContent {
   eyebrow: string;
@@ -16,6 +17,8 @@ export interface VentilationServiceContent {
   process: { title: string; description: string }[];
   faqs: { question: string; answer: string }[];
   note?: string;
+  evidence?: ServiceEvidenceContent;
+  defaultService?: string;
 }
 
 const relatedServices = [
@@ -71,6 +74,8 @@ export default function VentilationServicePage({ content }: { content: Ventilati
           </div>
         </div>
       </section>
+
+      {content.evidence && <ServiceEvidence evidence={content.evidence} />}
 
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="Warning Signs" title="Call when you see these symptoms." />
@@ -148,7 +153,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <SectionHeading eyebrow="Request Service" title="Describe the symptom, not the solution." description="Send the brand, model, ZIP code, fault code, and rooftop-access information if available. TCS will review it directly." center={false} />
             <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 text-xl font-bold text-amber-400 hover:text-amber-300"><Phone className="w-5 h-5" />{COMPANY.phone}</a>
           </div>
-          <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm /></div>
+          <div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm defaultService={content.defaultService} /></div>
         </div>
       </Section>
     </>

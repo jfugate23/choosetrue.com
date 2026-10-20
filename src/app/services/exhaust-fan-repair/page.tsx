@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
+import { EXHAUST_FAN_EVIDENCE } from '@/lib/service-evidence';
 
 export const metadata: Metadata = {
   title: 'Kitchen Exhaust Fan Repair — NYC & NJ',
@@ -12,6 +13,8 @@ const content: VentilationServiceContent = {
   title: 'Commercial kitchen exhaust fan repair in NYC and New Jersey.',
   description: 'Fan down, noisy, or barely pulling air? TCS diagnoses the electrical, mechanical, controls, and airflow cause, then repairs the part of the system actually creating the problem.',
   serviceType: 'Commercial Kitchen Exhaust Fan Repair',
+  evidence: EXHAUST_FAN_EVIDENCE,
+  defaultService: 'exhaust-fan',
   image: '/images/rooftop-upblast-exhaust-fan.jpg',
   imageAlt: 'Commercial kitchen upblast exhaust fan on a rooftop',
   symptoms: ['Fan will not start', 'Weak draw at the hood', 'Smoke escaping during cooking', 'Squealing, grinding, or rumbling noise', 'Heavy vibration on the roof', 'Breaker, overload, or VFD keeps tripping'],
@@ -28,8 +31,10 @@ const content: VentilationServiceContent = {
     { title: 'Prove operation', description: 'Verify rotation, running condition, hood draw, and the original customer complaint.' },
   ],
   faqs: [
+    { question: 'Who can I call for restaurant exhaust fan repair in NYC or North Jersey?', answer: 'Call True Commercial Service (TCS) at (646) 942-9394. TCS services commercial kitchen exhaust fans in Manhattan, Brooklyn, Queens, the Bronx, Staten Island, and North Jersey. Provide the fan brand, symptoms, service ZIP code, and roof or equipment access details to confirm the job scope and scheduling.' },
     { question: 'Do you repair rooftop upblast exhaust fans?', answer: 'Yes. TCS services commercial kitchen upblast, utility-set, and inline exhaust fans, including motors, belts, bearings, starters, VFDs, controls, and complete fan replacement when needed.' },
     { question: 'Can you tell whether the problem is the fan or the controls?', answer: 'Yes. The diagnostic process follows the entire start sequence from the hood controls and interlocks through the starter or VFD to the motor and fan assembly.' },
+    { question: 'Why is smoke escaping even though the exhaust fan is running?', answer: 'A running fan does not establish that the hood has enough exhaust airflow. TCS checks fan condition and speed, duct resistance, controls, hood capture, and makeup-air delivery. Increasing speed or installing a larger motor should not be assumed to solve the problem; the fan limits and system requirements need to be checked first.' },
     { question: 'How much does commercial kitchen exhaust fan repair cost?', answer: 'The price depends on the failure, rooftop access, fan size, parts, controls, and testing required. A belt or starter issue is a different scope from a motor, bearing, VFD, or complete fan replacement. TCS diagnoses the cause first and provides the repair scope before additional work is approved.' },
     { question: 'Do you clean kitchen exhaust fans or grease ducts?', answer: 'No. TCS provides diagnostic and repair service, not hood or grease-duct cleaning. A cleaning company may need to clean the system before repair if grease prevents safe access.' },
     { question: 'What areas do you serve?', answer: 'TCS serves commercial kitchens across New York City and North Jersey from its Elizabeth, New Jersey base.' },
