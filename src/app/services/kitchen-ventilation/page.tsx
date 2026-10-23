@@ -12,6 +12,10 @@ const content: VentilationServiceContent = {
   title: 'Commercial kitchen hood and ventilation experts.',
   description: 'Hood airflow, exhaust fans, makeup air units, VFDs, demand-control ventilation, and pollution-control systems diagnosed and repaired across NYC and North Jersey.',
   serviceType: 'Commercial Kitchen Ventilation Diagnostics and Repair',
+  quickLinks: [
+    { href: '/services/exhaust-fan-repair', label: 'Exhaust fan not working? Fan repair' },
+    { href: '/services/makeup-air-unit-repair', label: 'Makeup air blowing cold? No-heat service' },
+  ],
   image: '/images/full-kitchen-ventilation-install.jpg',
   imageAlt: 'Complete commercial kitchen hood and ventilation system',
   symptoms: ['Smoke or heat escapes the hood', 'Exhaust or makeup air fan will not run', 'Kitchen is hot, cold, or drafty', 'Doors are hard to open or slam', 'VFD or hood controller shows a fault', 'Problem began after a renovation or equipment change'],

@@ -49,7 +49,7 @@ const focusedServices = [
     href: '/services/makeup-air-unit-repair',
     icon: <Wind className="w-6 h-6" />,
     title: 'Makeup Air Unit Repair',
-    description: 'Fan, motor, belt, heat, airflow, freeze-up, interlock, and control issues that put the kitchen under pressure.',
+    description: 'Makeup air blowing cold, heat not working, fan failures, freeze-protection faults, airflow, interlocks, and controls.',
   },
   {
     href: '/services/ventilation-controls',
@@ -167,6 +167,23 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
         </div>
       </Section>
 
+      <Section className="bg-white/[0.02] !py-10 lg:!py-12">
+        <SectionHeading eyebrow="Oven Service" title="Lainox or Cuppone oven down?" description="TCS also accepts direct commercial oven service requests. Choose your brand and send the model, symptoms, and service ZIP code." />
+        <div className="grid sm:grid-cols-2 gap-4 max-w-5xl mx-auto">
+          <Link href="/manufacturer-service/lainox" className="group glass-card rounded-xl p-6 hover:border-amber-500/30">
+            <h3 className="text-xl font-semibold group-hover:text-amber-400">Lainox combi oven repair</h3>
+            <p className="text-sm text-slate-400 mt-3">Error codes, heating, steam, controls, and cleaning-cycle problems.</p>
+            <span className="inline-flex items-center gap-2 text-sm text-amber-400 mt-5">Request Lainox service <ArrowRight className="w-4 h-4" /></span>
+          </Link>
+          <Link href="/manufacturer-service/cuppone" className="group glass-card rounded-xl p-6 hover:border-amber-500/30">
+            <h3 className="text-xl font-semibold group-hover:text-amber-400">Cuppone pizza oven repair</h3>
+            <p className="text-sm text-slate-400 mt-3">Power, heating, temperature, controls, and rotating-deck faults.</p>
+            <span className="inline-flex items-center gap-2 text-sm text-amber-400 mt-5">Request Cuppone service <ArrowRight className="w-4 h-4" /></span>
+          </Link>
+        </div>
+        <p className="text-xs text-slate-500 text-center mt-5">Oven service: NYC, Hudson County, and Union County. Model, scope, scheduling, and any warranty assignment are confirmed before dispatch.</p>
+      </Section>
+
       <Section>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <Reveal>
@@ -243,7 +260,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <div className="glass-card rounded-2xl p-8 h-full border-emerald-500/15">
               <h3 className="text-lg font-semibold text-emerald-300 mb-4">Good fit for TCS</h3>
               <ul className="space-y-3 text-sm text-slate-300">
-                {['Hood capture and kitchen pressure problems', 'Exhaust fan and makeup air unit repairs', 'VFD, DCV, starter, sensor, and interlock faults', 'Ventilation startup, commissioning support, and operational airflow readings', 'Manufacturer-assigned warranty, startup, and service calls'].map((item) => (
+                {['Hood capture and kitchen pressure problems', 'Exhaust fan and makeup air unit repairs', 'Lainox combi oven and Cuppone pizza oven repair', 'VFD, DCV, starter, sensor, and interlock faults', 'Ventilation startup, commissioning support, and operational airflow readings', 'Manufacturer-assigned warranty, startup, and service calls'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />{item}</li>
                 ))}
               </ul>
@@ -253,7 +270,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <div className="glass-card rounded-2xl p-8 h-full">
               <h3 className="text-lg font-semibold text-slate-200 mb-4">Outside the current focus</h3>
               <ul className="space-y-3 text-sm text-slate-400">
-                {['Hood or grease-duct cleaning', 'Fire-suppression inspection or service', 'Residential range hoods', 'General cooking, refrigeration, beverage, or comfort-HVAC calls unless manufacturer-assigned or referred'].map((item) => (
+                {['Hood or grease-duct cleaning', 'Fire-suppression inspection or service', 'Residential range hoods', 'Other cooking brands, refrigeration, beverage, or comfort-HVAC calls unless manufacturer-assigned or referred'].map((item) => (
                   <li key={item} className="flex items-start gap-3"><span className="w-1.5 h-1.5 bg-slate-500 rounded-full mt-2 flex-shrink-0" />{item}</li>
                 ))}
               </ul>

@@ -15,6 +15,8 @@ const primaryServices = [
   { href: '/services/pollution-control', label: 'Pollution-Control Systems', icon: <Wind className="w-4 h-4" /> },
   { href: '/services/kitchen-ventilation-startup-commissioning', label: 'Startup & Commissioning', icon: <ClipboardCheck className="w-4 h-4" /> },
   { href: '/services/kitchen-hood-performance-testing', label: 'Performance Testing', icon: <FileCheck2 className="w-4 h-4" /> },
+  { href: '/manufacturer-service/lainox', label: 'Lainox Combi Oven Repair', icon: <Wrench className="w-4 h-4" /> },
+  { href: '/manufacturer-service/cuppone', label: 'Cuppone Pizza Oven Repair', icon: <Wrench className="w-4 h-4" /> },
 ];
 
 export default function Header() {
@@ -58,7 +60,7 @@ export default function Header() {
                       ))}
                     </div>
                     <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between gap-6">
-                      <p className="text-xs text-slate-400">Other equipment work is accepted primarily through manufacturer, dealer, and established-customer assignments.</p>
+                      <p className="text-xs text-slate-400">Direct Lainox and Cuppone requests welcome. Other equipment work is reviewed through manufacturer, dealer, and established-customer assignments.</p>
                       <Link href="/manufacturer-service" className="text-xs text-amber-400 whitespace-nowrap hover:text-amber-300">Manufacturer service →</Link>
                     </div>
                   </div>
@@ -82,7 +84,7 @@ export default function Header() {
 
         <div className={`xl:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="bg-navy-300/98 backdrop-blur-lg border-t border-white/5 px-4 py-6 space-y-1 overflow-y-auto max-h-[70vh]">
-            <MobileNavSection title="Ventilation Services">
+            <MobileNavSection title="Ventilation & Oven Services">
               {primaryServices.map((item) => <MobileLink key={item.href} href={item.href} label={item.label} onClick={() => setMobileOpen(false)} />)}
             </MobileNavSection>
             <MobileLink href="/locations" label="Service Area" onClick={() => setMobileOpen(false)} />
@@ -115,7 +117,7 @@ function MobileNavSection({ title, children }: { title: string; children: React.
       <button onClick={() => setOpen(!open)} className="flex items-center justify-between w-full py-3 px-4 text-white font-medium">
         {title}<ChevronDown className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
-      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-[34rem] opacity-100' : 'max-h-0 opacity-0'}`}><div className="pl-4 pb-2 space-y-0.5">{children}</div></div>
+      <div className={`overflow-hidden transition-all duration-200 ${open ? 'max-h-[42rem] opacity-100' : 'max-h-0 opacity-0'}`}><div className="pl-4 pb-2 space-y-0.5">{children}</div></div>
     </div>
   );
 }

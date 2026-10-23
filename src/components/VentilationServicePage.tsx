@@ -19,6 +19,7 @@ export interface VentilationServiceContent {
   note?: string;
   evidence?: ServiceEvidenceContent;
   defaultService?: string;
+  quickLinks?: { href: string; label: string }[];
 }
 
 const relatedServices = [
@@ -66,6 +67,9 @@ export default function VentilationServicePage({ content }: { content: Ventilati
                 <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow transition-all">Request Service <ArrowRight className="w-5 h-5" /></Link>
                 <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-amber-500/40 text-white font-medium px-8 py-4 rounded-xl transition-all"><Phone className="w-4 h-4 text-amber-400" />{COMPANY.phone}</a>
               </div>
+              {content.quickLinks && <div className="mt-5 flex flex-wrap gap-3" aria-label="Choose your ventilation problem">
+                {content.quickLinks.map((link) => <Link key={link.href} href={link.href} className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-amber-400 hover:border-amber-500/40">{link.label}<ArrowRight className="w-4 h-4" /></Link>)}
+              </div>}
               <p className="mt-5 text-xs text-slate-500">Commercial kitchen ventilation service across NYC and North Jersey</p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
