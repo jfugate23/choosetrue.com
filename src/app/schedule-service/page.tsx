@@ -19,7 +19,7 @@ export default function ScheduleServicePage() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 lg:px-6 text-center">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4 animate-fade-in">Schedule Service</p>
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-fade-up">Tell us what the ventilation system is doing.</h1>
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-fade-up">Tell us what the equipment is doing.</h1>
           <p className="mt-4 text-lg text-slate-400 max-w-xl mx-auto animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Send the symptoms, equipment brand, ZIP code, and any fault code. TCS reviews each request directly.
           </p>
@@ -61,7 +61,7 @@ export default function ScheduleServicePage() {
                 {[
                   { icon: <Clock className="w-4 h-4" />, text: 'Owner reviews scope and service area' },
                   { icon: <CheckCircle2 className="w-4 h-4" />, text: 'Brand, symptoms, and access confirmed before dispatch' },
-                  { icon: <ShieldCheck className="w-4 h-4" />, text: 'Commercial kitchens only' },
+                  { icon: <ShieldCheck className="w-4 h-4" />, text: 'Commercial kitchens and facilities' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 text-sm text-slate-400">
                     <span className="text-amber-400">{item.icon}</span>
