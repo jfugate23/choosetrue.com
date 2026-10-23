@@ -14,6 +14,19 @@ for (const path of ['/', '/services']) {
   assert.ok(html.includes('href="/services/exhaust-fan-repair"'), `${path}: preserve exhaust service path`);
   assert.ok(!html.includes('TCS is not actively marketing for general one-off equipment calls'), `${path}: remove conflicting blanket exclusion`);
 }
+// Keep the homepage and responsive navigation free of the removed scope filler.
+const home = await page('/');
+for (const removed of ['A focused service company, by design.', 'Good fit for TCS', 'Outside the current focus', 'Direct Lainox and Cuppone requests welcome.', 'Focused Services', 'Ventilation &amp; Oven Services']) {
+  assert.ok(!home.includes(removed), `Homepage/navigation: removed ${removed}`);
+}
+for (const path of ['/services/cooking-equipment', '/services/hvac', '/services/kitchen-ventilation', '/services/kitchen-air-balancing', '/services/exhaust-fan-repair', '/services/makeup-air-unit-repair', '/services/ventilation-controls', '/services/pollution-control', '/services/kitchen-ventilation-startup-commissioning', '/services/kitchen-hood-performance-testing', ...ovenPaths]) {
+  assert.ok(home.split(`href="${path}"`).length >= 3, `Desktop and mobile navigation retain ${path}`);
+}
+assert.ok(home.includes('Commercial kitchen equipment,'), 'Homepage states the broader service offering');
+for (const path of ['/services/cooking-equipment', '/services/hvac']) {
+  const html = await page(path);
+  assert.ok(!html.includes('TCS keeps this capability available primarily'), `${path}: direct customer requests are not restricted to referrals`);
+}
 const ventilation = await page('/services/kitchen-ventilation');
 assert.match(ventilation, /Choose your ventilation problem/);
 assert.ok(ventilation.indexOf('Exhaust fan not working? Fan repair') < ventilation.indexOf('Warning Signs'), 'Fan repair shortcut is in the hero, before symptoms');

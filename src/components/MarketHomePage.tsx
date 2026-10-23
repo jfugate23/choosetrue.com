@@ -34,6 +34,18 @@ export interface MarketHomePageMarket {
 
 const focusedServices = [
   {
+    href: '/services/cooking-equipment',
+    icon: <Wrench className="w-6 h-6" />,
+    title: 'Cooking Equipment Repair',
+    description: 'Troubleshooting and repair for commercial ovens, ranges, fryers, griddles, and other cooking equipment.',
+  },
+  {
+    href: '/services/hvac',
+    icon: <Wind className="w-6 h-6" />,
+    title: 'Commercial HVAC Service',
+    description: 'Commercial heating, cooling, and maintenance service, including HVAC filter changes.',
+  },
+  {
     href: '/services/kitchen-air-balancing',
     icon: <Gauge className="w-6 h-6" />,
     title: 'Hood Airflow & Air Balancing',
@@ -84,21 +96,21 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-1.5 h-1.5 bg-amber-400 rounded-full" />
-                <span className="text-amber-300 text-xs font-medium tracking-wide">COMMERCIAL KITCHEN VENTILATION • NYC + NORTH JERSEY</span>
+                <span className="text-amber-300 text-xs font-medium tracking-wide">COMMERCIAL SERVICE • NYC + NORTH JERSEY</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight max-w-4xl">
-                Kitchen hood airflow problems.
-                <span className="block text-gradient">Diagnosed and fixed.</span>
+                Commercial kitchen equipment,
+                <span className="block text-gradient">ventilation &amp; HVAC service.</span>
               </h1>
 
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Smoke escaping? Exhaust fan down? Makeup air not keeping up? TCS measures the system, finds the actual cause, and repairs the fan, motor, belt, VFD, controls, or MAU problem behind it.
+                Cooking equipment down, an HVAC problem, or a hood that won’t clear smoke? TCS diagnoses and repairs commercial systems, with specialized expertise in kitchen ventilation.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
                 <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-lg cta-glow transition-all group">
-                  Request Ventilation Service
+                  Request Service
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a href={market.phoneHref} className="inline-flex items-center justify-center gap-2 text-slate-200 hover:text-white transition-colors font-medium px-2 py-3">
@@ -110,7 +122,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
                 <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Hood and ventilation expertise</span>
                 <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Measured airflow readings</span>
-                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Commercial kitchens only</span>
+                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Commercial kitchens and facilities</span>
               </div>
             </div>
 
@@ -144,9 +156,9 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
         <div className="absolute inset-0 bg-gradient-to-b from-navy-300 via-navy-50/30 to-navy-300 pointer-events-none" />
         <div className="relative">
           <SectionHeading
-            eyebrow="Ventilation Service"
-            title="The calls TCS is built to handle."
-            description="Focused troubleshooting and repair for the air-moving equipment and controls that keep a commercial kitchen capturing properly."
+            eyebrow="Services"
+            title="Equipment, ventilation, and HVAC."
+            description="Troubleshooting, repair, and maintenance for your commercial kitchen and facility."
           />
           <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
             {focusedServices.map((service, i) => (
@@ -223,7 +235,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
       </Section>
 
       <Section className="bg-white/[0.02]">
-        <SectionHeading eyebrow="Service Approach" title="Commercial-kitchen ventilation is the core focus." />
+        <SectionHeading eyebrow="Service Approach" title="Kitchen ventilation is a specialty." />
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -250,35 +262,6 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               </div>
             </Reveal>
           ))}
-        </div>
-      </Section>
-
-      <Section>
-        <SectionHeading eyebrow="Scope" title="A focused service company, by design." />
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          <Reveal>
-            <div className="glass-card rounded-2xl p-8 h-full border-emerald-500/15">
-              <h3 className="text-lg font-semibold text-emerald-300 mb-4">Good fit for TCS</h3>
-              <ul className="space-y-3 text-sm text-slate-300">
-                {['Hood capture and kitchen pressure problems', 'Exhaust fan and makeup air unit repairs', 'Lainox combi oven and Cuppone pizza oven repair', 'VFD, DCV, starter, sensor, and interlock faults', 'Ventilation startup, commissioning support, and operational airflow readings', 'Manufacturer-assigned warranty, startup, and service calls'].map((item) => (
-                  <li key={item} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />{item}</li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="glass-card rounded-2xl p-8 h-full">
-              <h3 className="text-lg font-semibold text-slate-200 mb-4">Outside the current focus</h3>
-              <ul className="space-y-3 text-sm text-slate-400">
-                {['Hood or grease-duct cleaning', 'Fire-suppression inspection or service', 'Residential range hoods', 'Other cooking brands, refrigeration, beverage, or comfort-HVAC calls unless manufacturer-assigned or referred'].map((item) => (
-                  <li key={item} className="flex items-start gap-3"><span className="w-1.5 h-1.5 bg-slate-500 rounded-full mt-2 flex-shrink-0" />{item}</li>
-                ))}
-              </ul>
-              <Link href="/manufacturer-service" className="inline-flex items-center gap-2 text-sm text-amber-400 font-medium mt-6 hover:text-amber-300">
-                Manufacturer service information <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </Reveal>
         </div>
       </Section>
 
@@ -315,12 +298,12 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens across NYC and North Jersey</p>
             <div className="mt-6 flex items-start gap-3 text-sm text-slate-400">
               <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />
-              Commercial kitchens only. No hood/duct cleaning, fire suppression, or residential range-hood work.
+              Commercial kitchens and facilities. No hood/duct cleaning, fire suppression, or residential range-hood work.
             </div>
           </div>
           <Reveal>
             <div className="glass-card rounded-2xl p-6 lg:p-8">
-              <h2 className="text-xl font-semibold mb-6">Ventilation service request</h2>
+              <h2 className="text-xl font-semibold mb-6">Service request</h2>
               <ServiceForm />
             </div>
           </Reveal>

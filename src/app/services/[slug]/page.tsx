@@ -21,7 +21,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!service) return {};
   return {
     title: service.title,
-    description: `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
+    description: ['cooking-equipment', 'hvac'].includes(service.slug) ? service.description : `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
     alternates: { canonical: `/services/${service.slug}` },
     robots: { index: false, follow: true },
   };
@@ -36,7 +36,7 @@ export default function ServicePage({ params }: Props) {
       <PageHero
         eyebrow={service.shortTitle}
         title={service.title}
-        description={`TCS keeps this capability available primarily for manufacturer-assigned, dealer-referred, and established-customer work. Active direct marketing is focused on commercial kitchen ventilation.`}
+        description={['cooking-equipment', 'hvac'].includes(service.slug) ? service.longDescription : `TCS keeps this capability available primarily for manufacturer-assigned, dealer-referred, and established-customer work. Active direct marketing is focused on commercial kitchen ventilation.`}
       />
 
       {service.equipment.length > 0 && (
@@ -97,7 +97,7 @@ export default function ServicePage({ params }: Props) {
 
       <Section>
         <div className="max-w-2xl mx-auto">
-          <SectionHeading eyebrow="Assigned & Referral Work" title={`Ask about ${service.shortTitle.toLowerCase()} service`} description="Include the manufacturer, model, symptoms, and whether the call is manufacturer-assigned or referred." />
+          <SectionHeading eyebrow={['cooking-equipment', 'hvac'].includes(service.slug) ? "Request Service" : "Assigned & Referral Work"} title={`Ask about ${service.shortTitle.toLowerCase()} service`} description={['cooking-equipment', 'hvac'].includes(service.slug) ? "Include the manufacturer, model, symptoms, and service location." : "Include the manufacturer, model, symptoms, and whether the call is manufacturer-assigned or referred."} />
           <div className="glass-card rounded-2xl p-6 lg:p-8">
             <ServiceForm />
           </div>
