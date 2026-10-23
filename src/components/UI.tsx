@@ -241,7 +241,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
             <option value="performance-testing">Airflow / performance testing</option>
             </>}
             <option value="manufacturer">Manufacturer warranty / startup</option>
-            <option value="other">Other commercial equipment referral</option>
+            <option value="other">Other commercial equipment service</option>
           </select>
         </label>
         <label className="text-xs font-medium text-slate-300">Urgency *
@@ -258,7 +258,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
       </label>
       <label className="flex items-start gap-3 text-xs text-slate-400">
         <input name="commercial" type="checkbox" required className="mt-0.5 accent-amber-500" />
-        {equipment === 'oven' ? 'This request is for commercial cooking equipment, not a residential appliance.' : 'This request is for a commercial kitchen, not a residential range hood. TCS does not provide hood/duct cleaning or fire-suppression service.'}
+        {equipment === 'oven' ? 'This request is for commercial cooking equipment, not a residential appliance.' : 'This request is for a commercial kitchen or facility, not a residential appliance. TCS does not provide hood/duct cleaning or fire-suppression service.'}
       </label>
       {message && (
         <p role="status" aria-live="polite" className={`text-sm rounded-lg px-4 py-3 ${status === 'success' ? 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20' : 'bg-red-500/10 text-red-300 border border-red-500/20'}`}>
@@ -267,7 +267,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
         </p>
       )}
       <button type="submit" disabled={status === 'submitting'} className="w-full bg-amber-500 hover:bg-amber-400 disabled:opacity-60 disabled:cursor-wait text-navy-300 font-bold py-3.5 rounded-lg cta-glow transition-all text-sm">
-        {status === 'submitting' ? 'Sending…' : equipment === 'oven' ? 'Request Oven Service' : 'Request Ventilation Service'}
+        {status === 'submitting' ? 'Sending…' : equipment === 'oven' ? 'Request Oven Service' : 'Request Service'}
       </button>
     </form>
   );

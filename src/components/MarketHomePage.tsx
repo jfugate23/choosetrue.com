@@ -288,14 +288,14 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
           <div>
             <SectionHeading
               eyebrow="Request Service"
-              title="Tell us what the kitchen is doing."
+              title="Tell us what the equipment is doing."
               description="Include the equipment brand, symptoms, ZIP code, fault code, and rooftop-access details if you have them. For a down exhaust fan or active smoke-capture problem, call directly."
               center={false}
             />
             <a href={market.phoneHref} className="inline-flex items-center gap-3 text-xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
               <Phone className="w-5 h-5" /> {market.phone}
             </a>
-            <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens across NYC and North Jersey</p>
+            <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens and facilities across NYC and North Jersey</p>
             <div className="mt-6 flex items-start gap-3 text-sm text-slate-400">
               <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />
               Commercial kitchens and facilities. No hood/duct cleaning, fire suppression, or residential range-hood work.

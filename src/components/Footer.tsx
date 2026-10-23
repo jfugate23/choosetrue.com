@@ -21,7 +21,7 @@ export default function Footer() {
     <footer className="bg-navy-400 border-t border-white/5 pb-20 lg:pb-0">
       <div className="bg-amber-500/10 border-b border-amber-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-amber-200 font-medium text-sm">Kitchen airflow problem? Talk directly with TCS.</span>
+          <span className="text-amber-200 font-medium text-sm">Need commercial service? Talk directly with TCS.</span>
           <a href={COMPANY.phoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-bold transition-colors"><Phone className="w-4 h-4" />{COMPANY.phone}</a>
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-slate-500">&copy; {new Date().getFullYear()} {COMPANY.legal}. All rights reserved.</p>
-          <p className="text-xs text-slate-600">Commercial kitchens only • NYC and North Jersey</p>
+          <p className="text-xs text-slate-600">Commercial service • NYC and North Jersey</p>
         </div>
       </div>
     </footer>
