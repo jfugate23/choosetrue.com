@@ -2,16 +2,18 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = {
-  title: 'Makeup Air Unit Repair — NYC & NJ',
-  description: 'Commercial kitchen makeup air unit repair across NYC and North Jersey: fans, motors, belts, heat, airflow, interlocks, VFDs, and controls.',
+  title: 'Makeup Air Repair & No Heat — NYC & NJ',
+  description: 'Restaurant makeup air blowing cold or heat not working? TCS diagnoses MAU heating, airflow, controls, and fan faults across NYC and North Jersey.',
   alternates: { canonical: '/services/makeup-air-unit-repair' },
 };
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Makeup Air Service',
-  title: 'Makeup air not running, or not keeping up?',
-  description: 'A failed or misbehaving MAU can leave the kitchen hot, cold, drafty, and deeply negative. TCS diagnoses the unit and its relationship to the exhaust system.',
+  title: 'Makeup air blowing cold or not running?',
+  description: 'No heat from the makeup air unit? Cold air entering the kitchen? TCS diagnoses commercial MAU heating, airflow, fan, and control faults, including how the unit works with the exhaust system.',
   serviceType: 'Commercial Kitchen Makeup Air Unit Repair',
+  defaultService: 'makeup-air',
+  note: 'Do not bypass safety controls or repeatedly reset a unit that locks out. Report the fault code, whether the fan runs, and whether the problem began with colder weather. Regulated gas work requires the appropriate licensed trade.',
   image: '/images/rooftop-makeup-air-unit-install.jpg',
   imageAlt: 'Commercial kitchen rooftop makeup air unit',
   symptoms: ['Makeup air fan will not run', 'Kitchen doors are hard to open', 'Cold air dumping into the kitchen', 'Kitchen overheats during service', 'Burner or heat will not enable', 'Unit trips, freezes, or shows a drive fault'],
@@ -28,6 +30,9 @@ const content: VentilationServiceContent = {
     { title: 'Verify the kitchen', description: 'Confirm stable unit operation and whether the pressure, comfort, or capture complaint changed.' },
   ],
   faqs: [
+    { question: 'Why is the makeup air unit blowing cold air with the heat on?', answer: 'The fan can run while the heating sequence is disabled or locked out. TCS checks the operating mode, temperature controls, airflow proving, safety circuit, and heat-enable sequence before recommending a repair. The cause must be diagnosed on the specific unit; a cold-air complaint alone does not identify a failed burner.' },
+    { question: 'Do you handle restaurant makeup air no-heat calls in winter?', answer: 'Yes. TCS accepts commercial makeup air no-heat and cold-supply-air service requests across NYC and North Jersey. Send the brand, model, displayed fault, service ZIP code, and roof-access details so the service scope and scheduling can be confirmed.' },
+    { question: 'Can I turn off the makeup air unit to stop the cold draft?', answer: 'Makeup air and exhaust operate as a system. Turning off replacement air while exhaust continues can worsen negative pressure and hood performance. Follow the equipment operating instructions and arrange diagnosis rather than bypassing interlocks or safety controls.' },
     { question: 'Why are the restaurant doors hard to open?', answer: 'The kitchen may be under excessive negative pressure because exhaust airflow is greater than the replacement air reaching the building. A failed MAU, closed damper, slipping belt, wrong fan speed, or other air-distribution problem can cause it.' },
     { question: 'Can a makeup air problem make the kitchen hot?', answer: 'Yes. A failed MAU can starve the hood system, disrupt capture, pull conditioned air from the dining room, or leave cooking heat in the kitchen. The complete exhaust and supply relationship needs to be checked.' },
     { question: 'Do you service CaptiveAire, Accurex, Greenheck, Gaylord, and Halton equipment?', answer: 'TCS has commercial ventilation experience across these systems. Formal warranty authorization varies by manufacturer, product, territory, and assignment; warranty calls must be assigned or approved by the manufacturer.' },
