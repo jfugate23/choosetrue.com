@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ClipboardCheck, Fan, FileCheck2, Gauge, Settings2, Wind } from 'lucide-react';
+import { ArrowRight, Wrench, ClipboardCheck, Fan, FileCheck2, Gauge, Settings2, Wind } from 'lucide-react';
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = {
-  title: 'Ventilation & Oven Repair — NYC & NJ',
-  description: 'Kitchen ventilation, makeup air no-heat diagnostics, Lainox combi oven and Cuppone pizza oven repair in NYC and North Jersey. Request TCS service.',
+  title: 'Equipment, Ventilation & HVAC',
+  description: 'Commercial cooking equipment repair, kitchen ventilation, and HVAC service in NYC and North Jersey. Request TCS troubleshooting, repair, or maintenance.',
   alternates: { canonical: '/services' },
 };
 
 const services = [
+  { href: '/services/cooking-equipment', title: 'Cooking Equipment Repair', description: 'Commercial ovens, ranges, fryers, griddles, and other cooking equipment. Send the model and symptoms to request service.', icon: <Wrench className="w-7 h-7" /> },
+  { href: '/services/hvac', title: 'Commercial HVAC Service', description: 'Heating, cooling, and maintenance for commercial facilities, including HVAC filter changes.', icon: <Wind className="w-7 h-7" /> },
   { href: '/services/kitchen-air-balancing', title: 'Hood Airflow & Air Balancing', description: 'Measured exhaust and supply readings, capture testing, pressure diagnosis, adjustments, and written findings.', icon: <Gauge className="w-7 h-7" /> },
   { href: '/services/exhaust-fan-repair', title: 'Exhaust Fan Repair', description: 'Motors, belts, sheaves, bearings, fan wheels, starters, disconnects, VFDs, controls, and airflow verification.', icon: <Fan className="w-7 h-7" /> },
   { href: '/services/makeup-air-unit-repair', title: 'Makeup Air Unit Repair', description: 'Makeup air blowing cold or heat not working, plus fan, motor, belt, filter, damper, airflow, and interlock faults.', icon: <Wind className="w-7 h-7" /> },
@@ -21,7 +23,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <PageHero eyebrow="Focused Services" title="Commercial kitchen ventilation, from hood to roof." description="Airflow, fans, makeup air, and controls are our core focus. TCS also accepts Lainox combi oven and Cuppone pizza oven service requests, with model and scope confirmed before dispatch." />
+      <PageHero eyebrow="Services" title="Commercial kitchen equipment, ventilation & HVAC service." description="Troubleshooting, repair, and maintenance for commercial kitchens and facilities, with specialized expertise in kitchen ventilation." />
       <Section>
         <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => (
@@ -50,11 +52,7 @@ export default function ServicesPage() {
               <Link href="/manufacturer-service/lainox" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300">Lainox combi oven repair <ArrowRight className="w-4 h-4" /></Link>
               <Link href="/manufacturer-service/cuppone" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300">Cuppone pizza oven repair <ArrowRight className="w-4 h-4" /></Link>
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed mb-5">Other cooking, refrigeration, beverage, and general HVAC requests are reviewed through manufacturer, dealer, established-customer, and referral work. Warranty assignments require approval before service.</p>
-            <ul className="space-y-3 text-sm text-slate-300 mb-6">
-              {['Manufacturer-assigned warranty or startup', 'Dealer or representative field support', 'Established-customer and qualified referral work'].map((item) => <li key={item} className="flex items-start gap-3"><CheckCircle2 className="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" />{item}</li>)}
-            </ul>
-            <Link href="/manufacturer-service" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300">Manufacturer service pathway <ArrowRight className="w-4 h-4" /></Link>
+            <Link href="/services/cooking-equipment" className="inline-flex items-center gap-2 text-amber-400 font-semibold hover:text-amber-300">Cooking equipment service <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
       </Section>
