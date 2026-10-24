@@ -1,3 +1,5 @@
+import { GROWTH_POSTS } from '@/lib/growth-posts';
+
 export interface FAQ {
   question: string;
   answer: string;
@@ -8,6 +10,7 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  updated?: string;
   category: string;
   readTime: string;
   content: string;
@@ -15,140 +18,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-  {
-    slug: 'walk-in-cooler-not-cooling-troubleshooting-guide',
-    title: 'Walk-In Cooler Not Cooling? 7 Things to Check Before Calling for Service',
-    description: 'Your walk-in cooler is running but not holding temp. Here are 7 things to check before you call for emergency repair: and when to call immediately.',
-    date: '2026-03-27',
-    category: 'Refrigeration',
-    readTime: '5 min',
-    content: `Your walk-in cooler is running but the temperature is climbing. Product is at risk. Before you panic, here are seven things to check: and clear signs you need a professional immediately.
-
-## Check These First
-
-### 1. Door Gaskets
-Run your hand along the door seal while it's closed. Feel cold air escaping? Worn or torn gaskets are the #1 cause of walk-in temperature problems. A gasket replacement costs $50-150 and takes 30 minutes: much cheaper than a compressor.
-
-### 2. Evaporator Coils
-Open the unit and look at the evaporator coils. If they're covered in ice or frost, you have an airflow problem. This is usually caused by a failed defrost timer, a bad defrost heater, or blocked drain lines. **Do not chip the ice off**: you'll damage the coils.
-
-### 3. Condenser Coils
-Check the condenser unit (usually on top or outside). If the coils are packed with grease, dust, or debris, the system can't reject heat. A dirty condenser makes the compressor work harder and run hotter: eventually it'll fail completely. Clean condensers should be part of your quarterly maintenance.
-
-### 4. Fan Motors
-Listen. Are the evaporator fans running? If the fan motor has failed, air isn't circulating and the unit can't cool evenly. You'll notice warm spots and inconsistent temperatures.
-
-### 5. Thermostat Setting
-It sounds obvious, but check the thermostat. Someone may have bumped it, or it may have been adjusted for a delivery and never reset. Walk-in coolers should be set between 35°F and 38°F.
-
-### 6. Door Traffic
-During peak service, the walk-in door might be opening every 30 seconds. Each time, warm air floods in. If your cooler struggles during service but recovers overnight, the issue is door traffic: not equipment failure. Consider strip curtains.
-
-### 7. Refrigerant Charge
-If none of the above solves it, you likely have a refrigerant issue: a leak, low charge, or restriction. **This requires a licensed technician with EPA 608 certification.** Do not attempt refrigerant work yourself.
-
-## When to Call Immediately
-
-- Temperature above 41°F and climbing: you're in the food safety danger zone
-- Compressor is running but making unusual noises (clicking, grinding, hissing)
-- Visible oil stains around the compressor or refrigerant lines (indicates a leak)
-- Electrical burning smell
-- Circuit breaker keeps tripping
-
-## The Cost of Waiting
-
-Every hour your walk-in is above temperature puts your inventory at risk. A typical restaurant walk-in holds $3,000-8,000 in product. The average emergency repair costs $350-800. The math is simple: call early, not late.
-
-## Prevent It Next Time
-
-Quarterly preventive maintenance catches 80% of walk-in problems before they become emergencies. A PM visit typically includes condenser cleaning, refrigerant pressure check, gasket inspection, drain clearing, and temperature calibration.
-
-**TCS currently accepts general refrigeration calls primarily through manufacturer assignments, established customers, and qualified referrals. Direct marketing is focused on commercial kitchen ventilation.**
-
-## Related Articles
-
-- [Walk-In Freezer vs Cooler: Service Differences](/blog/walk-in-freezer-vs-cooler-service-differences)
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-
-Looking for service? Visit our [Refrigeration Repair](/services/refrigeration) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'Why is my walk-in cooler running but not cooling?', answer: 'The most common causes are worn door gaskets, dirty condenser coils, frozen evaporator coils, failed fan motors, or low refrigerant charge. Check gaskets and condenser cleanliness first: these account for over half of walk-in temperature problems.' },
-      { question: 'What temperature should a walk-in cooler be set at?', answer: 'Walk-in coolers should be set between 35°F and 38°F. If the temperature rises above 41°F, you are in the food safety danger zone and should call for emergency service immediately.' },
-      { question: 'How much does walk-in cooler repair cost?', answer: 'The average emergency walk-in cooler repair costs $350-800. However, a typical restaurant walk-in holds $3,000-8,000 in perishable product, so calling early is always cheaper than waiting.' },
-    ],
-  },
-  {
-    slug: 'commercial-ice-machine-not-making-ice',
-    title: 'Commercial Ice Machine Not Making Ice? Here\'s What\'s Wrong',
-    description: 'Your Hoshizaki, Manitowoc, or Scotsman ice machine stopped producing. Common causes, what you can fix yourself, and when you need a tech.',
-    date: '2026-03-25',
-    category: 'Ice Machines',
-    readTime: '4 min',
-    content: `No ice during dinner service is an emergency. Here's a systematic approach to figuring out what's wrong with your commercial ice machine.
-
-## The Most Common Causes
-
-### Water Supply Issues (30% of calls)
-Before anything else: is the water turned on? Check the water supply valve behind or under the machine. Then check for a kinked water line. If you recently had plumbing work done, someone may have shut off the line and forgotten to reopen it.
-
-### Dirty Condenser (25% of calls)
-The condenser coil is the single most common reason ice machines underperform. In a commercial kitchen, grease and dust accumulate fast. A dirty condenser raises operating temperature, slows the freeze cycle, and eventually triggers a safety shutdown.
-
-**Where to find it:** Air-cooled models have the condenser behind a panel on the front or back. You'll see metal fins: they should be clean and clear, not matted with gunk.
-
-### Harvest Cycle Problems (20% of calls)
-The machine freezes ice but can't release it from the evaporator plate. You'll see a thick sheet of ice stuck to the plate. This is usually caused by a failed hot gas valve, low refrigerant, or a malfunctioning harvest assist motor.
-
-### Scale Buildup (15% of calls)
-Hard water deposits mineral scale on the evaporator plate and water distribution system. The ice comes out thin, cloudy, or misshapen: then production drops: then it stops entirely. This is preventable with regular descaling (every 6 months minimum, every 3 months in hard water areas).
-
-### Control Board Failures (10% of calls)
-Modern ice machines have electronic controls that manage the freeze and harvest cycles. When the board fails, the machine either won't start, runs continuously without producing, or cycles on and off rapidly. Board replacement typically costs $300-600.
-
-## What You Can Do Right Now
-
-1. **Check water supply**: turn valve off and on, check for kinks
-2. **Clean the condenser**: if accessible, brush or vacuum the fins gently
-3. **Check the bin**: is the bin actually full and the machine shut off normally? Some machines have a bin sensor.
-4. **Look for error codes**: most Hoshizaki and Manitowoc machines have LED diagnostic codes. Write down what you see.
-5. **Power cycle**: turn off for 10 minutes, turn back on. Sometimes the control board needs a reset.
-
-## What Requires a Technician
-
-- Refrigerant-related issues (EPA 608 certification required)
-- Harvest valve replacement
-- Control board diagnosis and replacement
-- Evaporator plate damage
-- Compressor issues
-
-## Ice Machine Maintenance Schedule
-
-| Task | Frequency |
-|------|-----------|
-| Condenser cleaning | Monthly |
-| Full machine cleaning & sanitizing | Every 6 months |
-| Water filter replacement | Every 6 months |
-| Descaling | Every 3-6 months |
-| Professional inspection | Annually |
-
-A well-maintained ice machine should last 8-12 years. A neglected one fails in 3-5.
-
-**TCS currently accepts beverage-equipment work primarily through manufacturer assignments, established customers, and qualified referrals. Direct marketing is focused on commercial kitchen ventilation.**
-
-## Related Articles
-
-- [How Often Should Equipment Be Serviced?](/blog/how-often-should-commercial-kitchen-equipment-be-serviced)
-- [EPA 608 Certification: What Owners Should Know](/blog/epa-608-certification-restaurant-owners)
-- [What Does Equipment Repair Cost in the NYC metro?](/blog/walk-in-cooler-not-cooling-troubleshooting-guide)
-
-Looking for service? Visit our [Beverage Equipment Repair](/services/beverage-equipment) page or [schedule service](/schedule-service) today.`,
-    faqs: [
-      { question: 'Why did my commercial ice machine stop making ice?', answer: 'The most common causes are water supply issues (30% of calls), dirty condenser coils (25%), harvest cycle problems (20%), mineral scale buildup (15%), and control board failures (10%). Start by checking the water supply valve and condenser cleanliness.' },
-      { question: 'How often should a commercial ice machine be cleaned?', answer: 'Commercial ice machines should be descaled every 6 months minimum, and every 3 months in hard water areas. Regular cleaning prevents scale buildup that reduces production and eventually causes complete shutdown.' },
-      { question: 'How long should a commercial ice machine last?', answer: 'A well-maintained commercial ice machine should last 8-12 years. A neglected one typically fails in 3-5 years. Regular condenser cleaning and descaling are the biggest factors in equipment longevity.' },
-    ],
-  },
+  ...GROWTH_POSTS,
   {
     slug: 'rational-combi-oven-error-codes-guide',
     title: 'Rational Combi Oven Error Codes: What They Mean and What to Do',
@@ -1465,10 +1335,10 @@ Need ESP service? Visit our [Pollution Control Service](/services/pollution-cont
   },
 ];
 
-// Only these field-relevant articles support the site's current public focus.
-// Legacy equipment articles remain available for old links, but are excluded
-// from the blog index and sitemap and receive noindex metadata.
+// Reviewed guides support current services and future equipment coverage.
+// Other legacy articles stay noindex until their claims and links are reviewed.
 const INDEXABLE_POST_SLUGS = new Set([
+  ...GROWTH_POSTS.map(post => post.slug),
   'commercial-kitchen-ventilation-problems-signs',
   'captiveaire-hood-maintenance-repair-guide',
   'makeup-air-unit-not-working-restaurant',
@@ -1485,7 +1355,7 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 }
 
 export function getAllPosts(): BlogPost[] {
-  return [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return [...blogPosts].sort((a, b) => new Date(b.updated || b.date).getTime() - new Date(a.updated || a.date).getTime());
 }
 
 export function isIndexablePost(slug: string): boolean {

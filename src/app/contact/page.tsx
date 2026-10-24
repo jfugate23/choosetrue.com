@@ -95,7 +95,7 @@ export default function ContactPage() {
             <div className="glass-card rounded-2xl p-6 lg:p-8">
               <h3 className="text-lg font-semibold mb-2">Send us a message</h3>
               <p className="text-sm text-slate-400 mb-6">Every request is reviewed for scope, service area, and urgency.</p>
-              <ServiceForm />
+                <ServiceForm equipment="general" />
             </div>
           </Reveal>
         </div>

@@ -4,8 +4,8 @@ import { Section, Reveal, ServiceForm } from '@/components/UI';
 import { Phone, Clock, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Request Kitchen Ventilation Service',
-  description: 'Request commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, or ventilation controls support in NYC and North Jersey.',
+  title: 'Request Commercial Service | NYC & NJ',
+  description: 'Request commercial cooking equipment, HVAC, exhaust fan, makeup air, or kitchen ventilation service in NYC and North Jersey. Send equipment details to TCS.',
   alternates: { canonical: '/schedule-service' },
 };
 
@@ -77,7 +77,7 @@ export default function ScheduleServicePage() {
             <Reveal>
               <div className="glass-card rounded-2xl p-6 lg:p-8">
                 <h2 className="text-xl font-semibold mb-6">Request Service</h2>
-                <ServiceForm />
+                <ServiceForm equipment="general" />
               </div>
             </Reveal>
           </div>

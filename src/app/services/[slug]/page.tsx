@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { SERVICES, LOCATIONS } from '@/lib/data';
 import { PageHero, Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
 import { CheckCircle2, MapPin } from 'lucide-react';
+import { GROWTH_SERVICES } from '@/lib/growth-services';
+import GrowthServicePage from '@/components/GrowthServicePage';
 
 type Props = { params: { slug: string } };
 
@@ -19,17 +21,20 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const service = SERVICES.find((s) => s.slug === params.slug);
   if (!service) return {};
+  const growth = GROWTH_SERVICES[params.slug];
   return {
-    title: service.title,
-    description: ['cooking-equipment', 'hvac'].includes(service.slug) ? service.description : `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
+    title: growth?.seoTitle || service.title,
+    description: growth?.description || `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
     alternates: { canonical: `/services/${service.slug}` },
-    robots: { index: false, follow: true },
+    robots: { index: Boolean(growth), follow: true },
   };
 }
 
 export default function ServicePage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === params.slug);
   if (!service) notFound();
+  const growth = GROWTH_SERVICES[params.slug];
+  if (growth) return <GrowthServicePage content={growth} />;
 
   return (
     <>

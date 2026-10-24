@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { SERVICE_LABELS } from '@/lib/service-requests';
 
 // Lead capture endpoint.
 // Sends an instant email alert via Resend (https://resend.com).
@@ -143,7 +144,7 @@ export async function POST(request: NextRequest) {
         body: JSON.stringify({
           from,
           to: [to],
-          subject: `📞 New lead: ${lead.name}${lead.business ? ` (${lead.business})` : ''}`,
+          subject: `New service lead: ${lead.name}${lead.business ? ` (${lead.business})` : ''}`,
           html,
           ...(lead.email ? { reply_to: [lead.email] } : {}),
         }),
@@ -215,19 +216,6 @@ function detailRow(label: string, value: string, href = ''): string {
     <td style="padding:9px 0;border-bottom:1px solid #e2e8f0;vertical-align:top;color:#0f172a">${displayValue}</td>
   </tr>`;
 }
-
-const SERVICE_LABELS: Record<string, string> = {
-  'cooking-repair': 'Commercial oven repair',
-  'hood-airflow': 'Hood airflow / smoke capture',
-  'exhaust-fan': 'Exhaust fan repair',
-  'makeup-air': 'Makeup air unit issue',
-  controls: 'VFD / DCV / controls',
-  'pollution-control': 'ESP / pollution-control issue',
-  startup: 'Startup / commissioning',
-  'performance-testing': 'Airflow / performance testing',
-  manufacturer: 'Manufacturer warranty / startup',
-  other: 'Other commercial equipment referral',
-};
 
 const URGENCY_LABELS: Record<string, string> = {
   down: 'System is down now',

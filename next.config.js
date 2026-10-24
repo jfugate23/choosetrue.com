@@ -38,7 +38,7 @@ const nextConfig = {
       { source: '/blog/pm-agreement-benefits-nj-restaurants', destination: '/services/preventive-maintenance', permanent: true },
       { source: '/blog/kitchen-air-balancing-cost-nj-pricing', destination: '/services/kitchen-air-balancing', permanent: true },
       { source: '/blog/espresso-machine-repair-nj', destination: '/services/espresso-machines', permanent: true },
-      { source: '/blog/ice-machine-repair-near-me-union-county-nj', destination: '/services/refrigeration', permanent: true },
+      { source: '/blog/ice-machine-repair-near-me-union-county-nj', destination: '/services/ice-machines', permanent: true },
       { source: '/blog/captiveaire-hood-service-nj', destination: '/blog/captiveaire-hood-maintenance-repair-guide', permanent: true },
       { source: '/blog/how-to-choose-commercial-kitchen-equipment-repair-company-nj', destination: '/services', permanent: true },
       { source: '/blog/commercial-exhaust-fan-repair-near-newark-nj', destination: '/services/kitchen-ventilation/newark-nj', permanent: true },
@@ -58,8 +58,8 @@ const nextConfig = {
 
       // ─── Retire broad city/service combinations ───────────────
       // These old routes contained claims and service scopes that TCS no
-      // longer markets directly. Preserve useful navigation to the honest,
-      // noindex capability pages instead of keeping dozens of thin city pages.
+      // no longer markets as separate city pages. Consolidate to the reviewed
+      // service/resource hubs rather than regenerating thin city combinations.
       { source: '/services/refrigeration/:city', destination: '/services/refrigeration', permanent: true },
       { source: '/services/cooking-equipment/:city', destination: '/services/cooking-equipment', permanent: true },
       { source: '/services/hvac/:city', destination: '/services/hvac', permanent: true },
