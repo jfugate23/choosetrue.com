@@ -304,7 +304,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
           <Reveal>
             <div className="glass-card rounded-2xl p-6 lg:p-8">
               <h2 className="text-xl font-semibold mb-6">Service request</h2>
-              <ServiceForm />
+              <ServiceForm equipment="general" />
             </div>
           </Reveal>
         </div>

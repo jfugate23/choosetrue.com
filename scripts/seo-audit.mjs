@@ -10,6 +10,21 @@ if (!sitemapResponse.ok) {
 const sitemap = await sitemapResponse.text();
 const productionUrls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1].trim());
 if (!productionUrls.length) throw new Error('The sitemap did not contain any URLs.');
+if (new Set(productionUrls).size !== productionUrls.length) throw new Error('The sitemap contains duplicate URLs.');
+
+// Reviewed growth pages must remain discoverable as well as indexable. A
+// sitemap-only crawler cannot otherwise notice a page silently dropped from it.
+const requiredPaths = [
+  '/services/cooking-equipment', '/services/hvac',
+  '/services/refrigeration', '/services/ice-machines',
+  '/blog/commercial-oven-not-heating-evenly',
+  '/blog/restaurant-hvac-or-makeup-air-problem',
+  '/blog/walk-in-cooler-not-cooling-troubleshooting-guide',
+  '/blog/commercial-ice-machine-not-making-ice',
+];
+const sitemapPaths = new Set(productionUrls.map(url => new URL(url).pathname));
+const missingPaths = requiredPaths.filter(path => !sitemapPaths.has(path));
+if (missingPaths.length) throw new Error(`Missing reviewed pages in sitemap: ${missingPaths.join(', ')}`);
 
 const queue = productionUrls.map((productionUrl) => {
   const target = new URL(productionUrl);

@@ -2,8 +2,13 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPostBySlug, getAllPosts, isIndexablePost } from '@/lib/blog-data';
+import { GROWTH_SERVICES, type GrowthService } from '@/lib/growth-services';
 
 const seoTitles: Record<string, string> = {
+  'commercial-oven-not-heating-evenly': 'Commercial Oven Heating Problems',
+  'restaurant-hvac-or-makeup-air-problem': 'Restaurant HVAC or Makeup Air?',
+  'walk-in-cooler-not-cooling-troubleshooting-guide': 'Walk-In Cooler Not Cooling?',
+  'commercial-ice-machine-not-making-ice': 'Commercial Ice Machine Not Making Ice?',
   'commercial-kitchen-ventilation-problems-signs': 'Kitchen Ventilation Warning Signs',
   'captiveaire-hood-maintenance-repair-guide': 'CaptiveAire Hood Maintenance Guide',
   'makeup-air-unit-not-working-restaurant': 'Makeup Air Unit Not Working?',
@@ -41,6 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description,
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.updated || post.date,
     },
     robots: isIndexablePost(post.slug)
       ? { index: true, follow: true }
@@ -54,6 +60,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound();
 
   const relatedService = getRelatedService(post.slug);
+  const growth = getGrowthService(post.slug);
 
   // Simple markdown-to-html (handles ##, ###, **, -, |, \n)
   const html = post.content
@@ -91,6 +98,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    dateModified: post.updated || post.date,
     author: { '@type': 'Organization', name: 'True Commercial Service' },
     publisher: { '@type': 'Organization', name: 'True Commercial Service', url: 'https://choosetrue.com' },
   };
@@ -120,7 +128,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <div className="flex items-center gap-3 mt-6 mb-4">
         <span className="px-2 py-1 bg-amber-500/10 text-amber-400 rounded text-xs font-medium">{post.category}</span>
         <span className="text-xs text-gray-500">{post.readTime} read</span>
-        <span className="text-xs text-gray-500">{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+        <span className="text-xs text-gray-500">{post.updated ? 'Updated ' : ''}{new Date(post.updated || post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span>
       </div>
 
       <h1 className="text-3xl font-bold text-white leading-tight mb-8">{post.title}</h1>
@@ -142,15 +150,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       )}
 
       <div className="mt-12 p-6 bg-amber-500/5 border border-amber-500/20 rounded-2xl">
-        <h3 className="text-lg font-semibold text-white mb-2">Have a kitchen ventilation problem?</h3>
-        <p className="text-gray-400 text-sm mb-4">TCS provides specialized hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.</p>
+        <h3 className="text-lg font-semibold text-white mb-2">{growth ? 'Request commercial service' : 'Have a kitchen ventilation problem?'}</h3>
+        <p className="text-gray-400 text-sm mb-4">{growth?.availability || 'TCS provides specialized hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation-controls troubleshooting across NYC and North Jersey.'}</p>
         <div className="flex flex-wrap gap-3">
           <Link href={relatedService.href} className="inline-block px-5 py-2.5 border border-amber-500/30 hover:border-amber-400 text-amber-300 font-semibold rounded-lg text-sm transition-colors">
             {relatedService.label}
           </Link>
-          <Link href="/schedule-service" className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">
-            Request Ventilation Service
-          </Link>
+          {<Link href={growth ? `${relatedService.href}#availability` : '/schedule-service'} className="inline-block px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-lg text-sm transition-colors">{growth ? 'Request Service' : 'Request Ventilation Service'}</Link>}
         </div>
       </div>
     </div>
@@ -158,6 +164,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 }
 
 function getRelatedService(slug: string): { href: string; label: string } {
+  const growth = getGrowthService(slug);
+  if (growth) return { href: `/services/${growth.slug}`, label: growth.slug === 'hvac' ? 'Commercial HVAC Service' : growth.slug === 'refrigeration' ? 'Refrigeration Repair' : growth.slug === 'ice-machines' ? 'Ice Machine Repair' : 'Cooking Equipment Repair' };
   if (slug.includes('makeup-air') || slug.includes('too-hot') || slug.includes('negative-pressure')) {
     return { href: '/services/makeup-air-unit-repair', label: 'Makeup Air Service' };
   }
@@ -168,4 +176,14 @@ function getRelatedService(slug: string): { href: string; label: string } {
     return { href: '/services/pollution-control', label: 'Pollution-Control Service' };
   }
   return { href: '/services/kitchen-air-balancing', label: 'Hood Airflow & Balancing' };
+}
+
+function getGrowthService(slug: string): GrowthService | undefined {
+  const categories: Record<string, string> = {
+    'commercial-oven-not-heating-evenly': 'cooking-equipment',
+    'restaurant-hvac-or-makeup-air-problem': 'hvac',
+    'walk-in-cooler-not-cooling-troubleshooting-guide': 'refrigeration',
+    'commercial-ice-machine-not-making-ice': 'ice-machines',
+  };
+  return GROWTH_SERVICES[categories[slug]];
 }

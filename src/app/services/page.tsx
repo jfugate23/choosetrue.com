@@ -56,6 +56,22 @@ export default function ServicesPage() {
           </div>
         </div>
       </Section>
+      <Section>
+        <SectionHeading eyebrow="Additional services" title="Commercial refrigeration and ice machine repair" description="Send the manufacturer, model, symptoms, and location. TCS reviews each repair request individually and confirms scope and scheduling before a visit." />
+        <div className="grid md:grid-cols-2 gap-6">
+          <Link href="/services/refrigeration" className="glass-card rounded-2xl p-6 block hover:border-amber-500/25">
+            <h3 className="text-xl font-semibold mb-3">Commercial refrigeration and walk-in repair</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">Equipment identification, temperature complaints, operating history, and a clear contractor handoff.</p>
+            <span className="text-sm text-amber-400 inline-flex items-center gap-2 mt-4">View service and request repair <ArrowRight className="w-4 h-4" /></span>
+          </Link>
+          <Link href="/services/ice-machines" className="glass-card rounded-2xl p-6 block hover:border-amber-500/25">
+            <h3 className="text-xl font-semibold mb-3">Commercial ice machine repair</h3>
+            <p className="text-sm text-slate-400 leading-relaxed">Production problems, fault codes, model details, and maintenance or repair inquiries.</p>
+            <span className="text-sm text-amber-400 inline-flex items-center gap-2 mt-4">View service and request repair <ArrowRight className="w-4 h-4" /></span>
+          </Link>
+        </div>
+        <Link href="/blog" className="inline-flex items-center gap-2 text-amber-400 font-semibold mt-6">Equipment and ventilation guides <ArrowRight className="w-4 h-4" /></Link>
+      </Section>
     </>
   );
 }

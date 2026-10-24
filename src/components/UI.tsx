@@ -6,6 +6,7 @@ import { ArrowRight, Phone } from 'lucide-react';
 import { track } from '@vercel/analytics';
 import { COMPANY } from '@/lib/data';
 import { getDiscoverySource } from '@/lib/discovery-source';
+import { SERVICE_LABELS } from '@/lib/service-requests';
 
 // Scroll reveal wrapper
 export function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -141,7 +142,7 @@ export function PageHero({ eyebrow, title, description, showCTA = true }: {
 }
 
 // Service request form
-export function ServiceForm({ compact = false, defaultService = '', equipment = 'ventilation', defaultManufacturer = '' }: { compact?: boolean; defaultService?: string; equipment?: 'ventilation' | 'oven'; defaultManufacturer?: string }) {
+export function ServiceForm({ compact = false, defaultService = '', equipment = 'ventilation', defaultManufacturer = '' }: { compact?: boolean; defaultService?: string; equipment?: 'ventilation' | 'oven' | 'general'; defaultManufacturer?: string }) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
   const fieldClass = 'w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/20 transition-colors';
@@ -223,15 +224,21 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
         <label className="text-xs font-medium text-slate-300">Business or property *<input name="business" type="text" required minLength={2} maxLength={150} autoComplete="organization" className={`${fieldClass} mt-1.5`} /></label>
         <label className="text-xs font-medium text-slate-300">Service ZIP code *<input name="zip" type="text" required inputMode="numeric" minLength={5} maxLength={10} pattern="[0-9]{5}(?:-[0-9]{4})?" title="Enter a valid 5-digit ZIP code." autoComplete="postal-code" className={`${fieldClass} mt-1.5`} /></label>
         <label className="text-xs font-medium text-slate-300">Email address<input name="email" type="email" maxLength={150} autoComplete="email" className={`${fieldClass} mt-1.5`} /></label>
-        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" maxLength={100} defaultValue={defaultManufacturer} placeholder={equipment === 'oven' ? 'Cuppone, Lainox' : 'CaptiveAire, Gaylord, Accurex…'} className={`${fieldClass} mt-1.5`} /></label>
+        <label className="text-xs font-medium text-slate-300">Equipment manufacturer<input name="manufacturer" type="text" maxLength={100} defaultValue={defaultManufacturer} placeholder={equipment === 'oven' ? 'Cuppone, Lainox' : equipment === 'general' ? 'Manufacturer shown on the equipment label' : 'CaptiveAire, Gaylord, Accurex…'} className={`${fieldClass} mt-1.5`} /></label>
       </div>
       <div className={`grid ${compact ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-2'} gap-4`}>
         <label className="text-xs font-medium text-slate-300">Primary issue *
           <select name="serviceType" required defaultValue={defaultService} className={`${fieldClass} mt-1.5 text-slate-300`}>
             <option value="" disabled>Select the closest match</option>
+            {equipment === 'general' && <>
+              <option value="cooking-repair">{SERVICE_LABELS['cooking-repair']}</option>
+              <option value="hvac-repair">{SERVICE_LABELS['hvac-repair']}</option>
+              <option value="refrigeration-repair">{SERVICE_LABELS['refrigeration-repair']}</option>
+              <option value="ice-machine-repair">{SERVICE_LABELS['ice-machine-repair']}</option>
+            </>}
             {equipment === 'oven' && <option value="cooking-repair">Commercial oven repair</option>}
             {equipment === 'oven' && <option value="startup">Oven startup / operational checks</option>}
-            {equipment === 'ventilation' && <>
+            {equipment !== 'oven' && <>
             <option value="hood-airflow">Hood airflow / smoke capture</option>
             <option value="exhaust-fan">Exhaust fan repair</option>
             <option value="makeup-air">Makeup air unit issue</option>

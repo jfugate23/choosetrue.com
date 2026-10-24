@@ -11,10 +11,10 @@ import { PROFILES, MARKET_NJ } from '@/lib/data';
 export const metadata: Metadata = {
   metadataBase: new URL('https://choosetrue.com'),
   title: {
-    default: 'True Commercial Service | Kitchen Ventilation: NYC & North Jersey',
+    default: 'True Commercial Service | NYC & NJ Commercial Equipment Service',
     template: '%s | True Commercial Service',
   },
-  description: 'Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls across NYC and North Jersey.',
+  description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service across NYC and North Jersey. Owner-reviewed troubleshooting, repair, and maintenance requests.',
   keywords: ['commercial kitchen exhaust fan repair', 'makeup air unit repair', 'kitchen hood airflow', 'kitchen air balancing', 'commercial kitchen ventilation', 'NYC', 'North Jersey'],
   icons: {
     icon: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'True Commercial Service | Commercial Kitchen Ventilation',
-    description: 'Hood airflow diagnostics, exhaust fan repair, makeup air service, and ventilation controls across NYC and North Jersey.',
+    title: 'True Commercial Service | Kitchen Equipment & HVAC',
+    description: 'Commercial cooking equipment, HVAC, kitchen exhaust, makeup air, and ventilation controls across NYC and North Jersey.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -46,7 +46,7 @@ const organizationSchema = {
   '@id': 'https://choosetrue.com#organization',
   name: 'True Commercial Service LLC',
   legalName: 'True Commercial Service LLC',
-  description: 'Commercial kitchen ventilation diagnostics and repair company serving Northern New Jersey and New York City.',
+  description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service company serving Northern New Jersey and New York City.',
   url: 'https://choosetrue.com',
   logo: 'https://choosetrue.com/images/logo.png',
   image: 'https://choosetrue.com/images/logo.png',
