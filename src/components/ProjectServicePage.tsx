@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, ClipboardCheck, FileCheck2, Gauge, Phone, Settings2, Wind, Wrench, XCircle } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
@@ -24,7 +25,7 @@ export interface ProjectServiceContent {
 
 const capabilityIcons = [Gauge, Settings2, Wind, FileCheck2];
 
-export default function ProjectServicePage({ content }: { content: ProjectServiceContent }) {
+export default function ProjectServicePage({ content, projectFeature }: { content: ProjectServiceContent; projectFeature?: ReactNode }) {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -72,6 +73,8 @@ export default function ProjectServicePage({ content }: { content: ProjectServic
           </div>
         </div>
       </section>
+
+      {projectFeature}
 
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="Service Scope" title="A concise field check with useful closeout." />

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://choosetrue.com';
   const updated = new Date('2026-08-30');
   const serviceEvidenceUpdated = new Date('2026-10-20');
+  const jfkProjectUpdated = new Date('2026-10-24');
   const growthUpdated = new Date('2026-10-24');
   
   const staticPages = [
@@ -19,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/makeup-air-unit-repair`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.95 },
     { url: `${base}/services/ventilation-controls`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/pollution-control`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
-    { url: `${base}/services/kitchen-ventilation-startup-commissioning`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${base}/services/kitchen-ventilation-startup-commissioning`, lastModified: jfkProjectUpdated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/kitchen-hood-performance-testing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/manufacturer-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/manufacturer-service/cuppone`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly' as const, priority: 0.85 },
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const manufacturerPages = MANUFACTURERS.map((manufacturer) => ({
     url: `${base}/manufacturer-service/${manufacturer.slug}`,
-    lastModified: manufacturer.slug === 'gaylord' ? serviceEvidenceUpdated : updated,
+    lastModified: manufacturer.slug === 'gaylord' ? jfkProjectUpdated : updated,
     changeFrequency: 'monthly' as const,
     priority: manufacturer.slug === 'gaylord' ? 0.95 : 0.85,
   }));
@@ -66,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ventilationCityPages = VENTILATION_CITIES.map((c) => ({
     url: `${base}/services/kitchen-ventilation/${c.slug}`,
-    lastModified: updated,
+    lastModified: c.slug === 'queens-ny' ? jfkProjectUpdated : updated,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));

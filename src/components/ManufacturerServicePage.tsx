@@ -5,6 +5,7 @@ import { COMPANY } from '@/lib/data';
 import type { ManufacturerServiceData } from '@/lib/manufacturer-data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 import ServiceEvidence from '@/components/ServiceEvidence';
+import JfkProjectFeature from '@/components/JfkProjectFeature';
 
 const systemIcons = [Wind, Settings2, Gauge, Wrench];
 
@@ -66,6 +67,7 @@ export default function ManufacturerServicePage({ manufacturer }: { manufacturer
       </section>
 
       {manufacturer.evidence && <ServiceEvidence evidence={manufacturer.evidence} />}
+      {manufacturer.slug === 'gaylord' && <JfkProjectFeature />}
 
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="System Scope" title={`One service path for the complete ${manufacturer.name} system.`} description="TCS traces the complaint across airflow, equipment, electrical components, and controls before recommending the repair." />

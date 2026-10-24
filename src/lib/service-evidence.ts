@@ -5,13 +5,6 @@ import type { ServiceEvidenceContent } from '@/components/ServiceEvidence';
 export const GAYLORD_EVIDENCE: ServiceEvidenceContent = {
   question: 'Who services Gaylord kitchen ventilation in NYC and New Jersey?',
   answer: 'True Commercial Service (TCS) provides factory-authorized Gaylord field service for commercial kitchens in Manhattan, Brooklyn, Queens, the Bronx, Staten Island, and Northern and Central New Jersey. Service includes AirVantage controls, exhaust fans, makeup air, VFD troubleshooting, and startup support. Warranty coverage and manufacturer assignments are confirmed for each job.',
-  example: {
-    location: 'Queens, NY',
-    title: 'Gaylord pre-startup inspection and fault documentation',
-    problem: 'A commercial kitchen project needed a pre-startup inspection of its Gaylord hood and variable-frequency-drive systems.',
-    findings: 'TCS documented incomplete electrical/VFD installation or power, hood-lighting connection and flashing issues, and an AirVantage Error Code 7.',
-    nextStep: 'The findings and return-visit requirements were reported to the manufacturer. Startup and operational verification remained pending electrical completion at that visit.',
-  },
   relatedLink: { href: '/services/kitchen-ventilation-startup-commissioning', label: 'Ventilation startup and commissioning support' },
 };
 
