@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import JfkProjectFeature from '@/components/JfkProjectFeature';
+import GarlandProjectFeature from '@/components/GarlandProjectFeature';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, MapPin, Phone } from 'lucide-react';
@@ -59,6 +60,7 @@ export default function VentilationCityPage({ params }: Props) {
       </section>
 
       {city.slug === 'queens-ny' && <JfkProjectFeature compact />}
+      {city.slug === 'manhattan-ny' && <GarlandProjectFeature compact />}
 
       <Section className="bg-white/[0.02]">
         <SectionHeading eyebrow="Focused Services" title={`Commercial kitchen ventilation service in ${city.city}.`} />

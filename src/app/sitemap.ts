@@ -67,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ventilationCityPages = VENTILATION_CITIES.map((c) => ({
     url: `${base}/services/kitchen-ventilation/${c.slug}`,
-    lastModified: c.slug === 'queens-ny' ? jfkProjectUpdated : updated,
+    lastModified: ['queens-ny', 'manhattan-ny'].includes(c.slug) ? jfkProjectUpdated : updated,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
