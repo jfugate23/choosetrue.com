@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import GarlandProjectFeature from '@/components/GarlandProjectFeature';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { PageHero, Section, SectionHeading, ServiceForm } from '@/components/UI';
 import type { GrowthService } from '@/lib/growth-services';
@@ -33,6 +34,7 @@ export default function GrowthServicePage({ content }: { content: GrowthService 
           <p className="text-slate-300 text-sm leading-relaxed">{content.availability}</p>
         </div>
       </Section>
+      {content.slug === 'cooking-equipment' && <GarlandProjectFeature />}
       <Section className="bg-white/[0.02]">
         <div className="grid lg:grid-cols-2 gap-10">
           <div>
