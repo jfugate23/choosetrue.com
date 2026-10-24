@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import JfkProjectFeature from '@/components/JfkProjectFeature';
 import ProjectServicePage, { ProjectServiceContent } from '@/components/ProjectServicePage';
 
 export const metadata: Metadata = {
@@ -40,5 +41,5 @@ const content: ProjectServiceContent = {
 };
 
 export default function KitchenVentilationStartupPage() {
-  return <ProjectServicePage content={content} />;
+  return <ProjectServicePage content={content} projectFeature={<JfkProjectFeature compact />} />;
 }
