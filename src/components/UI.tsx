@@ -236,6 +236,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
               <option value="refrigeration-repair">{SERVICE_LABELS['refrigeration-repair']}</option>
               <option value="ice-machine-repair">{SERVICE_LABELS['ice-machine-repair']}</option>
             </>}
+            <option value="kitchen-maintenance">{SERVICE_LABELS['kitchen-maintenance']}</option>
             {equipment === 'oven' && <option value="cooking-repair">Commercial oven repair</option>}
             {equipment === 'oven' && <option value="startup">Oven startup / operational checks</option>}
             {equipment !== 'oven' && <>

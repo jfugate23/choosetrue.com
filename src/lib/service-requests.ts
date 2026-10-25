@@ -1,5 +1,6 @@
 // Shared by the form and lead endpoint so submitted categories stay valid.
 export const SERVICE_LABELS: Record<string, string> = {
+  'kitchen-maintenance': 'Commercial kitchen preventive maintenance',
   'cooking-repair': 'Commercial cooking equipment repair',
   'hvac-repair': 'Commercial HVAC repair / maintenance',
   'refrigeration-repair': 'Commercial refrigeration / walk-in repair',

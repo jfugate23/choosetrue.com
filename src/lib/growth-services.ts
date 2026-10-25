@@ -16,6 +16,40 @@ export type GrowthService = {
 // Reviewed service pages enter the sitemap. Every request is reviewed by
 // equipment, scope, service location, and schedule before dispatch.
 export const GROWTH_SERVICES: Record<string, GrowthService> = {
+  'commercial-kitchen-maintenance': {
+    slug: 'commercial-kitchen-maintenance',
+    seoTitle: 'Kitchen Maintenance | NYC & NJ',
+    description: 'Commercial kitchen preventive maintenance in Manhattan, Brooklyn, Queens, and North Jersey. Plan oven, ventilation, and equipment maintenance with TCS.',
+    title: 'Commercial kitchen preventive maintenance in NYC',
+    intro: 'Plan equipment service before the next busy shift. True Commercial Service reviews preventive-maintenance requests for restaurants, bakeries, nonprofit kitchens, and commercial facilities, with a focus on Manhattan, Brooklyn, and Queens.',
+    availability: 'Start with your equipment list and service address. TCS confirms the equipment covered, maintenance tasks, access window, visit frequency, and pricing before scheduling. Additional repairs and parts are reviewed separately for approval.',
+    requestType: 'kitchen-maintenance',
+    equipment: ['Commercial convection, combi, pizza, and conveyor ovens', 'Ranges, griddles, fryers, and heated holding equipment, subject to model review', 'Kitchen exhaust fans, motors, belts, and accessible drive components', 'Makeup air units, filters, and ventilation controls', 'Related commercial HVAC maintenance, with scope confirmed individually'],
+    symptoms: ['Build an equipment inventory and establish a maintenance baseline', 'Plan oven maintenance around kitchen operating hours', 'Review recurring fan, belt, filter, or controls complaints', 'Document observed wear and recommended follow-up work', 'Coordinate planned visits across supported kitchen equipment'],
+    sections: [
+      { title: 'Build the plan around your equipment', text: 'Send the manufacturer, model, serial number, and location of each unit, together with any existing service records. Tell us which equipment is critical to daily service and which units have recurring problems. TCS uses that information to define a practical maintenance scope. Equipment inclusion is confirmed individually rather than assuming every appliance needs the same service.' },
+      { title: 'Agree on the work before the visit', text: 'Depending on the equipment and agreed scope, a visit can include accessible condition checks, model-appropriate equipment cleaning, fan and drive-component inspection, filter service, controls observations, and operating checks. The written scope identifies what is included and the access or shutdown time required. Hood and duct cleaning and fire-suppression service are separate specialist services.' },
+      { title: 'Set a schedule that fits the kitchen', text: 'Visit frequency depends on the manufacturer requirements, operating hours, equipment condition, environment, and service history. A busy restaurant and a kitchen used only a few days a week may need different plans. Share the best access window, building requirements, roof-access arrangements, and when equipment can be released for maintenance. The schedule is confirmed with the scope.' },
+      { title: 'Separate maintenance findings from repair approval', text: 'A maintenance visit can reveal worn components or an existing operating problem. Findings and recommended follow-up work should be reviewed before additional parts or repairs are approved. Tell us about known faults when requesting the visit so diagnosis can be included in the agreed assignment. Preventive maintenance supports equipment care but cannot guarantee that breakdowns will never occur.' },
+      { title: 'Oven maintenance backed by completed work', text: 'At a nonprofit kitchen on Manhattan’s Upper West Side, TCS performed preventive maintenance and repairs on a Garland convection oven following an internal oven fire. The work included grease cleaning and replacement of the damaged blower wheel and motor, and the oven was returned to operation. The linked project includes field photos. It illustrates an actual assignment, not a standard task list for every maintenance visit.' },
+      { title: 'NYC kitchens and North Jersey facilities', text: 'Manhattan, Brooklyn, and Queens are the primary focus for new kitchen maintenance inquiries. TCS also reviews requests elsewhere in NYC and North Jersey, with travel, access, equipment, and scheduling confirmed before acceptance. Restaurants, bakeries, churches, nonprofit kitchens, and other commercial facilities can send a single-unit or multi-unit equipment list for review.' },
+    ],
+    related: [
+      { href: '/services/cooking-equipment#garland-upper-west-side', label: 'Upper West Side Garland oven maintenance and repair project' },
+      { href: '/services/cooking-equipment', label: 'Commercial oven and cooking equipment repair' },
+      { href: '/services/exhaust-fan-repair', label: 'Kitchen exhaust fan repair' },
+      { href: '/services/makeup-air-unit-repair', label: 'Makeup air unit service' },
+      { href: '/services/hvac', label: 'Commercial HVAC and filter maintenance' },
+      { href: '/services/preventive-maintenance', label: 'Additional preventive-maintenance capability information' },
+    ],
+    faqs: [
+      { question: 'Can I request maintenance for one commercial oven?', answer: 'Yes. Send the oven model, serial number, service address, operating hours, and any current symptoms. TCS confirms the maintenance scope and scheduling before accepting the visit.' },
+      { question: 'Do you offer restaurant equipment maintenance in Manhattan, Brooklyn, and Queens?', answer: 'Yes. These boroughs are the primary focus for new kitchen maintenance requests. Equipment, access, scope, and scheduling are confirmed individually before a visit is booked.' },
+      { question: 'How often should commercial kitchen equipment be maintained?', answer: 'There is no single interval for every kitchen. The schedule should reflect the manufacturer requirements, operating hours, equipment condition, environment, and previous service findings. TCS reviews these factors when preparing the scope.' },
+      { question: 'Are replacement parts and repairs included automatically?', answer: 'The agreed maintenance scope states what is included. Additional repair work and replacement parts are reviewed separately for approval. Describe known equipment faults when requesting maintenance so diagnostic work can be considered in advance.' },
+      { question: 'Can nonprofit and community kitchens request service?', answer: 'Yes. Nonprofit, church, and community kitchens can send commercial equipment details for review. Scope, rates, and scheduling are confirmed for the assignment.' },
+    ],
+  },
   'cooking-equipment': {
     slug: 'cooking-equipment',
     seoTitle: 'Cooking Equipment Repair | NYC & NJ',
@@ -28,11 +62,14 @@ export const GROWTH_SERVICES: Record<string, GrowthService> = {
     symptoms: ['Oven does not heat or recover between loads', 'Uneven cooking or inconsistent temperature', 'Fault code or interrupted cooking cycle', 'Fan, conveyor, or rotating-deck problem', 'Steam or cleaning cycle does not complete'],
     sections: [
       { title: 'Start with the operating complaint', text: 'Tell us what changed, when it happens, and which cooking modes still work. A unit that heats in one mode but not another needs a different investigation from a unit with no power. Photos of the data plate and display help identify the equipment before a visit. Keep the original fault information rather than repeatedly resetting the oven.' },
+      { title: 'Commercial convection oven fan and heating problems', text: 'A convection oven with a fan that will not start, unusual blower noise, or uneven cooking needs a model-specific assessment. Tell us whether the fan runs in each operating mode, whether the oven heats, and what happened before the problem began. A motor, blower wheel, control, or power problem can produce overlapping symptoms; diagnosis comes before choosing replacement parts. The Upper West Side Garland project above shows a completed maintenance and repair assignment involving a damaged blower wheel and motor.' },
+      { title: 'Oven maintenance in Manhattan, Brooklyn, and Queens', text: 'Restaurant, bakery, nonprofit, and community-kitchen operators can request planned oven maintenance alongside repair work. Send an equipment list, operating hours, and a time when each oven can be taken out of service. TCS confirms the model-specific cleaning, inspection, operating checks, and any separately approved repairs before scheduling. A repair visit can also help identify equipment to include in a future maintenance plan.' },
       { title: 'Brand and model matter', text: 'Lainox combi ovens and Cuppone pizza ovens have dedicated service-request pages below. Other equipment is reviewed by model and scope. Listing a brand does not establish factory authorization, warranty coverage, or access to every replacement part. For warranty work, include the dealer or manufacturer work order so the correct approval process can be followed.' },
       { title: 'Check the equipment and its surroundings', text: 'A cooking complaint can involve the appliance, its controls, utilities, or the kitchen environment. TCS has specialized ventilation experience and can evaluate related airflow or hood complaints when they are part of the assignment. Gas piping, installation, and other regulated work are confirmed separately before anyone commits to the job.' },
       { title: 'Make the visit productive', text: 'Include the business address, model and serial number, fault code, operating symptoms, and best site contact. Tell us whether the equipment is gas or electric, whether building access requires an appointment, and whether the kitchen can release the equipment for testing. Model-specific diagnosis comes before a repair recommendation or parts order.' },
     ],
     related: [
+      { href: '/services/commercial-kitchen-maintenance', label: 'Commercial kitchen preventive maintenance' },
       { href: '/manufacturer-service/lainox', label: 'Lainox combi oven repair' },
       { href: '/manufacturer-service/cuppone', label: 'Cuppone pizza oven repair' },
       { href: '/blog/commercial-oven-not-heating-evenly', label: 'Commercial oven not heating evenly: what to record' },
@@ -40,6 +77,8 @@ export const GROWTH_SERVICES: Record<string, GrowthService> = {
     ],
     faqs: [
       { question: 'Can restaurant owners request cooking-equipment service directly?', answer: 'Yes. Send the manufacturer, model, serial number, symptoms, and service ZIP code. TCS confirms the scope, schedule, and equipment fit before accepting the assignment.' },
+      { question: 'Can I request Garland convection oven repair in Manhattan?', answer: 'Yes. TCS has completed Garland oven maintenance and repair on the Upper West Side. Send the model, serial number, symptoms, and address so the scope, parts support, and scheduling can be confirmed for your equipment.' },
+      { question: 'Do you offer planned commercial oven maintenance?', answer: 'Yes. Send the oven inventory, operating hours, service location, and access window. The maintenance scope and frequency are agreed around the equipment requirements and operating conditions, with repair recommendations reviewed separately.' },
       { question: 'Do you repair Lainox and Cuppone ovens?', answer: 'TCS accepts direct service requests for Lainox combi ovens and Cuppone pizza ovens. Use the brand pages to send equipment details. Parts availability and warranty authorization are confirmed for the specific job.' },
       { question: 'Do you cover Manhattan, Brooklyn, and New Jersey?', answer: 'TCS reviews requests across the five NYC boroughs and its North and Central Jersey service area. Coverage depends on job scope, scheduling, travel, and site access.' },
     ],
