@@ -15,6 +15,7 @@ if (new Set(productionUrls).size !== productionUrls.length) throw new Error('The
 // Reviewed growth pages must remain discoverable as well as indexable. A
 // sitemap-only crawler cannot otherwise notice a page silently dropped from it.
 const requiredPaths = [
+  '/services/commercial-kitchen-maintenance',
   '/services/cooking-equipment', '/services/hvac',
   '/services/refrigeration', '/services/ice-machines',
   '/blog/commercial-oven-not-heating-evenly',

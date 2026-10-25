@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const services = [
+  { href: '/services/commercial-kitchen-maintenance', title: 'Kitchen Preventive Maintenance', description: 'Planned oven, cooking equipment, ventilation, and related maintenance for commercial kitchens in Manhattan, Brooklyn, Queens, and North Jersey.', icon: <ClipboardCheck className="w-7 h-7" /> },
   { href: '/services/cooking-equipment', title: 'Cooking Equipment Repair', description: 'Commercial ovens, ranges, fryers, griddles, and other cooking equipment. Send the model and symptoms to request service.', icon: <Wrench className="w-7 h-7" /> },
   { href: '/services/hvac', title: 'Commercial HVAC Service', description: 'Heating, cooling, and maintenance for commercial facilities, including HVAC filter changes.', icon: <Wind className="w-7 h-7" /> },
   { href: '/services/kitchen-air-balancing', title: 'Hood Airflow & Air Balancing', description: 'Measured exhaust and supply readings, capture testing, pressure diagnosis, adjustments, and written findings.', icon: <Gauge className="w-7 h-7" /> },

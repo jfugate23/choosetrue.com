@@ -85,3 +85,12 @@ The audit now also fails if any of the eight reviewed growth pages disappear fro
 - API validation covers accepted repair categories and urgency values, plus rejection of unknown categories. Email delivery credentials were absent in the test server; no email was sent.
 - All 26 internal link targets discovered on the reviewed hubs returned HTTP 200 after redirects.
 - Desktop and mobile screenshots were inspected, including service-request navigation and the mobile button.
+
+
+## Additive oven and kitchen maintenance expansion
+
+- Added `/services/commercial-kitchen-maintenance` as an indexable landing page focused on Manhattan, Brooklyn, and Queens. The existing `/services/preventive-maintenance` page and all other service pages remain intact.
+- Added convection-oven fan and heating problem guidance, planned oven maintenance copy, and two FAQs to the existing cooking-equipment page. Existing copy and project photos retained.
+- Added maintenance links from the services hub and cooking page, with a link to the owner-confirmed Upper West Side Garland project from the new maintenance page.
+- Added a kitchen-maintenance inquiry category to the shared form and endpoint validation. No changes to email recipients or delivery behavior.
+- Maintenance frequency and tasks are agreed by equipment and site. No invented prices, service intervals, customer results, authorizations, or new job claims.
