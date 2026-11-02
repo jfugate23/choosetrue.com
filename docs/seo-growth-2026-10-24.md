@@ -136,3 +136,22 @@ Completed draft validation on October 26:
 - Existing service regressions passed. New `node scripts/seo-borough-regression.mjs --base=http://localhost:3000` checks borough canonicals/ventilation intent, contextual service links, FAQ/schema agreement, and retention of the Manhattan/Queens project features.
 - Browser checks passed on all three borough pages at 390px and 1440px. The Brooklyn anchor, linked service destinations, and two mocked commercial inquiries retained the source page and exhaust-fan service category. Existing Manhattan and Queens project images loaded. No horizontal overflow or browser exceptions were observed. No real lead email was sent.
 - Public borough pages returned HTTP 200 and self canonicals without noindex directives. Current production does not contain this draft's Brooklyn guide; production publication and Google indexing remain unverified for the proposed additions.
+
+
+## November 2, 2026: Queens commissioning-to-maintenance guide (draft)
+
+- PR #18 was approved, merged October 26, and verified live after the prior run. Its Brooklyn guide remains intact. PRs #9–18 merged during October, including the reviewed service hubs/four guides, Queens JFK and Manhattan Garland features, maintenance landing page, and Brooklyn upgrade. Current baseline is 63 sitemap URLs. No open competing PR was found before this draft.
+- Manhattan, Brooklyn, and Queens remain the primary content markets, with existing NJ coverage preserved. November rotation starts with this useful guide and Queens contextual links; next prioritize a substantive Manhattan upgrade, then another evidence-based guide and borough upgrade. Publishing volume remains subordinate to useful evidence.
+- Added one operator handoff guide at `/blog/kitchen-ventilation-commissioning-maintenance-handoff`. It helps organize equipment records, actual test reports, open items, operator instructions, and ongoing maintenance responsibility.
+- Added a contextual guide link and equipment-service routing only on the existing Queens ventilation page. Cooking, HVAC, refrigeration/walk-in, and ice machine inquiries all remain welcome subject to individual review. Existing titles, canonicals, qualified forms, tracking, and project photos are retained. No duplicate city/service pages are created.
+- The JFK assignment is used only as owner-confirmed evidence of completed startup and commissioning. No project-specific readings, approvals, delivered reports, airport endorsement, or service agreement is inferred.
+- Primary sources checked November 2: [Accurex startup program](https://www.accurex.com/sales-service/service/aftermarket-startup-program), [Accurex manuals](https://www.accurex.com/resources/manuals), and [Gaylord resources](https://www.gaylordventilation.com/resource-center). The article links these sources and keeps maintenance requirements model-specific.
+- Fresh Search Console reports were blocked by a property-permissions error. Do not substitute cached partial reports or historical metrics for a current comparison; private performance figures remain outside this repository. Restore access before evaluating changes in visibility. Page indexability and sitemap validity do not establish Google indexing.
+- This run prepares a tested draft only. Production baseline checks are separate from draft checks; no merge or publication is authorized by the recurring task. Review the PR before deployment.
+
+Validation completed for the November 2 draft:
+
+- Production build, TypeScript/lint validation, and whitespace checks passed.
+- Local sitemap audit passed 64 URLs with zero errors or warnings. Existing service and three-borough regression checks passed. The public baseline independently passed 63 sitemap URLs and all borough checks.
+- Browser checks at 390px and 1440px verified the new article, Queens guide and equipment links, article/index discovery, self canonical, indexability, three visible/schema FAQs, internal destinations, and absence of horizontal overflow or browser exceptions. Existing Manhattan/Queens images loaded; two mocked Brooklyn inquiries preserved the existing commercial qualification, service category, and page attribution. No real lead email was sent. Desktop/mobile screenshots were inspected.
+- No publication or Google indexing of this draft is claimed. Fresh search trends and October visibility totals remain unavailable because the connected Search Console property returned insufficient-permission errors.

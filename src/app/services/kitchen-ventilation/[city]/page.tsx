@@ -1,3 +1,4 @@
+import QueensHandoffGuide from '@/components/QueensHandoffGuide';
 import BrooklynServiceGuide from '@/components/BrooklynServiceGuide';
 import type { Metadata } from 'next';
 import JfkProjectFeature from '@/components/JfkProjectFeature';
@@ -91,6 +92,7 @@ export default function VentilationCityPage({ params }: Props) {
       </Section>
 
       {city.slug === 'brooklyn-ny' && <BrooklynServiceGuide />}
+      {city.slug === 'queens-ny' && <QueensHandoffGuide />}
 
       <Section id={city.slug === 'brooklyn-ny' ? 'brooklyn-service-request' : undefined} className="bg-white/[0.02] scroll-mt-28">
         <div className="max-w-2xl mx-auto"><SectionHeading eyebrow="Request Service" title={`Tell TCS what is happening in ${city.city}.`} description="Include the equipment brand, model, fault code, ZIP code, and rooftop-access details." /><div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm /></div></div>

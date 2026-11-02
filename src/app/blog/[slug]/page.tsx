@@ -5,6 +5,7 @@ import { getPostBySlug, getAllPosts, isIndexablePost } from '@/lib/blog-data';
 import { GROWTH_SERVICES, type GrowthService } from '@/lib/growth-services';
 
 const seoTitles: Record<string, string> = {
+  'kitchen-ventilation-commissioning-maintenance-handoff': 'Kitchen Ventilation Handoff Checklist',
   'commercial-oven-not-heating-evenly': 'Commercial Oven Heating Problems',
   'restaurant-hvac-or-makeup-air-problem': 'Restaurant HVAC or Makeup Air?',
   'walk-in-cooler-not-cooling-troubleshooting-guide': 'Walk-In Cooler Not Cooling?',
@@ -164,6 +165,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 }
 
 function getRelatedService(slug: string): { href: string; label: string } {
+  if (slug === 'kitchen-ventilation-commissioning-maintenance-handoff') return { href: '/services/kitchen-ventilation-startup-commissioning', label: 'Startup and Commissioning Service' };
   const growth = getGrowthService(slug);
   if (growth) return { href: `/services/${growth.slug}`, label: growth.slug === 'hvac' ? 'Commercial HVAC Service' : growth.slug === 'refrigeration' ? 'Refrigeration Repair' : growth.slug === 'ice-machines' ? 'Ice Machine Repair' : 'Cooking Equipment Repair' };
   if (slug.includes('makeup-air') || slug.includes('too-hot') || slug.includes('negative-pressure')) {
