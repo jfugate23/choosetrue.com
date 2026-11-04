@@ -1,6 +1,8 @@
+import { COMMISSIONING_HANDOFF_POST } from '@/lib/commissioning-handoff-post';
 import type { BlogPost } from '@/lib/blog-data';
 
 export const GROWTH_POSTS: BlogPost[] = [
+  COMMISSIONING_HANDOFF_POST,
   {
     slug: 'commercial-oven-not-heating-evenly',
     title: 'Commercial Oven Not Heating Evenly? What to Record Before a Service Call',
