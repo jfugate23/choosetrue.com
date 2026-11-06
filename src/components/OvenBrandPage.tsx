@@ -1,3 +1,4 @@
+import ServiceContactActions from '@/components/ServiceContactActions';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Phone, Settings2, Thermometer, Wrench } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
@@ -50,11 +51,9 @@ export default function OvenBrandPage({ brand }: { brand: keyof typeof OVEN_BRAN
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-amber-400 mb-4">{oven.name} commercial oven service</p>
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight text-balance">{oven.title}</h1>
+          <ServiceContactActions requestHref="#request-service" />
           <p className="text-slate-300 text-lg leading-relaxed mt-5 max-w-2xl">{oven.description}</p>
-          <div className="flex flex-col sm:flex-row gap-3 mt-7">
-            <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-6 py-4 rounded-xl"><Phone className="w-5 h-5" />Call {COMPANY.phone}</a>
-            <Link href="#request-service" className="inline-flex items-center justify-center gap-2 border border-white/15 px-6 py-4 rounded-xl hover:border-amber-500/40">Request service <ArrowRight className="w-4 h-4" /></Link>
-          </div>
+
           <p className="text-sm text-slate-400 mt-4">Commercial equipment only. NYC, Hudson County and Union County.</p>
         </div>
         <div className="glass-card rounded-2xl p-6 lg:p-8 border-amber-500/20">

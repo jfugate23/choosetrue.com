@@ -39,6 +39,7 @@ export default function ServicePage({ params }: Props) {
   return (
     <>
       <PageHero
+        callFirst
         eyebrow={service.shortTitle}
         title={service.title}
         description={['cooking-equipment', 'hvac'].includes(service.slug) ? service.longDescription : `TCS keeps this capability available primarily for manufacturer-assigned, dealer-referred, and established-customer work. Active direct marketing is focused on commercial kitchen ventilation.`}

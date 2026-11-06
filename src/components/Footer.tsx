@@ -18,7 +18,7 @@ const ventilationLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-400 border-t border-white/5 pb-20 lg:pb-0">
+    <footer className="bg-navy-400 border-t border-white/5 pb-[calc(6rem+env(safe-area-inset-bottom,0px))] xl:pb-0">
       <div className="bg-amber-500/10 border-b border-amber-500/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span className="text-amber-200 font-medium text-sm">Need commercial service? Talk directly with TCS.</span>

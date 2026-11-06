@@ -1,3 +1,4 @@
+import ServiceContactActions from '@/components/ServiceContactActions';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, Gauge, Phone, Settings2, ShieldCheck, Wind, Wrench } from 'lucide-react';
@@ -46,11 +47,9 @@ export default function ManufacturerServicePage({ manufacturer }: { manufacturer
                 {manufacturer.badge && <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-400/25 bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-200"><ShieldCheck className="w-3.5 h-3.5" />{manufacturer.badge}</span>}
               </div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">{manufacturer.title}</h1>
+              <ServiceContactActions requestHref="#request-service" />
               <p className="mt-6 text-lg lg:text-xl text-slate-300 max-w-2xl leading-relaxed">{manufacturer.description}</p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link href="#request-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold px-8 py-4 rounded-xl cta-glow transition-all">Request {manufacturer.name} Service <ArrowRight className="w-5 h-5" /></Link>
-                <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-2 border border-white/15 hover:border-amber-500/40 px-8 py-4 rounded-xl font-medium transition-all"><Phone className="w-4 h-4 text-amber-400" />{COMPANY.phone}</a>
-              </div>
+
             </div>
 
             <div className="relative">
