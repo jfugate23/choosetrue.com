@@ -17,9 +17,11 @@ export default function CallTracking() {
     const onClick = (e: MouseEvent) => {
       const anchor = (e.target as HTMLElement | null)?.closest?.('a[href^="tel:"]');
       if (!anchor) return;
+      const placement = anchor.getAttribute('data-call-placement') || 'page-content';
       track('Call Click', {
         number: anchor.getAttribute('href') || '',
         page: window.location.pathname,
+        placement,
         discovery_source: getDiscoverySource(),
       });
       const analyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -29,6 +31,7 @@ export default function CallTracking() {
           send_to: analyticsId,
           link_url: anchor.getAttribute('href') || '',
           page_path: window.location.pathname,
+          placement,
           discovery_source: getDiscoverySource(),
         });
       }

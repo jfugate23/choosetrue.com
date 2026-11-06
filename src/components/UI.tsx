@@ -7,6 +7,7 @@ import { track } from '@vercel/analytics';
 import { COMPANY } from '@/lib/data';
 import { getDiscoverySource } from '@/lib/discovery-source';
 import { SERVICE_LABELS } from '@/lib/service-requests';
+import ServiceContactActions from '@/components/ServiceContactActions';
 
 // Scroll reveal wrapper
 export function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -110,11 +111,12 @@ export function PhoneCTA({ className = '' }: { className?: string }) {
 }
 
 // Page hero
-export function PageHero({ eyebrow, title, description, showCTA = true }: {
+export function PageHero({ eyebrow, title, description, showCTA = true, callFirst = false }: {
   eyebrow?: string;
   title: string;
   description: string;
   showCTA?: boolean;
+  callFirst?: boolean;
 }) {
   return (
     <div className="relative pt-10 lg:pt-14 pb-16 lg:pb-20">
@@ -129,8 +131,9 @@ export function PageHero({ eyebrow, title, description, showCTA = true }: {
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4 animate-fade-in">{eyebrow}</p>
         )}
         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold max-w-4xl text-balance leading-tight animate-fade-up">{title}</h1>
+        {showCTA && callFirst && <ServiceContactActions />}
         <p className="mt-6 text-lg lg:text-xl text-slate-400 max-w-2xl leading-relaxed animate-fade-up" style={{ animationDelay: '0.1s' }}>{description}</p>
-        {showCTA && (
+        {showCTA && !callFirst && (
           <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             <CTAButton large />
             <PhoneCTA />

@@ -27,7 +27,7 @@ export default function GrowthServicePage({ content }: { content: GrowthService 
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {serviceSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />}
-      <PageHero eyebrow="Commercial service" title={content.title} description={content.intro} showCTA />
+      <PageHero eyebrow="Commercial service" title={content.title} description={content.intro} showCTA callFirst />
       <Section className="!pt-0">
         <div className="border border-amber-500/25 bg-amber-500/5 rounded-2xl p-6 lg:p-8">
           <h2 className="text-lg font-semibold mb-3">Before scheduling</h2>
