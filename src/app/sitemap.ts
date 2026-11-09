@@ -67,7 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ventilationCityUpdates: Record<string, Date> = {
     'manhattan-ny': new Date('2026-11-09'),
-    'brooklyn-ny': new Date('2026-10-26'),
+    'brooklyn-ny': new Date('2026-11-09'),
     'queens-ny': new Date('2026-11-02'),
   };
 
