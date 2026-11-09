@@ -65,9 +65,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const ventilationCityUpdates: Record<string, Date> = {
+    'manhattan-ny': new Date('2026-11-09'),
+    'brooklyn-ny': new Date('2026-10-26'),
+    'queens-ny': new Date('2026-11-02'),
+  };
+
   const ventilationCityPages = VENTILATION_CITIES.map((c) => ({
     url: `${base}/services/kitchen-ventilation/${c.slug}`,
-    lastModified: c.slug === 'queens-ny' ? new Date('2026-11-02') : c.slug === 'brooklyn-ny' ? new Date('2026-10-26') : ['queens-ny', 'manhattan-ny'].includes(c.slug) ? jfkProjectUpdated : updated,
+    lastModified: ventilationCityUpdates[c.slug] ?? updated,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
