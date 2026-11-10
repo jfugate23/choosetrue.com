@@ -1,11 +1,12 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import ProjectServicePage, { ProjectServiceContent } from '@/components/ProjectServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Hood Performance Testing',
   description: 'Commercial kitchen hood airflow readings, exhaust and makeup air testing, capture observations, pressure diagnosis, and written findings in NYC and New Jersey.',
   alternates: { canonical: '/services/kitchen-hood-performance-testing' },
-};
+});
 
 const content: ProjectServiceContent = {
   eyebrow: 'Kitchen Hood Performance Testing',

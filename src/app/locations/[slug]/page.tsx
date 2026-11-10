@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -24,11 +25,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const location = LOCATIONS.find((item) => item.slug === params.slug);
   if (!location) return {};
-  return {
+  return withPageMetadata({
     title: `${location.city} Kitchen Ventilation`,
     description: `Kitchen hood airflow diagnostics, exhaust fan repair, makeup air unit service, and ventilation controls in ${location.city}, ${location.state}. Commercial kitchens only.`,
     alternates: { canonical: `/locations/${location.slug}` },
-  };
+  });
 }
 
 export default function LocationPage({ params }: Props) {

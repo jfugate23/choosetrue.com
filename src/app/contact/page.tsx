@@ -1,13 +1,14 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import { COMPANY, LOCATIONS } from '@/lib/data';
 import { PageHero, Section, Reveal, ServiceForm } from '@/components/UI';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Contact',
   description: 'Contact True Commercial Service for commercial kitchen ventilation diagnostics and repair across NYC and North Jersey.',
   alternates: { canonical: '/contact' },
-};
+});
 
 export default function ContactPage() {
   return (

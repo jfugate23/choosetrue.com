@@ -1,8 +1,9 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import MarketHomePage from '@/components/MarketHomePage';
 import { MARKET_NJ } from '@/lib/data';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: {
     absolute: 'Kitchen Equipment, Ventilation & HVAC Service | NYC & NJ',
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'True Commercial Service',
     type: 'website',
   },
-};
+});
 
 export default function HomePage() {
   return <MarketHomePage market={MARKET_NJ} />;

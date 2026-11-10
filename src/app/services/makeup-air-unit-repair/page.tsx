@@ -1,11 +1,12 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Makeup Air Repair & No Heat — NYC & NJ',
   description: 'Restaurant makeup air blowing cold or heat not working? TCS diagnoses MAU heating, airflow, controls, and fan faults across NYC and North Jersey.',
   alternates: { canonical: '/services/makeup-air-unit-repair' },
-};
+});
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Makeup Air Service',

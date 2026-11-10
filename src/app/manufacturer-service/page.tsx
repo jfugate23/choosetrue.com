@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,11 +7,11 @@ import { COMPANY } from '@/lib/data';
 import { MANUFACTURERS } from '@/lib/manufacturer-data';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Manufacturer Ventilation Service',
   description: 'Gaylord factory-authorized service plus CaptiveAire, Accurex, Halton, and Greenheck commercial kitchen ventilation support across NYC and New Jersey.',
   alternates: { canonical: '/manufacturer-service' },
-};
+});
 
 export default function ManufacturerServiceHub() {
   const serviceSchema = {

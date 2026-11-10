@@ -1,14 +1,15 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { UtensilsCrossed, ShoppingCart, GraduationCap, Building2, ArrowRight } from 'lucide-react';
 import { VERTICALS } from '@/lib/data';
 import { PageHero, Section, Reveal } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation for Facilities',
   description: 'Kitchen ventilation diagnostics for restaurants, grocery foodservice, institutions, hotels, and hospitality facilities across NYC and North Jersey.',
   alternates: { canonical: '/who-we-serve' },
-};
+});
 
 const iconMap: Record<string, React.ReactNode> = {
   UtensilsCrossed: <UtensilsCrossed className="w-8 h-8" />,
