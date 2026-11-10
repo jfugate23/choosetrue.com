@@ -169,3 +169,13 @@ Validation completed for the November 2 draft:
 - Next in the rotation, consider a Brooklyn guide on what to request in a hood performance test report. Check the existing testing page and commissioning guide to avoid overlap, and use a field example only if the evidence and publication permission are suitable.
 
 The November 9 draft passed the production build, lint and type validation, and the service and borough regression checks. The 64-URL sitemap passed locally and on the current live site with zero errors and warnings. Browser checks covered all three boroughs at 390px and 1440px. The Manhattan guide and links were reachable, the existing Garland feature was present, and two simulated commercial inquiries retained the Manhattan page source and exhaust-fan category. No lead email was sent. This draft awaits approval before merging and production verification.
+
+
+## Brooklyn hood performance report guide
+
+- Manhattan, Brooklyn, and Queens remain the primary content markets. The Manhattan rooftop fan upgrade is merged in PR #21.
+- This draft adds a Brooklyn operator guide to specifying written hood test findings. It covers the equipment and complaint, operating conditions, measured airflow versus capture observations, limitations, completed adjustments, and follow-up recommendations. The Brooklyn ventilation page links to the guide, which leads to the existing performance testing inquiry.
+- The guide describes general reporting practice with an illustrative scenario. No customer, field measurement, test result, or project approval is claimed. Technical context uses the [ASHRAE kitchen ventilation chapter](https://handbook.ashrae.org/Handbooks/A19/SI/a19_ch34/a19_ch34_si.aspx) and [Accurex hood manual](https://content.accurex.com/accurex-cms-prod/docs/default-source/ioms/470399_canopyhoods_iom.pdf).
+- One article enters the sitemap and the Brooklyn page modification date is updated. Existing borough routes, service forms, and tracking are retained. This draft awaits review before publication.
+
+The Brooklyn draft passed the production build, all 65 sitemap checks, and service and borough regressions. Browser checks at 390px and 1440px verified navigation from the Brooklyn page to the article and then to the commercial performance testing inquiry, the article canonical, and visible FAQs matching the markup. The live Manhattan release separately passed the 64-URL sitemap audit and the guide was verified on the public page.
