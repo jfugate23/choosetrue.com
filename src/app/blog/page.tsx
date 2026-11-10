@@ -1,12 +1,13 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getIndexablePosts } from '@/lib/blog-data';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Commercial Equipment & HVAC Guides',
   description: 'Commercial cooking equipment, HVAC, ventilation, refrigeration, and ice machine guides for NYC and NJ operators. Current service availability varies.',
   alternates: { canonical: '/blog' },
-};
+});
 
 export default function BlogPage() {
   const posts = getIndexablePosts();

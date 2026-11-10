@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ManufacturerServicePage from '@/components/ManufacturerServicePage';
@@ -11,11 +12,11 @@ export function generateMetadata({ params }: { params: { brand: string } }): Met
   const manufacturer = getManufacturer(params.brand);
   if (!manufacturer) return {};
 
-  return {
+  return withPageMetadata({
     title: manufacturer.metaTitle,
     description: manufacturer.metaDescription,
     alternates: { canonical: `/manufacturer-service/${manufacturer.slug}` },
-  };
+  });
 }
 
 export default function ManufacturerPage({ params }: { params: { brand: string } }) {

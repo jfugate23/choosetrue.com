@@ -1,11 +1,12 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Service — NYC & NJ',
   description: 'Commercial kitchen hood airflow, exhaust fan, makeup air, controls, and pollution-control diagnostics across NYC and North Jersey.',
   alternates: { canonical: '/services/kitchen-ventilation' },
-};
+});
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Ventilation',

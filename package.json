@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "seo:audit": "node scripts/seo-audit.mjs",
-    "seo:services": "node scripts/seo-service-regression.mjs"
+    "seo:services": "node scripts/seo-service-regression.mjs",
+    "seo:discovery": "node scripts/search-discovery-regression.mjs"
   },
   "keywords": [],
   "author": "",

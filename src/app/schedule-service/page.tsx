@@ -1,13 +1,14 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import { COMPANY } from '@/lib/data';
 import { Section, Reveal, ServiceForm } from '@/components/UI';
 import { Phone, Clock, CheckCircle2, ShieldCheck } from 'lucide-react';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Request Commercial Service | NYC & NJ',
   description: 'Request commercial cooking equipment, HVAC, exhaust fan, makeup air, or kitchen ventilation service in NYC and North Jersey. Send equipment details to TCS.',
   alternates: { canonical: '/schedule-service' },
-};
+});
 
 export default function ScheduleServicePage() {
   return (

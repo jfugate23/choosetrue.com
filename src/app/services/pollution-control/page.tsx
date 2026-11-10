@@ -1,11 +1,12 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Pollution-Control Service — NYC & NJ',
   description: 'Commercial kitchen ESP and pollution-control diagnostics across NYC and North Jersey: power, controls, interlocks, fans, pressure, and airflow.',
   alternates: { canonical: '/services/pollution-control' },
-};
+});
 
 const content: VentilationServiceContent = {
   eyebrow: 'ESP & Pollution-Control Systems',

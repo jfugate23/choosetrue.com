@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const description = seoDescription(post.description);
 
-  return {
+  return withPageMetadata({
     title: seoTitles[post.slug] || post.title,
     description,
     alternates: { canonical: `/blog/${post.slug}` },
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     robots: isIndexablePost(post.slug)
       ? { index: true, follow: true }
       : { index: false, follow: true },
-  };
+  });
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

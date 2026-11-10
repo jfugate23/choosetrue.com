@@ -1,3 +1,4 @@
+import { WEBSITE_ID } from '@/lib/search-metadata';
 import Link from 'next/link';
 import GarlandProjectFeature from '@/components/GarlandProjectFeature';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -13,18 +14,34 @@ export default function GrowthServicePage({ content }: { content: GrowthService 
       acceptedAnswer: { '@type': 'Answer', text: answer },
     })),
   };
+  const pageUrl = `https://choosetrue.com/services/${content.slug}`;
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': pageUrl + '#service',
+    mainEntityOfPage: { '@id': pageUrl + '#webpage' },
     name: content.title,
     description: content.intro,
-    url: `https://choosetrue.com/services/${content.slug}`,
+    url: pageUrl,
     provider: { '@id': 'https://choosetrue.com/#localbusiness' },
     areaServed: ['New York City', 'North Jersey'],
   };
 
+  const pageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': pageUrl + '#webpage',
+    url: pageUrl,
+    name: content.title,
+    description: content.intro,
+    isPartOf: { '@id': WEBSITE_ID },
+    mainEntity: { '@id': pageUrl + '#service' },
+    inLanguage: 'en-US',
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {serviceSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />}
       <PageHero eyebrow="Commercial service" title={content.title} description={content.intro} showCTA callFirst />

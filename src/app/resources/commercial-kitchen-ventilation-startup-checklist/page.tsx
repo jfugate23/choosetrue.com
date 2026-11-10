@@ -1,14 +1,15 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardCheck, FileText, Gauge, Phone, Settings2, Wind } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
 import { Reveal, Section, SectionHeading } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Startup Checklist',
   description: 'A concise commercial kitchen hood, exhaust fan, makeup air, controls, airflow, and project-readiness checklist for NYC and New Jersey installations.',
   alternates: { canonical: '/resources/commercial-kitchen-ventilation-startup-checklist' },
-};
+});
 
 const checklist = [
   {
