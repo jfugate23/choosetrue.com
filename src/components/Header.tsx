@@ -34,9 +34,6 @@ export default function Header() {
               <MapPin className="w-3.5 h-3.5 text-amber-400/70" />
               <span>Commercial kitchen equipment, ventilation & HVAC • NYC and New Jersey</span>
             </div>
-            <a href={MARKET_NJ.phoneHref} className="flex items-center gap-2 text-amber-400 hover:text-amber-300 font-medium transition-colors">
-              <Phone className="w-3.5 h-3.5" /> Call TCS: {MARKET_NJ.phone}
-            </a>
           </div>
         </div>
 
@@ -71,18 +68,17 @@ export default function Header() {
             </div>
 
             <div className="hidden xl:flex items-center gap-3">
-              <a href={MARKET_NJ.phoneHref} data-call-placement="desktop-header" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-4 py-3 rounded-lg transition-colors"><Phone className="w-4 h-4" aria-hidden="true" /><span>Call Now <span className="block">{MARKET_NJ.phone}</span></span></a>
+              <a href={MARKET_NJ.phoneHref} data-call-placement="desktop-header" aria-label="Call Now — True Commercial Service" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-sm px-4 py-3 rounded-lg transition-colors"><Phone className="w-4 h-4" aria-hidden="true" /><span>Call Now</span></a>
               <Link href="/schedule-service" className="text-slate-300 hover:text-white text-sm">Request Service</Link>
             </div>
 
-            <a href={MARKET_NJ.phoneHref} data-call-placement="mobile-header" aria-label={`Call True Commercial Service at ${MARKET_NJ.phone}`} className="xl:hidden inline-flex min-h-11 items-center gap-1.5 rounded-lg bg-amber-500 px-3 text-sm font-bold text-navy-300 hover:bg-amber-400"><Phone className="w-4 h-4" aria-hidden="true" />Call</a>
             <button onClick={() => setMobileOpen(!mobileOpen)} className="xl:hidden p-2 text-white" aria-label="Toggle menu" aria-expanded={mobileOpen}>
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </nav>
 
-        <div className={`xl:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`xl:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? 'max-h-[80vh] opacity-100 visible' : 'max-h-0 opacity-0 invisible'}`}>
           <div className="bg-navy-300/98 backdrop-blur-lg border-t border-white/5 px-4 py-6 space-y-1 overflow-y-auto max-h-[70vh]">
             <MobileNavSection title="Services">
               {primaryServices.map((item) => <MobileLink key={item.href} href={item.href} label={item.label} onClick={() => setMobileOpen(false)} />)}
@@ -93,7 +89,6 @@ export default function Header() {
             <MobileLink href="/blog" label="Resources" onClick={() => setMobileOpen(false)} />
             <MobileLink href="/contact" label="Contact" onClick={() => setMobileOpen(false)} />
             <div className="pt-4 space-y-3">
-              <a href={MARKET_NJ.phoneHref} className="flex items-center justify-center gap-2 w-full py-3 border border-amber-500/30 rounded-lg text-amber-400 font-medium"><Phone className="w-4 h-4" /> {MARKET_NJ.phone}</a>
               <Link href="/schedule-service" onClick={() => setMobileOpen(false)} className="block text-center w-full bg-amber-500 text-navy-300 font-bold py-3 rounded-lg cta-glow">Request Service</Link>
             </div>
           </div>
@@ -102,7 +97,7 @@ export default function Header() {
 
       <div className="fixed bottom-0 left-0 right-0 z-50 xl:hidden mobile-cta-bar" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
         <div className="flex gap-2 px-3 py-3 bg-navy-300/95 backdrop-blur-lg border-t border-white/10">
-          <a href={MARKET_NJ.phoneHref} data-call-placement="mobile-sticky" className="flex-[2] flex min-h-14 items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 rounded-lg py-2 text-navy-300 font-bold text-sm"><Phone className="w-5 h-5 shrink-0" aria-hidden="true" /><span>Call Now<span className="block text-xs font-medium">{MARKET_NJ.phone}</span></span></a>
+          <a href={MARKET_NJ.phoneHref} data-call-placement="mobile-sticky" aria-label="Call Now — True Commercial Service" className="flex-[2] flex min-h-14 items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 rounded-lg py-2 text-navy-300 font-bold text-sm"><Phone className="w-5 h-5 shrink-0" aria-hidden="true" /><span>Call Now</span></a>
           <Link href="/schedule-service" className="flex-1 flex items-center justify-center border border-white/20 rounded-lg px-2 py-3 text-slate-300 font-medium text-sm text-center">Request Service</Link>
         </div>
       </div>

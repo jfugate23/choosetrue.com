@@ -108,14 +108,14 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
                 Cooking equipment down, an HVAC problem, or a hood that won’t clear smoke? TCS diagnoses and repairs commercial systems, with specialized expertise in kitchen ventilation.
               </p>
 
-              <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
-                <Link href="/schedule-service" className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-lg cta-glow transition-all group">
+              <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
+                <a href={market.phoneHref} data-call-placement="homepage-hero" aria-label="Call Now — True Commercial Service" className="inline-flex min-h-12 items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-navy-300 font-bold text-base px-8 py-4 rounded-lg transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400">
+                  <Phone className="w-5 h-5" aria-hidden="true" />
+                  Call Now
+                </a>
+                <a href="#request-service" className="inline-flex min-h-12 items-center justify-center gap-2 border border-white/20 hover:border-white/40 text-slate-200 hover:text-white font-medium px-8 py-4 rounded-lg transition-colors">
                   Request Service
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a href={market.phoneHref} className="inline-flex items-center justify-center gap-2 text-slate-200 hover:text-white transition-colors font-medium px-2 py-3">
-                  <Phone className="w-5 h-5 text-amber-400" />
-                  Call TCS: {market.phone}
+                  <ArrowRight className="w-5 h-5" aria-hidden="true" />
                 </a>
               </div>
 
@@ -283,7 +283,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
         </div>
       </Section>
 
-      <Section className="bg-white/[0.02]">
+      <Section id="request-service" className="bg-white/[0.02] scroll-mt-36">
         <div className="grid lg:grid-cols-[.85fr_1.15fr] gap-12 lg:gap-20">
           <div>
             <SectionHeading
@@ -293,7 +293,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
               center={false}
             />
             <a href={market.phoneHref} className="inline-flex items-center gap-3 text-xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
-              <Phone className="w-5 h-5" /> {market.phone}
+              <Phone className="w-5 h-5" aria-hidden="true" /> Call Now
             </a>
             <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens and facilities across NYC and North Jersey</p>
             <div className="mt-6 flex items-start gap-3 text-sm text-slate-400">
