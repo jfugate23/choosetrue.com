@@ -20,6 +20,7 @@ export interface VentilationServiceContent {
   note?: string;
   evidence?: ServiceEvidenceContent;
   defaultService?: string;
+  showHeroPhoneNumber?: boolean;
   quickLinks?: { href: string; label: string }[];
 }
 
@@ -63,7 +64,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <div>
               <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">{content.eyebrow}</p>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">{content.title}</h1>
-              <ServiceContactActions />
+              <ServiceContactActions showPhoneNumber={content.showHeroPhoneNumber} />
               <p className="mt-6 text-lg lg:text-xl text-slate-300 max-w-2xl leading-relaxed">{content.description}</p>
 
               {content.quickLinks && <div className="mt-5 flex flex-wrap gap-3" aria-label="Choose your ventilation problem">
