@@ -1,12 +1,13 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import { Building2, ClipboardCheck, Gauge, Settings2 } from 'lucide-react';
 import { CTAButton, PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'About True Commercial Service',
   description: 'True Commercial Service specializes in commercial kitchen hood and ventilation service across New York City and New Jersey.',
   alternates: { canonical: '/about' },
-};
+});
 
 export default function AboutPage() {
   return (

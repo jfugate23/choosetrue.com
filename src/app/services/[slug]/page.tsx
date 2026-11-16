@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -22,12 +23,12 @@ export function generateMetadata({ params }: Props): Metadata {
   const service = SERVICES.find((s) => s.slug === params.slug);
   if (!service) return {};
   const growth = GROWTH_SERVICES[params.slug];
-  return {
+  return withPageMetadata({
     title: growth?.seoTitle || service.title,
     description: growth?.description || `${service.title} capability information for manufacturer-assigned, dealer-referred, and established-customer work in NYC and North Jersey.`,
     alternates: { canonical: `/services/${service.slug}` },
     robots: { index: Boolean(growth), follow: true },
-  };
+  });
 }
 
 export default function ServicePage({ params }: Props) {

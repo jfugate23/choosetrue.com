@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date('2026-08-30');
   const serviceEvidenceUpdated = new Date('2026-10-20');
   const jfkProjectUpdated = new Date('2026-10-24');
+  const hoodReportUpdated = new Date('2026-11-16');
   const growthUpdated = new Date('2026-10-24');
   
   const staticPages = [
@@ -21,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/ventilation-controls`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/services/pollution-control`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/services/kitchen-ventilation-startup-commissioning`, lastModified: jfkProjectUpdated, changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${base}/services/kitchen-hood-performance-testing`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${base}/services/kitchen-hood-performance-testing`, lastModified: hoodReportUpdated, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${base}/manufacturer-service`, lastModified: updated, changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/manufacturer-service/cuppone`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/manufacturer-service/lainox`, lastModified: new Date('2026-10-02'), changeFrequency: 'monthly' as const, priority: 0.85 },
@@ -67,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const ventilationCityUpdates: Record<string, Date> = {
     'manhattan-ny': new Date('2026-11-09'),
-    'brooklyn-ny': new Date('2026-11-09'),
+    'brooklyn-ny': hoodReportUpdated,
     'queens-ny': new Date('2026-11-02'),
   };
 

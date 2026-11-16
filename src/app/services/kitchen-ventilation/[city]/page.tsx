@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import ManhattanFanServiceGuide from '@/components/ManhattanFanServiceGuide';
 import QueensHandoffGuide from '@/components/QueensHandoffGuide';
 import BrooklynServiceGuide from '@/components/BrooklynServiceGuide';
@@ -26,11 +27,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const city = VENTILATION_CITIES.find((item) => item.slug === params.city);
   if (!city) return {};
-  return {
+  return withPageMetadata({
     title: `${city.city} Kitchen Ventilation`,
     description: `Commercial kitchen hood airflow diagnostics, exhaust fan repair, makeup air service, and controls troubleshooting in ${city.city}, ${city.state} and ${city.region}.`,
     alternates: { canonical: `/services/kitchen-ventilation/${city.slug}` },
-  };
+  });
 }
 
 export default function VentilationCityPage({ params }: Props) {

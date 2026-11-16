@@ -1,13 +1,14 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Section, SectionHeading, Reveal } from '@/components/UI';
 import { ArrowRight, ExternalLink, BookOpen, ClipboardCheck, ShieldCheck, Wrench, Wind, Flame, Thermometer } from 'lucide-react';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Resources',
   description: 'Commercial kitchen ventilation resources, including manufacturer links, NYC references, service guides, and operating tools.',
   alternates: { canonical: '/resources' },
-};
+});
 
 const resources = [
   {

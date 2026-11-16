@@ -1,17 +1,19 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Service — NYC & NJ',
   description: 'Commercial kitchen hood airflow, exhaust fan, makeup air, controls, and pollution-control diagnostics across NYC and North Jersey.',
   alternates: { canonical: '/services/kitchen-ventilation' },
-};
+});
 
 const content: VentilationServiceContent = {
   eyebrow: 'Commercial Kitchen Ventilation',
-  title: 'Commercial kitchen hood and ventilation experts.',
+  title: 'Commercial Hood & Exhaust Fan Repair',
   description: 'Hood airflow, exhaust fans, makeup air units, VFDs, demand-control ventilation, and pollution-control systems diagnosed and repaired across NYC and North Jersey.',
   serviceType: 'Commercial Kitchen Ventilation Diagnostics and Repair',
+  showHeroPhoneNumber: true,
   quickLinks: [
     { href: '/services/exhaust-fan-repair', label: 'Exhaust fan not working? Fan repair' },
     { href: '/services/makeup-air-unit-repair', label: 'Makeup air blowing cold? No-heat service' },

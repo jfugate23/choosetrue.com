@@ -1,12 +1,13 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import JfkProjectFeature from '@/components/JfkProjectFeature';
 import ProjectServicePage, { ProjectServiceContent } from '@/components/ProjectServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Ventilation Startup & Commissioning',
   description: 'Commercial kitchen hood, exhaust fan, makeup air, VFD, DCV, controls, airflow, and startup commissioning support across NYC and New Jersey.',
   alternates: { canonical: '/services/kitchen-ventilation-startup-commissioning' },
-};
+});
 
 const content: ProjectServiceContent = {
   eyebrow: 'Kitchen Ventilation Startup & Commissioning',

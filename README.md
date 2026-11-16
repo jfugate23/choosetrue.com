@@ -48,6 +48,8 @@ npm run seo:audit -- --base=http://localhost:3000
 
 The check reports broken sitemap URLs, missing titles/descriptions/canonicals, noindex pages included in the sitemap, canonical mismatches, and invalid H1 counts. Title and description length findings are reported as warnings.
 
+Run `npm run seo:discovery -- --base=http://localhost:3000` to check page-specific preview metadata, structured-data relationships, and crawler policy against a local production server.
+
 ## Deployment to Vercel
 
 ### Option A: Vercel CLI

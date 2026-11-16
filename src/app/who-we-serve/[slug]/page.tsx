@@ -1,3 +1,4 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { VERTICALS } from '@/lib/data';
@@ -20,11 +21,11 @@ export function generateMetadata({ params }: Props): Metadata {
     'schools-institutions': 'Institutional Kitchen Ventilation',
     hotels: 'Hotel Kitchen Ventilation',
   };
-  return {
+  return withPageMetadata({
     title: titles[v.slug] || `${v.title} Kitchen Ventilation`,
     description: v.description,
     alternates: { canonical: `/who-we-serve/${v.slug}` },
-  };
+  });
 }
 
 const focusedServices = [

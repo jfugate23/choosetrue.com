@@ -1,11 +1,12 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Controls — NYC & NJ',
   description: 'Kitchen ventilation controls service across NYC and North Jersey: VFD and DCV faults, sensors, starters, relays, interlocks, and sequences.',
   alternates: { canonical: '/services/ventilation-controls' },
-};
+});
 
 const content: VentilationServiceContent = {
   eyebrow: 'Kitchen Ventilation Controls',

@@ -1,13 +1,14 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Wrench, ClipboardCheck, Fan, FileCheck2, Gauge, Settings2, Wind } from 'lucide-react';
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Equipment, Ventilation & HVAC',
   description: 'Commercial cooking equipment repair, kitchen ventilation, and HVAC service in NYC and North Jersey. Request TCS troubleshooting, repair, or maintenance.',
   alternates: { canonical: '/services' },
-};
+});
 
 const services = [
   { href: '/services/commercial-kitchen-maintenance', title: 'Kitchen Preventive Maintenance', description: 'Planned oven, cooking equipment, ventilation, and related maintenance for commercial kitchens in Manhattan, Brooklyn, Queens, and North Jersey.', icon: <ClipboardCheck className="w-7 h-7" /> },

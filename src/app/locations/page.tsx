@@ -1,14 +1,15 @@
+import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Building2, MapPin } from 'lucide-react';
 import { LOCATIONS, VENTILATION_CITIES } from '@/lib/data';
 import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Areas — NYC & NJ',
   description: 'Commercial kitchen ventilation service in all five NYC boroughs and across Union, Essex, Hudson, Passaic, and Middlesex counties in New Jersey.',
   alternates: { canonical: '/locations' },
-};
+});
 
 const activeLocations = LOCATIONS.filter((location) => location.status === 'active');
 const nycLocations = activeLocations.filter((location) => location.state === 'NY' && location.slug !== 'new-york-city');

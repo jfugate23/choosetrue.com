@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CallTracking from '@/components/CallTracking';
 import GoogleAdsTag from '@/components/GoogleAdsTag';
+import { ORGANIZATION_ID, WEBSITE_ID } from '@/lib/search-metadata';
 import { PROFILES, MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -37,13 +38,11 @@ export const metadata: Metadata = {
     : undefined,
 };
 
-// Parent brand Organization: the NJ/NYC LocalBusiness references this
-// via parentOrganization in its own layout, letting Google understand the
-// location is part of the same brand entity.
+// Stable business and website identities shared by all service pages.
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': 'https://choosetrue.com#organization',
+  '@id': ORGANIZATION_ID,
   name: 'True Commercial Service LLC',
   legalName: 'True Commercial Service LLC',
   description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service company serving Northern New Jersey and New York City.',
@@ -55,7 +54,11 @@ const organizationSchema = {
     {
       '@type': 'LocalBusiness',
       '@id': MARKET_NJ.schemaId,
-      name: `${MARKET_NJ.name}: NJ & NYC Metro`,
+      name: MARKET_NJ.name,
+      legalName: MARKET_NJ.legal,
+      description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service across NYC and North Jersey.',
+      email: MARKET_NJ.email,
+      parentOrganization: { '@id': ORGANIZATION_ID },
       telephone: MARKET_NJ.phone,
       url: MARKET_NJ.homeUrl,
       address: {
@@ -70,6 +73,16 @@ const organizationSchema = {
   ],
 };
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': WEBSITE_ID,
+  url: MARKET_NJ.homeUrl,
+  name: MARKET_NJ.name,
+  publisher: { '@id': ORGANIZATION_ID },
+  inLanguage: 'en-US',
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -77,6 +90,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="min-h-screen bg-navy-300 text-white antialiased">
