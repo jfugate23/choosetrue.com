@@ -1,5 +1,7 @@
 import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Section } from '@/components/UI';
 import ProjectServicePage, { ProjectServiceContent } from '@/components/ProjectServicePage';
 
 export const metadata: Metadata = withPageMetadata({
@@ -41,5 +43,27 @@ const content: ProjectServiceContent = {
 };
 
 export default function KitchenHoodPerformanceTestingPage() {
-  return <ProjectServicePage content={content} />;
+  return (
+    <ProjectServicePage
+      content={content}
+      projectFeature={
+        <Section id="plan-the-hood-test" className="scroll-mt-28">
+          <div className="glass-card rounded-2xl p-6 lg:p-8 max-w-4xl mx-auto">
+            <h2 className="text-2xl font-semibold">What decision should the hood test support?</h2>
+            <ul className="mt-5 space-y-4 list-disc pl-5 text-sm text-slate-300 leading-relaxed">
+              <li><strong className="text-white">Smoke during service.</strong> Identify the hood, appliances in use, and the time the problem usually appears. Ask whether the visit can cover a representative cooking load.</li>
+              <li><strong className="text-white">A change after equipment work.</strong> Share what moved or was replaced. Provide the previous airflow report or design schedule if available so the technician can identify a basis for comparison.</li>
+              <li><strong className="text-white">A restaurant and building HVAC issue.</strong> Note when drafts, hard-to-open doors, or dining room comfort problems occur. Include the contact who can arrange access to the shared HVAC or makeup air equipment.</li>
+            </ul>
+            <p className="mt-5 text-sm text-slate-400 leading-relaxed">If a landlord or facilities manager needs written findings, tell TCS what they need to decide and which operating conditions can be observed during the visit. TCS confirms the test and reporting scope before scheduling.</p>
+            <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-amber-400">
+              <Link href="#project-request" className="underline underline-offset-4">Request hood performance testing</Link>
+              <Link href="/blog/brooklyn-kitchen-hood-performance-test-report" className="underline underline-offset-4">Brooklyn hood test report checklist</Link>
+              <Link href="/blog/restaurant-hvac-or-makeup-air-problem" className="underline underline-offset-4">Restaurant HVAC and makeup air checklist</Link>
+            </div>
+          </div>
+        </Section>
+      }
+    />
+  );
 }

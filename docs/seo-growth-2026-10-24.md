@@ -169,3 +169,24 @@ Validation completed for the November 2 draft:
 - Next in the rotation, consider a Brooklyn guide on what to request in a hood performance test report. Check the existing testing page and commissioning guide to avoid overlap, and use a field example only if the evidence and publication permission are suitable.
 
 The November 9 draft passed the production build, lint and type validation, and the service and borough regression checks. The 64-URL sitemap passed locally and on the current live site with zero errors and warnings. Browser checks covered all three boroughs at 390px and 1440px. The Manhattan guide and links were reachable, the existing Garland feature was present, and two simulated commercial inquiries retained the Manhattan page source and exhaust-fan category. No lead email was sent. This draft awaits approval before merging and production verification.
+
+
+## Brooklyn hood performance report guide
+
+- Manhattan, Brooklyn, and Queens remain the primary content markets. The Manhattan rooftop fan upgrade is merged in PR #21.
+- This draft adds a Brooklyn operator guide to specifying written hood test findings. It covers the equipment and complaint, operating conditions, measured airflow versus capture observations, limitations, completed adjustments, and follow-up recommendations. The Brooklyn ventilation page links to the guide, which leads to the existing performance testing inquiry.
+- The guide describes general reporting practice with an illustrative scenario. No customer, field measurement, test result, or project approval is claimed. Technical context uses the [ASHRAE kitchen ventilation chapter](https://handbook.ashrae.org/Handbooks/A19/SI/a19_ch34/a19_ch34_si.aspx) and [Accurex hood manual](https://content.accurex.com/accurex-cms-prod/docs/default-source/ioms/470399_canopyhoods_iom.pdf).
+- One article enters the sitemap and the Brooklyn page modification date is updated. Existing borough routes, service forms, and tracking are retained. This draft awaits review before publication.
+
+The Brooklyn draft passed the production build, all 65 sitemap checks, and service and borough regressions. Browser checks at 390px and 1440px verified navigation from the Brooklyn page to the article and then to the commercial performance testing inquiry, the article canonical, and visible FAQs matching the markup. The live Manhattan release separately passed the 64-URL sitemap audit and the guide was verified on the public page.
+
+
+## November 16, 2026 — Hood testing service page upgrade
+
+- Prioritize ventilation and commercial HVAC content for Manhattan, Brooklyn, and Queens, with New Jersey secondary and cooking equipment coverage retained. All three existing borough pages already route readers to the four equipment service hubs.
+- Update the existing Brooklyn report draft, PR #22, on main through PR #25. The hood testing service page now helps customers scope a visit for smoke during service, an equipment change, or a complaint involving building HVAC. It connects readers to the Brooklyn report checklist, the HVAC and makeup air guide, and the existing performance testing form.
+- General testing guidance draws on the [2023 ASHRAE kitchen ventilation chapter](https://handbook.ashrae.org/handbooks/A23/IP/a23_ch34/a23_ch34_ip.aspx). The guidance describes observations and records to share before a visit. It makes no new field-job claim.
+- The live baseline and draft are verified separately. The draft retains the current site metadata and call flow and adds the same single article planned in PR #22. Private search figures remain outside the repository. The Windsor trial returned the latest finalized window but blocked the preceding 28 days.
+- Next, consider a Queens makeup air no-heat service upgrade after checking for overlap with the existing HVAC and makeup air guidance.
+
+Validation completed November 16. The production build, sitemap audit of all 65 draft URLs, and service, borough, and search discovery checks passed. At 390px and 1440px, the Brooklyn guide led to the service page and its request form. Two simulated inquiries retained the commercial qualification, performance testing category, and originating page. The live baseline separately passed the 64-URL audit and borough and search discovery checks.

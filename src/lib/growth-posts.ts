@@ -1,7 +1,9 @@
+import { BROOKLYN_HOOD_REPORT_POST } from '@/lib/brooklyn-hood-report-post';
 import { COMMISSIONING_HANDOFF_POST } from '@/lib/commissioning-handoff-post';
 import type { BlogPost } from '@/lib/blog-data';
 
 export const GROWTH_POSTS: BlogPost[] = [
+  BROOKLYN_HOOD_REPORT_POST,
   COMMISSIONING_HANDOFF_POST,
   {
     slug: 'commercial-oven-not-heating-evenly',

@@ -67,6 +67,7 @@ export default function BrooklynServiceGuide() {
             <li>Explain when the kitchen can release equipment for testing and whether the issue appears only during busy service.</li>
           </ul>
           <p className="text-sm text-slate-400 leading-relaxed mt-5">If the makeup air unit is not running or is blowing cold, include that in the same description. <Link href="/services/makeup-air-unit-repair" className="text-amber-400 underline underline-offset-4">See makeup air unit service details.</Link></p>
+          <p className="text-sm text-slate-400 leading-relaxed mt-5">Need written findings for a landlord or repair decision? <Link href="/blog/brooklyn-kitchen-hood-performance-test-report" className="text-amber-400 underline underline-offset-4">See what to ask for in a hood performance report.</Link></p>
           <Link href="#brooklyn-service-request" className="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 mt-5">Send a Brooklyn service inquiry<ArrowRight className="w-4 h-4 shrink-0" /></Link>
         </div>
       </Section>
