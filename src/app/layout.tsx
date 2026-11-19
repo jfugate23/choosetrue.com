@@ -87,6 +87,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        {/* Reuse the data layer initialized by the existing Ads and Analytics integration. */}
+        <script
+          id="google-tag-manager-data-layer"
+          dangerouslySetInnerHTML={{ __html: 'window.dataLayer = window.dataLayer || [];' }}
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-PS6KXJD2"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
