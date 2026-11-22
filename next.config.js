@@ -45,6 +45,7 @@ const nextConfig = {
 
       // ─── Consolidate duplicate location/service landing pages ─
       // The richer ventilation-city route owns the local search intent.
+      { source: '/locations/union-county-nj', destination: '/services/kitchen-ventilation/elizabeth-nj', permanent: true },
       { source: '/locations/elizabeth-nj', destination: '/services/kitchen-ventilation/elizabeth-nj', permanent: true },
       { source: '/locations/newark-nj', destination: '/services/kitchen-ventilation/newark-nj', permanent: true },
       { source: '/locations/jersey-city-nj', destination: '/services/kitchen-ventilation/jersey-city-nj', permanent: true },

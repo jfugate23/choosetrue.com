@@ -2,6 +2,7 @@ import { withPageMetadata } from '@/lib/search-metadata';
 import type { Metadata } from 'next';
 import { Building2, ClipboardCheck, Gauge, Settings2 } from 'lucide-react';
 import { CTAButton, PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
+import CredentialsBlock from '@/components/CredentialsBlock';
 
 export const metadata: Metadata = withPageMetadata({
   title: 'About True Commercial Service',
@@ -34,6 +35,10 @@ export default function AboutPage() {
             </div>
           </Reveal>
         </div>
+      </Section>
+
+      <Section className="!pt-0">
+        <div className="max-w-3xl mx-auto"><CredentialsBlock /></div>
       </Section>
 
       <Section className="bg-white/[0.02]">

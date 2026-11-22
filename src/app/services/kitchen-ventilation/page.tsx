@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = withPageMetadata({
-  title: 'Kitchen Ventilation Service — NYC & NJ',
-  description: 'Commercial kitchen hood airflow, exhaust fan, makeup air, controls, and pollution-control diagnostics across NYC and North Jersey.',
+  title: 'Commercial Kitchen Ventilation Repair NYC & NJ',
+  description: "Exhaust fan, make-up air, hood control, and airflow repair for restaurants and institutional kitchens in NYC and North Jersey. We repair, we don't clean.",
   alternates: { canonical: '/services/kitchen-ventilation' },
 });
 
@@ -37,6 +37,8 @@ const content: VentilationServiceContent = {
     { question: 'What commercial kitchen ventilation work does TCS prioritize?', answer: 'Hood airflow and capture problems, exhaust fan repair, makeup air unit service, VFD and demand-control ventilation faults, startup support, and related pollution-control operating issues.' },
     { question: 'Do you clean hoods or grease ducts?', answer: 'No. TCS focuses on diagnostics, repair, controls, airflow, and startup work. Hood and grease-duct cleaning should be performed by a qualified kitchen-exhaust cleaning company.' },
     { question: 'Do you service residential range hoods?', answer: 'No. TCS works on commercial kitchen ventilation systems only.' },
+    { question: 'Are you FDNY certified?', answer: 'FDNY certification (W-64) covers hood and grease duct cleaning, which TCS does not do. TCS repairs the exhaust fans, make-up air units, and controls. Your FDNY-approved cleaning company handles cleaning; when they find a broken fan or belt, call TCS.' },
+    { question: 'Do you answer after hours?', answer: 'Yes. Regular hours are Monday to Friday, 8 a.m. to 5 p.m., and TCS provides emergency after-hours response nights and weekends for commercial kitchens with ventilation down.' },
     { question: 'Can manufacturers send TCS warranty or startup work?', answer: 'Yes. TCS accepts manufacturer-assigned warranty, startup, and service work. Authorization is manufacturer-, territory-, and assignment-specific and should be confirmed before dispatch.' },
   ],
   note: 'TCS does not provide hood/duct cleaning, fire-suppression inspection or service, or residential range-hood work.',

@@ -7,16 +7,15 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import CallTracking from '@/components/CallTracking';
 import GoogleAdsTag from '@/components/GoogleAdsTag';
 import { ORGANIZATION_ID, WEBSITE_ID } from '@/lib/search-metadata';
-import { PROFILES, MARKET_NJ } from '@/lib/data';
+import { PROFILES, MARKET_NJ, NYC_BOROUGHS, NJ_COUNTIES, BUSINESS_HOURS } from '@/lib/data';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://choosetrue.com'),
   title: {
-    default: 'True Commercial Service | NYC & NJ Commercial Equipment Service',
-    template: '%s | True Commercial Service',
+    default: 'Kitchen Exhaust Fan & Ventilation Repair NYC & NJ | TCS',
+    template: '%s | TCS',
   },
-  description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service across NYC and North Jersey. Owner-reviewed troubleshooting, repair, and maintenance requests.',
-  keywords: ['commercial kitchen exhaust fan repair', 'makeup air unit repair', 'kitchen hood airflow', 'kitchen air balancing', 'commercial kitchen ventilation', 'NYC', 'North Jersey'],
+  description: 'Restaurant exhaust fans, make-up air units, hood controls, cooking equipment, and light commercial HVAC repaired across NYC and North Jersey. Emergency after-hours response.',
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -26,8 +25,8 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'True Commercial Service | Kitchen Equipment & HVAC',
-    description: 'Commercial cooking equipment, HVAC, kitchen exhaust, makeup air, and ventilation controls across NYC and North Jersey.',
+    title: 'True Commercial Service | Kitchen Ventilation Repair NYC & NJ',
+    description: 'Restaurant exhaust fans, make-up air, hood controls, cooking equipment, and light commercial HVAC repaired across NYC and North Jersey.',
     url: 'https://choosetrue.com',
     siteName: 'True Commercial Service',
     type: 'website',
@@ -45,18 +44,18 @@ const organizationSchema = {
   '@id': ORGANIZATION_ID,
   name: 'True Commercial Service LLC',
   legalName: 'True Commercial Service LLC',
-  description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service company serving Northern New Jersey and New York City.',
+  description: 'Veteran-owned commercial kitchen ventilation, cooking equipment, and light commercial HVAC repair company serving New York City and North Jersey.',
   url: 'https://choosetrue.com',
   logo: 'https://choosetrue.com/images/logo.png',
   image: 'https://choosetrue.com/images/logo.png',
   sameAs: Object.values(PROFILES).filter(Boolean),
   location: [
     {
-      '@type': 'LocalBusiness',
+      '@type': 'HVACBusiness',
       '@id': MARKET_NJ.schemaId,
       name: MARKET_NJ.name,
       legalName: MARKET_NJ.legal,
-      description: 'Commercial cooking equipment, HVAC, and kitchen ventilation service across NYC and North Jersey.',
+      description: 'Commercial kitchen ventilation repair (exhaust fans, make-up air units, hood controls, VFDs, airflow balancing), commercial cooking equipment repair, and light commercial HVAC across NYC and North Jersey. Veteran-owned. Emergency after-hours response.',
       email: MARKET_NJ.email,
       parentOrganization: { '@id': ORGANIZATION_ID },
       telephone: MARKET_NJ.phone,
@@ -68,7 +67,18 @@ const organizationSchema = {
         postalCode: MARKET_NJ.address.postalCode,
         addressCountry: MARKET_NJ.address.country,
       },
-      areaServed: ['New York City', 'Northern New Jersey'],
+      areaServed: [
+        ...NYC_BOROUGHS.map((name) => ({ '@type': 'City', name: name.replace(/^The /, '') })),
+        ...NJ_COUNTIES.map((name) => ({ '@type': 'AdministrativeArea', name: `${name}, NJ` })),
+      ],
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: BUSINESS_HOURS.days,
+        opens: BUSINESS_HOURS.opens,
+        closes: BUSINESS_HOURS.closes,
+      },
+      knowsAbout: ['Kitchen exhaust fan repair', 'Make-up air unit repair', 'Hood control panels and interlocks', 'Demand-control kitchen ventilation', 'Kitchen hood airflow testing and balancing', 'Commercial cooking equipment repair', 'Commercial HVAC repair'],
+      slogan: "We repair. We don't clean.",
     },
   ],
 };

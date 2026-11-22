@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: manufacturer.slug === 'gaylord' ? 0.95 : 0.85,
   }));
-  const locationPages = LOCATIONS.filter((location) => !ventilationCitySlugs.has(location.slug)).map((l) => ({
+  const locationPages = LOCATIONS.filter((location) => !ventilationCitySlugs.has(location.slug) && location.slug !== 'union-county-nj').map((l) => ({
     url: `${base}/locations/${l.slug}`,
     lastModified: updated,
     changeFrequency: 'monthly' as const,

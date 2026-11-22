@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const SITE_URL = 'https://choosetrue.com';
-export const ORGANIZATION_ID = SITE_URL + '#organization';
+export const ORGANIZATION_ID = SITE_URL + '/#organization';
 export const WEBSITE_ID = SITE_URL + '/#website';
 
 // Next.js inherits the root Open Graph object unless a page supplies its own.

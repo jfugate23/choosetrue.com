@@ -5,14 +5,14 @@ import { MARKET_NJ } from '@/lib/data';
 
 export const metadata: Metadata = withPageMetadata({
   title: {
-    absolute: 'Kitchen Equipment, Ventilation & HVAC Service | NYC & NJ',
+    absolute: 'Kitchen Exhaust Fan & Ventilation Repair NYC & NJ | TCS',
   },
-  description: 'Commercial cooking equipment repair, kitchen ventilation, and HVAC service across NYC and North Jersey. Troubleshooting, repairs, and maintenance from TCS.',
+  description: 'Restaurant exhaust fans, make-up air, and hood controls repaired across NYC and North Jersey. Veteran-owned. Emergency after-hours response. Call (646) 942-9394.',
   alternates: {
     canonical: 'https://choosetrue.com/',
   },
   openGraph: {
-    title: 'Kitchen Equipment, Ventilation & HVAC | True Commercial Service',
+    title: 'Kitchen Exhaust Fan & Ventilation Repair NYC & NJ | TCS',
     description: 'Commercial kitchen equipment, ventilation, and HVAC service across NYC and North Jersey.',
     url: 'https://choosetrue.com/',
     siteName: 'True Commercial Service',

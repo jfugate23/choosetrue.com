@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import VentilationServicePage, { VentilationServiceContent } from '@/components/VentilationServicePage';
 
 export const metadata: Metadata = withPageMetadata({
-  title: 'Kitchen Ventilation Controls — NYC & NJ',
-  description: 'Kitchen ventilation controls service across NYC and North Jersey: VFD and DCV faults, sensors, starters, relays, interlocks, and sequences.',
+  title: 'Hood Control Panel & VFD Repair NYC & NJ',
+  description: 'CaptiveAire, Gaylord, Halton, and Melink hood panels, VFDs, DCV sensors, and exhaust/make-up air interlocks repaired in NYC and North Jersey.',
   alternates: { canonical: '/services/ventilation-controls' },
 });
 
