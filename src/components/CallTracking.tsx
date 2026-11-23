@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { track } from '@vercel/analytics';
 import { getDiscoverySource } from '@/lib/discovery-source';
+import { captureAttribution, getAttribution, sourceLabel } from '@/lib/attribution';
 
 // Fires a "Call Click" analytics event whenever any tel: link on the site is
 // tapped. One document-level listener covers the header, footer, hero cards,
@@ -14,15 +15,18 @@ export default function CallTracking() {
   useEffect(() => {
     // Capture the entry source before the visitor follows internal links.
     getDiscoverySource();
+    captureAttribution();
     const onClick = (e: MouseEvent) => {
       const anchor = (e.target as HTMLElement | null)?.closest?.('a[href^="tel:"]');
       if (!anchor) return;
       const placement = anchor.getAttribute('data-call-placement') || 'page-content';
+      const leadSource = sourceLabel(getAttribution());
       track('Call Click', {
         number: anchor.getAttribute('href') || '',
         page: window.location.pathname,
         placement,
         discovery_source: getDiscoverySource(),
+        lead_source: leadSource,
       });
       const analyticsId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
       const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
@@ -33,6 +37,7 @@ export default function CallTracking() {
           page_path: window.location.pathname,
           placement,
           discovery_source: getDiscoverySource(),
+          lead_source: leadSource,
         });
       }
     };

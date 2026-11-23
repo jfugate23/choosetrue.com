@@ -6,6 +6,7 @@ import { ArrowRight, Phone } from 'lucide-react';
 import { track } from '@vercel/analytics';
 import { COMPANY } from '@/lib/data';
 import { getDiscoverySource } from '@/lib/discovery-source';
+import { getAttribution, sourceLabel } from '@/lib/attribution';
 import { SERVICE_LABELS } from '@/lib/service-requests';
 import ServiceContactActions from '@/components/ServiceContactActions';
 
@@ -160,6 +161,8 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
 
     try {
       const discoverySource = getDiscoverySource();
+      const attribution = getAttribution();
+      const leadSource = sourceLabel(attribution);
       const response = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -178,6 +181,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
             details: data.get('details'),
             commercial: data.get('commercial') === 'on',
             discoverySource,
+            attribution,
           },
         }),
       });
@@ -189,6 +193,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
         page: window.location.pathname,
         service: String(data.get('serviceType') || 'not-selected'),
         discovery_source: discoverySource,
+        lead_source: leadSource,
       });
       const adsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
       const leadLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_LEAD_LABEL;
@@ -200,6 +205,7 @@ export function ServiceForm({ compact = false, defaultService = '', equipment = 
           service: String(data.get('serviceType') || 'not-selected'),
           page_path: window.location.pathname,
           discovery_source: discoverySource,
+          lead_source: leadSource,
         });
       }
       if (gtag && adsId && leadLabel) {

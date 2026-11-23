@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { SERVICE_LABELS } from '@/lib/service-requests';
+import { sourceLabel } from '@/lib/attribution';
 
 // Lead capture endpoint.
 // Sends an instant email alert via Resend (https://resend.com).
@@ -36,6 +37,22 @@ export async function POST(request: NextRequest) {
     const manufacturer = safeText(leadMeta?.manufacturer, 100);
     const details = safeText(leadMeta?.details, 2000);
     const discoverySource = leadMeta?.discoverySource === 'chatgpt' ? 'chatgpt' : 'unattributed';
+    const rawAttribution = leadMeta?.attribution && typeof leadMeta.attribution === 'object' && !Array.isArray(leadMeta.attribution)
+      ? leadMeta.attribution as Record<string, unknown>
+      : {};
+    const attribution = {
+      gclid: safeId(rawAttribution.gclid),
+      gbraid: safeId(rawAttribution.gbraid),
+      wbraid: safeId(rawAttribution.wbraid),
+      utmSource: safeText(rawAttribution.utmSource, 100),
+      utmMedium: safeText(rawAttribution.utmMedium, 100),
+      utmCampaign: safeText(rawAttribution.utmCampaign, 150),
+      utmTerm: safeText(rawAttribution.utmTerm, 150),
+      landingPage: safeText(rawAttribution.landingPage, 200),
+      referrerHost: safeText(rawAttribution.referrerHost, 100),
+      capturedAt: safeText(rawAttribution.capturedAt, 40),
+    };
+    const leadSource = sourceLabel(attribution);
 
     if (name.length < 2 || business.length < 2 || !phoneInput) {
       return NextResponse.json({ error: 'Name, business, and phone are required.' }, { status: 400 });
@@ -76,6 +93,8 @@ export async function POST(request: NextRequest) {
         details,
         commercial: true,
         discoverySource,
+        leadSource,
+        attribution,
       },
       timestamp: new Date().toISOString(),
     };
@@ -119,6 +138,13 @@ export async function POST(request: NextRequest) {
                 ${detailRow('Primary issue', serviceLabel)}
                 ${detailRow('Urgency', urgencyLabel)}
                 ${detailRow('Manufacturer', manufacturer || 'Not provided')}
+                ${detailRow('Lead source', leadSource)}
+                ${attribution.utmCampaign ? detailRow('Campaign', attribution.utmCampaign) : ''}
+                ${attribution.utmTerm ? detailRow('Keyword', attribution.utmTerm) : ''}
+                ${attribution.landingPage ? detailRow('Landing page', attribution.landingPage) : ''}
+                ${attribution.gclid ? detailRow('Google click ID (gclid)', attribution.gclid) : ''}
+                ${attribution.gbraid ? detailRow('Google click ID (gbraid)', attribution.gbraid) : ''}
+                ${attribution.wbraid ? detailRow('Google click ID (wbraid)', attribution.wbraid) : ''}
                 ${discoverySource === 'chatgpt' ? detailRow('Referral signal', 'ChatGPT — detected from referral or campaign link') : ''}
               </table>
 
@@ -144,7 +170,7 @@ export async function POST(request: NextRequest) {
         body: JSON.stringify({
           from,
           to: [to],
-          subject: `New service lead: ${lead.name}${lead.business ? ` (${lead.business})` : ''}`,
+          subject: `New service lead: ${lead.name}${lead.business ? ` (${lead.business})` : ''} [${leadSource}]`,
           html,
           ...(lead.email ? { reply_to: [lead.email] } : {}),
         }),
@@ -170,6 +196,12 @@ export async function POST(request: NextRequest) {
     const message = err instanceof Error ? err.message : 'Internal server error';
     return NextResponse.json({ error: message }, { status: 500 });
   }
+}
+
+// Click IDs are URL-safe tokens; anything else is dropped rather than stored.
+function safeId(value: unknown): string {
+  const text = safeText(value, 200);
+  return /^[A-Za-z0-9_-]+$/.test(text) ? text : '';
 }
 
 function safeText(value: unknown, maxLength: number): string {
