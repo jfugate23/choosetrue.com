@@ -1,6 +1,7 @@
 import { withPageMetadata } from '@/lib/search-metadata';
 import ManhattanFanServiceGuide from '@/components/ManhattanFanServiceGuide';
 import QueensHandoffGuide from '@/components/QueensHandoffGuide';
+import QueensMakeupAirGuide from '@/components/QueensMakeupAirGuide';
 import BrooklynServiceGuide from '@/components/BrooklynServiceGuide';
 import type { Metadata } from 'next';
 import JfkProjectFeature from '@/components/JfkProjectFeature';
@@ -95,9 +96,10 @@ export default function VentilationCityPage({ params }: Props) {
 
       {city.slug === 'manhattan-ny' && <ManhattanFanServiceGuide />}
       {city.slug === 'brooklyn-ny' && <BrooklynServiceGuide />}
+      {city.slug === 'queens-ny' && <QueensMakeupAirGuide />}
       {city.slug === 'queens-ny' && <QueensHandoffGuide />}
 
-      <Section id={city.slug === 'brooklyn-ny' || city.slug === 'manhattan-ny' ? `${city.slug.replace(/-ny$/, '')}-service-request` : undefined} className="bg-white/[0.02] scroll-mt-28">
+      <Section id={['brooklyn-ny', 'manhattan-ny', 'queens-ny'].includes(city.slug) ? `${city.slug.replace(/-ny$/, '')}-service-request` : undefined} className="bg-white/[0.02] scroll-mt-28">
         <div className="max-w-2xl mx-auto"><SectionHeading eyebrow="Request Service" title={`Tell TCS what is happening in ${city.city}.`} description="Include the equipment brand, model, fault code, ZIP code, and rooftop-access details." /><div className="glass-card rounded-2xl p-6 lg:p-8"><ServiceForm /></div></div>
       </Section>
     </>

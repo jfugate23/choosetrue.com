@@ -190,3 +190,35 @@ The Brooklyn draft passed the production build, all 65 sitemap checks, and servi
 - Next, consider a Queens makeup air no-heat service upgrade after checking for overlap with the existing HVAC and makeup air guidance.
 
 Validation completed November 16. The production build, sitemap audit of all 65 draft URLs, and service, borough, and search discovery checks passed. At 390px and 1440px, the Brooklyn guide led to the service page and its request form. Two simulated inquiries retained the commercial qualification, performance testing category, and originating page. The live baseline separately passed the 64-URL audit and borough and search discovery checks.
+
+
+## November 23, 2026: Queens makeup air service preparation (draft)
+
+Manhattan, Brooklyn, and Queens remain the primary content markets; existing New Jersey coverage remains secondary. This run rotates from the Manhattan and Brooklyn work to a substantive upgrade of the existing Queens ventilation page.
+
+### Review and reader benefit
+
+- Current main includes the approved Brooklyn report guide and hood testing upgrade, merged in PR #22 on November 16, and the site-wide GTM installation merged in PR #26 on November 19. The public sitemap has 65 URLs. The three borough pages retain indexable directives, self canonicals, ventilation titles and intent, and contextual links to cooking, HVAC, refrigeration, and ice machine hubs.
+- Open PR #27 covers lead attribution and #28 covers broader metadata and credentials. This focused Queens content draft uses current main and leaves those independent proposals for their own review. It does not replace either proposal or change their tracking or credentials work.
+- The existing makeup air service page already addresses no-heat calls, while the HVAC guide primarily addresses hot rooms. Add a Queens service preparation section that separates cold air with the fan running, weak or absent supply airflow, and dining-room heating complaints. Link the appropriate existing service pages and the Queens inquiry form. Do not create a second cold-air article or a new location URL.
+- Help readers send installed model/options, prior warm-air operation, displayed alarms, recent work, and building-access requirements. Distinguish an untempered supply unit from a heated unit before assuming a heater has failed. Ask only for existing records and accessible operator observations; do not prescribe resets, bypasses, settings, or gas work.
+- Preserve the JFK feature, commissioning handoff, all four equipment hubs, existing form fields, per-service tracking, titles, and canonical URLs. Refrigeration, walk-in, and ice machine repair inquiries remain welcome, with individual scope and schedule review. Only the Queens sitemap modification date changes; the URL count stays 65.
+
+### Evidence and measurement
+
+Technical context checked November 23 against [Accurex makeup air configurations](https://www.accurex.com/products/make-up-air-units) and the [XDGX direct-gas IOM](https://content.accurex.com/accurex-cms-prod/docs/default-source/ioms/482887-direct-gas-r7-5-2023_acx.pdf), particularly the supply-fan and heating troubleshooting sequences. The general explanation is not a diagnosis, new customer job, or claim about the JFK installation.
+
+Windsor no longer lists a connected Search Console account, and field/options discovery for the requested property fails. Fresh query, landing-page, CTR, average-position, and finalized 28-day comparisons are unavailable this run. Reconnect and select the property before the next measurement review; do not reuse older figures as current trends. Public crawlability checks do not confirm Google indexing. Borough words indicate content relevance, not searcher location, and search activity does not establish booked jobs. No lead-quality or booked-job evidence was available.
+
+### Next work
+
+Review this draft before merging. After approval and deployment, verify the Queens addition and form path on production separately. Then rotate to a useful Manhattan commercial HVAC or rooftop-unit maintenance guide after checking existing coverage, using actual field evidence where available. Continue to prioritize substantive existing-page improvements and useful guides over publishing volume.
+
+### Validation completed November 23
+
+- Production build, lint/type validation, and whitespace checks passed. All 65 generated sitemap pages passed the SEO audit with zero errors or warnings. Service, borough, and search discovery regressions passed against the generated production HTML using a scratch-only file transport; these checks do not establish HTTP behavior of the proposed deployment.
+- The live baseline independently passed the 65-URL HTTP sitemap audit with zero errors or warnings, plus the borough and search discovery checks. This confirms the existing production content, not publication or indexing of this draft.
+- Borough regression coverage now checks the contextual equipment hubs on all three borough pages, the Queens complaint-specific service routes and inquiry anchor, retention of the commissioning guide, and absence of Queens-only guidance on the other borough pages. Existing makeup-air preselection and shared form markup remain intact.
+- The managed preview launcher failed because it passed unsupported `--host` arguments to Next.js. Responsive browser checks and a simulated form submission could not yet be completed in that preview. The added layout uses one column on small screens, three columns only at the large breakpoint, and 16px body text. Record any subsequent PR preview checks separately; static markup checks are not browser verification or evidence of lead delivery.
+
+Subsequent PR preview verification: draft [PR #29](https://github.com/jfugate23/choosetrue.com/pull/29) received a successful Vercel preview deployment. All four checks also passed over HTTP against that preview, including the 65-URL sitemap audit with zero errors and warnings. Desktop browser review at a 1363px viewport verified the new section, absence of horizontal overflow, the inquiry anchor, the selectable makeup-air category, and required service/commercial qualification. Mobile viewport testing and a simulated submission remain unverified; no real inquiry was sent. The live three-borough pages returned HTTP 200, retained their self canonicals without X-Robots-Tag exclusions, and did not contain the proposed Queens section. This remains a draft rather than a production release or confirmed Google indexing.
