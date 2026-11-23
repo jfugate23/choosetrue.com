@@ -17,6 +17,22 @@ for (const borough of boroughs) {
   for (const service of ['kitchen-air-balancing', 'exhaust-fan-repair', 'makeup-air-unit-repair', 'ventilation-controls']) {
     assert.ok(html.includes(`href="/services/${service}"`), `${borough}: retains ${service}`);
   }
+  const routingId = borough === 'manhattan' ? 'manhattan-fan-service-guide' : `${borough}-equipment-service`;
+  const equipmentRouting = html.match(new RegExp(`<[^>]+id="${routingId}"[\\s\\S]*?<\\/section>`))?.[0];
+  assert.ok(equipmentRouting, `${borough}: contextual equipment service section`);
+  for (const hub of hubs) assert.ok(equipmentRouting.includes(`href="/services/${hub}"`), `${borough}: contextual ${hub} link`);
+  if (borough === 'queens') {
+    const guide = html.match(/<section[^>]+id="queens-makeup-air-guide"[\s\S]*?<\/section>/)?.[0];
+    assert.ok(guide, 'Queens: server-rendered makeup air service guidance');
+    for (const service of ['makeup-air-unit-repair', 'kitchen-air-balancing', 'hvac']) {
+      assert.ok(guide.includes(`href="/services/${service}"`), `Queens: complaint-specific ${service} route`);
+    }
+    assert.ok(guide.includes('href="#queens-service-request"'), 'Queens: inquiry anchor');
+    assert.equal((html.match(/id="queens-service-request"/g) || []).length, 1, 'Queens: one inquiry target');
+    assert.ok(html.includes('id="queens-commissioning-handoff"'), 'Queens: preserves existing handoff guide');
+  } else {
+    assert.ok(!html.includes('id="queens-makeup-air-guide"'), `${borough}: no Queens-only service guidance`);
+  }
   if (borough === 'brooklyn') {
     const guide = html.match(/<section[^>]+id="brooklyn-service-guide"[\s\S]*?<\/section>/)?.[0];
     const routing = html.match(/<section[^>]+id="brooklyn-equipment-service"[\s\S]*?<\/section>/)?.[0];
