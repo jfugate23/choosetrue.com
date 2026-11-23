@@ -2,7 +2,8 @@ import ServiceContactActions from '@/components/ServiceContactActions';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, ClipboardCheck, Gauge, Phone, ShieldCheck, Wrench } from 'lucide-react';
-import { COMPANY } from '@/lib/data';
+import { COMPANY, NYC_BOROUGHS, NJ_COUNTIES } from '@/lib/data';
+import CredentialsBlock from '@/components/CredentialsBlock';
 import { Reveal, Section, SectionHeading, ServiceForm } from '@/components/UI';
 import ServiceEvidence, { type ServiceEvidenceContent } from '@/components/ServiceEvidence';
 
@@ -37,7 +38,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
     '@type': 'Service',
     name: content.serviceType,
     provider: { '@type': 'LocalBusiness', '@id': 'https://choosetrue.com/#localbusiness', name: 'True Commercial Service LLC' },
-    areaServed: ['New York City', 'Northern New Jersey'],
+    areaServed: [...NYC_BOROUGHS.map((name) => name.replace(/^The /, '')), ...NJ_COUNTIES.map((name) => `${name}, NJ`)],
     serviceType: content.serviceType,
     description: content.description,
   };
@@ -70,7 +71,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
               {content.quickLinks && <div className="mt-5 flex flex-wrap gap-3" aria-label="Choose your ventilation problem">
                 {content.quickLinks.map((link) => <Link key={link.href} href={link.href} className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-amber-400 hover:border-amber-500/40">{link.label}<ArrowRight className="w-4 h-4" /></Link>)}
               </div>}
-              <p className="mt-5 text-xs text-slate-500">Commercial kitchen ventilation service across NYC and North Jersey</p>
+              <p className="mt-5 text-xs text-slate-500">Commercial kitchen ventilation repair across NYC and North Jersey • Emergency after-hours response</p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
               <Image src={content.image} alt={content.imageAlt} fill priority className="object-cover" />
@@ -99,7 +100,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <Reveal key={item.title} delay={index * 70}>
               <div className="glass-card rounded-2xl p-8 h-full">
                 <div className="w-11 h-11 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 mb-5"><Wrench className="w-5 h-5" /></div>
-                <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
+                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{item.description}</p>
               </div>
             </Reveal>
@@ -115,7 +116,7 @@ export default function VentilationServicePage({ content }: { content: Ventilati
             <Reveal key={item.title} delay={index * 80}>
               <div className="glass-card rounded-xl p-6 h-full">
                 <span className="text-3xl font-bold text-amber-500/25">{String(index + 1).padStart(2, '0')}</span>
-                <h2 className="font-semibold mt-3 mb-2">{item.title}</h2>
+                <h3 className="font-semibold mt-3 mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{item.description}</p>
               </div>
             </Reveal>
@@ -132,12 +133,13 @@ export default function VentilationServicePage({ content }: { content: Ventilati
               <p className="flex gap-3"><ClipboardCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Findings and readings are documented clearly.</p>
               <p className="flex gap-3"><ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />Commercial kitchen fans, makeup air, airflow, and controls are evaluated as one connected system.</p>
             </div>
+            <div className="mt-8"><CredentialsBlock /></div>
           </div>
           <div>
             <SectionHeading eyebrow="FAQ" title="Common service questions." center={false} />
             <div className="space-y-4">
               {content.faqs.map((faq) => (
-                <div key={faq.question} className="glass-card rounded-xl p-6"><h2 className="font-semibold mb-2">{faq.question}</h2><p className="text-sm text-slate-400 leading-relaxed">{faq.answer}</p></div>
+                <div key={faq.question} className="glass-card rounded-xl p-6"><h3 className="font-semibold mb-2">{faq.question}</h3><p className="text-sm text-slate-400 leading-relaxed">{faq.answer}</p></div>
               ))}
             </div>
           </div>

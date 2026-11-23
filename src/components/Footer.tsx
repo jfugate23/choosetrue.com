@@ -50,7 +50,7 @@ export default function Footer() {
               </Link>
               <Link href="/locations" className="block text-sm text-slate-300 hover:text-white transition-colors">
                 <span className="flex items-center gap-2 font-medium"><MapPin className="w-3 h-3 text-amber-400" />New Jersey</span>
-                <span className="block text-xs text-slate-500 mt-1 ml-5">Union, Essex, Hudson, Passaic, and Middlesex counties</span>
+                <span className="block text-xs text-slate-500 mt-1 ml-5">Union, Essex, Hudson, Passaic, Morris, and Middlesex counties</span>
               </Link>
               <Link href="/locations" className="flex items-center gap-2 text-sm text-amber-500/70 hover:text-amber-400 transition-colors mt-1">View service area <ArrowUpRight className="w-3 h-3" /></Link>
             </div>

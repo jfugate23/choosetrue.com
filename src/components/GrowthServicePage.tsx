@@ -24,7 +24,7 @@ export default function GrowthServicePage({ content }: { content: GrowthService 
     description: content.intro,
     url: pageUrl,
     provider: { '@id': 'https://choosetrue.com/#localbusiness' },
-    areaServed: ['New York City', 'North Jersey'],
+    areaServed: ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island', 'Union County, NJ', 'Essex County, NJ', 'Hudson County, NJ', 'Passaic County, NJ', 'Morris County, NJ', 'Middlesex County, NJ'],
   };
 
   const pageSchema = {

@@ -7,7 +7,7 @@ import { PageHero, Reveal, Section, SectionHeading } from '@/components/UI';
 
 export const metadata: Metadata = withPageMetadata({
   title: 'Kitchen Ventilation Areas — NYC & NJ',
-  description: 'Commercial kitchen ventilation service in all five NYC boroughs and across Union, Essex, Hudson, Passaic, and Middlesex counties in New Jersey.',
+  description: 'Commercial kitchen ventilation service in all five NYC boroughs and across Union, Essex, Hudson, Passaic, Morris, and Middlesex counties in New Jersey.',
   alternates: { canonical: '/locations' },
 });
 
@@ -22,7 +22,7 @@ export default function LocationsPage() {
       <PageHero
         eyebrow="Service Area"
         title="All five NYC boroughs and key New Jersey markets."
-        description="TCS serves commercial kitchens across New York City and from Union County through Essex, Hudson, Passaic, and Middlesex counties. Coverage depends on job scope, access, scheduling, and travel conditions."
+        description="TCS serves commercial kitchens across New York City and from Union County through Essex, Hudson, Passaic, Morris, and Middlesex counties. Coverage depends on job scope, access, scheduling, and travel conditions."
       />
 
       <Section className="bg-white/[0.02]">
@@ -37,7 +37,7 @@ export default function LocationsPage() {
             icon={<MapPin className="w-6 h-6" />}
             title="New Jersey"
             description="Coverage from an Elizabeth base across the major restaurant and institutional markets of North and Central Jersey."
-            areas={['Union County', 'Essex County', 'Hudson County', 'Passaic County', 'Middlesex County']}
+            areas={['Union County', 'Essex County', 'Hudson County', 'Passaic County', 'Morris County', 'Middlesex County']}
           />
         </div>
       </Section>

@@ -13,6 +13,31 @@ export const COMPANY = {
   description: 'True Commercial Service provides specialized commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
 };
 
+// ─── SERVICE AREA, HOURS, CREDENTIALS ──────────────────────────
+// One source for every page, schema node, and footer. Keep it identical to
+// the Google Business Profile service area and hours.
+export const NYC_BOROUGHS = ['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island'] as const;
+export const NJ_COUNTIES = ['Union County', 'Essex County', 'Hudson County', 'Passaic County', 'Morris County', 'Middlesex County'] as const;
+
+export const BUSINESS_HOURS = {
+  label: 'Monday to Friday, 8 a.m. to 5 p.m.',
+  short: 'Mon–Fri 8–5',
+  emergency: 'Emergency after-hours response nights and weekends',
+  days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+  opens: '08:00',
+  closes: '17:00',
+} as const;
+
+// Owner credentials, listed without a personal name by design.
+export const CREDENTIALS = [
+  'Veteran-owned (USAF)',
+  'EPA 608 Universal',
+  'OSHA 30',
+  'TAB certified',
+  '20 years commercial HVAC/R',
+  'Insured, COI on request',
+] as const;
+
 // ─── MARKET-SPECIFIC ───────────────────────────────────────────
 // The NJ/NYC market is the business entity for SEO purposes: its own
 // LocalBusiness schema (via schemaId), phone, address, and hero copy.
@@ -28,7 +53,7 @@ export const MARKET_NJ = {
   emergencyPhoneHref: 'tel:+16469429394',
   email: 'service@choosetrue.com',
   tagline: 'Commercial Kitchen Ventilation. Diagnosed Right.',
-  heroLabel: 'COMMERCIAL KITCHEN VENTILATION • NYC + NORTH JERSEY',
+  heroLabel: 'COMMERCIAL KITCHEN VENTILATION REPAIR • NYC + NORTH JERSEY',
   description: 'True Commercial Service provides specialized commercial kitchen ventilation diagnostics and repair across Northern New Jersey and New York City.',
   address: {
     street: '638 Marshall St',
@@ -37,7 +62,7 @@ export const MARKET_NJ = {
     postalCode: '07206',
     country: 'US',
   },
-  serviceAreaCities: ['Elizabeth', 'Newark', 'Jersey City', 'Paterson', 'New Brunswick', 'Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island'],
+  serviceAreaCities: ['Manhattan', 'Brooklyn', 'Queens', 'The Bronx', 'Staten Island', 'Elizabeth', 'Newark', 'Jersey City', 'Paterson', 'Morristown', 'Woodbridge', 'New Brunswick'],
   schemaId: 'https://choosetrue.com/#localbusiness',
   homeUrl: 'https://choosetrue.com/',
 } as const;

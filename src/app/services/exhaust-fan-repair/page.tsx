@@ -4,8 +4,8 @@ import VentilationServicePage, { VentilationServiceContent } from '@/components/
 import { EXHAUST_FAN_EVIDENCE } from '@/lib/service-evidence';
 
 export const metadata: Metadata = withPageMetadata({
-  title: 'Kitchen Exhaust Fan Repair — NYC & NJ',
-  description: 'Commercial kitchen exhaust fan repair across NYC and North Jersey: motors, belts, bearings, VFD faults, starters, wiring, and airflow checks.',
+  title: 'Restaurant Exhaust Fan Repair NYC & NJ',
+  description: 'Exhaust fan dead, weak, or loud? Motors, belts, bearings, starters, and VFDs repaired across NYC and North Jersey. Emergency after-hours response.',
   alternates: { canonical: '/services/exhaust-fan-repair' },
 });
 
@@ -36,9 +36,11 @@ const content: VentilationServiceContent = {
     { question: 'Do you repair rooftop upblast exhaust fans?', answer: 'Yes. TCS services commercial kitchen upblast, utility-set, and inline exhaust fans, including motors, belts, bearings, starters, VFDs, controls, and complete fan replacement when needed.' },
     { question: 'Can you tell whether the problem is the fan or the controls?', answer: 'Yes. The diagnostic process follows the entire start sequence from the hood controls and interlocks through the starter or VFD to the motor and fan assembly.' },
     { question: 'Why is smoke escaping even though the exhaust fan is running?', answer: 'A running fan does not establish that the hood has enough exhaust airflow. TCS checks fan condition and speed, duct resistance, controls, hood capture, and makeup-air delivery. Increasing speed or installing a larger motor should not be assumed to solve the problem; the fan limits and system requirements need to be checked first.' },
-    { question: 'How much does commercial kitchen exhaust fan repair cost?', answer: 'The price depends on the failure, rooftop access, fan size, parts, controls, and testing required. A belt or starter issue is a different scope from a motor, bearing, VFD, or complete fan replacement. TCS diagnoses the cause first and provides the repair scope before additional work is approved.' },
+    { question: 'How much does commercial kitchen exhaust fan repair cost?', answer: 'Service calls are billed as a flat trip charge plus hourly labor, with parts quoted separately. A belt or starter issue is a different scope from a motor, bearing, VFD, or complete fan replacement. TCS diagnoses the cause and gives you the repair price before any work beyond the first hour. Call (646) 942-9394 for current NYC and New Jersey rates.' },
     { question: 'Do you clean kitchen exhaust fans or grease ducts?', answer: 'No. TCS provides diagnostic and repair service, not hood or grease-duct cleaning. A cleaning company may need to clean the system before repair if grease prevents safe access.' },
-    { question: 'What areas do you serve?', answer: 'TCS serves commercial kitchens across New York City and North Jersey from its Elizabeth, New Jersey base.' },
+    { question: 'What areas do you serve?', answer: 'TCS serves commercial kitchens in Manhattan, Brooklyn, Queens, the Bronx, and Staten Island, and in Union, Essex, Hudson, Passaic, Morris, and Middlesex counties in New Jersey.' },
+    { question: 'Do you answer after hours?', answer: 'Yes. Regular hours are Monday to Friday, 8 a.m. to 5 p.m., and TCS provides emergency after-hours response nights and weekends for commercial kitchens with a fan down.' },
+    { question: 'Are you FDNY certified?', answer: 'FDNY certification (W-64) covers hood and grease duct cleaning, which TCS does not do. TCS repairs the exhaust fans, make-up air units, and controls. Your FDNY-approved cleaning company handles cleaning; when they find a broken fan or belt, call TCS.' },
   ],
   note: 'TCS does not provide hood or grease-duct cleaning. If grease buildup prevents safe repair access, cleaning must be completed by a qualified cleaning contractor first.',
 };

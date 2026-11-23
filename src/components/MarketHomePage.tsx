@@ -16,6 +16,8 @@ import {
   Wrench,
 } from 'lucide-react';
 import { Section, SectionHeading, Reveal, ServiceForm } from '@/components/UI';
+import CredentialsBlock from '@/components/CredentialsBlock';
+import { BUSINESS_HOURS } from '@/lib/data';
 
 export interface MarketHomePageMarket {
   name: string;
@@ -96,16 +98,16 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-1.5 h-1.5 bg-amber-400 rounded-full" />
-                <span className="text-amber-300 text-xs font-medium tracking-wide">COMMERCIAL SERVICE • NYC + NORTH JERSEY</span>
+                <span className="text-amber-300 text-xs font-medium tracking-wide">COMMERCIAL KITCHEN VENTILATION REPAIR • NYC + NORTH JERSEY</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight max-w-4xl">
-                Commercial kitchen equipment,
-                <span className="block text-gradient">ventilation &amp; HVAC service.</span>
+                Kitchen exhaust fan down?
+                <span className="block text-gradient">We fix restaurant ventilation.</span>
               </h1>
 
               <p className="mt-6 text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Cooking equipment down, an HVAC problem, or a hood that won’t clear smoke? TCS diagnoses and repairs commercial systems, with specialized expertise in kitchen ventilation.
+                Exhaust fans, make-up air units, hood control panels, belts, motors, and VFDs repaired across NYC and North Jersey. Owner-operated, with emergency after-hours response nights and weekends.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3">
@@ -119,11 +121,8 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
                 </a>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400">
-                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Hood and ventilation expertise</span>
-                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Measured airflow readings</span>
-                <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-amber-500" /> Commercial kitchens and facilities</span>
-              </div>
+              <CredentialsBlock variant="row" />
+              <p className="mt-5 text-sm text-slate-400">Commercial kitchen equipment, cooking equipment repair, and light commercial HVAC too. {BUSINESS_HOURS.label}; emergency calls answered after hours. We repair ventilation equipment. We don&apos;t clean hoods or ducts.</p>
             </div>
 
             <div className="hidden lg:block">
@@ -263,6 +262,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             </Reveal>
           ))}
         </div>
+        <div className="mt-10 max-w-3xl mx-auto"><CredentialsBlock /></div>
       </Section>
 
       <Section>
@@ -295,7 +295,7 @@ export default function MarketHomePage({ market }: { market: MarketHomePageMarke
             <a href={market.phoneHref} className="inline-flex items-center gap-3 text-xl font-bold text-amber-400 hover:text-amber-300 transition-colors">
               <Phone className="w-5 h-5" aria-hidden="true" /> Call Now
             </a>
-            <p className="mt-4 text-sm text-slate-500">Based in Elizabeth, NJ • Serving commercial kitchens and facilities across NYC and North Jersey</p>
+            <p className="mt-4 text-sm text-slate-500">Serving commercial kitchens and facilities across NYC and North Jersey • {BUSINESS_HOURS.short}, emergency after-hours response</p>
             <div className="mt-6 flex items-start gap-3 text-sm text-slate-400">
               <ShieldCheck className="w-5 h-5 text-amber-400 flex-shrink-0" />
               Commercial kitchens and facilities. No hood/duct cleaning, fire suppression, or residential range-hood work.

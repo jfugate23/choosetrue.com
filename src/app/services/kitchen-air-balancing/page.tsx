@@ -4,8 +4,8 @@ import VentilationServicePage, { VentilationServiceContent } from '@/components/
 import { AIR_BALANCING_EVIDENCE } from '@/lib/service-evidence';
 
 export const metadata: Metadata = withPageMetadata({
-  title: 'Kitchen Hood Air Balancing — NYC & NJ',
-  description: 'Kitchen hood airflow diagnostics across NYC and North Jersey, including exhaust and supply readings, capture testing, and pressure diagnosis.',
+  title: 'Kitchen Hood Airflow Testing & Balancing NYC & NJ',
+  description: 'Smoke escaping the hood or doors hard to open? Measured exhaust and supply airflow, pressure diagnosis, and balancing in NYC and North Jersey.',
   alternates: { canonical: '/services/kitchen-air-balancing' },
 });
 
